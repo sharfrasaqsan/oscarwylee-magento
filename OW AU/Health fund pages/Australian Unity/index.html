@@ -646,29 +646,25 @@
         text-decoration: none;
       }
 
-      .btnOw:hover {
-        background-color: black;
-        box-shadow: none !important;
-        color: #ffffff !important;
-        border: none !important;
-      }
-
       .btnOw {
         background-color: #003cac;
+        color: #ffffff;
         width: 80%;
-        border: none;
-        color: #fff;
         padding: 15px;
         font-size: 20px;
         font-weight: 600;
+        border: none;
         border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
+        text-align: center;
         cursor: pointer;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .btnOw:hover {
+        background-color: #002a7a;
+        color: #ffffff;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
       }
 
       .pSubTitle {
@@ -1361,21 +1357,6 @@
             <p>100%</p>
           </div>
         </div>
-        <hr />
-        <div class="information">
-          <div class="flexRow">
-            <h4>Waiting Period</h4>
-            <p>6 months</p>
-          </div>
-          <div class="flexRow">
-            <h4>Benefit Limits Reset</h4>
-            <p>1st of January</p>
-          </div>
-          <div class="flexRow">
-            <h4>Claimable Benefits %</h4>
-            <p>100% on Optical Extras</p>
-          </div>
-        </div>
         <p>
           To learn whether your plan includes single vision lenses, bifocal
           lenses and/or multifocal lenses, talk to your health insurance
@@ -1387,15 +1368,12 @@
             <tbody>
               <tr class="tableTitles reduce-th-bold">
                 <th style="text-align: left; padding: 0; color: #565656">
-                  Your Extras Package Annual Limit*:
+                  *Your Extras Annual Limit:
                 </th>
-                <th>Healthy Start Extras<sup>1</sup></th>
-                <th>Essential Extras 75</th>
-                <th>Growing Family Extras 60</th>
-                <th>Growing Family Extras 70</th>
-                <th>Top Extras 60</th>
-                <th>Top Extras 75</th>
-                <th>Top Extras 90</th>
+                <th>Base Extras</th>
+                <th>Mid Extras</th>
+                <th>Active Extras</th>
+                <th>Prime Extras</th>
               </tr>
               <tr class="tableFirstRow" style="background-color: #f2f2f2">
                 <th style="font-weight: bold; margin-top: 1rem">
@@ -1403,11 +1381,8 @@
                 </th>
                 <td class="second-heading">$150</td>
                 <td class="second-heading">$200</td>
-                <td class="second-heading">$200</td>
-                <td class="second-heading">$225</td>
-                <td class="second-heading">$200</td>
-                <td class="second-heading">$225</td>
                 <td class="second-heading">$250</td>
+                <td class="second-heading">$300</td>
               </tr>
               <tr
                 class="tableFirstRow center-border"
@@ -1420,9 +1395,6 @@
                   >
                 </th>
                 <td>Partial Cover</td>
-                <td>Covered</td>
-                <td>Covered</td>
-                <td>Covered</td>
                 <td>Covered</td>
                 <td>Covered</td>
                 <td>Covered</td>
@@ -1441,9 +1413,6 @@
                 <td>Covered</td>
                 <td>Covered</td>
                 <td>Covered</td>
-                <td>Covered</td>
-                <td>Covered</td>
-                <td>Covered</td>
               </tr>
               <tr class="tableFirstRow" style="background-color: #fafafa">
                 <th style="font-weight: bold">
@@ -1454,10 +1423,7 @@
                 </th>
                 <td>Partial Cover</td>
                 <td>Partial Cover</td>
-                <td>Partial Cover</td>
-                <td>Partial Cover</td>
-                <td>Partial Cover</td>
-                <td>Partial Cover</td>
+                <td>Covered</td>
                 <td>Covered</td>
               </tr>
             </tbody>
@@ -1474,13 +1440,10 @@
                 <th style="font-weight: bold; margin-top: 1rem">
                   FAMILY COVER
                 </th>
-                <td class="second-heading">Not Applicable</td>
+                <td class="second-heading">$150 per person</td>
                 <td class="second-heading">$200 per person</td>
-                <td class="second-heading">$500 per policy</td>
-                <td class="second-heading">$550 per policy</td>
-                <td class="second-heading">$200 per person</td>
-                <td class="second-heading">$225 per person</td>
                 <td class="second-heading">$250 per person</td>
+                <td class="second-heading">$300 per person</td>
               </tr>
               <tr
                 class="tableFirstRow center-border"
@@ -1492,10 +1455,7 @@
                     >^</span
                   >
                 </th>
-                <td>Not Applicable</td>
-                <td>Covered</td>
-                <td>Covered</td>
-                <td>Covered</td>
+                <td>Partial Cover</td>
                 <td>Covered</td>
                 <td>Covered</td>
                 <td>Covered</td>
@@ -1510,11 +1470,7 @@
                     >^</span
                   >
                 </th>
-                <td>Not Applicable</td>
-                <td>Covered</td>
-                <td>Covered</td>
-                <td>Covered</td>
-                <td>Covered</td>
+                <td>Partial Cover</td>
                 <td>Covered</td>
                 <td>Covered</td>
               </tr>
@@ -1525,18 +1481,15 @@
                     >^</span
                   >
                 </th>
-                <td>Not Applicable</td>
+                <td>Partial Cover</td>
                 <td>Partial Cover</td>
                 <td>Covered</td>
-                <td>Covered</td>
-                <td>Partial Cover</td>
-                <td>Partial Cover</td>
                 <td>Covered</td>
               </tr>
             </tbody>
           </table>
           <p class="bottom-caption">
-            ^Excludes add-ons. Standard frames and lenses only. Oscar Wylee's
+            ^Excludes add-ons. Standard frames and lenses only. Oscar Wylee’s
             standard product inclusions are calculated based on the optical
             allowances under each health fund package and may vary. If unsure,
             please confirm with your provider.
@@ -1589,58 +1542,6 @@
               class="linkTo"
               href="https://www.privatehealth.gov.au/dynamic/Download/AUF/I38/SEYS20"
               >4</a
-            >. <br /><br /><i style="font-size: 14px; color: grey"
-              >Information correct as of
-              <i><span style="font-weight: 400">27 May 2024</span></i
-              >.</i
-            >
-          </p>
-        </div>
-        <hr />
-        <div>
-          <p>
-            ¹ Healthy Start Extras optical coverage payment is shared with
-            remedial massage claims. <br /><br />*Based on Medibank’s
-            <a
-              class="linkTo"
-              href="https://www.medibank.com.au/health-insurance/extras-cover/"
-              >Cover Guide</a
-            >
-            and product factsheet as presented to the Commonwealth Ombudsman:
-            <a
-              class="linkTo"
-              href="https://www.privatehealth.gov.au/dynamic/Download/MBP/I91/NGDT20"
-              >1</a
-            >
-            <a
-              class="linkTo"
-              href="https://www.privatehealth.gov.au/dynamic/Download/MBP/I96/VLSQ1D"
-              >2</a
-            >
-            <a
-              class="linkTo"
-              href="https://www.privatehealth.gov.au/dynamic/Download/MBP/I86/VGBQ2D"
-              >3</a
-            >
-            <a
-              class="linkTo"
-              href="https://www.privatehealth.gov.au/dynamic/Download/MBP/I87/DGCL1D"
-              >4</a
-            >
-            <a
-              class="linkTo"
-              href="https://www.privatehealth.gov.au/dynamic/Download/MBP/I97/NLTF10"
-              >5</a
-            >
-            <a
-              class="linkTo"
-              href="https://www.privatehealth.gov.au/dynamic/Download/MBP/I98/NLUV10"
-              >6</a
-            >
-            <a
-              class="linkTo"
-              href="https://www.privatehealth.gov.au/dynamic/Download/MBP/I99/SLWX10"
-              >7</a
             >. <br /><br /><i style="font-size: 14px; color: grey"
               >Information correct as of August 2024.</i
             >
