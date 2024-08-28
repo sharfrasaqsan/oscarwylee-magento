@@ -1,0 +1,635 @@
+<style>
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .store-page-accordion-heading {
+    font-size: 15px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+  }
+
+  .accordion:hover {
+    border: none;
+  }
+
+  .accordion-wrapper .accordion:first-child {
+    border-top: 1px solid #a3a3a3;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid #a3a3a3;
+  }
+
+  /* Style for the active class */
+  .active,
+  .accordion:hover {
+    background-color: #ffffff;
+  }
+
+  .accordion-wrapper .active {
+    border-bottom: 1px solid #a3a3a3 !important;
+  }
+
+  /* Style the expand and collapse icons */
+  .icon {
+    float: right;
+  }
+
+  .panel-content {
+    padding: 20px 0px;
+  }
+
+  .store-ul {
+    list-style: disc !important;
+    margin-left: 35px !important;
+  }
+
+  .store-ul li {
+    font-size: 1.4rem !important;
+    padding-left: 5px !important;
+  }
+
+  .store-page-accordion a {
+    color: #1979c3 !important;
+  }
+
+  section.store-page-accordion {
+    margin-bottom: 60px;
+  }
+</style>
+<div class="static-location-detail new-layout">
+  <div class="location-detail-wrapper location-content">
+    <div class="left-container">
+      <h1 class="static-location-header">Optometrist West Lakes</h1>
+      <p class="short-content">
+        Westfield West Lakes<br />Shop 335, 111 W Lakes Blvd<br />West Lakes SA
+        5021
+      </p>
+      <ul>
+        <li class="position">Opposite Universal Store</li>
+      </ul>
+      <div class="opening-hours">
+        <p class="title">Opening hours</p>
+        <div class="store-schedule">
+          <p>
+            <span class="schedule-label">Monday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Tuesday</span
+            ><span class="schedule-value"></span>9:00am - 5:30pm
+          </p>
+          <p>
+            <span class="schedule-label">Wednesday</span
+            ><span class="schedule-value"></span>9:00am - 5:30pm
+          </p>
+          <p>
+            <span class="schedule-label">Thursday</span
+            ><span class="schedule-value"></span>9:00am - 9:00pm
+          </p>
+          <p>
+            <span class="schedule-label">Friday</span
+            ><span class="schedule-value"></span>9:00am - 5:30pm
+          </p>
+          <p>
+            <span class="schedule-label">Saturday</span
+            ><span class="schedule-value"></span>9:00am - 5:00pm
+          </p>
+          <p>
+            <span class="schedule-label">Sunday</span
+            ><span class="schedule-value"></span>9:00am - 5:00pm
+          </p>
+          <p style="font-size: 12px">
+            *Store hours reflect local standard trading hours and exclude public
+            holidays
+          </p>
+          <p>
+            <span style="text-decoration: underline; font-size: 13px"
+              ><strong
+                ><a
+                  href="https://g.page/r/CWUFIb5jZpgUEBM"
+                  target="_blank"
+                  rel="noopener"
+                  >Visit our Bankstown Google Business page for directions,
+                  reviews, and updates.</a
+                ></strong
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="location-map">
+        <iframe
+          width="100%"
+          height="100%"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13092.21074199454!2d138.4909094!3d-34.8800233!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0c5ea7171e011%3A0x14986663be210565!2sOscar%20Wylee%20Optometrist%20-%20West%20Lakes!5e0!3m2!1sen!2sau!4v1690355254891!5m2!1sen!2sau"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=146"
+  phone_number="(08) 6186 2334"
+  direction_map="https://g.page/r/CWUFIb5jZpgUEBM/review"}} {{widget
+  type="Oscar\LocationReview\Block\Widget\LocationReview"
+  review_url="https://g.page/r/CWUFIb5jZpgUEBM/review"
+  location_id="11229056745135127570"}} {{widget
+  type="Oscar\Booking\Block\Widget\AboutUs"
+  banner="wysiwyg/NewStorePage/StoreFront2/OW_storefront.png"
+  description_label="Find an Optometrist in West Lakes With Oscar Wylee"
+  description="&lt;p&gt;Come and see the team at Oscar Wylee West Lakes, located
+  in Adelaide, the capital of South Australia. Our store is found in Westfield
+  West Lakes, close to Port Adelaide, Seaton and Semaphore areas. Oscar Wylee
+  has an optometrist on site to perform Medicare bulk billed eye tests for those
+  with a valid card. Visit our Oscar Wylee West Lakes store today where you can
+  browse and try on our wide range of stylish and vintage-inspired
+  frames.&lt;br&gt;&lt;br&gt;To arrive at your appointment with Oscar Wylee West
+  Lakes, you can take the bus or if you wish to drive, Westfield West Lakes
+  offers over 3,000 parking spaces including parents with prams parking and
+  disabled parking. There is also a taxi rank conveniently located at the
+  Westfield. Plan a trip to Oscar Wylee West Lakes and experience some of the
+  best optometry services in Adelaide, Australia.&lt;/p&gt;"
+  first_optometrist_image="wysiwyg/NewStorePage2/Optometrist/Placeholder_Option_2.png"
+  first_optometrist_name="Optometrist"}} {{widget
+  type="Oscar\Booking\Block\Widget\LocationService" location_service="Bulk
+  Billed Eye Examinations,Professional Frame Styling,Frame Adjustments and
+  Repairs"}}
+  <!-- store page accordion -->
+  <section class="store-page-accordion">
+    <div class="accordion-wrapper">
+      <h2 class="store-page-accordion-heading">
+        Find an Optometrist in West Lakes, Adelaide for an Eye Health Test
+      </h2>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Optometry services in West Lakes include eye testing, prescription
+            glasses and more, which are provided by an optometrist. For an eye
+            health test, choose Oscar Wylee West Lakes in Adelaide as we have
+            dedicated optometrists and optical dispensers in-store to help with
+            all your needs. If a patient requires more advanced treatment, they
+            can be referred to an eye doctor, known as an ophthalmologist in
+            Australia.
+          </p>
+          <p>
+            Oscar Wylee West Lakes, Adelaide, offers Medicare bulk billing for
+            eligible cardholders, however, the average price range for an
+            optometrist in West Lakes can vary depending on factors such as the
+            patient’s overall health and visual needs. Our eye tests will assess
+            a patient’s vision as well as check for signs of eye disease. After
+            your appointment, you can browse our fashion-forward frames for a
+            pair of optical glasses, prescription sunglasses or non-prescription
+            glasses.
+          </p>
+        </div>
+      </div>
+      <!-- /////////////////// -->
+      <h2 class="store-page-accordion-heading">
+        How to Find an Optometrist in West Lakes, Adelaide?
+      </h2>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find an optometrist in West Lakes, Adelaide, you can take certain
+            steps that can help make it easier for you such as
+            <b
+              >searching online, assessing the store’s opening hours and finding
+              the directions to your chosen location.</b
+            >
+            The steps on how to find an optometrist in West Lakes are listed
+            below.
+          </p>
+          <ol>
+            <li>
+              Search online using the phrase, West Lakes optometrist near me.
+              This can also be done here on the website via our locations page.
+            </li>
+            <li>
+              Click on the Oscar Wylee link, which will take you directly to our
+              West Lakes optometrist store page.
+            </li>
+            <li>
+              See the store’s opening hours and where the store is located
+              specifically.
+            </li>
+            <li>
+              Use the West Lakes Google Business page link located under store
+              hours to see the directions on how to get to the store.
+            </li>
+          </ol>
+          <p>
+            You can also find an optometrist in West Lakes, Adelaide by
+            searching the keywords optometrist near me. If you have locations
+            enabled on your smartphone and you’re in the West Lakes area, our
+            Oscar Wylee West Lakes store page should appear easily for you to
+            click on.
+          </p>
+        </div>
+      </div>
+      <!-- //////////////////// -->
+      <h3 class="store-page-accordion-heading">
+        Is it Hard to Get an Eye Appointment in West Lakes, Adelaide?
+      </h3>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            No, it is not hard to get an eye appointment in West Lakes. You can
+            easily book an appointment to see an Oscar Wylee optometrist in West
+            Lakes right here on this page. At Oscar Wylee we have highly
+            qualified optometrists available for bulk billed eye appointments,
+            which can be booked online, over the phone, or in-store.
+          </p>
+        </div>
+      </div>
+      <!-- //////////// -->
+      <h4 class="store-page-accordion-heading">
+        How to Compare Optometrists in West Lakes to Each Other?
+      </h4>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To compare optometrists in West Lakes, you can use factors such as
+            eye
+            <b>
+              tests offered, health fund coverage, lens types and add-ons and
+              eyewear offered.</b
+            >
+            To take care of your vision and eye health, it is important to
+            receive an eye test at least once every two years. There are
+            different types of tests that can be performed in an eye test and
+            not all optometrists may offer the same tests. Health funds can be
+            used to help cover some of the cost of your frames and lenses. To
+            find out if your health fund is accepted at a West Lakes optometrist
+            in Adelaide, visit their website. In the case of Oscar Wylee, we
+            accept all major health funds and provide on-the-spot claims
+            in-store. There are many different lens options available for
+            prescription glasses such as single vision, multifocal and high
+            index lenses. Most optometrists in West Lakes will offer these
+            lenses although it is good to make sure. There are also lens add-ons
+            available to enhance your glasses such as anti-reflective and blue
+            light filters. Finally, if you are looking to purchase a pair of
+            glasses after your eye test, you can compare the different styles
+            and colours you are interested in from the optometrists in West
+            Lakes, Adelaide. Oscar Wylee offers a wide range of frames with
+            vintage and modern inspirations in bold colours and subtle designs.
+          </p>
+        </div>
+      </div>
+      <!-- ///////////////// -->
+      <h4 class="store-page-accordion-heading">
+        How to Find an Eyeglasses Shop in West Lakes, Adelaide?
+      </h4>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find a glasses store in West Lakes, you can try to follow these
+            simple steps including
+            <b
+              >searching online, selecting a convenient location and looking at
+              their health insurance policies.
+            </b>
+            The steps on how to find a glasses store in West Lakes, Adelaide are
+            listed below.
+          </p>
+          <ol>
+            <li>
+              Search online using the phrase, glasses store in West Lakes. This
+              will provide you with various options for glasses stores in the
+              whole West Lakes, Adelaide area.
+            </li>
+            <li>
+              Select a glasses store that is most convenient for you to travel
+              to.
+            </li>
+            <li>
+              Click the link to find out more information such as opening hours,
+              exact location and directions to the glasses store in West Lakes.
+            </li>
+            <li>
+              Read their health insurance policies to ensure you know what
+              health benefits you can access.
+            </li>
+          </ol>
+          <p>
+            Our Oscar Wylee glasses store in West Lakes, Adelaide offers primary
+            eye care services such as comprehensive eye tests as well as other
+            services performed by an optometrist and offers prescription and
+            non-prescription eyewear.
+          </p>
+        </div>
+      </div>
+      <!-- ////////// -->
+      <h5 class="store-page-accordion-heading">
+        Is it Possible to Purchase Prescribed Sunglasses in West Lakes,
+        Adelaide, Without Seeing an Optometrist?
+      </h5>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Yes and no, it is possible to
+            <a href="https://www.oscarwylee.com.au/sunglasses.html"
+              >purchase prescribed sunglasses</a
+            >
+            in West Lakes, Adelaide without seeing an optometrist if you already
+            have a prescription that has not expired. If your prescription is
+            expired, you can book an eye test to receive an updated or new
+            prescription which will require you to see an optometrist. This will
+            ensure your prescription sunglasses are appropriate for your visual
+            needs.
+          </p>
+        </div>
+      </div>
+      <!-- ///////// -->
+      <h2 class="store-page-accordion-heading">
+        Where is the Oscar Wylee West Lakes Optometrist Located in Adelaide?
+      </h2>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee West Lakes optometrist is located in Westfield West
+            Lakes, near the Universal Store in the capital of South Australia,
+            Adelaide. Westfield West Lakes is located at 111 W Lakes Blvd.
+          </p>
+        </div>
+      </div>
+      <!-- /////////// -->
+      <h3 class="store-page-accordion-heading">
+        What is the Phone Number of Oscar Wylee West Lakes Optometrist Store?
+      </h3>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee West Lakes optometrist store phone number is (08)
+            6186 2334. You can contact the Oscar Wylee West Lakes store between
+            the hours of 9 am and 5:30 pm from Monday to Wednesday, 9 am and 9
+            pm on Thursdays, 9 am and 5:30 pm on Fridays and 9 am to 5 pm on
+            Saturdays and Sundays.
+          </p>
+        </div>
+      </div>
+      <!-- /////////// -->
+      <h3 class="store-page-accordion-heading">
+        What are the Reviews for Oscar Wylee West Lakes Optometrist in Adelaide?
+      </h3>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The many reviews for Oscar Wylee West Lakes optometrist in Adelaide,
+            left by our various customers can be found here on the website and
+            online when you search for Oscar Wylee West Lakes optometrist. The
+            reviews for Oscar Wylee West Lakes optometrist are listed below.
+          </p>
+          <ul class="store-ul">
+            <li>
+              <b>Ali: </b> Affordable and fashionable glasses. Great service as
+              well.
+            </li>
+            <li>
+              <b>Lina Elkahlout: </b> Very welcoming and friendly staff,
+              especially Kim who assisted my mum and I. Her professionalism and
+              knowledge made me confident with my purchase. Highly recommend
+              them :)
+            </li>
+            <li>
+              <b>Anna Nguyen: </b> First time here. Was greeted straight away by
+              Kim, she was extremely helpful in helping me pick out glasses for
+              my face shape. Took my eye test. I’ve been going to another
+              optometrist for years and they never explained about my eye
+              condition or helped me properly. The optometrist here explained
+              everything clearly and even helped me book another specialist
+              appointment close by. Loved the place. Would be my go to place
+              from now on.
+            </li>
+            <li><b>Henry Rock: </b> Thank you for my appointment today.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- /////////// -->
+      <h4 class="store-page-accordion-heading">
+        What Treatments or Eye Care Processes are Done in the Oscar Wylee West
+        Lakes Optometrist Location?
+      </h4>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The treatments or eye care processes done in the Oscar Wylee West
+            Lakes optometrist Adelaide location include
+            <b>a tonometry test, a slit lamp exam and a refraction test.</b>
+            Additional tests that may also be performed can include
+            <b>a dilated fundus exam.</b> The treatments or eye-care processes
+            that are done in the Oscar Wylee West Lakes optometrist Adelaide
+            location are listed below.
+          </p>
+          <ul class="store-ul">
+            <li>
+              <b>A Tonometry Test:</b> An optometrist or optical dispenser will
+              conduct a tonometry test which involves the use of a machine that
+              will release small puffs of air into your eyes. This will assist
+              with measuring pressure in the eye.
+            </li>
+            <li>
+              <b>Slit Lamp Test:</b> A slit lamp test can be used to evaluate
+              your eye health, by examining your cornea and iris which are the
+              anterior and posterior of the eye.
+            </li>
+            <li>
+              <b>Refraction Test:</b> During a refraction test, an optometrist
+              will have you view an image through different lenses and ask you
+              to confirm which helps you see the image clearer.
+            </li>
+            <li>
+              <b>Dilated Fundus Exam:</b> A dilated fundus exam can help an
+              optometrist assess your health in more detail by getting a clear
+              view of the retina. This test is typically carried out for
+              patients with diabetes and those who may be at risk of developing
+              retinal damage.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /////////// -->
+      <h2 class="store-page-accordion-heading">
+        How Many Optometrists Exist in West Lakes, Adelaide?
+      </h2>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            There are many optometrists that exist in West Lakes, Adelaide to
+            provide eye tests and glasses, including Oscar Wylee. The number of
+            optometrists available in an area will typically depend on the
+            population. At Oscar Wylee West Lakes, we offer excellent optometry
+            services including eye tests performed by skilled optometrists using
+            high-quality equipment. We also have a wide range of fashion-forward
+            frames that customers can browse in a large selection of sizes and
+            colours. If you’re looking for an optometrist in West Lakes, choose
+            Oscar Wylee and we will take care of your optometry and eyewear
+            needs.
+          </p>
+        </div>
+      </div>
+      <!-- /////////// -->
+      <h3 class="store-page-accordion-heading">
+        What are the Other Closest Optometrist Locations to West Lakes, Adelaide
+        in Australia?
+      </h3>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The other closest Oscar Wylee optometrist locations to West Lakes in
+            Australia are <b>Tea Tree Plaza, Rundle Mall and Marion.</b> The
+            locations and their distance from West Lakes are listed below.
+          </p>
+          <ul class="store-ul">
+            <li>
+              <b>Tea Tree Plaza: </b> Tea Tree Plaza is close to West Lakes,
+              around 23 km. The
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-rundle-mall.html"
+                >Oscar Wylee Tea Tree Plaza</a
+              >
+              store is located in Modbury, South Australia, near Bevilles
+              Jeweller. Visit Oscar Wylee Tea Tree Plaza for visual fielding
+              testing and digital retinal scanning.
+            </li>
+            <li>
+              <b>Rundle Mall: </b> Rundle Mall is close to West Lakes, around 15
+              km. The
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-west-lakes.html"
+                >Oscar Wylee Rundle Mall</a
+              >
+              store is located in Adelaide. Visit Oscar Wylee Rundle Mall for
+              excellent eye care and eyewear services.
+            </li>
+            <li>
+              <b>Marion: </b> Marion is close to West Lakes, around 19 km. The
+              store
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-tea-tree-plaza.html"
+                >Oscar Wylee Marion</a
+              >
+              is located in Westfield Marion, near Big W. Oscar Wylee Marion
+              provides bulk billed eye tests, visual field testing and frame
+              adjustments and repairs.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="eye-health">
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_01.png'}}"
+        alt="In store eye test"
+      />
+      <div>
+        <h3>Eye Tests in West Lakes</h3>
+        <p>
+          Oscar Wylee West Lakes offers bulk billed eye health tests for
+          eligible Medicare cardholders, performed by dedicated and skilled
+          optometrists. In-store you can get your eye health checked for
+          possible eye diseases, your vision assessed and your prescription
+          updated, all on the same day. Visit Oscar Wylee West Lakes for
+          excellent eye care processes near you.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_02.png'}}"
+        alt="Health funds accepted"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>West Lakes Accepts Major Health Funds</h3>
+        <p>
+          The Oscar Wylee West Lakes eyeglasses shop accepts all major health
+          funds such as Bupa, HCF and NIB. Bring your health fund card in-store
+          and our friendly team can process your claim and provide an
+          on-the-spot quote. Your health fund may help you save big on our
+          selection of frames and lenses including prescription sunglasses.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test" style="padding: 0px">
+      <img
+        src="{{media url='wysiwyg/locations/services/ow_smiley.png'}}"
+        alt="Styling advice"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Expert Styling Advice at Oscar Wylee</h3>
+        <p>
+          If you’re looking for fashion-forward frames at affordable prices,
+          Oscar Wylee West Lakes has you covered. We have a wide range of styles
+          with both modern and vintage inspirations, taking design ideas from
+          the world around us. At Oscar Wylee West Lakes, you can optimise your
+          prescription glasses or prescription sunglasses with different lens
+          types and add-ons including multifocals, polarisation and more. Come
+          and see Oscar Wylee West Lakes for expert styling advice.
+        </p>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=146"
+  phone_number="(08) 6186 2334"
+  direction_map="https://g.page/r/CWUFIb5jZpgUEBM/review"}}
+</div>
+<p>
+  <script>
+    // acordian for store page -----------------------------
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+                                to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+          this.querySelector(".icon").classList.replace("fa-minus", "fa-plus");
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          this.querySelector(".icon").classList.replace("fa-plus", "fa-minus");
+        }
+      });
+    }
+  </script>
+</p>

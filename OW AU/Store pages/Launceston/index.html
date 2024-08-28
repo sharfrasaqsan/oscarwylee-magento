@@ -1,0 +1,692 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<style>
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .store-page-accordion-heading {
+    font-size: 15px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+  }
+
+  .accordion:hover {
+    border: none;
+  }
+
+  .accordion-wrapper .accordion:first-child {
+    border-top: 1px solid #a3a3a3;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid #a3a3a3;
+  }
+
+  /* Style for the active class */
+  .active,
+  .accordion:hover {
+    background-color: #ffffff;
+  }
+
+  .accordion-wrapper .active {
+    border-bottom: 1px solid #a3a3a3 !important;
+  }
+
+  /* Style the expand and collapse icons */
+  .icon {
+    float: right;
+  }
+
+  .panel-content {
+    padding: 20px 0px;
+  }
+
+  .store-ul {
+    list-style: disc !important;
+    margin-left: 35px !important;
+  }
+
+  .store-ul li {
+    font-size: 1.4rem !important;
+    padding-left: 5px !important;
+  }
+
+  .store-page-accordion a {
+    color: #1979c3 !important;
+  }
+
+  section.store-page-accordion {
+    margin-bottom: 60px;
+  }
+</style>
+
+<div class="static-location-detail new-layout">
+  <div class="location-detail-wrapper location-content">
+    <div class="left-container">
+      <h1 class="static-location-header">Optometrist Launceston</h1>
+      <p class="short-content">
+        Shop 1, 82 Brisbane Street<br />Launceston TAS 7250
+      </p>
+      <ul>
+        <li class="position">Opposite Shaver Shop</li>
+      </ul>
+      <div class="opening-hours">
+        <p class="title">Opening hours</p>
+        <div class="store-schedule">
+          <p>
+            <span class="schedule-label">Monday</span
+            ><span class="schedule-value">8:30am - 3:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Tuesday</span
+            ><span class="schedule-value">8:30am - 5:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Wednesday</span
+            ><span class="schedule-value">8:30am - 5:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Thursday</span
+            ><span class="schedule-value">8:30am - 5:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Friday</span
+            ><span class="schedule-value">8:30am - 5:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Saturday</span
+            ><span class="schedule-value">8:30am - 3:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Sunday</span
+            ><span class="schedule-value">Closed</span>
+          </p>
+          <p style="font-size: 12px">
+            *Store hours reflect local standard trading hours and exclude public
+            holidays
+          </p>
+          <p>
+            <span style="text-decoration: underline; font-size: 13px"
+              ><strong
+                ><a
+                  href="https://g.page/r/CbUP2CsSK9E4EBM"
+                  target="_blank"
+                  rel="noopener"
+                  >Visit our Launceston Google Business page for directions,
+                  reviews, and updates.</a
+                ></strong
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="location-map">
+        <iframe
+          width="100%"
+          height="100%"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.114774299031!2d147.13731081542727!3d-41.43673117925972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x38d12b122bd80fb5!2sOscar%20Wylee%20Optometrist%20-%20Launceston!5e0!3m2!1sen!2sau!4v1623821583440!5m2!1sen!2sau"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=110"
+  phone_number="(03) 6778 5159"
+  direction_map="https://g.page/r/CbUP2CsSK9E4EBM/review"}} {{widget
+  type="Oscar\LocationReview\Block\Widget\LocationReview"
+  review_url="https://g.page/r/CbUP2CsSK9E4EBM/review"
+  location_id="11497860618144048634"}} {{widget
+  type="Oscar\Booking\Block\Widget\AboutUs"
+  banner="wysiwyg/NewStorePage/StoreFront2/TAS_Launceston.jpg"
+  description_label="Find an Optometrist in Launceston With Oscar Wylee"
+  description="Discover our Oscar Wylee store in Launceston, in the heart of the
+  CBD, opposite the Shaver Shop and Quadrant Mall. Our Launceston optometrists
+  are ready and able to offer a Medicare bulk billed eye test to all valid
+  cardholders. Our friendly and capable staff at Oscar Wylee Launceston are
+  on-hand to help you browse through a wide and versatile range of frames,
+  sunglasses, add-ons and other accessories. Launceston is close to the Cornwall
+  Square bus stop and the bus interchange near Kingsway. You can find good
+  parking spaces around the area, such as Quadrant Plaza or Paterson Street.
+  &lt;br&gt;&lt;br&gt; After you’ve finished browsing our wide range of on-trend
+  and classic frames, you can explore Launceston Mall, a go-to hub for shopping,
+  food and relaxation. Launceston has a large array of cafes offering some of
+  the finest food in the North. Visit an Oscar Wylee near you at Launceston, we
+  can't wait to see you in our store."
+  first_optometrist_image="wysiwyg/NewStorePage2/Optometrist/Placeholder_Option_2.png"
+  first_optometrist_name="Optometrist"
+  first_optometrist_certification_one="B.Sc.M.A.B.Sc MCOpt"
+  second_optometrist_image="wysiwyg/NewStorePage2/StoreManager/Placeholder_Option_2.png"
+  second_optometrist_name="Store Manager"
+  second_optometrist_certification_one="Certificate IV in Optical Dispensing"}}
+  {{widget type="Oscar\Booking\Block\Widget\LocationService"
+  location_service="Bulk Billed Eye Examinations,Professional Frame
+  Styling,Frame Adjustments and Repairs,Visual Fields Testing,Digital Retinal
+  Scanning"}}
+
+  <!-- store page accordion -->
+
+  <section class="store-page-accordion">
+    <div class="accordion-wrapper">
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Find an Optometrist in Launceston, Tasmania for an Eye Health Test
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            An optometrist in Launceston can provide an eye health test which
+            will include assessing a patient’s vision and checking eye health
+            for eye diseases. Oscar Wylee Launceston offers excellent optometry
+            services including eye tests for a bulk billed price thanks to
+            Australia’s Medicare system. The average price range for an
+            optometrist in Rundle Mall can vary depending on factors such as the
+            patient’s overall health. If a patient requires more advanced
+            treatment, they can be referred to an eye doctor, known as an
+            ophthalmologist in Australia.
+          </p>
+          <p>
+            If you need a new pair of glasses or prescription sunglasses, you
+            can choose from our large selection of on-trend and vintage-inspired
+            frames. For an eye health test, choose Oscar Wylee Launceston in
+            Tasmania as we have dedicated optometrists and optical dispensers
+            in-store to help with all your needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////////////// -->
+
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How to Find an Optometrist in Launceston, Tasmania?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find an optometrist in Launceston, Tasmania, you can take certain
+            steps that can help make it easier for you such as
+            <b
+              >searching online, assessing the store’s opening hours and finding
+              the directions to your chosen location.</b
+            >
+            The steps on how to find an optometrist in Launceston are listed
+            below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, Launceston optometrist near me.
+              This can also be done here on the website via our locations page.
+            </li>
+            <li>
+              Click on the Oscar Wylee link, which will take you directly to our
+              Launceston optometrist store page.
+            </li>
+            <li>
+              See the store’s opening hours and where the store is located
+              specifically.
+            </li>
+            <li>
+              Use the Launceston Google Business page link located under store
+              hours to see the directions on how to get to the store.
+            </li>
+          </ol>
+
+          <p>
+            You can also find an optometrist in Launceston, Tasmania by
+            searching the keywords optometrist near me. If you have locations
+            enabled on your smartphone and you’re in the Launceston area, our
+            Oscar Wylee Launceston store page should appear easily for you to
+            click on.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////////////// -->
+
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          Is it Hard to Get an Eye Appointment in Launceston, Tasmania?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            No, it is not hard to get an eye appointment in Launceston. You can
+            easily book an appointment to see an Oscar Wylee optometrist in
+            Launceston right here on this page. At Oscar Wylee we have highly
+            qualified optometrists available for bulk billed eye appointments,
+            which can be booked online, over the phone, or in-store.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Compare Optometrists in Launceston to Each Other?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To compare optometrists in Launceston, you can use factors such as
+            eye
+            <b
+              >tests offered, health fund coverage, lens types and add-ons and
+              eyewear offered.</b
+            >
+            To take care of your vision and eye health, it is important to
+            receive an eye test at least once every two years. There are
+            different types of tests that can be performed in an eye test and
+            not all optometrists may offer the same tests. Health funds can be
+            used to help cover some of the cost of your frames and lenses. To
+            find out if your health fund is accepted at a Launceston optometrist
+            in Tasmania, visit their website. In the case of Oscar Wylee, we
+            accept all major health funds and provide on-the-spot claims
+            in-store. There are many different lens options available for
+            prescription glasses such as single vision, multifocal and high
+            index lenses. Most optometrists in Launceston will offer these
+            lenses although it is good to make sure. There are also lens add-ons
+            available to enhance your glasses such as anti-reflective and blue
+            light filters. Finally, if you are looking to purchase a pair of
+            glasses after your eye test, you can compare the different styles
+            and colours you are interested in from the optometrists in
+            Launceston, Tasmania. Oscar Wylee offers a wide range of frames with
+            vintage and modern inspirations in bold colours and subtle designs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Find an Eyeglasses Shop in Launceston, Tasmania?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find a glasses store in Launceston, you can try to follow these
+            simple steps including
+            <b
+              >searching online, selecting a convenient location and looking at
+              their health insurance policies.
+            </b>
+            The steps on how to find a glasses store in Launceston, Tasmania are
+            listed below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, glasses store in Launceston. This
+              will provide you with various options for glasses stores in the
+              whole Launceston, Tasmania area.
+            </li>
+            <li>
+              Select a glasses store that is most convenient for you to travel
+              to.
+            </li>
+            <li>
+              Click the link to find out more information such as opening hours,
+              exact location and directions to the glasses store in Launceston.
+            </li>
+            <li>
+              Read their health insurance policies to ensure you know what
+              health benefits you have access to.
+            </li>
+          </ol>
+
+          <p>
+            Our Oscar Wylee glasses store in Launceston, Tasmania offers primary
+            eye care services such as comprehensive eye tests as well as other
+            services performed by an optometrist and offers prescription and
+            non-prescription eyewear.
+          </p>
+        </div>
+      </div>
+
+      <!-- ////////// -->
+
+      <button class="accordion">
+        <h5 class="store-page-accordion-heading">
+          Is it Possible to Purchase Prescribed Sunglasses in Launceston,
+          Tasmania, Without Seeing an Optometrist?
+        </h5>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Yes and no, it is possible to
+            <a href="https://www.oscarwylee.com.au/sunglasses.html"
+              >purchase prescribed sunglasses</a
+            >
+            in Launceston, Tasmania without seeing an optometrist if you already
+            have a prescription that has not expired. If your prescription is
+            expired, you can book an eye test to receive an updated or new
+            prescription which will require you to see an optometrist. This will
+            ensure your prescription sunglasses are appropriate for your visual
+            needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Where is the Oscar Wylee Launceston Optometrist Located in Tasmania?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Launceston optometrist is located in the heart of
+            the Launceston CBD, opposite the Shaver Shop. The city of Launceston
+            is in the north of Tasmania and is the second most populous city in
+            Tasmania.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What is the Phone Number of Oscar Wylee Launceston Optometrist Store?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Launceston optometrist store phone number is (03)
+            6778 5159. You can contact the Oscar Wylee Launceston store between
+            the hours of 8:30 am and 3 pm on Mondays and 8:30 am and 5 pm from
+            Tuesday to Saturday.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Reviews for Oscar Wylee Launceston Optometrist in
+          Tasmania?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The many reviews for Oscar Wylee Launceston optometrist in Tasmania,
+            left by our various customers can be found here on the website and
+            online when you search for Oscar Wylee Launceston optometrist. The
+            reviews for Oscar Wylee Launceston optometrist are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Manda Wilson: </b>
+              Excellent service. Efficient, knowledgeable and no pressure to
+              buy. Given time and space to choose my frames, which I love!
+            </li>
+            <li>
+              <b>Linden Kan: </b>
+              Friendly service. Great, thorough optometrist!
+            </li>
+            <li>
+              <b>Abbey Daveny: </b>
+              Great service and a fantastic range of frames.
+            </li>
+            <li>
+              <b>Ronald Bessell: </b>
+              Staff and optometrist were warm and welcoming and very efficient.
+              The optometrist explained at all stages what and why he was
+              testing and what the results meant. Very with the services
+              provided.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          What Treatments or Eye Care Processes are Done in the Oscar Wylee
+          Launceston Optometrist Location?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The treatments or eye care processes done in the Oscar Wylee
+            Launceston optometrist Tasmania location include
+            <b
+              >a tonometry test, a digital photograph, a slit lamp exam and a
+              refraction test.</b
+            >
+            Additional tests that may also be performed can include
+            <b>a visual field test and a dilated fundus exam.</b> The treatments
+            or eye-care processes that are done in the Oscar Wylee Launceston
+            optometrist Tasmania location are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>A Tonometry Test:</b> An optometrist or optical dispenser will
+              conduct a tonometry test which involves the use of a machine that
+              will release small puffs of air into your eyes. This will assist
+              with measuring pressure in the eye.
+            </li>
+            <li>
+              <b>A Digital Photograph:</b> An optometrist or optical dispenser
+              may take a digital photograph of your eye which can be kept on
+              record to use in future appointments to evaluate any changes to
+              your eye.
+            </li>
+            <li>
+              <b>Slit Lamp Test:</b> A slit lamp test can be used to evaluate
+              your eye health, by examining your cornea and iris which are the
+              anterior and posterior of the eye.
+            </li>
+            <li>
+              <b>Refraction Test:</b> During a refraction test, an optometrist
+              will have you view an image through different lenses and ask you
+              to confirm which helps you see the image clearer.
+            </li>
+            <li>
+              <b>Visual Field Test:</b> A visual field test can assist with
+              assessing your peripheral vision, which may be beneficial for
+              identifying any signs of glaucoma.
+            </li>
+            <li>
+              <b>Dilated Fundus Exam:</b> A dilated fundus exam can help an
+              optometrist assess your health in more detail by getting a clear
+              view of the retina. This test is typically carried out for
+              patients with diabetes and those who may be at risk of developing
+              retinal damage.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How Many Optometrists Exist in Launceston, Tasmania?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            There are many optometrists that exist in Launceston, Tasmania to
+            provide eye tests and glasses, including Oscar Wylee. The number of
+            optometrists available in an area will typically depend on the
+            population. At Oscar Wylee Launceston, we offer excellent optometry
+            services including eye tests performed by skilled optometrists using
+            high-quality equipment. We also have a wide range of fashion-forward
+            frames that customers can browse in a large selection of sizes and
+            colours. If you’re looking for an optometrist in Launceston, choose
+            Oscar Wylee and we will take care of your optometry and eyewear
+            needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Other Closest Optometrist Locations to Launceston,
+          Tasmania in Australia?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            There are no other Oscar Wylee optometrist locations close to
+            Launceston in Australia, however, we have many stores in New South
+            Wales, Queensland, Western Australia and Victoria. If you are
+            looking for an optometrist near you, you can find the locations of
+            our many stores on our
+            <a href="https://www.oscarwylee.com.au/locations.html"
+              >full store locations page</a
+            >.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="eye-health">
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_01.png'}}"
+        alt="In store eye test"
+      />
+      <div>
+        <h3>Receive Bulk Billed Eye Tests at Launceston</h3>
+        <p>
+          We offer optometrist-led eye health tests in-store at Oscar Wylee
+          Launceston. Our trained optometrists provide vision assessment and can
+          check patients’ eye health for certain eye diseases and conditions.
+          With the recommended frequency of an eye check-up and vision testing
+          being at least once every two years, Oscar Wylee in Launceston can
+          keep you up-to-date on your eyesight and eye health needs. Visit the
+          team at Oscar Wylee to experience some of the best optometry services
+          in Launceston, Australia.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_02.png'}}"
+        alt="Health funds accepted"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Health funds accepted</h3>
+        <p>
+          Oscar Wylee in Launceston accepts all leading health funds including
+          HCF, NIB and Bupa. Bring a valid health fund card in-store where our
+          staff can process your claim and provide on-the-spot quotes. Our
+          friendly experts in Oscar Wylee Launceston are on hand to help you
+          navigate your health fund and insurance to ensure you get the best
+          price possible for your frames and lenses.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test" style="padding: 0px">
+      <img
+        src="{{media url='wysiwyg/locations/services/ow_smiley.png'}}"
+        alt="Styling advice"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Fashion-Forward Glasses at Oscar Wylee</h3>
+        <p>
+          Here at our eyeglasses shop in Launceston, Oscar Wylee offers
+          prescription glasses and prescription sunglasses in a variety of bold
+          and subtle designs. Customers can choose to add on anti-reflective
+          lenses or a blue light filter to optimise their glasses. Our experts
+          in Oscar Wylee Launceston will help you choose what’s best for you,
+          and you’ll leave our store with a pair of stylish prescription glasses
+          or prescription sunglasses.
+        </p>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=110"
+  phone_number="(03) 6778 5159"
+  direction_map="https://g.page/r/CbUP2CsSK9E4EBM/review"}}
+</div>
+
+<script>
+  // acordian for store page -----------------------------
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      /* Toggle between adding and removing the "active" class,
+                              to highlight the button that controls the panel */
+      this.classList.toggle("active");
+
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        this.querySelector(".icon").classList.replace("fa-minus", "fa-plus");
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        this.querySelector(".icon").classList.replace("fa-plus", "fa-minus");
+      }
+    });
+  }
+</script>

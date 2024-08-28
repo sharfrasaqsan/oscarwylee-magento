@@ -1,0 +1,43 @@
+<div style="width: 660px; margin: 0 auto;">
+<div style="text-align: center;">
+<a href="{{store url=''}}">
+            <img width="50%" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/email/OW_logo.png" alt="Oscar Wylee" style="border: 0; text-decoration: none; display: block;  margin: 0 auto; padding: 20px;">
+        </a>
+</div>
+
+<div style="text-align:center; margin-top: 30px; display: grid;">
+  <img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/email/_Header-01_Reminder_Email.png" alt="Hero Image" style="width: 100%; height: auto;">
+  <img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/email/_Header-02_Reminder_Email.png" alt="Hero Image" style="width: 100%; height: auto;">
+</div>
+
+<div style="background-color: white; margin-top: -4px;r">
+<div style="padding: 30px 40px;">
+<p style="text-align:left; font-size: 16px;" class="greeting">Hi {{trans "%name," name=$name}}</p><br>
+  <p style="text-align:left; font-size: 16px;">Our records show that you are due for an important routine eye test. 
+<br><br>
+Keep on top of your eye health and book online for an eye test at Oscar Wylee. 
+<br><br>
+Using the latest optometry technology, our skilled Oscar Wylee optometrists provide comprehensive eye exams and prescription updates for your glasses. 
+<br><br>
+Our eye tests are quick and efficient, taking approximately 20 minutes, so you can come in and see us at a time that’s convenient for you; on the weekend or even on your lunch break!
+<br><br>
+Eye tests at Oscar Wylee are bulk billed, with no out-of-pocket costs for eligible Medicare card holders, so don’t hesitate. Book online today and put your eye health first!
+</p>
+</div>
+
+<div style="text-align:center;">
+  <a href="/booking/?utm_source=Magento&utm_medium=EDM&utm_campaign=eye%20test%20recall">
+    <img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/email/_CTA_Remidner_Email.png" alt="Shop Now" style="width: 85%;">
+  </a>
+</div>
+<hr style="border: 0; border-top: 1px solid #ccc; margin-bottom: 20px; margin-top: 20px; width:90%">
+<div style="width: 85%; margin: 0 auto;">
+        <div style="font-size:10px; text-align:center; padding-bottom:10px;">This email was sent to you because you had an eye test Oscar Wylee and to keep you updated on your glasses prescription. If you don't want to receive such emails in the future, please <a href="https://oscarwylee.us6.list-manage.com/unsubscribe?u=0b69a0d376195d84abe0399f6&id=a30aef18b9" style="font-weight: 500; text-decoration: underline;">unsubscribe here</a>.</div>   
+<div>
+        <a href="{{store url=''}}">
+            <img style="border: 0; text-decoration: none; display: block; margin: 0 auto; padding: 20px;" width="40%" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/email/OW_logo.png" alt="Oscar Wylee">
+        </a></div>
+        <div style="font-size:10px; text-align: center; padding-bottom:10px;">Copyright @ 2023 Oscar Wylee Pty Ltd. ABN 73 154 936 526. All rights reserved.</div>    
+</div>
+</div>
+</div>

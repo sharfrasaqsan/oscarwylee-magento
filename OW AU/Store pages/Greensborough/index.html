@@ -1,0 +1,716 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<style>
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .store-page-accordion-heading {
+    font-size: 15px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+  }
+
+  .accordion:hover {
+    border: none;
+  }
+
+  .accordion-wrapper .accordion:first-child {
+    border-top: 1px solid #a3a3a3;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid #a3a3a3;
+  }
+
+  /* Style for the active class */
+  .active,
+  .accordion:hover {
+    background-color: #ffffff;
+  }
+
+  .accordion-wrapper .active {
+    border-bottom: 1px solid #a3a3a3 !important;
+  }
+
+  /* Style the expand and collapse icons */
+  .icon {
+    float: right;
+  }
+
+  .panel-content {
+    padding: 20px 0px;
+  }
+
+  .store-ul {
+    list-style: disc !important;
+    margin-left: 35px !important;
+  }
+
+  .store-ul li {
+    font-size: 1.4rem !important;
+    padding-left: 5px !important;
+  }
+
+  .store-page-accordion a {
+    color: #1979c3 !important;
+  }
+
+  section.store-page-accordion {
+    margin-bottom: 60px;
+  }
+</style>
+
+<div class="static-location-detail new-layout">
+  <div class="location-detail-wrapper location-content">
+    <div class="left-container">
+      <h1 class="static-location-header">Optometrist Greensborough</h1>
+      <p class="short-content">
+        Greensborough Plaza<br />Shop L02 205, 25 Main St<br />Greensborough VIC
+        3088
+      </p>
+      <ul>
+        <li class="position">Near Telstra</li>
+      </ul>
+      <div class="opening-hours">
+        <p class="title">Opening hours</p>
+        <div class="store-schedule">
+          <p>
+            <span class="schedule-label">Monday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Tuesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Wednesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Thursday</span
+            ><span class="schedule-value">9:00am - 9:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Friday</span
+            ><span class="schedule-value">9:00am - 9:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Saturday</span
+            ><span class="schedule-value">9:00am - 5:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Sunday</span
+            ><span class="schedule-value">10:00am - 5:00pm</span>
+          </p>
+          <p style="font-size: 12px">
+            *Store hours reflect local standard trading hours and exclude public
+            holidays
+          </p>
+          <p>
+            <span style="text-decoration: underline; font-size: 13px"
+              ><strong
+                ><a
+                  href="https://g.page/r/CU-LqsXpqDwLEAE"
+                  target="_blank"
+                  rel="noopener"
+                  >Visit our Greensborough Google Business page for directions,
+                  reviews, and updates.</a
+                ></strong
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="location-map">
+        <iframe
+          width="100%"
+          height="100%"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.7218256173705!2d145.1029007!3d-37.7027315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb3ca8e9c5aa8b4f!2sOscar%20Wylee%20Optometrist%20-%20Greensborough!5e0!3m2!1sen!2sau!4v1654739907921!5m2!1sen!2sau"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=140"
+  phone_number="(03) 9424 5896"
+  direction_map="https://g.page/r/CU-LqsXpqDwLEAE/review"}} {{widget
+  type="Oscar\LocationReview\Block\Widget\LocationReview"
+  review_url="https://g.page/r/CU-LqsXpqDwLEBM/review"
+  location_id="5068057199252787"}} {{widget
+  type="Oscar\Booking\Block\Widget\AboutUs"
+  banner="wysiwyg/NewStorePage/StoreFront2/Greensborough.jpg"
+  description_label="Find an Optometrist in Greensborough With Oscar Wylee"
+  description="Located North East of Melbourne's CBD, you can find our Oscar
+  Wylee store in the Greensborough Plaza. Here, our skilled optometrists can
+  provide Medicare bulk billed eye tests, and our retail staff can help you shop
+  our range of affordable and stylish glasses. To make your appointment with us,
+  you can take the train to Greensborough Station, approximately 10 minutes away
+  if you walk. You could also take the bus, or utilise the Plaza’s parking.
+  &lt;br&gt;&lt;br&gt; If you have time to spare after your appointment, there
+  is much to do in the Greensborough area. With the iconic Main Street nearby,
+  there are plenty of cafes for a nice lunch or dinner. Oscar Wylee
+  Greensborough Plaza is close to the Watsonia or Briar Hill areas, so come and
+  visit our team in-store for your optometry needs!"
+  first_optometrist_image="wysiwyg/NewStorePage2/Optometrist/Placeholder_Option_2.png"
+  first_optometrist_name="Optometrist"
+  first_optometrist_certification_one="Doctor of Optometry"
+  first_optometrist_certification_two=" Therapeutically Endorsed"
+  first_optometrist_certification_three="BPharm(Hons), Grad Dip Rep Medicine"
+  second_optometrist_image="wysiwyg/NewStorePage2/StoreManager/Placeholder_Option_2.png"
+  second_optometrist_name="Store Manager"}} {{widget
+  type="Oscar\Booking\Block\Widget\LocationService" location_service="Bulk
+  Billed Eye Examinations, Professional Frame Styling, Frame Adjustments and
+  Repairs"}}
+
+  <!-- store page accordion -->
+
+  <section class="store-page-accordion">
+    <div class="accordion-wrapper">
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Find an Optometrist in Greensborough Plaza, Victoria for an Eye Health
+          Test
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Find an optometrist in Greensborough Plaza, Victoria for your
+            regular eye test and other eye care needs. At our Oscar Wylee
+            glasses store in Greensborough Plaza, Victoria, our team is
+            passionate about providing customers with high-quality eye care
+            services. If you are in need of an eye health test in Greensborough
+            Plaza, Victoria, our optometrists are available in-store to assess
+            vision and determine if there are any signs of eye diseases. Our
+            optometrists can also refer people to an eye doctor, known in
+            Australia as an ophthalmologist if advanced care is needed. Our eye
+            tests at Oscar Wylee Greensborough Plaza are available at a bulk
+            billed price as part of Australia’s Medicare system for eligible
+            cardholders. The average price range to see an optometrist in
+            Greensborough Plaza can vary depending on factors such as the
+            patient’s overall health, age and visual needs.
+          </p>
+          <p>
+            Our knowledgeable retail staff and optical dispensers are also
+            in-store at Greensborough Plaza, Victoria, to help customers shop
+            our range of eyewear such as prescription glasses, prescription
+            sunglasses and non-prescription frames. Come and visit the Oscar
+            Wylee team at Greensborough Plaza for your eye care needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////////////// -->
+
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How to Find an Optometrist in Greensborough Plaza, Victoria?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find an optometrist in Greensborough Plaza, Victoria you can take
+            certain steps that can help make it easier for you such as
+            <b
+              >searching online, assessing the store’s opening hours and finding
+              the directions to your chosen location.</b
+            >
+            The steps on how to find an optometrist in Greensborough Plaza are
+            listed below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, Greensborough Plaza optometrist
+              near me. This can also be done here on the website via our
+              locations page.
+            </li>
+            <li>
+              Click on the Oscar Wylee link, which will take you directly to our
+              Greensborough Plaza optometrist store page.
+            </li>
+            <li>
+              See the store’s opening hours and where the store is located
+              specifically.
+            </li>
+            <li>
+              Use the Greensborough Plaza Google Business page link under store
+              hours to see the directions on how to get there.
+            </li>
+          </ol>
+
+          <p>
+            You can also find an optometrist in Greensborough Plaza by searching
+            the keywords optometrist near me. If you have locations enabled on
+            your smartphone and you’re in the Greensborough Plaza area, our
+            Greensborough Plaza store page should appear easily for you to click
+            on.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////////////// -->
+
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          Is it Hard to Get an Eye Appointment in Greensborough Plaza Victoria?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            No, it is not hard to get an eye appointment in Greensborough Plaza.
+            You can easily book an appointment to see an Oscar Wylee optometrist
+            in Greensborough Plaza right here on this page. At Oscar Wylee we
+            have highly qualified optometrists available for bulk billed eye
+            appointments, which can be booked online or in-store.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Compare Optometrists in Greensborough Plaza to Each Other?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To compare optometrists in Greensborough Plaza, you can use factors
+            such as eye
+            <b
+              >tests offered, health fund coverage, lens types and add-ons and
+              eyewear offered.</b
+            >
+            To care for your vision and eye health, it is important to receive
+            an eye test at least once every two years. There are different types
+            of tests that can be performed in an eye test and not all
+            optometrists may offer the same tests. Health funds can be used to
+            help cover some of the cost of your frames and lenses. To find out
+            if your health fund is accepted at Greensborough Plaza optometrist
+            in Victoria, visit their website. In the case of Oscar Wylee, we
+            accept all major health funds and provide on-the-spot claims
+            in-store. There are many different lens options available for
+            prescription glasses such as single-vision, multifocal and
+            high-index lenses. Most optometrists in Greensborough Plaza will
+            offer these lenses although it is good to make sure. There are also
+            lens add-ons available to enhance your glasses such as
+            anti-reflective and blue light filters. Finally, if you are looking
+            to purchase a pair of glasses after your eye test, you can compare
+            the different styles and colours you are interested in from
+            Greensborough Plaza optometrists in Victoria. Oscar Wylee offers a
+            wide range of frames with vintage and modern inspirations in bold
+            colours and subtle designs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Find an Eyeglasses Shop in Greensborough Plaza, Victoria?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find a glasses store in Greensborough Plaza, you can try to
+            follow these simple steps including
+            <b
+              >searching online, selecting a convenient location and looking at
+              their health insurance policies.</b
+            >
+            The steps on how to find a glasses store in Greensborough Plaza
+            Victoria are listed below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, glasses store in Greensborough
+              Plaza. This will provide you with various options for glasses
+              stores in the whole Greensborough Plaza Victoria area.
+            </li>
+            <li>
+              Select a glasses store that is most convenient for you to travel
+              to.
+            </li>
+            <li>
+              Click the link to find out more information such as opening hours,
+              exact location and directions to the glasses store in
+              Greensborough Plaza.
+            </li>
+            <li>
+              Read their health insurance policies to ensure you know what
+              health benefits you have access to.
+            </li>
+          </ol>
+
+          <p>
+            Our Oscar Wylee glasses store in Greensborough Plaza, Victoria
+            offers primary eye care services such as comprehensive eye tests as
+            well as other services performed by an optometrist and offers
+            prescription and non-prescription eyewear.
+          </p>
+        </div>
+      </div>
+
+      <!-- ////////// -->
+
+      <button class="accordion">
+        <h5 class="store-page-accordion-heading">
+          Is it Possible to Purchase Prescribed Sunglasses in Greensborough
+          Plaza, Victoria Without Seeing an Optometrist?
+        </h5>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Yes and no, it is possible to
+            <a href="https://www.oscarwylee.com.au/sunglasses.html"
+              >purchase prescribed sunglasses</a
+            >
+            in Greensborough Plaza Victoria without seeing an optometrist if you
+            already have a prescription that has not expired. If your
+            prescription is expired, you can book an eye test to receive an
+            updated or new prescription which will require you to see an
+            optometrist. This will ensure your prescription sunglasses are
+            appropriate for your visual needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Where is the Oscar Wylee Greensborough Plaza, Optometrist in Victoria
+          Located?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Oscar Wylee’s Greensborough Plaza optometrist is located in the
+            Greensborough Plaza Shopping Centre, on level 2. The Greensborough
+            Plaza Shopping Centre can be found on Main Street in Greensborough,
+            a suburb of Melbourne, Victoria.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What is the Phone Number of Oscar Wylee Greensborough Plaza, Victoria
+          Optometrist Store?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Greensborough Plaza optometrist store phone number
+            is (03) 9424 5896. You can contact the Oscar Wylee Greensborough
+            Plaza store between the hours of 9 am and 5:30 pm from Monday to
+            Wednesday, 9 am and 9 pm on Thursdays and Fridays, 9 am and 5 pm on
+            Saturdays and 10 am and 5 pm on Sundays.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Reviews for Oscar Wylee Greensborough Plaza Optometrist
+          in Victoria?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The customer reviews left for our Oscar Wylee Greensborough Plaza
+            optometrist in Victoria, can be found here on the website as well
+            online when you search for Oscar Wylee Greensborough Plaza
+            optometrist. The reviews for Oscar Wylee Greensborough Plaza
+            optometrist are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Serena Bates: </b>
+              Lovely service and a great range. Looking forward to picking up my
+              new glasses and sunnies. My examination was thorough and helpful
+              and my optometrist was very friendly. When choosing my frames,
+              Daisy was very friendly and thorough and helped me choose some
+              very nice frames and made sure I was happy with my purchase. I’ll
+              be back.
+            </li>
+            <li>
+              <b>Marjorie Kong: </b>
+              Great experience. Staff friendly. The optometrist was
+              professional, thorough, and made you feel comfortable. Highly
+              recommend.
+            </li>
+            <li>
+              <b>Mark Russell: </b>
+              Outstanding service! With only 10 days until Christmas, Shanae and
+              Daisy did everything possible to ensure I had glasses for the
+              holidays. I will never buy glasses from anywhere else.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          What Treatments or Eye Care Processes are Done in the Oscar Wylee
+          Greensborough Plaza Optometrist Location?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The treatments or eye care processes done in the Oscar Wylee
+            Greensborough Plaza optometrist Victoria location include
+            <b>a tonometry test, a slit lamp exam and a refraction test.</b>
+            Additional tests that may also be performed can include
+            <b> a dilated fundus exam.</b> The treatments or eye-care processes
+            that are done in the Oscar Wylee Greensborough Plaza, Victoria
+            optometrist location are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>A Tonometry Test:</b> An optometrist or optical dispenser will
+              conduct a tonometry test which involves the use of a machine that
+              will release small puffs of air into your eyes. This will assist
+              with measuring pressure in the eye.
+            </li>
+            <li>
+              <b>Slit Lamp Test:</b> A slit lamp test can be used to evaluate
+              your eye health, by examining your cornea and iris which are the
+              anterior and posterior of the eye.
+            </li>
+            <li>
+              <b>Refraction Test:</b> During a refraction test, an optometrist
+              will have you view an image through different lenses and ask you
+              to confirm which helps you see the image clearer.
+            </li>
+            <li>
+              <b>Dilated Fundus Exam:</b> A dilated fundus exam can help an
+              optometrist assess your health in more detail by getting a clear
+              view of the retina. This test is typically carried out for
+              patients with diabetes and those who may be at risk of developing
+              retinal damage.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How Many Optometrists Exist in Greensborough Plaza, Victoria?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            There is a range of optometrists that exist in Greensborough Plaza,
+            Victoria, including Oscar Wylee. The exact number of optometrists
+            available in an area typically depends on the population. At Oscar
+            Wylee Greensborough Plaza, our dedicated team offers excellent
+            optometrist services including eye tests using high-quality
+            equipment. We also have a wide range of fashion-forward frames in a
+            variety of sizes and colours. If you’re looking for an optometrist
+            in Greensborough Plaza, choose Oscar Wylee and we will take care of
+            your optometry and eyewear needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Other Closest Optometrist Locations to Greensborough
+          Plaza, Victoria in Australia?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The other closest Oscar Wylee optometrist locations to Greensborough
+            Plaza in Australia are
+            <b>Doncaster, Chadstone and Melbourne Central.</b>
+            The other closest optometrist locations to Greensborough Plaza are
+            listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Doncaster: </b>
+              Doncaster is a location close to Greensborough Plaza,
+              approximately 13 km away where there are many optometrists
+              available including Oscar Wylee.
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-doncaster.html"
+                >Oscar Wylee Doncaster</a
+              >
+              can be found in the Doncaster Westfield shopping centre, where our
+              team is available to provide a range of eye care services
+              including eye tests.
+            </li>
+            <li>
+              <b>Chadstone: </b>
+              Chadstone is a suburb approximately 15 km away from Greensborough
+              Plaza that is home to many optometrists such as Oscar Wylee. Our
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-chadstone.html"
+                >Oscar Wylee Chadstone</a
+              >
+              optometrists are located in the Chadstone Shopping Centre, where
+              they provide bulk billed eye tests and prescription updates.
+            </li>
+            <li>
+              <b>Melbourne Central: </b>
+              Melbourne Central is approximately 18 km away from Greensborough
+              Plaza where there are several optometrists available including
+              those at Oscar Wylee. Visit the team at
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-melbourne-central.html"
+                >Oscar Wylee Melbourne Central</a
+              >
+              for eye care services such as eye tests, prescription updates and
+              new frames.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="eye-health">
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_01.png'}}"
+        alt="In store eye test"
+      />
+      <div>
+        <h3>Medicare Bulk Billed Eye Tests at Greensborough Plaza</h3>
+        <p>
+          Visit our Oscar Wylee optometrists in Greensborough Plaza for Medicare
+          bulk billed eye tests. Eye health tests are recommended every two
+          years or as otherwise advised by your optometrist. Come in and visit
+          our store and our optometrists can provide a range of eye care
+          processes including eye tests to assess vision and detect possible eye
+          diseases and conditions, as well as update your prescription. Our eye
+          tests take approximately 20 minutes depending on your individual needs
+          so if you are after an optometrist near you that is dedicated, quick
+          and efficient, visit Oscar Wylee at Greensborough Plaza.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test">
+      <img src="{{media url="wysiwyg/locations/services/instore_02.png"}}"
+      alt="Health funds accepted" width="900" height="900">
+      <div>
+        <h3>Health Funds Accepted In-Store at Oscar Wylee</h3>
+        <p>
+          For some of the best optometrist services in Greensborough, Australia,
+          visit our Oscar Wylee eyeglasses shop in Greensborough Plaza and your
+          health fund may help cover some of the cost. Bring a valid health fund
+          card to Oscar Wylee Greensborough Plaza, and our team can help process
+          your claim, as well as answer any questions about eligibility.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test" style="padding: 0px">
+      <img src="{{media url="wysiwyg/locations/services/ow_smiley.png"}}"
+      alt="Styling advice" width="900" height="900">
+      <div>
+        <h3>Fashion-Forward Glasses at Oscar Wylee Greensborough</h3>
+        <p>
+          At our Oscar Wylee eyeglasses shop in Greensborough Plaza, there is a
+          range of prescription eyeglasses and prescription sunglasses available
+          in a variety of modern and vintage-inspired styles, as well as
+          non-prescription frames. There are also add-ons available such as blue
+          light filters. Come and visit Oscar Wylee Greensborough Plaza and our
+          experts in-store will help you choose the frame that is the perfect
+          fit for you!
+        </p>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=140"
+  phone_number="(03) 9424 5896"
+  direction_map="https://g.page/r/CU-LqsXpqDwLEAE/review"}}
+</div>
+
+<script>
+  // acordian for store page -----------------------------
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+      this.classList.toggle("active");
+
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        this.querySelector(".icon").classList.replace("fa-minus", "fa-plus");
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        this.querySelector(".icon").classList.replace("fa-plus", "fa-minus");
+      }
+    });
+  }
+</script>

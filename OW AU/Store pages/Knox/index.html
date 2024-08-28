@@ -1,0 +1,720 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<style>
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .store-page-accordion-heading {
+    font-size: 15px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+  }
+
+  .accordion:hover {
+    border: none;
+  }
+
+  .accordion-wrapper .accordion:first-child {
+    border-top: 1px solid #a3a3a3;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid #a3a3a3;
+  }
+
+  /* Style for the active class */
+  .active,
+  .accordion:hover {
+    background-color: #ffffff;
+  }
+
+  .accordion-wrapper .active {
+    border-bottom: 1px solid #a3a3a3 !important;
+  }
+
+  /* Style the expand and collapse icons */
+  .icon {
+    float: right;
+  }
+
+  .panel-content {
+    padding: 20px 0px;
+  }
+
+  .store-ul {
+    list-style: disc !important;
+    margin-left: 35px !important;
+  }
+
+  .store-ul li {
+    font-size: 1.4rem !important;
+    padding-left: 5px !important;
+  }
+
+  .store-page-accordion a {
+    color: #1979c3 !important;
+  }
+
+  section.store-page-accordion {
+    margin-bottom: 60px;
+  }
+</style>
+
+<div class="static-location-detail new-layout">
+  <div class="location-detail-wrapper location-content">
+    <div class="left-container">
+      <h1 class="static-location-header">Optometrist Knox</h1>
+      <p class="short-content">
+        Westfield Level 1, Shop 1030<br />425 Burwood Hwy<br />Wantirna South
+        VIC 3152
+      </p>
+      <ul>
+        <li class="position">Opposite Specsavers</li>
+      </ul>
+      <div class="opening-hours">
+        <p class="title">Opening hours</p>
+        <div class="store-schedule">
+          <p>
+            <span class="schedule-label">Monday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Tuesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Wednesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Thursday</span
+            ><span class="schedule-value">9:00am - 9:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Friday</span
+            ><span class="schedule-value">9:00am - 9:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Saturday</span
+            ><span class="schedule-value">9:00am - 5:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Sunday</span
+            ><span class="schedule-value">10:00am - 5:00pm</span>
+          </p>
+          <p style="font-size: 12px">
+            *Store hours reflect local standard trading hours and exclude public
+            holidays
+          </p>
+          <p>
+            <span style="text-decoration: underline; font-size: 13px"
+              ><strong
+                ><a
+                  href="https://g.page/r/CU5bBiDYgokxEBM/"
+                  target="_blank"
+                  rel="noopener"
+                  >Visit our Knox Google Business page for directions, reviews,
+                  and updates.</a
+                ></strong
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="location-map">
+        <iframe
+          width="100%"
+          height="100%"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12562.283330340391!2d145.24015639012683!3d-37.86837948305456!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x318982d820065b4e!2sOscar%20Wylee%20-%20Optometrist!5e0!3m2!1sen!2sau!4v1607656213848!5m2!1sen!2sau"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=30"
+  phone_number="(03) 8806 2601"
+  direction_map="https://g.page/r/CU5bBiDYgokxEBM/review"}} {{widget
+  type="Oscar\LocationReview\Block\Widget\LocationReview"
+  review_url="https://g.page/r/CU5bBiDYgokxEBM/review"
+  location_id="471955195539569088"}} {{widget
+  type="Oscar\Booking\Block\Widget\AboutUs"
+  banner="wysiwyg/NewStorePage/StoreFront2/Knox.jpg" description_label="Find an
+  Optometrist in Knox With Oscar Wylee" description="Close to areas such as
+  Boronia and Ferntree Gully, you can find our Oscar Wylee store in the Knox
+  Westfield Shopping Centre in Wantirna South. Here, our Oscar Wylee
+  optometrists can conduct bulk billed Medicare eye tests and our friendly staff
+  can help you shop our range of affordable and stylish glasses. To make your
+  appointment with us, you can take one of the many buses that service the
+  centre, or take the tram! Westfield Knox also offers free parking, with
+  Parents with Prams and disabled parking spaces available. &lt;br&gt;&lt;br&gt;
+  If you have time to spare after your appointment, Westfield Knox has plenty
+  for you to explore. Catch a movie at Village Cinemas or indulge in some
+  dessert at The Pancake Parlour. The outdoor dining precinct also includes
+  several pubs such as the Sporting Globe and The Bavarian. For some of the best
+  optometrists in Wantirna South, Australia, come to Oscar Wylee Westfield
+  Knox."
+  first_optometrist_image="wysiwyg/NewStorePage2/Optometrist/Placeholder_Option_2.png"
+  first_optometrist_name="Optometrist Partner"
+  first_optometrist_certification_one="Doctor of Optometry"
+  second_optometrist_image="wysiwyg/NewStorePage2/StoreManager/Placeholder_Option_2.png"
+  second_optometrist_name="Store Manager"}} {{widget
+  type="Oscar\Booking\Block\Widget\LocationService" location_service="Bulk
+  Billed Eye Examinations, Professional Frame Styling, Frame Adjustments and
+  Repairs, Digital Retinal Scanning"}}
+
+  <!-- store page accordion -->
+
+  <section class="store-page-accordion">
+    <div class="accordion-wrapper">
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Find an Optometrist in Knox, Victoria for an Eye Health Test
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Find an Optometrist in Knox, Victoria, for your regular eye health
+            test. If you are in the Wantirna South area, you can find an Oscar
+            Wylee optometrist in the Knox Westfield Shopping Centre. Here, our
+            optometrists are dedicated to providing customers with high-quality
+            eye tests that include assessing vision and determining whether
+            there are any signs of eye disease. Our optometrists can also refer
+            patients to an eye doctor, known as an ophthalmologist in Australia,
+            if additional eye care is needed. At our Oscar Wylee glasses store
+            in Knox, Victoria, our retail staff, including our optical
+            dispensers are also available in-store to help customers shop for
+            new eyewear including prescription glasses, prescription sunglasses
+            and non-prescription eyewear.
+          </p>
+          <p>
+            At Oscar Wylee, our eye tests are available as part of Australia’s
+            Medicare system, meaning they are at a bulk billed price, with no
+            out-of-pocket expenses for eligible cardholders. The average price
+            range for an optometrist in Wantirna South, Victoria can vary
+            depending on factors such as the patient’s age, health, age, and
+            visual needs. If you are in need of an eye health test in Knox,
+            Victoria, visit our passionate Oscar Wylee team.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////////////// -->
+
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How to Find an Optometrist in Knox, Victoria?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find an optometrist in Knox, Victoria you can take certain steps
+            that can help make it easier for you such as
+            <b
+              >searching online, assessing the store’s opening hours and finding
+              the directions to your chosen location.</b
+            >
+            The steps on how to find an optometrist in Knox, Victoria are listed
+            below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, optometrist near me in Knox. This
+              can also be done here on the website via our locations page.
+            </li>
+            <li>
+              Click on the Oscar Wylee link, which will take you directly to our
+              Knox optometrist store page.
+            </li>
+            <li>
+              See the store’s opening hours and where the store is located
+              specifically.
+            </li>
+            <li>
+              Use the Knox Google Business page link located under store hours
+              to see the directions on how to get to the store.
+            </li>
+          </ol>
+
+          <p>
+            You can also find an optometrist in Knox, Victoria by searching the
+            keywords optometrist near me. If you have locations enabled on your
+            smartphone and you’re in the Knox, Victoria area, our Knox store
+            page should appear easily for you to click on.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////////////// -->
+
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          Is it Hard to Get an Eye Appointment in Knox, Victoria?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            No, it is not hard to get an eye appointment in Knox. You can easily
+            book an appointment to see an Oscar Wylee optometrist in Knox,
+            Victoria right here on this page. At Oscar Wylee we have highly
+            qualified optometrists available for bulk billed eye appointments,
+            which can be booked online or in-store.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Compare Optometrists in Knox, Victoria to Each Other?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To compare optometrists in Knox, Victoria, you can use factors such
+            as eye
+            <b
+              >tests offered, health fund coverage, lens types and add-ons and
+              eyewear offered.</b
+            >
+            To take care of your vision and eye health, it is important to
+            receive an eye test at least once every two years. There are
+            different types of tests that can be performed in an eye test and
+            not all optometrists may offer the same tests. Health funds can be
+            used to help cover some of the cost of your frames and lenses. To
+            find out if your health fund is accepted at an optometrist in Knox,
+            Victoria visit their website. In the case of Oscar Wylee, we accept
+            all major health funds and provide on-the-spot claims in-store.
+            There are many different lens options available for prescription
+            glasses such as single-vision, multifocal and high-index lenses.
+            Most optometrists in Knox, Victoria will offer these lenses although
+            it is good to make sure. There are also lens add-ons available to
+            enhance your glasses such as anti-reflective and blue light filters.
+            Finally, if you are looking to purchase a pair of glasses after your
+            eye test, you can compare the different styles and colours you are
+            interested in from the optometrists in Knox, Victoria. Oscar Wylee
+            offers a wide range of frames with vintage and modern inspirations
+            in bold colours and subtle designs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Find an Eyeglasses Shop in Knox, Victoria?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find a glasses store in Knox, Victoria you can try to follow
+            these simple steps including
+            <b
+              >searching online, selecting a convenient location and looking at
+              their health insurance policies.
+            </b>
+            The steps on how to find a glasses store in Knox, Victoria are
+            listed below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, glasses store in Knox, Victoria.
+              This will provide you with various options for glasses stores in
+              the whole Knox, Victoria area.
+            </li>
+            <li>
+              Select a glasses store that is most convenient for you to travel
+              to.
+            </li>
+            <li>
+              Click the link to find out more information such as opening hours,
+              exact location and directions to the glasses store in Knox.
+            </li>
+            <li>
+              Read their health insurance policies to ensure you know what
+              health benefits you have access to.
+            </li>
+          </ol>
+
+          <p>
+            Our Oscar Wylee glasses store in Knox, Victoria offers primary eye
+            care services such as comprehensive eye tests as well as other
+            services performed by an optometrist and offers prescription and
+            non-prescription eyewear.
+          </p>
+        </div>
+      </div>
+
+      <!-- ////////// -->
+
+      <button class="accordion">
+        <h5 class="store-page-accordion-heading">
+          Is it Possible to Purchase Prescribed Sunglasses in Knox, Victoria
+          Without Seeing an Optometrist?
+        </h5>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Yes and no, it is possible to
+            <a href="https://www.oscarwylee.com.au/sunglasses.html"
+              >purchase prescribed sunglasses</a
+            >
+            in Knox, Victoria without seeing an optometrist if you already have
+            a prescription that has not expired. If your prescription is
+            expired, you can book an eye test to receive an updated or new
+            prescription which will require you to see an optometrist. This will
+            ensure your prescription sunglasses are appropriate for your visual
+            needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Where is the Oscar Wylee Knox, Victoria Optometrist Located?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Knox optometrist is located on level one of the
+            Westfield Knox Shopping Centre. Knox shopping centre can be found in
+            Wantirna South, Victoria, on Burwood Highway.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What is the Phone Number of Oscar Wylee Knox, Victoria Optometrist
+          Store?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The phone number for our Oscar Wylee Knox, Victoria optometrist
+            store is (03) 8806 2601. Our Oscar Wylee Knox, Victoria store is
+            open, and our staff are available to be contacted, between the hours
+            of 9 am and 5.30 from Monday to Wednesday, 9 am and 9 pm on
+            Thursdays and Fridays, 9 am and 5 pm on Saturdays and 10 am and 5 pm
+            on Sundays.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Reviews for Oscar Wylee Knox, Victoria Optometrist?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The customer reviews for our Oscar Wylee Knox, Victoria optometrist,
+            can be found here on the website as well online when you search for
+            Oscar Wylee Knox optometrist. The reviews for our Oscar Wylee Knox
+            optometrist are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Janet Ross: </b>
+              I really like the Oscar Wylee optometrist at Knox. All the staff
+              are pleasant and helpful and the eye test was efficiently done. I
+              really like my Oscar Wylee glasses, I can wear them confidently at
+              the gym whilst exercising when I need to. They fit really well.
+            </li>
+            <li>
+              <b>Ted Batchelor: </b>
+              Wow, we had such a great experience at OW Knox! Lauren was just
+              fabulous. Great customer service. Would definitely recommend this
+              store!
+            </li>
+            <li>
+              <b>Melly Ramone: </b>
+              The staff are lovely, helpful, supportive and informative. I was
+              feeling anxious and their kind professionalism helped me
+              immensely.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          What Treatments or Eye Care Processes are Done in the Oscar Wylee
+          Knox, Victoria Optometrist Location?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The treatments or eye care processes done in the Oscar Wylee Knox,
+            Victoria optometrist location include
+            <b
+              >a tonometry test, a digital photograph, a slit lamp exam and a
+              refraction test.</b
+            >
+            Additional tests that may also be performed can include
+            <b>a dilated fundus exam.</b> The treatments or eye-care processes
+            that are done in the Oscar Wylee Knox optometrist location are
+            listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>A Tonometry Test:</b> An optometrist or optical dispenser will
+              conduct a tonometry test which involves the use of a machine that
+              will release small puffs of air into your eyes. This will assist
+              with measuring pressure in the eye.
+            </li>
+            <li>
+              <b>A Digital Photograph:</b> An optometrist or optical dispenser
+              may take a digital photograph of your eye which can be kept on
+              record to use in future appointments to evaluate any changes to
+              your eye.
+            </li>
+            <li>
+              <b>Slit Lamp Test:</b> A slit lamp test can be used to evaluate
+              your eye health, by examining your cornea and iris which are the
+              anterior and posterior of the eye.
+            </li>
+            <li>
+              <b>Refraction Test:</b> During a refraction test, an optometrist
+              will have you view an image through different lenses and ask you
+              to confirm which helps you see the image clearer.
+            </li>
+            <li>
+              <b>Dilated Fundus Exam:</b> A dilated fundus exam can help an
+              optometrist assess your health in more detail by getting a clear
+              view of the retina. This test is typically carried out for
+              patients with diabetes and those who may be at risk of developing
+              retinal damage.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How Many Optometrists Exist in Knox, Victoria?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            There are many optometrists that exist in Knox, Victoria including
+            Oscar Wylee. The amount of optometrists available in an area will
+            typically depend on the population and the eye care needs of those
+            in the area. At Oscar Wylee Knox, Victoria, our team is passionate
+            about providing our customers with high-quality, dedicated eye care
+            services. Our optometrists are available to provide bulk billed eye
+            tests with our dedicated optometrists, prescription updates and new
+            frames. If you are looking for an optometrist in Knox, Victoria,
+            Oscar Wylee is available to provide all your eye care and eyewear
+            needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Other Closest Optometrist Locations to Knox, Victoria in
+          Australia?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The closest optometrist Oscar Wylee locations to Knox, Victoria in
+            Australia are
+            <b>Dandenong, Doncaster and Chadstone.</b>
+            The closest optometrist locations to Knox, Victoria are listed
+            below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Dandenong: </b>
+              Dandenong is a suburb approximately 15 km away from Knox,
+              Westfield where several optometrists are available including Oscar
+              Wylee.
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-dandenong.html"
+                >Oscar Wylee Dandenong</a
+              >
+              is located in the Armada Dandenong Plaza, where our dedicated team
+              is available to provide a range of eye care services.
+            </li>
+            <li>
+              <b>Doncaster: </b>
+              Doncaster is a suburb around 19 km away from Wantirna South and
+              the Knox Westfield Shopping Centre. Doncaster is home to several
+              optometrists including Oscar Wylee.
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-doncaster.html"
+                >Oscar Wylee Doncaster</a
+              >
+              can be found in Doncaster Westfield where our team provides eye
+              tests, new prescriptions and eye care advice.
+            </li>
+            <li>
+              <b>Chadstone: </b>
+              Chadstone is a suburb approximately 20 km away from Knox
+              Westfield, in which a range of optometrists are available
+              including Oscar Wylee.
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-chadstone.html"
+                >Oscar Wylee Chadstone</a
+              >
+              is located in the Chadstone shopping centre where customers can
+              have a Medicare bulk billed eye test and shop for new frames.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="eye-health">
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_01.png'}}"
+        alt="in store"
+      />
+      <div>
+        <h3>Medicare Bulk Billed Eye Testing in Westfield Knox</h3>
+        <p>
+          Stop by our Oscar Wylee eyeglasses shop in Westfield Knox, where our
+          optometrists are available to provide a range of eye care processes
+          including eye health tests, which will assess your vision and help in
+          the diagnosis of possible eye diseases or eye conditions. With our
+          quick and efficient eye testing, you can get your eye health checked,
+          your prescription updated and order a new pair of glasses frames, all
+          on the same day at Oscar Wylee Knox! For high-quality optometrists
+          near you in the Wantirna South area, visit Oscar Wylee at Knox
+          Westfield.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test">
+      <img src="{{media url="wysiwyg/locations/services/instore_02.png"}}"
+      alt="in store" width="900" height="900">
+      <div>
+        <h3>Oscar Wylee Knox Accepts Leading Health Funds</h3>
+        <p>
+          Here at Oscar Wylee Westfield Knox, our team can help process your
+          health fund claim in-store with a valid health fund card. Our Oscar
+          Wylee Knox team can help answer any questions about what you’re
+          eligible to claim for with your health fund. You don’t have to
+          navigate the hardest parts of health insurance alone - here at Oscar
+          Wylee Knox Westfield Shopping Centre, our team are here to make sure
+          you get the eye care you need.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test" style="padding: 0px">
+      <img src="{{media url="wysiwyg/locations/services/ow_smiley.png"}}"
+      alt="Styling advice" width="900" height="900">
+      <div>
+        <h3>Find Your Perfect Frame at Oscar Wylee Knox</h3>
+        <p>
+          Oscar Wylee Knox is committed to helping you find the frames that are
+          your perfect fit. Oscar Wylee offers modern and vintage-style
+          prescription glasses, prescription sunglasses and non-prescription
+          glasses at an affordable cost. Our lenses can be customised to fit
+          your needs. Whether it’s a blue light filter or a multifocal lens, our
+          Oscar Wylee Westfield Knox team are ready to help you with any of your
+          eyesight needs.
+        </p>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=30"
+  phone_number="(03) 8806 2601"
+  direction_map="https://g.page/r/CU5bBiDYgokxEBM/review"}}
+</div>
+
+<script>
+  // acordian for store page -----------------------------
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+      this.classList.toggle("active");
+
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        this.querySelector(".icon").classList.replace("fa-minus", "fa-plus");
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        this.querySelector(".icon").classList.replace("fa-plus", "fa-minus");
+      }
+    });
+  }
+</script>
