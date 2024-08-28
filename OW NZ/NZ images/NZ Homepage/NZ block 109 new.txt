@@ -1,0 +1,43 @@
+<style>
+.collection-widget__left .widget-image .image, .collection-widget__center .widget-image .image, .collection-widget__right .widget-image .image{
+border-radius: 0 !important;
+width: fit-content;
+}
+
+.collection-widget__left .widget-content, .collection-widget__center .widget-content, .collection-widget__right .widget-content {
+top: 20% !important;
+max-width: 100%;
+min-width: 100%;
+}
+
+.collection-widget {
+    max-width: 1325px;
+}
+
+.collection-widget__left .widget-content .content__title, .collection-widget__center .widget-content .content__title, .collection-widget__right .widget-content .content__title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 0rem;
+}
+
+
+
+@media (max-width: 825px) {
+.collection-widget__left .widget-content .content__title, .collection-widget__center .widget-content .content__title, .collection-widget__right .widget-content .content__title {
+    font-size: 3rem;
+}
+}
+
+@media (max-width: 512px) {
+.collection-widget{
+margin-top: 0 !important;
+}
+}
+</style>
+<div>
+<p style="text-align: center; font-size: 15px; font-weight: bold;">We accept Southern Cross health insurance.</p>
+</div>
+<p>{{widget type="Smartosc\NewHomepage\Block\Widget\Shop" bigtitle="Find the perfect frames with 2 complete pairs from $249" imageurl_1="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Eye-Test_Info-assets/Small-homepage-banner.jpg" title_1="Book a Free Eye Test" content_1="Get a free eye test when you purchase a pair of our glasses on the same day. Otherwise, eye tests will cost $30. Book online." buttontitle_1="Book now" buttonlink_1="/booking" imageurl_2="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/banners/MoodBoost_ArtCollection1500x890.jpg" title_2="New Arrivals" content_2="Shop our new collection of the latest glasses, including prescription and non-prescriptions. With 2 pairs from $249." buttontitle_2="Explore More" buttonlink_2="glasses.html"}} {{widget type="Smartosc\NewHomepage\Block\Widget\Collection" bigtile="Discover our range" imageurl_1="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Homepage_Womens1.jpg" title_1="Women's Glasses" buttontitle_1="Shop Now" buttonlink_1="https://www.oscarwylee.co.nz/glasses/collection/womens-glasses.html" imageurl_2="https://oscarwylee.com.au/pub/media/wysiwyg/Homepage_Mens1.jpg" title_2="Men's Glasses" buttontitle_2="Shop Now" buttonlink_2="https://www.oscarwylee.co.nz/glasses/collection/mens-glasses.html" imageurl_3="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Homepage_Seniors1.jpg" title_3="Seniors " buttontitle_3="Shop Now" buttonlink_3="https://www.oscarwylee.co.nz/glasses-for-seniors.html"}}</p>
+<div id="gtx-trans" style="position: absolute; left: 83px; top: -14.0156px;">
+<div class="gtx-trans-icon">&nbsp;</div>
+</div>

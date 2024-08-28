@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      .banner-img-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .banner-img-wrapper .desktop-image {
+        max-width: 1110px;
+        max-height: 390px;
+      }
+
+      .banner-img-wrapper .mobile-image {
+        display: none;
+      }
+
+      .collection-product-gird {
+        /* padding-top: 65px; */
+        padding-bottom: 80px;
+      }
+
+      .collection-product-gird-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 47px 18px;
+      }
+
+      .collection-product-gird-box a:hover {
+        text-decoration: none;
+      }
+
+      .collection-product-gird-box-img-wrapper {
+        max-width: 100%;
+        height: 318px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8f8f8;
+      }
+
+      .collection-product-gird-box-img {
+        max-width: 100%;
+        max-height: 201px;
+      }
+
+      .collection-product-gird-box-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .collection-product-gird-box-content .product-name {
+        color: #333333;
+        font-size: 19px;
+        font-weight: 700;
+        margin: 10px 0px;
+      }
+
+      .collection-product-gird-box-content .product-name:hover {
+        text-decoration: underline;
+      }
+
+      /* 
+      .collection-product-gird-box-content .product-name a {
+          color: #333333;
+      } */
+
+      .collection-product-gird-box-content .product-price {
+        color: #000000;
+        font-size: 19px;
+        font-weight: 400;
+        margin: 0px;
+      }
+
+      .collection-product-gird-box .product-color {
+        color: #827a7a;
+        font-size: 19px;
+        font-weight: 400;
+        margin: 0px;
+      }
+
+      .collection-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 43px;
+        padding-bottom: 70px;
+        border-bottom: 1px solid silver;
+      }
+
+      .collection-content h1 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .collection-content p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        color: #333333;
+        max-width: 710px;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        .banner-img-wrapper .desktop-image {
+          max-width: 100%;
+          max-height: 390px;
+        }
+
+        .collection-product-gird-box-img-wrapper {
+          height: 230px;
+        }
+      }
+
+      @media only screen and (max-width: 900px) {
+        .collection-product-gird-box-img-wrapper {
+          height: 175px;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .collection-product-gird-box-img-wrapper {
+          height: 318px;
+        }
+
+        #maincontent {
+          padding: 0;
+        }
+
+        .collection-content,
+        .collection-product-gird {
+          margin-left: 15px;
+          margin-right: 15px;
+          padding-bottom: 45px;
+        }
+
+        .banner-img-wrapper .desktop-image {
+          display: none;
+        }
+
+        .banner-img-wrapper .mobile-image {
+          display: block;
+        }
+
+        .collection-product-gird-wrapper {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 47px 18px;
+        }
+
+        .collection-product-gird-box-img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+
+      /* bottom CTA start */
+      .ctaContainer {
+        /* max-width: 1380px; */
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: max-content;
+        column-gap: 15em;
+        row-gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 6rem;
+        padding-bottom: 10rem;
+        border-top: 1px solid #ccc;
+      }
+
+      .ctaText h2 {
+        font-weight: 700;
+        padding-left: 0.5rem;
+        padding-bottom: 1rem;
+      }
+
+      .ctaText {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+        text-align: center;
+      }
+
+      .ctaText p {
+        font-size: 16px;
+        padding-bottom: 2rem;
+      }
+
+      .btnOw {
+        background-color: #003cac;
+        width: 80%;
+        border: none;
+        color: #fff;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .btnOw:hover {
+        background-color: black;
+        box-shadow: none !important;
+        color: #ffffff !important;
+        border: none !important;
+        transition: 1s;
+      }
+
+      .adjustMargin {
+        text-align: center;
+      }
+
+      .category-view .banner-2 > .banner-item p {
+        padding: 0 3.5rem;
+      }
+
+      @media (max-width: 1024px) {
+        .ctaContainer {
+          max-width: 100%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        /* .ctaContainer {
+              max-width: 92%;
+          } */
+
+        .btnOw {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .ctaText {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          justify-content: space-between;
+          text-align: center;
+          align-items: center;
+        }
+
+        .adjustMargin {
+          text-align: center;
+          width: 100%;
+        }
+
+        .resRmvTopPaddingMargin {
+          margin-top: 0 !important;
+          padding-top: 0rem !important;
+          max-width: 270px;
+        }
+
+        .topbtmPadding {
+          padding: 7rem 0rem !important;
+        }
+
+        .ctaContainer {
+          gap: 5rem;
+        }
+
+        .ctaContainer {
+          max-width: 92%;
+        }
+      }
+
+      @media (max-width: 375px) {
+        .ctaContainer {
+          width: 100%;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          padding: 1rem 0.5rem;
+        }
+
+        .ctaText > * {
+          margin-bottom: 20px;
+        }
+
+        .btnOw {
+          width: 100%;
+        }
+      }
+
+      hr {
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 0;
+      }
+
+      /* bottom CTA end */
+
+      /* new spec image css start */
+      .spec-image {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+      }
+
+      .spec-image .desktop {
+        display: block;
+        max-width: 1110px;
+      }
+
+      .spec-image .mobile {
+        display: none;
+        max-width: 100%;
+      }
+
+      @media (max-width: 1024px) {
+        .spec-image .desktop {
+          max-width: 100%;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .spec-image {
+          margin-top: 27px;
+        }
+
+        .spec-image .desktop {
+          display: none;
+        }
+
+        .spec-image .mobile {
+          display: block;
+        }
+      }
+
+      .collection-product-gird h1 {
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        margin-top: 40px;
+      }
+
+      /* new spec image css end */
+    </style>
+  </head>
+
+  <body>
+    <section class="collection-banner">
+      <div class="banner-img-wrapper">
+        <img
+          class="desktop-image"
+          src='{{media url="wysiwyg/active-collection/FR-Active-Landing-Desktop-Banner-2580x815.jpg"}}'
+          alt="Collection Active d'OW"
+        />
+        <img
+          class="mobile-image"
+          src='{{media url="wysiwyg/active-collection/FR-Active-Landing-Mobile-Banner-770x900.jpg"}}'
+          alt="Collection Active d'OW"
+        />
+      </div>
+    </section>
+    <section class="collection-content">
+      <!-- <h1>H1 Placeholder</h1> -->
+      <p>
+        Lancez-vous au pas de course avec la collection Active d’Oscar Wylee!
+        Idéale pour rehausser votre look sportif ou accompagner vos aventures.
+      </p>
+      <!-- <p>Reach your peak
+            performance in Active. Enhanced with exciting features like anti-slip technology, impact-resistant lenses
+            and lightweight materials.</p> -->
+
+      <div class="spec-image">
+        <img
+          class="desktop"
+          src='{{media url="wysiwyg/active-collection/FR-OW-Active-Collection-Features-Desktop-2580x1035.jpg"}}'
+          alt="OW Active Collection frame features."
+        />
+        <img
+          class="mobile"
+          src='{{media url="wysiwyg/active-collection/FR-OW-Active-Collection-Features-Mobile-1000x872.jpg"}}'
+          alt="OW Active Collection frame features."
+        />
+      </div>
+    </section>
+    <section class="collection-product-gird">
+      <h1>Élaborée pour une performance optimale mais conçue avec style.</h1>
+      <div class="collection-product-gird-wrapper">
+        <div class="collection-product-gird-box">
+          <a href="https://oscarwylee.ca/fr/falcon-in-beetle-glaze">
+            <div class="collection-product-gird-box-img-wrapper">
+              <img
+                class="collection-product-gird-box-img"
+                src="{{media url='wysiwyg/active-collection/Falcon_494-Beetle-glaze-Front-Sun.png'}}"
+                alt="Falcon frame product image in the colour Beetle Glaze."
+                loading="lazy"
+              />
+            </div>
+            <div class="collection-product-gird-box-content-wrapper">
+              <div class="collection-product-gird-box-content">
+                <p class="product-name">Falcon</p>
+                <p class="product-price">199$</p>
+              </div>
+            </div>
+            <p class="product-color">Beetle Glaze</p>
+          </a>
+        </div>
+
+        <div class="collection-product-gird-box">
+          <a href="https://oscarwylee.ca/fr/goups-in-beetle-glaze">
+            <div class="collection-product-gird-box-img-wrapper">
+              <img
+                class="collection-product-gird-box-img"
+                src="{{media url='wysiwyg/active-collection/goups_494-Beetle-glaze-Front-Sun.png'}}"
+                alt="Goups frame product image in the colour Beetle Glaze."
+                loading="lazy"
+              />
+            </div>
+            <div class="collection-product-gird-box-content-wrapper">
+              <div class="collection-product-gird-box-content">
+                <p class="product-name">Goups</p>
+                <p class="product-price">129$</p>
+              </div>
+            </div>
+            <p class="product-color">Beetle Glaze</p>
+          </a>
+        </div>
+
+        <div class="collection-product-gird-box">
+          <a href="https://oscarwylee.ca/fr/james-in-obsidian-black-matte">
+            <div class="collection-product-gird-box-img-wrapper">
+              <img
+                class="collection-product-gird-box-img"
+                src="{{media url='wysiwyg/active-collection/James_016-Obsidian-Black-Matte-Front-Sun.png'}}"
+                alt="James frame product image in the colour Obsidian Black Matte."
+                loading="lazy"
+              />
+            </div>
+            <div class="collection-product-gird-box-content-wrapper">
+              <div class="collection-product-gird-box-content">
+                <p class="product-name">James</p>
+                <p class="product-price">129$</p>
+              </div>
+            </div>
+            <p class="product-color">Obsidian Black Matte</p>
+          </a>
+        </div>
+
+        <div class="collection-product-gird-box">
+          <a href="https://oscarwylee.ca/fr/james-in-neptune">
+            <div class="collection-product-gird-box-img-wrapper">
+              <img
+                class="collection-product-gird-box-img"
+                src="{{media url='wysiwyg/active-collection/James_499-Neptune-Front-Sun.png'}}"
+                alt="James frame product image in the colour Neptune."
+                loading="lazy"
+              />
+            </div>
+            <div class="collection-product-gird-box-content-wrapper">
+              <div class="collection-product-gird-box-content">
+                <p class="product-name">James</p>
+                <p class="product-price">129$</p>
+              </div>
+            </div>
+            <p class="product-color">Neptune</p>
+          </a>
+        </div>
+
+        <div class="collection-product-gird-box">
+          <a href="https://oscarwylee.ca/fr/lachie-in-neptune">
+            <div class="collection-product-gird-box-img-wrapper">
+              <img
+                class="collection-product-gird-box-img"
+                src="{{media url='wysiwyg/active-collection/Lachie_499-Neptune-Front-Sun.png'}}"
+                alt="Lachie frame product image in the colour Neptune."
+                loading="lazy"
+              />
+            </div>
+            <div class="collection-product-gird-box-content-wrapper">
+              <div class="collection-product-gird-box-content">
+                <p class="product-name">Lachie</p>
+                <p class="product-price">129$</p>
+              </div>
+            </div>
+            <p class="product-color">Neptune</p>
+          </a>
+        </div>
+
+        <div class="collection-product-gird-box">
+          <a href="https://oscarwylee.ca/fr/lachie-in-burnt-amber">
+            <div class="collection-product-gird-box-img-wrapper">
+              <img
+                class="collection-product-gird-box-img"
+                src="{{media url='wysiwyg/active-collection/Lachie_500-Burnt-Amber-Front-Sun.png'}}"
+                alt="Lachie frame product image in the colour Burnt Amber."
+                loading="lazy"
+              />
+            </div>
+            <div class="collection-product-gird-box-content-wrapper">
+              <div class="collection-product-gird-box-content">
+                <p class="product-name">Lachie</p>
+                <p class="product-price">129$</p>
+              </div>
+            </div>
+            <p class="product-color">Burnt Amber</p>
+          </a>
+        </div>
+
+        <div class="collection-product-gird-box">
+          <a href="https://oscarwylee.ca/fr/owen-in-bolt-blue">
+            <div class="collection-product-gird-box-img-wrapper">
+              <img
+                class="collection-product-gird-box-img"
+                src="{{media url='wysiwyg/active-collection/owen_273-Bolt-Blue-Front-Sun.png'}}"
+                alt="Owen frame product image in the colour Bolt Blue."
+                loading="lazy"
+              />
+            </div>
+            <div class="collection-product-gird-box-content-wrapper">
+              <div class="collection-product-gird-box-content">
+                <p class="product-name">Owen</p>
+                <p class="product-price">129$</p>
+              </div>
+            </div>
+            <p class="product-color">Bolt Blue</p>
+          </a>
+        </div>
+
+        <div class="collection-product-gird-box">
+          <a href="https://oscarwylee.ca/fr/todd-in-obsidian-black">
+            <div class="collection-product-gird-box-img-wrapper">
+              <img
+                class="collection-product-gird-box-img"
+                src="{{media url='wysiwyg/active-collection/Todd_015-Obsidian-Black-Front-Sun.png'}}"
+                alt="Todd frame product image in the colour Obsidian Black."
+                loading="lazy"
+              />
+            </div>
+            <div class="collection-product-gird-box-content-wrapper">
+              <div class="collection-product-gird-box-content">
+                <p class="product-name">Todd</p>
+                <p class="product-price">129$</p>
+              </div>
+            </div>
+            <p class="product-color">Obsidian Black</p>
+          </a>
+        </div>
+
+        <div class="collection-product-gird-box">
+          <a href="https://oscarwylee.ca/fr/todd-in-beetle-glaze">
+            <div class="collection-product-gird-box-img-wrapper">
+              <img
+                class="collection-product-gird-box-img"
+                src="{{media url='wysiwyg/active-collection/Todd_494-Beetle-glaze-Front-Sun.png'}}"
+                alt="Todd frame product image in the colour Beetle Glaze."
+                loading="lazy"
+              />
+            </div>
+            <div class="collection-product-gird-box-content-wrapper">
+              <div class="collection-product-gird-box-content">
+                <p class="product-name">Todd</p>
+                <p class="product-price">129$</p>
+              </div>
+            </div>
+            <p class="product-color">Beetle Glaze</p>
+          </a>
+        </div>
+
+        <div class="collection-product-gird-box">
+          <a href="https://oscarwylee.ca/fr/todd-in-phoenix">
+            <div class="collection-product-gird-box-img-wrapper">
+              <img
+                class="collection-product-gird-box-img"
+                src="{{media url='wysiwyg/active-collection/Todd_495-Phoenix-Front-Sun.png'}}"
+                alt="Todd frame product image in the colour Phoenix."
+                loading="lazy"
+              />
+            </div>
+            <div class="collection-product-gird-box-content-wrapper">
+              <div class="collection-product-gird-box-content">
+                <p class="product-name">Todd</p>
+                <p class="product-price">129$</p>
+              </div>
+            </div>
+            <p class="product-color">Phoenix</p>
+          </a>
+        </div>
+
+        <div class="collection-product-gird-box">
+          <a href="https://oscarwylee.ca/fr/wes-in-night-sky">
+            <div class="collection-product-gird-box-img-wrapper">
+              <img
+                class="collection-product-gird-box-img"
+                src="{{media url='wysiwyg/active-collection/Wes_497-Night-Sky-Front-Sun.png'}}"
+                alt="Wes frame product image in the colour Night Sky."
+                loading="lazy"
+              />
+            </div>
+            <div class="collection-product-gird-box-content-wrapper">
+              <div class="collection-product-gird-box-content">
+                <p class="product-name">Wes</p>
+                <p class="product-price">199$</p>
+              </div>
+            </div>
+            <p class="product-color">Night Sky</p>
+          </a>
+        </div>
+
+        <div class="collection-product-gird-box">
+          <a href="https://oscarwylee.ca/fr/yannis-in-paco-blue">
+            <div class="collection-product-gird-box-img-wrapper">
+              <img
+                class="collection-product-gird-box-img"
+                src="{{media url='wysiwyg/active-collection/yannis_271-Paco-blue-Front-Sun.png'}}"
+                alt="Yannis frame product image in the colour Paco Blue."
+                loading="lazy"
+              />
+            </div>
+            <div class="collection-product-gird-box-content-wrapper">
+              <div class="collection-product-gird-box-content">
+                <p class="product-name">Yannis</p>
+                <p class="product-price">129$</p>
+              </div>
+            </div>
+            <p class="product-color">Paco Blue</p>
+          </a>
+        </div>
+
+        <div class="collection-product-gird-box">
+          <a href="https://oscarwylee.ca/fr/nolan-sunglasses.html">
+            <div class="collection-product-gird-box-img-wrapper">
+              <img
+                class="collection-product-gird-box-img"
+                src="{{media url='wysiwyg/active-collection/Nolan_016-Obsidian-Black-Matte-Front-Sun.png'}}"
+                alt="Nolan frame product image in the colour Obsidian Black Matte."
+                loading="lazy"
+              />
+            </div>
+            <div class="collection-product-gird-box-content-wrapper">
+              <div class="collection-product-gird-box-content">
+                <p class="product-name">Nolan</p>
+                <p class="product-price">169$</p>
+              </div>
+            </div>
+            <p class="product-color">Obsidian Black Matte</p>
+          </a>
+        </div>
+
+        <div class="collection-product-gird-box">
+          <a href="https://oscarwylee.ca/fr/genevieve-sunglasses.html">
+            <div class="collection-product-gird-box-img-wrapper">
+              <img
+                class="collection-product-gird-box-img"
+                src="{{media url='wysiwyg/active-collection/Genevieve_481-Cioccolato-Front-Sun.png'}}"
+                alt="Genevieve frame product image in the colour Cioccolato."
+                loading="lazy"
+              />
+            </div>
+            <div class="collection-product-gird-box-content-wrapper">
+              <div class="collection-product-gird-box-content">
+                <p class="product-name">Genevieve</p>
+                <p class="product-price">169$</p>
+              </div>
+            </div>
+            <p class="product-color">Cioccolato</p>
+          </a>
+        </div>
+
+        <div class="collection-product-gird-box">
+          <a href="https://oscarwylee.ca/fr/genevieve-sunglasses.html">
+            <div class="collection-product-gird-box-img-wrapper">
+              <img
+                class="collection-product-gird-box-img"
+                src="{{media url='wysiwyg/active-collection/Genevieve_485-Toasted-Coconut-Front-Sun.png'}}"
+                alt="Genevieve frame product image in the colour Toasted Coconut."
+                loading="lazy"
+              />
+            </div>
+            <div class="collection-product-gird-box-content-wrapper">
+              <div class="collection-product-gird-box-content">
+                <p class="product-name">Genevieve</p>
+                <p class="product-price">169$</p>
+              </div>
+            </div>
+            <p class="product-color">Toasted Coconut</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <aside>
+      <div>
+        <div class="ctaContainer topbtmPadding">
+          <div class="ctaText">
+            <h2 class="resRmvTopPaddingMargin">
+              Il est temps de passer un examen de la vue ?
+            </h2>
+            <p>
+              Oscar Wylee propose des examens de la vue en magasin réalisés par
+              des optométristes indépendants. Visitez-nous en magasin pour vous
+              faire examiner les yeux.
+            </p>
+            <a href="/fr/booking" class="adjustMargin">
+              <button class="btnOw">Réserver un examen de la vue</button>
+            </a>
+          </div>
+          <div class="ctaText">
+            <h2 class="resRmvTopPaddingMargin">
+              Collection Active d’OW en magasin
+            </h2>
+            <p>
+              Atteignez votre performance optimale avec la collection Active,
+              conçue spécialement pour les personnes actives. Trouvez un magasin
+              près de chez vous et essayez la nouvelle collection.
+            </p>
+            <a href="/fr/locations/full-store-list.html" class="adjustMargin"
+              ><button class="btnOw">Trouver un magasin</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>

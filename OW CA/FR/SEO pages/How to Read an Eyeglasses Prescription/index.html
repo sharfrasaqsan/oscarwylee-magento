@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="article-banner">
+      <img
+        src="./assets/Blue_Light_WebBanner_1640x840px.jpeg"
+        class="banner desktop-banner"
+        alt="Lire une ordonnance de lunettes"
+      />
+      <img
+        src="./assets/Blue_Light_MobBanner_770x900px.jpg"
+        class="mobile-banner"
+        alt="Lire une ordonnance de lunettes"
+      />
+    </div>
+
+    <h1 class="title">Comment lire une ordonnance de lunettes</h1>
+
+    <!-- publish date start -->
+    <div class="intro-section publsih-date">
+      <div class="publsih-date-wrapper">
+        <p>Publié le 11 Mars 2024</p>
+        <!-- lang switch start -->
+        <div class="lang-sw">
+          <div class="language-switch">
+            <div class="language-switch-current" onclick="toggleVisibility()">
+              <!-- flag -->
+              <img
+                src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                alt="Comment lire une ordonnance de lunettes en français canadien"
+              />
+              Français canadien
+              <!-- dropdown icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="5"
+                viewBox="0 0 8 5"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="language-switch-dropdown-itmes-wrapper"
+              id="secondBox"
+              style="display: none"
+            >
+              <div class="language-switch-dropdown-itmes">
+                <!-- flag -->
+                <img
+                  src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+                  alt="Comment lire une ordonnance de lunettes en anglais australien"
+                />
+                <a
+                  href="https://www.oscarwylee.com.au/glasses/eye/reading-eyeglasses-prescription"
+                >
+                  Australie</a
+                >
+              </div>
+
+              <div class="language-switch-dropdown-itmes">
+                <!-- flag -->
+                <img
+                  src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                  alt="Comment lire une ordonnance de lunettes en anglais canadien"
+                />
+                <a
+                  href="https://oscarwylee.ca/glasses/eye/reading-eyeglasses-prescription"
+                >
+                  Canada</a
+                >
+              </div>
+
+              <div class="language-switch-dropdown-itmes">
+                <!-- flag -->
+                <img
+                  src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                  alt="Comment lire une ordonnance de lunettes en français canadien"
+                />
+                <a
+                  href="https:/www.oscarwylee.com.au/glasses/eye/reading-eyeglasses-prescription"
+                >
+                  Français canadien
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- publish date end -->
+
+    <div class="intro-section">
+      <p class="para-content">{content}</p>
+      <p class="para-content">{content}</p>
+      <p class="para-content">{content}</p>
+
+      <ul class="unordered-list">
+        <li>
+          <b
+            >Se familiariser avec les abréviations d’une ordonnance de lunettes
+            :</b
+          >
+          Se familiariser avec les abréviations d’une ordonnance de lunettes
+          peut vous aider à comprendre comment votre vision est corrigée.
+          Certaines des abréviations comprennent SPH, CYL and PD.
+        </li>
+      </ul>
+    </div>
+
+    <!--  CTA aside-->
+    <aside class="intro-section book-section">
+      <div class="book-section-left">
+        <p class="heading">
+          Donnez la priorité à votre santé oculaire chez Oscar Wylee
+        </p>
+        <p style="font-size: 16px">
+          En magasin, nous avons des optométristes compétents et indépendants
+          qui réalisent des examens de la vue complets.
+        </p>
+      </div>
+      <div class="book-section-right">
+        <a href="https://www.oscarwylee.ca/fr/booking"
+          ><button class="btnOw">Réservez un examen de la vue</button></a
+        >
+      </div>
+    </aside>
+    <!--  CTA aside-->
+
+    <!-- a liks start -->
+    <div class="a-links">
+      <nav>
+        <a href="#instructions">Instructions</a>
+        <a href="#definition">Définition</a>
+        <a href="#myopie">Myopie</a>
+        <a href="#hypermétropie">Hypermétropie</a>
+        <a href="#astigmatisme">Astigmatisme</a>
+      </nav>
+    </div>
+    <!-- a liks end -->
+    <div class="main-section" id="main-cont-wrapper">
+      <div class="main-section">
+        <section class="square-section" id="instructions">
+          <h2 class="subtitle">
+            1. Se familiariser avec les abréviations d’une ordonnance de
+            lunettes
+          </h2>
+          <p class="para-content">{content}</p>
+
+          <ul class="unordered-list">
+            <li>
+              <b>SPH (Sphère) :</b> SPH est l’abréviation de sphère. Sur une
+              ordonnance de lunettes, SPH indique les degrés de myopie et/ou
+              d’hypermétropie myopie d’un patient. Ces degrés sont notés sous
+              forme d’un nombre représentant la puissance des verres en
+              dioptries. La sphère est notée par le symbole plus (+) pour
+              l’hypermétropie et le symbole moins (-) pour la myopie. Ces
+              nombres positifs ou négatifs détermineront la puissance des verres
+              requis pour corriger la vision d’un patient.
+            </li>
+          </ul>
+
+          <p class="para-content">{content}</p>
+
+          <div class="products-section" style="width: 60%; margin: 40px auto">
+            <div class="individual-product" style="margin-bottom: 0px">
+              <img
+                src="./assets/Blue_Light_Image10_900x600.jpg"
+                class="product-image"
+                alt="Les abréviations sur une ordonnance de lunettes d’Oscar Wylee"
+              />
+            </div>
+          </div>
+
+          <div class="products-section-mobile" style="margin-bottom: 40px">
+            <div class="individual-product">
+              <img
+                src="./assets/Blue_Light_Image10_900x600.jpg"
+                class="product-image"
+                alt="Les abréviations sur une ordonnance de lunettes d’Oscar Wylee"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="square-section">
+          <h2 class="subtitle">2. Identifier l’œil droit et l’œil gauche</h2>
+          <p class="para-content">{content}</p>
+
+          <p class="para-content">{content}</p>
+
+          <div class="products-section" style="width: 60%; margin: 40px auto">
+            <div class="individual-product" style="margin-bottom: 0px">
+              <img
+                src="./assets/Blue_Light_Image10_900x600.jpg"
+                class="product-image"
+                alt="L’œil droit et l’œil gauche sur une ordonnance de lunettes d’Oscar Wylee"
+              />
+            </div>
+          </div>
+
+          <div class="products-section-mobile" style="margin-bottom: 40px">
+            <div class="individual-product">
+              <img
+                src="./assets/Blue_Light_Image10_900x600.jpg"
+                class="product-image"
+                alt="L’œil droit et l’œil gauche sur une ordonnance de lunettes d’Oscar Wylee"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="square-section">
+          <h2 class="subtitle">
+            3. Comprendre l’échelle ou la plage d’une ordonnance de lunettes
+          </h2>
+          <p class="para-content">{content}</p>
+
+          <p class="para-content">{content}</p>
+
+          <div class="products-section" style="width: 60%; margin: 40px auto">
+            <div class="individual-product" style="margin-bottom: 0px">
+              <img
+                src="./assets/Blue_Light_Image10_900x600.jpg"
+                class="product-image"
+                alt="Une échelle sur une ordonnance de lunettes"
+              />
+            </div>
+          </div>
+
+          <div class="products-section-mobile" style="margin-bottom: 40px">
+            <div class="individual-product">
+              <img
+                src="./assets/Blue_Light_Image10_900x600.jpg"
+                class="product-image"
+                alt="Une échelle sur une ordonnance de lunettes"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="square-section">
+          <h2 class="subtitle">
+            4. Rechercher les valeurs supplémentaires d’une ordonnance de
+            lunettes
+          </h2>
+          <p class="para-content">{content}</p>
+
+          <ul class="unordered-list">
+            <li>
+              <b>Axe :</b> L’axe est un nombre compris entre 0 et 180 degrés qui
+              indique l’angle requis afin de corriger l’astigmatisme. L’axe et
+              le cylindre (CYL) ne peuvent pas exister l’un sans l’autre car ils
+              travaillent ensemble pour corriger l’astigmatisme.
+            </li>
+          </ul>
+
+          <p class="para-content">{content}</p>
+
+          <div class="products-section" style="width: 60%; margin: 40px auto">
+            <div class="individual-product" style="margin-bottom: 0px">
+              <img
+                src="./assets/Blue_Light_Image10_900x600.jpg"
+                class="product-image"
+                alt="Valeurs supplémentaires sur une ordonnance de lunettes d’Oscar Wylee"
+              />
+            </div>
+          </div>
+
+          <div class="products-section-mobile" style="margin-bottom: 40px">
+            <div class="individual-product">
+              <img
+                src="./assets/Blue_Light_Image10_900x600.jpg"
+                class="product-image"
+                alt="Valeurs supplémentaires sur une ordonnance de lunettes d’Oscar Wylee"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="square-section">
+          <h2 class="subtitle" id="définition">
+            Qu’est-ce qu’une ordonnance de lunettes ?
+          </h2>
+          <p class="para-content">{content}</p>
+
+          <p class="para-content">{content}</p>
+
+          <div class="sub-div">
+            <h3 class="con-title">
+              En quoi consiste une ordonnance de lunettes ?
+            </h3>
+
+            <p class="para-content">{content}</p>
+          </div>
+
+          <div class="sub-div">
+            <h3 class="con-title">
+              Quelle est l’importance d’une ordonnance de lunettes ?
+            </h3>
+
+            <p class="para-content">{content}</p>
+          </div>
+        </section>
+
+        <!--  CTA aside-->
+        <aside class="intro-section book-section">
+          <div class="book-section-left">
+            <p class="heading">Trouvez votre magasin Oscar Wylee local</p>
+            <p style="font-size: 16px">
+              Consultez notre équipe pour tous vos besoins en soins oculaires, y
+              compris les examens de la vue et les montures tendance.
+            </p>
+          </div>
+          <div class="book-section-right">
+            <a href="https://www.oscarwylee.ca/fr/locations/"
+              ><button class="btnOw">Trouver un magasin</button></a
+            >
+          </div>
+        </aside>
+        <!--  CTA aside-->
+
+        <section class="square-section">
+          <h2 class="subtitle">
+            Qu’est-ce qu’une ordonnance de lunettes normale ?
+          </h2>
+          <p class="para-content">{content}</p>
+
+          <p class="para-content">{content}</p>
+
+          <div class="sub-div">
+            <h3 class="con-title">
+              Que signifie + 1.25 sur une ordonnance de lunettes ?
+            </h3>
+
+            <p class="para-content">{content}</p>
+          </div>
+
+          <div class="sub-div" id="myopie">
+            <h3 class="con-title">
+              Qu’est-ce qu’une ordonnance de lunettes pour la myopie ?
+            </h3>
+
+            <p class="para-content">{content}</p>
+            <p class="para-content">{content}</p>
+          </div>
+
+          <div class="sub-div" id="hypermétropie">
+            <h3 class="con-title">
+              Qu’est-ce qu’une ordonnance de lunettes pour l’hypermétropie ?
+            </h3>
+
+            <p class="para-content">{content}</p>
+            <p class="para-content">{content}</p>
+          </div>
+
+          <div class="sub-div" id="astigmatisme">
+            <h3 class="con-title">
+              Qu’est-ce qu’une ordonnance de lunettes pour astigmatisme?
+            </h3>
+
+            <p class="para-content">{content}</p>
+            <p class="para-content">{content}</p>
+          </div>
+
+          <div class="sub-div">
+            <h3 class="con-title">
+              Qu’est ce qui considéré comme une mauvaise ordonnance de lunettes
+              ?
+            </h3>
+
+            <p class="para-content">{content}</p>
+          </div>
+        </section>
+
+        <section class="square-section">
+          <h2 class="subtitle">
+            Quelle est la durée de validité d’une ordonnance de lunettes ?
+          </h2>
+          <p class="para-content">{content}</p>
+
+          <div class="sub-div">
+            <h3 class="con-title">
+              Quand faut-il mettre à jour une ordonnance de lunettes ?
+            </h3>
+
+            <p class="para-content">{content}</p>
+            <p class="para-content">{content}</p>
+
+            <div class="products-section" style="width: 60%; margin: 40px auto">
+              <div class="individual-product" style="margin-bottom: 0px">
+                <img
+                  src="./assets/Blue_Light_Image10_900x600.jpg"
+                  class="product-image"
+                  alt="Une personne portant des lunettes Oscar Wylee"
+                />
+              </div>
+            </div>
+
+            <div class="products-section-mobile" style="margin-bottom: 40px">
+              <div class="individual-product">
+                <img
+                  src="./assets/Blue_Light_Image10_900x600.jpg"
+                  class="product-image"
+                  alt="Une personne portant des lunettes Oscar Wylee"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-div">
+            <h3 class="con-title">
+              À quelle fréquence une ordonnance de lunettes va-t-elle changer ?
+            </h3>
+
+            <p class="para-content">{content}</p>
+            <p class="para-content">{content}</p>
+
+            <div class="sub-div">
+              <h4 class="con-title">
+                Le port de lunettes avec une ordonnance plus faible peut-il
+                endommager les yeux ?
+              </h4>
+
+              <p class="para-content">{content}</p>
+            </div>
+
+            <div class="sub-div">
+              <h4 class="con-title">
+                Puis-je utiliser une ordonnance de lunettes périmée pour acheter
+                de nouvelles lunettes ?
+              </h4>
+
+              <p class="para-content">{content}</p>
+              <p class="para-content">{content}</p>
+            </div>
+          </div>
+
+          <!-- lang switch start -->
+          <div class="bottom-lag-sw">
+            <p class="para-content">
+              Lisez Comment lire une ordonnance de lunettes et régions où Oscar
+              Wylee est présent
+            </p>
+            <div class="lang-sw bottom">
+              <div class="language-switch">
+                <div
+                  class="language-switch-current"
+                  id="language-switch-current"
+                  onclick="toggleVisibilityBtnTwo()"
+                >
+                  <!-- flag -->
+                  <img
+                    src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                    alt="Comment lire une ordonnance de lunettes en français canadien"
+                  />
+                  Français canadien
+                  <!-- dropdown icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="5"
+                    viewBox="0 0 8 5"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z"
+                      fill="black"
+                    ></path>
+                  </svg>
+                </div>
+                <div
+                  class="language-switch-dropdown-itmes-wrapper"
+                  id="language-switch-dropdown-itmes-wrapper"
+                  style="display: none"
+                >
+                  <div class="language-switch-dropdown-itmes">
+                    <!-- flag -->
+                    <img
+                      src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+                      alt="Comment lire une ordonnance de lunettes et Android en anglais australien"
+                    />
+                    <a
+                      href="https://www.oscarwylee.com.au/glasses/eye/reading-eyeglasses-prescription"
+                    >
+                      Australie
+                    </a>
+                  </div>
+
+                  <div class="language-switch-dropdown-itmes">
+                    <!-- flag -->
+                    <img
+                      src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                      alt="Comment lire une ordonnance de lunettes en anglais canadien"
+                    />
+                    <a
+                      href="https://oscarwylee.ca/glasses/eye/reading-eyeglasses-prescription"
+                    >
+                      Canada
+                    </a>
+                  </div>
+
+                  <div class="language-switch-dropdown-itmes">
+                    <!-- flag -->
+                    <img
+                      src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                      alt="Comment lire une ordonnance de lunettes en français canadien"
+                    />
+                    <a
+                      href="https:/www.oscarwylee.com.au/glasses/eye/reading-eyeglasses-prescription"
+                    >
+                      Français canadien
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- lang switch end -->
+        </section>
+      </div>
+      <!-- add bottom CTA section here -->
+      <aside class="context">
+        <!-- Location and booking  -->
+        <div class="location" style="border-top: none">
+          <div class="locationText">
+            <p class="heading">L’assurance santé chez Oscar Wylee</p>
+            <p class="contents">
+              Chez Oscar Wylee Canada, nous pouvons facturer directement les
+              principales compagnies d’assurance avec eClaims.
+            </p>
+            <div class="allButton">
+              <a href="https://oscarwylee.ca/fr/health-insurance/">
+                <button class="btnOw">Découvrir les régimes de santé</button>
+              </a>
+            </div>
+          </div>
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/cta/find-a-store.jpg'}}"
+            alt="find a location image"
+            class="locationImage"
+          />
+        </div>
+        <div class="location item1">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/cta/find_a_store_1_1__1.png'}}"
+            alt="book eye test image"
+            class="locationImage"
+          />
+          <div class="locationText">
+            <p class="heading">Êtes-vous prêts pour un examen de la vue ?</p>
+            <p class="contents">
+              Restez en contrôle de votre santé oculaire en réservant des
+              examens de la vue réguliers.
+            </p>
+            <div class="allButton">
+              <a href="https://oscarwylee.ca/fr/booking">
+                <button class="btnOw">Réserver un examen de la vue</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <script>
+      const productContainers = [
+        ...document.querySelectorAll(".product-container"),
+      ];
+      const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
+      const preBtn = [...document.querySelectorAll(".pre-btn")];
+
+      productContainers.forEach((item, i) => {
+        let containerDimensions = item.getBoundingClientRect();
+        let containerWidth = containerDimensions.width;
+
+        nxtBtn[i].addEventListener("click", () => {
+          item.scrollLeft += containerWidth;
+        });
+
+        preBtn[i].addEventListener("click", () => {
+          item.scrollLeft -= containerWidth;
+        });
+      });
+
+      // top lang-sw
+      document.addEventListener("click", function (event) {
+        var secondBox = document.querySelector(
+          ".language-switch-dropdown-itmes-wrapper"
+        );
+        var firstBox = document.querySelector(".language-switch-current");
+
+        // Check if the clicked element is outside the second box and the first box
+        if (
+          !secondBox.contains(event.target) &&
+          !firstBox.contains(event.target)
+        ) {
+          secondBox.style.display = "none";
+        }
+      });
+
+      function toggleVisibility() {
+        var secondBox = document.querySelector(
+          ".language-switch-dropdown-itmes-wrapper"
+        );
+        secondBox.style.display =
+          secondBox.style.display === "none" ? "flex" : "none";
+      }
+
+      // bottom lang-sw
+      document.addEventListener("click", function (event) {
+        var secondBox = document.querySelector(
+          "#language-switch-dropdown-itmes-wrapper"
+        );
+        var firstBox = document.querySelector("#language-switch-current");
+
+        // Check if the clicked element is outside the second box and the first box
+        if (
+          !secondBox.contains(event.target) &&
+          !firstBox.contains(event.target)
+        ) {
+          secondBox.style.display = "none";
+        }
+      });
+
+      function toggleVisibilityBtnTwo() {
+        var secondBox = document.querySelector(
+          "#language-switch-dropdown-itmes-wrapper"
+        );
+        secondBox.style.display =
+          secondBox.style.display === "none" ? "flex" : "none";
+      }
+    </script>
+  </body>
+</html>

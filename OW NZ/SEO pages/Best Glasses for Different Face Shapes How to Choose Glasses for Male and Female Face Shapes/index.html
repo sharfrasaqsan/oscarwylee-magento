@@ -1,0 +1,2955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+
+      * {
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* color: #333333; */
+        line-height: 1.3em;
+        scroll-behavior: smooth;
+      }
+
+      #maincontent {
+        padding: 0;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+      }
+
+      .article-banner {
+        height: 450px;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        padding: 0px;
+        overflow-x: hidden;
+      }
+
+      .banner {
+        width: auto;
+        max-height: 450px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+      }
+
+      .mobile-banner {
+        display: none;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 28px;
+        }
+      }
+
+      h2 {
+        font-size: 2.6rem;
+        line-height: 1.1;
+        width: 100%;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        line-height: 1.1;
+        width: 100%;
+      }
+
+      h4 {
+        font-size: 16px;
+        width: 100%;
+      }
+
+      h5 {
+        font-size: 16px;
+        width: 100%;
+      }
+
+      .title {
+        /* border-bottom: 1px solid silver; */
+        /* padding: 2.5rem 3rem; */
+        padding: 11px 3rem;
+        /* margin: 2.5rem 3rem; */
+        margin: 0px;
+        margin-top: 0;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .subtitle {
+        padding: 2rem;
+        margin: 2rem 0;
+        border-left: 10px solid #003cac;
+        padding: 1rem;
+        font-weight: 700;
+      }
+
+      .linkTo {
+        color: #003cac;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+
+      .intro-section {
+        margin: 3rem;
+        border-bottom: 1px solid silver;
+      }
+
+      .main-section section {
+        margin: 3rem;
+        border-bottom: 1px solid silver;
+      }
+
+      .section-border-bottom {
+        border-bottom: 1px solid silver;
+        margin: 3rem;
+      }
+
+      .book-section {
+        display: flex;
+        padding-left: 1em;
+        padding-bottom: 0.5em;
+        padding-top: 0em;
+      }
+
+      .book-section p {
+        margin-bottom: 1.5em;
+      }
+
+      .book-section-left {
+        width: 50%;
+        margin-left: 0;
+        padding-left: 1.5em;
+      }
+
+      .book-section-left .heading {
+        font-weight: 500;
+        margin-bottom: 0.5em;
+        font-size: 1.25em;
+        padding-bottom: 1em;
+      }
+
+      .book-section-right {
+        display: flex;
+        margin: auto auto;
+        width: 30%;
+      }
+
+      .book-section-right a {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+      }
+
+      .btnOw:hover {
+        background-color: black;
+        box-shadow: none !important;
+        color: #ffffff !important;
+        border: none !important;
+      }
+
+      .btnOw {
+        background-color: #003cac;
+        width: 100%;
+        /* padding: 0px 50%; */
+        border: none;
+        color: #fff;
+        height: 2em;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        cursor: pointer;
+        transition: all 1s ease;
+        letter-spacing: 1px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+      }
+
+      .para-content {
+        /* margin-top: 1em; */
+        margin-bottom: 2em;
+        font-size: 16px;
+        text-align: justify;
+      }
+
+      .list-title {
+        font-weight: 700;
+      }
+
+      .ordered-list,
+      .unordered-list {
+        padding-left: 4rem;
+        margin-top: 2em;
+      }
+
+      .unordered-list {
+        margin-bottom: 2em;
+      }
+
+      .ordered-list li,
+      .unordered-list li {
+        margin-bottom: 0.8em;
+        font-size: 16px;
+        text-align: left;
+      }
+
+      .pro-con {
+        display: flex;
+        gap: 1em;
+        margin-bottom: 2em;
+      }
+
+      .pro-con li {
+        margin-bottom: 1em;
+      }
+
+      .pro-title,
+      .con-title,
+      .sub-list-title,
+      .sub-div-title,
+      .sub-div-h4 {
+        border-left: 10px solid #b1b4b2;
+        padding: 0rem 1rem;
+        margin-bottom: 2em;
+        margin-top: 2em;
+      }
+
+      .sub-list-title {
+        font-size: medium;
+        margin-left: 3em;
+      }
+
+      .pro-list,
+      .con-list {
+        margin-left: 2em;
+      }
+
+      .pro-section,
+      .con-section {
+        flex: 1 1 0;
+      }
+
+      .sub-div {
+        margin-left: 2em;
+      }
+
+      .sub-div .para-content {
+        margin-left: 0;
+      }
+
+      .grid-image {
+        width: 100%;
+        margin-bottom: 0.3em;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        column-gap: 3em;
+        width: 70%;
+        margin: 2em auto;
+      }
+
+      .grid-item {
+        /* text-align: center; */
+        width: 100%;
+      }
+
+      .grid-item span {
+        font-style: italic;
+        font-weight: 700;
+        font-size: x-small;
+      }
+
+      .grid-text {
+        text-align: center;
+        font-size: x-small;
+        margin-bottom: 2em;
+      }
+
+      .grid-title {
+        text-align: center;
+        margin-top: 1em;
+      }
+
+      .flex-wrapper {
+        display: flex;
+        margin-bottom: 2em;
+      }
+
+      .flex-image {
+        width: 80%;
+        display: flex;
+        margin: 2em auto;
+        margin-top: -0.5em;
+        min-width: 300px;
+        margin-left: 2em;
+      }
+
+      .hightlight-list {
+        font-weight: 600;
+      }
+
+      .example-images {
+        row-gap: 2em;
+      }
+
+      .product-image {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+      }
+
+      .products-section {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 1em;
+      }
+
+      .individual-product {
+        border-right: 1px solid silver;
+        margin-bottom: 2em;
+        display: flex;
+        /* margin-left: 1em; */
+      }
+
+      .product-des {
+        background-color: #ece5f2;
+        border-radius: 25px;
+        padding: 1em;
+        text-align: center;
+        font-weight: 500;
+        width: 92%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+      }
+
+      .individual-product:nth-child(3) {
+        border: none;
+      }
+
+      .product-name,
+      .product-price {
+        text-align: center;
+      }
+
+      .product-button {
+        margin: 0 auto;
+        display: flex;
+        padding: 5px 30px;
+        background-color: black;
+        color: white;
+        font-weight: 600;
+        border: none;
+        border-radius: 25px;
+        margin-top: 1em;
+      }
+
+      .two-pairs-price,
+      .three-pairs-price {
+        text-align: center;
+        /* margin-top: 2em; */
+        color: white;
+        font-weight: 700;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        margin-right: 1em;
+      }
+
+      .two-pairs-price {
+        margin-bottom: 1em;
+      }
+
+      .two-pairs-price span,
+      .three-pairs-price span {
+        display: block;
+      }
+
+      .two-pairs-price {
+        background-color: #003cac;
+      }
+
+      .three-pairs-price {
+        background-color: black;
+      }
+
+      .from {
+        font-weight: 300;
+        color: white;
+        line-height: 10px;
+      }
+
+      .context {
+        padding: 0 3rem;
+      }
+
+      .location {
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: max-content;
+        column-gap: 50px;
+        row-gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0rem;
+        padding-top: 0;
+        margin-top: -1em;
+        margin-bottom: 1.5em;
+        border-bottom: 1px solid silver;
+      }
+
+      .location .heading {
+        font-weight: 700;
+        font-size: 1.8em;
+      }
+
+      .item1 {
+        border: none;
+      }
+
+      .locationText .heading {
+        font-weight: 500;
+        font-size: 1.25em;
+      }
+
+      .locationText {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 1.5em;
+      }
+
+      .locationText p {
+        font-size: 16px;
+        margin-top: 2em;
+      }
+
+      .locationImage {
+        width: 100%;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      }
+
+      .allButton {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .allButton a {
+        text-decoration: none;
+      }
+
+      .allButton .btnOw {
+        width: 70%;
+        margin-left: 0;
+      }
+
+      .item1 {
+        padding-top: 2em;
+      }
+
+      .products-section-mobile {
+        display: none;
+      }
+
+      .nine-products-section-mobile {
+        display: none;
+      }
+
+      .nine-products-section {
+        display: flex;
+        overflow-x: scroll;
+      }
+
+      .nine-products-section img {
+        width: 30%;
+        border-right: 1px solid silver;
+      }
+
+      .nine-products-section img:last-child {
+        border: none;
+      }
+
+      .nine-products-section-gender {
+        margin-left: 0;
+      }
+
+      .grid-container-mobile {
+        display: none;
+      }
+
+      .contents {
+        margin-bottom: 2em;
+      }
+
+      .pre-btn,
+      .nxt-btn {
+        border: none;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0) 0%,
+          #fff 100%
+        );
+        cursor: pointer;
+        z-index: 8;
+        padding: 0;
+      }
+
+      .pre-btn {
+        left: 0;
+        transform: rotate(180deg);
+      }
+
+      .nxt-btn {
+        right: 0;
+      }
+
+      .pre-btn img,
+      .nxt-btn img {
+        opacity: 0.2;
+        width: 1em;
+      }
+
+      .pre-btn:hover img,
+      .nxt-btn:hover img {
+        opacity: 1;
+      }
+
+      .pre-btn:hover {
+        background-color: white;
+        border: none;
+      }
+
+      .nxt-btn:hover {
+        background-color: white;
+        border: none;
+      }
+
+      .nine-products-section {
+        position: relative;
+        overflow: hidden;
+        padding: 20px;
+      }
+
+      .product-container {
+        /* padding: 0 10vw; */
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+      }
+
+      .product-container a {
+        display: contents;
+      }
+
+      @media screen and (max-width: 440px) {
+        * {
+          line-height: 1.5em;
+        }
+
+        .start-with-para {
+          margin-top: 2em !important;
+        }
+
+        .title {
+          margin: 1em 0.5em;
+          padding: 0em;
+          /* padding-bottom: 0.5em; */
+          white-space: normal;
+          border: none;
+        }
+
+        .contents {
+          margin-bottom: 2em;
+        }
+
+        .intro-section,
+        .main-section section {
+          margin: 0 1em;
+        }
+
+        .ordered-list,
+        .unordered-list {
+          padding-left: 1.2em;
+        }
+
+        .pro-con {
+          flex-direction: column;
+        }
+
+        .flex-wrapper {
+          flex-direction: column;
+        }
+
+        .example-images {
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+          margin-bottom: 2em;
+        }
+
+        .grid-item {
+          width: 400px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+
+        .product-image {
+          width: 100%;
+        }
+
+        .sub-div {
+          margin-left: 0em;
+        }
+
+        .book-section {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+        }
+
+        .book-section-left {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
+        .book-section-left p {
+          margin-right: 1em;
+          text-align: justify;
+          margin-left: 1em;
+        }
+
+        .book-section-left .heading {
+          text-align: center;
+          margin-top: 1.6em;
+          font-size: 1.25em;
+          margin-left: auto;
+          margin-right: auto;
+          width: 278px;
+        }
+
+        .book-section-right {
+          width: 90%;
+          margin-bottom: 1em;
+        }
+
+        .desktop-banner {
+          display: none;
+        }
+
+        .mobile-banner {
+          display: block;
+          max-width: 100%;
+          padding: 0;
+        }
+
+        .products-section {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .individual-product {
+          border-right: none;
+          border-bottom: 1px solid silver;
+          padding-bottom: 0.5em;
+          margin-bottom: 0;
+          width: 90%;
+          flex-direction: column;
+        }
+
+        .individual-product:nth-child(3) {
+          border-bottom: 1px solid silver;
+        }
+
+        .grid-image {
+          width: 90%;
+          display: flex;
+          margin: 0px auto;
+        }
+
+        .location {
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 5em;
+        }
+
+        .locationText .heading {
+          text-size: 1.25em;
+          margin-top: 1.9em;
+          margin-bottom: -0.5em;
+        }
+
+        .allButton .btnOw {
+          width: 100%;
+        }
+
+        .item1 {
+          -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+          border: none;
+          padding-bottom: 0;
+          padding-top: 3.5em;
+        }
+
+        .locationText .heading {
+          text-align: center;
+        }
+
+        .item1 .locationImage,
+        .item1 .locationText {
+          -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+        }
+
+        .products-section {
+          display: none;
+        }
+
+        .nine-products-section {
+          display: none;
+        }
+
+        .individual-product {
+          display: flex;
+          margin: auto auto;
+        }
+
+        .products-section-mobile {
+          display: block;
+        }
+
+        .nine-products-section-mobile {
+          display: flex;
+          overflow-x: scroll;
+        }
+
+        .nine-products-section-mobile::-webkit-scrollbar {
+          display: none;
+        }
+
+        .nine-products-section-mobile img {
+          width: 80%;
+        }
+
+        .grid-container-mobile {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .grid-item span {
+          display: flex;
+          margin: 0 2em;
+        }
+
+        .grid-container-desktop {
+          display: none;
+        }
+
+        .product-container-mobile {
+          display: flex;
+          overflow-x: auto;
+        }
+
+        .nine-products-section-mobile {
+          position: relative;
+          overflow: hidden;
+          padding: 10px;
+        }
+
+        .pre-btn,
+        .nxt-btn {
+          width: 3vw;
+          height: 0;
+          top: 50%;
+        }
+
+        #main-cont-wrapper {
+          margin: 0em 1em;
+        }
+
+        .para-content {
+          hyphens: auto;
+          -webkit-hyphens: auto;
+          word-spacing: -0.05em;
+        }
+
+        .mobile-word-space {
+          hyphens: auto;
+          -webkit-hyphens: auto;
+          word-spacing: -0.1em !important;
+          text-align: justify;
+          font-size: 16px;
+        }
+
+        h5 {
+          font-size: 15px;
+        }
+
+        .btn-helth-funds {
+          height: 60px;
+          line-height: 20px;
+        }
+      }
+
+      /* big image */
+      .big_img_wapper {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+      }
+
+      .big_img {
+        border-radius: 8px;
+        width: 80%;
+      }
+
+      /* image with content section */
+      .image_with_content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .para_wapper {
+        width: 50%;
+      }
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (max-width: 768px) {
+        .image_with_content {
+          flex-direction: column;
+          align-items: normal;
+        }
+
+        .para_wapper {
+          width: 100%;
+        }
+
+        .big_img_wapper {
+          width: 100%;
+        }
+
+        .big_img {
+          width: 100%;
+        }
+
+        .article-banner {
+          height: 500px;
+        }
+      }
+
+      /* new template styles start */
+      /* publish date start */
+      .intro-section.publsih-date {
+        margin: 0rem 3rem;
+        padding-top: 12px;
+        padding-bottom: 20px;
+      }
+
+      .publsih-date-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .publsih-date-wrapper p {
+        margin-bottom: 0px;
+        color: #003cac;
+        /* font-weight: 700; */
+      }
+
+      .publsih-date-wrapper p:first-child {
+        border-right: 1.5px solid silver;
+        margin-right: 20px;
+        padding-right: 20px;
+      }
+
+      @media only screen and (max-width: 500px) {
+        .intro-section.publsih-date {
+          margin: 0em 1em 2em 1em;
+          padding-bottom: 10px;
+        }
+
+        .publsih-date-wrapper {
+          display: inline;
+        }
+
+        .publsih-date-wrapper p {
+          margin-bottom: 8px;
+          color: #003cac;
+          font-weight: 700;
+        }
+
+        .publsih-date-wrapper p:first-child {
+          border-right: 0px;
+          margin-right: 0px;
+          padding-right: 0px;
+        }
+      }
+
+      /* publish date end */
+
+      /* top lang-sw start */
+      .lang-sw {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 0px;
+      }
+
+      .lang-sw img {
+        max-width: 33px;
+      }
+
+      .language-switch {
+        width: 164px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        padding: 4px 0px;
+        position: relative;
+        margin-right: 0px;
+        margin-left: 20px;
+      }
+
+      .language-switch-current {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 5px;
+        width: 100%;
+        justify-content: space-around;
+        border: 1px solid black;
+        padding: 4px 0px;
+        cursor: pointer;
+      }
+
+      .language-switch-dropdown-itmes-wrapper {
+        border: 1px solid;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5px;
+        position: absolute;
+        top: 33px;
+        background-color: #fff;
+      }
+
+      .language-switch-dropdown-itmes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        gap: 9px;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        .language-switch {
+          margin-right: 65px;
+        }
+      }
+
+      @media only screen and (max-width: 820px) {
+        .language-switch {
+          margin-right: 3rem;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .lang-sw {
+          align-items: flex-start;
+        }
+
+        .language-switch {
+          margin-right: 0em;
+          margin-left: 0em;
+        }
+
+        .language-switch-dropdown-itmes-wrapper {
+          top: 40px;
+        }
+      }
+
+      /* top lang-sw end */
+
+      /* a links start */
+      .a-links {
+        margin: 3rem;
+      }
+
+      .a-links a {
+        color: #003cac;
+        font-weight: 700;
+        margin-right: 20px;
+        padding-right: 20px;
+        border-right: 1.5px solid silver;
+      }
+
+      .a-links a:last-child {
+        border-right: 0px;
+      }
+
+      @media only screen and (max-width: 820px) {
+        .a-links {
+          margin: 0rem;
+        }
+
+        .a-links nav {
+          margin: 3rem;
+          display: flex;
+          flex-wrap: wrap;
+          row-gap: 10px;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .a-links {
+          margin: 3rem 0em;
+        }
+
+        .a-links nav {
+          margin: 3rem 1em;
+          display: flex;
+          flex-wrap: wrap;
+          row-gap: 10px;
+        }
+      }
+
+      /* a link end */
+
+      /* bottom lang-sw start */
+      .bottom .lang-sw {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 0px;
+      }
+
+      .bottom .language-switch {
+        width: 164px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        padding: 4px 0px;
+        position: relative;
+        margin-right: 0px;
+        margin-left: 0px;
+      }
+
+      .language-switch-current {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 5px;
+        width: 100%;
+        justify-content: space-around;
+        border: 1px solid black;
+        padding: 4px 0px;
+        cursor: pointer;
+      }
+
+      .language-switch-dropdown-itmes-wrapper {
+        border: 1px solid;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5px;
+        position: absolute;
+        top: 33px;
+        background-color: #fff;
+      }
+
+      .language-switch-dropdown-itmes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        gap: 9px;
+      }
+
+      .lang-sw.bottom {
+        align-items: flex-start;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-left: 20px;
+      }
+
+      .bottom-lag-sw p {
+        margin-bottom: 0px;
+      }
+
+      .bottom-lag-sw {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2em;
+      }
+
+      @media only screen and (max-width: 500px) {
+        .language-switch-dropdown-itmes-wrapper {
+          top: 40px;
+        }
+
+        .bottom-lag-sw {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom: 2em;
+          gap: 15px;
+        }
+
+        .lang-sw.bottom {
+          margin-left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="article-banner">
+      <img
+        src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Best_Glasses_For_Different_Face_Shapes_Web_Banner.jpg'}}"
+        alt="Best Glasses, Styles, Types for Different Face Shapes"
+        class="banner desktop-banner"
+      />
+      <img
+        src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Best_Glasses_For_Different_Face_Shapes_Mobile_Banner.jpg'}}"
+        alt="Best Glasses, Styles, Types for Different Face Shapes"
+        class="mobile-banner"
+      />
+    </div>
+    <h1 class="title">
+      Best Glasses for Different Face Shapes: How to Choose Glasses for Male and
+      Female Face Shapes
+    </h1>
+    <!-- publish date start -->
+    <div class="intro-section publsih-date">
+      <div class="publsih-date-wrapper">
+        <p>Published on February 9th, 2023</p>
+        <p><b>Updated on April 9th, 2024</b></p>
+        <!-- lang switch start -->
+        <div class="lang-sw">
+          <div class="language-switch">
+            <div class="language-switch-current" onclick="toggleVisibility()">
+              <!-- flag -->
+              <img
+                src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+                alt="Best Glasses for Different Face Shapes: How to Choose Glasses for Male and Female Face Shapes in Australian English"
+              />
+              Australia
+              <!-- dropdown icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="5"
+                viewBox="0 0 8 5"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="language-switch-dropdown-itmes-wrapper"
+              id="secondBox"
+              style="display: none"
+            >
+              <div class="language-switch-dropdown-itmes">
+                <!-- flag -->
+                <img
+                  src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+                  alt="Best Glasses for Different Face Shapes: How to Choose Glasses for Male and Female Face Shapes in Australian English"
+                />
+                <a href="https://www.oscarwylee.com.au/glasses/face-shapes"
+                  >Australia</a
+                >
+              </div>
+              <div class="language-switch-dropdown-itmes">
+                <!-- flag -->
+                <img
+                  src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                  alt="Best Glasses for Different Face Shapes: How to Choose Glasses for Male and Female Face Shapes in Canadian English"
+                />
+                <a href="https://www.oscarwylee.ca/glasses/face-shapes">
+                  Canada</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- publish date end -->
+    <div class="intro-section">
+      <p class="para-content">
+        <span
+          >Finding the best glasses for different face shapes is simple. It is
+          easy to choose glasses for male and female face shapes including
+          round, oval, heart, square, pear and diamond.</span
+        >
+      </p>
+      <p class="para-content">
+        <span
+          >Choosing the right glasses for face shapes is about knowing which
+          features need to be balanced and the ones that need glasses to draw
+          attention away from them. Glasses and face shapes are paired together
+          by matching the opposite shape to add intrigue and balance.</span
+        >
+      </p>
+      <p class="para-content">
+        <span
+          >The best glasses types for different face shapes change from time to
+          time depending on certain fashion trends. The best woman glasses for
+          face shapes are more dainty and feminine, while male glasses have
+          thicker frames with strong lines.</span
+        >
+      </p>
+      <p class="para-content">
+        <span
+          >There are 6 main face shapes that help a person choose glasses. The 6
+          different face types for glasses are round, oval, heart, square, pear
+          and diamond. A round face has even proportions and a circular shape.
+          Similar to a round face, an oval face is an oblong shape with smooth
+          curves. Heart shape faces have a small chin and wider forehead. A pear
+          face has a broad jaw and narrow forehead. The square face shape has
+          proportionate sides and a square set jaw. A diamond face shape is wide
+          at the cheekbones and narrower at the forehead and chin.</span
+        >
+      </p>
+      <p class="para-content">
+        <span
+          >You may be asking the question “what glasses suit my face?”. With
+          this helpful guide, we will show you how to choose glasses for
+          different face shapes by breaking down the 6 face shapes and the best
+          glasses that suit them.</span
+        >
+      </p>
+      <p class="para-content">
+        <span>The 6 different face types for glasses are</span
+        ><strong
+          ><span>&nbsp;</span>round, oval, heart, square, pear and
+          diamond.</strong
+        ><span
+          >&nbsp;The descriptions of these face shapes are listed below.</span
+        >
+      </p>
+      <ul class="ordered-list">
+        <li>
+          <span class="list-title">Round Face Shape:</span> Round faces are
+          proportional in length and width and have soft, rounded curves with
+          fuller cheekbones.
+        </li>
+        <li>
+          <span class="list-title">Oval Face Shape:</span><span>&nbsp;</span>An
+          oval face has an oblong shape with a wide forehead and a rounder
+          jawline and chin.
+        </li>
+        <li>
+          <span class="list-title">Heart Face Shape:</span><span>&nbsp;</span>A
+          person with a heart shaped face is someone with a broad forehead and a
+          small chin. The best glasses for heart shaped faces are square and
+          cat-eye glasses.
+        </li>
+        <li>
+          <span class="list-title">Square Face Shape:</span
+          ><span>&nbsp;</span>Square faces have proportional width and length
+          with a square jaw and broad forehead.
+        </li>
+        <li>
+          <span class="list-title">Pear Face Shape:</span><span>&nbsp;</span>A
+          pear face shape is characterised by a wide jawline with the face
+          becoming narrow until it gets to the forehead, the smallest feature of
+          the face.
+        </li>
+        <li>
+          <span class="list-title">Diamond Face Shape:</span
+          ><span>&nbsp;</span>Diamond faces are the widest at the cheekbones
+          with a narrow forehead and tapered chin. This face shape is very
+          versatile for different glasses styles.
+        </li>
+      </ul>
+    </div>
+    <!--  CTA aside-->
+    <aside class="intro-section book-section">
+      <div class="book-section-left">
+        <p class="heading">
+          Prioritise your eye health by booking regular eye tests.
+        </p>
+        <p style="font-size: 16px">
+          Our dedicated Oscar Wylee optometrists perform bulk billed eye tests
+          for eligible Medicare cardholders.
+        </p>
+      </div>
+      <div class="book-section-right">
+        <a href="https://www.oscarwylee.com.au/booking"
+          ><button class="btnOw">Book an eye test</button></a
+        >
+      </div>
+    </aside>
+    <!--  CTA aside-->
+    <p></p>
+    <!-- a liks start -->
+    <div class="a-links">
+      <nav>
+        <a href="#round">Round Face</a> <a href="#oval">Oval Face</a>
+        <a href="#heart">Heart Face</a> <a href="#square">Square Face</a>
+        <a href="#pear">Pear Face</a> <a href="#diamond">Diamond Face</a>
+      </nav>
+    </div>
+    <!-- a liks end -->
+    <div class="main-section" id="main-cont-wrapper">
+      <div class="main-section">
+        <section class="square-section">
+          <h2 class="subtitle" id="instructions">
+            How do Different Glasses and Face Shapes Go Together?
+          </h2>
+          <p class="para-content">
+            <span>Different glasses and face shapes go together by&nbsp;</span
+            ><strong
+              >complementing certain features and characteristics of a
+              face.</strong
+            ><span
+              >&nbsp;Face length, width, forehead, eyes and other face parts
+              contribute to what glasses would look best.</span
+            >
+          </p>
+          <p class="para-content">
+            <span
+              >The glasses that balance the proportions of a face are ones that
+              add breadth to a narrow face or draw the eye up from a wider
+              jaw.</span
+            >
+          </p>
+          <div class="sub-div">
+            <h3 class="con-title">Which Glasses Type Suits Which Face Type?</h3>
+            <p class="para-content">
+              <span
+                >There are many glasses types that suit people with certain face
+                types. The main glasses types are&nbsp;</span
+              ><strong>rectangle, oval, square, cat-eye and round.</strong
+              ><span
+                >&nbsp;The best glasses for each face type and the reasons why
+                are listed below.</span
+              >
+            </p>
+            <ul class="ordered-list">
+              <li>
+                <span style="font-weight: 400"
+                  >Rectangle glasses suit oval, round and diamond faces because
+                  their angular lines balance out the softer features of these
+                  face shapes.</span
+                >
+              </li>
+              <li>
+                Oval glasses suit square, diamond and pear faces as the soft
+                curves offset their more angular features.
+              </li>
+              <li>
+                Square glasses suit heart, oval and round faces as the
+                proportionate shape and sharp lines complement the circular
+                features of these face shapes.
+              </li>
+              <li>
+                Cat-eye glasses suit pear, round and diamond faces because the
+                feline feature at the upper corner of the frame draws the eye
+                upwards and adds balance to the face.
+              </li>
+              <li>
+                Round glasses suit rectangle, square and pear faces as their
+                proportional, circular shape adds softness and balance to the
+                appearance.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="square-section">
+          <h2 class="subtitle">What are the Different Face Shapes?</h2>
+          <p class="para-content">
+            <span
+              >The different face shapes involve different types of face
+              lengths, widths, noses, lips and eye combinations such as a broad
+              forehead and narrow jawline for heart shape faces or wide set eyes
+              and tapered chin for diamond faces.</span
+            >
+          </p>
+          <p class="para-content">
+            <span
+              >The different face types are analysed and understood by
+              recognising certain characteristics that match the qualities of
+              specific face shapes. The different face types are listed
+              below.</span
+            >
+          </p>
+          <ul class="ordered-list">
+            <li><span class="list-title">Round Face Shape</span></li>
+            <li><strong>Oval Face Shape</strong></li>
+            <li><strong>Heart Face Shape</strong></li>
+            <li><strong>Square Face Shape</strong></li>
+            <li><strong>Pear Face Shape</strong></li>
+            <li>
+              <strong>Diamond Face Shape</strong
+              ><span class="list-title"></span>
+            </li>
+          </ul>
+          <div class="sub-div" id="round">
+            <h3 class="con-title">1. Round Face Shape</h3>
+            <div class="flex-wrapper">
+              <div class="flex-left">
+                <p class="para-content">
+                  <span>A round face shape is&nbsp;</span
+                  ><strong
+                    >characterised by its circular and proportionate
+                    dimensions.</strong
+                  ><span
+                    >&nbsp;A person with a round face will have fuller cheeks
+                    and a softly rounded chin. The proportions of a round face
+                    for men are different to women as men usually have a more
+                    square and angular chin whereas a women’s jawline is often
+                    softer and less defined. A round face is among the most
+                    common types of face shapes and is considered very
+                    flattering.</span
+                  >
+                </p>
+                <p class="para-content">
+                  <span
+                    >The best glasses for round faces are rectangle, square and
+                    geometric glasses as the angular lines help to offset the
+                    soft curves of this face shape.</span
+                  >
+                </p>
+                <p class="para-content">
+                  <span
+                    >If you have a round face shape, use your hairstyle to
+                    create interesting angles and elongate the face. The
+                    hairstyles that complement a round face are longer, soft
+                    waves, short hair with volume and asymmetric haircuts.</span
+                  >
+                </p>
+              </div>
+              <div class="lex-right">
+                <img
+                  src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Round_Face_Diagram.jpg'}}"
+                  alt="round face sketch"
+                  class="flex-image"
+                />
+              </div>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                What are the Best Glasses for a Round Face Shape?
+              </h4>
+              <p class="para-content">
+                <span>The&nbsp;</span
+                ><a
+                  href="https://www.oscarwylee.com.au/glasses/face-shapes/round"
+                  >best glasses for a round face shape</a
+                ><span>&nbsp;are&nbsp;</span
+                ><strong>rectangle, square and geometric glasses.</strong
+                ><span
+                  >&nbsp;These glasses compliment round faces because they
+                  balance out the softer features and provide angles and strong
+                  lines.</span
+                >
+              </p>
+              <div class="products-section">
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/miles-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Miles_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                    />
+                  </a>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/serge-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Serge_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/jen-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Jen_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div>
+                  <p class="product-des">
+                    <span
+                      >Rectangle glasses are a clean shape with sharp edges that
+                      contrast the softness of a round shape.</span
+                    >
+                  </p>
+                </div>
+                <div>
+                  <p class="product-des">
+                    <span
+                      >Square glasses are similar to rectangle glasses with a
+                      proportionate shape to balance a round face.</span
+                    >
+                  </p>
+                </div>
+                <div>
+                  <p class="product-des">
+                    <span
+                      >Geometric glasses have angular sides that bring intrigue
+                      and dimension to a round face.</span
+                    >
+                  </p>
+                </div>
+                <div class="products-section-mobile">
+                  <div class="individual-product">
+                    <a href="https://www.oscarwylee.com.au/miles-optical.html"
+                      ><img
+                        src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Miles_Product_Block_Mobile_596x504.jpg'}}"
+                        alt="product image"
+                        class="product-image-mobile"
+                    /></a>
+                    <p class="product-des">
+                      Rectangle glasses are a clean shape with sharp edges that
+                      contrast the softness of an round shape.
+                    </p>
+                  </div>
+                  <div class="individual-product">
+                    <a href="https://www.oscarwylee.com.au/serge-optical.html"
+                      ><img
+                        src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Serge_Product_Block_Mobile_596x504.jpg'}}"
+                        alt="product image"
+                        class="product-image-mobile"
+                    /></a>
+                    <p class="product-des">
+                      Square glasses are similar to rectangle glasses with a
+                      proportionate shape to balance a round face.
+                    </p>
+                  </div>
+                  <div class="individual-product">
+                    <a href="https://www.oscarwylee.com.au/jen-optical.html"
+                      ><img
+                        src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Jen_Product_Block_Mobile_596x504.jpg'}}"
+                        alt="product image"
+                        class="product-image-mobile"
+                    /></a>
+                    <p class="product-des">
+                      Geometric glasses have angular sides that bring intrigue
+                      and dimension to a round face.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                What Glasses Types are not Compatible with a Round Face Shape?
+              </h4>
+              <p class="para-content">
+                <span
+                  >The glasses types that are not compatible with round face
+                  shapes are glasses that highlight the circular shape instead
+                  of contrasting the roundness. These glasses
+                  include&nbsp;</span
+                ><strong>round, oval and aviator glasses,</strong
+                ><span
+                  >&nbsp;the reasons they are not good for round faces are
+                  listed below.</span
+                >
+              </p>
+              <ul class="ordered-list">
+                <li>
+                  Round glasses: The spherical shape of round frames make a
+                  round face appear more circular, adding curves where glasses
+                  should be adding angles.
+                </li>
+                <li>
+                  Oval glasses: Oval glasses are not recommended for round faces
+                  as they add to the fullness of the face shape, similar to
+                  round glasses.
+                </li>
+                <li>
+                  Aviator glasses: Aviator frames do not complement a round face
+                  as they add curves and emphasise the fullness of the cheeks.
+                </li>
+              </ul>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                How to Choose Glasses for a Round Face Shape?
+              </h4>
+              <p class="para-content">
+                In order to choose glasses for a round face shape, you need
+                to<span>&nbsp;</span
+                ><strong
+                  >choose frames that contrast the fullness and circular shape
+                  of a round face.</strong
+                ><span>&nbsp;</span>This means selecting glasses that have
+                angular shapes and sharp, clean lines.
+              </p>
+              <p class="para-content">
+                People make the mistake of choosing glasses that match the shape
+                of their face, for example selecting round glasses for a round
+                face which is not recommended as they highlight the circular
+                shape instead of balancing it.
+              </p>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                How do Glasses for Round Faces Differ from Others?
+              </h4>
+              <p class="para-content">
+                <span
+                  >Glasses for round faces differ very slightly from other
+                  glasses shapes like oval and rectangle. The shape of glasses
+                  rarely impacts the make of the glasses and the hinge, screw
+                  and lenses will say the same. Aspects such as the nose pad,
+                  bridge, temple tip and end piece are dependent on the style of
+                  the glasses, not the shape.</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="sub-div" id="oval">
+            <h3 class="con-title">2. Oval Face Shape</h3>
+            <div class="flex-wrapper">
+              <div class="flex-left">
+                <p class="para-content">
+                  <span>An oval face shape is&nbsp;</span
+                  ><strong
+                    >characterised by its oblong shape and rounded
+                    curves.</strong
+                  ><span
+                    >&nbsp;A person with an oval face has a wide forehead and a
+                    rounder jawline and chin. The proportions of an oval face
+                    for men are different to women as men tend to have a more
+                    sharp and angular chin whereas a women’s jawline is often
+                    softer and less defined. An oval face is among the most
+                    common facial shapes and is considered very
+                    flattering.</span
+                  >
+                </p>
+                <p class="para-content">
+                  <span>The&nbsp;</span
+                  ><a
+                    href="https://www.oscarwylee.com.au/glasses/face-shapes/oval"
+                    >best glasses for oval faces</a
+                  ><span>&nbsp;are&nbsp;</span
+                  ><strong>rectangle, square and aviator glasses</strong
+                  ><span
+                    >&nbsp;as the sharp lines provide balance to the gentle
+                    curves of this face shape.</span
+                  >
+                </p>
+                <p class="para-content">
+                  <span
+                    >If you have an oval face shape, use your hairstyle to
+                    compliment your appearance.</span
+                  >
+                </p>
+                <p class="para-content">
+                  <span
+                    >The hairstyles that are flattering for an oval face include
+                    a short and sleek bob, a pixie cut and a wavy bob. These
+                    hairstyles work with an oval face because this face shape is
+                    very versatile and works with many fun and fashionable
+                    hairstyles.</span
+                  >
+                </p>
+              </div>
+              <div class="lex-right">
+                <img
+                  src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Oval_Face_Diagram.jpg'}}"
+                  alt="Oval face sketch"
+                  class="flex-image"
+                />
+              </div>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                What are the Best Glasses for Oval Face Shapes?
+              </h4>
+              <p class="para-content">
+                <span
+                  >The best glasses for oval face shapes include rectangle,
+                  square and aviator glasses. These glasses compliment an oval
+                  face as they balance the soft curves with the angular shapes
+                  and lines.</span
+                >
+              </p>
+              <div class="products-section">
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/cape-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Cape_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div class="individual-product">
+                  <a
+                    href="https://www.oscarwylee.com.au/glasses/collection/andrew-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Andrew_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/duckworth-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Duckworth_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div>
+                  <p class="product-des">
+                    <span
+                      >Rectangle glasses are a clean shape with sharp edges that
+                      contrast the softness of an oval shape.</span
+                    >
+                  </p>
+                </div>
+                <div>
+                  <p class="product-des">
+                    <span
+                      >Square glasses are similar to rectangle glasses but they
+                      have a proportionate shape to balance an oval face.</span
+                    >
+                  </p>
+                </div>
+                <div>
+                  <p class="product-des">
+                    <span
+                      >Aviator glasses are a very versatile frame that perfectly
+                      compliments the contours of an oval face.</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="products-section-mobile">
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/cape-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Cape_Product_Block_Mobile_596x504.jpg'}}"
+                      alt="product image"
+                      class="product-image-mobile"
+                  /></a>
+                  <p class="product-des">
+                    Rectangle glasses are a clean shape with sharp edges that
+                    contrast the softness of an oval shape.
+                  </p>
+                </div>
+                <div class="individual-product">
+                  <a
+                    href="https://www.oscarwylee.com.au/glasses/collection/andrew-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Andrew_Product_Block_Mobile_596x504.jpg'}}"
+                      alt="product image"
+                      class="product-image-mobile"
+                  /></a>
+                  <p class="product-des">
+                    Square glasses are similar to rectangle glasses but they
+                    have a proportionate shape to balance an oval face.
+                  </p>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/duckworth-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Duckworth_Product_Block_Mobile_596x504.jpg'}}"
+                      alt="product image"
+                      class="product-image-mobile"
+                  /></a>
+                  <p class="product-des">
+                    Aviator glasses are a very versatile frame that perfectly
+                    compliments the contours of an oval face.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                What Glasses Types are not Compatible with Oval Face Shapes?
+              </h4>
+              <p class="para-content">
+                <span
+                  >The glasses types that are not compatible with oval face
+                  shapes include glasses that accentuate the roundness of the
+                  face and make it disproportionate. These glasses
+                  include&nbsp;</span
+                ><strong>oversized and undersized glasses.</strong>
+              </p>
+              <ul class="ordered-list">
+                <li>
+                  Oversized glasses: Oversized glasses make the face appear too
+                  narrow or small, diminishing the face’s aesthetic features.
+                </li>
+                <li>
+                  Undersized glasses: Undersized frames distort the balance of
+                  the face’s proportions, making the head seem too wide and
+                  long.
+                </li>
+              </ul>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                How to Choose Glasses for Oval Face Shapes?
+              </h4>
+              <p class="para-content">
+                To choose glasses for oval face shapes, it is important for the
+                frames to<span>&nbsp;</span
+                ><strong
+                  >offset the rounded features and highlight the aesthetic
+                  proportions.</strong
+                ><span>&nbsp;</span>An oval face is considered to be the most
+                versatile of the different types, therefore, it is easier to
+                choose glasses as most glasses look good on an oval face.
+              </p>
+              <p class="para-content">
+                In order to choose glasses for an oval face shape, you need to
+                choose frames that contrast the rounded and oblong shape. This
+                means finding glasses that have angular shapes and clean, sharp
+                lines.
+              </p>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                How do Glasses for Oval Faces Differ from Others?
+              </h4>
+              <p class="para-content">
+                <span
+                  >Glasses for oval faces differ very slightly from other
+                  glasses shapes like square and round. The shape of glasses
+                  rarely impacts the make of the glasses and the hinge, screw
+                  and lenses will say the same. Aspects such as the nose pad,
+                  bridge, temple tip and end piece are dependent on the style of
+                  the glasses, not the shape.</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="sub-div" id="heart">
+            <h3 class="con-title">3. Heart Face Shape</h3>
+            <div class="flex-wrapper">
+              <div class="flex-left">
+                <p class="para-content">
+                  <span>A heart face shape is&nbsp;</span
+                  ><strong
+                    >characterised by its soft features and asymmetric
+                    dimensions.</strong
+                  ><span
+                    >&nbsp;A person with a heart face shape will have a wide
+                    forehead and a tapered chin that comes to a point. The
+                    proportions of a heart face for men are different to women
+                    as men usually have a squarer and more angular chin, whereas
+                    a women’s jawline is softer and less prominent. A heart
+                    shaped face is among the most common face shapes and is
+                    considered very flattering.</span
+                  >
+                </p>
+                <p class="para-content">
+                  <span
+                    >The best glasses for heart faces are square, cat-eye and
+                    oval glasses as they bring intrigue and depth to the
+                    face.</span
+                  >
+                </p>
+                <p class="para-content">
+                  <span
+                    >If you have a heart face shape, use your hairstyle to
+                    emphasise the small chin and disguise a broad forehead. The
+                    hairstyles that complement a heart face are long bobs,
+                    close-cropped pixie cuts and long layered styles.</span
+                  >
+                </p>
+              </div>
+              <div class="lex-right">
+                <img
+                  src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Heart_Face_Diagram.jpg'}}"
+                  alt="heart face sketch"
+                  class="flex-image"
+                />
+              </div>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                What are the Best Glasses for Heart Face Shape?
+              </h4>
+              <p class="para-content">
+                <span>The best glasses for a heart face shape are&nbsp;</span
+                ><strong>square, cat-eye and oval glasses.</strong
+                ><span
+                  >&nbsp;These glasses complement heart faces because they add
+                  intrigue to the face and balance out the heart shape
+                  proportions.</span
+                >
+              </p>
+              <div class="products-section">
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/mumford-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Mumford_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/ana-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Ana_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/micah-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Micah_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div>
+                  <p class="product-des">
+                    Square glasses have proportional sides and edges that are
+                    either soft or sharp in design, a perfect accessory to a
+                    heart shaped face.
+                  </p>
+                </div>
+                <div>
+                  <p class="product-des">
+                    Cat-eye glasses mimic the feminine flick of a feline eye
+                    which emphasises the gaze and draws the upwards on a heart
+                    face.
+                  </p>
+                </div>
+                <div>
+                  <p class="product-des">
+                    Oval glasses are a neutral shape that balances the wide
+                    forehead of a heart shaped face.
+                  </p>
+                </div>
+              </div>
+              <div class="products-section-mobile">
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/mumford-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Mumford_Product_Block_Mobile_596x504.jpg'}}"
+                      alt="product image"
+                      class="product-image-mobile"
+                  /></a>
+                  <p class="product-des">
+                    Square glasses have proportional sides and edges that are
+                    either soft or sharp in design, a perfect accessory to a
+                    heart shaped face.
+                  </p>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/ana-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Ana_Product_Block_Mobile_596x504.jpg'}}"
+                      alt="product image"
+                      class="product-image-mobile"
+                  /></a>
+                  <p class="product-des">
+                    Cat-eye glasses mimic the feminine flick of a feline eye
+                    which emphasises the gaze and draws the upwards on a heart
+                    face.
+                  </p>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/micah-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Micah_Product_Block_Mobile_596x504.jpg'}}"
+                      alt="product image"
+                      class="product-image-mobile"
+                  /></a>
+                  <p class="product-des">
+                    Oval glasses are a neutral shape that balances the wide
+                    forehead of a heart shaped face.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                What Glasses Types are not Compatible with Heart Face Shapes?
+              </h4>
+              <p class="para-content">
+                <span
+                  >The glasses types that are not compatible with heart face
+                  shapes are glasses that highlight the wide forehead instead of
+                  complementing the tapered jaw and chin. These glasses
+                  include&nbsp;</span
+                ><strong>rectangle and oversized glasses.</strong
+                ><span
+                  >&nbsp;The reasons they are not good for heart faces are
+                  listed below.</span
+                >
+              </p>
+              <ul class="ordered-list">
+                <li>
+                  Rectangular glasses: Rectangle frames not good for heart shape
+                  faces as they emphasise the broad forehead instead of
+                  balancing it.
+                </li>
+                <li>
+                  Oversized glasses: An oversized frame disrupts the proportions
+                  of the face, making it appear too narrow.
+                </li>
+              </ul>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                How to Choose Glasses for Heart Face Shapes?
+              </h4>
+              <p class="para-content">
+                In order to choose glasses for a heart face shape, you need to
+                choose frames that<span>&nbsp;</span
+                ><strong
+                  >contrast the wide forehead and concurrently highlight the
+                  tapered chin.</strong
+                ><span>&nbsp;</span>This means choosing glasses that emphasise
+                the eyes and complement the proportions.
+              </p>
+              <p class="para-content">
+                People make the mistake of choosing glasses that match the shape
+                of their face, for example selecting wide-set glasses for a
+                heart face which is not recommended as they highlight the broad
+                forehead instead of contrasting it.
+              </p>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                How do Glasses for Heart Faces Differ from Others?
+              </h4>
+              <p class="para-content">
+                <span
+                  >Glasses for heart faces differ slightly from other glasses
+                  shapes like oval and rectangle. The shape of glasses rarely
+                  impacts the make of the glasses and the hinge, screw and
+                  lenses will say the same. Aspects such as the nose pad,
+                  bridge, temple tip and end piece are dependent on the style of
+                  the glasses, not the shape.</span
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--  CTA aside-->
+        <aside class="intro-section book-section">
+          <div class="book-section-left">
+            <p class="heading">Find your local Oscar Wylee store</p>
+            <p style="font-size: 16px">
+              Come in and see our team for your optometry needs, including eye
+              tests and prescription updates.<br /><br />All major health funds
+              accepted in-store.
+            </p>
+          </div>
+          <div class="book-section-right">
+            <a
+              href="https://www.oscarwylee.com.au/locations/full-store-list.html"
+              ><button class="btnOw">Find a store</button></a
+            >
+          </div>
+        </aside>
+        <!--  CTA aside-->
+        <section class="square-section">
+          <div class="sub-div" id="square">
+            <h3 class="con-title">4. Square Face Shape</h3>
+            <div class="flex-wrapper">
+              <div class="flex-left">
+                <p class="para-content">
+                  A square face shape is<span>&nbsp;</span
+                  ><strong
+                    >characterised by its blocky, proportionate
+                    dimensions.</strong
+                  ><span>&nbsp;</span>A person with a square face will have a
+                  square jaw and a broad forehead. The proportions of a square
+                  face for men are different to women as men will have a more
+                  square and angular jawline, whereas a women’s jawline can be
+                  softer and less sharp.
+                </p>
+                <p class="para-content">
+                  The best glasses for square faces are round, oval and browline
+                  glasses as the curved edges help to offset the sharp angles of
+                  this face shape.
+                </p>
+                <p class="para-content">
+                  If you have a square face shape, use your hairstyle to take
+                  attention away from the square jawline and soften the
+                  features. The hairstyles that complement a square face are
+                  textured shoulder-length hair, tousled bob and feathered, long
+                  hair.
+                </p>
+              </div>
+              <div class="lex-right">
+                <img
+                  src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Square_Face_Diagram.jpg'}}"
+                  alt="square face sketch"
+                  class="flex-image"
+                />
+              </div>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                What are the Best Glasses for Square Face Shapes?
+              </h4>
+              <p class="para-content">
+                <span>The&nbsp;</span
+                ><a
+                  href="https://www.oscarwylee.com.au/glasses/face-shapes/square"
+                  >best glasses for a square face shape</a
+                ><span>&nbsp;are&nbsp;</span
+                ><strong>round, oval and browline glasses.</strong
+                ><span
+                  >&nbsp;These glasses complement square faces because they
+                  balance the angular shape and soften the features. A square
+                  face is among the most common types of face shapes and is
+                  considered very flattering.</span
+                >
+              </p>
+              <div class="products-section">
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/haskell-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Haskell_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/drew-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Drew_319_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/marco-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Marco-016-Product-Block-3x-622x233px.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div>
+                  <p class="product-des">
+                    Round glasses are a proportionate circular shape that are
+                    worn to soften the sharp angles of a square face.
+                  </p>
+                </div>
+                <div>
+                  <p class="product-des">
+                    Oval glasses are similar to round glasses but they have more
+                    of an oblong shape, balancing a square face’s harsh angles.
+                  </p>
+                </div>
+                <div>
+                  <p class="product-des">
+                    Browline glasses have a thicker upper rim and a thinner
+                    lower rim, drawing attention to the browline of a square
+                    face.
+                  </p>
+                </div>
+              </div>
+              <div class="products-section-mobile">
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/haskell-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Haskell_Product_Block_Mobile_596x504.jpg'}}"
+                      alt="product image"
+                      class="product-image-mobile"
+                  /></a>
+                  <p class="product-des">
+                    Round glasses are a proportionate circular shape that are
+                    worn to soften the sharp angles of a square face.
+                  </p>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/drew-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Drew_319_Product_Block_Mobile_596x504.jpg'}}"
+                      alt="product image"
+                      class="product-image-mobile"
+                  /></a>
+                  <p class="product-des">
+                    Oval glasses are similar to round glasses but they have more
+                    of an oblong shape, balancing a square face’s harsh angles.
+                  </p>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/marco-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Marco-016-Mobile-596x504px.jpg'}}"
+                      alt="product image"
+                      class="product-image-mobile"
+                  /></a>
+                  <p class="product-des">
+                    Browline glasses have a thicker upper rim and a thinner
+                    lower rim, drawing attention to the browline of a square
+                    face.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                What Glasses Types are not Compatible with Square Face Shapes?
+              </h4>
+              <p class="para-content">
+                <span
+                  >The glasses types that are not compatible with square face
+                  shapes are glasses that highlight the square shape instead of
+                  contrasting the sharp lines. These glasses include&nbsp;</span
+                ><strong>square, rectangle and geometric glasses.</strong
+                ><span
+                  >&nbsp;The reasons they are not good for round faces are
+                  listed below.</span
+                >
+              </p>
+              <ul class="ordered-list">
+                <li>
+                  Square glasses: The square shape of these frames make a square
+                  face appear more angular, emphasising the sharp jaw and broad
+                  forehead.
+                </li>
+                <li>
+                  Rectangle glasses: Rectangle glasses are not recommended for
+                  square faces as they accentuate the strong angles of the face
+                  shape.
+                </li>
+                <li>
+                  Geometric glasses: Geometric glasses do not complement a
+                  square face as they add sharp angles where you want softness.
+                </li>
+              </ul>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                How to Choose Glasses for Square Face Shapes?
+              </h4>
+              <p class="para-content">
+                In order to choose glasses for a square face shape, you need to
+                choose frames that<span>&nbsp;</span
+                ><strong
+                  >contrast the sharp and angular shape of a square
+                  face.</strong
+                ><span>&nbsp;</span>This means choosing glasses that have
+                circular shapes and smooth curves.
+              </p>
+              <p class="para-content">
+                People make the mistake of choosing glasses that match the shape
+                of their face, for example selecting square glasses for a square
+                face which is not recommended as they highlight the angular
+                shape instead of balancing it.
+              </p>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                How do Glasses for Square Faces Differ from Others?
+              </h4>
+              <p class="para-content">
+                <span
+                  >Glasses for square faces differ very slightly from other
+                  glasses shapes like oval and round. The shape of glasses
+                  rarely impacts the make of the glasses and the hinge, screw
+                  and lenses will say the same. Aspects such as the nose pad,
+                  bridge, temple tip and end piece are dependent on the style of
+                  the glasses, not the shape.</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="sub-div" id="pear">
+            <h3 class="con-title">5. Pear Face Shape</h3>
+            <div class="flex-wrapper">
+              <div class="flex-left">
+                <p class="para-content">
+                  A pear face shape is<span>&nbsp;</span
+                  ><strong
+                    >characterised by its triangular shape and asymmetric
+                    dimensions.<span>&nbsp;</span></strong
+                  >A person with a pear face will have a narrow forehead and a
+                  fuller jaw. The proportions of a pear face for men are
+                  different to women as men usually have a more square and
+                  angular chin, whereas a women’s jawline is often more delicate
+                  and less defined.
+                </p>
+                <p class="para-content">
+                  The best glasses for pear faces are<span>&nbsp;</span
+                  ><strong
+                    >rectangle, oval and cat-eye glasses<span
+                      >&nbsp;</span
+                    ></strong
+                  >as the wide shape and intriguing lines bring balance to this
+                  face shape.
+                </p>
+                <p class="para-content">
+                  If you have a pear face shape, use your hairstyle to create
+                  interest at the top of the face. The hairstyles that
+                  complement a pear face are short bobs, long, sleek hair and
+                  shoulder-length curly hair.
+                </p>
+              </div>
+              <div class="lex-right">
+                <img
+                  src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Pear_Face_Diagram_1.jpg'}}"
+                  alt="pear face sketch"
+                  class="flex-image"
+                />
+              </div>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                What are the Best Glasses for Pear Face Shapes?
+              </h4>
+              <p class="para-content">
+                <span>The&nbsp;</span
+                ><a
+                  href="https://www.oscarwylee.com.au/glasses/face-shapes/pear"
+                  >best glasses for a pear face shape</a
+                ><span
+                  >&nbsp;are rectangle, oval and cat-eye glasses. These glasses
+                  complement pear faces because they broaden the top of the face
+                  and draw the eye upwards.</span
+                >
+              </p>
+              <div class="products-section">
+                <div class="individual-product">
+                  <a
+                    href="https://www.oscarwylee.com.au/glasses/silhouette/wilder-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Wilder_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/herbert-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Herbert_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/shel-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Shel_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div>
+                  <p class="product-des">
+                    Rectangle glasses are wider than they are tall and help to
+                    balance out the full jawline of a pear face.
+                  </p>
+                </div>
+                <div>
+                  <p class="product-des">
+                    Oval glasses are similar to an egg shape and are worn to
+                    draw the eye upwards to the smallest part of the face.
+                  </p>
+                </div>
+                <div>
+                  <p class="product-des">
+                    Cat-eye glasses add a feminine touch to the face and draw
+                    the eye upwards on a pear face with pointed outer corners.
+                  </p>
+                </div>
+              </div>
+              <div class="products-section-mobile">
+                <div class="individual-product">
+                  <a
+                    href="https://www.oscarwylee.com.au/glasses/silhouette/wilder-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Wilder_Product_Block_Mobile_596x504.jpg'}}"
+                      alt="product image"
+                      class="product-image-mobile"
+                  /></a>
+                  <p class="product-des">
+                    Rectangle glasses are wider than they are tall and help to
+                    balance out the full jawline of a pear face.
+                  </p>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/herbert-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Herbert_Product_Block_Mobile_596x504.jpg'}}"
+                      alt="product image"
+                      class="product-image-mobile"
+                  /></a>
+                  <p class="product-des">
+                    Oval glasses are similar to an egg shape and are worn to
+                    draw the eye upwards to the smallest part of the face.
+                  </p>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/shel-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Shel_Product_Block_Mobile_596x504.jpg'}}"
+                      alt="product image"
+                      class="product-image-mobile"
+                  /></a>
+                  <p class="product-des">
+                    Cat-eye glasses add a feminine touch to the face and draw
+                    the eye upwards on a pear face with pointed outer corners.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                What Glasses Types are not Compatible with Pear Face Shapes?
+              </h4>
+              <p class="para-content">
+                <span
+                  >The glasses types that are not compatible with pear face
+                  shapes are glasses that highlight the wide jaw and narrow
+                  forehead. These glasses include&nbsp;</span
+                ><strong>square and oversized glasses.</strong
+                ><span
+                  >&nbsp;The reasons they are not good for pear faces are listed
+                  below.</span
+                >
+              </p>
+              <ul class="ordered-list">
+                <li>
+                  Square glasses: Square frames don’t add any width to the top
+                  of the face and therefore do not complement a pear face shape.
+                </li>
+                <li>
+                  Oversized glasses: Oversized frames make a pear face
+                  disproportionate and make it appear too narrow.
+                </li>
+              </ul>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                How to Choose Glasses for Pear Face Shapes?
+              </h4>
+              <p class="para-content">
+                In order to choose glasses for a pear face shape, you need to
+                find frames that<span>&nbsp;</span
+                ><strong
+                  >contrast the fullness of the jaw and the triangle shape of
+                  the face.</strong
+                ><span>&nbsp;</span>This means choosing glasses that add breadth
+                to the top of the face.
+              </p>
+              <p class="para-content">
+                People make the mistake of choosing glasses that highlight the
+                most prominent feature of the face, for example selecting narrow
+                glasses for a pear face which is not recommended as they
+                highlight the small forehead instead of balancing it.
+              </p>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                How do Glasses for Pear Faces Differ from Others?
+              </h4>
+              <p class="para-content">
+                <span
+                  >Glasses for pear faces differ very slightly from other
+                  glasses shapes like aviator and square. The shape of glasses
+                  rarely impacts the make of the glasses and the hinge, screw
+                  and lenses will say the same. Aspects such as the nose pad,
+                  bridge, temple tip and end piece are dependent on the style of
+                  the glasses, not the shape.</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="sub-div" id="diamond">
+            <h3 class="con-title">6. Diamond Face Shape</h3>
+            <div class="flex-wrapper">
+              <div class="flex-left">
+                <p class="para-content">
+                  A diamond face shape is<span>&nbsp;</span
+                  ><strong
+                    >characterised by its oval shape with sharp angles.</strong
+                  ><span>&nbsp;</span>A person with a diamond face will be the
+                  widest at the cheekbones with a narrow forehead and small
+                  chin. The proportions of a diamond face for men are different
+                  to women as men usually have a more square and angular chin
+                  whereas a women’s jawline is often softer and less prominent.
+                </p>
+                <p class="para-content">
+                  The best glasses for diamond faces are oval, round and cat-eye
+                  glasses as the soft lines help to offset the angular contours
+                  of this face shape. A diamond face is among the most common
+                  types of face shapes and is considered very flattering.
+                </p>
+                <p class="para-content">
+                  If you have a diamond face shape, use your hairstyle to
+                  contrast the sharp facial features and complement the jawline.
+                  The hairstyles that flatter a diamond face are side-swept
+                  fringes, full, curly hair and textured bobs.
+                </p>
+              </div>
+              <div class="lex-right">
+                <img
+                  src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Diamond_Face_Diagram.jpg'}}"
+                  alt="diamond face sketch"
+                  class="flex-image"
+                />
+              </div>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                What are the Best Glasses for Diamond Face Shapes?
+              </h4>
+              <p class="para-content">
+                <span>The&nbsp;</span
+                ><a
+                  href="https://www.oscarwylee.com.au/glasses/face-shapes/diamond"
+                  >best glasses for a diamond face shape</a
+                ><span>&nbsp;are&nbsp;</span
+                ><strong>oval, round and cat-eye glasses.</strong
+                ><span
+                  >&nbsp;These glasses complement diamond faces because they
+                  balance out the angular features and provide soft lines.</span
+                >
+              </p>
+              <div class="products-section">
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/odette-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Odette_049_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/clotilde-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Clotilde_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/betty-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Betty_Product_Block_3x_665x278.jpg'}}"
+                      alt="product image"
+                      class="product-image"
+                  /></a>
+                </div>
+                <div>
+                  <p class="product-des">
+                    Oval glasses are oblong in shape and bring contrast to the
+                    sharp lines of a diamond face shape.
+                  </p>
+                </div>
+                <div>
+                  <p class="product-des">
+                    Round glasses are a circular, proportionate shape that
+                    perfectly complements a diamond face.
+                  </p>
+                </div>
+                <div>
+                  <p class="product-des">
+                    Cat-eye glasses add intrigue at the top of the face with its
+                    feline shape, a good choice for diamond faces.
+                  </p>
+                </div>
+              </div>
+              <div class="products-section-mobile">
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/odette-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Odette_049_Product_Block_Mobile_596x504.jpg'}}"
+                      alt="product image"
+                      class="product-image-mobile"
+                  /></a>
+                  <p class="product-des">
+                    Oval glasses are oblong in shape and bring contrast to the
+                    sharp lines of a diamond face shape.
+                  </p>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/clotilde-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Clotilde_Product_Block_Mobile_596x504.jpg'}}"
+                      alt="product image"
+                      class="product-image-mobile"
+                  /></a>
+                  <p class="product-des">
+                    Round glasses are a circular, proportionate shape that
+                    perfectly complements a diamond face.
+                  </p>
+                </div>
+                <div class="individual-product">
+                  <a href="https://www.oscarwylee.com.au/betty-optical.html"
+                    ><img
+                      src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-different-face-shapes/Betty_Product_Block_Mobile_596x504.jpg'}}"
+                      alt="product image"
+                      class="product-image-mobile"
+                  /></a>
+                  <p class="product-des">
+                    Cat-eye glasses add intrigue at the top of the face with its
+                    feline shape, a good choice for diamond faces.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                What Glasses Types are not Compatible with a Diamond Face Shape?
+              </h4>
+              <p class="para-content">
+                <span
+                  >The glasses types that are not compatible with diamond face
+                  shapes are glasses that highlight the wide cheekbones instead
+                  of contrasting this part of the face. These glasses
+                  include&nbsp;</span
+                ><strong>square and oversized glasses.</strong
+                ><span
+                  >&nbsp;The reasons they are not good for diamond faces are
+                  listed below.</span
+                >
+              </p>
+              <ul class="ordered-list">
+                <li>
+                  Square glasses: Square frames may rest on the cheekbones,
+                  making the cheeks look wider which is not complementary to a
+                  diamond face.
+                </li>
+                <li>
+                  Oversized glasses: Oversized frames add width to the face
+                  where it is not needed.
+                </li>
+              </ul>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                How to Choose Glasses for Diamond Face Shapes?
+              </h4>
+              <p class="para-content">
+                In order to choose glasses for a diamond face shape, you need to
+                choose frames that<span>&nbsp;</span
+                ><strong
+                  >contrast the sharp and angular lines.<span
+                    >&nbsp;</span
+                  ></strong
+                >This means choosing glasses that have softer lines and less
+                width.
+              </p>
+              <p class="para-content">
+                People make the mistake of choosing glasses that match the shape
+                of their face, for example selecting wide rectangle glasses for
+                a diamond face which is not recommended, as they elongate the
+                cheeks instead of balancing them.
+              </p>
+            </div>
+            <div class="sub-div">
+              <h4 class="sub-div-h4">
+                How do Glasses for Diamond Faces Differ from Others?
+              </h4>
+              <p class="para-content">
+                <span
+                  >Glasses for diamond faces differ very slightly from other
+                  glasses shapes like square and round. The shape of glasses
+                  rarely impacts the make of the glasses and the hinge, screw
+                  and lenses will say the same. Aspects such as the nose pad,
+                  bridge, temple tip and end piece are dependent on the style of
+                  the glasses, not the shape.</span
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="square-section">
+          <h2 class="subtitle">
+            How do the Best Glasses for Different Face Shapes Change for Males
+            and Females?
+          </h2>
+          <p class="para-content">
+            <span
+              >The best glasses for different face shapes change for males and
+              females in regard to personal preference and certain defining
+              features. Face shapes are determined by the certain
+              characteristics and dimensions of a face, and this will vary
+              slightly for men and women or any gender.</span
+            >
+          </p>
+          <div class="sub-div">
+            <h3 class="con-title">
+              What are the Best Glasses for Female Face Shapes?
+            </h3>
+            <p class="para-content">
+              <span
+                >The best glasses for female face shapes are chosen depending on
+                face shape and personal preference. Not all female faces are
+                alike, however, a general inference can be made about the type
+                of glasses that would flatter these faces. For example, the
+                feminine shape of cat-eye glasses has been very popular with
+                women as this shape mimics the flick of eyeliner and emphasises
+                and elongates the gaze.</span
+              >
+            </p>
+          </div>
+          <div class="sub-div">
+            <h3 class="con-title">
+              What are the Best Glasses for Male Face Shapes?
+            </h3>
+            <p class="para-content">
+              <span
+                >The best glasses for male face shapes are chosen depending on
+                face shape and personal preference. Not all male faces have the
+                same appearance and defining features, but some generalisations
+                are made as to what glasses would be best for their faces.
+                Angular shapes are popular with men as the sharp, clean lines of
+                rectangle and square glasses add a touch of sophistication and
+                style.</span
+              >
+            </p>
+          </div>
+          <!-- lang switch start -->
+          <div class="bottom-lag-sw">
+            <p class="para-content">
+              Read Best Glasses for Different Face Shapes: How to Choose Glasses
+              for Male and Female Face Shapes in other Oscar Wylee regions and
+              their languages.
+            </p>
+            <div class="lang-sw bottom">
+              <div class="language-switch">
+                <div
+                  class="language-switch-current"
+                  id="language-switch-current"
+                  onclick="toggleVisibilityBtnTwo()"
+                >
+                  <!-- flag -->
+                  <img
+                    src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+                    alt="Best Glasses for Different Face Shapes: How to Choose Glasses for Male and Female Face Shapes in Australian English"
+                  />
+                  Australia
+                  <!-- dropdown icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="5"
+                    viewBox="0 0 8 5"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z"
+                      fill="black"
+                    ></path>
+                  </svg>
+                </div>
+                <div
+                  class="language-switch-dropdown-itmes-wrapper"
+                  id="language-switch-dropdown-itmes-wrapper"
+                  style="display: none"
+                >
+                  <div class="language-switch-dropdown-itmes">
+                    <!-- flag -->
+                    <img
+                      src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+                      alt="Best Glasses for Different Face Shapes: How to Choose Glasses for Male and Female Face Shapes in Australian English"
+                    />
+                    <a href="https://www.oscarwylee.com.au/glasses/face-shapes">
+                      Australia</a
+                    >
+                  </div>
+                  <div class="language-switch-dropdown-itmes">
+                    <!-- flag -->
+                    <img
+                      src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                      alt="Best Glasses for Different Face Shapes: How to Choose Glasses for Male and Female Face Shapes in Canadian English"
+                    />
+                    <a href="https://www.oscarwylee.ca/glasses/face-shapes">
+                      Canada</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- lang switch end -->
+        </section>
+      </div>
+      <!-- add bottom CTA section here -->
+      <aside class="context">
+        <!-- Location and booking  -->
+        <div class="location" style="border-top: none">
+          <div class="locationText">
+            <p class="heading">Find an Oscar Wylee store near you</p>
+            <p class="contents">
+              Our friendly team can help you with your optometry needs and help
+              you shop our range of frames and lenses.
+            </p>
+            <div class="allButton">
+              <a
+                href="https://www.oscarwylee.com.au/locations/full-store-list.html"
+              >
+                <button class="btnOw">Find a store</button>
+              </a>
+            </div>
+          </div>
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/cta/find-a-store.jpg'}}"
+            alt="find a location image"
+            class="locationImage"
+          />
+        </div>
+        <div class="location item1">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/cta/find_a_store_1_1__1.png'}}"
+            alt="book eye test image"
+            class="locationImage"
+          />
+          <div class="locationText">
+            <p class="heading">
+              Book an eye test with a dedicated Oscar Wylee optometrist
+            </p>
+            <p class="contents">
+              If you are an eligible Medicare cardholder, our eye tests will be
+              bulk billed.
+            </p>
+            <div class="allButton">
+              <a href="https://www.oscarwylee.com.au/booking">
+                <button class="btnOw">Book an eye test</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <p>
+      <script>
+        const productContainers = [
+          ...document.querySelectorAll(".product-container"),
+        ];
+        const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
+        const preBtn = [...document.querySelectorAll(".pre-btn")];
+
+        productContainers.forEach((item, i) => {
+          let containerDimensions = item.getBoundingClientRect();
+          let containerWidth = containerDimensions.width;
+
+          nxtBtn[i].addEventListener("click", () => {
+            item.scrollLeft += containerWidth;
+          });
+
+          preBtn[i].addEventListener("click", () => {
+            item.scrollLeft -= containerWidth;
+          });
+        });
+
+        // top lang-sw
+        document.addEventListener("click", function (event) {
+          var secondBox = document.querySelector(
+            ".language-switch-dropdown-itmes-wrapper"
+          );
+          var firstBox = document.querySelector(".language-switch-current");
+
+          // Check if the clicked element is outside the second box and the first box
+          if (
+            !secondBox.contains(event.target) &&
+            !firstBox.contains(event.target)
+          ) {
+            secondBox.style.display = "none";
+          }
+        });
+
+        function toggleVisibility() {
+          var secondBox = document.querySelector(
+            ".language-switch-dropdown-itmes-wrapper"
+          );
+          secondBox.style.display =
+            secondBox.style.display === "none" ? "flex" : "none";
+        }
+
+        // bottom lang-sw
+        document.addEventListener("click", function (event) {
+          var secondBox = document.querySelector(
+            "#language-switch-dropdown-itmes-wrapper"
+          );
+          var firstBox = document.querySelector("#language-switch-current");
+
+          // Check if the clicked element is outside the second box and the first box
+          if (
+            !secondBox.contains(event.target) &&
+            !firstBox.contains(event.target)
+          ) {
+            secondBox.style.display = "none";
+          }
+        });
+
+        function toggleVisibilityBtnTwo() {
+          var secondBox = document.querySelector(
+            "#language-switch-dropdown-itmes-wrapper"
+          );
+          secondBox.style.display =
+            secondBox.style.display === "none" ? "flex" : "none";
+        }
+      </script>
+    </p>
+  </body>
+</html>

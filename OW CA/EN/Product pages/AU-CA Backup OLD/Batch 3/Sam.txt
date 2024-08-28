@@ -1,0 +1,16 @@
+<div class="product-description">
+<h2><span class="frame">About the Frames</span></h2>
+<div class="wrap-content">
+<div class="left-content">
+<p>Sam is a square round frame that sits smartly on round and oval face shapes. With its small-width fit, it’s the perfect frame for every day.</p>
+</div>
+<div class="right-content">
+<h3>Made from Acetate</h3>
+<div class="frame-options">
+<p><span class="label">Frame fit</span><span class="value">Small</span></p>
+<p><span class="label">Measurements</span><span class="value">48 - 19 - 145</span></p>
+</div>
+<p class="small-text">These measurements mean lens width, bridge, and temple length in millimetres (mm). They can be found on the inside of the temple arm. If you already have a pair that you like, you can compare it to these measurements.</p>
+</div>
+</div>
+</div>

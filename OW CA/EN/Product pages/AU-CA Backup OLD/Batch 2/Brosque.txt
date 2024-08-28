@@ -1,0 +1,16 @@
+<div class="product-description">
+<h2><span class="frame">About the Frames</span></h2>
+<div class="wrap-content">
+<div class="left-content">
+<p>A captains frame, Brosque is trusty, strong, and reliable. Ultra lightweight and flexible with spring hinges, this frame will have your back on and off the field.</p>
+</div>
+<div class="right-content">
+<h3>Made from TR/Ultem Material</h3>
+<div class="frame-options">
+<p><span class="label">Frame fit</span><span class="value">Medium</span></p>
+<p><span class="label">Measurements</span><span class="value">53 - 16 - 140</span></p>
+</div>
+<p class="small-text">These measurements mean lens width, bridge, and temple length in millimetres (mm). They can be found on the inside of the temple arm. If you already have a pair that you like, you can compare it to these measurements.</p>
+</div>
+</div>
+</div>

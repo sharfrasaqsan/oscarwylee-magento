@@ -1,0 +1,360 @@
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="52"}}</p>
+<!--Sliding Banner -->
+<p>{{block class="Smartosc\BannerSlider\Block\Widget" slider_id="2"}}</p>
+<!--Shop -->
+<style>
+* {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* .container {
+            width: 100vw;
+        }
+
+        .carousel-container {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        } */
+
+        .shop-widget__left,
+        .shop-widget__right {
+            min-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 20px;
+        }
+
+        .shop-widget {
+            flex-wrap: wrap;
+        }
+
+        .shop-widget__left .widget-content,
+        .shop-widget__right .widget-content {
+            transform: translate(-50%, -50%);
+        }
+
+        /* .sm-banner-slider {
+            margin-top: -10px !important;
+        }
+
+        .home-banner {
+            margin-top: 0px !important;
+        } */
+
+        .sticky.page-main {
+            margin-top: 0px;
+        }
+
+        .widget-content {
+            max-width: 270px !important;
+        }
+
+        .content__desc {
+            padding-right: 20px !important;
+        }
+
+  @media (max-width: 1053px) {
+.shop-widget__left .widget-image .image, .shop-widget__right .widget-image .image {
+                padding: 5px;
+            }
+            .shop-widget__left .widget-content,
+            .shop-widget__right .widget-content {
+                transform: none;
+            }
+
+            .shop-widget__left .widget-content,
+            .shop-widget__right .widget-content {
+                position: absolute;
+                top: 20%;
+                left: 5%;
+            }
+
+            .shop-widget__left,
+            .shop-widget__right {
+                min-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 20px;
+            }
+
+        }
+
+        @media (max-width: 824px) {
+            .widget-content {
+                display: block !important;
+            }
+
+            /* .home-banner {
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+            } */
+
+        }
+
+        @media only screen and (max-width: 768px) {
+            .shop-widget {
+                max-width: 100%;
+            }
+
+            .shop-widget__title {
+                max-width: 550px;
+            }
+
+            .shop-widget__left .widget-content,
+            .shop-widget__right .widget-content {
+                transform: none;
+            }
+
+            .shop-widget__left .widget-content,
+            .shop-widget__right .widget-content {
+                position: absolute;
+                top: 20%;
+                left: 5%;
+            }
+
+            .shop-widget__left,
+            .shop-widget__right {
+                min-width: 450px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 20px;
+            }
+
+        }
+
+
+        @media (max-width: 620px) {
+            /* .home-banner__content-title {
+                margin-top: 0px !important;
+            } */
+            .shop-widget__left .widget-content,
+            .shop-widget__right .widget-content {
+                position: unset;
+                top: unset;
+                left: unset;
+            }
+            
+
+            .shop-widget__left,
+            .shop-widget__right {
+                width: 100%;
+                padding-bottom: 4.5rem;
+                min-width: 100%;
+            }
+
+            .shop-widget__left .widget-content,
+            .shop-widget__right .widget-content {
+                transform: translate(1%, 5%);
+                max-width: 100% !important;
+            }
+        }
+                            @media (max-width: 512px) {
+                                .home-banner__content-title {
+                                    margin-top: 0px !important;
+                                }
+                            }
+
+.collection-widget{ margin-top: 3rem; }
+.shop-widget__right .widget-content .content__title {
+color: #fff;
+}
+
+.shop-widget__right .widget-content .content__desc {
+color: #fff;
+}
+                        </style>
+<div class="columns">
+<div class="column main">
+<div class="widget block block-static-block"></div>
+<p></p>
+<!--Shop -->
+<p></p>
+<div class="widget block block-static-block">
+<h1 class="shop-widget__title" style="margin-bottom: 20px;">Find the perfect frames with 2 pairs from $249 or 3 pairs from $299</h1>
+<p></p>
+<div>
+<p style="text-align: center; font-size: 15px; font-weight: bold; margin-bottom: 25px;">We accept Southern Cross health insurance.</p>
+</div>
+<div class="shop-widget">
+<div class="shop-widget__left">
+<div class="widget-image"><img class="image" src="{{media url="wysiwyg/NZ_Free_Eye_test_small_banner.jpg"}}"></div>
+<div class="widget-content">
+<p class="content__title">Free Eye Test With Purchase</p>
+<p class="content__desc">Our qualified optometrists provide free eye tests when you purchase a pair of our glasses on the same day. Otherwise, eye tests will cost $30. Book online.</p>
+<a class="btn btn-sunglasses" href="/eye-health/eye-test-info.html">Book now</a></div>
+</div>
+<div class="shop-widget__right">
+<div class="widget-image"><img class="image" src="{{media url="wysiwyg/banners/Health-Fund-reset-2023.jpg"}}" alt="Health Fund Benefits" title="Health Fund Benefits">
+<div class="widget-content">
+<p class="content__title">Health Fund Benefits have Reset!</p>
+<p class="content__desc">For most health fund members, your optical benefits have reset for 2023. It’s never too early to start claiming.</p>
+<a class="btn btn-sunglasses" href="/glasses.html">View Our Range</a></div>
+</div>
+</div>
+</div>
+{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="149"}} <!--Book an eye test near you -->
+<p></p>
+<div class="widget block block-static-block">
+<div class="book_an_eye_near_you ">
+<div class="main-width">
+<div class="book_an_eye-text">Book an eye test near you</div>
+<div class="book_an_eye-input"><input id="search-address" type="text" placeholder="Postcode/suburb/town"> <button><a class="js-booking-eye" href="/booking">search</a></button></div>
+<div class="book_an_eye-btn"><a class="btn btn-book-appointment js-booking-eye " href="/booking/">Book appointment</a></div>
+</div>
+</div>
+</div>
+<p></p>
+<p></p>
+<div class="customer-reviews">
+<div class="customer-reviews__header">
+<div class="header-title">Dedicated Optometrists, Friendly Staff and a Variety of Stylish Glasses!</div>
+<div class="header-certificate"><img class="image" src="https://i.ibb.co/Tkk2TCt/Google-Reviews-300x300-1.png"></div>
+</div>
+<div class="customer-reviews__main-content">
+<div class="loading-progress">
+<div class="loader"></div>
+</div>
+<div class="main-content">
+<div class="rate">
+<div class="rate__star">
+<div class="rating"><span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span></div>
+</div>
+<div class="rate__owner">Ruchi A | OW Palmerston North</div>
+<div class="rate__content">
+<p class="header">Great customer service</p>
+<p class="desc">Great customer service and all the staff members are so lovely and helpful.</p>
+</div>
+</div>
+<div class="rate">
+<div class="rate__star">
+<div class="rating"><span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span></div>
+</div>
+<div class="rate__owner">Dean M | OW Northlands</div>
+<div class="rate__content">
+<p class="header">You won't be disappointed</p>
+<p class="desc">The team works like a well-oiled machine. Friendliness is not optional and the team is great to deal with. Being on a budget they helped me get the best deal I could.</p>
+</div>
+</div>
+<div class="rate">
+<div class="rate__star">
+<div class="rating"><span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span></div>
+</div>
+<div class="rate__owner">Fleur B | OW Lynn Mall</div>
+<div class="rate__content">
+<p class="header">Exceptional service</p>
+<p class="desc">Very professional group of individuals working here. The service was exceptional, Steven Lim the Ophthalmologist who tested my eyes was extremely helpful.</p>
+</div>
+</div>
+<div class="rate">
+<div class="rate__star">
+<div class="rating"><span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span></div>
+</div>
+<div class="rate__owner">Gynn S | OW St. Lukes</div>
+<div class="rate__content">
+<p class="header">Highly recommended</p>
+<p class="desc">Sarah and the team are super helpful! Highly recommended as their service is definitely one of the best I’ve ever experienced.</p>
+</div>
+</div>
+<div class="rate">
+<div class="rate__star">
+<div class="rating"><span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span></div>
+</div>
+<div class="rate__owner">Jane S | OW Ponsonby</div>
+<div class="rate__content">
+<p class="header">Extremely efficient</p>
+<p class="desc">Staff in the Ponsonby store are really friendly, helpful, honest - the whole process is extremely efficient.</p>
+</div>
+</div>
+<div class="rate">
+<div class="rate__star">
+<div class="rating"><span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span> <span class="star checked"><label for="">☆</label></span></div>
+</div>
+<div class="rate__owner">Chad S | OW Ponsonby</div>
+<div class="rate__content">
+<p class="header">Professional and very thorough</p>
+<p class="desc">Professional and very thorough examination from Ernest and then Ollie was really helpful in selecting my new frames. Really appreciated their time and expertise.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/x-magento-init">
+    {
+        ".customer-reviews__main-content > .main-content": {
+            "Yereone_Testimonials/js/testimonial-slider":{"config":{"dots":false,"arrows":true,"infinite":true,"speed":300,"slidesToShow":3,"slidesToScroll":1,"autoplay":true,"autoplaySpeed":5000,"responsive":[{"breakpoint":1024,"settings":{"slidesToShow":3,"slidesToScroll":3}},{"breakpoint":768,"settings":{"slidesToShow":2,"slidesToScroll":2}},{"breakpoint":480,"settings":{"slidesToShow":1,"slidesToScroll":1}}]}}
+        }
+    }
+
+    </script>
+<p></p>
+<p></p>
+<div class="widget block block-static-block">
+<div class="box-store-locations main-width" style="margin-top: 3em; margin-bottom: 3em;">
+<div class="locations-left">
+<div class="locations-title">Store locations</div>
+<div class="locations-content">Get free comprehensive eye exams with our optometrist.<br>*Free eye test with optical glasses purchased on the same day. Otherwise $30.<br><br>Come visit us to have your eye health checked, look out for eye problems or eye diseases, update your prescription, and try on all of our glasses frames to find the perfect fit. Our in-store stylists are here to help you find the right pair of glasses or sunglasses.</div>
+<div class="locations-link"><a href="/locations.html"><button style="width: 30vw; max-width: 322px; color: white;">Find locations</button></a></div>
+</div>
+<div class="locations-right"><img src="{{media url="wysiwyg/homepage/OW_Locations_600x413_2.jpg"}}" alt="Oscar Wylee Stores" title="Oscar Wylee Stores" width="1272" height="1036"></div>
+</div>
+</div>
+<p></p>
+<!--4 block main -->
+<p></p>
+<div class="widget block block-static-block">
+<p></p>
+<div class="block-promotion">
+<div class="block-promotion__top">
+<div class="left">
+<div class="left-content">
+<p class="left-content-title">New Collection</p>
+<p class="left-content-desc">Discover our kid-proof new collection–glasses that are hard to break and hard to lose! These new frames come in a variety of colours with flexible hinges, and fun designs.</p>
+<div class="left-content-image-mobile"><img class="image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/homepage/Kids_Collection_Homepage_Block.jpg"></div>
+<a class="btn left-content-button" href="glasses/collection/kids-collection.html">Find out more</a></div>
+</div>
+<a href="glasses/collection/kids-collection.html" class="right"> <img class="image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/homepage/Kids_Collection_Homepage_Block.jpg"> </a></div>
+<div class="block-promotion__bottom">
+<div class="left">
+<div class="left-content">
+<p class="left-content-title">Free standard multifocal lens with your standard prescriptions*</p>
+<p class="left-content-desc">Purchase any one of our standard prescription glasses frames from $199 and get a set of standard multifocal lenses for free, or choose a multifocal lens to fit into any Oscar Wylee frame. Make any pair of our glasses frames fit your eyesight needs.</p>
+<div class="left-content-image-mobile"><img class="image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/homepage/multifocals.jpg"></div>
+<a class="btn left-content-button" href="/multifocal-lenses.html">View offer</a></div>
+</div>
+<a href="/multifocal-lenses.html" class="right"> <img class="image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/homepage/multifocals.jpg"> </a></div>
+</div>
+<p></p>
+</div>
+<p></p>
+<p></p>
+<div class="widget block block-static-block">
+<div class="carousel-form">
+<div class="carousel-form__content">
+<div class="content-title">#OSCARWYLEE</div>
+<div class="loading-progress">
+<div class="loader"></div>
+</div>
+<div class="content-carousel"><img class="image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/instagram/ig1.jpg" alt=""> <img class="image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/ig2_.png" alt=""> <img class="image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/instagram/ig3.jpg" alt=""> <img class="image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/instagram/ig4.jpg" alt=""> <img class="image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/instagram/ig5.jpg" alt=""> <img class="image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/instagram/ig6.jpg" alt=""> <img class="image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/instagram/ig7.jpg" alt=""> <img class="image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/ig8_.png" alt=""> <img class="image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/ig9.png" alt=""> <img class="image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/ig10.png" alt=""></div>
+<div class="content-bottom"><img class="image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/instagram/insta.png"> <a class="link">@oscarwylee</a></div>
+</div>
+</div>
+</div>
+<p></p>
+<!--Due for an eye test? Book now -->
+<p></p>
+<div class="widget block block-static-block">
+<div class="book-an-eye-test-bottom" style="margin-top: 4em;">
+<div class="book-an-eye-top">Due for an eye test? Book now:</div>
+<div class="book-an-eye-content"><a class="btn" href="/booking/">Book an eye test</a></div>
+<div class="book-an-eye-bottom">
+<p>We recommend that everyone should have an eye test with an optometrist at least once every 2 years.</p>
+<p>*Free eye test with optical glasses purchase on the same day. Otherwise $30.</p>
+</div>
+</div>
+</div>
+<p></p>
+</div>
+</div>
+</div>

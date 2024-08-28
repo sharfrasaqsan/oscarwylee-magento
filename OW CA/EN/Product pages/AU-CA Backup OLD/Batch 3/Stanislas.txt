@@ -1,0 +1,16 @@
+<div class="product-description">
+<h2><span class="frame">About the Frames</span></h2>
+<div class="wrap-content">
+<div class="left-content">
+<p>Stanislas is a lightweight frame, the perfect pair of glasses to accompany your kid from school to their weekend hobbies. The two-toned pattern is a playful design while the 180° hinge and comfortable ear grips make them sturdy enough for kids' adventures.</p>
+</div>
+<div class="right-content">
+<h3>Made from TR90</h3>
+<div class="frame-options">
+<p><span class="label">Frame fit</span><span class="value">X-Small</span></p>
+<p><span class="label">Measurements</span><span class="value">46 - 15 - 130</span></p>
+</div>
+<p class="small-text">These measurements mean lens width, bridge, and temple length. They can be found on the inside of the temple arm. If you already have a pair that you like, you can compare it to these measurements.</p>
+</div>
+</div>
+</div>

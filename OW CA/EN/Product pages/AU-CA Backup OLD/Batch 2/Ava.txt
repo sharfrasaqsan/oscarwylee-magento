@@ -1,0 +1,16 @@
+<div class="product-description">
+<h2><span class="frame">About the Frames</span></h2>
+<div class="wrap-content">
+<div class="left-content">
+<p>Rounded frame with iconic double-bolt details. Casual, light, and simply classic. Makes for the perfect everyday plus one.</p>
+</div>
+<div class="right-content">
+<h3>Made from Stainless Steel</h3>
+<div class="frame-options">
+<p><span class="label">Frame fit</span><span class="value">Medium</span></p>
+<p><span class="label">Measurements</span><span class="value">51 - 20 - 145</span></p>
+</div>
+<p class="small-text">These measurements mean lens width, bridge, and temple length in millimetres (mm). They can be found on the inside of the temple arm. If you already have a pair that you like, you can compare it to these measurements.</p>
+</div>
+</div>
+</div>

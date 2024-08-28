@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      /* Style the accordion container */
+      .accordion {
+        max-width: 100%;
+        margin: 0px 0px 40px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        cursor: text;
+        padding: 0px 0px;
+      }
+
+      .accordion::after {
+        content: none;
+      }
+
+      /* Style the accordion items */
+      .accordion-item {
+        border-bottom: 1px solid silver;
+      }
+
+      /* Style the accordion item headers */
+      .accordion-header {
+        background-color: #ffffff;
+        padding: 20px;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: #444;
+        cursor: pointer !important;
+      }
+
+      .accordion-header span {
+        font-weight: bold;
+        color: #000;
+      }
+
+      .accordion-header.active {
+        border-bottom: 1px solid silver !important;
+      }
+
+      /* Style the accordion item content */
+      .accordion-content {
+        transition: max-height 0.5s ease-out;
+        max-height: 0;
+        overflow: hidden;
+      }
+
+      .accordion-content-wrapper {
+        padding: 18px;
+      }
+
+      .accordion-content-wrapper p {
+        margin: 10px 0px;
+        font-size: 14px;
+        text-align: justify;
+        hyphens: auto;
+        line-height: 21px;
+        font-weight: 400;
+      }
+
+      .accordion-content-wrapper ol,
+      ul {
+        font-size: 14px;
+        line-height: 21px;
+      }
+
+      /* Style the active accordion item */
+      .active .accordion-content {
+        max-height: 1000px;
+      }
+
+      /* Style the icon */
+      .accordion-icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+      }
+
+      /* Plus and Minus Icons */
+      .accordion-header::after {
+        content: "\002B";
+        color: #777;
+        font-weight: 400;
+        float: right;
+        margin-left: 5px;
+        font-size: 25px;
+        /* Plus sign */
+      }
+
+      .accordion-header.active::after {
+        content: "\2212";
+        /* Minus sign */
+      }
+
+      /* OW Styles */
+      .accordion .accordion-item .accordion-header h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 15px;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-weight: 600;
+      }
+
+      .accordion-btn-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+
+      .accordion-btn-wrapper button {
+        background-color: #ffffff;
+        border: 1px solid #333;
+        box-shadow: none;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      /* what's included css fix */
+      .catalog-product-view .collapsible-container .collapsible-title {
+        width: 100%;
+      }
+
+      .catalog-product-view .oscar__product-description .product-description {
+        margin-bottom: 40px;
+      }
+
+      /* .new-product-details start */
+      .new-product-details
+        .product-description
+        .product-description-heading-wrapper {
+        position: relative;
+        top: -61px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .new-product-details
+        .product-description
+        .product-description-heading-wrapper
+        h2 {
+        width: 402px;
+        background-color: #ffffff;
+        position: unset;
+      }
+
+      .new-product-details .product-wrapper {
+        border-bottom: 1px solid silver;
+        margin: 0px 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+      }
+
+      .new-product-details .product-wrapper-left {
+        width: 50%;
+        padding-right: 50px;
+      }
+
+      .new-product-details .product-wrapper-right {
+        width: 50%;
+        padding-left: 50px;
+        border-left: 1px solid silver;
+        padding-bottom: 60px;
+      }
+
+      .new-product-details .product-wrapper-left p {
+        font-size: 20px;
+        text-align: center;
+        line-height: 35px;
+        margin-bottom: 30px;
+      }
+
+      .new-product-details .frame-table {
+        display: flex;
+        margin-bottom: 15px;
+      }
+
+      .new-product-details .frame-table p {
+        width: 50%;
+        padding: 15px;
+        border: 1px solid #000;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin: 0;
+        line-height: 27px;
+      }
+
+      .new-product-details .frame-table p + p {
+        border-left: none;
+      }
+
+      .new-product-details .frame-table p span {
+        display: block;
+      }
+
+      .new-product-details .frame-table .label {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+
+      .new-product-details .frame-table .value {
+        text-transform: uppercase;
+      }
+
+      .new-product-details .product-wrapper-left .small-text {
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+      }
+
+      .new-product-details .product-wrapper-right h3 {
+        margin-bottom: 28px;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+        width: 100%;
+        line-height: 32px;
+      }
+
+      .new-product-details .product-wrapper-right p {
+        font-size: 20px;
+        text-align: center;
+        line-height: 35px;
+      }
+
+      .new-product-details .spec-image {
+        width: 65px;
+        height: 65px;
+      }
+
+      .new-product-details .spec-content {
+        width: 440px;
+      }
+
+      .new-product-details .spec-content h5 {
+        width: 100%;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+
+      .new-product-details .spec-content p {
+        font-size: 20px;
+        line-height: 35px;
+      }
+
+      .new-product-details .product-specs-wrapper {
+        margin: 0px 50px;
+        padding-top: 0px;
+        display: flex;
+      }
+
+      .new-product-details .product-specs {
+        display: flex;
+        gap: 23px;
+      }
+
+      .new-product-details .product-specs img {
+        max-width: 65px;
+        max-height: 65px;
+      }
+
+      .new-product-details .product-specs-content h5 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 35px;
+      }
+
+      .new-product-details .product-specs-content p {
+        font-size: 20px;
+        line-height: 35px;
+      }
+
+      .new-product-details .product-specs-wrapper-left {
+        width: 50%;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+      }
+
+      .new-product-details .product-specs-wrapper-right {
+        width: 50%;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+      }
+
+      table.product-specs-table {
+        margin-top: 40px;
+      }
+
+      table.product-specs-table thead {
+        background: #ededed;
+        text-transform: uppercase;
+      }
+
+      table.product-specs-table thead th {
+        font-size: 15px;
+        vertical-align: middle;
+      }
+
+      table.product-specs-table tbody td {
+        vertical-align: middle;
+        font-size: 15px;
+        padding: 11px 48px;
+        border-left: 4px solid #fff;
+      }
+
+      table.product-specs-table .thead-features {
+        text-align: center;
+        border-right: 4px solid #ffffff;
+        width: 20%;
+      }
+
+      table.product-specs-table .thead-description {
+        padding: 15px 48px;
+      }
+
+      table.product-specs-table tbody {
+        background: #fbfbfb;
+      }
+
+      table.product-specs-table .spec-th-with-image {
+        text-align: center;
+        font-size: 15px;
+        /* border-right: 4px solid #fff; */
+        vertical-align: middle;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-width: 125px;
+        padding: 11px 20px;
+      }
+
+      .product-specs-table tr {
+        border-bottom: 4px solid #ffffff;
+      }
+
+      .product-specs-table img {
+        vertical-align: middle;
+        max-width: 53px;
+        margin-right: 15px;
+      }
+
+      .product-specs-table th.feature-name {
+        text-align: center;
+        vertical-align: middle;
+        font-weight: 700;
+        font-size: 15px;
+      }
+
+      .product-specs-table td.description {
+        vertical-align: middle;
+        font-size: 15px;
+        line-height: 22px;
+      }
+
+      .product-specs-table .product-specs-table-head {
+        font-size: 15px;
+      }
+
+      .product-specs-table th.table-icon {
+        vertical-align: middle;
+        width: 6%;
+      }
+
+      .product-specs-table .thead-item-one {
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        .new-product-details .product-wrapper {
+          margin: 0px 30px;
+        }
+
+        .new-product-details .product-specs-wrapper {
+          margin: 0px 30px;
+        }
+
+        .product-specs-table th.table-icon {
+          width: 8%;
+        }
+      }
+
+      @media only screen and (max-width: 820px) {
+        .new-product-details .product-wrapper-left {
+          padding-right: 30px;
+        }
+
+        .new-product-details .product-wrapper-right {
+          padding-left: 30px;
+        }
+
+        .product-specs-table th.table-icon {
+          width: 10%;
+        }
+
+        table.product-specs-table .thead-description {
+          padding: 15px 35px;
+        }
+
+        table.product-specs-table tbody td {
+          padding: 0px 35px;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        .new-product-details
+          .product-description
+          .product-description-heading-wrapper {
+          top: -115px;
+        }
+
+        .new-product-details .product-wrapper {
+          margin-top: -40px;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        section.new-product-details {
+          margin-top: 27px;
+        }
+
+        .new-product-details
+          .product-description
+          .product-description-heading-wrapper
+          h2 {
+          width: 220px;
+          line-height: 44px;
+        }
+
+        .new-product-details
+          .product-description
+          .product-description-heading-wrapper {
+          top: -135px;
+        }
+
+        .new-product-details .product-wrapper {
+          margin: 0px 20px;
+          margin-top: -110px;
+          flex-direction: column;
+          gap: 30px;
+        }
+
+        .new-product-details .product-wrapper-left {
+          padding-right: 0px;
+          width: 100%;
+        }
+
+        .new-product-details .product-wrapper-right {
+          padding-left: 0px;
+          width: 100%;
+          border-left: none;
+          padding-bottom: 25px;
+        }
+
+        .new-product-details .frame-table p {
+          font-size: 16px;
+        }
+
+        .new-product-details .product-specs-wrapper {
+          margin: 0px 20px;
+          flex-direction: column;
+          padding-top: 0px;
+        }
+
+        .new-product-details .product-specs-wrapper-left {
+          width: 100%;
+          padding-right: 0px;
+          gap: 20px;
+        }
+
+        .new-product-details .product-specs-wrapper-right {
+          width: 100%;
+          padding-left: 0px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          padding-top: 20px;
+        }
+
+        .product-specs-table th.feature-name {
+          text-align: left;
+          vertical-align: top;
+          font-weight: 700;
+          font-size: 15px;
+        }
+
+        .product-specs-table th.table-icon {
+          display: none;
+        }
+
+        .product-specs-table .thead-item-one {
+          text-align: left;
+        }
+
+        table.product-specs-table .spec-th-with-image {
+          min-width: 80px;
+          border-right: unset;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        table.product-specs-table .thead-description {
+          padding: 10px 20px;
+        }
+
+        table.product-specs-table tbody td {
+          padding: 11px 20px;
+          vertical-align: top;
+          /* border-left: 4px solid #fff; */
+        }
+
+        .product-specs-table img {
+          display: none;
+        }
+
+        table.product-specs-table .thead-features {
+          text-align: left;
+        }
+      }
+
+      /* .new-product-details end */
+
+      /* new table for frame fit start */
+      .frame-table table {
+        border: 1px solid black;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+
+      .frame-table table thead tr th {
+        text-align: center;
+        width: 50%;
+        font-weight: 700;
+      }
+
+      .frame-table table thead tr th:first-child {
+        border-right: 1px solid black;
+        text-align: center;
+        width: 50%;
+      }
+
+      .frame-table tbody tr td {
+        border-right: 1px solid black;
+        text-align: center;
+      }
+
+      .frame-table tbody tr td:first-child {
+        border-right: 1px solid black;
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 820px) {
+        .frame-table table {
+          font-size: 16px;
+        }
+      }
+
+      /* new table for frame fit start */
+    </style>
+  </head>
+
+  <body>
+    <!-- new product-details section start -->
+    <section class="new-product-details">
+      <div class="product-description">
+        <div class="product-description-heading-wrapper">
+          <h2>About Kato Frames</h2>
+        </div>
+
+        <div class="product-wrapper">
+          <div class="product-wrapper-left">
+            <p>
+              Charming, modern, and minimalist. These sleek spectacles are an
+              ode to the organized chaos of the Tokyo lifestyle - Because
+              there’s a little bit of madness in every method.
+            </p>
+
+            <div class="frame-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Frame fit</th>
+                    <th>Measurements</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>WIDE</td>
+                    <td>53 - 20 - 145</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="small-text">
+              These measurements mean lens width, bridge, and temple length in
+              millimetres (mm). They can be found on the inside of the temple
+              arm. If you already have a pair that you like, you can compare it
+              to these measurements.
+            </p>
+          </div>
+
+          <div class="product-wrapper-right">
+            <h3>Made from Stainless Steel</h3>
+            <p>
+              Oscar Wylee’s Kato frame is a unisex, round glasses frame that is
+              perfect for wide faces and those with square, oval and heart face
+              shapes. The Kato frame is a stylish, widely wearable frame suited
+              to many personal styles. The main specs of Oscar Wylee’s Kato
+              glasses frame including
+              <b>dimensions, shape, materials, lenses, nose fit and hinges</b>
+              are listed below.
+            </p>
+          </div>
+        </div>
+
+        <div class="product-specs-wrapper">
+          <table class="product-specs-table">
+            <thead>
+              <tr>
+                <th class="thead-features">Kato Frame Features</th>
+                <th class="thead-description">Kato Frame Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="spec-th-with-image">
+                  <img
+                    src="{{media url=wysiwyg/new-product-page/Dimensions.png}}"
+                    alt="product spec icon"
+                  />
+                  Dimensions
+                </th>
+                <td>
+                  The dimensions of the Kato frame are measured in millimetres
+                  (mm) and are 53 - 20 - 145, meaning the lens width is 53 mm,
+                  the bridge is 20 mm and the temple length is 145 mm.
+                </td>
+              </tr>
+
+              <tr>
+                <th class="spec-th-with-image">
+                  <img
+                    src="{{media url=wysiwyg/new-product-page/Shape.png}}"
+                    alt="product spec icon"
+                  />
+                  Shape
+                </th>
+                <td>
+                  The Kato frame is a round shape, well suited to wide faces.
+                </td>
+              </tr>
+
+              <tr>
+                <th class="spec-th-with-image">
+                  <img
+                    src="{{media url=wysiwyg/new-product-page/Materials.png}}"
+                    alt="product spec icon"
+                  />
+                  Materials
+                </th>
+                <td>
+                  Kato glasses are made from mostly stainless steel with acetate
+                  temple tips.
+                </td>
+              </tr>
+
+              <tr>
+                <th class="spec-th-with-image">
+                  <img
+                    src="{{media url=wysiwyg/new-product-page/Lenses.png}}"
+                    alt="product spec icon"
+                  />
+                  Lenses
+                </th>
+                <td>
+                  The lenses that can be used in the Kato frame are optical
+                  lenses, which include single vision and multifocal lenses and
+                  non-prescription lenses, which are plain and can have a filter
+                  like a blue light filter applied.
+                </td>
+              </tr>
+
+              <tr>
+                <th class="spec-th-with-image">
+                  <img
+                    src="{{media url=wysiwyg/new-product-page/Nose-Fit.png}}"
+                    alt="product spec icon"
+                  />
+                  Nose Fit
+                </th>
+                <td>The Kato frame is fitted with nose pads.</td>
+              </tr>
+
+              <tr>
+                <th class="spec-th-with-image">
+                  <img
+                    src="{{media url=wysiwyg/new-product-page/Hinges.png}}"
+                    alt="product spec icon"
+                  />
+                  Hinges
+                </th>
+                <td>
+                  The hinges in the Kato frames are normal hinges, also known as
+                  standard or barrel hinges.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- new product-details section end -->
+
+    <!-- acco section start -->
+    <section>
+      <div class="accordion-btn-wrapper">
+        <button id="toggleAllButton">Show All</button>
+      </div>
+
+      <div class="accordion">
+        <article>
+          <div class="accordion-item">
+            <div
+              class="accordion-header active"
+              style="border-top: 1px solid silver"
+            >
+              <h3>
+                What Inspired the <span>Frame Design</span> of Oscar Wylee’s
+                Kato Glasses?
+              </h3>
+            </div>
+            <div class="accordion-content" style="max-height: 1000px">
+              <div class="accordion-content-wrapper">
+                <p>
+                  The Oscar Wylee Kato frame design was inspired by current
+                  fashion trends as round glasses shapes are often in fashion.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h2>
+                What to Know <span>About Oscar Wylee’s Kato Glasses?</span>
+              </h2>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-wrapper">
+                <p>
+                  There are many aspects of the Oscar Wylee Kato frames that
+                  customers should know about, so they can decide whether this
+                  is the right frame for them. The Kato frame is a unisex
+                  round-shaped frame. Oscar Wylee’s Kato frame is suitable for
+                  many face shapes but particularly compatible with square, oval
+                  and heart face shapes. The Kato frame’s simple design means
+                  that they are fashionable all year round. Kato glasses feature
+                  the standard parts of glasses such as a rim, temples, lenses,
+                  normal hinges and nose pads.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>
+                What are the
+                <span>Types of Temple Tips or Earpieces</span> Included with
+                Oscar Wylee’s Kato Glasses?
+              </h3>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-wrapper">
+                <p>
+                  The type of temple tips or earpieces included in Oscar Wylee’s
+                  Kato Glasses are made from acetate.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>
+                What Type of <span>Nose Bridge</span> do Oscar Wylee’s Kato
+                Glasses Have?
+              </h3>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-wrapper">
+                <p>
+                  The type of nose bridge included in Oscar Wylee’s Kato frame
+                  is nose pads.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>
+                What Type of <span>Nose Pads</span> are Included with Oscar
+                Wylee’s Kato Glasses?
+              </h3>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-wrapper">
+                <p>
+                  Oscar Wylee’s Kato frame includes standard nose pads. Nose
+                  pads are great for comfort and can also be adjusted for the
+                  perfect fit.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>
+                What <span>Type of Lenses</span> do Oscar Wylee’s Kato Glasses
+                Have?
+              </h3>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-wrapper">
+                <p>
+                  The type of lenses that typically come with the Oscar Wylee
+                  Kato <a href="/glasses.html">glasses frame</a> are optical
+                  lenses. Optical lenses are glasses lenses that have a
+                  prescription within the lens to help correct vision issues
+                  such as myopia, hyperopia and astigmatism. Kato glasses can
+                  also come with non-prescription lenses, with add-ons such as a
+                  blue light filter. Kato frames are also available as
+                  sunglasses with polarised lenses.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>
+                What <span>Material is Used for the Rim</span> of Oscar Wylee’s
+                Kato Glasses?
+              </h3>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-wrapper">
+                <p>
+                  The material used for the rim of Oscar Wylee’s Kato glasses
+                  frames is stainless steel. The rim refers to the part of a
+                  glasses frame that holds the lenses.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>
+                What <span>Type of Hinges</span> are Included with Oscar Wylee’s
+                Kato Glasses?
+              </h3>
+            </div>
+
+            <div class="accordion-content">
+              <div class="accordion-content-wrapper">
+                <p>
+                  The type of hinges included with Oscar Wylee’s Kato frames are
+                  normal hinges, also known as standard or barrel hinges. These
+                  hinges have many interlocking loops that are stabilised with a
+                  small screw.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h2>
+                What <span>Face Types</span> are Most Suitable for Oscar Wylee’s
+                Kato Glasses?
+              </h2>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-wrapper">
+                <p>
+                  The face types that are most suitable for Oscar Wylee’s Kato
+                  frame are heart, oval and square face shapes. The Kato frame
+                  is a round shape, meaning that it complements the structure of
+                  oval faces particularly well. The round Kato frames help to
+                  balance the features of an oval face shape and a heart face
+                  shape, bringing the eyes and brows forward in a flattering
+                  way. The Kato frame is also suitable for a square face shape.
+                  Round frames help to bring forward the sharp and striking
+                  features of a square face type, highlighting without
+                  overemphasising them. Although there are many
+                  <a href="/glasses/face-shapes">glasses for face shapes</a>
+                  that may be considered more aesthetically suitable, it is
+                  important that people also choose the frames that make them
+                  feel most comfortable, and represent their personal style.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h2>
+                What <span>Size Options</span> are Available for Oscar Wylee’s
+                Kato Glasses?
+              </h2>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-wrapper">
+                <p>
+                  The size options available for Oscar Wylee’s Kato frame are a
+                  wide-frame fit across all colours.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h2>
+                What <span>Materials</span> are Used to Create Oscar Wylee’s
+                Kato Glasses?
+              </h2>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-wrapper">
+                <p>
+                  The primary materials used to create the Oscar Wylee Kato
+                  frame are metal and acetate. The rim, nose bridge and temples
+                  are made from stainless steel and the temple tips are made
+                  from acetate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- acco section end -->
+
+    <script>
+      //  Accordions
+      var accordionHeaders = document.querySelectorAll(".accordion-header");
+      var accordionContents = document.querySelectorAll(".accordion-content");
+      var toggleAllButton = document.getElementById("toggleAllButton");
+
+      accordionHeaders.forEach(function (header) {
+        header.addEventListener("click", function () {
+          var content = this.nextElementSibling;
+          if (!content.style.maxHeight) {
+            document
+              .querySelectorAll(".accordion-content")
+              .forEach(function (item) {
+                item.style.maxHeight = null;
+                item.previousElementSibling.classList.remove("active");
+              });
+          }
+          this.classList.toggle("active");
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+          updateToggleButton();
+        });
+      });
+
+      toggleAllButton.addEventListener("click", function () {
+        var anyClosed = false;
+        accordionContents.forEach(function (content) {
+          if (!content.style.maxHeight) {
+            anyClosed = true;
+          }
+        });
+
+        accordionContents.forEach(function (content) {
+          content.style.maxHeight = anyClosed
+            ? content.scrollHeight + "px"
+            : null;
+          content.previousElementSibling.classList.toggle("active", anyClosed);
+        });
+
+        toggleAllButton.textContent = anyClosed ? "Hide All" : "Show All";
+      });
+
+      function updateToggleButton() {
+        var anyClosed = false;
+        accordionContents.forEach(function (content) {
+          if (!content.style.maxHeight) {
+            anyClosed = true;
+          }
+        });
+        toggleAllButton.textContent = anyClosed ? "Show All" : "Hide All";
+      }
+
+      // table colspan
+      //let getWidth = screen.width
+
+      // const getThead = document.querySelectorAll('.thead-item-one');
+
+      // if (getWidth < 500) {
+      //   const changeColspan = getThead[0].attributes[1].value = 1
+      // }
+    </script>
+  </body>
+</html>
