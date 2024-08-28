@@ -1,0 +1,138 @@
+ <div class="conditions">
+        <h2>Common eye conditions</h2>
+        <p class="conditionsPara">
+          Our qualified optometrists are here to help If you have any concern
+          regarding your vision or eyes. Our stores are fully equipped to
+          diagnose or treat many common eye conditions.
+          <br /><br />
+          Eye tests are bulk billed, so if you hold an eligible Medicare card,
+          there’s no cost to you*.
+        </p>
+
+        <div class="columns">
+          <div class="column">
+            <p>Blepharitis</p>
+          </div>
+          <div class="column">
+            <p>Cataracts</p>
+          </div>
+          <div class="column">
+            <p>Conjuctivitis</p>
+          </div>
+          <div class="column">
+            <p>Double Vision</p>
+          </div>
+          <div class="column">
+            <p>Dry Eyes</p>
+          </div>
+          <div class="column">
+            <p>Glaucoma</p>
+          </div>
+          <div class="column">
+            <p>Myopia</p>
+          </div>
+          <div class="column">
+            <p>Stye</p>
+          </div>
+        </div>
+
+        <div class="conditionBtn">
+          <a
+            href="https://www.oscarwylee.com.au/eye-health/common-eye-conditions.html"
+          >
+            <button>See more eye conditions</button>
+          </a>
+        </div>
+      </div>
+
+
+.conditions {
+  text-align: center;
+  margin: 0 1rem 3em 1rem;
+  background-color: #e7e7e7;
+}
+
+.conditions h2 {
+  font-size: 26px;
+  margin: 1em auto;
+  color: #333;
+  width: 80%;
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+.conditionsPara {
+  margin: 1em auto;
+  color: #333;
+  padding: 0 2em;
+  max-width: 1000px;
+  text-align: center !important;
+}
+
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 28px auto 16px;
+  text-align: center;
+  max-width: 1000px;
+  padding-top: 2rem;
+}
+
+.column {
+  /* flex: 1; */
+  width: 12%;
+  border: none;
+  margin: 1px;
+}
+
+.column p {
+  margin: 0 0 10px;
+}
+
+.conditionBtn {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.conditionBtn button {
+  background-color: rgba(51, 51, 51, 0.85);
+  opacity: 0.85;
+  color: #fff;
+  border: 1px solid #fff;
+  box-shadow: none;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+  font-weight: 500;
+}
+
+.conditionBtn button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+
+@media (max-width: 992px) {
+  .column {
+    width: 20%;
+  }
+}
+
+
+@media (max-width: 770px) {
+  .column {
+    width: 40%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .column {
+    width: 50%;
+  }
+}
+
+
+
+

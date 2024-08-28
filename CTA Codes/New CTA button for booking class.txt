@@ -1,0 +1,77 @@
+/* New CTA button style.*/
+
+.ctaContainer {
+  max-width: 94%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 2rem 0rem;
+  border-top: 1px solid silver;
+}
+
+.ctaText h2 {
+  font-weight: 700;
+  padding-left: 0.5rem;
+  padding-top: 0;
+}
+
+.ctaText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ctaText p {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .ctaContainer {
+    max-width: 94%;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaContainer {
+    max-width: 92%;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbtmPadding {
+    padding: 2rem 0rem !important;
+  }
+
+  .resRmvTopPaddingMargin {
+    margin-top: 0 !important;
+    padding-top: 0rem !important;
+  }
+
+  .ctaContainer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .ctaContainer {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 1rem 0.5rem;
+  }
+
+  .ctaText > * {
+    margin-bottom: 20px;
+  }
+}
+
+.adjustMargin {
+  text-align: center;
+}
