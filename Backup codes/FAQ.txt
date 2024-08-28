@@ -1,0 +1,70 @@
+<div class="static-side-menu">{{block class="Magento\Cms\Block\Block" block_id="faq-menu"}}</div>
+<div class="static-faq-content">
+<h3 class="faqtitle">POPULAR QUESTIONS</h3>
+<div class="faqheader"><strong>COVID-19: Orders</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p><strong>COVID-19: What happens to my order placed before the lockdown?</strong></p>
+<p>All orders placed in our stores before the unfortunate, but temporary, restriction changes due to COVID-19 will be held for you.</p>
+<p>If you need to collect your order, contact the store of purchase and they will be able to guide you through the best way of you being able to collect your new glasses.</p>
+<p><strong>COVID-19: Is there any delay for online orders?</strong></p>
+<p>There is currently a slight delay with online orders being processed.&nbsp;Once your order has been processed you will receive an AusPost tracking number.</p>
+</div>
+</div>
+<div class="faqheader"><strong>Cancel or reschedule an eye test?</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p>To cancel or reschedule your eye test, click the link in your confirmation email or call the store.</p>
+</div>
+</div>
+<div class="faqheader"><strong>Requesting a prescription?</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p>A copy of your prescription is included in your order confirmation invoice. If you require a full copy, contact the store that completed your eye test and they will be able to email you a copy.</p>
+</div>
+</div>
+<div class="faqheader"><strong>Pricing?</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p>We offer a single pair of prescription glasses from $169 or two pairs from $199. Lens extras such as anti-glare, blue light filter or polarised coatings are available for an additional cost.</p>
+<p>Speak with our store team and they can help with pricing and health fund quoting.</p>
+</div>
+</div>
+<div class="faqheader"><strong>Eye test price?</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p>We offer bulk-billed eye tests for eligible Medicare cardholders, so there are no out-of-pocket expenses. Under Medicare, you can claim 1 comprehensive eye test every 3 years. <br><br>If you are not covered under Medicare, eye tests are $60 each.</p>
+<p>Click <a href="/booking/">here</a> to book an eye test.</p>
+</div>
+</div>
+<div class="faqheader"><strong>Repairs/Returns</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p><strong>Repairs</strong></p>
+<p>If your frames are damaged, head in and see our store teams and they will be able to help fix or replace them for you.</p>
+<p>Charges may apply for items not covered under our 12-month warranty.</p>
+<p><strong>Returns</strong></p>
+<p>Since each pair of glasses is customised based on your prescription, we cannot offer any exchange or refund for change of mind on prescription items.</p>
+<p>If the prescription provided from an external optometrist is incorrect or if the prescription is no longer valid, purchasers agree that Oscar Wylee is not responsible for the cost of the remake.</p>
+<p>For non-prescription over the counter items, we can offer exchanges within 14 days from received granted they are still in satisfactory condition.</p>
+</div>
+</div>
+<div class="faqheader"><strong>Changing an order?</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p>Once an order has been placed, we are unable to modify or cancel it. Your order will be sent to the manufacturer at the close of business on the day of purchase. Please contact your store of purchase for more information.</p>
+</div>
+</div>
+<div class="faqheader"><strong>Following up an order?</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p>We recommend allowing up to 10 business days for your order to be ready for collection in store. If you are having your order posted to you, you will receive an email with the tracking number once your order has been shipped.</p>
+</div>
+</div>
+<div class="faqheader"><strong>Lens issue?</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p>If you are having issues with your lenses, head in-store and one of our team will be happy to take a look and let you know the best next steps.</p>
+</div>
+</div>
+</div>

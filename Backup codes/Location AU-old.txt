@@ -1,0 +1,413 @@
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="45"}}</p>
+<div>
+<div class="static-location">
+<div class="static-location-box">
+<div style="padding: 0; margin-top: 20px;"><strong>Australian Capital Territory</strong></div>
+<div class="tabcontent" style="display: block;">
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-canberra-centre.html">Canberra Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-belconnen.html">Belconnen</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-tuggeranong.html">Tuggeranong South.Point</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-woden.html">Woden Westfield</a></p>
+</div>
+</div>
+</div>
+<div class="static-location-box">
+<div style="padding: 0;"><strong>New South Wales</strong></div>
+<div class="tabcontent">
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-albury.html">Albury</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-bowral.html">Bowral</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-blacktown.html">Blacktown Westpoint</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-bondi-junction.html">Bondi Junction Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-broadway.html">Broadway Shopping Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-burwood.html">Burwood Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-castle-towers.html">Castle Towers</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-charlestown.html">Charlestown Square</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-chatswood-chase.html">Chatswood Chase</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-dubbo.html">Dubbo Orana Mall</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-eastgardens.html">Eastgardens Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-erina-fair.html">Erina Fair</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-green-hills.html">Green Hills Stockland</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-hornsby.html">Hornsby Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-hurstville.html">Hurstville Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-kotara.html">Kotara Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-liverpool.html">Liverpool Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-macarthur-square.html">Macarthur Square</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-macquarie-centre.html">Macquarie Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-miranda.html">Miranda Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-mt-druitt.html">Mt Druitt Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-narellan.html">Narellan Town Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-newtown.html">Newtown</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-orange.html">Orange Central Square</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-parramatta.html">Parramatta Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-penrith.html">Penrith Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-rhodes.html">Rhodes Waterside</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-rouse-hill.html">Rouse Hill Town Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-salamander-bay.html">Salamander Bay Square</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-shellharbour.html">Shellharbour Stockland</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-st-ives.html">St Ives Shopping Village</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-sydney-galeries.html">The Galeries, Pitt St</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-top-ryde.html">Top Ryde City</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-tuggerah.html">Tuggerah Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-tweed-city.html">Tweed City Shopping Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-wagga-wagga.html">Wagga Wagga Marketplace</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-warringah-mall.html">Warringah Mall Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-wetherill-park.html">Wetherill Park Stockland</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-winston-hills.html">Winston Hills Mall</a></p>
+</div>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-wollongong-central.html">Wollongong Central</a></p>
+</div>
+</div>
+<div class="static-location-box">
+<div style="padding: 0;"><strong>Northern Territory</strong></div>
+<div class="tabcontent">
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-casuarina.html">Casuarina Square</a></p>
+</div>
+</div>
+</div>
+<div class="static-location-box">
+<div style="padding: 0;"><strong>Queensland</strong></div>
+<div class="tabcontent">
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-albert-st.html">Brisbane - Albert St</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-cairns.html">Cairns Central</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-capalaba.html">Capalaba Park</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-carindale.html">Carindale Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-chermside.html">Chermside Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-mt-gravatt.html">Mt Gravatt Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-helensvale.html">Helensvale Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-indooroopilly.html">Indooroopilly Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-kawana.html">Kawana Shoppingworld</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-loganholme.html">Loganholme Hyperdome</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-mackay.html">Mackay - Caneland Central</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-sunshine-plaza.html">Maroochydore Sunshine Plaza</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-morayfield.html">Morayfield Shopping Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-noosa.html">Noosa Civic</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-north-lakes.html">North Lakes Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-springfield.html">Orion Springfield Central</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-pacific-fair.html">Pacific Fair</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-robina.html">Robina Town Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-rockhampton.html">Rockhampton Stockland</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-southport.html">Southport - Australia Fair</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-strathpine.html">Strathpine Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-toowoomba.html">Toowoomba Grand Central</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-townsville.html">Townsville Shopping Centre</a></p>
+</div>
+</div>
+</div>
+<div class="static-location-box">
+<div style="padding: 0;"><strong>South Australia</strong></div>
+<div class="tabcontent" style="display: block;">
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-rundle-mall.html">Adelaide - Rundle Mall</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-colonnades.html">Colonnades</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-elizabeth.html">Elizabeth City Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-marion.html">Marion Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-tea-tree-plaza.html">Tea Tree Plaza</a></p>
+</div>
+</div>
+</div>
+<div class="static-location-box">
+<div style="padding: 0;"><strong>Tasmania</strong></div>
+<div class="tabcontent" style="display: block;">
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-rosny-park.html">Rosny Park - Eastlands</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-hobart.html">Hobart - The Cat &amp; Fiddle Arcade</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-launceston.html">Launceston</a></p>
+</div>
+</div>
+</div>
+<div class="static-location-box">
+<div style="padding: 0;"><strong>Victoria</strong></div>
+<div class="tabcontent">
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-airport-west.html">Airport West Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-bendigo.html">Bendigo Marketplace</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-broadmeadows.html">Broadmeadows Central</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-chadstone.html">Chadstone Shopping Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-chirnside-park.html">Chirnside Park</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-craigieburn.html">Craigieburn Central</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-cranbourne-park.html">Cranbourne Park</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-dandenong.html">Dandenong Plaza</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-doncaster.html">Doncaster Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-eastland.html">Eastland Shopping Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-epping.html">Epping Pacific</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-forest-hill.html">Forest Hill Chase</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-fountain-gate.html">Fountain Gate Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-geelong.html">Geelong Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-greensborough.html">Greensborough Plaza</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-highpoint.html">Highpoint Shopping Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-keilor-downs.html">Keilor Downs Shopping Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-knox.html">Knox Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-chapel-st.html">Melbourne - Chapel St</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-swanston-st.html">Melbourne - Swanston St</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-melbourne-central.html">Melbourne Central</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-melton.html">Melton Woodgrove Shopping Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-mildura.html">Mildura Central</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-moonee-ponds.html">Moonee Ponds Central</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-mornington.html">Mornington Central</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-northland.html">Northland Shopping Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-plenty-valley.html">Plenty Valley Westfield </a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-shepparton.html">Shepparton Marketplace</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-southland.html">Southland Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-traralgon.html">Traralgon</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-victoria-gardens.html">Victoria Gardens</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-watergardens.html">Watergardens Town Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-werribee.html">Werribee Pacific</a></p>
+</div>
+</div>
+</div>
+<div class="static-location-box">
+<div style="padding: 0;"><strong>Western Australia</strong></div>
+<div class="tabcontent" style="display: block;">
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-booragoon.html">Booragoon Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-carousel.html">Carousel Westfield</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-claremont.html">Claremont Quarter</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-fremantle.html">Fremantle</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-whitford-city.html">Hillarys Westfield Whitford City</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-joondalup.html">Joondalup Lakeside</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-karrinyup.html">Karrinyup Shopping Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-mandurah.html">Mandurah Forum</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-midland-gate.html">Midland Gate</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-morley-galleria.html">Morley - Galleria Shopping Centre</a></p>
+</div>
+<div class="static-address-box" style="cursor: pointer;">
+<p style="padding: 0;"><a href="/locations/optometrist-rockingham.html">Rockingham Shopping Centre</a></p>
+</div>
+</div>
+</div>
+<div class="static-location-box">
+<div style="padding: 0;"><strong>International</strong></div>
+<p>Redirects to the region's website</p>
+<div class="tabcontent" style="display: block;">
+<p style="padding: 0;"><a href="https://oscarwylee.ca">Oscar Wylee Canada</a></p>
+<p style="padding: 0;"><a href="https://www.oscarwylee.co.nz">Oscar Wylee New Zealand</a></p>
+</div>
+</div>
+</div>
+</div>

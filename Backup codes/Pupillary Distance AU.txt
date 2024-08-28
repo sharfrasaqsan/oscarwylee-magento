@@ -1,0 +1,701 @@
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap");
+
+#maincontent {
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #333333;
+}
+
+.footer-item h4,
+.footer-item h3,
+.help-block h3,
+.copyright span {
+  color: #fff;
+}
+
+*,
+page-main {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #333333;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+
+button:hover {
+  color: white !important;
+}
+
+ul, ol {
+  margin-bottom: 0;
+}
+
+.mainContainer {
+  max-width: 1236px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.banner{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.text{
+    max-width: 100%;
+}
+
+.bannerMob{
+    display: none;
+  }
+
+.title{
+  width: calc(100% - 8rem);
+  padding: 2.5rem 3rem;
+  text-align: center;
+  margin: 0 1rem 2rem 1rem;
+  border-bottom: 1px solid silver;
+}
+
+.title h1,
+.title h2 {
+  font-weight: 700;
+  padding-bottom: 3rem;
+}
+
+.title p {
+  padding: 0 6rem 2rem;
+}
+
+.context {
+  width: calc(100% - 2rem);
+  padding: 0 1rem;
+}
+
+
+.context h2 {
+  padding: 1rem 0 0 0;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.context h3 {
+  padding: 2rem 0 0 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+.context p {
+  padding: 1.5rem 0.5rem 2rem 0.5rem;
+  font-size: 16px;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.linkTo {
+  color: #003cac;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+.context ul,
+.context ol {
+  width: calc(100% - 4rem);
+  text-align: justify;
+  text-align-last: left;
+  padding: 1.5rem 0 1.5rem 2rem;
+}
+
+.tips,
+.border{
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    margin: 3rem auto 3.5rem auto;
+    padding: 2rem;
+}
+
+.context ul li,
+.context ol li {
+  padding-bottom: 1rem;
+}
+
+.pupillary,
+.pupillaryTwo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.pupillaryTwo{
+        border-bottom: 1px solid silver;
+        padding-bottom: 4rem;
+        padding-top: 1.5rem;
+    }
+
+.sideText,
+.sideTextTwo{
+    width: 45%;
+    min-width: 350px;
+    background-color: #f7f5f2;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 3px 3px 6px silver;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image {
+  max-width: 45%;
+  min-width: 350px;
+  margin: 2rem auto;
+}
+
+.noStyle{
+    list-style: none;
+    padding-top: 0 !important;
+}
+
+.pdMain{
+    background-color: #f7f5f2;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 1rem 3rem;
+margin: 0 1rem;
+    box-shadow: 3px 3px 6px silver;
+}
+
+.pdMainTwo{
+        background-color: #f7f5f2;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        padding: 1rem 2rem;
+        box-shadow: 3px 3px 6px silver;
+    }
+
+.cards{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: auto;
+    column-gap: 2rem;
+}
+
+.card{
+    width: calc(100% - 8rem);
+    box-shadow: 3px 3px 5px silver;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: #f7f5f2;
+    margin: 2rem 1rem;
+    padding: 1rem 3rem;
+}
+
+.card h3, 
+.blueList li{
+    font-weight: 700;
+    color: #003cac;
+}
+
+.blueList span{
+    color: #333333;
+    font-weight: 400;
+}
+    
+
+.location {
+    max-width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: max-content;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+    border-top: 1px solid silver;
+  }
+  
+  .locationText h2 {
+    font-weight: 700;
+  }
+
+  .textBorder{
+    border-top: 1px solid silver;
+    margin-top: 5.5rem;
+    padding: 2rem;
+  }
+  
+  .locationText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .locationText p {
+    font-size: 16px;
+  }
+  
+  .locationImage {
+    width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+  
+  .allButton {
+    width: 100%;
+  }
+  
+  .allButton a {
+    text-decoration: none;
+  }
+  
+  .btnOw:hover {
+    background-color: black;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    border: none !important;
+  }
+  
+  .btnOw {
+    background-color: #003cac;
+    width: 80%;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+  }
+
+
+/* vertical */
+  .reveal {
+    position: relative;
+    transform: translateY(60px);
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    -o-transform: translateY(60px);
+    opacity: 0;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+  }
+  
+  .reveal.active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .square {
+        animation: wipe-enter 1s 1;
+        -webkit-animation: wipe-enter 1s 1;
+}
+  }
+  
+
+
+@media (max-width: 992px) {
+  .title {
+    width: calc(100% - 2rem);
+    padding: 1.5rem 1rem;
+    margin: 0 0 2rem 0;
+  }
+
+  .context {
+    width: calc(100% - 3rem);
+    padding: 0 1.5rem;
+  }
+
+  .locationImage {
+    order: 1;
+  }
+}
+
+@media (max-width: 835px) {
+    .image,
+  .sideText,
+  .sideTextTwo{
+    width: 100%;
+  }
+.imageTwo {
+    order: 1;
+  }
+}
+
+@media (max-width: 710px) {
+    .title p {
+        padding: 0 1rem 1rem;
+    }
+    .tips{
+        margin: 0 auto;
+    }
+
+  
+
+  .locationImage {
+    order: 1;
+  }
+
+  .allButton {
+    margin-bottom: 5px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 6rem);
+    padding-left: 3rem;
+  }
+
+  .context {
+    width: calc(100% - 1rem);
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+.textBorder{
+    padding: 1rem;
+  margin-top: 3rem;
+  }
+    
+  h1 {
+    font-size: 38px;
+  }
+ .tips{
+    padding: 1rem;
+ }
+  .cards{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+margin-top: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  }
+  .image, 
+  .sideText,
+  .sideTextTwo{
+    min-width: 300px;
+  }
+
+.pupillaryTwo{
+        padding-bottom: 0;
+    }
+
+.pdMain{
+    
+    margin: 0 0.4rem;
+    padding: 1rem ;
+ }
+
+.pdMainTwo{
+margin-bottom: 4rem;
+margin-top: 4rem;
+}
+
+  .banner{
+    display: none;
+  }
+
+  .bannerMob{
+    display: flex;
+    width: 100%;
+  }
+
+  .border{
+    padding: 1rem;
+margin-top: 0;
+  }
+  .context p {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 3rem);
+    padding-left: 1.5rem;
+  }
+  .card {
+    width: calc(100% - 2.5rem);
+    padding: 1rem;
+    margin: 1rem auto ;
+    text-align: center;
+}
+  .context ul,
+  .context ol,
+  .context p {
+      text-align: left;
+  }
+.pupillary{
+margin-bottom: 0;
+}
+
+}
+
+@media (max-width: 360px) {
+  .location {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 1rem 0.5rem;
+  }
+  .cards{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .image,
+  .sideText,
+  .sideTextTwo{
+    min-width: 220px;
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 3rem);
+    padding-left: 1.5rem;
+  }
+
+  .locationText>* {
+    margin-bottom: 20px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+}
+</style>
+<p><img class="bannerMob" src="{{media url="wysiwyg/Pupillary-Distance-assets/dsk__pd.jpg"}}" alt="banner" title="pupillary distance"></p>
+<div class="mainContainer"><img class="banner" src="{{media url="wysiwyg/Pupillary-Distance-assets/dsk__pd.jpg"}}" alt="banner" title="pupillary distance">
+<div class="title">
+<h1>What Is Pupillary Distance?</h1>
+<p>At Oscar Wylee, we are dedicated to giving you the best eye care and products. When it comes to getting your glasses made, we need to know your pupillary distance (PD) so that the lens sits correctly over your eyes, giving you clear and comfortable vision.</p>
+</div>
+<div class="context">
+<div class="pupillary">
+<div class="sideText">
+<h2>What is pupillary distance (PD)?</h2>
+<p>Pupillary Distance (PD) is the measurement in millimetres of the distance between the centre of each of your pupils. It is used to ensure that your lenses are positioned correctly to give you the best possible vision. PD measurements are important for people who wear glasses and will always be taken before you buy prescription eyewear. <br><br>If you’re unsure about your PD measurement, visit an Oscar Wylee <a class="linkTo" href="https://www.oscarwylee.com.au/locations/full-store-list.html">store near you</a> and our friendly team can assist you.</p>
+</div>
+<img class=" image" src="{{media url="wysiwyg/Pupillary-Distance-assets/pd1.jpg"}}" alt="banner" title="pupillary distance"></div>
+<div class="border">
+<div class="pupillaryTwo"><img class="image imageTwo" src="{{media url="wysiwyg/Pupillary-Distance-assets/pd3.jpg"}}" alt="banner" title="pupillary distance">
+<div class="sideTextTwo">
+<h2>Binocular vs monocular pupillary distance</h2>
+<p>There are two kinds of pupillary distance measurements. One which measures the total distance between your pupils and the other is the two measurements between the centre of each pupil to the bridge of your nose.</p>
+<h3>Binocular PD</h3>
+<p>Binocular PD is the total measurement between the pupils, as explained above.</p>
+<h3>Monocular PD</h3>
+<p>Not all eyes are equally proportioned and one pupil could be a couple of millimetres further away from the nose bridge than the other. Monocular PDs are the two measurements between the centre of each pupil to the bridge of your nose. <br><br>It is usually written with Right Eye first and Left Eye second: 30/31.</p>
+</div>
+</div>
+<div class="text">
+<h2>What is the average pupillary distance (PD)?</h2>
+<p>While not everyone's pupillary distance is the same, there is usually a common range which they fall into.</p>
+<ul class="noStyle">
+<li>Male average: 64mm</li>
+<li>Female average: 62mm</li>
+<li>Adult average: 63mm</li>
+<li>Child average: 56mm</li>
+</ul>
+</div>
+<div class="text">
+<h2>Why does PD matter?</h2>
+<p>In order to make your eyeglasses custom to your face, we need to know the distance between your pupils. By knowing this difference we can make sure the optical centre of the eyeglass lens, which holds the clearest vision, sits directly in front of your pupil. <br><br>Also, when ordering a new pair of prescription glasses or prescription sunglasses online, your PD value is required to place an order.</p>
+</div>
+</div>
+<div class="text">
+<div class="pdMain">
+<h2>How do I find my PD for glasses?</h2>
+<p>We do recommend getting your PD measured in-store by our optical dispenser. This can be done when you are being fitted for your new glasses using a pupillometer or PD metre.<br><br>If that is not an option, you can also measure your pupillary distance at home using the guides provided below.</p>
+</div>
+<div class="cards">
+<div class="card reveal">
+<h3>How to measure your pupillary distance at home</h3>
+<p>Measuring your PD at home really comes in handy when you want to order prescription glasses online and already have your prescription but don’t know your PD. <br><br>You can measure your own PD using a millimetre ruler and a mirror.</p>
+<ol class="blueList">
+<li><span>You will need a ruler, a mirror and torch (your phone will suffice).</span></li>
+<li><span>At a distance of about 20cm away, look front on into the mirror.</span></li>
+<li><span>Hold the ruler directly above your eyes and place it against your brows, making sure you keep your face front on to the mirror. Place your phone below your left eye, shining the light towards the mirror.</span></li>
+<li><span> Close your right eye and align the ruler from zero to the centre of the light reflection in the left pupil.</span></li>
+<li><span>Without moving your head or the ruler, open your right eye,close your left eye and move the light below your right eye. Read the millimetre line that lines up with the centre of the light reflection in your right pupil. This number represents your PD in millimetres.</span></li>
+<li><span>Repeat the entire process a few times to get a consistent measurement.</span></li>
+</ol>
+</div>
+<div class="card reveal">
+<h3>How to measure pupillary distance using old glasses</h3>
+<p>You can also measure your pupillary distance at home if you have an old pair of glasses, a non-permanent marker and torch as above.</p>
+<ol class="blueList">
+<li><span>Stand roughly 20 centimetres away from a mirror wearing your glasses.</span></li>
+<li><span>Close one of your eyes and place the torch below the other.</span></li>
+<li><span>With the other eye open, put a dot with the marker directly over the light reflection seen in the pupil of the open eye on the lens.</span></li>
+<li><span>Without moving your head, repeat the previous step on your other eye so that you have two dots over each of your pupils.</span></li>
+<li><span>Measure in millimetres the distance between these two dots on the lenses to get your pupillary distance.</span></li>
+</ol>
+</div>
+<div class="card reveal">
+<h3>How to measure someone else’s pupillary distance</h3>
+<p>If measuring your own PD using a ruler or an old pair of glasses does not work for you, you can also get a friend to measure it for you.<br><br>This can be done with both the ruler or the glasses method and simply following the same steps. The only difference is you can keep both eyes open in the measuring process, whilst your friend closes one eye at a time as per above.<br><br>Make sure you are not looking at the friend’s open eye whilst measuring otherwise this will change the results of your PD.</p>
+</div>
+<div class="card reveal">
+<h3>How to measure pupillary distance for reading glasses</h3>
+<p>If you need your PD measurement for prescription <a class="linkTo" href="https://www.oscarwylee.com.au/reading_glasses.html">reading glasses</a>, then you will need to know your Near PD which is calculated as 3-4 mm less than your Distance PD. <br><br>For example:<br><br>Distance PD: 62mm, Near PD: 62 - 3= 59mm</p>
+</div>
+</div>
+</div>
+<div class="tips">
+<h2>Useful tips for measuring your PD</h2>
+<ul>
+<li>If you are unable to get an accurate measurement yourself, have someone help you!</li>
+<li>Try to keep your face still and look straight ahead</li>
+<li>If you’re still unsure or want an accurate measurement of your PD, visit an Oscar Wylee store near you.</li>
+</ul>
+</div>
+<div class="pdMainTwo">
+<h2>What happens if my pupillary distance is off?</h2>
+<p>Getting the correct measurement for your PD is crucial - an incorrect PD can affect the lenses so that it can feel like you’re wearing someone else's glasses.<br><br>An inaccurate PD can cause eye strain, headaches and blurry vision. <br><br>That is why it is recommended that you come in person to get your PD measured by a professional. And for those who are only able to do it at home, it is important to measure multiple times to get the most accurate results possible.</p>
+</div>
+<div class="textBorder">
+<div class="text">
+<h2>Does my PD change over time?</h2>
+<p>Your pupillary distance changes as you grow from a young child into an adult as the skull shape changes and gets bigger. But once you reach adulthood, it is very unlikely that your PD will change.</p>
+</div>
+<div class="text">
+<h2>Is my PD listed on my prescription?</h2>
+<p>No. In most cases, your PD will be measured after your eye test, when you have picked out your glasses and in the process of placing the order. The dispenser will measure your PD with a pupillometer. <br><br>This pupillary distance measurement is then added to your order which will be available to reference the next time you buy a pair of glasses.</p>
+</div>
+<div class="text">
+<h2>I’ve got my PD. What happens next?</h2>
+<p>Once you have your PD measurement, you can move on to buying your prescription glasses. If you also have your prescription, you can buy your glasses online. <br><br>In-store at Oscar Wylee, we’ve got eyewear for every side of you. Come in and browse our <a class="linkTo" href="https://www.oscarwylee.com.au/glasses.html">exclusive range of glasses</a> and have fun trying on different styles and colours. <br><br>When buying online, Oscar Wylee has a <a class="linkTo" href="https://www.oscarwylee.com.au/face-shape-guide.html">face shape guide</a> to help you pick your perfect pair.</p>
+</div>
+</div>
+</div>
+<div class="context"><!-- Location and booking  -->
+<div class="location">
+<div class="locationText">
+<h2>Do You Need Your PD Measured?</h2>
+<p>Visit us in store and our friendly staff can assist you.</p>
+<p>All major health funds accepted in store.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img class="locationImage" src="{{media url="wysiwyg/Pupillary-Distance-assets/photochromic_03.jpg"}}" alt="pupillary distance" title="pupillary distance"></div>
+<div class="location item1"><img class="locationImage" src="{{media url="wysiwyg/Pupillary-Distance-assets/_NT_5456_edited.jpg"}}" alt="pupillary distance" title="pupillary distance">
+<div class="locationText">
+<h2>Due for an eye test?</h2>
+<p>We recommend everyone has a complete eye examination at least once every two years.</p>
+<p>Book yours today with Oscar Wylee.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/booking"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+</div>
+<script>
+                function reveal() {
+                    const reveals = document.querySelectorAll(".reveal");
+
+                    for (let i = 0; i < reveals.length; i++) {
+                        const windowHeight = window.innerHeight;
+                        const elementTop = reveals[i].getBoundingClientRect().top;
+                        const elementVisible = 150;
+
+                        if (elementTop < windowHeight - elementVisible) {
+                            reveals[i].classList.add("active");
+                        } else {
+                            reveals[i].classList.remove("active");
+                        }
+                    }
+                }
+
+                window.addEventListener("scroll", reveal);
+
+
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        const square = entry.target.querySelector('.sideText');
+                        if (entry.isIntersecting) {
+                            square.classList.add('square');
+
+                            return; 
+                        }
+
+                        square.classList.remove('square');
+                    });
+                });
+
+                observer.observe(document.querySelector('.pupillary'));
+                
+
+                const observerTwo = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        const squareTwo = entry.target.querySelector('.sideTextTwo')
+                        if (entry.isIntersecting) {
+                            squareTwo.classList.add('square');
+
+                            return; 
+                        }
+
+                        squareTwo.classList.remove('square');
+                    });
+                });
+
+                observerTwo.observe(document.querySelector('.pupillaryTwo'));
+            </script>
+</div>
+</div>

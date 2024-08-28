@@ -1,0 +1,883 @@
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+    h2, h3,h4{
+        color: white;
+    }
+        * {
+          font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          color: #333333;
+          line-height: 1.3em;
+        }
+        #maincontent {
+          
+          font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        }
+        html,
+        body {
+          width: 100%;
+          height: 100%;
+          margin: 0px auto;
+          padding: 0px;
+          overflow-x: hidden;
+        }
+    .health-fund-title{
+font-size: 23px;
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: -1.5em;
+}
+    .container-banner {
+      width: 100%;
+    }
+    .intro-description {
+      width: 100%;
+      display: flex;
+      margin: 0 auto;
+      margin-top: 4em;
+      font-size: medium;
+      /* padding-left: 6em;
+      padding-right: 6em; */
+      padding-left: 15em;
+      padding-right: 15em;
+      /* line-height: 2em; */
+      text-align: justify;
+    }
+    .intro-wrapper {
+      border-bottom: 1px solid silver;
+      /* border-width: 80%; */
+      margin: 0 auto;
+      padding-bottom: 2em;
+    }
+    .term-image {
+      width: 100%;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      display: block;
+      /* margin: 0;
+      padding: 0; */
+    }
+    .container-title {
+      text-align: center;
+      width: 100%;
+      font-size: 22px;
+      margin: 0 auto;
+      margin-top: 3em;
+      padding-top: 3em;
+      /* background-color: rgb(250, 250, 250); */
+    }
+    .container-title-wrapper {
+      display: flex;
+      /* margin: 0 auto; */
+    }
+    .grid-wrapper {
+      /* background-color: rgb(250, 250, 250); */
+    
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      place-items: center;
+    
+      /* gap: 10px; */
+      padding-left: 4em;
+      padding-right: 2em;
+    margin-bottom:2em
+    }
+    .grid-item {
+      /* width: 20em; */
+      height: 23em;
+      /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+      margin: 3em;
+      border-bottom-right-radius: 10px;
+      position: relative;
+    }
+    .term-title {
+      margin: 1em;
+      margin-top: 1.5em;
+    }
+      .btnOw:hover {
+          background-color: black;
+          box-shadow: none !important;
+          color: #ffffff !important;
+          border: none !important;
+        }
+    .btnOw {
+      background-color: #003cac;
+      width: 30%; /* padding: 0px 50%; */
+      border: none;
+      color: #fff;
+      height: 2em;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      cursor: pointer;
+      transition: all 1s ease;
+      letter-spacing: 1px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1em;
+      margin-top: 2em;
+    }
+    .button-link {
+      text-decoration: none;
+    }
+    .term-description {
+      margin: 1.5em;
+      /* line-height: 1.5em; */
+    }
+    .learn-wrapper {
+      padding-top: 5em;
+      margin-bottom: 2em;
+      margin-left: 1.5em;
+      position: absolute;
+      bottom: 0;
+    }
+    .learn-link {
+      text-decoration: none;
+      color: rgb(3, 60, 3);
+      font-weight: 700;
+    }
+    .card {
+      /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+      transition: 0.3s;
+      /* width: 40%; */
+      width: 90%;
+      margin: auto 0;
+      margin-top: 2em;
+      transition: transform 0.2s;
+      /* border: 1px solid silver; */
+    }
+    .card a:hover{
+    text-decoration:none;}
+    .card:hover {
+      cursor: pointer;
+      transform: scale(1.03);
+    }
+    
+    .container {
+      padding: 2px 16px;
+      border-left: 1px solid silver;
+      border-right: 1px solid silver;
+      border-bottom: 1px solid silver;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      display: flex;
+      flex-direction: column;
+    height:120px;
+    }
+    .container p {
+      padding: 2em 0;
+    }
+    .container h3 {
+      padding: 1em 0;
+      margin: auto;
+    }
+    .term-title {
+      /* text-align: center; */
+      margin: auto;
+      display: flex;
+    }
+    .btn-readmore {
+      width: fit-content;
+      padding: 0 3em;
+      font-size: medium;
+    }
+    .last-card {
+      grid-column: 2/3;
+      /* grid-row: 3/4; */
+    }
+    .mobile-banner {
+      display: none;
+    }
+    .context {
+          padding: 0 3rem;
+        }
+        .location {
+          max-width: 100%;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-template-rows: max-content;
+          column-gap: 50px;
+          row-gap: 20px;
+          justify-content: space-between;
+          align-items: center;
+          padding: 2rem 0rem;
+          padding-top: 0;
+          margin-top: -1em;
+          margin-bottom: 1.5em;
+          border-bottom: 1px solid silver;
+        }
+        .location .heading {
+          font-weight: 700;
+          font-size: 1.8em;
+        }
+        .item1 {
+          border: none;
+        }
+        .locationText .heading {
+          font-weight: 700;
+          font-size: 1.8em;
+        }
+        .locationText {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-bottom: 1.5em;
+        }
+        .locationText p {
+          font-size: 16px;
+          margin-top: 2em;
+        }
+        .locationImage {
+          width: 100%;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+        }
+        .allButton {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .allButton a {
+          text-decoration: none;
+        }
+        .allButton .btnOw {
+          width: 70%;
+          margin-left: 0;
+        }
+        .item1 {
+          padding-top: 2em;
+        }
+        .item2{
+            margin-top: 6em;
+        border-top: 1px solid silver;
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+        }
+    .compo-link, .view-more-link{
+    text-decoration:none;}
+    .page-title{
+        text-align: center;
+        color: black;
+    }
+#show-more-div{
+display:none;
+}
+ @media screen and (max-width: 1190px) {
+        .page-title{
+            font-size: 15px;
+        }
+    }
+    @media screen and (max-width: 974px) {
+        .page-title{
+            font-size: medium;
+        }
+    }
+    @media screen and (max-width: 770px) {
+       .grid-wrapper{
+        grid-template-columns: 1fr 1fr;
+        padding-left: 2em;
+        padding-right: 0;
+       }
+       
+    }
+    @media screen and (max-width: 440px) {
+.box-store-locations {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+      .grid-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+.health-fund-title{
+    width: 79%;
+    margin: auto;
+    padding-top:1em
+}
+      .desktop-banner {
+        display: none;
+      }
+      .mobile-banner {
+        display: block;
+      }
+      .intro-description {
+        padding-left: 2em;
+        padding-right: 2em;
+        width: 100%;
+        font-size: large;
+      }
+      .card {
+        width: 100%;
+        /* height: 50%; */
+      }
+      .grid-wrapper {
+        padding-left: 3em;
+        padding-right: 3em;
+      }
+      .container p {
+        font-size: 16px;
+        text-align: center;
+      }
+    .view-more-link{
+    text-decoration:none
+    }
+      .container h3 {
+        font-size: 22px;
+        padding-top: 15px;
+      }
+      .btnOw{
+        width: 75%;
+        font-size: medium;
+    padding:1.5em
+      }
+      .btn-readmore{
+        margin-top: 0px;
+      }
+      .location {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 5em;
+          }
+          .locationText .heading {
+            text-size: 1.5em;
+            margin-top: 1.9em;
+            margin-bottom: -0.5em;
+          }
+          .allButton .btnOw {
+            width: 100%;
+          }
+          .item1 {
+            -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+            border: none;
+            padding-bottom: 0;
+            padding-top: 3.5em;
+          }
+          .locationText .heading {
+            text-align: center;
+          }
+          .item1 .locationImage,
+          .item1 .locationText {
+            -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+          }
+          .heading-padding{
+            border-top: 1px solid silver;
+        padding-top: 2em;
+          } 
+          .item2{
+            border-top: none;
+            margin-top: 0;
+          }
+          .page-title{
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+    }
+    
+    
+    </style>
+<p style="margin-top: -10px;">{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="39"}}</p>
+<!--Banner -->
+<p>{{block class="Smartosc\BannerSlider\Block\Widget" slider_id="1"}}</p>
+<!--Shop -->
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="35"}}</p>
+<!--Book an eye test near you -->
+<p class="health-fund-title">All major <a href="https://www.oscarwylee.com.au/health-funds.html">health funds </a>accepted in-store</p>
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="36"}}</p>
+<p>{{widget type="Yereone\Testimonials\Block\Widget\Testimonial" widget_title="Excellent Service with On-Trend Styles and Dedicated Optometrists!" widget_image="https://i.ibb.co/Tkk2TCt/Google-Reviews-300x300-1.png" layout_type="slider" order_by="creation_time" slidesToShow="3" slidesToScroll="1" speed="300" infinite="1" arrows="1" dots="0" responsive="1" slides_to_show_desctop="3" slides_to_scroll_desctop="3" slides_to_show_tablet="2" slides_to_scroll_tablet="2" slides_to_show_mobile="1" slides_to_scroll_mobile="1" autoplay="1" autoplaySpeed="5000" title="0" rating="0" author="0" job="0" city="0" creation_time="0" company="0" image="0" social="0"}}</p>
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="42"}}</p>
+<!--4 block main -->
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="85"}}</p>
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="86"}}</p>
+<!--Due for an eye test? Book now -->
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="37"}}</p>
+<!-- GRID START---------------------------------- -->
+<div class="grid-wrapper" id="main_gird">
+<div><a href="https://www.oscarwylee.com.au/glasses/face-shapes/round" class="learn-link no-underline">&nbsp;</a>
+<div class="card"><img src="{{media url="wysiwyg/home/Round_FaceShape_Web_Banner.jpg"}}" alt="Round Face Glasses, Styles, Types" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Best Glasses for Round Face: Frames, Shapes and Types</h3>
+</div>
+</div>
+</div>
+<div><a href="https://www.oscarwylee.com.au/glasses/blue-light" class="learn-link no-underline">&nbsp;</a>
+<div class="card"><img src="{{media url="wysiwyg/home/BlueLight_Digital_Devices_Oscar_Wylee_Web_Banner_1640x940.jpg"}}" alt="Blue Light Definition" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">What is Blue Light from Digital Devices?</h3>
+</div>
+</div>
+</div>
+<div><a href="https://www.oscarwylee.com.au/glasses/face-shapes/oval" class="learn-link no-underline">&nbsp;</a>
+<div class="card"><img src="{{media url="wysiwyg/home/Best_Glasses_For_Oval_Faces_Frames_Shapes_and_Types_Oscar_Wylee_Web_Banner_1640x940.jpg"}}" alt="Oval Face Glasses, Styles, Types" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Best Glasses for Oval Face: Frames, Shapes and Types</h3>
+</div>
+</div>
+</div>
+<div><a href="https://www.oscarwylee.com.au/glasses/eye/test-glossary" class="learn-link no-underline">&nbsp;</a>
+<div class="card"><img src="{{media url="wysiwyg/home/Glossary_WebBanner_1640x840px.jpg"}}" alt="Eye Tests Glossary and Exams" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Eye Checkup and Exams with Glossary Terms: What happens in an Eye Exam?</h3>
+</div>
+</div>
+</div>
+<div><a href="https://www.oscarwylee.com.au/glasses/blue-light/works" class="learn-link no-underline">&nbsp;</a>
+<div class="card"><img src="{{media url="wysiwyg/home/BLF_Glasses__BannersWeb_Banner.jpg"}}" alt="Blue Light Glasses Works" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Do Blue Light Glasses Work?</h3>
+</div>
+</div>
+</div>
+<div><a href="https://www.oscarwylee.com.au/glasses/face-shapes/square" class="learn-link no-underline">&nbsp;</a>
+<div class="card"><img src="{{media url="wysiwyg/home/Best_Glasses_For_Square_Faces_Frames_Shapes_and_Types_Oscar_Wylee_Web_Banner_1640x940.jpg"}}" alt="Square Face Glasses, Styles, Types" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Best Glasses for Square Face: Frames, Shapes and Types</h3>
+</div>
+</div>
+</div>
+<div><a href="https://www.oscarwylee.com.au/glasses/eye/anatomy" class="learn-link no-underline">&nbsp;</a>
+<div class="card"><img src="{{media url="wysiwyg/home/EyeAnatomy_Oscar_Wylee_Web_Banner_1640x940.jpg"}}" alt="Eye Anatomy" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Eye: definition, How does it Work, Anatomy and Functions</h3>
+</div>
+</div>
+</div>
+<div><a href="https://www.oscarwylee.com.au/glasses/face-shapes/pear" class="learn-link no-underline">&nbsp;</a>
+<div class="card"><img src="{{media url="wysiwyg/home/FaceShape_Banners_TemplateWeb_Banner.jpg"}}" alt="Pear Face Glasses, Styles, Types" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Best Glasses for Pear Face: Frames, Shapes and Types</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/DimaondFaceShape_Banners.jpg"}}" alt="Diamond Face Glasses, Styles, Types" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Best Glasses for Diamond Face: Frames, Shapes and Types</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/Best_Blue_Light_WebBanner_1640x840px.jpg"}}" alt="A Complete Blue Light-Blocking Glasses Review" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Best Blue Light-Blocking Glasses and Reviews</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/FaceShape_Banner_Allfaceshape.jpg"}}" alt="Best Glasses, Styles, Types or Different Face Shapes" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Best Glasses for Different Face Shapes: How to Choose Glasses for Face Shapes</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/Eye_Exam_for_Children_WebBanner_1640x840px.jpeg"}}" alt="Eye Exam for Children" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Eye Exam for Children</h3>
+</div>
+</div>
+</div>
+</div>
+<!-- gird button -->
+<p><button class="btnOw" id="show_more_btn" onclick="show_gird()">More Glasses and Eye Health Guides </button></p>
+<div class="grid-wrapper" id="show_more_cards" style="display: none;">
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/Blue_Light_WebBanner_1640x840px.jpg"}}" alt="Turning off Blue Light on my device" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">How to Turn On and Off Blue Light on iPhone and Android</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/Best_Eyeglasses_for_Women_Oscar_Wylee_Web_Banner_1640x940.jpg"}}" alt="Best 10 Eyeglasses for Women" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">10 Best Eyeglasses for Women</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/Different_types_of_Glasses_BannerWeb.jpg"}}" alt="Different Types of Glasses" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Different Types of Glasses, Frames, and Lenses</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/Best_Glasses_For_Men_Web_Banner.jpeg"}}" alt="Best 10 Eyeglasses for Men" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">10 Best Men's Eyeglasses Frames for Every Face Shape: Buyer's Guide</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/10_Tips_for_Eye_Health_BannerWeb_Banner.jpg"}}" alt="Tips for Eye Health and Keeping Eyesight Healthy " class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">10 Tips for Eye Health</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/UV_Sunglasses_Web_Banner_1640x940.jpeg"}}" alt="Best UV Sunglasses for Eye Protection" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">8 Best Types of UV Sunglasses for Eye Protection</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/Summer_Sunglass_Styles_Web_Banner_1640x940.jpg"}}" alt="Summer Sunglasses Styles for Females and Males" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Best Summer Sunglasses for Women and Men</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/DesignerSunglasses_Oscar_Wylee_Web_Banner_1640x940.jpg"}}" alt="Best Designer Sunglasses" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">14 Best Types of Designer Sunglasses: Buyer's Guide</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/Red_Eyes_Web_Banner_1640x840.jpeg"}}" alt="Red or Bloodshot Eyes: Causes, Symptoms, Treatment and Prevention" class="term-image" loading="lazy">
+<div class="container container-height">
+<h3 class="page-title">Red or Bloodshot Eyes: Causes, Symptoms, Treatment, and Prevention</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/14_Best_Kids_Glasses_Types_to_Buy_OnlineWeb.jpg"}}" alt="Best Kids' Glasses Online" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">14 Best Kids' Glasses Types to Buy Online</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/Lazy_Eye_Web_Banner_1640x940.jpeg"}}" alt="Lazy Eye (Amblyopia): Causes, Symptoms, Diagnosis, and Treatment" class="term-image" loading="lazy">
+<div class="container container-height">
+<h3 class="page-title">Lazy Eye (Amblyopia): Causes, Symptoms, Diagnosis, and Treatment</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/PuffyEyes_Oscar_Wylee_Web_Banner_1640x940.jpg"}}" alt="Puffy Eyes: Definition, Causes, Symptoms, and Treatment" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Puffy Eyes: Definition, Causes, Symptoms, and Treatment</h3>
+</div>
+</div>
+</div>
+</div>
+<p><button class="btnOw" id="show_more_btn_1" style="display: none;" onclick="show_gird_1()">More Glasses and Eye Health Guides</button> <button class="btnOw" id="hide_grid_btn_1" style="display: none;" onclick="hide_grid_1()">See Less 1</button></p>
+<div class="grid-wrapper" id="show_more_cards_1" style="display: none;">
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/Crossed_Eyes_Web_Banner_1640x940_1.jpg"}}" alt="Crossed Eyes (Strabismus): Definition, Types, Causes, Symptoms, and Treatments" class="term-image" loading="lazy">
+<div class="container add-height">
+<h3 class="page-title">Crossed Eyes (Strabismus): Definition, Types, Causes, Symptoms, and Treatments</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/Pink_Eye_Conjunctivitis_BannerWeb_Banner_1.jpg"}}" alt="Pink Eye (Conjunctivitis): Symptoms, Causes, and Treatment" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Pink Eye (Conjunctivitis): Symptoms, Causes, and Treatment</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/Eye_Fatigue_Web_Banner_1640x940.jpeg"}}" alt="Eye Fatigue: Definition, Causes, Symptoms, and Treatment" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Eye Fatigue: Definition, Causes, Symptoms, and Treatment</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/Eye-Allergies_Oscar-Wylee_Web_Banner_1640x940.jpg"}}" alt="Eye Allergies: Types, Causes, Symptoms, and Treatments" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Eye Allergies: Types, Causes, Symptoms, and Treatments</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url=" wysiwyg="" home="" pterygium_surfer_s_eye_web_banner="" jpg="" alt="Pterygium (Surfer's Eye): Causes, Symptoms, and Treatments
+            " class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Pterygium (Surfer's Eye): Causes, Symptoms, and Treatments</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url=" wysiwyg="" home="" eyetwitching_oscar-wylee_web-banner_1640x940="" jpg="" alt="Eye Twitching: Types, Causes, Symptoms, and Treatments
+            " class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Eye Twitching: Types, Causes, Symptoms, and Treatments</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url=" wysiwyg="" home="" blurred-vision_oscar-wylee_web-banner_1640x940="" jpg="" alt="Blurred Vision: Definition, Causes, Symptoms, and Treatment
+            " class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Blurred Vision: Definition, Causes, Symptoms, and Treatment</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/EyePain_Oscar-Wylee_Web--Banner_1640x940.jpg"}}" alt="Eye Pain: Definition, Causes, Prevention, and Treatment" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Eye Pain: Definition, Causes, Prevention, and Treatment</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/EyePain_Oscar-Wylee_Web--Banner_1640x940.jpg"}}" alt="Eye Pain: Definition, Causes, Prevention, and Treatment" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Eye Floaters: Definition, Causes, Symptoms, and Treatment</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/EyePain_Oscar-Wylee_Web--Banner_1640x940.jpg"}}" alt="Eye Pain: Definition, Causes, Prevention, and Treatment" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Eye Herpes Symptoms, Treatment and Causes</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/EyePain_Oscar-Wylee_Web--Banner_1640x940.jpg"}}" alt="Eye Pain: Definition, Causes, Prevention, and Treatment" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Eye Stroke (Eye): Causes, Symptoms, Risk Factor etc</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/EyePain_Oscar-Wylee_Web--Banner_1640x940.jpg"}}" alt="Eye Pain: Definition, Causes, Prevention, and Treatment" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">25 Common Eye Problems: Symptoms and Causes</h3>
+</div>
+</div>
+</div>
+</div>
+<p><button class="btnOw" id="show_more_2" style="display: none;" onclick="show_gird_2()">More Glasses and Eye Health Guides</button> <button class="btnOw" id="hide_grid_btn_2" style="display: none;" onclick="hide_grid_2()">See Less 2</button></p>
+<div class="grid-wrapper" id="show_more_cards_2" style="display: none;">
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/EyePain_Oscar-Wylee_Web--Banner_1640x940.jpg"}}" alt="Eye Pain: Definition, Causes, Prevention, and Treatment" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">Eye Ointment</h3>
+</div>
+</div>
+</div>
+<div>
+<div class="card"><img src="{{media url="wysiwyg/home/EyePain_Oscar-Wylee_Web--Banner_1640x940.jpg"}}" alt="Eye Pain: Definition, Causes, Prevention, and Treatment" class="term-image" loading="lazy">
+<div class="container">
+<h3 class="page-title">What's irritating my eyes? Top 9 causes</h3>
+</div>
+</div>
+</div>
+</div>
+<!-- GRID END----------------------------------------- -->
+<p>
+<script>
+
+  // show / hide grid cards
+
+  function show_gird() {
+
+    const show_display = document.getElementById('show_more_cards');
+    show_display.style.display = 'grid';
+
+    const show_more_btn_1 = document.getElementById('show_more_btn_1');
+    show_more_btn_1.style.display = 'block';
+
+    const hide_grid_btn_1 = document.getElementById('hide_grid_btn_1');
+    hide_grid_btn_1.style.display = 'block';
+
+    const show_more_btn = document.getElementById('show_more_btn');
+    show_more_btn.style.display = 'none';
+
+    // responcive gird
+
+    let dispay_width = screen.width;
+
+    if (dispay_width <= 440) {
+
+      const show_display = document.getElementById('show_more_cards');
+      show_display.style.display = 'block';
+
+    }
+
+    console.log(dispay_width);
+
+
+
+  }
+
+  function show_gird_1() {
+
+    const show_more_cards_1 = document.getElementById('show_more_cards_1');
+    show_more_cards_1.style.display = 'grid';
+
+    const show_more_2 = document.getElementById('show_more_2');
+    show_more_2.style.display = 'block';
+
+    const hide_grid_btn_2 = document.getElementById('hide_grid_btn_2');
+    hide_grid_btn_2.style.display = 'block';
+
+    const show_more_btn_1 = document.getElementById('show_more_btn_1');
+    show_more_btn_1.style.display = 'none';
+
+    const hide_grid_btn_1 = document.getElementById('hide_grid_btn_1');
+    hide_grid_btn_1.style.display = 'none';
+
+    let dispay_width = screen.width;
+
+    if (dispay_width <= 440) {
+
+      const show_display = document.getElementById('show_more_cards_1');
+      show_display.style.display = 'block';
+
+    }
+
+  }
+
+
+  function show_gird_2() {
+
+    const show_more_cards_2 = document.getElementById('show_more_cards_2');
+    show_more_cards_2.style.display = 'grid';
+
+
+    const show_more_2 = document.getElementById('show_more_2');
+    show_more_2.style.display = 'none';
+
+    const hide_grid_btn_2 = document.getElementById('hide_grid_btn_2');
+    hide_grid_btn_2.style.display = 'none';
+
+    let dispay_width = screen.width;
+
+    if (dispay_width <= 440) {
+
+      const show_display = document.getElementById('show_more_cards_2');
+      show_display.style.display = 'block';
+
+    }
+
+  }
+
+
+  function hide_grid_1() {
+
+    const hide_gird = document.getElementById('show_more_cards');
+    hide_gird.style.display = 'none';
+
+    const show_more_btn_1 = document.getElementById('show_more_btn_1');
+    show_more_btn_1.style.display = 'none';
+
+    const hide_grid_btn_1 = document.getElementById('hide_grid_btn_1');
+    hide_grid_btn_1.style.display = 'none';
+
+    const show_more_btn = document.getElementById('show_more_btn');
+    show_more_btn.style.display = 'block';
+
+    // scrol to the main gird point
+    location.href = "#main_gird";
+
+  }
+
+  function hide_grid_2() {
+
+    const hide_gird = document.getElementById('show_more_cards_1');
+    hide_gird.style.display = 'none';
+
+    const show_more_2 = document.getElementById('show_more_2');
+    show_more_2.style.display = 'none';
+
+    const hide_grid_btn_2 = document.getElementById('hide_grid_btn_2');
+    hide_grid_btn_2.style.display = 'none';
+
+    const show_more_btn_1 = document.getElementById('show_more_btn_1');
+    show_more_btn_1.style.display = 'block';
+
+    const hide_grid_btn_1 = document.getElementById('hide_grid_btn_1');
+    hide_grid_btn_1.style.display = 'block';
+
+    // scrol to the main gird point
+    location.href = "#show_more_cards";
+
+
+  }
+
+
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+   
+   const observer = new IntersectionObserver(entries => {
+   entries.forEach(entry => {
+     const id = entry.target.getAttribute('id');
+     if (entry.intersectionRatio > 0) {
+       document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+     } else {
+       document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+     }
+   });
+   });
+   
+   // Track all sections that have an `id` applied
+   document.querySelectorAll('section[id]').forEach((section) => {
+   observer.observe(section);
+   });
+let myMediaQuery = window.matchMedia('(max-width: 440px)');
+
+   document.getElementById('show-more-button').addEventListener("click", function() {
+console.log('clicked');
+if(myMediaQuery.matches){
+document.querySelector('#show-more-div').style.display="flex";
+
+}else{
+document.querySelector('#show-more-div').style.display="grid";}
+
+      document.getElementById('show-more-button').style.display = 'none';
+    });
+   });
+   
+   window.onload = function() {
+   document.body.className += ' loaded'
+   };
+   
+   const productContainers = [...document.querySelectorAll('.product-container')];
+   const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+   const preBtn = [...document.querySelectorAll('.pre-btn')];
+   
+   productContainers.forEach((item, i) => {
+   let containerDimensions = item.getBoundingClientRect();
+   let containerWidth = containerDimensions.width+500;
+   
+   nxtBtn[i].addEventListener('click', () => {
+     item.scrollLeft += containerWidth+3;
+   })
+   
+   preBtn[i].addEventListener('click', () => {
+     item.scrollLeft -= containerWidth;
+   })
+   })
+document.getElementById("redirectable-div").addEventListener("click", function() {
+  window.location.href = "https://www.oscarwylee.com.au/glasses/face-shapes/round";
+});
+
+  </script>
+</p>

@@ -1,0 +1,354 @@
+<style xml="space">
+    <!--
+    /* This technique doesn't naturally cause horizontal overflow, but once there is natural vertical overflow, it causes horizontal overflow, so stopping here. */
+
+
+
+    html {
+
+        scroll-behavior: smooth;
+
+    }
+
+
+
+    body {
+
+        overflow-x: hidden;
+
+    }
+
+    img {
+
+        max-width: 100%;
+
+    }
+
+    main {
+
+        max-width: 600px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .full-width {
+
+        width: 100vw;
+
+        position: relative;
+
+        left: 50%;
+
+        right: 50%;
+
+        margin-left: -50vw;
+
+        margin-right: -50vw;
+
+    }
+
+    p,
+    figure {
+
+        margin: 15px 0;
+
+    }
+
+    figcaption {
+
+        text-align: center;
+
+        color: #999;
+
+    }
+
+    .collumn {
+
+        float: left;
+
+        width: 50%;
+
+        padding: 20px;
+
+    }
+
+    /* Clearfix (clear floats) */
+
+
+
+    .row::after {
+
+        content: "";
+
+        clear: both;
+
+        display: table;
+
+    }
+
+    /* COLLUMN STRUCTURE */
+
+
+
+    .wrapper {
+
+        max-width: 960px;
+
+    }
+
+    header {
+
+        padding: 0 0px;
+
+    }
+
+
+
+    .columns {
+
+        display: flex;
+
+        flex-flow: row wrap;
+
+        justify-content: center;
+
+        margin: 5px 0;
+
+    }
+
+
+
+    .column {
+
+        flex: 1;
+
+        border: none;
+
+        margin: 2px;
+
+        padding: 0px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+    }
+
+
+
+    footer {
+
+        padding: 0 0px;
+
+    }
+
+
+
+
+
+    @media screen and (max-width: 980px) {
+
+        .columns .column {
+
+            margin-bottom: 5px;
+
+            flex-basis: 40%;
+
+            &:nth-last-child(2) {
+
+                margin-right: 0;
+
+            }
+
+            &:last-child {
+
+                flex-basis: 100%;
+
+                margin: 0;
+
+            }
+
+        }
+
+    }
+
+
+
+    @media screen and (max-width: 680px) {
+
+        .columns .column {
+
+            flex-basis: 100%;
+
+            margin: 15px 0 30px 0;
+
+        }
+
+    }
+
+
+
+    .btn {
+
+        border: 2px solid black;
+
+        border-radius: 8px;
+
+        background-color: white;
+
+        color: black;
+
+        padding: 14px 28px;
+
+        font-size: 16px;
+
+        cursor: pointer;
+
+    }
+
+    /* Black */
+
+
+
+    .shop {
+
+        border-color: #000000;
+
+        color: black;
+
+    }
+
+    .shop:hover {
+
+        background-color: #000000;
+
+        color: white;
+
+    }
+
+    .button {
+
+        background-color: white border: 1px solid;
+
+        color: black;
+
+        text-align: center;
+
+        text-decoration: none;
+
+        display: inline-block;
+
+        font-size: 10px;
+
+        -webkit-transition-duration: 0.4s;
+
+        /* Safari */
+
+        transition-duration: 0.4s;
+
+        cursor: pointer;
+
+    }
+
+    .button1 {
+
+        background-color: #003CAC;
+
+        color: white;
+
+        border: 1px solid #000000;
+
+    }
+
+    .button1:hover {
+
+        background-color: #1258DB;
+
+        color: white;
+
+        border: 1px solid #000000
+    }
+
+    .button2 {
+
+        background-color: white;
+
+        color: black;
+
+        border: 1px solid black;
+
+    }
+
+    .button2:hover {
+
+        background-color: Black;
+
+        color: white;
+
+        border: 1px solid black;
+
+    }
+
+    .perkbox-container {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        justify-content: center;
+    }
+
+    @media (max-width: 480px) {
+        .perkbox-container {
+            width: 75%;
+        }
+    }
+
+    /* new css edits */
+    /* .colums-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-title{
+        width: 187px;
+    } */
+
+   
+    -->
+</style>
+<!--Banner -->
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="137"}}</p>
+<!--Description -->
+<div style="margin: 50px 10px;">
+<h1 style="font-size: 1.5em; font-weight: bold;">Careers at Oscar Wylee</h1>
+<p>Oscar Wylee is a successful optometry eyewear product developer and health care service provider.<br><br>We value difference and diversity. This is reflected in our product and service offerings to market as well as how we form and grow our teams.<br><br>Visit one of our stores and experience the OW difference. We are expanding globally, so don’t forget to join our <a href="https://www.livehire.com/talent/community/oscarwylee/careers/contact" style="color: #003cac; text-decoration: underline;">Talent Community</a> and follow us on <a href="https://www.linkedin.com/company/oscar-wylee-eyewear/" style="color: #003cac; text-decoration: underline;">LinkedIn</a>!</p>
+</div>
+<!--Columns -->
+<section class="columns">
+<div class="column colums-flex" style="border-top-width: 10px; border-top-style: solid; border-radius: 5px; border-color: #003cac; box-shadow: 1px 1px 6px rgb(0 0 0 / 10%); margin: 10px; margin-bottom: 30px; padding: 20px 0;">
+<div class="perkbox-container"><a href="https://www.perkbox.com/"> <img src="{{media url="wysiwyg/careers/Logo_-_Perkbox_Logo_-_OW_blue_2_.png"}}" alt="Digital badge - Perkbox Partner"></a></div>
+<div class="font1 card-title" style="font-size: 1.5em; margin: 20px; font-weight: bold; text-align: center;">Culture and Perks</div>
+<div class="font1" style="margin: 20px;">At OW you will receive <strong>two free</strong> prescription glasses per year, keeping you looking fresh and on trend all year round.<br><br>As a <a href="https://www.perkbox.com/" style="text-decoration: underline;">Perkbox</a> partner, our employees have access to a wide range of discounts and rewards no matter where they work. We care, connect and celebrate together!</div>
+<div class="font1" style="margin: 20px; text-align: center;"><a href="https://jobs.oscarwylee.com/countryCode=AU" style="color: #003cac; font-weight: bold;">View Opportunities →</a></div>
+</div>
+<div class="column" style="border-top-width: 10px; border-top-style: solid; border-radius: 5px; border-color: #003cac; box-shadow: 1px 1px 6px rgb(0 0 0 / 10%); margin: 10px; margin-bottom: 30px; padding: 20px 0;">
+<div class="perkbox-container"><a href="https://www.livehire.com/talent/community/oscarwylee/careers/contact"> <img src="{{media url="wysiwyg/careers/Undergrad_Locum_2_.png"}}" alt="Digital badge - Perkbox Partner"></a></div>
+<div class="font1" style="font-size: 1.5em; margin: 20px; font-weight: bold; text-align: center;">Undergrads and Locum Optometrists</div>
+<div class="font1" style="margin: 20px;">If you're pursuing a profession in optometry or are a registered Optometrist looking to locum with us, join our <a href="https://www.livehire.com/talent/community/oscarwylee/careers/contact" style="color: #003cac; text-decoration: underline;">Talent Community</a>.<br><br>We will be in touch with you when the right opportunity is available. Stay connected or miss out!</div>
+<div class="font1" style="margin: 20px; text-align: center;"><a href="https://www.livehire.com/talent/community/oscarwylee/careers/contact" style="color: #003cac; font-weight: bold;">Join our Talent Community →</a></div>
+</div>
+<div class="column colums-flex" style="border-top-width: 10px; border-top-style: solid; border-radius: 5px; border-color: #003cac; box-shadow: 1px 1px 6px rgb(0 0 0 / 10%); margin: 10px; margin-bottom: 30px; padding: 20px 0;">
+<div class="perkbox-container"><a href="joint_venture.html"> <img src="{{media url="wysiwyg/careers/JVP_2_.png"}}" alt="Digital badge - Perkbox Partner"></a></div>
+<div class="font1 card-title" style="font-size: 1.5em; margin: 20px; font-weight: bold; text-align: center;">Joint Venture Partnership</div>
+<div class="font1" style="margin: 20px;">Looking to partner with us as a business owner?<br><br>We have some great locations and teams ready for a Partner to lead the way to success.<br><br>Head to our <a href="/joint_venture.html" style="color: #003cac; text-decoration: underline;">JVP page</a> for more information.</div>
+<div class="font1" style="margin: 20px; text-align: center;"><a href="/joint_venture.html" style="color: #003cac; font-weight: bold;">Learn more about JVP →</a></div>
+</div>
+</section>

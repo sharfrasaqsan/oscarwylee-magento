@@ -1,0 +1,26 @@
+<div class="home-banner">
+<div class="home-banner__img"><img src="{{media url=&quot;wysiwyg/Shipping_Banner_Web.jpg&quot;}}" alt="" /><img src="{{media url=&quot;wysiwyg/Shipping_Banner_Mob.jpg&quot;}}" alt="" />
+<div class="home-banner__img--desk"><img src="{{media url="wysiwyg/shipping_desktop.jpg"}}" alt="shipping"></div>
+<div class="home-banner__img--mb"><img src="{{media url="wysiwyg/shipping_mob_02.jpg"}}" alt="shipping"></div>
+</div>
+<div class="home-banner__content main-width"><br><br>
+<p class="home-banner__content-title" style="line-height: 1.3; font-size: 35px; margin-left: 20px;">Free Shipping for Australian Orders</p>
+<br>
+<div class="locations-content" style="margin-left: 20px;">Oscar Wylee offers free domestic shipping on all orders placed on our website within Australia! <br><br>Once our laboratory has cut the lenses to fit your specifications, we'll try as hard as we can to get <br>your glasses to you as fast as possible.</div>
+</div>
+</div>
+<p><br><br></p>
+<h3><strong>Frequently asked questions about shipping:</strong></h3>
+<p></p>
+<ul>
+<li style="margin-bottom: 2em;"><strong style="font-size: 1.2em;">How much do you charge for shipping?</strong><br><br>Oscar Wylee offers free domestic shipping on all orders placed on our website within Australia!<br><br>Once our laboratory has cut the lenses to fit your specifications, we'll try as hard as we can to get your glasses to you as fast as possible.</li>
+<li style="margin-bottom: 2em;"><strong style="font-size: 1.2em;">How long will it take before I receive my glasses?</strong><br><br>Deliveries on purchase orders will usually be dispatched within 7-10 business days.<br>Delivery on Australian orders is FREE and your order will be sent out via Australia Post.<br><br>An email will be sent to you once your glasses have been dispatched with an order tracking link.<br><br>If you are not around to take delivery, you will be left a calling card telling you how you can pick up your package. Unfortunately we cannot ship orders on public holidays. In this instance please expect your delivery to be delayed by one business day.</li>
+<li style="margin-bottom: 2em;"><strong style="font-size: 1.2em;">Can you ship internationally?</strong><br><br>Yes. International shipping costs a flat fee of $30 AUD worldwide. We use DHL EXPRESS and you should receive your order within 5-7 business days after your glasses have been made. <br><br>Please be aware that Oscar Wylee cannot control any customs or import duties applied to your package. We can’t tell you what the cost will be as customs policies and charges can vary from country to country. It’s a good idea to contact your local customs office before placing an order so you don’t receive any unexpected charges. <br>By law, all items must be declared at their full price and we cannot alter the amount to decrease any custom fees. <br><br>If you wish to refuse your delivery, you will still be held responsible for the original customs fees or import duties and the cost of returning the package to Oscar Wylee. The amount will be deducted from your refund. If the fees exceed the amount of your order including shipping costs, the parcel will be destroyed and you will not be refunded.</li>
+</ul>
+<p><br><br></p>
+<div style="text-align: centre;">
+<h3 style="text-align: center;"><strong>Still have more questions?</strong></h3>
+<br>
+<p style="text-align: center;">Please check out our <a href="https://www.oscarwylee.com.au/faq-popular.html">Help/FAQ</a> page or <a href="https://www.oscarwylee.com.au/contact/">Contact us</a>!</p>
+</div>
+<p><br><br></p>

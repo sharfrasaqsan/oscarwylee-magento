@@ -1,0 +1,40 @@
+<style>
+.collection-widget__left .widget-image .image, .collection-widget__center .widget-image .image, .collection-widget__right .widget-image .image{
+border-radius: 0 !important;
+width: fit-content;
+}
+
+.collection-widget__left .widget-content, .collection-widget__center .widget-content, .collection-widget__right .widget-content {
+top: 20% !important;
+max-width: 100%;
+min-width: 100%;
+}
+
+.collection-widget {
+    max-width: 1340px;
+}
+
+.collection-widget__left .widget-content .content__title, .collection-widget__center .widget-content .content__title, .collection-widget__right .widget-content .content__title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 0rem;
+}
+
+
+
+@media (max-width: 825px) {
+.collection-widget__left .widget-content .content__title, .collection-widget__center .widget-content .content__title, .collection-widget__right .widget-content .content__title {
+    font-size: 3rem;
+}
+}
+
+@media (max-width: 512px) {
+.collection-widget{
+margin-top: 0 !important;
+}
+}
+</style>
+<p>{{widget type="Smartosc\NewHomepage\Block\Widget\Shop" bigtile="Find the perfect frames with 2 pairs from $199 test"  imageurl_1="https://test.oscarwylee.com.au/pub/media/wysiwyg/banners/Medicare_Home_1500x890.jpg" title_1="Bulk Billed Eye Test" content_1="We offer bulk billed comprehensive eye tests for valid Medicare cardholders, so there is no gap or out-of-pocket expenses." buttontitle_1="Book Now" buttonlink_1="/booking" imageurl_2="https://test.oscarwylee.com.au/pub/media/wysiwyg/banners/MoodBoost_ArtCollection1500x890.jpg" title_2="New Arrivals" content_2="Shop our new collection of the latest glasses, including prescription and non-prescriptions. With 2 pairs from $199." buttontitle_2="Explore More" buttonlink_2="glasses/new-arrivals.html"}}{{widget type="Smartosc\NewHomepage\Block\Widget\Collection" bigtile="Discover our range" imageurl_1="https://test.oscarwylee.com.au/pub/media/wysiwyg/Homepage_Womens1.jpg" title_1="Women's Glasses" buttontitle_1="Shop Now" buttonlink_1="https://test.oscarwylee.com.au/glasses/womens-glasses.html" imageurl_2="https://test.oscarwylee.com.au/pub/media/wysiwyg/Homepage_Mens1.jpg" title_2="Men's Glasses" buttontitle_2="Shop Now" buttonlink_2="https://test.oscarwylee.com.au/glasses/mens-glasses.html" imageurl_3="https://test.oscarwylee.com.au/pub/media/wysiwyg/Homepage_Seniors1.jpg" title_3="Seniors " buttontitle_3="Shop Now" buttonlink_3="https://www.oscarwylee.com.au/glasses-for-seniors.html"}}</p>
+<div id="gtx-trans" style="position: absolute; left: 83px; top: -14.0156px;">
+<div class="gtx-trans-icon">&nbsp;</div>
+</div>

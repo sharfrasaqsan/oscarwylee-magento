@@ -1,0 +1,777 @@
+<div style="text-align: center; margin: 1.5em 0 3em 0; background: #F7ECE1;">
+<h1 style="padding-top: 1em;"><strong>Common Eye Conditions</strong></h1>
+<p style="max-width: 800px; margin: 0 auto; padding-right: 2.5em; padding-left: 2.5em; padding-bottom: 2em; line-height: 1.7em;">Here are a list of common eye conditions that can affect anyone. <br>Your eyes can tell a lot about your general health, such as showing symptoms of diabetes or high blood pressure. <br><br>These symptoms are not always obvious, that’s why a regular eye test is important to maintain your health. If you think you need help or due for a check up, please contact your local Oscar Wylee optometrist.</p>
+<p style="max-width: 800px; margin: 0 auto; padding: 1em;"></p>
+</div>
+<div class="static-side-menu" style="display: none;">{{block class="Magento\Cms\Block\Block" block_id="74"}}</div>
+<div class="static-faq-content" style="width: 100%;">
+<h3 class="faqtitle">Glossary Of Common Eye Conditions</h3>
+<div class="faqheader"><strong>Astigmatism</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">You may have heard of people having astigmatism, but what does it mean? <br>It’s actually a very common condition that is experienced by many people, and causes the following symptoms:</p>
+<ul>
+<li style="margin-bottom: 1em;">Blurry vision</li>
+<li style="margin-bottom: 1em;">Eye strain</li>
+<li style="margin-bottom: 1em;">Headaches</li>
+<li style="margin-bottom: 1em;">Increased glare, especially at night.</li>
+</ul>
+<p><strong>Causes of astigmatism</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">Eye astigmatism occurs when images in the eye are not focused to one point, due to the irregular shape of the cornea, lens or retina. <br>Instead of being perfectly round (spherical), they are more oval shaped (cylindrical).</p>
+<p><strong>Managing astigmatism</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">The good news is that optometrists will test for astigmatism during your eye examination, and it can be corrected by wearing glasses to give you clear and comfortable vision.</p>
+</div>
+</div>
+<div class="faqheader"><strong>Blepharitis</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">If you’ve been experiencing irritated, gritty, watery, red eyes, swollen and sticky eyelids, or even flaky skin around the eyes, chances are, you may be suffering from a type of blepharitis.</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Anterior blepharitis affects the eyelashes at the outer front portion of the eyelid.</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Posterior blepharitis affects the oil glands which are closer to the inner back surface of the eyelid that touches the eyeball.</li>
+</ul>
+<p><strong>Causes of blepharitis</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">To treat the blepharitis, your optometrist may ask some questions about what could be triggering your condition, such as:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Dry eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Bacterial infections: including Staphylococcus</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Seborrheic dermatitis: dandruff from the eyebrows and scalp</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Allergies: environmental allergies or reactions to skin care products, cosmetics, eyelash glue, contact lens solution, eye drops or medication</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Rosacea: a skin condition causing a red rash across the face</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Mites and lice (these are less common)</li>
+</ul>
+<p><strong>Treating blepharitis</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">Your optometrist may make one or more of the following recommendations:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Stopping contact lens wear temporarily</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Antibiotic drops or cream</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Lubricating eye drops</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eyelid scrubs: cleaning the dandruff and crusting from the eyelashes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Warm compresses: carefully applying heat to the eyelids and gently massaging the oil glands</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Blephasteam</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">IPL treatment</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Cataracts</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">It’s estimated that by the age of 65, over 90% of people will have developed a form of cataract – meaning most of us will experience them as we get older. <br>So, why does this happen? Cataracts form in the eye lens as a result of the clumping of protein, leading to a decline in clear vision. <br>This process happens naturally with advancing age, which is why they are so common.</p>
+<p><strong>Sometimes, there are other causes of cataracts, including:</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Being born with congenital cataracts</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Trauma to the eye</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Medication (such as corticosteroids)</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Diabetes: cataracts are more common in diabetics</li>
+</ul>
+<p style="margin-left: 25px; margin-right: 25px;">Of course, there’s no need to worry if you have regular eye checks, because your optometrist can let you know how your cataracts are progressing.</p>
+<p><strong>Here are the 3 main types of age-related cataracts that your optometrist with look out for:</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Nuclear</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Cortical</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Posterior subcapsular</li>
+</ul>
+<p><strong>Make sure you let your optometrist know if you are experiencing any of the following symptoms of cataracts:</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Cloudy or foggy vision</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Poor night vision</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Double vision in one eye</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Increased sensitivity to glare, especially with night driving</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Colours appearing less vivid or bright than they used to</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Frequent changes to your glasses prescription</li>
+</ul>
+<p><strong>Cataract treatment and prevention:</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Early cataracts: a change to your prescription and increasing lighting may be enough</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Advanced cataracts: require removal through surgery</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Wearing sunglasses outside to protect your eyes may help to delay the onset of early cataracts</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Chalazion</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">If you’ve ever looked in the mirror to find that your eyelid feels heavy and droopy or lumpy, you may have a chalazion.</p>
+<p><strong>How to tell if it’s a chalazion on your eye</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">Also known as an internal hordeolum, a chalazion is a sign of a blocked oil gland, usually underneath your upper eyelid, resulting in swelling of the affected area. It may feel tender to touch. After a period of time, a harder red lump will start to form.</p>
+<p><strong>Causes of a chalazion</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Posterior blepharitis</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Rosacea</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Seborrheic dermatitis</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Tuberculosis</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Viral infection</li>
+</ul>
+<p><strong>How to treat a chalazion</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">They usually disappear by themselves after a few weeks to a month, but if they are affecting your vision or not improving, have a chat with your optometrist.<br><br>In most cases, you’ll want to keep the eye as comfortable as possible while treating the posterior blepharitis (see section on Blepharitis).</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Avoid contact lens wear and makeup</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Avoid squeezing, rubbing or touching the chalazion</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Try warm compresses with a gentle massage to unclog the blocked oil gland</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Your optometrist may prescribe antibiotics or steroid medication to help with the swelling</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Cloudy vision</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">We’ve all experienced times when our vision seems to go hazy all of a sudden, but then it usually clears after we rub our eyes or blink a few times. But what if it keeps happening? Here’s what it could be.</p>
+<p><strong>Is it cloudy or blurry?</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Cloudy vision is often described as looking through a fog, even when you squint</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Blurry vision comes into better focus and improves if you squint</li>
+</ul>
+<p><strong>Most common causes of cloudy vision</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Cataracts</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Dry eyes: irritation, grittiness, watering</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Migraine: headaches</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Corneal scar resulting from an injury</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Foreign body in the eye</li>
+</ul>
+<p><strong>Less common causes</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Fuch’s dystrophy</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Glaucoma</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Age-related macular degeneration (AMD)</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Diabetic retinopathy</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Optic neuritis</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Retinal vein occlusion</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Stroke</li>
+</ul>
+<p><strong>Cloudy eye conditions</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">If you notice that the cornea, the front surface of your eye, appears cloudy around the pupil, this is what could be causing it:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">High cholesterol</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Scarring from an eye injury</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Corneal diseases such as keratoconus or band keratopathy</li>
+</ul>
+<p><strong>Cloudy pupil</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">If you notice that your child’s pupil is white/cloudy, this could be a congenital cataract, or retinoblastoma, a rare form of eye cancer. Contact your doctor immediately as urgent treatment is required.</p>
+<p><strong>Still unsure? Find out what’s really going on</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">By making an appointment with one of our fully qualified optometrists for a comprehensive eye test to discuss your concerns.</p>
+<p style="margin-left: 25px; margin-right: 25px;"><a href="https://www.oscarwylee.com.au/booking/">Book an eye test</a></p>
+</div>
+</div>
+<div class="faqheader"><strong>Computer eye strain</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">If you’re sitting in front of your computer reading this right now, you may already be familiar with computer eye strain.</p>
+<p><strong>Increased screen time causes eye strain</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">According to the American Optometric Association, you are at the greatest risk of computer-related eye strain if you spend more than 2 hours a day in front of a screen. This includes digital devices such as laptops, computers, mobile phones, tablets and e-readers.</p>
+<p><strong>Other symptoms you may experience</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Blurry vision</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Double vision</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Headaches</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Sore eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Dry eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">You may also suffer from neck and shoulder pain</li>
+</ul>
+<p><strong>Causes of computer eye strain</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Uncorrected vision problem</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Poor eye coordination</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Not taking enough breaks</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Inadequate lighting</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Glare reflecting off the screen</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Improper viewing distance</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Poor sitting posture</li>
+</ul>
+<p><strong>Managing computer eye strain</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">Our fully qualified optometrists are here to support you with options to make work and study easier for you:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Prescription glasses to ease eye strain</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Lenses designed for use in front of a computer</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eye exercises</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Anti-glare computer glasses: to reduce the discomfort from screen brightness</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Blue light glasses</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Conjunctivitis (Pink Eye)</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">It’s quite likely that most of us have experienced conjunctivitis at some point, but what is it exactly? And what is pink eye?<br><br>Conjunctivitis is an inflammation of the conjunctiva, a lining covering the white part of the eye and underneath your eyelids. The small blood vessels within the conjunctiva will dilate and cause the eye to take on a pinkish-red colour (that’s where “pink eye” comes from).</p>
+<p><strong>Here are the most common causes of conjunctivitis:</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Allergies</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Bacterial infections</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Viral infections</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Contact lens wear</li>
+</ul>
+<p><strong>Besides pink eye, there are other associated conjunctivitis symptoms:</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Itchy, irritated, sore, gritty feeling in the eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Crusting in the corners of the eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Watery eye</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">White, yellow or stringy discharge</li>
+</ul>
+<p><strong>Worried that you may have pink eye?</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">There are several pink eye and conjunctivitis treatments and different types of eye drops for conjunctivitis in Australia. Before you head to the pharmacy, we recommend seeing your optometrist first for specific advice. This may include:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Stopping contact lens wear temporarily, and adjusting your wearing habits</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Allergy eye drops</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Hayfever tablets</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Antibiotic drops or cream</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Lubricating eye drops</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Steroid eye drops</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Treat any underlying dry eye</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Corneal ulcer</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">Having an eye ulcer is just as painful as it sounds, and requires urgent treatment so it doesn’t get worse and damage your eyesight. <br>If you’ve been diagnosed with a corneal ulcer, it means that you have an open sore on your cornea.</p>
+<p><strong>Symptoms of corneal ulcers:</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Pain</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Watery eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Discharge</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Red eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Blurry vision</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Sensitivity to bright light</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">You may notice a white spot on your cornea</li>
+</ul>
+<p><strong>Symptoms of corneal ulcers:</strong></p>
+<p><strong>Contact lens related infections</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Bacteria</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Fungal</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Parasitic (especially Acanthamoeba from freshwater and soil)</li>
+</ul>
+<p><strong>Non contact lens related infections</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Virus: such as cold sores, shingles, chicken pox. Can be triggered by stress, sunlight or a compromised immune system</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Injury (chemical burns or abrasions)</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Severe dry eye</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eyelid conditions which affect the ability to blink, leading to prolonged eye surface exposure and dryness (such as Bell’s Palsy)</li>
+</ul>
+<p style="margin-left: 25px; margin-right: 25px;">See your optometrist or ophthalmologist urgently. Corneal ulcers can spread quickly, cause significant scarring on the eye and damage your vision if they are left untreated for too long.<br>Rest assured though, that there are plenty of corneal ulcer treatments available, for both minor and serious infections, including:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eye drops and oral medication: anti-bacterial, anti-fungal and anti-viral</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Steroid eye drops and oral medication</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Diabetic retinopathy</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">Diabetes is one of the fastest growing cardiovascular diseases in Australia, but did you know that it can affect the eyes as well?<br>Diabetic retinopathy (DR) is a complication of diabetes where the small blood vessels in the back of the eye are damaged.</p>
+<p><strong>It is classified into different categories:</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Non-proliferative DR: this is an early stage where blood vessels leak blood and fluid into the retina. Vision is usually minimally affected</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Proliferative DR: is an advanced stage where new blood vessels are formed to replace those that are no longer working. These new vessels are prone to leaking, and can cause sudden vision loss</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Cystoid macular oedema: fluid leakage underneath the macula, causing blurry vision</li>
+</ul>
+<p><strong>How to prevent vision loss/blindness from diabetic retinopathy</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">If you have been diagnosed with background diabetic retinopathy, it doesn’t mean you will go blind. Through early detection and treatment, it’s possible to maintain a reasonable level of vision.</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Have good control of your blood sugar levels</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">See your general practitioner for blood tests to assess your blood sugar levels</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Yearly diabetic eye examinations with your optometrist can be bulk billed to Medicare</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">See your ophthalmologist regularly to have any diabetic retinopathy closely monitored</li>
+</ul>
+<p><strong>Treatments available from your ophthalmologist</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Laser treatment</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Injections</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Surgery</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Double vision (diplopia)</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">If you’re finding yourself seeing double vision all of a sudden, it could be a sign of something serious. So what is double vision, what causes it and how can it be fixed?</p>
+<p><strong>What is double vision?</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">When looking at 1 object, you will see 2 images. Sometimes the images overlap, other times they are completely separate. You may constantly be blinking to refocus. It can lead to fatigue, headaches, eye strain and difficulty concentrating.<br>What causes double vision?</p>
+<p><strong>Double vision in 1 eye</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Cataract</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Corneal scars from injury or infection</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Keratoconus</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Severe dry eye</li>
+</ul>
+<p><strong>Double vision with 2 eyes open is more serious</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Lazy eye/strabismus (poor control by the eye muscle causing misalignment)</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Nerve issues: Myasthenia Gravis, Graves Disease, Multiple sclerosis, Guillain-Barre syndrome, diabetes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Brain: stroke, aneurysm, elevated intracranial pressure from injury, bleeding, infection, tumour, migraines</li>
+</ul>
+<p><strong>Treatment options for double vision from your optometrist</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">Your optometrist can assist with some muscle misalignment issues:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">By referring to an ophthalmologist for eye muscle surgery</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">By working with your ophthalmologist to help improve your diplopia</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">By prescribing vision therapy exercises</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">By prescribing prism glasses</li>
+</ul>
+<p><strong>Double vision that needs urgent medical attention</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">If you notice any of the following signs along with your double vision, you must see your doctor ASAP:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Headaches</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Nausea</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Droopy eyelids</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Pain with eye movement/around the eye</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Muscle weakness</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Dizziness</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Balance issues</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Dry eye syndrome</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">Many of us have experienced the feeling of dry eyes at some point, and it is thought to be more common in women. <br>Understanding more about it can help us to manage it better.</p>
+<p><strong>What is dry eye?</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">Dry eye syndrome is caused by either:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">The tears in our eyes evaporating too quickly, or</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">The eyes are not producing enough tears</li>
+</ul>
+<p><strong>Symptoms of dry eye</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Sore, burning, irritated, red, watery or gritty eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Watery eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Blurry vision</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Glare sensitivity</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eyelids sticking together</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Crusting at the corners of the eyes upon waking</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Difficulty keeping the eyes open</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Reduced tolerance to contact lenses</li>
+</ul>
+<p><strong>Causes of dry eye</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Older age</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Increased screen time: we tend to blink less to refresh our tears when concentrating</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Contact lens wear</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Exposure to hot, dry, smoky, windy or dusty environments</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Some medications</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Autoimmune conditions such as Sjogrens syndrome and rheumatoid arthritis</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Health conditions such as Bell’s Palsy and shingles</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Vitamin A deficiency</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Blepharitis</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Previous eye injury or surgery</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Laser eye surgery</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eyelid conditions causing incomplete blink</li>
+</ul>
+<p><strong>See your optometrist to discuss management options, including:</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Tear supplement eye drops for dry eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Treat the blepharitis: eyelid scrubs and warm compresses</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Steroid drops</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">IPL treatment</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Blephasteam</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Changing contact lens wearing habits</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Punctal plugs</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Surgery to treat incomplete blink/eyelid dysfunction</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Vitamin A supplements</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Omega 3 supplements</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Floaters</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">This is a very common condition that usually occurs naturally with age.</p>
+<p><strong>How eye floaters appear</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">They are dark or translucent looking, and will move together with your eye. If you try to look at them directly, they will eventually disappear off to the side. Floaters tend to be more noticeable against bright lights or white wall, and take on different shapes, such as:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Black spots</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Cobwebs</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Flies or mosquitoes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Squiggly lines</li>
+</ul>
+<p><strong>What is a floater</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">The inside of the eye is normally filled with a jelly-like substance known as the vitreous humour. Normal age-related changes can cause the proteins within the vitreous humour to clump together, which we see as floaters.</p>
+<p><strong>Causes of floaters</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Posterior vitreous detachment (PVD)</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Retinal holes or tears: can arise from a PVD, trauma or peripheral retinal thinning in those with high myopia</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Retinal detachment</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Posterior uveitis</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Retinal bleeding</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Trauma: such as a blow to the head, whiplash</li>
+</ul>
+<p><strong>Treatments for floaters</strong></p>
+<p><strong>Floaters that have been noticeable for more than 6 weeks</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">Can be monitored by yourself and your optometrist at routine intervals, if there aren’t any other associated symptoms.<br>If you notice a black spot that seems fixed in your vision for any period of time, you should see your optometrist promptly.</p>
+<p><strong>Floaters that have been noticeable for less than 6 weeks</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">You must see your optometrist or ophthalmologist urgently due to the possibility of a retinal detachment, particularly if you notice the following associated symptoms as well:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">New floaters</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">More floaters than usual</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Flashing lights</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Black curtains/shadows in your vision</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Glaucoma</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">According to Glaucoma Australia, 2 in 100 Australians will develop glaucoma in their lifetime. Glaucoma causes a loss of peripheral vision (visual field loss) through damage to the optic nerve, resulting from issues with the eye’s intraocular fluid drainage system.</p>
+<p><strong>Symptoms of glaucoma</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">In most cases, there are usually no symptoms at all</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">In advanced, severe glaucoma, tunnel vision results in misjudging or missing objects off to the side as well as mobility issues</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">In acute angle closure glaucoma, symptoms include pain, red eyes, headaches, blurry vision, halos around lights, nausea</li>
+</ul>
+<p><strong>Types of glaucoma</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Open angle glaucoma: is most commonly seen and makes up 90% of cases. It is usually slowly progressive, caused by a blockage in the eye’s intraocular fluid drainage system resulting in elevated eye pressure</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Acute angle closure glaucoma: a sudden narrowing of the eye’s intraocular fluid drainage system causes a build-up of eye pressure. It needs urgent treatment as there is a high risk of vision loss</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Normal tension glaucoma: eye pressure is normal, but optic nerve damage is still observed</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Congenital glaucoma: is rare, present at birth and early childhood, and due to the incomplete development of eye’s intraocular fluid drainage system. It is often associated with other medical conditions</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Traumatic glaucoma</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Secondary glaucoma</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Pseudoexfoliative</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Pigmentary</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Irido-corneal endothelial syndrome</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Uveitic glaucoma</li>
+</ul>
+<p><strong>Risk factors</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Older age</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Family history of glaucoma, especially siblings</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Thin corneas</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Corticosteroid medication</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Ethnicity</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Diabetes</li>
+</ul>
+<p><strong>Have regular eye tests</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">It’s thought that 50% of people with glaucoma don’t know that they have it, so having regular eye examinations is important for early detection. Your optometrist can perform these following tests to assess for glaucoma:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eye pressure test</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eye health check, including an assessment of your optic nerve</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Visual field test</li>
+</ul>
+<p style="margin-left: 25px; margin-right: 25px;">If your optometrist suspects that you have glaucoma, you will be referred to an ophthalmologist for treatment</p>
+<p><strong>Treatment options for glaucoma</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Anti-glaucoma medication</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Laser treatment</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Surgery</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Hay fever</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">Allergies are becoming increasingly common, and 1/5 people will experience hay fever at some point.<br>It’s no surprise that it usually peaks in spring, triggered by the large amount of pollen released in the air. Hay fever normally causes nasal issues such as a runny nose, coughing or sneezing, but can affect your eyes as well.</p>
+<p><strong>Hay fever allergy symptoms in the eyes:</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Itchy/irritated/gritty eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Red eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Watery eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Stringy discharge</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Blurry vision</li>
+</ul>
+<p><strong>Signs of hay fever:</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">Your optometrist can check underneath your eyelids for hay fever by looking for bumps called papillae.</p>
+<p><strong>Hay fever treatment for your eyes:</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Avoiding the trigger as much as possible, wearing sunglasses, eye protection or goggles outside</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Hay fever eye drops</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Hay fever tablets</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Steroid eye drops</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Hyperopia (long sight)</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">When you have hyperopia, objects far away at distance are clear, but you have to focus harder to see clearly at near.</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Images entering the eye are focused behind the retina rather than on it</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Not to be confused with presbyopia, which is an age related change in your near vision</li>
+</ul>
+<p><strong>Causes of hyperopia</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Can be hereditary</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Many infants are born with it, but it self-corrects in early childhood so that they don’t end up with vision problems</li>
+</ul>
+<p><strong>Managing hyperopia</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">If you suspect that you, or your child has hyperopia, see your optometrist to discuss the most suitable option to correct it, including:</p>
+<ul>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Glasses</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Contact lenses</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Laser eye surgery</li>
+</ul>
+</ul>
+<p style="margin-left: 25px; margin-right: 25px;">In some children, uncorrected hyperopia can lead to learning difficulties, and may not be detected at a school vision screening, so it’s a good idea to have your child’s eyes checked before they start school.</p>
+</div>
+</div>
+<div class="faqheader"><strong>Macular degeneration (AMD)</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">Age-related macular degeneration (AMD) is the leading cause of severe vision impairment in people over 40 years old in Australia.<br>It causes a painless loss of central vision affecting the macula, which is the part of the eye that we use when we look straight ahead to focus on something.</p>
+<p><strong>There are 2 types:</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Dry AMD: this is the more common variant, where there is a loss of retinal cells at the macula due to damage in the underlying layer. It tends to progress slowly</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Wet AMD: Dry AMD can become Wet AMD all of a sudden, leading to significant vision loss. It occurs due to the leakage of fluid in new blood vessels growing in the underlying layer.</li>
+</ul>
+<p><strong>Symptoms of AMD</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Gradual blurring of vision</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Difficulty seeing things centrally</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Distortion of straight lines</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Difficulty reading, writing and looking at detailed objects</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Trouble recognising faces</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Fading of colours</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Difficulty judging distances</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Hallucinations in late stage, advanced AMD due to significant vision loss</li>
+</ul>
+<p><strong>Risk factors</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Older age</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Smoking</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Family history of AMD</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Obesity</li>
+</ul>
+<p><strong>Prevention</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eating a healthy, well balanced diet containing fruits and vegetable of all different colours, especially leafy greens and omega 3 fats</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Wearing sunglasses</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Avoiding smoking</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Regular exercise</li>
+</ul>
+<p><strong>Managing AMD</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">See your optometrist for regular follow ups to check for any changes or new symptoms.</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eating a healthy, well balanced diet containing fruits and vegetable of all different colours, especially leafy greens and omega 3 fats</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Dry AMD: there is currently no treatment for this. Antioxidant supplements can help support certain variants of dry AMD.</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Amsler grid: This is a macular degeneration test, used to monitor for progression to wet AMD that you can take home and self-administer</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Wet AMD: urgent injections are needed to slow the vision loss</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">For those with significant vision loss with either form of AMD, low vision aids and the use of good lighting are helpful</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Myopia (short sight)</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">It’s estimated that by 2050, 50% of the world’s population will have myopia. Since so many people are developing myopia, there is currently a lot of ongoing research to help us understand it better.</p>
+<p><strong>What is myopia?</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Images entering the eye are focused in front of the retina, rather than on the retina</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Objects far away are blurry, near vision is clear</li>
+</ul>
+<p><strong>Myopia treatment</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">See your optometrist to discuss the following management options:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Prescription glasses</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Contact lenses</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Laser eye surgery</li>
+</ul>
+<p><strong>Health conditions associated with myopia</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">There is a higher risk of cataract, glaucoma and macular degeneration in people with high myopia</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Uncontrolled diabetes and cataracts can cause myopic shifts in your prescription</li>
+</ul>
+<p><strong>Myopia in children</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">Research has shown that there is a greater likelihood of developing of myopia in children who:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Spend long periods of time working on computers, reading, or doing intense close work</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Lack exposure to natural sunlight</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Do not spend much time outdoors</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Have relatives with myopia</li>
+</ul>
+<p style="margin-left: 25px; margin-right: 25px;">Treatment options to slow the progression of myopia in children include using orthokeratology (wearing hard contact lenses to sleep) and atropine eye drops. Have a chat with your optometrist about these options.</p>
+</div>
+</div>
+<div class="faqheader"><strong>Ocular hypertension</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">People with ocular hypertension have eye pressure that is higher than normal (&gt;21mmHg), but do not show any other signs of glaucoma, such as visual field loss or optic nerve damage. They would be considered as having a higher risk of developing glaucoma in the future, and are monitored regularly.</p>
+<p><strong>Ocular hypertension symptoms</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">There are no symptoms, so having an eye pressure test when you see your optometrist is the only way to find out. The normal range of eye pressure is 10-21mmHg.</p>
+<p><strong>Risk factors for ocular hypertension</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Older age</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Family history of glaucoma</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Ethnicity</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Myopia</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Steroid medication</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Diabetes</li>
+</ul>
+<p><strong>Treatment</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">In most cases, no treatment is required. Regular monitoring of your eye pressure and optic nerve appearance, as well as visual field testing, is adequate.<br>If your ocular hypertension is assessed as being of high risk into developing glaucoma, your ophthalmologist may prescribe anti-glaucoma treatment as a preventative measure. This includes eye drops or laser treatment.</p>
+</div>
+</div>
+<div class="faqheader"><strong>Ocular migraine</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">Did you know that some migraines can affect the eyes only, and don’t cause headaches?<br>Ocular migraines begin with changes to vision, and may or may not cause a headache afterwards. They normally last for up to 20 minutes.<br>They’re also known as:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Visual migraine</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Optical migraine</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eye migraine</li>
+</ul>
+<p><strong>Symptoms you will see during an ocular migraine episode</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Patterns in your vision</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Flashing lights</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Zig zag lines</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Stars in the eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Blind spots</li>
+</ul>
+<p><strong>Ocular migraine causes</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Some people have triggers – eye strain can be one of them</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Hormone changes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Dietary issues</li>
+</ul>
+<p style="margin-left: 25px; margin-right: 25px;">.....and many more, so it’s best to see your GP.</p>
+<p><strong>Treatment</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Usually no treatment is required as it is painless, and resolves by itself after 20 minutes. It’s best to stop what you’re doing and rest somewhere dark until it has passed.</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">If you have a headache afterwards, you may need painkillers or medication, but it’s best to discuss this first with your GP.</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">See if there are any eye-related triggers by having an eye test with your optometrist</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Presbyopia</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">Are you finding that reading up close is getting more difficult? You’re holding things further away to read, making the text size larger on your phone and computer screen, squinting and straining to see small print, getting headaches or tired eyes? These are some of the most common symptoms that we hear from people who have presbyopia.</p>
+<p><strong>What is presbyopia?</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">It’s a really common condition, and usually begins over the age of 40.</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">As part of ageing process, the lens inside the eye becomes more rigid, so becomes less able to focus clearly at near.</li>
+</ul>
+<p><strong>How can it be corrected?</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">Speak to your optometrist to see which of the following options are most suitable for you:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Wearing prescription reading, multifocal or bifocal glasses</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">For some people, contact lenses or laser eye surgery can also help</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Red eye</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">We’ve all experienced red eyes before, and tried to figure out how they came about. Red eyes occur when the tiny blood vessels on the white part of the eye dilate, making the eye look more red than usual.</p>
+<p><strong>There are many causes of red eyes, and we’ve listed them here for you.</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Dry eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eye injury/scratch</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Corneal ulcer</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eye surgery complications</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Contact lens related red eye: infection or inflammation</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Exposure to triggers such as perfume, cigarette smoke, dust, pet fur, makeup, chemicals such as chlorine, hayfever</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Inflammatory conditions: keratitis, iritis/uveitis, episcleritis, scleritis</li>
+</ul>
+<p><strong>Acute angle closure glaucoma</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">A sudden buildup of eye pressure within the eye can cause painful, red eyes that require urgent treatment by an ophthalmologist (see section on Glaucoma).</p>
+<p><strong>Subconjunctival haemorrhage</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">This causes a painless bloodshot eye, caused by bleeding from a burst blood vessel, which usually resolves by itself within 1-2 weeks. Often there is no obvious cause, but it can happen due to eye rubbing, intense vomiting, coughing, sneezing and weight lifting.</p>
+<p><strong>Treatment for red eyes</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">It’s best to see your optometrist to diagnose the cause of the red eye, and they will also recommend the best way to manage it. This may include:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eye drops: lubricating, antibiotic, antiviral, steroid, allergy</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Avoiding allergy triggers</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Adjusting contact lens wearing habits</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Dry eye treatment</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Seeing an ophthalmologist about eye surgery complications</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Retinal detachment</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">This is a serious condition that optometrists consider as an emergency due to the high risk of vision loss. It requires immediate assessment and treatment by a retinal surgeon. Retinal detachment treatment involves surgery. The sooner it is treated, the better the chance of recovery.</p>
+<p><strong>What is a retinal detachment?</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">The retina is a light sensitive layer attached to the back surface of the eye. We rely on the retina in our eyes to see. In some people, it pulls away, or detaches, from the back surface.</p>
+<p><strong>Causes of a retinal detachment</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Retinal tear</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Retinal holes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eye trauma</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Fluid buildup behind the retina</li>
+</ul>
+<p><strong>Risk factors</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Older age</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">High myopia</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Previous eye surgery</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Previous history of retinal disease</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Family history of retinal detachment</li>
+</ul>
+<p><strong>Retinal detachment symptoms</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">If you see any of the following symptoms, please notify your optometrist or ophthalmologist immediately:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Painless</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Floaters: the sudden appearance of many black spots in your vision</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Flashing lights</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Black curtain/shadows in your vision</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Blurry side vision/peripheral vision</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Blurry or distorted vision</li>
+</ul>
+<p><strong>Is it a retinal or posterior vitreous detachment (PVD)?</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">A posterior vitreous detachment presents with similar symptoms to a retinal detachment, however, it usually does not require treatment, just monitoring.</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Posterior vitreous detachment is a common condition that is part of the ageing process, more likely in people over 50 years old.</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">The vitreous humour, a jelly-like substance that fills the inside of the eye, shrinks and pulls away from the retina.</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">In most cases it pulls away without disturbing the retina, but sometimes it can cause a retinal tear or detachment, so it is best to have your eyes tested immediately just in case.</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Stye (external hordeolum)</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">We’ll refer to an external hordeolum as a stye in this section.</p>
+<p><strong>There are 2 types of eye styes:</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Internal hordeolum (chalazion): see section on Chalazion</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">External hordeolum (stye): occur due to an infection of the eyelash follicle on the outside of the eyelid and eventually appears resemble a pimple when it develops a white tip</li>
+</ul>
+<p style="margin-left: 25px; margin-right: 25px;">A stye on the eye is a painful red lump that appears on the upper or lower eyelids – otherwise known as a pimple on the eyelid.</p>
+<p><strong>What causes a stye on the eye?</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">An infection by Staphylococcus Aureus bacteria causes anterior blepharitis, which then leads to the formation of an external hordeolum.</p>
+<p><strong>Avoid squeezing a stye</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">Although this is very tempting, especially after the white tip appears, it could lead to an infection of the entire eyelid – a serious condition called preseptal cellulitis.</p>
+<p><strong>Stye treatment</strong></p>
+<p style="margin-left: 25px; margin-right: 25px;">An external hordeolum usually resolves by itself, not long after the white tip appears on the lump. It may take approximately 1 month. They normally don’t require any treatment, but if they are affecting vision or not improving, your optometrist or doctor may recommend:</p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Antibiotic ointment</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Steroid cream</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Surgery</li>
+</ul>
+<p><strong>How to prevent a stye</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Wash your hands before touching your eyes</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Wash your face regularly, including the eye area</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Eyelid scrubs</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Ensure that your skincare products and cosmetics aren’t making it worse</li>
+</ul>
+</div>
+</div>
+<div class="faqheader"><strong>Watering eyes</strong></div>
+<div class="faqcontent">
+<div class="faqanswer">
+<p style="margin-left: 25px; margin-right: 25px;">Wondering why your eyes are watery? Are you finding yourself blotting at constantly watering eyes, which give you a glassy look and blurry vision?<br>There are plenty of options to manage watery eyes, so it’s best to book in for an appointment with your optometrist to discuss the best steps to take.</p>
+<p><strong>What are the causes of watery eyes?</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Excessive tear production from having dry eyes (to compensate for dryness), a foreign body, inflammation of the eye surface, ingrown eyelashes (trichiasis), allergies, conjunctivitis or inadequate blinking</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Poor tear drainage rom blocked, narrow or poorly positioned tear ducts</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Poorly positioned tear ducts due to injury or a loose lower eyelid</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Blocked tear ducts are commonly seen in infants and young children</li>
+</ul>
+<p><strong>What are the causes of watery eyes?</strong></p>
+<ul>
+<li style="margin-bottom: 1em; margin-right: 25px;">Excessive tear production - Try tear supplement eye drops, eyelid scrubs, warm compresses with a gentle massage to unclog the blocked oil gland, antibiotics, steroid drops, allergy eye drops, allergy tablets, IPL treatment or Blephasteam</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Poor tear drainage - Many cases can be managed with a lacrimal lavage, which is a procedure to unclog the tear duct</li>
+<li style="margin-bottom: 1em; margin-right: 25px;">Surgery - May be necessary for any poorly positioned eyelids or tear ducts, as well as blocked tear ducts.</li>
+</ul>
+</div>
+</div>
+</div>
+<div>
+<p>Author: Jessica Foong (Optometrist)</p>
+</div>
+<div>
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="37"}}</p>
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="50"}}</p>
+</div>

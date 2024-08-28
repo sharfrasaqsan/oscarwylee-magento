@@ -1,0 +1,1126 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+  h3,
+  h4 {
+    color: white;
+  }
+  * {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333333;
+    line-height: 1.3em;
+  }
+  #maincontent {
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  .banner {
+    width: auto;
+    max-height: 450px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+  }
+  .mobile-banner {
+    display: none;
+  }
+  .title {
+    border-bottom: 1px solid silver;
+    padding: 2.5rem 3rem;
+    margin: 2.5rem 3rem;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 700;
+  }
+  .subtitle {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 10px solid #003cac;
+    padding: 1rem;
+    font-weight: 700;
+  }
+  .italic-title {
+    font-style: italic;
+  }
+  .italic-wrapper {
+    margin-bottom: 2em;
+  }
+  .intro-section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+  .main-section section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+  .section-border-bottom {
+    border-bottom: 1px solid silver;
+    margin: 3rem;
+  }
+  .book-section {
+    display: flex;
+    padding-left: 1em;
+    padding-bottom: 2.5em;
+    padding-top: 0em;
+  }
+  .book-section p {
+    margin-bottom: 1.5em;
+  }
+  .book-section-left {
+    width: 50%;
+    margin-left: 0;
+    padding-left: 1.5em;
+  }
+  .book-section-left .heading {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+  }
+  .book-section-right {
+    display: flex;
+    margin: auto auto;
+    width: 30%;
+  }
+  .book-section-right a {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+  }
+  .btnOw:hover {
+    background-color: black;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    border: none !important;
+  }
+  .btnOw {
+    background-color: #003cac;
+    width: 100%; /* padding: 0px 50%; */
+    border: none;
+    color: #fff;
+    height: 2em;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .para-content {
+    /* margin-top: 1em; */
+    margin-bottom: 2em;
+    font-size: 16px;
+    text-align: justify;
+  }
+  .list-title {
+    font-weight: 700;
+  }
+  .ordered-list,
+  .unordered-list {
+    padding-left: 4rem;
+    margin-top: 2em;
+  }
+  .unordered-list {
+    margin-bottom: 2em;
+  }
+  .ordered-list li,
+  .unordered-list li {
+    margin-bottom: 0.8em;
+    font-size: 16px;
+  }
+  .pro-con {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+  .pro-con li {
+    margin-bottom: 0.8em;
+  }
+  .pro-title,
+  .con-title,
+  .sub-list-title,
+  .sub-div-title {
+    border-left: 10px solid #b1b4b2;
+    padding: 0rem 1rem;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  .sub-list-title {
+    font-size: medium;
+    margin-left: 3em;
+  }
+  .pro-list,
+  .con-list {
+    margin-left: 2em;
+  }
+  .pro-section,
+  .con-section {
+    flex: 1 1 0;
+  }
+  .sub-div {
+    margin-left: 2em;
+  }
+  .sub-div .para-content {
+    margin-left: 0;
+  }
+  .grid-image {
+    width: 100%;
+    margin-bottom: 0.3em;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    column-gap: 3em;
+    width: 70%;
+    margin: 2em auto;
+  }
+  .grid-item {
+    /* text-align: center; */
+    width: 100%;
+  }
+  .grid-item span {
+    font-style: italic;
+    font-weight: 700;
+    font-size: x-small;
+  }
+  .grid-text {
+    text-align: center;
+    font-size: x-small;
+    margin-bottom: 2em;
+  }
+  .grid-title {
+    text-align: center;
+    margin-top: 1em;
+  }
+  .flex-wrapper {
+    display: flex;
+    margin-bottom: 2em;
+  }
+  .flex-image {
+    width: 80%;
+    display: flex;
+    margin: 2em auto;
+    max-width: 700px;
+  }
+  .hightlight-list {
+    font-weight: 600;
+  }
+  .example-images {
+    row-gap: 2em;
+  }
+  .product-image {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+  .products-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .individual-product {
+    border-right: 1px solid silver;
+    margin-bottom: 2em;
+    display: flex; /* margin-left: 1em; */
+  }
+  .individual-product:last-child {
+    border: none;
+  }
+  .h4-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .product-name,
+  .product-price {
+    text-align: center;
+  }
+  .product-button {
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin-top: 1em;
+  }
+  .two-pairs-price,
+  .three-pairs-price {
+    text-align: center; /* margin-top: 2em; */
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 1em;
+  }
+  .two-pairs-price {
+    margin-bottom: 1em;
+  }
+  .two-pairs-price span,
+  .three-pairs-price span {
+    display: block;
+  }
+  .two-pairs-price {
+    background-color: #003cac;
+  }
+  .three-pairs-price {
+    background-color: black;
+  }
+  .from {
+    font-weight: 300;
+    color: white;
+    line-height: 10px;
+  }
+  .product-right {
+  }
+  .context {
+    padding: 0 3rem;
+  }
+  .location {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: max-content;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+    padding-top: 0;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid silver;
+  }
+  .location .heading {
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+  .item1 {
+    border: none;
+  }
+  .locationText .heading {
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+  .locationText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.5em;
+  }
+  .locationText p {
+    font-size: 16px;
+    margin-top: 2em;
+  }
+  .locationImage {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  .allButton {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .allButton a {
+    text-decoration: none;
+  }
+  .allButton .btnOw {
+    width: 70%;
+    margin-left: 0;
+  }
+  .item1 {
+    padding-top: 2em;
+  }
+  .products-section-mobile {
+    display: none;
+  }
+  .nine-products-section-mobile {
+    display: none;
+  }
+  .nine-products-section {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .nine-products-section img {
+    width: 30%;
+    border-right: 1px solid silver;
+  }
+  .nine-products-section img:last-child {
+    border: none;
+  }
+  .nine-products-section-gender {
+    margin-left: 0;
+  }
+  .grid-container-mobile {
+    display: none;
+  }
+  .contents {
+    margin-bottom: 2em;
+  }
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+    padding: 0;
+  }
+
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  .nxt-btn {
+    right: 0;
+  }
+
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+    width: 1em;
+  }
+
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+  .pre-btn:hover {
+    background-color: white;
+    border: none;
+  }
+  .nxt-btn:hover {
+    background-color: white;
+    border: none;
+  }
+  .nine-products-section {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  .product-container {
+    /* padding: 0 10vw; */
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  .product-container a {
+    display: contents;
+  }
+  .single-product {
+    width: 50%;
+  }
+  .border-bottom-para-content {
+    border-bottom: 1px solid silver;
+    padding-bottom: 2em;
+  }
+  .example-image-wrapper {
+    margin-bottom: 1em;
+    display: flex;
+  }
+  .example-image {
+    margin: auto;
+    width: 60%;
+  }
+  .contents-margin {
+    margin-bottom: 1em;
+  }
+  .heading-margin {
+    margin-top: 1em;
+  }
+  .contents-margin-2 {
+    margin-bottom: -1em;
+  }
+  .banner-wrapper {
+    height: 450px;
+  }
+  .sub-div-title,
+  .pro-title,
+  .con-title,
+  .subtitle {
+    color: black;
+  }
+  @media screen and (max-width: 440px) {
+    * {
+      line-height: 1.5em;
+    }
+    .contents-margin-2 {
+      margin-bottom: 0;
+    }
+
+    .title {
+      margin: 1em 0.5em;
+      padding: 0em; /* padding-bottom: 0.5em; */
+      white-space: normal;
+      border: none;
+    }
+    .contents {
+      margin-bottom: 2em;
+    }
+    .intro-section,
+    .main-section section {
+      margin: 0 1em;
+    }
+    .ordered-list,
+    .unordered-list {
+      padding-left: 2.5em;
+    }
+    .pro-con {
+      flex-direction: column;
+    }
+    .flex-wrapper {
+      flex-direction: column;
+    }
+    .example-images {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 2em;
+    }
+    .grid-item {
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .product-image {
+      width: 100%;
+    }
+    .sub-div {
+      margin-left: 1.2em;
+    }
+    .book-section {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+    .book-section-left {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .book-section-left p {
+      margin-right: 1em;
+      text-align: justify;
+      margin-left: 1em;
+    }
+    .book-section-left .heading {
+      text-align: center;
+      margin-top: 1.6em;
+      font-size: 1.5em;
+    }
+    .book-section-right {
+      width: 90%;
+      margin-bottom: 3em;
+    }
+    .desktop-banner {
+      display: none;
+    }
+    .mobile-banner {
+      display: block;
+      max-width: 100%;
+      padding: 0;
+    }
+    .products-section {
+      display: flex;
+      flex-direction: column;
+    }
+    .individual-product {
+      border-right: none;
+      border-bottom: 1px solid silver;
+      padding-bottom: 0.5em;
+      margin-bottom: 0;
+      width: 90%;
+    }
+    .grid-image {
+      width: 90%;
+      display: flex;
+      margin: 0px auto;
+    }
+    .location {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 4em;
+    }
+    .locationText .heading {
+      font-size: 1.5em;
+      margin-top: 1.9em;
+      margin-bottom: -0.5em;
+    }
+    .allButton .btnOw {
+      width: 100%;
+    }
+    .item1 {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+      border: none;
+      padding-bottom: 0;
+      padding-top: 3.5em;
+    }
+    .locationText .heading {
+      text-align: center;
+    }
+    .item1 .locationImage,
+    .item1 .locationText {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+    }
+    .products-section {
+      display: none;
+    }
+    .nine-products-section {
+      display: none;
+    }
+    .individual-product {
+      display: flex;
+      margin: auto auto;
+    }
+    .single-product {
+      width: 100%;
+    }
+    .products-section-mobile {
+      display: block;
+    }
+    .nine-products-section-mobile {
+      display: flex;
+      overflow-x: scroll;
+    }
+    .nine-products-section-mobile::-webkit-scrollbar {
+      display: none;
+    }
+    .nine-products-section-mobile img {
+      width: 80%;
+    }
+    .grid-container-mobile {
+      display: flex;
+      flex-direction: column;
+    }
+    .grid-item span {
+      display: flex;
+      margin: 0 2em;
+    }
+    .grid-container-desktop {
+      display: none;
+    }
+    .product-container-mobile {
+      display: flex;
+      overflow-x: auto;
+    }
+    .nine-products-section-mobile {
+      position: relative;
+      overflow: hidden;
+      padding: 10px;
+    }
+    .pre-btn,
+    .nxt-btn {
+      width: 3vw;
+      height: 0;
+      top: 50%;
+    }
+    .example-image {
+      width: 100%;
+    }
+    .mobile-para-margin {
+      margin-bottom: 0;
+    }
+    .contents-margin-2 {
+      margin-bottom: 0;
+    }
+    .banner-wrapper {
+      height: 500px;
+    }
+  }
+</style>
+<div class="banner-wrapper"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Summer_Sunglass_Styles_Web_Banner_1640x940.jpg"}}" alt="Summer Sunglasses Styles for Females and Males" class="banner desktop-banner"> <img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Summer_Sunglass_Styles_Oscar_Wylee_Mobile_Banner_770x990.jpg"}}" alt="Summer Sunglasses Styles for Females and Males" class="mobile-banner"></div>
+<h1 class="title">Summer Sunglasses Styles for Women and Men: Buyer's Guide</h1>
+<div class="intro-section">
+<p class="para-content">The summer sunglasses styles for women and men, detailed in this buyer’s guide, describe sunglasses that suit the warmer weather and casual style of summer, while still being able to protect the wearer's eyes from extreme UV rays and high levels of glare. Trendy sunglasses have to suit a style that is bright and fitting for the hotter climate while remaining fashionable and on brand.</p>
+<p class="para-content">Women’s sunglasses are made to help the wearer stand out and to suit their personal style of fashion, as well as guarantee protection for the wearer's eyes. The best sunglasses for women must be more than just trendy, they must fit the wearer's desired style, face type and skin tone, as well as stay functional. Women’s sunglasses in 2022 were styles that were stunning and stylish, such as large sunglasses, oval print sunglasses and round metal sunglasses.</p>
+<!--  -->
+<p class="para-content border-bottom-para-content mobile-para-margin">Cool sunglasses for men in the summer season are casual but associated with active and daring professions that have influenced men’s sunglasses styles for a long time. Men’s sunglasses in 2022 were fashionable and classic styles such as aviator sunglasses, rectangle sunglasses or wayfarer sunglasses.</p>
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="heading heading-margin">Take care of your eyes at Oscar Wylee and book an eye test with our optometrists.</p>
+<p class="para-content">Our eye tests are bulk billed for eligible Medicare Card Holders.</p>
+</div>
+<div class="book-section-right"><a href="https://www.oscarwylee.com.au/booking"><button class="btnOw">Book an eye test</button></a></div>
+</aside>
+<div class="intro-section">
+<h2 class="subtitle">10 Summer Sunglasses Styles for Women</h2>
+<p class="intro para-content">There are 10 summer sunglasses styles for women that offer versatility, a trendy appearance and eye health and safety to any woman who wears them. These Summer sunglasses styles are incredibly varied and will suit any face shape, facial accessories, skin tone or glasses colour. Ten summer glasses styles for women are <strong>large sunglasses, round metal sunglasses, rimless aviator sunglasses, aviator classic sunglasses, acetate frame sunglasses, oval-frame sunglasses, glow up sunglasses, pointed cat eye sunglasses, irregular-shaped acetate sunglasses and oval print sunglasses.</strong> The top 10 summer sunglasses for women, and the reasons why they are the best, are listed below.</p>
+<ol class="ordered-list">
+<li><span class="list-title">Large sunglasses:</span> Large Sunglasses are sunglasses with frames that are bigger than the standard and cover most of the face. They are also known as oversized sunglasses.</li>
+<li><span class="list-title">Round metal sunglasses:</span> Round metal sunglasses are sunglasses with a circular frame that is made with strictly metallic materials and round tinted lenses fitted inside.</li>
+<li><span class="list-title">Rimless aviator sunglasses:</span> Rimless aviator sunglasses are aviator sunglasses that have no rims around the lenses and a very minimal frame, leaving little material or design to interfere with the face's natural features.</li>
+<li><span class="list-title">Aviator classic sunglasses:</span> Aviator classic sunglasses are sunglasses that have tear shaped lenses and a thin browline highlight in the frames design.</li>
+<li><span class="list-title">Acetate frame sunglasses:</span> Acetate frame sunglasses are sunglasses where the glasses frames are made of the nylon, plant based material known as acetate.</li>
+<li><span class="list-title">Oval-frame sunglasses:</span> Oval-frame sunglasses are where the frame and lenses are wide and slightly angular like rectangle frames, but are also circular and smooth on the edges like round sunglasses.</li>
+<li><span class="list-title">Glow up sunglasses:</span> Glow up sunglasses are sunglasses that have battery powered glowing material around the lenses, such as neon tubing or LED light.</li>
+<li><span class="list-title">Pointed cat eye sunglasses:</span> Pointed cat eye sunglasses are sunglasses that have pointed edges at the tips of the browline.</li>
+<li><span class="list-title">Irregular-shaped acetate sunglasses:</span> Irregular-shaped acetate sunglasses are sunglasses that are made from the material acetate and have a design that doesn’t definitively fit into any other style of frame.</li>
+<li><span class="list-title">Oval print sunglasses:</span> Oval print sunglasses are sunglasses with an oval shaped frame and lenses that use a printed pattern for the frames colour and design.</li>
+</ol>
+</div>
+<div class="main-section">
+<div class="main-section">
+<section class="rectangle-section">
+<h3 class="subtitle">1. Large Sunglasses</h3>
+<p class="para-content">Large sunglasses for women, also known as oversized sunglasses, are summer<strong> sunglasses where the frame that contains the lenses is larger than the standard shape of the glasses.</strong> Large sunglasses for women are commonly created in the style of square frame and round frame sunglasses.</p>
+<p class="para-content">The advantage of large sunglasses for women is that the added size of the frame means that the tinted lenses will cover a greater portion of the face, reducing the amount of skin that is vulnerable to UV rays. Large sunglasses are immediately noticeable, yet with the added size of the tinted lenses, large sunglasses also hide the wearer’s most recognisable facial features, creating a sense of privacy for the wearer.</p>
+<p class="para-content">Large sunglasses are made of a variety of materials, but clear and see-through materials may interfere with the advantage against sun rays that large glasses have.</p>
+<p class="para-content">Large sunglasses are a good summer sunglasses style for women because they offer an even greater level of eye protection than any other glasses style, they are immediately striking and draw positive attention to the wearer and they compliment the facial features of oval shaped and square shaped faces.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/bale-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Bale_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/mesa.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Mesa_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/amber-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Amber_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/bale-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Bale_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/mesa.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Mesa_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/amber-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Amber_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="square-section">
+<h3 class="subtitle">2. Round Metal Sunglasses</h3>
+<p class="para-content">Round metal sunglasses for women are <strong>sunglasses with a round style of frame made from a metallic material.</strong> Round metal sunglasses' metallic frame is often thin and wireframed.</p>
+<p class="para-content">The advantage of round metallic sunglasses for women is that the round frames style is versatile and always trendy. Round metallic sunglasses' wider shape also allows the tinted lenses to cover more of the face than other styles of glasses, protecting the eyes better and preventing wrinkles on the side of the eyes.</p>
+<p class="para-content">Round metallic sunglasses are made of a lightweight metal that come in many colours but are best suited to metallic colours such as silver and gold in order to create a more striking appearance.</p>
+<p class="para-content">Round metallic sunglasses are a good summer sunglasses style for women because the material is striking and radiant in summer weather, creating a stunning profile for the wearer. Round metallic sunglasses lightweight metal materials also weigh less on the nose, preventing marking or discomfort.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/kato-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Kato_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/haskell-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Haskell_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/bryce-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Bryce_Product_3x_Oscar-Wylee_622x233px_1_.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/kato-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Kato_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/haskell-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Haskell_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/bryce-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Bryce_Product_Oscar-Wylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="geometric-section">
+<h3 class="subtitle">3. Rimless Aviator Sunglasses</h3>
+<p class="para-content">Rimless aviator sunglasses for women are<strong> sunglasses that have a tear drop shaped lens and little to no visible parts of the frames,</strong> except the parts connecting the lenses to each other, a line across the brow and a clear connecting piece of the arms to the lenses.</p>
+<p class="para-content">The advantages of rimless aviator sunglasses for women are that the rimless style does not affect the wearer's features as much as other types of frames. Rimless aviators for women are a lightweight and professional style that lends a powerful air of confidence towards the wearer's greater features.</p>
+<p class="para-content">Rimless aviator sunglasses for women are made of metallic materials that are often lightweight and are more cost efficient than the standard materials.</p>
+<p class="para-content">Rimless aviator sunglasses are a good summer sunglasses style for women because the sunglasses lightweight means there is no weighing down on the bridge of the wearer’s nose, resulting in a more comfortable feeling as they are worn as well as leaving no marks on the nose after use.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/deus-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Deus_Product_1x_Oscar-Wylee_1550x847px.jpg"}}" alt="product-image" class="product-image single-product"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/deus-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Deus_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile single-product"></a> <!-- TODO --></div>
+</div>
+</section>
+<section class="cat-eye-section">
+<h3 class="subtitle">4. Aviator Classic Sunglasses</h3>
+<p class="para-content">Aviator classic sunglasses for women are <strong>sunglasses with a teardrop shaped lens inside a lightweight frame that often has one or more lines connecting the lenses together from the brow.</strong> Aviator sunglasses were first invented to protect pilots' eyes during world war 2.</p>
+<p class="para-content">The advantages of aviator classic sunglasses for women are the sunglasses’ classic and timeless shape that, despite the style's vintage age, are always trendy and fit into any modern aesthetic with a striking efficiency. Aviator summer sunglasses for women also cover more surface area of the face when they are worn, enabling greater protection from UV rays and sun damage for the wearer's face.</p>
+<p class="para-content">Aviator classic sunglasses are most commonly made with light metallic materials, with a particular emphasis on bright metallic colours such as gold or bronze.</p>
+<p class="para-content">Aviator classic sunglasses are a good summer sunglasses style for women because they guarantee UV safety for the wearer in a trendy and style conscious way.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sato-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Sato_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/taku-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Taku_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/duckworth-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Duckworth_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sato-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Sato_Product_Oscar-Wylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/taku-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Taku_Product_Oscar-Wylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/duckworth-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Duckworth_Product_Oscar-Wylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="browline-section">
+<h3 class="subtitle">5. Acetate Frame Sunglasses</h3>
+<p class="para-content">Acetate frame sunglasses for women are <strong>sunglasses made of the synthetic material called acetate.</strong> Acetate frame sunglasses are similar to plastic frames, except they are stronger and more flexible.</p>
+<p class="para-content">The advantages of acetate frame sunglasses for women are the flexible and versatile material that suit any style while still being incredibly lightweight, allowing the material to be easily adjusted to fit the glasses lenses of the wearer's face. Acetate frame sunglasses for women are also hypoallergenic, meaning they have an extremely low chance of causing an allergic reaction or affecting the skin around the face that the glasses touch.</p>
+<p class="para-content">Acetate frame sunglasses for women are made of acetate, a man made synthetic material. Acetate was first used for frames in 1940, since then they have become a common choice for eyewear material.</p>
+<p class="para-content">Acetate Frame sunglasses are a good summer sunglasses style for women because the materials plant based creation combined with its durable nature makes acetate frame sunglasses an affordable but long-lasting choice that is well suited for everyday usage.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/aries-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Aries_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/marco-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Marco_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/cody-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Cody_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/aries-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Aries_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/marco-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Marco_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/cody-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Cody_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="fullrimmed-section">
+<h3 class="subtitle">6. Oval-frame Sunglasses</h3>
+<p class="para-content">Oval-frame sunglasses for women are <strong>sunglasses where the lenses and most noticeably the frame has a circular shape that is wider and longer than round glasses</strong> but has smoother edges than rectangle glasses.</p>
+<p class="para-content">The advantages of oval-frame sunglasses for women are the frame's perfect blend between longer, more angular styles of glasses and the smoother, calmer and more gentle features of round and circular glasses. Oval-frame sunglasses for women also extend across the wearer's face when they are put on, covering the sides of the eyes and preventing possible sun damage or wrinkles.</p>
+<p class="para-content">Oval-frame sunglasses for women come in a variety of materials. In metals, they commonly use bright and affluent colours such as gold or silver. Oval-frame sunglasses in plastic of acetate material can be of any colour, and the frames design is commonly bulkier and wider than a standard pair of sunglasses.</p>
+<p class="para-content">Oval-frame sunglasses are a good summer sunglasses style for women because they have a striking and unorthodox design that is completely individual, ensuring a trendy and attention-grabbing look that will also offer a great amount of UV and sun protection for the most sensitive skin around the wearer's eyes.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/molly-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Molly_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/shaz-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Shaz_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/duffy-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Duffy_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/molly-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Molly_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/shaz-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Shaz_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/duffy-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Duffy_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="fullrimmed-section">
+<h3 class="subtitle">7. Glow Up Sunglasses</h3>
+<p class="para-content">Glow up sunglasses for women are <strong>sunglasses that have glowing materials either across the frames like window blinds or around the frame, rims and arms.</strong> Glow up sunglasses glowing material is made from LED or neon tubing.</p>
+<p class="para-content">The advantages of glow up sunglasses for women are an incredibly fun and eclectic style that draws attention to the face and is perfectly suitable for bright neon colours in the wearer's clothes and accessories. Glow up sunglasses for women will also suit a fluorescent dance floor perfectly. Glow up sunglasses are suitable for fun parties and night events, and do not offer any UV or sun protection.</p>
+<p class="para-content">Glow up sunglasses for women are made from a wide frame and any material that is nonflammable and suitable for the added larger frame size without becoming too heavy, such as plastic or acetate. Glow up sunglasses for women use led or neon materials for the glowing tubes attached across the glasses. These tubes are battery powered and often include a switch somewhere on the frame or held separately.</p>
+<p class="para-content">Glow up sunglasses are a good summer sunglasses choice because they are perfectly suitable for an active and lively summer with an emphasis on a fun and boisterous nightlife or exciting holidays.</p>
+<p class="para-content">Note: We do not sell glow up glasses at Oscar Wylee</p>
+</section>
+<section class="fullrimmed-section">
+<h3 class="subtitle">8. Pointed cat-eye Sunglasses</h3>
+<p class="para-content">Pointed cat-eye sunglasses for women are <strong>sunglasses that have an angular design in the frames and lenses, where the top of the rims have a strong and blocky design that extends past the browline into a sharp and pointed finish.</strong></p>
+<p class="para-content">The advantages of pointed cat-eye sunglasses for women are the classic yet eternally trendy design cat-eye glasses have held since the glasses were created in the 1930s. Pointed cat-eye sunglasses for women have an appeal that is striking, bold and dangerous, yet versatile and able to adapt and fit in with any style or trend.</p>
+<p class="para-content">Pointed cat-eye sunglasses for women are made with any standard material, but they are most commonly made with bulky materials to ensure a wider frame, allowing the designs' striking features to become more apparent.</p>
+<p class="para-content">Pointed cat-eye sunglasses are a good summer sunglasses style for women because they create a powerful air of confidence and mystery around the wearer, as well as covering the sensitive areas of the eyes and the skin around the eyes from sun damage and UV rays.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/gaby-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Gaby_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/arabella-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Arabella_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/collection/arlia-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Arlia_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/gaby-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Gaby_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/arabella-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Arabella_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/collection/arlia-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Arlia_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="fullrimmed-section">
+<h3 class="subtitle">9. Irregular-shaped Acetate Sunglasses</h3>
+<p class="para-content">Irregular-shaped acetate sunglasses are <strong>sunglasses made of the plant-based material acetate and also have frames that do not stick to a standard design, such as rectangle or square frames.</strong> Irregular shaped acetate sunglasses use traditional shaped lenses in frames that have spikes, sudden angles or indents in the traditional shape of the sunglasses.</p>
+<p class="para-content">The advantages of irregular-shaped acetate sunglasses for women are the acetate materials' colourful design that are also flexible, durable and cost effective. Irregular-shaped acetate sunglasses use unique and stylized frames in order to attract attention and stand out from the crowd, lending the wearer a unique sense of individuality.</p>
+<p class="para-content">Irregular-shaped acetate sunglasses for women use a man made synthetic material made from plant based resources called acetate. Irregular-shaped acetate sunglasses are hypoallergenic and unlikely to cause skin issues when worn.</p>
+<p class="para-content">Irregular-shaped acetate sunglasses are a good summer sunglasses style for women because they are bright and colourful in design, emphasise the wearers individuality in a clear and dominant way, and the sunglasses lightweight material is flexible but strong, and additionally will be unlikely to leave noticeable marks on the nose because of the weight.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/easten-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Easten_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/aida-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Aida_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/marilyn-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Marilyn_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/easten-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Easten_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/aida-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Aida_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/marilyn-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Marilyn_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="fullrimmed-section">
+<h3 class="subtitle">10. Oval Print Sunglasses</h3>
+<p class="para-content">Oval print sunglasses for women are <strong>sunglasses that use long and circular shaped frames and lenses and use multi-toned, spotted and printed colours on the arms, rims and frames.</strong> Oval print sunglasses printed and spotted style is also known as a tortoise shell frame.</p>
+<p class="para-content">The advantages of oval print sunglasses for women are the oval frames' wide and unique design and the calm and warming pattern of the frames' colours. Oval print sunglasses perfectly blend the styles of angular designs like square frames or rectangular frames, with circular designs, like round frames or aviator frames. Oval print sunglasses blend these styles to create a wide but gentle look that is incredibly distinct.</p>
+<p class="para-content">Oval print glasses are made of any material that is capable of containing the colourful printing on it. These materials are often plastic, acetate or other bulkier materials. Oval print sunglasses are never made with metallic materials, as the thin wireframe does not have the surface area capable of showcasing a tortoise shell or printed colouring.</p>
+<p class="para-content">Oval print sunglasses are a good summer sunglasses style for women because they have a warm and homely style that is perfectly suited for warmer climates. The tortoise shell or printed colours lend an air of vintage style of any frames, and the oval shape of the glasses themselves cover a greater surface area of the eyes than a standard pair of square or round glasses, allowing the oval print glasses to cover more surface area of the eyes and increasing the protection from UV rays and sun damage.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/harris-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Harris_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/perry-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Perry_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/billy-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Billy_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/harris-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Harris_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/perry-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Perry_Product_Oscar-Wylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/billy-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Billy_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<aside class="context">
+<div class="location" style="border-top: none;">
+<div class="locationText">
+<p class="heading">Looking for your next pair of glasses?</p>
+<p class="contents contents-margin contents-margin-2">Find your nearest Oscar Wylee store and our friendly staff can assist you.</p>
+<p class="contents">All major health funds accepted in store.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img src="{{media url="wysiwyg/image-folder/glasses/cta/find_a_store.jpg.png"}}" alt="product image" class="locationImage"></div>
+</aside>
+<div class="intro-section">
+<h2 class="subtitle">10 Summer Sunglasses Styles for Men</h2>
+<div class="example-image-wrapper"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/SummerSunglassStyles_Can-Men-Wear-Womens-Sunglasses_OscarWylee_900x600px_1.jpg"}}" alt="style image of men sunglasses" class="example-image"></div>
+<p class="intro para-content">There are 10 summer sunglasses styles for men that offer a striking but casual appearance that are trendy, versatile and offer great eye health and safety against UV rays and sun glare. The 10 summer sunglasses styles for men are <strong>aviator sunglasses, wayfarer sunglasses, rectangle sunglasses, square sunglasses, tortoise shell sunglasses, metal aviator sunglasses, d-frame sunglasses, bat rectangle sunglasses, square-frame acetate sunglasses and cruisers sunglasses.</strong> The top 10 summer sunglasses styles for men and the reasons why they are the best, are listed below.</p>
+<ol class="ordered-list">
+<li><span class="list-title">Aviator sunglasses:</span> Aviator sunglasses are sunglasses with wide, tear shaped lenses and connecting rims that create a light browline.</li>
+<li><span class="list-title">Wayfarer sunglasses:</span> Wayfarer sunglasses are a classic design of sunglasses made by the American company Ray Ban.</li>
+<li><span class="list-title">Rectangle sunglasses:</span> Rectangle sunglasses are sunglasses where the frame is angular and is longer than it is wide.</li>
+<li><span class="list-title">Square sunglasses:</span> Square sunglasses are sunglasses where the frame and lenses are of equal, or close to equal length between the frame’s width and length.</li>
+<li><span class="list-title">Tortoise shell sunglasses:</span> Tortoise shell sunglasses are sunglasses where the pattern and colour of the frame resembled the pattern and colour of a tortoise shell.</li>
+<li><span class="list-title">Metal aviator sunglasses:</span> Metal aviator sunglasses are aviator sunglasses where the frame is made of metal instead of plastic or acetate materials.</li>
+<li><span class="list-title">D-frame sunglasses:</span> D-frame sunglasses are sunglasses that resemble the even dimension of square frame sunglasses, but the design is oversized.</li>
+<li><span class="list-title">Bat rectangle sunglasses:</span> Bat rectangle sunglasses are rectangle glasses that have a pointed irregularity on the bottom of the both of the sunglasses rims, facing away from the eyes.</li>
+<li><span class="list-title">Square-frame acetate sunglasses:</span> Square-frame acetate sunglasses are glasses with the even dimensions of square frame sunglasses but are also made of the synthetic material called acetate.</li>
+<li><span class="list-title">Cruisers sunglasses:</span> Cruisers sunglasses are sunglasses that are round and have frames that are bulkier than other styles.</li>
+</ol>
+</div>
+<div class="main-section">
+<div class="main-section">
+<section class="rectangle-section">
+<h3 class="subtitle">1. Aviator Sunglasses</h3>
+<p class="para-content">Aviator sunglasses for men are a vintage style of <strong>sunglasses that have tear shaped lenses inside a wide frame that has a connecting browline at the very top of the rims.</strong></p>
+<p class="para-content">The advantages of aviator sunglasses for men are a classic design that lends the wearer a vintage yet incredibly dashing air. Aviator sunglasses were made in the 1940s to shield fighter pilots' eyes during flights and the design still has a strong association with risky, devil may care professions. Today, the style has become very distinctly popular and trendy with men due to the sunglasses constant appearance in hit blockbusters like 2022’s Top Gun: Maverick.</p>
+<p class="para-content">Aviator sunglasses for men are versatile in the materials they are made from. Traditionally, the original designs made for pilots used lightweight metals in silver or gold, but there are more modern variations that use plastics or similar materials for a blockier, more angular look.</p>
+<p class="para-content">Aviator sunglasses are a good summer sunglasses style for men because they are a classic and enduring design that has been time tested as both effective at blocking UV and sunlight in the most extreme scenarios, while also retaining a modern and dashing chic to any wearer who uses them.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/hector-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Hector_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/deus-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Deus_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/cullen-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Cullen_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/hector-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Hector_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/deus-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Deus_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/cullen-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Cullen_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="square-section">
+<h3 class="subtitle">2. Wayfarer Sunglasses</h3>
+<p class="para-content">Wayfarer sunglasses for men are sunglasses <strong>where the top rim of the sunglasses is thicker than the standard design and slightly flares out towards the sides of the frame.</strong> Wayfarer sunglasses for men are usually made of plastic. The design was made by Ray-Ban in 1952 and is heavily associated with the company.</p>
+<p class="para-content">The advantages of wayfarer sunglasses for men is a completely timeless design that has retained relevancy for over 60 years. Wayfarer sunglasses are one of the first major brands designs for sunglasses specifically, and in design and function they have stood the test of time and have put the company that created them on the corporate map.</p>
+<p class="para-content">Wayfarer glasses are most often made out of plastic materials or a hybrid of plant-based synthetics and metals. The signature style of wayfarer sunglasses is to use metals in the arms and parts of the frame with slight visibility before using plastic material for the rest of the design.</p>
+<p class="para-content">Wayfarer sunglasses are a good summer sunglasses style for men because they are a well tested and popular design that has stayed relevant and successful since their invention. Wayfarer sunglasses for men are often simply called ‘the classic’ due to just how big of an impact the sunglasses creation made on the world of glasses fashion.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/dan-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Dan_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/nilofar-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Nilofar_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/mick-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Mick_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/dan-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Dan_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/nilofar-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Nolifar_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/mick-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Mick_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="geometric-section">
+<h3 class="subtitle">3. Rectangle Sunglasses</h3>
+<p class="para-content">Rectangle sunglasses for men are<strong> sunglasses that have a wide and angular shape in the lenses and in the frames.</strong> Rectangle sunglasses have very few curves in the design, and they are one of the most straight and linear designs of sunglasses.</p>
+<p class="para-content">The advantages of rectangle sunglasses are a bold and striking design that will add contrast to a rounder face's features. Rectangle sunglasses for men will completely block out the sight of the wearer's eyes and create an air of mystery and intrigue around the wearer.</p>
+<p class="para-content">Rectangle sunglasses for men are versatile in the materials used to create them. They can be made of metal, plastic or acetate. Rectangle sunglasses versatility also applies to the sunglasses colour and frame, they are still suitable and trendy in any colour or material.</p>
+<p class="para-content">Rectangle sunglasses are a good summer sunglasses style for men because they are a thoroughly versatile design that suit any desired style while still offering great UV and sun protection for the wearer.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/jett-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Jett_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/stevie-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Stevie_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/crew-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Crew_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/jett-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Jett_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/stevie-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Stevie_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/crew-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Crew_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="cat-eye-section">
+<h3 class="subtitle">4. Square Sunglasses</h3>
+<p class="para-content">Square sunglasses for men are <strong>sunglasses that have linear and straight frames and lenses that are very equal in the length and width of their angles.</strong> Square sunglasses are angular on the top of the rims and lenses, but have a slight curve at the bottom of the design.</p>
+<p class="para-content">The advantages of square sunglasses for men are their professional and striking appearance combined with the tinted lenses creates an air of professionalism and mystery for the wearer, as well as guaranteed sun protection and UV blocking with a timeless and well-proven design.</p>
+<p class="para-content">Square sunglasses for men are made from any suitable material without losing the design's unique advantages. Square sunglasses for men are made from acetate or plastic materials that allow for a wide range of fitting colours, or from thin and lightweight metal materials that use striking colours of precious metals such as gold or silver.</p>
+<p class="para-content">Square sunglasses are a good summer sunglasses style for men because they offer UV protection while still remaining fashionable, drawing attention to the wearer's face even when the eyes are blocked by the tinted lenses. Square sunglasses are a vintage design that is flexible enough to suit any modern trend.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/peggy-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Peggy_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/palmer-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Palmer_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/squire-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Squire_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/peggy-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Peggy_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/palmer-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Palmer_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/squire-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Squire_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="browline-section">
+<h3 class="subtitle">5. Tortoise Shell Sunglasses</h3>
+<p class="para-content">Tortoise shell sunglasses for men are <strong>sunglasses that have frames with a patterned design and colours that greatly resemble a tortoise shell.</strong> Tortoise shell glasses sunglasses use any frame type and design.</p>
+<p class="para-content">The advantages of tortoise shell sunglasses for men are a soft but noticeably individual appearance that is adaptable to any style of frame or face type, while still retaining and never compromising the protection from UV rays and sunlight the sunglasses lenses will give.</p>
+<p class="para-content">Tortoise shell sunglasses are made from acetate material. On browline and other unique designs, the acetate pattern is combined with metal materials from parts of the frame, such as the arms and lower rims, in order to make the pieces with tortoise shell colouring much bolder and obvious. Until 1973, tortoise shell sunglasses were literally made from tortoise shells.</p>
+<p class="para-content">Tortoise shell sunglasses are a good summer sunglasses style for men because they are a versatile and flexible pattern that applies to any style of glasses or fashion. The darker, muted colours combined with the pattern layout enable tortoise shell sunglasses to blend in with any style, and they are suitable for any purpose.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/fleur-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Fleur_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/binx-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Binx_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/duffy-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Duffy_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/fleur-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Fleur_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/binx-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Binx_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/duffy-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Duffy_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="fullrimmed-section">
+<h3 class="subtitle">6. Metal Aviator Sunglasses</h3>
+<p class="para-content">Metal aviator sunglasses for men are <strong>sunglasses with teardrop shaped lenses inside wide frames that commonly have a connecting piece between the lenses on the browline, and are made of metallic materials.</strong></p>
+<p class="para-content">The advantages of metal aviator sunglasses are a powerful and timeless design that is bold and dashing. Metal aviator sunglasses for men were invented to protect fighter pilots' eyes during World War 2, and the design has remained relevant and popular even since. Metal aviator sunglasses for men had an additional advantage in their materials, as the metallic sheen draws even more attention to the wearer's presence and stays more faithful to the original, classic style of aviators.</p>
+<p class="para-content">Metal aviator sunglasses for men are made from metallic materials that are lightweight and easy on the face. Metal aviator sunglasses are smoother in design than plastic or acetate aviator sunglasses and create a much cooler presence for the wearer.</p>
+<p class="para-content">Metal Aviator sunglasses are a good summer sunglasses style for men because they are a dashing and vintage design that has stood the test of time to remain one of the most popular style of sunglasses year after year, still guaranteeing sun protection and shielding from UV rays for a great volume of the face thanks to metal aviator sunglasses wide design.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sato-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Sato_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/taku-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Taku_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/deus-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Deus_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sato-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Sato_Product_Oscar-Wylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/taku-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Taku_Product_Oscar-Wylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/deus-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Deus_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="fullrimmed-section">
+<h3 class="subtitle">7. D-frame Sunglasses</h3>
+<p class="para-content">D-frame sunglasses for men are <strong>sunglasses where the frame of the sunglasses are tall as the glasses are wide and the slotted place for the lenses to fit into are shaped like the letter ‘D’.</strong> D-frame sunglasses for men resemble square glasses but are typically more oversized. They can be classified as a style of browline sunglasses.</p>
+<p class="para-content">The advantages of d-frame sunglasses for men are a strong browline in the design that creates a depth of thought to the wearer’s and draws attention to the wearers unique face shape. D-frame sunglasses are commonly wider and longer than both browline sunglasses and square sunglasses, meaning d-frame sunglasses cover a greater surface of the wearer's face, reducing the amount of skin that is exposed to sunlight and UV rays.</p>
+<p class="para-content">D-frame sunglasses for men are made of any material and are suitable for any colour. D-frame sunglasses have a wider style of frame than rectangle or square sunglasses, which makes them more suitable to acetate or plastic materials, however metallic materials of a hybrid style of materials are just as common.</p>
+<p class="para-content">D-frame sunglasses are a good summer sunglasses style for men because they offer all the advantages of fashion and design of square, browline and rectangle glasses while retaining a unique style. D-frame sunglasses are wider than other styles, enabling better sun protection for the wearer's face.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/anela-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Anela_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/ramon-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Ramon_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/nico-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Niko_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/anela-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Anela_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/ramon-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Ramon_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/nico-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Niko_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="fullrimmed-section">
+<h3 class="subtitle">8. Bat Rectangle Sunglasses</h3>
+<p class="para-content">Bat rectangle glasses for men are a style of <strong>rectangle glasses where the frames are longer than they are wide and have an angular design.</strong> Additionally, bat rectangle sunglasses have a small block or point of imperfection at the bottom tips of the rims, pointed away from the nose. They are made by the fashion company Balenciaga.</p>
+<p class="para-content">The advantages of bat rectangle sunglasses for men are a unique and incredibly modern design that, despite its basis in the rectangle style of sunglasses, seems completely different and carries a never before seen type of fashionability to the wearer's face.</p>
+<p class="para-content">Bat rectangle sunglasses are commonly made from nylon and nylon injected materials. They are suited to dark or silver colours and the lenses and frame are of a different colour to make the ‘bat’ shape of the glasses more obvious.</p>
+<p class="para-content">Bat rectangle sunglasses are a good summer sunglasses style for men because they are a very modern and new style of sunglasses that is heavily associated with the fashionable and innovative brand that created them. Bat rectangle sunglasses are an artistic twist on the classic shape of rectangle sunglasses, creating a stylish profile for the wearer on top of the benefits of rectangle sunglasses.</p>
+<p class="para-content">Note: We do not sell Bat Rectangle sunglasses at Oscar Wylee.</p>
+</section>
+<section class="fullrimmed-section">
+<h3 class="subtitle">9. Square-frame Acetate Sunglasses</h3>
+<p class="para-content">Square-frame acetate sunglasses for men are <strong>sunglasses that are made of plant based synthetic material acetate and also have an equal or near equal dimension of width, length and height in the design of the frames.</strong></p>
+<p class="para-content">The advantages of square-frame acetate sunglasses for men are a classic design that is always trendy combined with a colourful material of acetate, giving the square sunglasses all the benefits of the synthetic material, making the sunglasses lightweight, cost effective and hypoallergenic, while still remaining strong and durable.</p>
+<p class="para-content">Square-frame acetate sunglasses for men are made from acetate, a plant based, synthetic material. When used in glasses, acetate creates a well-priced frame that is long lasting, flexible and functional while still retaining a high degree of durability.</p>
+<p class="para-content">Square-frame acetate glasses are a good summer sunglasses style for men because they combine the everlasting and trendy design of square framed glasses with a powerful and colourful material that is perfectly suited to summer weather, as well as benign lightweight and leaving no marks on the wearer's nose when worn.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/fenn-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Fenn_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/windsor-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Windsor_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/oliver-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Oliver_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/fenn-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Fenn_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/windsor-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Windsor_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/oliver-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Oliver_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="fullrimmed-section">
+<h3 class="subtitle">10. Cruisers Sunglasses</h3>
+<p class="para-content">Cruiser sunglasses for men are <strong>sunglasses that have a circular and causal design with a slight extension reaching down from the arms to cover the sides of the eyes.</strong></p>
+<p class="para-content">The advantage of cruiser sunglasses for men is their update on vintage and timeless designs associated with long trips on the road, while having an added layer of safety for the eye against debris in the air, along with the traditional benefits for sunglasses, shielding the eyes against UV rays and sunlight damage.</p>
+<p class="para-content">Cruiser sunglasses for men are made from any material that is suitable for sunglasses. Cruiser sunglasses for men are typically coloured black and the materials that are more suited for the colour are ideal. Cruiser sunglasses are commonly hybrid in material as well, using a mix of metals and plastics inside the frame.</p>
+<p class="para-content">Cruiser sunglasses are a good summer sunglasses style for men because they embody a sense of freedom and function in their design and history. Cruiser sunglasses are trendy and eye-catching, simultaneously giving the wearer functional eye protection from sun damage.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/pavle-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Pavle_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/marco-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Marco_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/hunter-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Hunter_Product_3x_Oscar-Wylee_622x233px_1.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/pavle-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Pavle_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/marco-sunglass.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Marco_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/hunter-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/Hunter_Product_3x_Oscar-Wylee_622x233px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">What are Sunglasses?</h2>
+<p class="para-content">Sunglasses are glasses with lenses that are tinted or polarised, to be darker and made to protect the eyes from UV rays and sun damage. <a href="https://www.oscarwylee.com.au/sunglasses.html">Sunglasses</a> are also used in order to reduce or shield the eyes against harsh brightness, glares and reflections.</p>
+<p class="para-content">Sunglasses are credited as having been invented by James Ayscough in 1752, however his version was not used to block UV rays. Sunglasses that could accurately and effectively block UV light were first introduced as ‘crooked lenses’ in 1913. Before the invention, devices made by North American indigenous communities were used to reduce the amount of sunlight and glare the eyes received, but could not directly block it.</p>
+<div class="sub-div">
+<h3 class="sub-div-title">What are the Benefits of Wearing Summer Sunglasses?</h3>
+<p class="para-content">The benefits of wearing summer sunglasses are <strong>protection from UV rays, reducing brightness from light and light reflections, reducing glare, skin protection, changing the wearer's appearance and protecting the eyes from wind, dust or other irritations. </strong>The benefits of wearing summer sunglasses are listed below.</p>
+<ul class="unordered-list">
+<li><span class="list-title">Protection from UV rays:</span> Summer sunglasses protect the wearer’s eyes from UV radiation and ultraviolet rays.</li>
+<li><span class="list-title">Reducing brightness from bright light:</span> Summer sunglasses reduce uncomfortable brightness from any source of light and are especially effective against sunlight.</li>
+<li><span class="list-title">Reducing glare:</span> Summer sunglasses like polarised sunglasses or photochromic sunglasses can significantly reduce the amount of bright and reflective glare the wearer’s eyes receive.</li>
+<li><span class="list-title">Skin Protection:</span> Summer sunglasses cover the skin around the eyes, resulting in less UV damage and its UV side effects, such as sunburn or wrinkles.</li>
+<li><span class="list-title">Changing the wearer’s appearance:</span> Summer sunglasses are a trendy and classic style that come in a wide variety of shapes and frames.</li>
+<li><span class="list-title">Protecting the eyes from outside irritations:</span> Summer sunglasses have many different styles that cover the eyes and the skin around the eyes. This means that any debris in the air, such as sand, dust or other substances, are stopped by the sunglasses before they reach the wearer's eyes.</li>
+</ul>
+</div>
+<div class="sub-div">
+<h3 class="sub-div-title">What are the Risks of Not Wearing Summer Sunglasses?</h3>
+<p class="para-content">The risk factors of not wearing sunglasses are<strong> eye sunburn, cataracts, eye growths and eye cancer.</strong> The risks of not wearing summer sunglasses are listed below.</p>
+<ul class="unordered-list">
+<li><span class="list-title">Eye sunburn:</span> Prolonged and unshielded exposure to UV rays and sunlight can cause photokeratitis, also known as eye sunburn. Eye sunburn is similar to sunburn on other parts of the skin but is specifically applied to the cornea and conjunctiva of the eye.</li>
+<li><span class="list-title">Cataracts:</span> Prolonged long term exposure to sunlight can exacerbate and speed up the natural process of cataracts forming inside the eye. Sunlight can also cause damage to the lens's protein in a process called glycation, which can cause a similar effect to the formation of cataracts.</li>
+<li><span class="list-title">Eye growths:</span> Prolonged and unprotected exposure to sunlight and UV rays can cause two separate types of growth in the eyes, know as pinguecula, a growth near the cornea but not on or in it, and pterygium, a flesh growth of the conjunctiva that spreads the cornea.</li>
+<li><span class="list-title">Eye cancer:</span> Prolonged exposure of sunlight and UV rays to the eyes has the same risk of cancer growths and melanoma as it does across the rest of the body.</li>
+</ul>
+</div>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">What Factors Should be Considered When Choosing the Best Summer Sunglasses Styles for Women and Men?</h2>
+<div class="example-image-wrapper"><img src="{{media url="wysiwyg/image-folder/glasses/summer-style-for-females-and-males/SummerSunglassStyles_10-Styles-for-Women_OscarWylee_900x600px_1.jpg"}}" alt="style image of men and women sunglasses" class="example-image"></div>
+<p class="para-content">The factors that should be considered when choosing the best summer sunglasses styles for men and women are <strong>the wearer’s face shape, the wearer's skin tone, the frames style, and the sunglasses functionality.</strong> The factors that should be considered when choosing the best summer sunglasses styles and why they are important are listed below.</p>
+<ul class="unordered-list">
+<li><span class="list-title">The wearer’s face shape:</span> Sunglasses styles come in many shapes and sizes that may not be suitable for all types of faces. For example, a person with an oval face shape must choose rectangle or square shaped frames for their sunglasses in order to emphasise the face’s better features.</li>
+<li><span class="list-title">The wearer's skin tone:</span> The skin tone of the sunglasses wearer must compliment and not clash with the style and colour of the desired sunglasses. Black sunglasses for instance, draw too much away from lighter skin's better features and contrast too sharply, resulting in the glasses taking too much attention away from the wearer.</li>
+<li><span class="list-title">The frames style:</span> The style of any summer sunglasses frames must match what the wearer’s desired style is. Rimless aviator glasses are a style of glasses that creates an air of professionalism and class for the wearer, but will not suit a beach fashion or a casual day event.</li>
+<li><span class="list-title">The sunglasses functionality:</span> UV protection is vital for the functionality of summer sunglasses and a wearer might wish for a stronger tint in the sunglasses lens, to reduce brightness and glare even further. Summer sunglasses functionality are further increased through the use of addons and extras, such as transition lenses and polarised lenses. <a href="https://www.oscarwylee.com.au/glasses/eye/polarised-sunglasses-blocks-blue-light">Polarised lenses have a light effect on blocking blue light</a> the eyes receive, but blue light coating is more effective for blocking the possible effects of exposure to blue light.</li>
+</ul>
+<div class="sub-div">
+<h3 class="sub-div-title">Why do Women and Men need to Pick the Best Summer Sunglasses style?</h3>
+<p class="para-content">Women and men need to pick the best summer sunglasses styles because <strong>a functional pair of sunglasses must be able to block both UVB and UVA rays.</strong> Women and men must research and understand the best sunglasses styles for their purposes, face type and skin tone, in order to make the most of their summer, find the best kind of product for their price range and guarantee their eye safety during the higher UV intensity of the summer season.</p>
+</div>
+<div class="sub-div">
+<h3 class="sub-div-title">Can Men Wear Sunglasses for Women and Vice Versa?</h3>
+<p class="para-content">Yes, men can wear sunglasses meant for women and vice versa, women can wear sunglasses meant for men, <strong>because many modern frame styles are made with a unisex appeal.</strong> The main difference between men and women’s sunglasses is the glasses style and colour instead of any perceived gender differences.</p>
+<p class="para-content">The exception to the unisex appeal of modern glasses styles comes within the frames size. Men’s summer sunglasses use bigger and wider frames in order to accommodate for the common facial size difference between each gender. Men’s summer sunglasses styles are commonly rectangle frames, square frames or aviator frames in order to suit the practical need for a larger form of frame while still remaining fashionable and trendy. These frame styles are used for their size and are still perfectly suitable for a woman's face as well as a mans.</p>
+</div>
+<div class="sub-div">
+<h3 class="sub-div-title">Can Children Also Wear Sunglasses During Summer?</h3>
+<p class="para-content">Children can and should wear sunglasses during summer because <strong>children’s eyes are as vulnerable to sun damage as an adult's eyes are.</strong> Prolonged exposure to sunlight can cause conditions such as eye sunburn, cataracts or eye growths. According to doctor Steven J. Lichtenstein, the lens in children's eyes transmits 75% of UV radiation to the retina, compared to the 10% transmission rate of an adult eye.</p>
+<p class="para-content">Children’s learning is done approximately 80% through sight and visual skills. Any damage to the eyes can result in stunted learning, poor development and behavioural difficulties.</p>
+</div>
+<div class="sub-div">
+<h4 class="sub-div-title h4-title">Is There a Difference Between Women's and Men's Summer Sunglasses Styles?</h4>
+<p class="para-content">The difference between men’s and women’s summer sunglasses styles is the size and the materials used for each type of glasses. Women’s summer sunglasses use plastic materials more often than men’s sunglasses, and are often thinner, smaller and more diminutive in size. Women’s summer sunglasses come in more shades of colour, and have softer and more flattering curves on the frames and rims.</p>
+<p class="para-content">Men’s summer sunglasses are bigger than women’s summer sunglasses in order to fit the larger face better. Men’s summer sunglasses also have a bigger and wider bridge to accommodate for a bigger nose. Men’s summer sunglasses often use single tone and conservative colours, and are blockier and more angular in design and frames. Men’s summer sunglasses styles like aviator glasses also use more metal in the frames creation than women’s summer sunglasses.</p>
+</div>
+</section>
+<aside class="context"><!-- Location and booking  -->
+<div class="location" style="border-top: none;">
+<div class="locationText">
+<p class="heading">Find a store near you</p>
+<p class="contents">Contact or come and visit your nearest Oscar Wylee store for your eye care needs.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img src="{{media url="wysiwyg/image-folder/glasses/cta/find-a-store.jpg"}}" alt="find a location image" class="locationImage"></div>
+<div class="location item1"><img src="{{media url="wysiwyg/image-folder/glasses/cta/book_an_eye_test.jpg.png"}}" alt="book eye test image" class="locationImage">
+<div class="locationText">
+<p class="heading">Ready for an eye test?</p>
+<p class="contents">Oscar Wylee offers bulk billed eye tests, so there are no out-of-pocket costs for eligible Medicare Card Holders.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/booking"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+</div>
+</div>

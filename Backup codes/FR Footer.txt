@@ -1,0 +1,218 @@
+<style>
+    @media only screen and (max-width: 800px) {
+        .page-wrapper .page-footer .footer.content .footer-top-v2 .footer-item ul {
+            box-sizing: unset !important;
+        }
+
+        #mobile-menu ul li.hasChildCategory {
+            box-sizing: unset !important;
+        }
+    }
+</style>
+<!-- footer H changes -->
+<style>
+    .footer-top-v2 .new-h2-footer {
+        padding-top: 2px;
+        padding-bottom: 24px;
+        font-size: 1.8rem;
+        margin-bottom: 26px;
+        margin-top: 0px;
+        border-bottom: 1px solid #fff;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: left;
+        color: #fff;
+    }
+
+    .footer-top-v2 .footer-about {
+        margin-right: 30px !important;
+        padding-bottom: 23px !important;
+        margin-bottom: 30px !important;
+        margin-top: -8px !important;
+        font-size: 2.8rem !important;
+        line-height: 30px !important;
+        border-bottom: 1px solid #fff !important;
+        font-weight: 500 !important;
+        text-align: left;
+        color: #fff;
+    }
+
+    .page-wrapper .page-footer .footer-top-v2 .help-block h3 {
+        text-align: left;
+    }
+
+
+    @media only screen and (max-width: 800px) {
+        .footer-top-v2 .new-h2-footer {
+
+            line-height: 21px;
+            padding-bottom: 0;
+            padding-left: 26px;
+            padding-right: 26px;
+            margin-bottom: 20px;
+            border-bottom: none;
+            position: relative;
+            font-size: 2.2rem;
+
+        }
+
+        .footer-top-v2 .new-h2-footer:after {
+            content: '\e904';
+            font-family: 'luma-icons';
+            position: absolute;
+            right: 26px;
+            top: 2px;
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            font-size: 21px;
+        }
+
+        .footer-top-v2 .opened .new-h2-footer:after {
+            content: '\e904';
+            font-family: 'luma-icons';
+            position: absolute;
+            right: 26px;
+            top: 2px;
+            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            font-size: 21px;
+        }
+
+    }
+</style>
+<div class="footer-top-v2"><!-- <div class="footer-item">
+    <div class="help-block">
+        <h3>We're here to help CA FR</h3>
+        <p>Send us your questions or enquiry and our team will get back to you as quickly as possible.</p>
+        <a class="btn-black" href="/contact/">Contact us</a>
+    </div>
+</div> -->
+<div class="footer-item">
+<div class="help-block">
+<h3>Nous sommes là pour vous aider</h3>
+<p>Envoyez-nous vos questions ou votre demande de renseignements et notre équipe vous répondra dans les plus brefs délais.</p>
+<a class="btn-black" href="/fr/contact/">Contactez-nous</a></div>
+<p style="margin-top: 30px;"><a style="text-decoration: none;" href="https://www.oscarwylee.com.au">Australie</a> | <a style="text-decoration: none;" href="https://oscarwylee.ca">Canada</a> | <a style="text-decoration: none;" href="https://www.oscarwylee.co.nz">Nouvelle-Zélande</a></p>
+</div>
+<div class="footer-item">
+<div>
+<h2 class="new-h2-footer">Lunettes</h2>
+<ul>
+<li><a href="/fr/glasses.html">Toutes les lunettes</a></li>
+<li><a href="/fr/glasses/collection/women-s.html">Femmes</a></li>
+<li><a href="/fr/glasses/collection/men-s.html">Hommes</a></li>
+<li><a href="/fr/glasses-for-seniors.html">Séniors</a></li>
+<li><a href="/fr/glasses/collection/kids-collection.html">Enfants</a></li>
+<li><a href="/fr/glasses/collection/new-arrivals.html">Nouveaux arrivages</a></li>
+<li><a href="/fr/glasses/materials/lightweight.html">Lightweight</a></li>
+<li><a href="/fr/glasses/collection/iconic-range.html">La gamme Iconic</a></li>
+</ul>
+</div>
+<div>
+<h2 class="new-h2-footer">Lunettes de soleil</h2>
+<ul>
+<li><a href="/fr/sunglasses.html">Toutes les lunettes de soleil</a></li>
+<li><a href="/fr/sunglasses/collection/women-s.html">Femmes</a></li>
+<li><a href="/fr/sunglasses/collection/men-s.html">Hommes</a></li>
+<li><a href="/fr/sunglasses/collection/new-arrivals.html">Nouveaux arrivages</a></li>
+<li><a href="/fr/sunglasses/materials/acetate.html">Gamme Acétate</a></li>
+<li><a href="/fr/sunglasses/materials/metal.html">Gamme Métal</a></li>
+</ul>
+</div>
+<div>
+<h2 class="new-h2-footer">Découvrir</h2>
+<ul>
+<li><a href="/fr/face-shape-guide.html">Guide des formes de visage</a></li>
+<li><a href="/fr/blue-light-glasses.html">Lunettes anti-lumière bleue</a></li>
+<li><a href="/fr/multifocal-lenses">Verres progressifs</a></li>
+<li><a href="/fr/eyewear-a-to-z.html">Lunettes de A à Z</a></li>
+<li><a href="/fr/eye-care/eye-test/what-is-pupillary-distance.html">Comment mesurer votre écart pupillaire (EP)</a></li>
+<li><a href="/fr/reading_glasses.html">Lunettes de lecture</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-item">
+<div>
+<h2 class="footer-about">Partenariat de coentreprise</h2>
+<p>Nos partenaires de coentreprise bénéficient du soutien d’une marque en pleine expansion et prospère. Nous avons de nombreuses opportunités disponibles pour les chefs d’entreprise ambitieux qui souhaitent rejoindre notre partenariat de coentreprise en pleine croissance.</p>
+<p>Faites passer votre carrière d’optométriste au niveau supérieur avec Oscar Wylee. Pour en savoir plus cliquez <a href="/fr/joint-venture">ici</a>.</p>
+</div>
+</div>
+<div class="footer-item">
+<div>
+<h2 class="new-h2-footer">Entreprise</h2>
+<ul>
+<li><a href="/fr/about-us">A propos de nous</a></li>
+<li><a href="/fr/locations/full-store-list.html">Emplacements</a></li>
+<li><a href="/fr/careers">Carrières</a></li>
+<li><a href="/fr/joint-venture">Partenariat de coentreprise</a></li>
+</ul>
+</div>
+<div>
+<h2 class="new-h2-footer">Examen de la vue</h2>
+<ul>
+<li><a href="/fr/booking">Réserver un examen de la vue</a></li>
+<li><a href="/fr/eye-exam-info">Informations sur l’examen de la vue</a></li>
+<li><a href="/fr/eye-care/optometrist">Qu’est-ce qu’un optométriste?</a></li>
+<li><a href="/fr/eye-health/optometrist-vs-ophthalmologist.html">Optométriste et ophtalmologiste</a></li>
+<li><a href="/fr/eye-health/common-eye-conditions.html">Affections oculaires courantes</a></li>
+</ul>
+</div>
+<div>
+<h2 class="new-h2-footer">Soutien</h2>
+<ul>
+<li><a href="/fr/price-guide/">Guide des prix</a></li>
+<li><a href="/fr/health-insurance">Assurance-santé</a></li>
+<li><a href="/fr/direct-billing">Facturation directe</a></li>
+<li><a href="/fr/legal/oscar-wylee-warranty.html">Garantie</a></li>
+<li><a href="/fr/faq-popular.html">FAQs</a></li>
+</ul>
+</div>
+</div>
+</div>
+<p>
+<script>
+
+    require([
+        'jquery',
+        'slick',
+        'Magento_Theme/js/os_megamenu'
+    ], function ($) {
+        $(document).ready(function () {
+
+            footerMobile();
+
+        });
+
+        function footerMobile() {
+            
+            var width = $(window).width();
+
+            $(".footer-item > div h2").on('click', function () {
+                if (width <= 800) {
+                    var parent = $(this).parent();
+                    if (parent.hasClass("opened")) {
+                        parent.removeClass('opened');
+                        parent.find('> ul').css("height", "0px");
+                    }
+                    else {
+                        parent.addClass('opened');
+                        parent.find('> ul').css("height", "auto");
+                        var height_to = parent.find('> ul').height();
+                        parent.find('> ul').css("height", "0px");
+                        parent.find('> ul').animate({ height: height_to }, 100);
+                    }
+                }
+            });
+        }
+
+    });
+
+
+</script>
+</p>
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="46"}}</p>

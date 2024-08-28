@@ -1,0 +1,405 @@
+<style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap");
+
+#maincontent {
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #333333;
+}
+.footer-item h4,
+.footer-item h3,
+.help-block h3,
+.copyright span {
+  color: #fff;
+}
+
+*,
+page-main {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #333333;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+
+button:hover {
+  color: white !important;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.mainContainer {
+  max-width: 1236px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.mobBanner {
+  display: none;
+}
+
+.desktopBanner {
+  width: 100%;
+padding-bottom: 1.5rem;
+}
+
+.title {
+  font-weight: 700;
+  padding: 2.5rem 0;
+}
+
+.context {
+  padding: 0 1rem 1.5rem 0.5rem;
+}
+
+.infoSection h2,
+.context h2,
+.context h3,
+.infoSection h3 {
+  padding: 1rem 0 0 0;
+  font-weight: bold;
+}
+
+.context h2,
+.infoSection h2{
+    padding-top: 2rem;
+}
+
+
+.context p,
+.infoSection p {
+  padding: 1.5rem 0.5rem 2rem 0.5rem;
+  font-size: 16px;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.infoSection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-rows: auto;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.infoSection p{
+    width: 100%;
+}
+
+.infoSection img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  /* box-shadow: 3px 3px 10px rgb(220, 219, 219); */
+}
+
+.linkTo{
+    color: #003cac;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* .multifocalTips {
+  padding: 2rem 1.1rem;
+} */
+
+.multifocalTips ul,
+.multifocalTips p {
+  text-align: justify;
+  text-align-last: left;
+}
+
+.multifocalTips h2 {
+  font-weight: bold;
+}
+
+.tipTitle,
+.tipText {
+  padding: 1rem 0;
+}
+
+.tipText {
+  font-size: 16px;
+}
+
+.tipEllements {
+  padding: 1rem 3rem;
+  font-size: 16px;
+}
+
+.tipEllements li {
+  padding-bottom: 1rem;
+}
+
+.location {
+  max-width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid silver;
+}
+
+.locationText > * {
+  margin-bottom: 35px;
+}
+
+.locationText h2 {
+  font-weight: 700;
+}
+
+.locationText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.locationText p {
+  font-size: 16px;
+}
+
+.locationImage {
+  width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.allButton {
+  width: 100%;
+}
+
+.allButton a {
+  text-decoration: none;
+}
+
+.btnOw:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.btnOw {
+  background-color: #003cac;
+  width: 80%;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+}
+
+   .reveal{
+    position: relative;
+    transform: translateX(-80px);
+    -webkit-transform: translateX(-80px);
+    -moz-transform: translateX(-80px);
+    -ms-transform: translateX(-80px);
+    -o-transform: translateX(-80px);
+    opacity: 0;
+    transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+}
+
+.reveal.active{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    opacity: 1;
+}
+
+
+@media (max-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 650px));
+  }
+  .infoSection {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
+@media (max-width: 710px) {
+    .title{
+        text-align: center;
+    }
+  .locationImage {
+    order: 1;
+  }
+  .allButton {
+    margin-bottom: 5px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 38px;
+  }
+  .glassesImage{
+    padding-top: 1.5rem;
+  }
+  .context p,
+.infoSection p {
+  width: calc(100% - 1rem);
+}
+  .desktopBanner {
+    display: none;
+  }
+  .mobBanner {
+    display: flex;
+    width: 100%;
+  }
+  .infoSection {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 320px) {
+  .location {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 1rem 0.5rem;
+  }
+  .locationText > * {
+    margin-bottom: 20px;
+  }
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .btnOw {
+    width: 100%;
+  }
+  .tipEllements {
+    padding: 1.2rem;
+  }
+}
+
+    </style>
+<p><img class="mobBanner" src="{{media url="wysiwyg/Reading-Glasses-assets/reading_glasses.jpg"}}" alt="reading glasses banner"></p>
+<div class="mainContainer"><img class="desktopBanner" src="{{media url="wysiwyg/Reading-Glasses-assets/reading_glasses.jpg"}}" alt="reading glasses banner">
+<h1 class="title">Reading Glasses</h1>
+<div class="context">
+<p>Everyone’s eyesight is different, but usually, we start to really notice a difference when we get to our 40’s and beyond. As part of the ageing process, the lens inside the eye becomes more rigid and less flexible, making it harder to focus on objects near the eye. <br><br>When reading up close starts to become difficult but you can see things far away just fine, it could be a sign to have your eyes tested and consider some prescription reading glasses.</p>
+<h2>What are reading glasses?</h2>
+<p>Reading glasses, also known as readers, are a solution to an age-related eye condition known as presbyopia. <br><br>They magnify nearby objects, giving you the ability to read a book or do close range activities comfortably without blurry vision or eye strain.</p>
+<div class="infoSection"><img class="reveal" src="{{media url="wysiwyg/Reading-Glasses-assets/reading-glasses-1.png"}}" alt="reading glasses">
+<div>
+<h3>How do reading glasses work?</h3>
+<p>Reading glasses are fitted with different strengths of lenses, depending on a person’s prescription. These lenses act as a magnifying glass, enlarging objects close to your eyes, helping with blurred vision and squinting. They are different from distance glasses as distance glasses are made to help focus objects far away as opposed to objects up close.</p>
+<h3>When to wear your reading glasses?</h3>
+<p>You should wear your readers when you want to see things up close. This could be when reading a menu, working on your computer or another digital device.</p>
+<h3>Where to wear your reading glasses?</h3>
+<p>Most people wear their reading glasses at home and occasionally at work. It is not recommended to wear your reading glasses when driving or playing sports as they are not made with that visual demand in mind. If you find you are using your reading glasses to watch tv, it could be a sign that you may also need distance glasses, and that your reading may have worsened overall.</p>
+</div>
+</div>
+<div class="multifocalTips">
+<h2 class="tipTitle">How can you tell if you need reading glasses?</h2>
+<p class="tipText">An Optometrist can check if you need reading glasses with a simple eye test. There are also common signs that indicate if you need reading glasses. These include:</p>
+<ul class="tipEllements">
+<li>You find that reading up close is getting more difficult</li>
+<li>Squinting and straining to see small print</li>
+<li>You’re holding things further away to read</li>
+<li>Constantly straining your eyes to focus gives you headaches or tired eyes</li>
+</ul>
+</div>
+<div>
+<h2>Are reading glasses and prescription glasses the same?</h2>
+<div class="infoSection">
+<div class="locationImage">
+<p>While reading glasses and prescription glasses are often considered to be the same thing, they have differences. <br><br>Over-the-counter reading glasses come with a preset magnification strength and have the same prescription in both lenses. You would typically find these in chemists and even some department stores. They are less expensive and do not provide a full correction for individuals which can include astigmatism. They are also not made for long term use as they can cause eyestrain and discomfort. <br><br>Prescription eyeglasses can be custom-made to give the proper prescription your eyes need. Not all people have the same prescription in both eyes, and frames sit differently on each person’s face so by being able to custom make the lenses, we can provide the best quality of vision for each person. You also might find that different styles of eyewear suit you better than others.</p>
+</div>
+<img class="glassesImage reveal" src="{{media url="wysiwyg/Reading-Glasses-assets/reading-glasses-2.png"}}" alt="reading glasses"></div>
+</div>
+<h3>What if I have trouble seeing things near and far away?</h3>
+<p>If you find you have difficulty seeing near and distant objects, you might need both reading and distance glasses or a pair of multifocal glasses. <br><br>We recommend that everyone should have an eye test with an optometrist at least once every 2 years to check their eye health.</p>
+<div class="multifocalTips">
+<h2 class="tipTitle">Types of reading glasses</h2>
+<p class="tipText">There are many different eye conditions that can determine the type of reading glasses you need. The main categories of reading glasses include multifocal lenses, single vision lenses, bifocal glasses, and blue light glasses.</p>
+<h3>Multifocal lenses</h3>
+<p><a class="linkTo" href="https://www.oscarwylee.com.au/multifocal-lenses.html">Multifocal lenses</a>, also called progressive lenses, are for people who are both nearsighted and farsighted. They are the perfect solution for anyone who doesn't want to switch between reading glasses and distance glasses.</p>
+<h3>Single vision lenses</h3>
+<p>Single vision lenses are lenses with a single power over the lens. As a result, they correct vision over a single distance, for only one vision type. <br><br>When it comes to single vision lens reading glasses, they help you see up close by enlarging what you see allowing you to focus with ease. They come in different strengths depending on your prescription and are very beneficial for activities such as sewing and reading.</p>
+<h3>Bifocal glasses</h3>
+<p>Bifocal glasses provide nearsighted and farsighted vision correction, split between the top and bottom half of the lens. <br><br>Often confused with multifocal lenses, bifocals include just two vision correction powers, rather than multiple for reading, intermediate and distance vision correction. Bifocals also have a visible line on the lens between the prescriptions, whereas multifocals have a seamless transition.</p>
+<h3>Blue light glasses</h3>
+<p><a class="linkTo" href="https://www.oscarwylee.com.au/blue-light-glasses.html">Blue light glasses</a> contain a filter that is added to your lenses to help protect your eyes from the blue light emitted from digital screens that may adversely affect you. This filter can be added to both prescription glasses and non-prescription glasses. <br><br>Browse our complete <a class="linkTo" href="https://www.oscarwylee.com.au/glasses.html">range of glasses</a> and find a pair that suits you!</p>
+<h2 class="tipTitle">How do I know what strength reading glasses to buy?</h2>
+<p class="tipText">After an eye test, your optometrist will provide you with your exact prescription which will have the strength of reading glasses you need. Once you have picked out your eyeglasses, they will be fitted with your prescription lenses, helping you see clearly up close. <br><br>There are a number of factors that can influence the strength of your prescription such as age and visual demand. To determine the right strength needed for your reading glasses, you can <a class="linkTo" href="https://www.oscarwylee.com.au/booking">book an eye</a> test with Oscar Wylee.</p>
+<h2 class="tipTitle">Can I wear reading glasses all the time?</h2>
+<p class="tipText">Many people enjoy wearing their reading glasses all the time as they are always on hand when they need to see things up close. In most instances, this can cause unwanted eyestrain for you as the glasses are not being used appropriately. <br><br>Generally, people use reading glasses when reading things up close to prevent eye strain, especially for things that can’t be zoomed in on (e.g. your phone, computer, or other digital device, as opposed to a book or magazine). <br><br>If you are unsure whether you should be using your reading glasses all the time, speak to your optometrist, they will give you instructions on how long you should be wearing them.</p>
+</div>
+</div>
+<!-- Location and booking  -->
+<div class="location">
+<div class="locationText">
+<h2>Looking for your next pair of reading glasses?</h2>
+<p>Find your nearest Oscar Wylee store and our friendly staff can assist you.</p>
+<p>All major health funds accepted in store.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img class="locationImage" src="{{media url="wysiwyg/Reading-Glasses-assets/_Q2A5016.jpg"}}" alt="find a location"></div>
+<div class="location item1"><img class="locationImage" src="{{media url="wysiwyg/Reading-Glasses-assets/_NT_5456_edited.jpg"}}" alt="book an eye test">
+<div class="locationText">
+<h2>Due for an eye test?</h2>
+<p>We recommend that everyone should have an eye test with an optometrist at least once every 2 years.</p>
+<p>Oscar Wylee offers bulk billed eye test, so there are no out-of-pocket expenses for eligible Medicare card holders.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/booking"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+</div>
+</div>
+<p>
+<script>
+  function reveal() {
+    let reveals = document.querySelectorAll(".reveal");
+  
+    for (let i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let elementTop = reveals[i].getBoundingClientRect().top;
+      let elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  } 
+  
+  window.addEventListener("scroll", reveal);
+    </script>
+</p>

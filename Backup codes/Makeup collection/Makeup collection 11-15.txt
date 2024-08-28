@@ -1,0 +1,521 @@
+---Header---
+
+<style>
+.responsiveBanner {
+    height: 107%;
+}
+
+.removeLineHeight {
+line-height: 20px !important;
+}
+
+.banner-1 {
+background-color: white !important;
+}
+
+@media (max-width: 2200px) {
+.bannerRes {
+width: 100%;
+margin-top: -12rem;
+}
+}
+
+@media (max-width: 1920px) {
+.bannerRes {
+margin-top: -10rem;
+}
+
+.top_hero {
+top: 25%;
+}
+}
+
+@media (max-width: 1440px) {
+.bannerRes {
+margin-top: -3rem;
+}
+}
+
+@media (max-width: 1024px) {
+.bannerRes {
+margin-top: 0rem;
+}
+
+.banner-1 {
+height: 315px;
+}
+
+.top_hero {
+top: 20%;
+}
+}
+
+@media (max-width: 800px) {
+.responsiveBanner {
+    height: auto;
+    margin-top: -25rem;
+}
+
+.top_hero {
+top: 5%;
+}
+}
+
+@media (max-width: 480px) {
+.responsiveBanner {
+margin-top: 0rem;
+}
+}
+
+
+@media (max-width: 400px) {
+.responsiveBanner {
+    margin-top: -1rem;
+    height: -webkit-fill-available;
+}
+}
+
+</style>
+<div class="banner-1">
+<div class="bg-desktop"><img src="{{media url="wysiwyg/makeup-collection/makeup_webbanner.jpg"}}" alt="makeup_web_banner" class="bannerRes" /></div>
+<div class="bg-mobile"><img src="{{media url="wysiwyg/makeup-collection/makeup_mobilebanner.jpg"}}" alt="makeup_mobile_banner" class="responsiveBanner " /></div>
+<div class="top_hero">
+<div class="hero_title">
+<h1>Makeup Collection</h1>
+<p class="removeLineHeight "><span style="font-size: 16px;">From the flick of eyeliner to the glimpse of eye shadow on a closed lid, our new collection is inspired by the enhancing qualities and creative potential of makeup.</span></p>
+</div>
+</div>
+</div>
+
+---Header End---
+
+<style>
+.mainBanner {
+    width: 94.3%;
+    margin-bottom: 6rem;
+display: flex;
+}
+
+.mainText {
+    margin: auto;
+    padding: 2rem 10rem;
+    text-align: left;
+    background-color: #fce2cd;
+}
+
+.category-view .banner-2>.banner-item img {
+    max-height: 350px;
+}
+
+.bannerImage {
+    height: 35rem;
+}
+
+.bannerItemText {
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+.mainBanner {
+display: block;
+    margin-top: 2rem;
+}
+
+.mainText {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+}
+
+@media (max-width: 480px) {
+.mainText {
+padding: 1rem 2rem !important;
+}
+
+.mainText > span {
+font-size: 16px !important;
+}
+
+.bannerItemText {
+text-align: center !important;
+}
+
+.bannerImage {
+    height: 30rem;
+    margin-top: 2rem !important;
+    margin: auto;
+}
+
+.category-view .banner-2 {
+    position: relative;
+    margin-bottom: 40px;
+padding-bottom: 0;
+}
+}
+
+figure {
+    width: inherit;
+}
+
+figcaption{
+  text-align: center;
+    font-size: 16px;
+    margin-top: 1rem
+}
+
+.ctaContainer {
+  max-width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 15em;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ctaText h2 {
+  font-weight: 700;
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.ctaText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+
+}
+
+.ctaText p {
+  font-size: 16px;
+  padding-bottom: 2rem;
+
+}
+
+.btnOw {
+  background-color: #003cac;
+  width: 80%;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btnOw:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+  transition: 1s;
+}
+
+.adjustMargin {
+  text-align: center;
+}
+
+.category-view .banner-2>.banner-item p {
+  padding: 0 3.5rem;
+}
+
+@media (max-width: 1024px) {
+  .ctaContainer {
+    max-width: 94%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaContainer {
+    max-width: 92%;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+
+.mainBanner {
+width: 100%
+}
+}
+
+@media (max-width: 480px) {
+  .topbtmPadding {
+    padding: 2rem 0rem !important;
+  }
+
+  .resRmvTopPaddingMargin {
+    margin-top: 0 !important;
+    padding-top: 0rem !important;
+  }
+
+  .topbtmPadding {
+    padding: 2rem 0rem !important;
+  }
+
+.ctaContainer {
+gap: 5rem;
+}
+}
+
+@media (max-width: 375px) {
+  .ctaContainer {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 1rem 0.5rem;
+  }
+
+  .ctaText > * {
+    margin-bottom: 20px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+}
+
+hr {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.category-view .banner-2 {
+  padding-bottom: 30px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 80px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 400px;
+    max-height: 75% !important;
+}
+
+/* Caption of Modal Image */
+#caption, #caption1, #caption2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption, #caption1, #caption2 {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close, .close1, .close2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus, 
+.close1:hover, 
+.close1:focus,
+.close2:hover, 
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.imghide {
+  display: none;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    max-width: 300px;
+  }
+
+  .modal{
+    padding-top: 110px !important;
+  }
+
+  .close, .close1, .close2 {
+    top: 50px;
+    right: 15px;
+  }
+}
+
+/* Banner Items */
+
+.bannerTextContainer {
+    padding: 3rem 0rem;
+    margin-top: -5rem;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btmPadding {
+  padding-bottom: 5.4rem !important;
+}
+
+@media (max-width: 768px) {
+  .bannerTextContainer {
+    width:100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-left: -1rem;
+  }
+}
+</style>
+<div class="mainBanner ">
+<figure><img src="{{media url="wysiwyg/makeup-collection/Isabelle-De-Vries.jpg"}}" alt="Isabelle De Vries" class="bannerImage" />
+<figcaption><b>Makeup Artist:</b> Isabelle De Vries</figcaption>
+</figure>
+<br /><br />
+<p class="mainText"><span style="font-size: 18px;">To demonstrate just how this collection can enhance the face and add intrigue to the eyes, we have collaborated with Australian makeup artist, Isabelle De Vries.</span><br /><br /><span style="font-size: 18px;">Isabelle has created three stunning makeup looks, inspired by three pairs of glasses from the new collection.</span><br /><br /><span style="font-size: 18px;">Isabelle has been in the makeup industry for a little over 10 years. Some of her biggest inspirations come from art and nature, the natural colour combinations and the array of beautiful textures. </span></p>
+</div>
+<p><img alt="" /></p>
+<div class="banner-item"><a href="{{media url="wysiwyg/makeup-collection/Miryame_390_-_Isabelle_de_Vries.jpg"}}" target="new" onclick="return false;"> <img src="{{media url="wysiwyg/makeup-collection/makeup_square1.jpg"}}" alt="Image 1: Miryame in White Ribbon" id="myImg" /></a> <!-- The Modal -->
+<div id="myModal" class="modal"><span class="close">×</span> <img class="modal-content" src="{{media url="wysiwyg/makeup-collection/Miryame_390_-_Isabelle_de_Vries.jpg"}}" id="img01" />
+<div id="caption"></div>
+</div>
+<!-- Modal end -->
+<div class="bannerTextContainer " style="background-color: #cfcfe9;">
+<p class="bannerItemText">“I created a bright look with the Miryame frames. I just loved that they were gold from the front but from the side view looked white.”</p>
+</div>
+</div>
+<div class="banner-item"><a href="{{media url="wysiwyg/makeup-collection/Aleks_151_-_Isabelle_de_Vries.jpg"}}" target="new" onclick="return false;"> <img src="{{media url="wysiwyg/makeup-collection/makeup_square2.jpg"}}" alt="Image 2: Aleks in Expresso" id="myImg1" /> </a> <!-- The Modal -->
+<div id="myModal1" class="modal"><span class="close1">×</span> <img class="modal-content" src="{{media url="wysiwyg/makeup-collection/Aleks_151_-_Isabelle_de_Vries.jpg"}}" id="img02" />
+<div id="caption1"></div>
+</div>
+<!-- Modal end -->
+<div class="bannerTextContainer " style="background-color: #c8eff7;">
+<p class="bannerItemText">“The Aleks frames were definitely my favourite. The big open frames with a fine black and gold border are perfect for showing off your makeup.”</p>
+</div>
+</div>
+<div class="banner-item"><a href="{{media url="wysiwyg/makeup-collection/Ana_136_-_Isabelle_de_Vries.jpg"}}" target="new" onclick="return false;"> <img src="{{media url="wysiwyg/makeup-collection/makeup_square3.jpg"}}" alt="Image 3: Ana in Ruby" id="myImg2" /> </a> <!-- The Modal -->
+<div id="myModal2" class="modal"><span class="close2">×</span> <img class="modal-content" src="{{media url="wysiwyg/makeup-collection/Ana_136_-_Isabelle_de_Vries.jpg"}}" id="img03" />
+<div id="caption2"></div>
+</div>
+<!-- Modal end -->
+<div class="bannerTextContainer btmPadding" style="background-color: #f0bcc8;">
+<p class="bannerItemText">“This was a super fun collection to shoot, so much thought and detail had gone into each frame design.”</p>
+</div>
+</div>
+<hr />
+<div class="ctaContainer topbtmPadding" style="border-top: none;">
+<div class="ctaText">
+<h2 class="resRmvTopPaddingMargin">Due for an eye test?</h2>
+<p>Get your no-gap, bulk billed eye exam with zero dollars out-of-pocket expense. Update your prescription and find your favourite makeup pair.</p>
+<a href="https://www.oscarwylee.com.au/booking" class="adjustMargin"> <button class="btnOw">Book an eye test</button> </a></div>
+<div class="ctaText">
+<h2 class="resRmvTopPaddingMargin">Makeup Collection In-store</h2>
+<p>Visit our friendly staff in one of our Oscar Wylee stores to try on the glasses in the Makeup collection. From bold colours to subtle designs, we’ve got frames for everyone!</p>
+<a href="https://www.oscarwylee.com.au/locations/full-store-list.html" class="adjustMargin"> <button class="btnOw">Find your nearest location</button> </a></div>
+</div>
+<p>
+<script>
+      var modal = document.getElementById("myModal");
+
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function () {
+        modal.style.display = "block";
+        captionText.innerHTML = this.alt;
+      };
+
+      var span = document.getElementsByClassName("close")[0];
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      var modal1 = document.getElementById("myModal1");
+
+      var img1 = document.getElementById("myImg1");
+      var modalImg1 = document.getElementById("img02");
+      var captionText1 = document.getElementById("caption1");
+      img1.onclick = function () {
+        modal1.style.display = "block";
+        captionText1.innerHTML = this.alt;
+      };
+
+      var span1 = document.getElementsByClassName("close1")[0];
+
+      span1.onclick = function () {
+        modal1.style.display = "none";
+      };
+
+      var modal2 = document.getElementById("myModal2");
+
+      var img2 = document.getElementById("myImg2");
+      var modalImg2 = document.getElementById("img03");
+      var captionText2 = document.getElementById("caption2");
+      img2.onclick = function () {
+        modal2.style.display = "block";
+        captionText2.innerHTML = this.alt;
+      };
+
+      var span2 = document.getElementsByClassName("close2")[0];
+
+      span2.onclick = function () {
+        modal2.style.display = "none";
+      };
+    </script>
+</p>

@@ -1,0 +1,1285 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap");
+
+#maincontent {
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #333333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.footer-item h4,
+.footer-item h3,
+.help-block h3,
+.copyright span {
+  color: #fff;
+}
+
+body {
+  color: #333333;
+}
+
+*,
+page-main {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  /* color: #333333; */
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+
+button:hover {
+  color: white !important;
+}
+
+ul,
+ol {
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 1236px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.banner {
+  max-width: 100%;
+  max-height: 450px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+
+.text {
+  max-width: 100%;
+}
+
+.bannerResponsive {
+  display: none;
+}
+
+.title {
+  width: calc(100% - 6rem);
+  padding: 2.5rem 3rem;
+  text-align: center;
+  /* margin: 0 1rem 2rem 1rem; */
+  border-bottom: 1px solid rgba(192, 192, 192, 0.7);
+}
+
+.title h1,
+.title h2 {
+  font-weight: 700;
+  padding-bottom: 3rem;
+}
+
+.title p {
+  padding: 0 6rem 2rem;
+}
+
+.context {
+  width: calc(100% - 2rem);
+  padding: 0 1rem;
+}
+
+.context h2 {
+  padding: 1rem 0 0 0;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.context h3 {
+  padding: 2rem 0 0 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.context p {
+  padding: 1.5rem 0.5rem 2rem 0.5rem;
+  font-size: 16px;
+  text-align: justify;
+  text-align-last: left;
+}
+
+/* .faqSubtitles {
+            border-top: 1px solid silver;
+        }
+
+        .faqSubtitles h3 {
+            color: #003cac;
+            font-weight: 700;
+            border-left: 10px solid #d6ece4;
+            padding: 10px;
+            margin-left: 20px;
+            margin-top: 2rem;
+        }
+
+        .faqSubtitles p {
+            margin-left: 20px;
+            padding-bottom: 5px;
+        }
+
+        .faqSubtitles ul,
+        .faqSubtitles span {
+            margin-left: 30px;
+            padding-bottom: 10px;
+
+        } */
+
+.boxShadow {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.rightShadow {
+  box-shadow: 15px 0px 15px -10px rgba(0, 0, 0, 0.1);
+}
+
+.dashedBorder {
+  border-top: 2px dotted #cbc5a3;
+  border-bottom: 2px dotted #cbc5a3;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.linkTo {
+  color: #003cac;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.context ul,
+.context ol {
+  width: calc(100% - 4rem);
+  text-align: justify;
+  text-align-last: left;
+  padding: 1.5rem 0 1.5rem 3rem;
+}
+
+.border {
+  border-bottom: 1px solid silver;
+  padding: 0rem;
+}
+
+.flatBg {
+  background-image: url(./assets/Frame\ 2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  box-shadow: 4px 4px 8px silver;
+}
+
+.flatBg::before {
+  opacity: 0.2;
+}
+
+.lastBox {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.context ul li,
+.context ol li {
+  padding-bottom: 1rem;
+  font-size: 16px;
+}
+
+.textMain {
+  background-color: #e7f3ff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 1rem 2rem 3rem;
+  margin: 1rem 0rem 2rem 0rem;
+  /* box-shadow: 3px 3px 6px silver; */
+  /* border-bottom: 1px solid silver; */
+  text-align: left;
+  text-align-last: left;
+}
+
+.textMain h3 {
+  color: #003cac;
+  border-left: 10px solid #d6ece4;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.textMainNobg {
+  /* border-bottom: 1px solid silver; */
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.textMain h2 {
+  margin-top: 1.5rem;
+  border-left: 10px solid #003cac;
+  padding: 1rem;
+}
+
+.textMainNobg h2 {
+  border-left: 10px solid #003cac;
+  padding: 1rem;
+}
+
+.textMain h3,
+.textMainNobg h3 {
+  border-left: 10px solid #a0b3ac;
+  padding: 0.8rem;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+}
+
+.textMain h4,
+.textMainNobg h4 {
+  border-left: 10px solid #bbd0c9;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 16px;
+}
+
+.textMain h5,
+.textMainNobg h5 {
+  border-left: 10px solid #d0e8df;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  font-size: 16px;
+}
+
+.textMain strong,
+.textMainNobg strong {
+  color: #003cac;
+  padding-bottom: 10px;
+}
+
+.textMainNobg p,
+.textMain p {
+  padding-top: 1rem;
+  margin-left: 1rem;
+}
+
+.textMainNobg ul,
+.textMain ul,
+.textMain ol,
+.textMainNobg ol {
+  margin-left: 3rem;
+}
+
+.flexContainer,
+.flexContainerFrame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  /* margin-bottom: 2rem; */
+}
+
+.flexContainerFrame {
+  gap: 2.5rem;
+}
+
+.flexImage {
+  width: 44%;
+  min-width: 350px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 0 auto;
+  max-width: 410px;
+  max-height: 450px;
+  /* filter: drop-shadow(5px 5px 10px Silver);
+          -webkit-filter: drop-shadow(5px 5px 10px Silver); */
+}
+
+.flexText {
+  width: 44%;
+  min-width: 350px;
+  /* background-color: #fff; */
+  /* border-radius: 10px; */
+  /* -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px; */
+  padding: 1rem 0.5rem;
+  /* border: 2px dashed #cbc5a3; */
+  margin: 0 1rem;
+  align-self: stretch;
+}
+
+.flexText ul,
+.flexText ol {
+  padding-top: 1rem;
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.flexText p {
+  text-align: left;
+}
+
+.flexText img {
+  width: 80%;
+  /* margin-top: 10%; */
+  /* border-radius: 10px; */
+  padding-left: 12%;
+}
+
+.imageTwo {
+  width: 50%;
+  padding-top: 1rem;
+  margin: auto;
+}
+
+.flexImageRound {
+  border-radius: 15px;
+  width: 40%;
+}
+
+/* .smallText {
+  font-size: 13px !important;
+  margin-left: 1.5rem;
+  font-style: italic;
+} */
+
+span.smallText {
+  display: block;
+  font-size: 13px !important;
+  padding-left: 1.4rem !important;
+  font-style: italic;
+}
+
+.location {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+  border-top: 1px solid silver;
+}
+
+.locationText h2 {
+  font-weight: 700;
+  padding-left: 0.5rem;
+}
+
+.textBorder {
+  border-top: 1px solid silver;
+  margin-top: 5.5rem;
+  padding: 2rem;
+}
+
+.locationText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.locationText p {
+  font-size: 16px;
+}
+
+.locationImage {
+  width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.allButton {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.allButton a {
+  text-decoration: none;
+}
+
+.centerBtn {
+  text-align: center;
+}
+
+.btnOw:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+  transition: 1s;
+}
+
+.btnOw {
+  background-color: #003cac;
+  width: 80%;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pSubTitle {
+  font-size: 22px !important;
+  padding-top: 3rem !important;
+  font-weight: bold;
+  color: #6b6b6b !important;
+}
+
+.minusPadding {
+  padding-bottom: 0.5rem !important;
+}
+
+/* vertical */
+.reveal {
+  position: relative;
+  transform: translateY(65px);
+  -webkit-transform: translateY(65px);
+  -moz-transform: translateY(65px);
+  -ms-transform: translateY(65px);
+  -o-transform: translateY(65px);
+  opacity: 0;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  opacity: 1;
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #fff;
+  color: #003cac;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  border: none;
+  /* border-bottom: 2px dashed #003cac; */
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+button.accordion.active::before {
+  content: "\2212";
+}
+
+button.accordion::before {
+  content: "\002B";
+  color: #003cac;
+  font-weight: bold;
+  /* float: right; */
+  margin-left: 5px;
+  padding-right: 0.5rem;
+  font-size: 16px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.collapsible:hover {
+  background-color: #f7f7f7;
+  color: #003cac !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-style: normal;
+}
+
+.activeCollaps {
+  font-style: normal;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsContent {
+  padding: 0 1rem;
+  display: none;
+  overflow: hidden;
+  /* background-color: #003cac; */
+  font-size: 12px;
+  border-top: 1px dashed #003cac;
+  background-color: #f7f7f7;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sources {
+  margin-bottom: 2rem;
+}
+
+.minusMargin {
+  margin-top: -2rem;
+}
+
+hr {
+  opacity: 0.7;
+  border-top: 1px solid silver;
+}
+
+.booking {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.booking h2 {
+  padding: 2rem;
+  margin: 0px;
+}
+
+.booking p {
+  padding-top: 2rem;
+}
+
+.booking a {
+  width: 30%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.booking button {
+  background-color: #003cac;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  padding: 15px;
+  margin-right: 70px;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+button:not(.primary) {
+  box-shadow: inset 0 1px 0 0 #fff, inset 0 -1px 0 0 rgb(204 204 204 / 30%);
+}
+
+.booking button:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.bookingContainer {
+  border-bottom: 1px solid silver;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.booking input {
+  padding-bottom: 0.2rem;
+  border: none;
+  border-bottom: 2px solid #000;
+  margin: 1rem 0;
+  width: 20rem;
+  background-color: #f7f7f7;
+  font-size: 16px;
+}
+
+.booking input:focus {
+  outline: none;
+}
+
+.booking input::placeholder {
+  color: #a0b3ac;
+  font-size: 16px;
+}
+
+.adjustMargin {
+  text-align: center;
+}
+
+.fullWidthBtn {
+  width: 90% !important;
+}
+
+.paraHead {
+  font-size: 18px;
+  font-weight: bold;
+  color: #003cac;
+  text-align: center;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.7);
+  padding: 1rem 0 2rem 0;
+  margin: 4rem 1.5rem 3rem 1.5rem;
+}
+
+.TopMargin {
+  margin-top: 3rem !important;
+}
+
+@media (max-width: 1248px) {
+  .flexContainerFrame {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .flexContainerFrame {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    width: calc(100% - 2rem);
+    padding: 1.5rem 1rem;
+    margin: 0 0 2rem 0;
+  }
+
+  .context {
+    width: calc(100% - 3rem);
+    padding: 0 1.5rem;
+  }
+
+  .flexContainer,
+  .flexContainerFrame {
+    margin-bottom: 2rem;
+  }
+
+  .flexImage {
+    min-width: 280px;
+    margin: 2rem auto;
+    max-width: 410px;
+    max-height: 450px;
+  }
+
+  .flexText {
+    min-width: 300px;
+    margin: 0.5rem auto;
+  }
+
+  .imageTwo {
+    width: 50%;
+  }
+
+  .booking {
+    justify-content: center;
+    margin: 1rem auto;
+  }
+
+  .booking h2 {
+    padding: 0.5rem;
+    margin: 0px;
+  }
+
+  .booking a {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .booking button {
+    margin: 1rem auto;
+  }
+
+  .booking p {
+    padding-right: 2.5rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .title p {
+    padding: 0 1rem 1rem;
+  }
+
+  .minusMarginImage {
+    margin-top: 0rem;
+    margin-bottom: -4rem;
+  }
+
+  .extraPadding {
+    padding-bottom: 2rem;
+  }
+
+  .flexText h4 {
+    padding-top: 0 !important;
+  }
+
+  .flexImageRound,
+  .flexImage,
+  .flexText {
+    width: 100%;
+  }
+
+  .imageTwo {
+    width: 60%;
+    /* padding-top: 0; */
+  }
+
+  .imageTwo,
+  .locationImage {
+    order: 1;
+  }
+
+  .flexImage {
+    margin: 1.5rem auto 0 auto;
+  }
+
+  .allButton {
+    margin-bottom: 5px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 6rem);
+    padding-left: 3rem;
+  }
+
+  .context {
+    width: calc(100% - 2rem);
+    padding: 0 1rem;
+  }
+
+  .booking h2 {
+    text-align: center;
+  }
+
+  .flexContainerFrame {
+    gap: 1rem;
+  }
+
+  /* .paraHead {
+    padding: 1rem 0 1rem 0;
+    margin: 1rem 0 2rem 0;
+  } */
+}
+
+@media (max-width: 480px) {
+.textMainNobg p,
+.textMain p {
+  margin-left: 0.5rem;
+}
+
+  .faqSubtitles h3 {
+    margin-top: 3rem;
+  }
+
+  .minusMargin {
+    margin-top: 0rem !important;
+  }
+
+  .flexText .flexTwo {
+    margin-top: 0 !important;
+  }
+
+  .flexText h2 {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .flexText ul,
+  .flexText ol {
+    padding-top: 1rem;
+    margin-left: 1.5rem !important;
+  }
+
+  .flexMargin {
+    margin-top: -0.5rem !important;
+  }
+
+  .sources {
+    margin-top: -4rem;
+  }
+
+  /* .flexText p{
+            padding: 0 0.5rem !important;
+          } */
+
+  .faqSubtitles ul,
+  .faqSubtitles span,
+  .faqSubtitles ol {
+    margin-left: 10px;
+  }
+
+  .faqSubtitles p {
+    margin-left: 0;
+  }
+
+  /* .textMain h2,
+            .textMainNobg h2 {
+                border-left: 10px solid #003cac;
+            } */
+
+  .textMain {
+    margin: 1rem 1rem 3rem 1rem;
+    padding: 1rem;
+    padding-right: 2rem;
+  }
+
+  .textMainNobg {
+    padding: 1rem 0.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .textMain h2 {
+    padding: 1rem;
+    margin-bottom: 0rem;
+    /* margin-top: 1rem !important; */
+  }
+
+  .textMainNobg h2 {
+    margin-bottom: 1rem !important;
+    margin-left: 0.5rem;
+  }
+
+  .textMain p,
+  .textMainNobg p {
+    text-align: left !important;
+    padding: 0.5rem 1rem 2rem;
+  }
+
+  .textMain ul,
+  .textMainNobg ul,
+  .textMain ol,
+  .textMainNobg ol {
+    text-align: left !important;
+    padding: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  /* .textMain h3 {
+    margin-top: 0;
+  } */
+
+  .textMainNobg h3 {
+    margin-top: 3rem;
+  }
+
+  .flexContainer,
+  .flexContainerFrame {
+    margin: 1rem 0rem;
+  }
+
+  .title {
+    width: calc(100% - 1rem);
+    padding: 1rem 0.5rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .title h1 {
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .textBorder {
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .flexImage {
+    min-width: 280px;
+    margin: 1rem auto;
+    max-width: 410px;
+    max-height: 450px;
+  }
+
+  .flexText {
+    min-width: 210px;
+    margin: -1rem auto;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .bannerResponsive {
+    display: block;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .border {
+    padding: 1rem 0rem 1rem 0rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .context p {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    text-align: justify !important;
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 3rem);
+    padding-left: 1.5rem;
+    text-align: left !important;
+  }
+
+  .context ul,
+  .context p,
+  .context ol {
+    text-align: left;
+  }
+
+  .reveal {
+    position: relative;
+    transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -o-transform: translateY(15px);
+    opacity: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+
+  span.smallText {
+    margin-left: 0.5rem;
+  }
+
+  .imageTwo {
+    width: 100%;
+  }
+
+  .booking h2 {
+    text-align: center;
+  }
+
+  .booking input {
+    width: 18rem;
+  }
+
+  .topPadding {
+    padding-top: 2rem;
+  }
+
+  .topMarginRes {
+    margin-top: 2rem !important;
+  }
+
+  .topbtmPadding {
+    padding: 2rem 0rem !important;
+  }
+
+  /* .paraHead {
+    padding: 1rem 0 2rem 0;
+    margin: 1rem 0.5rem 3rem 0.5rem;
+  } */
+
+  .minusMarginImage {
+    margin: 2rem auto;
+  }
+
+  .resRmvTopPaddingMargin {
+    margin-top: 0 !important;
+    padding-top: 0rem !important;
+  }
+
+  .leftPadding {
+    padding-left: 3.5rem !important;
+  }
+
+  .flexText img {
+    width: 100%;
+    padding-left: 6px;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  /* .flexContainer{
+            max-width: 100%;
+          } */
+  .flexText {
+    min-width: 200px;
+    margin: 0.5rem auto;
+  }
+
+  .flexImage {
+    min-width: 220px;
+    margin: 0.5rem auto;
+  }
+
+  .location {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 3rem);
+    padding-left: 1.5rem;
+  }
+
+  .locationText > * {
+    margin-bottom: 20px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+
+  .booking input {
+    width: 13rem;
+  }
+}
+
+@media (max-width: 281px) {
+  .flexText {
+    min-width: 200px;
+    margin: 0.5rem auto;
+  }
+
+  .flexImage {
+    min-width: 220px;
+    margin: 0.5rem auto;
+  }
+}
+
+/* New CTA button style.*/
+
+.ctaContainer {
+  max-width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+  border-top: 1px solid silver;
+}
+
+.ctaHeading {
+  font-weight: 700;
+  padding-left: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.ctaText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ctaText p {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .ctaContainer {
+    max-width: 94%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaContainer {
+    max-width: 92%;
+  }
+}
+
+@media (max-width: 375px) {
+  .ctaContainer {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 1rem 0.5rem;
+  }
+
+  .ctaText > * {
+    margin-bottom: 20px;
+  }
+}
+
+</style>
+<p><img src="{{media url="wysiwyg/Do-Blue-Light-Glasses-Work/BLF_Glasses__BannersWeb_Banner.jpg"}}" alt="Blue Light from Digital Devices Banner" class="banner" title="Blue Light from Digital Devices Banner"> <img src="{{media url="wysiwyg/Do-Blue-Light-Glasses-Work/BLF_Glasses__BannersMobile_Banner.jpg"}}" class="bannerResponsive" title="Blue Light from Digital Devices Banner" alt="Blue Light from Digital Devices Banner"></p>
+<div class="container">
+<div class="context">
+<div class="title">
+<h1>Do Blue Light Glasses Work?</h1>
+<p>Do blue light glasses work is one of the most pressing questions surrounding this trending eyewear piece. The definition of blue light glasses is a pair of glasses that aim to block blue light from entering the eye. The main area of debate regarding blue light glasses revolves around their effectiveness and whether or not they help protect the eyes from blue light, prevent disruption to sleeping patterns and relieve digital eye strain. Blue light is a type of light that is produced naturally from the sun, which is where people get most of their exposure. It is also emitted from digital devices. <br><br>It is believed that blue light glasses can be effective in reducing the amount of blue light entering the eye. It has been reported by customers that blue light glasses make people more comfortable when working with digital devices. Scientific evidence is yet to definitively conclude whether or not blue light is actually harmful, however, it is theorised by some healthcare professionals to be potentially damaging to the eyes. It may also disrupt sleeping patterns and contribute to eye fatigue. <br><br>Here at Oscar Wylee, you can get our blue light protection with our optical glasses, prescription or non-prescription. You can wear your blue light glasses whilst on work at the computer, at home playing video games, or any other situation in which you are looking at a digital screen for a long time. <br><br>At Oscar Wylee, we believe that choosing blue light glasses is at the discretion of the customer. We make sure our customers are well informed about the potential benefits and evidence surrounding blue light filters so they make an informed choice. Blue light glasses do not harm the eye and the added UV protection that our blue light filter has, can be beneficial in protecting the eye from UV rays.</p>
+</div>
+<div class="ctaContainer topbtmPadding" style="border-top: none; margin-top: 2rem;">
+<div class="ctaText">
+<div class="resRmvTopPaddingMargin ctaHeading">Keep up with your eye health.</div>
+<p>Book an eye test with our Oscar Wylee optometrists, bulk billed with no out-of-pocket expenses for eligible Medicare cardholders.</p>
+</div>
+<div class="ctaText"><a href="https://www.oscarwylee.com.au/booking" class="adjustMargin"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<div class="flexContainer">
+<div class="flexText minusPadding" style="margin-left: -0.5rem;">
+<h2>What are the Blue Light Glasses Benefits?</h2>
+<p class="minusPadding">The benefits of blue light glasses are that they may protect the eye, relieve digital eye strain and potentially improve sleep. There are several main areas of concern when it comes to blue light; the potential of this light to damage the eye, the potential sleep disruption caused by this light and its contribution to visual fatigue and digital eye strain. Blue light glasses aim to try and offset these issues by blocking blue light from entering the eye. The potential benefits of blue light glasses are listed below.</p>
+</div>
+<div class="flexText imageTwo"><img src="{{media url="wysiwyg/Do-Blue-Light-Glasses-Work/What-are-the-Blue-Light-Glasses-Benefits--900x600.jpg"}}" alt="What are the Blue Light Glasses Benefits"></div>
+<ul class="minusPadding">
+<li><b>Protect the eye:</b> Blue light glasses potentially reduce the amount of blue light entering the eye, in turn protecting it.</li>
+<li><b>Relieve digital eye strain and fatigue:</b> Blue light glasses may help relieve the digital eye strain and the fatigue, associated with extended periods of screen time. Some customers report that they feel more comfortable wearing blue light glasses when looking at digital screens for an extended period of time.</li>
+<li><b>Improve sleep:</b> Blue light glasses may help improve sleep by blocking the amount of blue light the eyes take in. It has been theorised that prolonged exposure to blue light may disrupt the sleep cycle. According to a study published in The Proceedings of the National Academy of Sciences (PNAS), conducted by Chang, Aeschbach, Duffy and Czeisler, people exposed to blue light before bed released smaller amounts of melatonin, the chemical that helps with sleep. Wearing blue light glasses may help to reduce this sleep disruption.</li>
+</ul>
+</div>
+<h3>Should I Get Blue Light Glasses?</h3>
+<p>The decision to get blue light glasses, is a personal choice. However, it is worth noting that blue light glasses do not negatively impact the eyes. So if you are interested in seeing if our Oscar Wylee blue light protection helps, there is little harm in trying them out.</p>
+<h3>Are Blue Light Glasses Effective?</h3>
+<p>The effectiveness of blue light glasses is still under investigation and research. Studies on short term effectiveness have shown that blue light glasses may reduce the amount of blue light entering the eye, however the long term effects of blue light are still unclear.<br><br>According to a 2017 study by Tsz Wing Leung, Roger Wing-hong Li, Chea-su Kee, blue light filtering lenses can be effective in reducing blue light transmission to a degree. The study, titled ‘Blue-Light Filtering Spectacle Lenses: Optical and Clinical Performances’, concludes that blue light lenses were shown to theoretically reduce the phototoxicity of blue light by 10.6 - 23.6% , with phototoxicity referring to irritation caused by UV or blue light.<br><br>A 2021 psychology based study by Guarana, Barnes, and Ong, theorised that blue light filters may help to improve sleep quality and quantity, which in turn, can help to boost overall performance in workplace settings. Their paper, called ‘The effects of blue-light filtration on sleep and work outcomes’, posited that blue light filtering improved organisational outcomes such as sleep quality, work engagement, task performance and productive work behaviour.</p>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<div class="flexContainer">
+<div class="flexText minusPadding" style="margin-left: -0.5rem;">
+<h2>What Affects the Efficiency of Blue Light Glasses?</h2>
+<p>There is no specific criteria that may affect the efficiency of blue light glasses. However, if you have a blue light filter added to your optical prescription, any problems with your prescription will change how effective your glasses are. If you have a blue light filter applied to a non-prescription lens, problems with the frame fit will affect how well your blue light glasses work. If you have any problems with your glasses, be sure to come in and see the team at Oscar Wylee for any adjustments.</p>
+</div>
+<div class="flexText imageTwo"><img src="{{media url="wysiwyg/Do-Blue-Light-Glasses-Work/What-Affects-the-Efficiency-of-Blue-Light-Glasses-900x600.jpg"}}" alt="What Affects the Efficiency of Blue Light Glasses"></div>
+</div>
+</div>
+<div class="context"><hr></div>
+<div class="ctaContainer topbtmPadding" style="border-top: none;">
+<div class="ctaText">
+<div class="resRmvTopPaddingMargin ctaHeading">Find your local Oscar Wylee store</div>
+<p>Come in and see the team for your eye care needs including eye testing. <br><br>All major health funds accepted in store.</p>
+</div>
+<div class="ctaText"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html" class="adjustMargin"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h3>What are the Most Important Criteria for Blue Light Blocking Glasses?</h3>
+<p class="minusPadding">The most important criteria for blue light blocking glasses revolves around how well your glasses fit, how comfortable they are, whether they match your personal style and whether or not your prescription is correct. At Oscar Wylee, our blue light protection can be added to both prescription and non-prescription glasses. This means that the criteria that your blue light glasses need to meet are less about the actual filter and more about the glasses themselves. The important criteria for blue light blocking glasses are listed below.</p>
+<ol class="minusPadding">
+<li><b>Frames that fit:</b> <span style="font-weight: 400;">Frames that fit your face properly are the most important criteria when picking blue light glasses. Ill fitting frames may fall off the face or distort your vision.</span></li>
+<li><b>Frames that match your personal style:</b> Finding frames that reflect your personality and personal style is the next important criteria to meet when buying blue light glasses.</li>
+<li><b>Your lenses are the right prescription:</b> Finally, it is important when buying glasses that you make sure your prescription is correct. If your prescription is too strong or too weak, you may struggle with distorted vision, eye strain or headaches. If you feel that your prescription is not right, be sure to check with your optometrist. You can get our Oscar Wylee blue light filter applied to non-prescription lenses.</li>
+</ol>
+<h3>How Much Do Blue Light Glasses Cost?</h3>
+<p>At Oscar Wylee, you can add our blue light filter to any pair of optical glasses or non-prescription glasses, for an additional $80.</p>
+</div>
+<hr>
+<div class="textMain boxShadow">
+<h2>Who Founded Blue Light Blocking Glasses?</h2>
+<p class="minusPadding">The first blue light blocking glasses were founded in the 1980s by Joseph Sugarman, an American businessman. Sugarman was inspired by a pair of sunglasses made for NASA which attempted to reduce the UV light in space. Sugarman took this idea and released a line of sunglasses called BluBlockers, which aimed to block UV rays and blue light from the sun. <br><br>The current form of blue light glasses, that aim to block out blue light emitted from digital devices, first came to fruition back in the 90s. According to The Nobel Prize Organisation, man-made blue light was first created in the 90s by three scientists Isamu Akasaki, Hiroshi Amano and Shuji Nakamura. However, it would take significant additional work and experimenting before efficient blue light LED lights would become popularised, with the three scientists winning the 2014 Nobel Peace Prize in Physics for their groundbreaking work. <br><br>When blue light started to be used in digital devices, some health care experts expressed concerns about the effects of blue light exposure. As a result, blue light glasses that used a similar concept to Sugarman’s BluBlockers, began to become popularised, as did built in blue light filters on digital devices.</p>
+<h2 class="TopMargin">How Do Blue Light Glasses Protect Your Eyes?</h2>
+<p class="minusPadding">Blue light glasses may help to protect your eyes by reducing the amount of blue light that is entering the eye. Blue light glasses have a lens that is coated with a filter, or a material built into the lens, which attempts to block some of the blue light entering the eyes.</p>
+<h3 class="TopMargin">Are Blue Light Glasses Worth it?</h3>
+<p>Whether blue light glasses are worth it is up to the individual and their eye care needs. If you have a lifestyle in which you are engaging in screen time for extended periods of time, it may be worth trying out these glasses. Blue light glasses do not damage the eyes, and our Oscar Wylee blue light filters have a high level of UV protection, so there is no harm in giving them a go.</p>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<div class="flexContainer">
+<div class="flexText minusPadding" style="margin-left: -0.5rem;">
+<h2>Why is Blue Light Harmful to Eyes?</h2>
+<p class="minusPadding">Blue light has not yet been scientifically proven to be harmful to eyes, however, it may contribute to digital eye strain, eye fatigue and a disrupted sleep schedule. Blue light is a type of light found in the electromagnetic energy, or light, spectrum. It naturally occurs in the sun, where we receive most of our blue light exposure. Man-made blue light is found in digital screens and LED light bulbs. <br><br>Blue light has a shorter wavelength than most other light, meaning it passes straight through the eye to the back of the retina. Some have theorised that this could potentially be harmful to the eye’s retinal cells and contribute to issues like macular degeneration. However, given that artificial blue light from screens is a relatively new technology, there are no long term studies that definitively prove this.</p>
+</div>
+<div class="flexText imageTwo"><img src="{{media url="wysiwyg/Do-Blue-Light-Glasses-Work/Why-is-Blue-Light-Harmful-to-Eyes--900x600-2_1.jpg"}}" alt="Why is Blue Light Harmful to Eyes"></div>
+</div>
+<h3>Is Blue Light Harmful at the Same Level for Children as for Adults?</h3>
+<p>There is no definitive evidence to say that varying levels of blue light impacts adults or children differently. <br><br>It has been theorised that extended periods of time on digital devices may contribute to the progression of myopia in children. Although this is likely due to the nature of the close or near work than the blue light. It is recommended that school aged children be limited to no more than two hours of screen time or near work a day.</p>
+</div>
+<hr>
+<div class="textMain boxShadow">
+<h2>How to Understand Whether Blue Light Glasses Work?</h2>
+<p>There is no sure way to understand whether blue light glasses work, as each person will have their own experience with these glasses. Some customers report that wearing blue light glasses have made looking at digital screens for an extended period of time more comfortable, whilst others do not report any changes. It is up to the individual and their personal eye care needs, to decide whether these glasses work for them.</p>
+<h3>What is the Lifespan of Blue Light Glasses?</h3>
+<p>There is no definitive lifespan of blue light glasses. Here at Oscar Wylee, we have a 1 year manufacturing warranty policy on all of our glasses, from the day of delivery. For all warranty information, <a href="https://www.oscarwylee.com.au/legal/oscar-wylee-warranty.html" class="linkTo">visit our warranty page</a>.</p>
+<h4>Is it Possible to Repair Blue Light Glasses?</h4>
+<p>Yes, blue light glasses can be repaired. If your glasses have manufacturing faults or defects, Oscar Wylee will replace or repair your frame or lenses free of charge, for warranty claims made within 1 year of the delivery. Oscar Wylee will not repair or replace glasses in instances of wear and tear, neglect, misuse or carelessness, accidental loss or damage, changes to design or colour after purchase. For a comprehensive explanation of Oscar Wylee warranty conditions, <a href="https://www.oscarwylee.com.au/legal/oscar-wylee-warranty.html" class="linkTo">visit our warranty page</a>.</p>
+</div>
+<div class="context">
+<div class="location">
+<div class="locationText">
+<div class="ctaHeading">Find an Oscar Wylee store near you</div>
+<p>Our friendly team can help you shop our range of stylish frames.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img class="locationImage" src="{{media url="wysiwyg/Do-Blue-Light-Glasses-Work/find-a-store.jpg"}}" alt="oscar wylee Booking" title="oscar wylee Booking"></div>
+<div class="location item1"><img class="locationImage" src="{{media url="wysiwyg/Do-Blue-Light-Glasses-Work/book_an_eye_test.jpg"}}" alt="book an eye test with Oscar Wylee" title="book an eye test with Oscar Wylee">
+<div class="locationText">
+<div class="ctaHeading">Book an eye test at Oscar Wylee</div>
+<p>If you are an eligible Medicare Card holder, our eye tests will be bulk billed.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/booking"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,1038 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+  h3,h4{
+        color: white;
+    }
+  * {
+    font-family:"Gotham", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333333;
+    line-height: 1.3em;
+  }
+  #maincontent {
+    padding: 0;
+    font-family: "Gotham", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  .banner {
+    width: auto;
+    max-height: 450px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+  }
+  .mobile-banner {
+    display: none;
+  }
+  .title {
+    border-bottom: 1px solid silver;
+    padding: 2.5rem 3rem;
+    margin: 2.5rem 3rem;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 700;
+  }
+  .subtitle {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 10px solid #003cac;
+    padding: 1rem;
+    font-weight: 700;
+  }
+  .intro-section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+  .main-section section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+  .section-border-bottom {
+    border-bottom: 1px solid silver;
+    margin: 3rem;
+  }
+  .book-section {
+    display: flex;
+    padding-left: 1em;
+    padding-bottom: 2.5em;
+    padding-top: 0em;
+  }
+  .book-section p {
+    margin-bottom: 1.5em;
+  }
+  .book-section-left {
+    width: 50%;
+    margin-left: 0;
+    padding-left: 1.5em;
+  }
+  .book-section-left .heading {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+  }
+  .book-section-right {
+    display: flex;
+    margin: auto auto;
+    width: 30%;
+  }
+  .book-section-right a {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+  }
+  .btnOw:hover {
+    background-color: black;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    border: none !important;
+  }
+  .btnOw {
+    background-color: #003cac;
+    width: 100%; /* padding: 0px 50%; */
+    border: none;
+    color: #fff;
+    height: 2em;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .para-content {
+    /* margin-top: 1em; */
+    margin-bottom: 2em;
+    font-size: 16px;
+    text-align: justify;
+  }
+  .list-title {
+    font-weight: 700;
+  }
+  .ordered-list,
+  .unordered-list {
+    padding-left: 4rem;
+    margin-top: 2em;
+  }
+  .unordered-list {
+    margin-bottom: 2em;
+  }
+  .ordered-list li,
+  .unordered-list li {
+    margin-bottom: 0.8em;
+    font-size: 16px;
+  }
+  .pro-con {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+  .pro-con li {
+    margin-bottom: em;
+  }
+  .pro-title,
+  .con-title,
+  .sub-list-title,
+  .sub-div-title {
+    border-left: 10px solid #b1b4b2;
+    padding: 0rem 1rem;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  .sub-list-title {
+    font-size: medium;
+    margin-left: 3em;
+  }
+  .pro-list,
+  .con-list {
+    margin-left: 2em;
+  }
+  .pro-section,
+  .con-section {
+    flex: 1 1 0;
+  }
+  .sub-div {
+    margin-left: 2em;
+  }
+  .sub-div .para-content {
+    margin-left: 0;
+  }
+  .grid-image {
+    width: 100%;
+    margin-bottom: 0.3em;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    column-gap: 3em;
+    width: 70%;
+    margin: 2em auto;
+  }
+  .grid-item {
+    /* text-align: center; */
+    width: 100%;
+  }
+  .grid-item span {
+    font-style: italic;
+    font-weight: 700;
+    font-size: x-small;
+  }
+  .grid-text {
+    text-align: center;
+    font-size: x-small;
+    margin-bottom: 2em;
+  }
+  .grid-title {
+    text-align: center;
+    margin-top: 1em;
+  }
+  .flex-wrapper {
+    display: flex;
+    margin-bottom: 2em;
+  }
+  .flex-image {
+    width: 80%;
+    display: flex;
+    max-width: 700px;
+    margin: 1em auto;
+  }
+  .hightlight-list {
+    font-weight: 600;
+  }
+  .example-images {
+    row-gap: 2em;
+  }
+  .product-image {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+  .products-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .individual-product {
+    border-right: 1px solid silver;
+    margin-bottom: 2em;
+    display: flex; /* margin-left: 1em; */
+  }
+  .individual-product:last-child {
+    border: none;
+  }
+  .product-name,
+  .product-price {
+    text-align: center;
+  }
+  .product-button {
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin-top: 1em;
+  }
+  .two-pairs-price,
+  .three-pairs-price {
+    text-align: center; /* margin-top: 2em; */
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 1em;
+  }
+  .two-pairs-price {
+    margin-bottom: 1em;
+  }
+  .two-pairs-price span,
+  .three-pairs-price span {
+    display: block;
+  }
+  .two-pairs-price {
+    background-color: #003cac;
+  }
+  .three-pairs-price {
+    background-color: black;
+  }
+  .from {
+    font-weight: 300;
+    color: white;
+    line-height: 10px;
+  }
+  .product-right {
+  }
+  .context {
+    padding: 0 3rem;
+  }
+  .location {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: max-content;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+    padding-top: 0;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid silver;
+  }
+  .location .heading {
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+  .item1 {
+    border: none;
+  }
+  .locationText .heading {
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+  .locationText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.5em;
+  }
+  .locationText p {
+    font-size: 16px;
+    margin-top: 2em;
+  }
+  .locationImage {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  .allButton {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .allButton a {
+    text-decoration: none;
+  }
+  .allButton .btnOw {
+    width: 70%;
+    margin-left: 0;
+  }
+  .item1 {
+    padding-top: 2em;
+  }
+  .products-section-mobile {
+    display: none;
+  }
+  .nine-products-section-mobile {
+    display: none;
+  }
+  .nine-products-section {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .nine-products-section img {
+    width: 30%;
+    border-right: 1px solid silver;
+  }
+  .nine-products-section img:last-child {
+    border: none;
+  }
+  .nine-products-section-gender {
+    margin-left: 0;
+  }
+  .grid-container-mobile {
+    display: none;
+  }
+  .contents {
+    margin-bottom: 2em;
+  }
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+    padding: 0;
+  }
+
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  .nxt-btn {
+    right: 0;
+  }
+
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+    width: 1em;
+  }
+
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+  .pre-btn:hover {
+    background-color: white;
+    border: none;
+  }
+  .nxt-btn:hover {
+    background-color: white;
+    border: none;
+  }
+  .nine-products-section {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  .product-container {
+    /* padding: 0 10vw; */
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  .product-container a {
+    display: contents;
+  }
+  .banner-wrapper{
+        height: 450px;
+      }
+      .sub-div-title,.pro-title,.con-title{
+        color: black;
+    } 
+  @media screen and (max-width: 440px) {
+    * {
+      line-height: 1.5em;
+    }
+    .title {
+      margin: 1em 0.5em;
+      padding: 0em; /* padding-bottom: 0.5em; */
+      white-space: normal;
+      border: none;
+    }
+    .contents {
+      margin-bottom: 2em;
+    }
+    .intro-section,
+    .main-section section {
+      margin: 0 1em;
+    }
+    .ordered-list,
+    .unordered-list {
+      padding-left: 2.5em;
+    }
+    .pro-con {
+      flex-direction: column;
+    }
+    .flex-wrapper {
+      flex-direction: column;
+    }
+    .example-images {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 2em;
+    }
+    .grid-item {
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .product-image {
+      width: 100%;
+    }
+    .sub-div {
+      margin-left: 1.2em;
+    }
+    .book-section {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+    .book-section-left {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .book-section-left p {
+      margin-right: 1em;
+      text-align: justify;
+      margin-left: 1em;
+    }
+    .book-section-left .heading {
+      text-align: center;
+      margin-top: 1.6em;
+      font-size: 1.8em;
+    }
+    .book-section-right {
+      width: 90%;
+      margin-bottom: 3em;
+    }
+    .desktop-banner {
+      display: none;
+    }
+    .mobile-banner {
+      display: block;
+      max-width: 100%;
+      padding: 0;
+    }
+    .products-section {
+      display: flex;
+      flex-direction: column;
+    }
+    .individual-product {
+      border-right: none;
+      border-bottom: 1px solid silver;
+      padding-bottom: 0.5em;
+      margin-bottom: 0;
+      width: 90%;
+    }
+    .grid-image {
+      width: 90%;
+      display: flex;
+      margin: 0px auto;
+    }
+    .location {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5em;
+    }
+    .locationText .heading {
+      text-size: 1.5em;
+      margin-top: 1.9em;
+      margin-bottom: -0.5em;
+    }
+    .allButton .btnOw {
+      width: 100%;
+    }
+    .item1 {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+      border: none;
+      padding-bottom: 0;
+      padding-top: 3.5em;
+    }
+    .locationText .heading {
+      text-align: center;
+    }
+    .item1 .locationImage,
+    .item1 .locationText {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+    }
+    .products-section {
+      display: none;
+    }
+    .nine-products-section {
+      display: none;
+    }
+    .individual-product {
+      display: flex;
+      margin: auto auto;
+    }
+    .products-section-mobile {
+      display: block;
+    }
+    .nine-products-section-mobile {
+      display: flex;
+      overflow-x: scroll;
+    }
+    .nine-products-section-mobile::-webkit-scrollbar {
+      display: none;
+    }
+    .nine-products-section-mobile img {
+      width: 80%;
+    }
+    .grid-container-mobile {
+      display: flex;
+      flex-direction: column;
+    }
+    .grid-item span {
+      display: flex;
+      margin: 0 2em;
+    }
+    .grid-container-desktop {
+      display: none;
+    }
+    .product-container-mobile {
+      display: flex;
+      overflow-x: auto;
+    }
+    .nine-products-section-mobile {
+      position: relative;
+      overflow: hidden;
+      padding: 10px;
+    }
+    .pre-btn,
+    .nxt-btn {
+      width: 3vw;
+      height: 0;
+      top: 50%;
+    }
+    .banner-wrapper{
+        height: 500px;
+      }
+  }
+</style>
+<div class="banner-wrapper"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Best_Glasses_For_Pear_Faces_Frames_Shapes_and_Types_Web_Banner.jpeg"}}" alt="Pear Face Glasses, Styles, Types" class="banner desktop-banner"> <img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Best_Glasses_For_Pear_Faces_Frames_Shapes_and_Types_Mobile_Banner.jpeg"}}" alt="Pear Face Glasses, Styles, Types" class="mobile-banner"></div>
+<h1 class="title">Best Glasses for Pear Face (Male and Female): Frames, Shapes and Types</h1>
+<div class="intro-section">
+<p class="para-content">The best glasses for pear-shaped faces are round tortoiseshell, rectangle, round, cat-eye, oval and square glasses as they enhance their best features.</p>
+<!--  -->
+<p class="para-content">People with pear-shaped faces (triangle faces) use glasses to complement their narrow forehead and draw attention away from a fuller jawline, balancing their appearance. A pear-shaped face has a wider jaw, less prominent cheekbones and a narrow forehead. If you have a face shaped like a pear, glasses that are complementary include angular shapes that draw attention to the eyes and proportionate frames that balance out a broader jaw. For those with a pear face shape, glasses help to balance, highlight and enhance a person's best features, by adding breadth to the smaller elements of the upper face.</p>
+<p class="intro para-content">Different types of glasses are used to complement people with pear-shaped faces, these glasses include <strong>round, tortoiseshell, rectangle, round, cat-eye, oval and square glasses.</strong> The best glasses for pear shaped faces and the reasons why are listed below.</p>
+<ul class="unordered-list">
+<li><span class="list-title">Round tortoiseshell glasses:</span> Tortoiseshell is a classic pattern that has remained one of the most popular colours for glasses. Round tortoiseshell glasses are a timeless design that complements pear face shapes by drawing attention to the upper parts of their face.</li>
+<li><span class="list-title">Rectangle glasses:</span> Rectangle glasses are a favoured frame design that is complementary to pear-shaped faces as they add a bold and striking quality to any face.</li>
+<li><span class="list-title">Round glasses:</span> The retro shape of round glasses are both a statement piece or an everyday pair that perfectly complements a pear face shape.</li>
+<li><span class="list-title">Cat-eye glasses:</span> The signature sharp and feline shape of a cat-eye frame helps to attract the eye upwards which is ideal for pear face shapes.</li>
+<li><span class="list-title">Oval glasses:</span> The soft curves of an oval frame suit a wide range of face shapes. For a pear shaped face, these glasses are ideal. From delicate metal rims to strong acetate frames, there is an oval glasses style for everyone.</li>
+<li><span class="list-title">Square glasses:</span> The classic square design always makes a strong statement for whoever is wearing them. The angular, square frame shape provides contrast to the softer features of a person with a pear-shaped face.</li>
+</ul>
+</div>
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="heading">Need an eye test?</p>
+<p>Stay on top of your eye health by booking regular eye tests.</p>
+<p>Our Oscar Wylee optometrists perform bulk billed eye tests, with no out-of-pocket expenses for eligible Medicare cardholders.</p>
+</div>
+<div class="book-section-right"><a href="https://www.oscarwylee.com.au/booking"><button class="btnOw">Book an eye test</button></a></div>
+</aside>
+<div class="main-section">
+<div class="main-section">
+<section class="rectangle-section">
+<h2 class="subtitle">1. Round Tortoiseshell Glasses for Pear Faces</h2>
+<p class="para-content">The round tortoiseshell glasses frame for pear faces, is a good choice of frame, as they are a<strong> modern classic design that makes a bold statement, suitable to be worn as an everyday pair.</strong> A round tortoiseshell frame is defined by its circular shape and intriguing pattern that is created using many different colours.</p>
+<p class="para-content">The round tortoiseshell shape for pear faces is perfectly circular with smooth edges. It is suitable for pear faces because it softens the features of the face with its circular shape. The round tortoiseshell glasses change the proportion of a pear face by adding width and softness to the top of the face to contrast a larger, fuller jaw.</p>
+<p class="para-content">Round tortoiseshell glasses add definition to the features and soften the eyes of a pear face. This frame is a timeless shape that has endured as a popular choice for different face shapes and is worn as both a casual style or dressed up for date night.</p>
+<p class="para-content">The round tortoiseshell eyeglasses for a pear face are suitable for men, women and all genders as it is a neutrally flattering shape which makes them flexible for summer and winter wear. The smooth, round tortoiseshell glasses for men with a pear face are a good choice as the tortoiseshell pattern adds warmth to the face. Round tortoiseshell glasses for women with a pear face are popular as they are a neutral shape that is elevated by the colour of the tortoiseshell.</p>
+<div class="pro-con">
+<div class="pro-section">
+<h3 class="pro-title">Pros of round tortoiseshell glasses shape for pear faces are listed below.</h3>
+<ul class="pro-list">
+<li>They add width to the top of the face.</li>
+<li>Soften harsh angles on the face which draws the eye away from the wider jawline.</li>
+<li>They bring balance to the features.</li>
+</ul>
+</div>
+<div class="con-section">
+<h3 class="con-title">The con of round tortoiseshell glasses for a pear face is listed below.</h3>
+<p class="con-list">Round tortoiseshell glasses have a busier pattern than a single colour, making them difficult to pair with outfits.</p>
+</div>
+</div>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/aries-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Aries_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/chamberlain-optical.html?color=261"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Chamberlain_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/harris-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Harris_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/aries-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Aries_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/chamberlain-optical.html?color=261"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Chamberlain_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/harris-sunglasses.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Harris_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="square-section">
+<h2 class="subtitle">2. Rectangle Glasses for Pear Faces</h2>
+<p class="para-content">Rectangle glasses frames for pear faces are a <strong>popular design with clean lines, suitable for the most common face shapes.</strong> The rectangle glasses style is flattering because of its sophisticated and classic style that contrasts rounded features.</p>
+<p class="para-content">The rectangular shape for pear faces is wider than it is tall and has simple lines. The angular shape has sharp or rounded edges. This frame is suitable for pear faces because it provides balance for the face, widening the forehead and contrasting the large jaw. Rectangle glasses shape for a pear face changes the proportion by adding width to the top of the face to contrast a heavy jaw.</p>
+<p class="para-content">Rectangle glasses add definition to the features and draw attention to the eyes. The rectangle frame is a classic shape that was popular with iconic Hollywood stars and is worn as a casual style, dressed up for work events and nights out.</p>
+<p class="para-content">Rectangle eyeglasses for a pear face are suitable for men, women and all genders as it is a neutrally flattering shape which makes them flexible for summer and winter wear. The clean, angular rectangle glasses are a good choice for men with pear faces as it is a staple shape in men's fashion. Rectangle glasses are popular for women with pear faces as they are a neutral shape that is elevated by colour choice and styling.</p>
+<div class="pro-con">
+<div class="pro-section">
+<h3 class="pro-title">Pros of rectangle glasses shape for pear faces are listed below.</h3>
+<ul class="pro-list">
+<li>They add width to the top of the face, creating breadth at the narrowest part of the face.</li>
+<li>Add definition to the features which draw the eye away from the wider jawline.</li>
+<li>They bring balance to the features.</li>
+</ul>
+</div>
+<div class="con-section">
+<h3 class="con-title">The con of rectangle glasses for a pear face is listed below.</h3>
+<p class="con-list">Rectangle glasses can be heavy on the nose if they are made with a weighty material and can cause discomfort for some people.</p>
+</div>
+</div>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/windsor-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Windsor_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/glasses/silhouette/brosque-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Brosque_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/glasses/materials/benny-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Benny_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/windsor-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Windsor_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/glasses/silhouette/brosque-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Brosque_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/glasses/materials/benny-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Benny_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="geometric-section">
+<h2 class="subtitle">3. Round Glasses for Pear Faces</h2>
+<p class="para-content">A round glasses frame for pear faces is a <strong>classic shape that brings softness to the face with its smooth curves and circular shape.</strong> The round glasses style is flattering because of its classic and sleek style that contrasts angular features.</p>
+<p class="para-content">The round glasses shape for pear faces is defined by its perfectly circular look, with smooth edges. It is suitable for pear faces because it softens the features of the face with its circular shape. Round glasses shape for a pear face changes the proportion of a pear face by adding width to the top of the face to contrast a larger jaw.</p>
+<p class="para-content">Round glasses add definition to pear face features and soften the eyes. The round frame is a classic shape that has endured as a popular frame for multiple face shapes. The timeless, circular shape is worn as a casual style or dressed up for date night.</p>
+<p class="para-content">The round eyeglasses for a pear face are suitable for men, women and all genders as it is a neutrally flattering shape which makes them flexible for summer and winter wear. The smooth, round glasses for men with pear faces are a good choice as it is a staple shape in men’s fashion. Round glasses for women with a pear face are popular as they are a neutral shape that is elevated by colour choice and material type.</p>
+<div class="pro-con">
+<div class="pro-section">
+<h3 class="pro-title">The pros of round glasses shape for pear faces are listed below.</h3>
+<ul class="pro-list">
+<li>They add width to the top of the face.</li>
+<li>Soften harsh angles on the face.</li>
+<li>Bring balance to the features.</li>
+</ul>
+</div>
+<div class="con-section">
+<h3 class="con-title">The con of round glasses for a pear face is listed below.</h3>
+<p class="con-list">Round glasses sometimes make the rounded parts of the face too prominent, making them an unpopular eyewear choice for some people with pear faces.</p>
+</div>
+</div>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/alya-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Alya_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/glasses/materials/kato-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Kato_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/alexi-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Alexi_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/alya-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Alya_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/kato-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Kato_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/alexi-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Alexi_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="cat-eye-section">
+<h2 class="subtitle">4. Cat-Eye Glasses for Pear Faces</h2>
+<p class="para-content">Cat-eye glasses frames for pear faces refers to a <strong>distinct design with a pointed upper, outer corner of the frame, creating intrigue and lift.</strong> The cat-eye glasses style is flattering because of its playful nature which makes a statement while adding a feminine touch.</p>
+<p class="para-content">The cat-eye shape for pear faces has an exaggerated brow line that mimics the sharp and feline cat-eye with pointed upper corners. This frame is suitable for pear faces because it draws the eye upwards to the smallest part of the face and away from the wide breadth of the jawline. Cat-eye glasses change the proportion of a pear face by adding width to the top of the face to contrast and balance a wide jaw.</p>
+<p class="para-content">Cat-eye glasses add a feminine touch to the features, elongating the eye and emphasising the gaze. The cat-eye frame is a classic shape that remains a staple for many people. The fashionable cat-eye shape is worn as a casual style or easily dressed up for a night out.</p>
+<p class="para-content">The cat-eye eyeglasses for pear faces are suitable for men, women and all gender as they are worn as a bold fashion statement, making them flexible for summer and winter wear. The intriguing, bold cat-eye glasses are a good choice for men with pear faces as they are worn as a strong statement. Cat-eye glasses for women with pear faces are popular as they are perfect for adding a feminine touch to a look and pairing well with makeup and an outfit.</p>
+<div class="pro-con">
+<div class="pro-section">
+<h3 class="pro-title">The pros of cat-eye glasses shape for pear faces are listed below.</h3>
+<ul class="pro-list">
+<li>They draw the eye to the smallest part of the face with the pointed cat eye.</li>
+<li>Add definition and a feminine flair to the features, drawing the eye away from the wider jawline.</li>
+<li>They bring balance to the features.</li>
+</ul>
+</div>
+<div class="con-section">
+<h3 class="con-title">The con of cat-eye glasses for a pear face is listed below.</h3>
+<p class="con-list">The feminine shape of cat-eye glasses can sometimes be too overt for certain consumers with a pear face.</p>
+</div>
+</div>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/mona-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Mona_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/kitty-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Kitty_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/juniper-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Juniper_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/mona-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Mona_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/kitty-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Kitty_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/juniper-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Juniper_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<aside class="context">
+<div class="location" style="border-top: none;">
+<div class="locationText">
+<p class="heading">Find your nearest Oscar Wylee store</p>
+<p class="contents">Come in and see the team for your eye care needs including eye testing.<br><br>We are dedicated to helping answer your questions and finding your perfect pair.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img src="{{media url="wysiwyg/image-folder/glasses/cta/find_a_store.jpg.png"}}" alt="product image" class="locationImage"></div>
+</aside>
+<section class="browline-section">
+<h2 class="subtitle">5. Oval Glasses for Pear Faces</h2>
+<p class="para-content">Oval glasses frames for pear faces are an <strong>understated shape that brings softness to the face with their soft curves and oblong shape.</strong> The oval glasses style is flattering because of its classic and sleek style that contrasts angular features.</p>
+<p class="para-content">The oval shape for pear faces is wider than it is long and has an oblong shape, with smooth edges. This frame is suitable for pear faces because it adds width to the narrow, upper part of the face, creating balance for the features. Oval glasses shape for a pear face changes the proportion of a pear face by adding width to the top of the face to contrast a larger jaw.</p>
+<p class="para-content">Oval glasses add definition to the features and soften the eyes. The oval frame is a classic shape that has endured as a popular frame for numerous face shapes including pear faces. The timeless oval shape is worn as an everyday style or dressed up for date night.</p>
+<p class="para-content">The oval eyeglasses for a pear face are suitable for men, women and all genders as it is a neutrally flattering shape which makes them flexible for summer and winter wear. The smooth, oval glasses for men with pear faces are a good choice as it is an easy shape to style. Oval glasses for women with a pear face are popular as they are a neutral shape that is elevated by the choice of styling and colour.</p>
+<div class="pro-con">
+<div class="pro-section">
+<h3 class="pro-title">The pros of oval glasses shape for pear faces are listed below.</h3>
+<ul class="pro-list">
+<li>They create width at the top of the face.</li>
+<li>Soften any harsh angles on the face, drawing the eye away from the wider jawline.</li>
+<li>They bring balance to the features.</li>
+</ul>
+</div>
+<div class="con-section">
+<h3 class="con-title">The con of oval glasses for a pear face is listed below.</h3>
+<p class="con-list">Oval glasses sometimes make the rounded parts of the face too pronounced, a con for pear faces.</p>
+</div>
+</div>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/parker-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Parker_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/drew-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Drew_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/thomas-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Thomas_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/parker-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Parker_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/drew-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Drew_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/thomas-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Thomas_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="fullrimmed-section">
+<h2 class="subtitle">6. Square Glasses for Pear Faces</h2>
+<p class="para-content">Square glasses frames for pear faces are a<strong> classic choice in shape and a staple design that adds contrast to the soft regions of a face.</strong> The square glasses style is flattering as this trending frame adds an effortlessly smart and sophisticated look with its sharp angles.</p>
+<p class="para-content">The square shape for pear faces is proportional, meaning each side is equal to the other with soft or sharp edges. This frame is suitable for pear faces because it adds intrigue to the top of the face and balances the softness of the jawline. The square glasses shape changes the proportions of a pear face by creating attention at the top of the face to contrast a larger jawline.</p>
+<p class="para-content">Square glasses add intrigue to the features with their proportional shape and defined edges. The square frame is a classic shape that has endured as a popular frame for multiple face shapes and is worn as a casual, everyday staple or dressed up for date night.</p>
+<p class="para-content">The square eyeglasses for a pear face are suitable for both men, women and all genders as it is a neutrally flattering shape which makes them flexible for winter and summer wear. The sharp, angular square glasses for men with a pear face are a good choice as it is an intellectual shape for men who want to be fashionable. Square glasses are popular for women with a pear face as they are a neutral shape that is elevated by the colour choice and type of material such as delicate metal or chunky acetate.</p>
+<div class="pro-con">
+<div class="pro-section">
+<h3 class="pro-title">The pros of square glasses shape for pear faces are listed below.</h3>
+<ul class="pro-list">
+<li>They add width to the top of the face.</li>
+<li>They provide contrast to the softness of a wider jawline.</li>
+<li>Bring balance to the features.</li>
+</ul>
+</div>
+<div class="con-section">
+<h3 class="con-title">The con of square glasses for a pear face is listed below.</h3>
+<p class="con-list">Square glasses have a very distinct shape, making them an unpopular eyewear choice for some people with pear faces.</p>
+</div>
+</div>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/frieda-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Frieda_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/micah-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Micah_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/rae-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Rae_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/frieda-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Frieda_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/micah-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Micah_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/rae-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Rae_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">What are the Best Colour Glasses for Pear Faces?</h2>
+<p class="para-content">The best colour glasses for pear faces <strong>vary from person to person as colours are used to express style and personality, especially for glasses as they are an everyday accessory.</strong> For people with pear faces, glasses that are two-toned with a darker colour on the top and lighter at the bottom help to draw the eye upwards towards the smallest part of the face, creating balance.</p>
+<p class="para-content">The best glasses colours for pear faces can also be chosen by personal preference. This is done by thinking about the colours you wear on a day-to-day basis, which can help you choose glasses that match or complement your colour palette. If you are looking for a more feminine look in your glasses colour, try searching for softer tones like pinks, golds and creams. More masculine colours include muted greens, bright blue and darker hues such as brown and black.</p>
+</section>
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="heading">Due for an eye check-up?</p>
+<p>Book an eye test with our skilled Oscar Wylee optometrists, bulk billed for eligible Medicare card holders.</p>
+</div>
+<div class="book-section-right"><a href="https://www.oscarwylee.com.au/booking"><button class="btnOw">Book an eye test</button></a></div>
+</aside>
+<section class="section-border-bottom">
+<h2 class="subtitle">What are the Best Glasses Styles for Pear Faces?</h2>
+<p class="para-content">The best glasses styles and shapes for pear faces are <strong>round tortoiseshell, rectangle, round, cat-eye, oval and square glasses</strong> due to their ability to balance out the wider jawline and narrower forehead of a pear face.</p>
+<div class="nine-products-section"><button class="pre-btn"> <img src="{{media url="wysiwyg/image-folder/glasses/cta/arrow.png"}}" alt="left
+          arrow image"> </button> <button class="nxt-btn"> <img src="{{media url="wysiwyg/image-folder/glasses/cta/arrow.png"}}" alt="right arrow image"> </button>
+<div class="product-container"><a href="https://www.oscarwylee.com.au/sadie-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Sadie_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"> </a> <a href="https://www.oscarwylee.com.au/evie-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Evie_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a> <a href="https://www.oscarwylee.com.au/sussman-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Sussman_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"> </a> <a href="https://www.oscarwylee.com.au/mumford-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Mumford_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"> </a> <a href="https://www.oscarwylee.com.au/arlia-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Arlia_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a> <a href="https://www.oscarwylee.com.au/heba-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Heba_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"> </a> <a href="https://www.oscarwylee.com.au/crane-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Crane_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a> <a href="https://www.oscarwylee.com.au/glasses/materials/billy-optical.html" class="product-link"> <img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Billy_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"> </a> <a href="https://www.oscarwylee.com.au/glasses/silhouette/nicolas-optical.html " class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Nicolas_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="nine-products-section-mobile"><button class="pre-btn"> <img src="{{media url="wysiwyg/image-folder/glasses/cta/arrow.png"}}" alt="left
+          arrow image"> </button> <button class="nxt-btn"> <img src="{{media url="wysiwyg/image-folder/glasses/cta/arrow.png"}}" alt="right arrow image"> </button>
+<div class="product-container"><a href="https://www.oscarwylee.com.au/sadie-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Sadie_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a> <a href="https://www.oscarwylee.com.au/evie-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Evie_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/sussman-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Sussman_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/mumford-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Mumford_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/arlia-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Arlia_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/heba-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Heba_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/crane-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Crane_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a> <a href="https://www.oscarwylee.com.au/glasses/materials/billy-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Billy_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/nicolas-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Nicolas_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+<div class="sub-div">
+<h3 class="sub-div-title">What are the Women’s Glasses for Pear Faces?</h3>
+<p class="para-content">The best glasses for women with pear faces include <strong>frames that have a feminine shape and ones that draw attention to the top of their faces.</strong> These kinds of frames include cat-eye and round tortoiseshell glasses.</p>
+</div>
+<div class="nine-products-section nine-products-section-gender"><button class="pre-btn"> <img src="{{media url="wysiwyg/image-folder/glasses/cta/arrow.png"}}" alt="left
+          arrow image"> </button> <button class="nxt-btn"> <img src="{{media url="wysiwyg/image-folder/glasses/cta/arrow.png"}}" alt="right arrow image"> </button>
+<div class="product-container"><a href="https://www.oscarwylee.com.au/betty-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Betty_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"> </a> <a href="https://www.oscarwylee.com.au/glasses/materials/callie-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Callie_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a> <a href="https://www.oscarwylee.com.au/celeste-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Celeste_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"> </a> <a href="https://www.oscarwylee.com.au/luca-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Luca_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"> </a> <a href="https://www.oscarwylee.com.au/aleks-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Aleks_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a> <a href="https://www.oscarwylee.com.au/penny-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Penny_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"> </a> <a href="https://www.oscarwylee.com.au/tayla-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Tayla_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a> <a href="https://www.oscarwylee.com.au/mathilde-optical.html" class="product-link"> <img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Mathilde_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"> </a> <a href="https://www.oscarwylee.com.au/ana-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Ana_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="nine-products-section-mobile"><button class="pre-btn"> <img src="{{media url="wysiwyg/image-folder/glasses/cta/arrow.png"}}" alt="left
+          arrow image"> </button> <button class="nxt-btn"> <img src="{{media url="wysiwyg/image-folder/glasses/cta/arrow.png"}}" alt="right arrow image"> </button>
+<div class="product-container"><a href="https://www.oscarwylee.com.au/betty-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Betty_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a> <a href="https://www.oscarwylee.com.au/glasses/materials/callie-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Callie_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/celeste-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Celeste_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/luca-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Luca_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/aleks-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Aleks_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/penny-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Penny_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/tayla-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Tayla_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a> <a href="https://www.oscarwylee.com.au/mathilde-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Mathilde_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/ana-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Ana_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+<div class="sub-div">
+<h3 class="sub-div-title">What are the Men’s Glasses for Pear Faces?</h3>
+<p class="para-content">The best glasses for men with pear faces include <strong>frames that draw attention away from their fuller jawline and upwards to the smallest part of their face. </strong>Rectangle and square glasses are good for men with pear faces because they bring balance to their features and complement their narrow foreheads.</p>
+</div>
+<div class="nine-products-section nine-products-section-gender"><button class="pre-btn"> <img src="{{media url="wysiwyg/image-folder/glasses/cta/arrow.png"}}" alt="left
+          arrow image"> </button> <button class="nxt-btn"> <img src="{{media url="wysiwyg/image-folder/glasses/cta/arrow.png"}}" alt="right arrow image"> </button>
+<div class="product-container"><a href="https://www.oscarwylee.com.au/kent-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Kent_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"> </a> <a href="https://www.oscarwylee.com.au/oliver-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Oliver_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a> <a href="https://www.oscarwylee.com.au/stan-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Stan_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"> </a> <a href="https://www.oscarwylee.com.au/iggy-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Iggy_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"> </a> <a href="https://www.oscarwylee.com.au/zane-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Zane_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a> <a href="https://www.oscarwylee.com.au/wright-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Wright_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"> </a> <a href="https://www.oscarwylee.com.au/glasses/collection/duke-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Duke_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a> <a href="https://www.oscarwylee.com.au/catalog/product/view/id/17533/s/brody-optical/category/2" class="product-link"> <img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Brody_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"> </a> <a href="https://www.oscarwylee.com.au/haskin-optical.html" class="product-link"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Haskin_Product_Block_3x_622x233.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="nine-products-section-mobile"><button class="pre-btn"> <img src="{{media url="wysiwyg/image-folder/glasses/cta/arrow.png"}}" alt="left
+          arrow image"> </button> <button class="nxt-btn"> <img src="{{media url="wysiwyg/image-folder/glasses/cta/arrow.png"}}" alt="right arrow image"> </button>
+<div class="product-container"><a href="https://www.oscarwylee.com.au/kent-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Kent_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a> <a href="https://www.oscarwylee.com.au/oliver-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Oliver_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/stan-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Stan_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/iggy-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Iggy_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/zane-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Zane_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/wright-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Wright_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/glasses/collection/duke-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Duke_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a> <a href="https://www.oscarwylee.com.au/catalog/product/view/id/17533/s/brody-optical/category/2"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Brody-_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"> </a> <a href="https://www.oscarwylee.com.au/haskin-optical.html"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Haskin_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">What are the Best Sunglasses for Pear Faces?</h2>
+<p class="para-content">The best sunglasses for pear faces differ slightly from the best optical glasses as they are worn for different purposes and are used to make a bold fashion statement. The best sunglasses for pear-shaped faces commonly have an interesting design detail in the top corner of the frame or at the top in general which adds width to the hairline and balances out the broad-set jaw. These glasses include <strong>cat-eye, aviator, rectangle and browline sunglasses.</strong> The benefits of the sunglasses that are best for pear faces are listed below.</p>
+<ul class="unordered-list">
+<li><span class="list-title">Cat-eye sunglasses: </span>Add some flair with cat-eye sunglasses which work to draw attention to the upper part of the face and away from a fuller jaw.</li>
+<li><span class="list-title">Aviator sunglasses: </span>Aviator sunglasses are an iconic style that is perfect for pear faces as they are wider on top and narrow at the bottom, bringing balance to the appearance.</li>
+<li><span class="list-title">Rectangle sunglasses: </span>This versatile shape works to complement the features of a pear face by adding width to the top of the face. They are a neutral shape that works with different face shapes.</li>
+<li><span class="list-title">Browline sunglasses: </span>The browline design has a defined top part of the frame which has a bold impact, perfect to balance out the narrow forehead of someone with a pear face.</li>
+</ul>
+<p class="para-content">Choosing the right colours for sunglasses is different from choosing them for optical glasses as the lens is darker and therefore needs to match the colour. Darker sunglasses colours such as black and brown are ideal as they allow the sunglasses to pop on the face and emphasise their enhancing abilities.</p>
+<p class="para-content">There is not much difference between the best sunglasses for men and women, as it comes down to personal preference within the best glasses available for pear faces, those being cat-eye, aviator, rectangle and browline sunglasses.</p>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">What are the Glasses that are Not Good for Pear Face Shapes?</h2>
+<p class="para-content">The glasses that are not good for pear face shapes would be glasses that highlight the wrong features. For pear faces, this would be glasses that accentuate a wider jawline and a narrow forehead, such as oversized and bottom-rimmed glasses. The reasons <strong>oversized and bottom-rimmed glasses</strong> are not recommended for pear-shaped faces are listed below.</p>
+<ul class="unordered-list">
+<li><span class="list-title"> Oversized glasses:</span> These types of glasses add width to the top of the face whereas, for pear-shaped faces, it is better to make them appear smaller and balance out the fuller jawline.</li>
+<li><span class="list-title">Bottom-rimmed glasses:</span> Having a pronounced rim on only the bottom of glasses draws attention downwards but it is best to attract the eye up to the smaller part of a pear face which is the forehead.</li>
+</ul>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">What are the Prices of Glasses for Pear Faces?</h2>
+<p class="para-content">The prices of glasses for pear faces differ from frame to frame. At Oscar Wylee, a standard pair of optical glasses is $169 but you can also grab two pairs from $199 and three pairs from $249.</p>
+<div class="sub-div">
+<h3 class="sub-div-title">Where to Buy Glasses for Pear Faces?</h3>
+<p class="para-content">You can buy glasses for pear faces at Oscar Wylee. We offer a wide range of glasses styles to suit pear faces. <a href="https://www.oscarwylee.com.au">Browse our collection of glasses online</a> or come visit our friendly team in-store where you can try them on and find your perfect pair.</p>
+</div>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">How to Understand Whether you Have a Pear Face or Not?</h2>
+<p class="para-content">To understand whether you have a pear face or not, you'll need to <strong>assess your facial characteristics and measure the dimensions. </strong>When measuring your face, there are four key measurements that determine your face shape. These measurements are the forehead, the cheekbones, the jawline and the length of the face from chin to hairline. If you have a pear face, your jawline is the widest part of your face, the face is longer than it is wide and the cheekbones and forehead is narrower than the jawline.</p>
+<div class="flex-wrapper">
+<div class="flex-left">
+<p class="para-content">To understand whether you have a pear face you should follow the below instructions.</p>
+<ol class="ordered-list">
+<li>Measure the length: Use a measuring device such as a tape measure to estimate the length of your face from the centre of your hairline to the point of the chin.</li>
+<li>Measure the width: Use the same tool to measure the width of the forehead. Do the same for the jawline and the cheekbones.</li>
+</ol>
+<p class="para-content">If all of these measurements starting at the forehead get progressively smaller as you move down the face, it could be an indication that you have a pear face.</p>
+</div>
+<div class="flex-right"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Pear_Face_Diagram.jpg"}}" alt="pear face sketch" class="flex-image"></div>
+</div>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">How to Choose the Best Glasses for Different Face Shapes?</h2>
+<p class="para-content">Choosing the <a href="https://www.oscarwylee.com.au/glasses/face-shapes">best glasses for different face shapes</a> is easy once a person understands the way different glasses complement and balance a face. It is about knowing what the goal is for glasses in terms of what you want them to accentuate and what you want them to draw attention away from. While choosing glasses based on face shape is a helpful process, it is important to choose glasses that make you feel confident and comfortable. There are three main ways to choose the best glasses for your face shape, they are listed below.</p>
+<ol class="ordered-list hightlight-list">
+<li>Look for frames that accentuate your features.</li>
+<li>Find glasses that draw attention away from the areas that are out of balance.</li>
+<li>Choose a pair that you feel confident and excited about.</li>
+</ol>
+</section>
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="heading">Need a new pair of glasses?</p>
+<p>Shop our range of vintage and modern inspired frames, online or in-store.</p>
+</div>
+<div class="book-section-right"><button class="btnOw">Shop glasses</button></div>
+</aside>
+<section class="section-border-bottom">
+<h2 class="subtitle">What are the Other Accessories for Pear Faces Along with Glasses?</h2>
+<p class="para-content">The other accessories for pear faces along with glasses are<strong> earrings, necklaces and hats.</strong> Glasses are a great addition to pear faces, but there are other accessories that work for this face shape including long, drop earrings that help to elongate pear faces and bring balance to the appearance. Long necklaces are worn by people with pear-shaped faces to add the illusion of length and bring balance to their appearance. Wide-brimmed and bigger hats are perfect for pear-shaped faces, these wider hats help to broaden the narrow forehead and draw the eye upwards.</p>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">Does the Best Glasses for Pear Faces Change from Year to Year?</h2>
+<p class="para-content">Just like is true in all fashion, glasses trends change all the time, therefore,<strong> the best glasses for pear faces may change from year to year.</strong> However, the best glasses for pear faces are based on their ability to flatter distinct features, which will not change from year to year. This means the glasses shapes stay the same but aspects such as the colour and material of the glasses may vary. Therefore the best glasses for pear faces in 2022 will most likely be the same in 2023.</p>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">Example Images of People with Glasses for Pear Faces</h2>
+<div class="grid-container example-images grid-container-desktop">
+<div class="grid-item"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Pear_Model2_Explainer.jpg"}}" alt="pear face model picture" class="grid-image"><span>Cat-eye glasses for a pear face</span></div>
+<div class="grid-item"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Pear_Model1_Explainer.jpg"}}" alt="pear face model picture" class="grid-image"> <span>Round glasses for a pear face</span></div>
+<div class="grid-item"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Pear_Model3_Explainer.jpg"}}" alt="pear face model picture" class="grid-image"><span>Square glasses for a pear face</span></div>
+</div>
+<div class="grid-container example-images grid-container-mobile">
+<div class="grid-item"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Pear_Model2_Explainer_Mobile.jpg"}}" alt="pear face model photo" class="grid-image"><span>Cat-eye glasses for a pear face</span></div>
+<div class="grid-item"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Pear_Model1_Explainer_Mobile.jpg"}}" alt="pear face model photo" class="grid-image"> <span>Round glasses for a pear face</span></div>
+<div class="grid-item"><img src="{{media url="wysiwyg/image-folder/glasses/best-glasses-for-pear-face-shape/Pear_Model3_Explainer_Mobile.jpg"}}" alt="pear face model photo" class="grid-image"><span>Square glasses for a pear face</span></div>
+</div>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">What are the Other Face Shapes for Glasses Besides Pear?</h2>
+<p class="para-content">There are five other face shapes for glasses besides pear, these are <strong>oval, square, round, diamond and heart faces.</strong> The qualities of oval, square, round, diamond and heart face as well as the glasses that suit these face shapes are listed below.</p>
+<ul class="unordered-list">
+<li><span class="list-title">Oval:</span> People with oval faces have a softly rounded and evenly proportioned face that works with most types of glasses. The <a href="https://www.oscarwylee.com.au/glasses/face-shapes/oval">best glasses for oval-shaped faces</a> include rectangle, square and cat-eye glasses.</li>
+<li><span class="list-title">Square:</span> A square face has a wide jaw and forehead with a square chin. The <a href="https://www.oscarwylee.com.au/glasses/face-shapes/square">best glasses for square faces</a> should be used to add length to the face with shapes such as round, browline and oval glasses.</li>
+<li><span class="list-title">Round:</span> Round faces are defined by their full cheekbones, proportionate width and length of the face and soft jawline. The glasses that best complement a <a href="https://www.oscarwylee.com.au/glasses/face-shapes/round">round-shaped face</a> include rectangle, geometric and cat-eye glasses.</li>
+<li><span class="list-title">Diamond:</span> Those with a diamond face shape have a tapered chin, prominent cheekbones and a smaller forehead. Oval, rectangle and cat-eye glasses are best suited for <a href="https://www.oscarwylee.com.au/glasses/face-shapes/diamond">diamond-shaped faces</a> to add balance and softness to the features.</li>
+<li><span class="list-title">Heart:</span> A heart-shaped face has a wide forehead with a face that becomes more angled towards the chin which ends in a prominent point. The best glasses for heart shape faces are cat-eye, rectangle and square glasses.</li>
+</ul>
+</section>
+<aside class="context"><!-- Location and booking  -->
+<div class="location" style="border-top: none;">
+<div class="locationText">
+<p class="heading">Find your nearest location</p>
+<p class="contents">Visit our friendly staff in-store and they can assist with all your optometry and glasses needs.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img src="{{media url="wysiwyg/image-folder/glasses/cta/find_a_store.jpg.png"}}" alt="find a location image" class="locationImage"></div>
+<div class="location item1"><img src="{{media url="wysiwyg/image-folder/glasses/cta/book_an_eye_test.jpg.png"}}" alt="book eye
+        test image" class="locationImage">
+<div class="locationText">
+<p class="heading">Are you in need of an eye test?</p>
+<p class="contents">We recommend everyone has a complete eye examination at least once every two years. <br><br>Book yours today with Oscar Wylee.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/booking"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<p>
+<script>
+     window.addEventListener('DOMContentLoaded', () => {
+
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+  const id = entry.target.getAttribute('id');
+  if (entry.intersectionRatio > 0) {
+    document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+  } else {
+    document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+  }
+});
+});
+
+// Track all sections that have an `id` applied
+document.querySelectorAll('section[id]').forEach((section) => {
+observer.observe(section);
+});
+
+});
+
+window.onload = function() {
+document.body.className += ' loaded'
+};
+
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+let containerDimensions = item.getBoundingClientRect();
+let containerWidth = containerDimensions.width+500;
+
+nxtBtn[i].addEventListener('click', () => {
+  item.scrollLeft += containerWidth+3;
+})
+
+preBtn[i].addEventListener('click', () => {
+  item.scrollLeft -= containerWidth;
+})
+})
+  </script>
+</p>

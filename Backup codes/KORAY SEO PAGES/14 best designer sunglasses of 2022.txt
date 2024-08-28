@@ -1,0 +1,965 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+* {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333333;
+  line-height: 1.3em;
+}
+#maincontent {
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  overflow-x: hidden;
+}
+.banner {
+  width: auto;
+  max-height: 450px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+.mobile-banner {
+  display: none;
+}
+.title {
+  border-bottom: 1px solid silver;
+  padding: 2.5rem 3rem;
+  margin: 2.5rem 3rem;
+  margin-top: 0;
+  text-align: center;
+  font-weight: 700;
+}
+.subtitle {
+  padding: 2rem;
+  margin: 2rem 0;
+  border-left: 10px solid #003cac;
+  padding: 1rem;
+  font-weight: 700;
+}
+.italic-title {
+  font-style: italic;
+}
+.italic-wrapper {
+  margin-bottom: 2em;
+}
+.intro-section {
+  margin: 3rem;
+  border-bottom: 1px solid silver;
+}
+.main-section section {
+  margin: 3rem;
+  border-bottom: 1px solid silver;
+}
+.section-border-bottom {
+  border-bottom: 1px solid silver;
+  margin: 3rem;
+}
+.book-section {
+  display: flex;
+  padding-left: 1em;
+  padding-bottom: 2.5em;
+  padding-top: 0em;
+}
+.book-section p {
+  margin-bottom: 1.5em;
+}
+.book-section-left {
+  width: 50%;
+  margin-left: 0;
+  padding-left: 1.5em;
+}
+.book-section-left .heading {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  font-size: 1.8em;
+  padding-bottom: 1em;
+}
+.book-section-right {
+  display: flex;
+  margin: auto auto;
+  width: 30%;
+}
+.book-section-right a {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+.btnOw:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+.btnOw {
+  background-color: #003cac;
+  width: 100%; /* padding: 0px 50%; */
+  border: none;
+  color: #fff;
+  height: 2em;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+  transition: all 1s ease;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.para-content {
+  /* margin-top: 1em; */
+  margin-bottom: 2em;
+  font-size: 16px;
+  text-align: justify;
+}
+.list-title {
+  font-weight: 700;
+}
+.ordered-list,
+.unordered-list {
+  padding-left: 4rem;
+  margin-top: 2em;
+}
+.unordered-list {
+  margin-bottom: 2em;
+}
+.ordered-list li,
+.unordered-list li {
+  margin-bottom: 1.5em;
+  font-size: 16px;
+}
+.pro-con {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+.pro-con li {
+  margin-bottom: 1em;
+}
+.pro-title,
+.con-title,
+.sub-list-title,
+.sub-div-title {
+  border-left: 10px solid #b1b4b2;
+  padding: 0rem 1rem;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+.sub-list-title {
+  font-size: medium;
+  margin-left: 3em;
+}
+.pro-list,
+.con-list {
+  margin-left: 2em;
+}
+.pro-section,
+.con-section {
+  flex: 1 1 0;
+}
+.sub-div {
+  margin-left: 2em;
+}
+.sub-div .para-content {
+  margin-left: 0;
+}
+.grid-image {
+  width: 100%;
+  margin-bottom: 0.3em;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  place-items: center;
+  column-gap: 3em;
+  width: 70%;
+  margin: 2em auto;
+}
+.grid-item {
+  /* text-align: center; */
+  width: 100%;
+}
+.grid-item span {
+  font-style: italic;
+  font-weight: 700;
+  font-size: x-small;
+}
+.grid-text {
+  text-align: center;
+  font-size: x-small;
+  margin-bottom: 2em;
+}
+.grid-title {
+  text-align: center;
+  margin-top: 1em;
+}
+.flex-wrapper {
+  display: flex;
+  margin-bottom: 2em;
+}
+.flex-image {
+  width: 80%;
+  display: flex;
+  margin: 2em auto;
+  max-width: 700px;
+}
+.hightlight-list {
+  font-weight: 600;
+}
+.example-images {
+  row-gap: 2em;
+}
+.product-image {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+.products-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.individual-product {
+  border-right: 1px solid silver;
+  margin-bottom: 2em;
+  display: flex; /* margin-left: 1em; */
+}
+.individual-product:last-child {
+  border: none;
+}
+.h4-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.product-name,
+.product-price {
+  text-align: center;
+}
+.product-button {
+  margin: 0 auto;
+  display: flex;
+  padding: 5px 30px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  margin-top: 1em;
+}
+.two-pairs-price,
+.three-pairs-price {
+  text-align: center; /* margin-top: 2em; */
+  color: white;
+  font-weight: 700;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-right: 1em;
+}
+.two-pairs-price {
+  margin-bottom: 1em;
+}
+.two-pairs-price span,
+.three-pairs-price span {
+  display: block;
+}
+.two-pairs-price {
+  background-color: #003cac;
+}
+.three-pairs-price {
+  background-color: black;
+}
+.from {
+  font-weight: 300;
+  color: white;
+  line-height: 10px;
+}
+.context {
+  padding: 0 3rem;
+}
+.location {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+  padding-top: 0;
+  margin-top: -1em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid silver;
+}
+.location .heading {
+  font-weight: 700;
+  font-size: 1.8em;
+}
+.item1 {
+  border: none;
+}
+.locationText .heading {
+  font-weight: 700;
+  font-size: 1.8em;
+}
+.locationText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1.5em;
+}
+.locationText p {
+  font-size: 16px;
+  margin-top: 2em;
+}
+.locationImage {
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.allButton {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.allButton a {
+  text-decoration: none;
+}
+.allButton .btnOw {
+  width: 70%;
+  margin-left: 0;
+}
+.item1 {
+  padding-top: 2em;
+}
+.products-section-mobile {
+  display: none;
+}
+.nine-products-section-mobile {
+  display: none;
+}
+.nine-products-section {
+  display: flex;
+  overflow-x: scroll;
+}
+.nine-products-section img {
+  width: 30%;
+  border-right: 1px solid silver;
+}
+.nine-products-section img:last-child {
+  border: none;
+}
+.nine-products-section-gender {
+  margin-left: 0;
+}
+.grid-container-mobile {
+  display: none;
+}
+.contents {
+  margin-bottom: 2em;
+}
+.pre-btn,
+.nxt-btn {
+  border: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+  padding: 0;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+  width: 1em;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+.pre-btn:hover {
+  background-color: white;
+  border: none;
+}
+.nxt-btn:hover {
+  background-color: white;
+  border: none;
+}
+.nine-products-section {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+.product-container {
+  /* padding: 0 10vw; */
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.product-container a {
+  display: contents;
+}
+.single-product {
+  width: 50%;
+}
+.border-bottom-para-content {
+  border-bottom: 1px solid silver;
+  padding-bottom: 2em;
+}
+.example-image-wrapper {
+  margin-bottom: 1em;
+  display: flex;
+}
+.example-image {
+  margin: auto;
+  width: 60%;
+}
+.contents-margin {
+  margin-bottom: 1em;
+}
+.heading-margin {
+  margin-top: 1em;
+}
+.contents-margin-2 {
+  margin-bottom: -1em;
+}
+@media screen and (max-width: 480px) {
+  * {
+    line-height: 1.5em;
+  }
+  .contents-margin-2 {
+    margin-bottom: 0;
+  }
+
+  .title {
+    margin: 1em 0.5em;
+    padding: 0em; /* padding-bottom: 0.5em; */
+    white-space: normal;
+    border: none;
+  }
+  .contents {
+    margin-bottom: 2em;
+  }
+  .intro-section,
+  .main-section section {
+    margin: 0 1em;
+  }
+  .ordered-list,
+  .unordered-list {
+    padding-left: 2.5em;
+  }
+  .pro-con {
+    flex-direction: column;
+  }
+  .flex-wrapper {
+    flex-direction: column;
+  }
+  .example-images {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+  .grid-item {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .product-image {
+    width: 100%;
+  }
+  .sub-div {
+    margin-left: 1.2em;
+  }
+  .book-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .book-section-left {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .book-section-left p {
+    margin-right: 1em;
+    text-align: justify;
+    margin-left: 1em;
+  }
+  .book-section-left .heading {
+    text-align: center;
+    margin-top: 1.6em;
+    font-size: 1.8em;
+  }
+  .book-section-right {
+    width: 90%;
+    margin-bottom: 3em;
+  }
+  .desktop-banner {
+    display: none;
+  }
+  .mobile-banner {
+    display: block;
+    max-width: 100%;
+    padding: 0;
+  }
+  .products-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .individual-product {
+    border-right: none;
+    border-bottom: 1px solid silver;
+    padding-bottom: 0.5em;
+    margin-bottom: 0;
+    width: 90%;
+  }
+  .grid-image {
+    width: 90%;
+    display: flex;
+    margin: 0px auto;
+  }
+  .location {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4em;
+  }
+  .locationText .heading {
+    text-size: 1.5em;
+    margin-top: 1.9em;
+    margin-bottom: -0.5em;
+  }
+  .allButton .btnOw {
+    width: 100%;
+  }
+  .item1 {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    border: none;
+    padding-bottom: 0;
+    padding-top: 3.5em;
+  }
+  .locationText .heading {
+    text-align: center;
+  }
+  .item1 .locationImage,
+  .item1 .locationText {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+  }
+  .products-section {
+    display: none;
+  }
+  .nine-products-section {
+    display: none;
+  }
+  .individual-product {
+    display: flex;
+    margin: auto auto;
+  }
+  .single-product {
+    width: 100%;
+  }
+  .products-section-mobile {
+    display: block;
+  }
+  .nine-products-section-mobile {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .nine-products-section-mobile::-webkit-scrollbar {
+    display: none;
+  }
+  .nine-products-section-mobile img {
+    width: 80%;
+  }
+  .grid-container-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-item span {
+    display: flex;
+    margin: 0 2em;
+  }
+  .grid-container-desktop {
+    display: none;
+  }
+  .product-container-mobile {
+    display: flex;
+    overflow-x: auto;
+  }
+  .nine-products-section-mobile {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+  }
+  .pre-btn,
+  .nxt-btn {
+    width: 3vw;
+    height: 0;
+    top: 50%;
+  }
+  .example-image {
+    width: 100%;
+  }
+  .mobile-para-margin {
+    margin-bottom: 0;
+  }
+  .contents-margin-2 {
+    margin-bottom: 0;
+  }
+}
+.product-image-single {
+    width: 50%;
+}
+</style>
+<div><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/DesignerSunglasses_Oscar_Wylee_Web_Banner_1640x940.jpg"}}" alt="banner" class="banner desktop-banner"> <img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Designer_Sunglasses_Oscar_Wylee_Mobile_Banner_770x990.jpg"}}" alt="banner" class="mobile-banner"></div>
+<h1 class="title">14 Best Types of Designer Sunglasses: Buyer's Guide</h1>
+<div class="intro-section">
+<p class="para-content mobile-para-margin">The 14 best types of designer sunglasses can be found in this buyer’s guide. Designer glasses are glasses that have been created by specific brands, companies and corporations. The best type of designer glasses and designer sunglasses are sorted by the criteria of how fashionable they are, how recognizable the brand is and by how functional the glasses are for the wearer's purposes. Designer glasses are compared to each other based on reviews, prices, materials and popularity, such as how often they are worn publicly. <br><br>The top selection of model sunglasses and designer sunglasses are cat-eye sunglasses, cat-eye tortoiseshell acetate sunglasses, square sunglasses, aviator sunglasses, polarised aviator sunglasses, polarised round glasses, tortoiseshell oval cat-eye sunglasses, aviator metal sunglasses, studded rectangle sunglasses, oversized cat-eye sunglasses, oval sunglasses, gradient oversized round sunglasses, butterfly sunglasses,and bridge sunglasses. The top selection of designer glasses are listed below.</p>
+<ol class="ordered-list">
+<li><span class="list-title">Cat-eye sunglasses:</span> Cat-eye sunglasses are sunglasses where the frames have a wide browline that taper to a pointed tip at the edges of the rims. Cat-eye sunglasses are the best type of designer glasses because they perfectly compliment every face shape and have a wide variety of styles and designer specific versions.</li>
+<li><span class="list-title">Cat-eye tortoiseshell acetate sunglasses:</span> Cat-eye tortoiseshell acetate sunglasses are cat-eye sunglasses that are made of the plant based material acetate, and have a colouring and pattern on the frames that resembles the shell of a tortoise. Cat-eye tortoiseshell acetate sunglasses are the 2nd best type of designer glasses because they maintain the fashionable and trendy design of cat-eye sunglasses while being made of a more affordable and durable material.</li>
+<li><span class="list-title">Square sunglasses:</span> Square sunglasses are sunglasses where the measurements of the frame’s width and length are exactly the same or notably similar. Square sunglasses are the 3rd best type of designer glasses because they are vital to compliment rounder and more circular faces, and have a wide variety of design variations that range from classic styles to new and innovative fashions.</li>
+<li><span class="list-title">Aviator sunglasses:</span> Aviator sunglasses are sunglasses with tear shaped lenses and a thin piece of material connecting the lenses together along the frame’s browline. Aviator sunglasses are one of the best sunglasses designs for their classic, timeless style.</li>
+<li><span class="list-title">Polarised aviator sunglasses:</span> Polarised aviator sunglasses are aviator sunglasses that have had a polarised coating applied to them that decrease most sources of glare that the wearer can see. Polarised aviator sunglasses are one of the best sunglasses designs for their good eye protection.</li>
+<li><span class="list-title">Polarised round sunglasses:</span> Polarised round sunglasses are sunglasses where the frames and lenses are circular and round in shape. Polarised round sunglasses also have had a polarised coating applied to them that greatly reduces the amount of glare from bright sources the wearer can see. Polarised round sunglasses are one of the best sunglasses designs for their good eye protection.</li>
+<li><span class="list-title">Tortoiseshell oval cat-eye sunglasses:</span> Tortoiseshell oval cat-eye sunglasses are cat-eye sunglasses that have pointed tips at the edge of the circular shaped rims, in combination with a patterned colouring scheme that resembles a tortoise's shell. Tortoiseshell oval cat-eye sunglasses are one of the best sunglasses for their flattering shape.</li>
+<li><span class="list-title">Aviator metal sunglasses:</span> Aviator metal sunglasses are sunglasses made with metallic materials, have tear shaped lens and a connecting piece at the browline. Aviator metal sunglasses are one of the best sunglasses for their classic design.</li>
+<li><span class="list-title">Studded rectangle sunglasses:</span> Studded rectangle sunglasses are glasses that have frames and lenses that are blocky and even vertically, but longer horizontally and have jewellery studded into the glasses makeup. Studded rectangle sunglasses are one of the best sunglasses designs for their edgy look.</li>
+<li><span class="list-title">Oversized cat-eye sunglasses:</span> Oversized cat-eye sunglasses are cat-eye sunglasses with pointed edges at the tip of the rims and are of a larger size than a standard pair of sunglasses. Oversized cat-eye sunglasses are a great sunglasses design due to their timeless yet edgy style.</li>
+<li><span class="list-title">Oval sunglasses:</span> Oval sunglasses are glasses where the frames and lenses are circular or egg shaped in design. Oval sunglasses are one of the best sunglasses styles due to their simple yet classic design.</li>
+<li><span class="list-title">Gradient oversized round sunglasses:</span> Gradient oversized round sunglasses are glasses that are bigger than a standard pair of sunglasses and have no angles or straight lines in their design, as well as lenses made of two different colour tones. Gradient oversized round sunglasses are a great eyewear choice due to their edgy design.</li>
+<li><span class="list-title">Butterfly sunglasses:</span> Butterfly sunglasses are glasses with a blocky design where the top and bottom tips of the rims flair out in a diagonal direction. Butterfly sunglasses are one of the best sunglasses designs due to their classy design.</li>
+<li><span class="list-title">Bridge sunglasses:</span> Bridge sunglasses are glasses that have a connecting browline on top of the glasses to make it harder for the glasses to fall off. Bridge sunglasses are the best type of designer glasses because they match a specific purpose in function instead of having a focus on fashion trends or imitating a brand style.</li>
+</ol>
+</div>
+<div class="intro-section book-section">
+<div class="book-section-left">
+<p class="heading heading-margin">Prioritise your eye health at Oscar Wylee</p>
+<p class="para-content">Oscar Wylee optometrists perform bulk billed eye tests, with no out-of-pocket expenses for eligible Medicare cardholders.</p>
+</div>
+<div class="book-section-right"><a href="https://www.oscarwylee.com.au/booking"><button class="btnOw">Book an eye test</button></a></div>
+</div>
+<div class="main-section">
+<div class="main-section">
+<section class="rectangle-section">
+<h3 class="subtitle">1. Cat-Eye Sunglasses</h3>
+<p class="para-content">Cat eye sunglasses are sunglasses where the frames are circular, with pointed edges on the tip of the rims and an exaggerated browline. The key features of cat-eye sunglasses are the striking profile they give to the wearer and their timeless design. Cat-eye sunglasses are a trendy style that fit with any fashion choices. <br><br>Cat-eye sunglasses are available in brown, black, blue, clear, green, pink and yellow at Oscar Wylee. Cat-eye sunglasses are available in narrow, wide and medium sizes.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/arabella-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Arabella_1x_Web_OscarWylee_1550x847px.jpg"}}" alt="product-image" class="product-image product-image-single"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/arabella-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Arabella_1x_Mobile_OscarWylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+<p class="para-content">Cat-eye sunglasses are best for the summer season and when a professional and striking appearance is needed. Cat-eye sunglasses should be chosen because they are a vintage design that compliments the wearers profile. Cat-eye sunglasses are one of the best types of designer glasses because the design is vintage, yet is constantly updated with new and trending brands, styles and fashions. A form of cat-eye sunglasses is always in demand. <br><br>Cat-eye sunglasses original frame was made by Altina Schinasi Miranda in 1924. Cat-eye sunglasses have since been worn by celebrities such as Rihanna, Audrey Hepburn and Scarlett Johanson. A standard pair of cat-eye sunglasses at Oscar Wylee start at $169.</p>
+</section>
+<section class="rectangle-section">
+<h3 class="subtitle">2. Cat-Eye Tortoiseshell Acetate Sunglasses</h3>
+<p class="para-content">Cat-eye tortoiseshell acetate sunglasses are sunglasses using the cat-eye sunglasses pointed tips at the edge of the rims, in combination with a plant based material known as acetate. Cat-eye tortoiseshell acetate sunglasses also use a patterned design in the colours and frames that is similar to a tortoise’s shell in its aesthetic. The key features of cat-eye tortoiseshell acetate sunglasses are the durable but affordable material combined with the calming colours of the tortoiseshell pattern and the striking design of the cat-eye frames. <br><br>Cat-eye tortoiseshell acetate sunglasses signature pattern is available in brown, yellow, blue and black variations at Oscar Wylee. Cat-eye tortoiseshell acetate sunglasses are available in small, narrow, medium and wide sizes.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/gaby-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Gaby_1x_Web_OscarWylee_1550x847px.jpg"}}" alt="product-image" class="product-image product-image-single"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/gaby-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Gaby_1x_Mobile_OscarWylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+<p class="para-content">Cat-eye tortoiseshell acetate sunglasses are best for summer weather and casual usage, as the colours and materials create a relaxed, calming appearance. Cat-eye tortoiseshell acetate sunglasses should be chosen for a style that combines a bold and stand out appearance with a casual fashion and aesthetic. Cat-eye tortoiseshell acetate sunglasses are one of the best types of designer glasses because the glasses perfectly blend the appeal of three separate styles, to give the wearers a greater choice of fashion while still being completely functional and ready for everyday usage. Cat-eye tortoiseshell acetate sunglasses share a frame design with cat-eye sunglasses, which are always in demand. <br><br>Cat-eye tortoiseshell acetate sunglasses have been worn by celebrities such as Reese Witherspoon and Meghan Markle. The cost of a standard pair of cat-eye tortoiseshell acetate sunglasses at Oscar Wylee starts at $169.</p>
+</section>
+<section class="rectangle-section">
+<h3 class="subtitle">3. Square Sunglasses</h3>
+<p class="para-content">Square sunglasses are sunglasses where the measurements of the frames width, length and height are almost perfectly equal. Square sunglasses key features are the professional appearance the glasses blocky and bold design gives to the wearer and the way the square frames compliment rounder or more oval face shapes. There are many variations in square sunglasses design, such as less angular rims or curvier lenses. <br><br>Square sunglasses are available in brown, blue, green, grey, pink, yellow, white, clear, silver and gold colours at Oscar Wylee. Square sunglasses are available in x-small, small, narrow and medium sizes.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/mesa.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Mesa_1x_Web_OscarWylee_1550x847px.jpg"}}" alt="product-image" class="product-image product-image-single"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/mesa.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Mesa_1x_Mobile_OscarWylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+<p class="para-content">Square sunglasses are best for a professional and business focused appearance. Square sunglasses should be chosen for official events, black tie events and moments where the wearer would like a striking and firm appearance. Square sunglasses are one of the best types of designer glasses because the frames are an enduring and classic design that every brand, company and corporation has their own unique spin on, creating a wide choice of styles for any wearer's fashion needs. Square sunglasses are not currently in demand. <br><br><span style="font-weight: 400;">The demand for square sunglasses changes by the season and the current trend of the market. Square sunglasses can be seen on celebrities, and models such as George Clooney and Kendal Jenner. The cost of a standard pair of square sunglasses at Oscar Wylee starts at $169. </span></p>
+</section>
+<section class="rectangle-section">
+<h3 class="subtitle">4. Aviator Sunglasses</h3>
+<p class="para-content">Aviator sunglasses are sunglasses with tear shaped lenses and a connecting line of material at the browline, near the top of the rims. Aviator sunglasses key feature is a time proven functionality in the frames. Aviator sunglasses are constantly in demand for their trendy and stunning design that has made them iconic in popular culture. <br><br>Aviator sunglasses are available in grey, black, yellow, clear, gold and silver at Oscar Wylee. Aviator sunglasses are available in wide and medium sizes.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sato-sunglasses.html"><img alt="product-image" src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Sato_Product_Block_1x_1550x847.jpg"}}" class="product-image product-image-single"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sato-sunglasses.html"><img alt="product image" src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Sato_Product_Block_Mobile_596x504_1_.jpg"}}" class="product-image-mobile"></a></div>
+</div>
+<p class="para-content">Aviator sunglasses are best for a cool and dashing style. Aviator sunglasses are suitable for all occasions but are associated with bright summers and social events. Aviator sunglasses are a good choice of designer sunglasses because they are trendy classics that have a variety of design options, such as rimless, plastic or polarised variations that never lose any of the designs' enduring appeal. Aviator sunglasses are one of the best types of designer sunglasses because even though they are fashionable and trendy, the design is still highly functional. <br><br>Aviator Sunglasses are currently in wide demand because of their usage by celebrities and appearances in films. Aviator sunglasses have most famously been used in the Top Gun franchise. Aviator sunglasses have been worn by celebrities such as Tom Cruise, Brad Pitt and Jamie Fox. A standard pair of aviator sunglasses at Oscar Wylee start at $169.</p>
+</section>
+<section class="rectangle-section">
+<h3 class="subtitle">5. Polarised Aviator Sunglasses</h3>
+<p class="para-content">Polarised aviator sunglasses are a pair of standard aviator sunglasses with tear shaped lenses, but additionally the aviator glasses have had a polarised coating applied to the lenses. Polarised aviator sunglasses reduce the amount of brightness and glare the wearer sees from reflective surfaces such as water or cars. <br><br>Polarised aviator sunglasses are available in grey, black, yellow, clear, gold and silver at Oscar Wylee. Polarised aviator sunglasses are available in wide and medium sizes.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/duckworth-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Duckworth_1x_Web_OscarWylee_1550x847px.jpg"}}" alt="product-image" class="product-image product-image-single"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/duckworth-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Duckworth_1x_Mobile_OscarWylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+<p class="para-content"><span style="font-weight: 400;">Polarised aviator sunglasses are best for usage in outdoor sports like fishing or hiking as the polarising effect helps reduce the discomfort of extreme brightness, glares and even enables a fisherman to see through the water's surface. Polarised aviator sunglasses share all the benefits and popularity of a standard pair of aviator glasses, including the glasses association with popular culture and its usage by high profile careers and persons. At Oscar Wylee, we can polarise a pair of square sunglasses as an add-on. </span></p>
+</section>
+<section class="rectangle-section">
+<h3 class="subtitle">6. Polarised Round Sunglasses</h3>
+<p class="para-content">Polarised round sunglasses are sunglasses where the frames and lenses are of a circular shape that lacks noticeable clear angles or linear lines. Polarised round sunglasses have also had a polarised coating applied to them, meaning that polarised round sunglasses reduces the discomfort the eyes feel in bright environments and will outright cut through reflective glares, such as the glares found on the watts surface or the glare from a car window. <br><br><span style="font-weight: 400;">Polarised round sunglasses are available in brown, blue, black, gold, green, grey, silver and yellow at Oscar Wylee. Polarised round sunglasses are available in narrow, medium and wide sizes. </span></p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/bryce-sunglass.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Bryce_1x_Web_OscarWylee_1550x847px.jpg"}}" alt="product-image" class="product-image product-image-single"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/bryce-sunglass.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Bryce_1x_Mobile_OscarWylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+<p class="para-content">Polarised round sunglasses are best for outdoor usage, summer climates and official events. Polarised round sunglasses are a good choice of designer glasses because round sunglasses are a perfect style of frames to emphasise the wearers individuality while still lending the features of the face an air of softness, this effect is especially pronounced on square face shapes. Polarised round sunglasses are one of the best types of designer glasses because they soften the features of the wearer's face, and the face shape will be unaltered by the frame. <br><br><span style="font-weight: 400;">Polarised round sunglasses change in demand depending on the current trend. Polarised round sunglasses have been seen on musicians and models such as John Lennon, Lady Gaga and Gigi Hadid. The cost of a standard pair of round sunglasses at Oscar Wylee starts at $169. At Oscar Wylee, we can polarise your sunglasses as an add-on.</span></p>
+</section>
+<section class="rectangle-section">
+<h3 class="subtitle">7. Tortoiseshell Oval Cat-Eye Sunglasses</h3>
+<p class="para-content">Tortoiseshell oval cat-eye sunglasses are sunglasses where the frames are a cat-eye design, the rims have a pointed tip at the edges, and the lenses are oval shaped, long like a rectangle shape but circular and with minimal straight lines. Tortoiseshell oval cat-eye sunglasses have a pattern on the frames that resembles the appearance and colouring of a tortoise shell. <br><br>Tortoiseshell oval cat-eye sunglasses signature pattern is available in brown, yellow, blue and black variations at Oscar Wylee. Tortoiseshell oval cat-eye sunglasses are available in small, narrow, medium and wide sizes.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/mona-sunglass.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Mona_1x_Web_OscarWylee_1550x847px.jpg"}}" alt="product-image" class="product-image product-image-single"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/mona-sunglass.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Mona_1x_Mobile_OscarWylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+<p class="para-content">Tortoiseshell oval cat-eye sunglasses are best for casual usage and social events where the wearer would like to stand out but have a calm and approachable look. Tortoiseshell oval cat-eye sunglasses are a good choice of designer glasses because the sunglasses combine the striking appeal of cat-eye sunglasses with the signature design of oval lenses and the calm appeal of the tortoiseshell pattern. Tortoiseshell oval cat-eye sunglasses are one of the best types of designer glasses because the sunglasses combine the timeless and limitless fashionability of cat-eye sunglasses with a unique style of lenses and coloured pattern. <br><br>Tortoiseshell oval cat-eye sunglasses are based on the cat-eye sunglasses design, which is always in demand. Tortoiseshell oval cat-eye sunglasses have been worn by celebrities like Selena Gomez and Jennifer Lopez. The cost of a standard pair of Tortoiseshell oval cat-eye sunglasses at Oscar Wylee starts at $169.</p>
+</section>
+<div class="context">
+<div class="location" style="border-top: none;">
+<div class="locationText">
+<p class="heading">Find your nearest Oscar Wylee store</p>
+<p class="contents contents-margin contents-margin-2">Come in and see your local Oscar Wylee team.<br><br>Our staff are available to help with your eye health needs, including eye testing and glasses prescriptions.</p>
+<br><br>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/find-a-store.jpg"}}" alt="product image" class="locationImage"></div>
+</div>
+<section class="rectangle-section">
+<h3 class="subtitle">8. Aviator Metal Sunglasses</h3>
+<p class="para-content">Aviator metal sunglasses are a standard pair of aviator sunglasses with tear shaped lenses inside a frame that has a connecting browline, completely made from a metal material. <br><br>Aviator metal sunglasses are available in gold, black and rose gold at Oscar Wylee. Aviator metal sunglasses are available in wide and medium sizes.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/deus-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Deus_1x_Web_OscarWylee_1550x847px.jpg"}}" alt="product-image" class="product-image product-image-single"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/deus-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Deus_1x_Mobile_OscarWylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+<p class="para-content">Aviator metal sunglasses share all the benefits that make a normal pair of aviator sunglasses one of the best choices for designer glasses. They are fashionable, currently trending and the added appeal of the shining metal colours helps the wearer to stand out with even more vigour. A standard pair of aviator metal sunglasses at Oscar Wylee start at $169.</p>
+</section>
+<section class="rectangle-section">
+<h3 class="subtitle">9. Studded Rectangle Sunglasses</h3>
+<p class="para-content">Studded rectangle sunglasses are sunglasses that have perfectly even width in the vertical design of the frame but are longer horizontally and stretch across the wearer's eyes. Studded rectangle sunglasses also have studded jewellery on the rims of the frames. <br><br>Studded rectangle glasses are not available at Oscar Wylee, however, our Stevie pair of glasses matches the style and flair of studded rectangle glasses perfectly.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/stevie-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Stevie_1x_Web_OscarWylee_1550x847px.jpg"}}" alt="product-image" class="product-image product-image-single"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/stevie-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Stevie_1x_Mobile_OscarWylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+<p class="para-content">Studded rectangle glasses are best for social events and late night parties. Studded rectangle sunglasses are a good choice of designer glasses because they offer the elongating quality of regular rectangle sunglasses to an oval or round face, enabling a more attractive profile for the wearer's features. Studded rectangle sunglasses also add a dimension of opulence and style to the wearers face. Studded rectangle sunglasses are one of the best types of designer sunglasses because they emphasise the culture of fashion and give an air of affluent nonchalance to any person who wears them. <br><br>The demand for studded rectangle sunglasses changes depending on the market for the glasses and sentiments towards overt displays of wealth. Studded rectangle sunglasses have been seen on celebrities such as Kendall Jenner and Paris Hilton. Studded rectangle glasses are not available at Oscar Wylee.</p>
+</section>
+<section class="rectangle-section">
+<h3 class="subtitle">10. Oversize Cat-Eye Sunglasses</h3>
+<p class="para-content">Oversized cat-eye sunglasses are sunglasses where the frames have rims with a strong browline and edges that run into pointed tips. Oversized cat eye sunglasses are a much larger size than a traditional pair of cat-eye sunglasses. <br><br>Oversized cat-eye sunglasses are available in brown, black, blue, clear, green, pink and yellow at Oscar Wylee. Oversized cat-eye sunglasses naturally only come in wide and large sizes.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/aida-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Aida_1x_Web_OscarWylee_1550x847px.jpg"}}" alt="product-image" class="product-image product-image-single"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/aida-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Aida_1x_Mobile_OscarWylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+<p class="para-content">Oversized cat-eye sunglasses are best for any occasion, but are especially good for bright days and long exposure to sunlight, as the added volume of the glasses shields more of the face from UV rays. Oversized cat-eye sunglasses are a good choice of designer glasses because they combine the stunning design of cat-eye sunglasses with the added protection and striking individuality of oversized designs. Oversized cat-eye sunglasses are one of the best types of designer sunglasses because they are not only incredibly fashionable, but they are also safe and fully functional in a way other designer sunglasses may not be. <br><br>Oversized cat-eye sunglasses are based on cat-eye frames, which are always in demand. Oversize cat-eye sunglasses have been worn by celebrities such as Beyonce and Hailey Bieber. A standard pair of oversized cat-eye sunglasses are available at Oscar Wylee starting from $169.</p>
+</section>
+<section class="rectangle-section">
+<h3 class="subtitle">11. Oval Sunglasses</h3>
+<p class="para-content">Oval sunglasses are sunglasses where the lens and frames have a long, thin, yet circular shape in their design. Oval sunglasses often have a wider frame than other standard glasses. <br><br>Oval sunglasses are available in dusk and matte citrus colours at Oscar Wylee. Oval sunglasses are available in wide sizes.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/molly-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Molly_1x_Web_OscarWylee_1550x847px.jpg"}}" alt="product-image" class="product-image product-image-single"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/materials/molly-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Molly_1x_Mobile_OscarWylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+<p class="para-content">Oval sunglasses are best for any occasion and are suitable for any type of face shape, unlike many other choices of glasses. Oval sunglasses are suitable for any event, as the shape of the lens gives the wearer a striking or calm appearance, depending on the colour or material of the frames. Oval sunglasses with metal frames are good for professional events, oval sunglasses with plastic, acetate or wider frames are good for casual usage. Oval sunglasses are one of the best types of designer glasses because many major designers and companies have their own version of the design, without losing the greater appeal of oval sunglasses. <br><br>The demand for oval sunglasses changes depending on popular culture and if a company has released a new version of the design. Oval sunglasses have been seen on celebrities such as Angelina Jolie and Demi Moore. The cost of a standard pair of oval sunglasses at Oscar Wylee starts at $169.</p>
+</section>
+<section class="rectangle-section">
+<h3 class="subtitle">12. Gradient Oversized Round Sunglasses</h3>
+<p class="para-content">Gradient oversized round sunglasses are sunglasses that have circular frames that lack any angles or straight lines and are of a larger size than a standard pair of frames. Gradient oversized round sunglasses have lenses that are two different tones of colour. <br><br><span style="font-weight: 400;">Gradient oversized round sunglasses are not available at Oscar wylee as a default. However the appeal and style of gradient oversized sunglasses can be found in Oscar Wylee’s Perry frames. Perry is available in black, silver, rose gold and tortoiseshell colours at Oscar Wylee. Perry is only available in large and wide sizes.</span></p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/perry-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Perry_1x_Web_OscarWylee_1550x847px.jpg"}}" alt="product-image" class="product-image product-image-single"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/perry-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Perry_1x_Mobile_OscarWylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+<p class="para-content">Gradient oversized round sunglasses are best for outdoor and casual usage, due to the added sun safety they provide and the flair they give to the face. Gradient oversized round sunglasses are a good choice of designer sunglasses because they add a powerful flair of fun and lightheartedness to the wearer's face. Gradient oversized round sunglasses are one of the best designer glasses because the glasses protect a great volume of the face’s skin from UV rays while still adding a wild sense of personality to the wearer’s style. <br><br>The demand for gradient oversized round sunglasses changes by the season and by the time of the year, especially summer. Gradient oversized round sunglasses have been seen on celebrities such as Gigi Hadid and Lady Gaga. The cost of a standard pair of Gradient oversized round sunglasses at Oscar Wylee starts at $169.</p>
+</section>
+<section class="rectangle-section">
+<h3 class="subtitle">13. Butterfly Sunglasses</h3>
+<p class="para-content">Butterfly sunglasses are sunglasses where the frame and lens of the glasses flare out on the top and bottom of the rims, subtly pointing outwards at the edges. <br><br>Butterfly sunglasses are available in black and clear champagne at Oscar Wylee.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/romero-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Romero_1x_Web_OscarWylee_1550x847px.jpg"}}" alt="product-image" class="product-image product-image-single"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/romero-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Romero_1x_Mobile_OscarWylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+<p class="para-content">Butterfly sunglasses are best for a common but private style as the extra volume of the frames covers a greater portion of the face, shielding the wearer’s features and protecting the skin in a wider area. Butterfly sunglasses should be chosen for professional events as the glasses are fashionable but add an air of mystery to the wearer’s profile. Butterfly sunglasses are one of the best types of designer glasses because the style is more recent than many types of glasses and immediately noticeable on the wearer's face. <br><br>The demand for Butterfly glasses changes depending on the trend and style of the year. Butterfly glasses have been seen on celebrities and models such as Romee Strijd and Jennifer Aniston. The cost of a standard pair of butterfly glasses at Oscar Wylee starts at $169.</p>
+</section>
+<section class="rectangle-section">
+<h3 class="subtitle">14. Bridge Sunglasses</h3>
+<p class="para-content">Bridge sunglasses are glasses that have many types of frame designs and lens shapes, but will always have a ‘double bridge’: a secondary bridge line above the nose bridge, where the glasses rest on the nose, similar to the connecting line on a pair of aviator glasses. <br><br>Bridge sunglasses are available in black at Oscar Wylee. Bridge sunglasses are available in wide sizes.</p>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/cullen-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Cullen_1x_Web_OscarWylee_1550x847px.jpg"}}" alt="product-image" class="product-image product-image-single"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/sunglasses/silhouette/cullen-sunglasses.html"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/Cullen_1x_Mobile_OscarWylee_596x504px.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+<p class="para-content">Bridge sunglasses are best for any occasion, depending on the style of lenses and frames the wearer would like to use. Bridge sunglasses are a good choice of designer sunglasses because they stay on the wearer’s face with more ease and the glasses emphasise any styles unique and striking colouring due to the extra browline piece. Bridge sunglasses are one of the best types of designer glasses because they combine functionality with the unique appeal of aviator sunglasses and many other frame and lens types, giving the wearer greater versatility and styles. <br><br>Bridge sunglasses can mimic other glasses styles, making them constantly in demand. Bridge sunglasses have been seen on celebrities such as Tom Cruise and Johnny Depp. The cost of a standard pair of bridge sunglasses at Oscar Wylee starts at $169.</p>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">What are Designer Glasses?</h2>
+<p class="para-content">Designer glasses are glasses that are associated or specifically belong to a particular brand or company. Designer glasses are often made to be more personalised, well fitted or have been created with a higher level of materials than standard glasses. <br><br>Designer glasses' purpose is to provide high quality eye protection in a way that is as aesthetically pleasing, trendy and fashionable as it is functional. Designer glasses must shield the wearer's eyes from UV rays and sun damage as well as match the wearer’s personal style, face and aesthetic.</p>
+<div class="sub-div">
+<h3 class="sub-div-title">What are the Best Designer Glasses for Women?</h3>
+<p class="para-content">The best designer glasses for women are cat-eye sunglasses, aviator metal sunglasses and gradient oversized round sunglasses. The best designer glasses for women, including their best features, are listed below.</p>
+<ul class="ordered-list">
+<li><span class="list-title">Cat-eye sunglasses:</span> Cat-eye sunglasses are the best designer glasses for women because the cat-eye sunglasses style is timeless and eternally fashionable. Cat-eye sunglasses are able to soften the wearer’s facial features thanks to the roundness of the lenses whilst creating a bold and striking presence because of the pointed edges of the rims combined with the strong browline.</li>
+<li><span class="list-title">Aviator metal sunglasses:</span> Aviator metal sunglasses are the best designer glasses for women because the metal materials in colours such as silver or gold combined with the aviators frames distinct and powerful design create a cool and calm aura around the wearer, while still remaining a functional and protective product perfect for shielding from UV rays and sun damage.</li>
+<li><span class="list-title">Gradient oversized round sunglasses:</span> Gradient oversized round sunglasses are the best designer glasses for women because they are unique in design and immediately attract attention while still being able to fit into any fashion trend thanks to the enduring versatility of round frames design. Gradient oversized round sunglasses also cover more of the wearer's face than other pairs of sunglasses, granting better sun protection to more areas of the skin.</li>
+</ul>
+</div>
+<div class="sub-div">
+<h3 class="sub-div-title">What are the Best Designer Glasses for Men?</h3>
+<p class="para-content">The best designer glasses for men are aviator sunglasses, bridge sunglasses and aviator metal sunglasses. The best designer glasses for men, including their best features, are listed below.</p>
+<ul class="ordered-list">
+<li><span class="list-title">Aviator sunglasses:</span> Aviator sunglasses are the best designer glasses for men because of the frames associated with bold and daring professions, as well as the constant usage of aviator sunglasses seen from celebrities and movie characters. Aviator sunglasses for men also provide time tested and proven protection from brightness and UV rays.</li>
+<li><span class="list-title">Bridge sunglasses:</span> Bridge sunglasses are the best designer glasses for men because of the glasses unique and striking design that combines the profile and appearance benefits of aviator sunglasses with a selection of lens types made to suit the wearer’s every need or style</li>
+<li><span class="list-title">Aviator metal sunglasses:</span> Aviator metal sunglasses are the best designer glasses for men because they lend the wearer the same daring and striking profile of a normal pair of aviator sunglasses but emphasise the bold design even further through the use of strong metallic colours like gold or silver.</li>
+</ul>
+</div>
+<div class="sub-div">
+<h3 class="sub-div-title">What are the Best Designer Glasses for Celebrities?</h3>
+<p class="para-content">The best designer glasses for celebrities are glasses that cover a wide section of the face to guarantee a sense of privacy as well as protect sensitive skin from sun and UV damage. The best designer glasses for celebrities are oversized cat-eye sunglasses, polarised round sunglasses and polarised aviator sunglasses. The best designer glasses for celebrities are listed below.</p>
+<ul class="ordered-list">
+<li><span class="list-title">Oversized cat-eye sunglasses:</span> Oversized cat-eye sunglasses are the best designer glasses for celebrities because the cat-eye frames are constantly trendy yet classic in design, ensuring a celebrity is always ahead with their fashion. Oversized cat-eye sunglasses also guarantee privacy and sun and UV ray safety at the exact same time thanks to the glasses oversized design covering a greater surface area of the face.</li>
+<li><span class="list-title">Polarised round sunglasses:</span> Polarised round sunglasses are the best designer glasses for celebrities because the frames style is vintage and incredibly flexible, allowing the glasses to suit any current trend or fashion craze, whilst still keeping to any theme or personal style. Polarised round sunglasses also allow perfect vision in any level of brightness or glare whilst providing protection for the eyes from UV rays and sun damage.</li>
+<li><span class="list-title">Polarised aviator sunglasses:</span> Polarised aviator sunglasses are the best designer glasses for celebrities because aviators are a vintage design that has never lost style or modern trendiness, letting celebrities keep up with the latest styles of fashion. Polarised aviator glasses also block more surface area of the face than other styles of glasses, allowing for greater personal privacy and sun safety, all without having to compromise vision thanks to the polarising effect greatly reducing glare and reflection.</li>
+</ul>
+</div>
+<div class="sub-div">
+<h3 class="sub-div-title">What are the Best Luxury Designer Glasses?</h3>
+<p class="para-content">The best luxury designer glasses are cat eye sunglasses, polarised aviator sunglasses, butterfly sunglasses and tortoiseshell oval cat eye sunglasses. The best luxury designer glasses and their features are listed below.</p>
+<ul class="ordered-list">
+<li><span class="list-title">Cat-eye sunglasses:</span> Cat-eye sunglasses are the best luxury designer glasses because they are a classic design that is still constantly trending, give the wearer a striking and bold look, and are suitable for a wide range of colours and materials without ever losing their appeal. <br><br><i>At Oscar Wylee, the cost of Cat-eye sunglasses starts from $169.</i></li>
+<li><span class="list-title">Polarised aviator sunglasses:</span> Polarised aviator sunglasses are the best luxury designer glasses because the polarised lenses allow the aviator sunglasses to not just shield the wearer’s eyes from UV rays, but they also greatly reduce glare and discomfort from brightness on the eyes. Polarised aviator sunglasses are also fashionable and currently on trend because of the many film stars and celebrities who constantly wear them. <br><br><i>At Oscar Wylee, the cost of Polarised aviator sunglasses starts from $169.</i></li>
+<li><span class="list-title">Butterfly sunglasses:</span> Butterfly sunglasses are the best luxury designer glasses because they are a unique design that is not just fashionable, but functional, thanks to the extra cover the frames wide design gives to the wearer, protecting the sensitive skin of the face from UV rays to a much greater extent than other designs. <br><br><i>At Oscar Wylee, the cost of Butterfly sunglasses starts from $169.</i></li>
+<li><span class="list-title">Tortoiseshell oval cat-eye sunglasses:</span> Tortoiseshell oval cat-eye sunglasses are one of the best luxury designer glasses because they combine the fashionability and trendiness of cat-eye frames with the equally popular and trendy design of tortoiseshell patterns, simultaneously standing out as their own design due to the uniqueness of the oval lenses. <br><br><i>At Oscar Wylee, the cost of Tortoiseshell oval cat-eye sunglasses starts from $169.</i></li>
+</ul>
+<div class="sub-div">
+<h4 class="sub-div-title h4-title">What are the Best Affordable Designer Glasses?</h4>
+<p class="para-content">The best affordable designer glasses are cat-eye tortoiseshell acetate sunglasses, square sunglasses and oval sunglasses. The best affordable designer glasses and the reasons why are listed below.</p>
+<ul class="ordered-list">
+<li><span class="list-title">Cat-eye tortoiseshell acetate sunglasses:</span> Cat-eye tortoiseshell acetate sunglasses are the best affordable designer glasses because the material the glasses are made of is cheap and affordable. The cat-eye frame combined with the tortoiseshell pattern design, lend the glasses the style and fashionability to still compete and be as popular as other, more expensive styles of glasses. <br><br><i>At Oscar Wylee, the cost Cat-eye tortoiseshell acetate sunglasses starts from $169.</i></li>
+<li><span class="list-title">Square sunglasses:</span> Square sunglasses are the best affordable designer glasses because the frame will keep its timeless and classic appeal no matter what the colour and material the frames are made out of, meaning that a lower priced or less expensive style of square frames will still have all the appeal of the most pricey designer brands. <br><br><i>At Oscar Wylee, the cost of Square sunglasses starts from $169.</i></li>
+<li><span class="list-title">Oval sunglasses:</span> Oval sunglasses are the best affordable designer glasses because the frames unique and distinctive design does not lose any appeal when the material is of a less expensive style or quality, and the oval shaped lenses will still add a unique and individual appeal to the wearer’s face no matter what the brand or price of the glasses are.<br><br><i>At Oscar Wylee, the cost of Oval sunglasses starts from $169.</i></li>
+</ul>
+</div>
+</div>
+<div class="sub-div">
+<h3 class="sub-div-title">What are the Best Designer Glasses for Oval Faces?</h3>
+<p class="para-content">The best designer glasses for oval faces are square sunglasses, aviator sunglasses and cat-eye sunglasses. The best designer glasses for oval faces are glasses that emphasise symmetry in the face and add angles to the oval shape. The best designer sunglasses for oval faces are listed below.</p>
+<ul class="ordered-list">
+<li><span class="list-title">Square sunglasses:</span> Square sunglasses are the best designer glasses for an oval face because they add linear angles to the softer features of the oval face, creating a bolder and more striking profile, simultaneously drawing attention to the oval faces' better features, such as the face’s symmetry and length.</li>
+<li><span class="list-title">Aviator sunglasses:</span> Aviator sunglasses are the best designer glasses for an oval face because they contrast the length of an oval face well, drawing attention to the perfect symmetry and balance of an oval face's most attractive features. Additionally, aviator glasses are a lightweight and trendy style of glasses that creates a calm and cool air around the wearer in any style.</li>
+<li><span class="list-title">Cat-eye sunglasses:</span> Cat-eye sunglasses are the best designer glasses for an oval face because the width of the frame’s design creates a perfect contrast with the oval face's length. Cat-eye sunglasses are also a trendy, classic and versatile design that suit any style the wearer desires, adapting to any colour or material flawlessly.</li>
+</ul>
+</div>
+<div class="sub-div">
+<h3 class="sub-div-title">What are the Best Designer Glasses for Rectangle Faces?</h3>
+<p class="para-content">The best designer glasses for rectangle faces are cat-eye sunglasses, polarised round sunglasses and oval sunglasses. The best designer glasses for a rectangle face are glasses that are circular and soften the rectangle faces angular features. The best designer glasses for rectangle faces are listed below.</p>
+<ul class="ordered-list">
+<li><span class="list-title">Cat-eye sunglasses:</span> Cat-eye sunglasses are the best designer glasses for a rectangle face because the lenses of the sunglasses add roundness to the face while the pointed browline of the cat-eye design will add extra dimensions to the curvature of the face. The shape also draws attention away from the face’s length, creating a more attractive appearance.</li>
+<li><span class="list-title">Polarised round sunglasses:</span> Polarised round sunglasses are the best designer glasses for a rectangle face because the circular shape of the frames design will add curvature and a gentle touch to the rectangular face’s harsher features, creating a much softer and more approachable appearance. Polarised round sunglasses will also protect the wearer’s eyes from UV rays and harsh glares without sacrificing any visibility for the wearer.</li>
+<li><span class="list-title">Oval sunglasses:</span> Oval sunglasses are the best designer glasses for a rectangle face because the roundness of the frames design will contrast the linear angles of the rectangular face, adding a touch of gentleness to the rectangle faces' harsh angles. Oval sunglasses for a rectangle face will also contrast the vertical width of the glasses with oval shapes' subtle horizontal width, making the face seem shorter, more symmetrical and more attractive.</li>
+</ul>
+<div class="sub-div">
+<h4 class="sub-div-title h4-title">What are the Best Designer Glasses for Flat Face?</h4>
+<p class="para-content">The best designer glasses for a flat face are glasses that add angles and definition to the faces less prominent cheekbones and general roundness. The best designer glasses for a flat face are square sunglasses, studded rectangle glasses and oversized cat-eye glasses. The best designer glasses for a flat face and the reasons why are listed below.</p>
+<ul class="ordered-list">
+<li><span class="list-title">Square sunglasses:</span> Square sunglasses are the best designer glasses for a flat face because they add clear and equal dimensions to a flat face while also providing a sense of linear angles and sharpness to the flat faces features. Square sunglasses also contrast any roundness that a flat faced wearer’s features may have, creating a more even profile.</li>
+<li><span class="list-title">Studded rectangle sunglasses:</span> Studded rectangle glasses are the best designer glasses for a flat face because the rectangle frames add length, angles and sharp dimensions to the flatter face, corntasting and reducing any roundness. The studded glasses also add further depth and dimension to the flat face’s features, as the distinct studs highlight the added angles.</li>
+<li><span class="list-title">Oversized cat-eye sunglasses:</span> Oversized cat-eye glasses are the best designer glasses for a flat face because the sharp pointed edge of the browline illustrates the features of the flat face more while adding more angles and dimensions to the browline and by extension, the cheekbones. Oversized cat-eye glasses also extend over the edges of a flat face, exaggerating the face's size and contrasting the smaller features of the flat face to create a more attractive profile.</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">How to Choose the Best Designer Glasses?</h2>
+<p class="para-content">The best designer glasses can be chosen by using the following methods: finding the right glasses style for the wearer’s face shape, carefully selecting the frames size to fit the wearer’s face, choosing pair of glasses that best match the wearers purpose and choosing the material that will suit the purpose the wearer wants. The following steps should be followed when choosing the best designer glasses.</p>
+<ol class="ordered-list">
+<li><span class="list-title">Find the right glasses style for the face shape:</span> A person's face shape must be clear and defined before a wearer decides on the right pair of glasses. An oval face shape, for instance, will look better in sharper and blockier types of glasses, such as square frames of rectangle frames. A square face wearing square or rectangle glasses on will have the sharper and more intimidating features of the face too exaggerated, creating a less appealing profile.</li>
+<li><span class="list-title">Select the frame size to fit the face:</span> Face shapes vary greatly from person to person, as can face size. On an oval face, large and oversized glasses flatter the profile's features and draw attention to the perfect symmetry an oval face has. On a square face, that same size of frames may draw attention to a jawline that is too sharp, or make the face seem smaller than it actually is.</li>
+<li><span class="list-title">Choose glasses that match a purpose:</span> Polarised sunglasses may be perfect for outdoor activities or reducing the glare from the sun and the sun's reflection on any surface, but that same pair of glasses may not be suitable for a night event or an occasion that calls for a more professional appearance. The function and purpose for the glasses the wearer has should be decided on before purchasing a pair of designer glasses.</li>
+<li><span class="list-title">Choose the material to suit purpose:</span> Some materials used in the creation of designer glasses are much more delicate and easy to break than others. Acetate frame glasses are cost effective, able to fit polarised or anti glare coated lenses, and are durable and flexible in their design, making them perfect for fishing or other boat activities. A pair of rimless metal aviator sunglasses may be made of material that is easy to bend and break, making them ill suited to outdoor activity.</li>
+</ol>
+<div class="sub-div">
+<h3 class="sub-div-title">Where can I Find the Best Designer Glasses?</h3>
+<p class="para-content">The best designer glasses can be found with a trustworthy or quality brand, either in-stores or through online shopping. Here at Oscar Wylee, we offer high quality designer glasses with a vast array of add-ons and accessories, such as blue light filtering, photochromic and anti-glare coating as well as polarisation.</p>
+</div>
+<div class="sub-div">
+<h3 class="sub-div-title">Why are Designer Glasses Usually Expensive?</h3>
+<p class="para-content">Designer glasses are usually expensive due to a combination of reasons, such as the cost of the materials used to create the glasses, the changes of colours and the demand for a specific set of glasses increasing the price, and added pricing for the brands recognition.</p>
+<div class="sub-div">
+<h4 class="sub-div-title h4-title">Is it Worthwhile to get Designer Glasses?</h4>
+<p class="para-content">It is worthwhile to get designer glasses because the reputation of the designer of the sunglasses, can be an assurance that the product a consumer buys is of an acceptable quality. <br><br>Designer glasses are a worthwhile purchase because the brand or company that made them add to the value of the product, but also give the wearer more options for the glasses they have purchased, such as more stores available to visit for adjustments or repairs, more choices in add-ons or other optical accessories and greater options for payment</p>
+</div>
+</div>
+</section>
+<div class="context"><!-- Location and booking  -->
+<div class="location" style="border-top: none;">
+<div class="locationText">
+<p class="heading">Find an Oscar Wylee store near you</p>
+<p class="contents">Our friendly team can help you shop our range of stylish frames and lenses.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/find_a_store.jpg"}}" alt="find a location image" class="locationImage"></div>
+<div class="location item1"><img src="{{media url="wysiwyg/14-Best-Types-of-Designer-Sunglasses/book-an-eye-test.jpg"}}" alt="book eye test image" class="locationImage">
+<div class="locationText">
+<p class="heading">Book an eye test at Oscar Wylee</p>
+<p class="contents">If you are an eligible Medicare Card holder, Oscar Wylee will bulk bill your eye test.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/booking"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+</div>
+</div>
+</div>
+</div>

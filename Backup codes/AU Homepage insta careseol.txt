@@ -1,0 +1,27 @@
+<style>
+.carousel-form__content {
+    background: #f7f5f2;
+}
+
+@media (max-width: 480px) {
+.carousel-form__content {
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+.content-title {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+}
+</style>
+<div class="carousel-form">
+<div class="carousel-form__content">
+<div class="content-title">Foll<img src="{{media url="wysiwyg/instagram-carousel/OW_LOGO_SHORT_BLK.png"}}" alt="ow_logo" style="width: 5rem;"> us on Instagram!<br><span style="display: flex; align-items: center; justify-content: center;"><img src="{{media url="wysiwyg/instagram-carousel/Instagram-Icon.png"}}" alt="Instagram_Icon" style="width: 2.3rem; margin-top: 3px;">&nbsp;@oscarwylee</span></div>
+<div class="loading-progress">
+<div class="loader"></div>
+</div>
+<div class="content-carousel"><img class="image_carousel image" src="{{media url="wysiwyg/instagram-carousel/01_new.jpg"}}" alt="ow-instagram-image"> <img class="image_carousel image" src="{{media url="wysiwyg/instagram-carousel/02_new.jpg"}}" alt="ow-instagram-image"> <img class="image_carousel image" src="{{media url="wysiwyg/instagram-carousel/03_new.jpg"}}" alt="ow-instagram-image"> <img class="image_carousel image" src="{{media url="wysiwyg/instagram-carousel/04_new.jpg"}}" alt="ow-instagram-image"> <img class="image_carousel image" src="{{media url="wysiwyg/instagram-carousel/05_new.jpg"}}" alt="ow-instagram-image"> <img class="image_carousel image" src="{{media url="wysiwyg/instagram-carousel/06_new.jpg"}}" alt="ow-instagram-image"> <img class="image_carousel image" src="{{media url="wysiwyg/instagram-carousel/07_new.jpg"}}" alt="ow-instagram-image"> <img class="image_carousel image" src="{{media url="wysiwyg/instagram-carousel/08_new.jpg"}}" alt="ow-instagram-image"> <img class="image_carousel image" src="{{media url="wysiwyg/instagram-carousel/09_new.jpg"}}" alt="ow-instagram-image"> <img class="image_carousel image" src="{{media url="wysiwyg/instagram-carousel/10_new.jpg"}}" alt="ow-instagram-image"></div>
+<div class="content-title" style="padding-top: 2rem; padding-bottom: 6.5rem;">Find your frame inspo and use <b>#oscarwylee</b> to be featured</div>
+</div>
+</div>

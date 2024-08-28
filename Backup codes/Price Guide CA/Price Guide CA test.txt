@@ -1,0 +1,426 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+h3,h4{
+    color: white;
+}
+* {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //color: #333333;
+  line-height: 1.5em;
+}
+#maincontent {
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.unique-wrapper{
+    width: 75%;
+    margin: auto;
+}
+
+.blue-block {
+    align-items: center;
+    justify-content: center;
+    background-color: #003cac;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    margin-top: 5em;
+
+}
+.blue-block .block-center {
+  margin: auto;
+  margin-left: 30px;
+}
+.blue-block h2,
+.blue-block .para-content {
+  margin: 0;
+}
+.blue-block h2 {
+  margin-bottom: 10px;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0px;
+}
+.blue-block .para-content {
+  color: white;
+  margin-top: 1.2em;
+}
+.price-wrapper h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
+}
+.price-wrapper p {
+  font-size: 17px;
+}
+.para-content {
+  font-size: 17px;
+  margin-bottom: 2em;
+  line-height: 2em;
+}
+.sv-price div {
+  margin-bottom: 2em;
+  font-size: 17px;
+  line-height: 2em;
+}
+.sv-price div p {
+  font-size: 25px;
+}
+.inpage-image {
+  width: 75%;
+  border-radius: 15px;
+  margin-bottom: 1em;
+}
+.btnOw:hover {
+      background-color: black;
+      box-shadow: none !important;
+      color: #ffffff !important;
+      border: none !important;
+    }
+    .btnOw {
+      background-color: #003cac;
+      width: auto; /* padding: 0px 50%; */
+      border: none;
+      color: #fff;
+      height: 2em;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      cursor: pointer;
+      transition: all 1s ease;
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1em;
+    }
+.sv-div a{
+    text-decoration: none;
+}
+.sv-div-border {
+  border-bottom: 2px solid black;
+}
+.sv-div .multi-title {
+  font-weight: 400;
+}
+.multi-div .para-title {
+  font-size: 25px;
+  margin-bottom: 0.5em;
+}
+.text-box {
+  border: 4px solid #003cac;
+  border-radius: 15px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 1.5em;
+}
+.text-box h3 {
+  margin-top: 1em;
+}
+.small-image {
+  width: 20%;
+  display: block;
+  padding-top: 1em;
+}
+.medium-image {
+  width: 50%;
+}
+
+.price-wrapper h3 {
+color: #333333;
+}
+
+/* Banners */
+.banner-container {
+display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+}
+
+        .banner {
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        }
+
+        .bannerMob {
+            display: none;
+        }
+ .banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 89px;
+}
+
+@media (max-width: 480px) {
+            .banner {
+                display: none;
+            }
+
+            .bannerMob {
+                display: flex;
+                width: 100%;
+            }
+ .banner-text {
+        top: 40%;
+       font-size: 33px;
+      }
+
+.inpage-image {
+width: 100%;
+}
+
+.unique-wrapper {
+    width: 90%;
+}
+}
+
+.copyright {
+    background-color: #8f8f8f;
+    color: #fff !important;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 25px 50px;
+}
+</style>
+<div class="banner-container"><img class="banner" src="{{media url="wysiwyg/price-guide/IMG_5987_edited.jpg"}}" alt="Blue Filter"> <img class="bannerMob" src="{{media url="wysiwyg/price-guide/IMG_5989-1-1.jpg"}}" alt="Blue Filter">
+<h1 class="banner-text">Price Guide</h1>
+</div>
+<div class="unique-wrapper">
+<section class="price-wrapper">
+<div class="blue-block" style="margin-top: 2rem;">
+<div class="block-center">
+<h2>Opticals</h2>
+<p class="para-content">Find out more about our pricing for frames and lenses.</p>
+</div>
+</div>
+<div class="sv-div sv-div-border">
+<h3>Single vision lenses</h3>
+<p class="para-content">Includes 1.50 index single vision lenses, hard coating and UV protection.<br>Both options are perfect for near-sightedness or distance correction.</p>
+<div class="sv-price">
+<div>
+<p>• 1 pair of optical glasses from<strong> $169</strong></p>
+Includes standard single vision lenses.</div>
+<div>
+<p>• 2 pairs of optical glasses from <strong>$199</strong></p>
+Includes standard single vision lenses.</div>
+<div>
+<p>• 1 pair of premium optical glasses from <strong>$199</strong></p>
+Includes standard single vision lenses. <br>Frames from OW Canada Iconic range.</div>
+<div>
+<p>• 2 pairs of premium optical glasses from <strong>$249</strong></p>
+Includes standard single vision lenses. <br>Frames from OW Canada Iconic range.</div>
+</div>
+<img src="{{media url="wysiwyg/price-guide/IMG_5070-2-1536x1006.jpeg"}}" alt="" class="inpage-image">
+<p class="para-content">Prices are for complete glasses.<br>Second pair must be the same prescription.</p>
+<a href="https://oscarwylee.ca/glasses/"> <button class="btnOw">Explore Glasses</button></a></div>
+<div class="sv-div">
+<h3>Multifocal lenses</h3>
+<p class="para-content">Multifocal lenses are made up of three different prescriptions, at Oscar Wylee Canada we offer a range of standard, premium and elite choices.</p>
+<p class="para-content">Choose your type of multifocal lenses from the options below – at an additional cost on top of the Standard Optical Glasses prices, if required.</p>
+<div class="multi-div">
+<h3 class="multi-title">Multifocal Standard</h3>
+<p class="para-title">• 1 pair for <strong>$0</strong></p>
+<p class="para-title">• 2 pair for <strong>+$50</strong></p>
+<p class="para-content">Some soft focus at the edge of vision. Ideal for those who only wear their glasses occasionally and those on a budget.</p>
+<img src="{{media url="wysiwyg/price-guide/Screen-Shot-2021-04-19-at-4.33.42-pm-2.png"}}" alt="" class="inpage-image"></div>
+<div class="multi-div">
+<h3 class="multi-title">Multifocal Premium</h3>
+<p class="para-title">• 1 pair for <strong>$100</strong></p>
+<p class="para-title">• 2 pair for <strong>+$150</strong></p>
+<p class="para-content">Wider field of clear vision. Ideal for those who wear glasses in the office, especially for computer work.</p>
+<img src="{{media url="wysiwyg/price-guide/Screen-Shot-2021-04-19-at-4.55.03-pm.png"}}" class="inpage-image" alt=""></div>
+<div class="multi-div">
+<h3 class="multi-title">Multifocal Elite</h3>
+<p class="para-title">• 1 pair for <strong>$200</strong></p>
+<p class="para-title">• 2 pair for <strong>+$250</strong></p>
+<p class="para-content">Very wide view of clear vision. All-rounder lens for modern lifestyle demands, a lot of computer work and presentations.</p>
+<img src="{{media url="wysiwyg/price-guide/Screen-Shot-2021-04-19-at-5.07.35-pm.png"}}" class="inpage-image" alt=""></div>
+<p class="para-content">Click below to find out more information on multifocal lenses.</p>
+<a href="https://oscarwylee.ca/multifocal-lenses"><button class="btnOw">Read More</button></a></div>
+</section>
+<section class="price-wrapper">
+<div class="blue-block">
+<h2 class="block-center">Sunglasses</h2>
+</div>
+<div class="sv-div">
+<h3>Non-prescription</h3>
+<p class="para-content">Includes any in-store non-prescription sunglasses.<br>All lenses inclusive of Hard Coat + UV Protection.</p>
+<div class="sv-price">
+<div>
+<p>• 1 pair of non-prescription sunglasses: <br>*Frames made from Acetate from <strong>$129</strong><br>*Frames made from Metal from <strong>$169</strong></p>
+</div>
+<div>
+<p>• 2 pairs of non-prescription sunglasses from <strong>$199</strong></p>
+Any in-store non-prescription glasses.</div>
+<div>
+<p>• 2 pairs of prescription sunglasses from <strong>$259</strong></p>
+Includes tinted single vision lenses. <br>Polarized lenses available at additional cost.</div>
+</div>
+<img src="{{media url="wysiwyg/price-guide/IMG_7342_sun-1536x1024.jpeg"}}" alt="" class="inpage-image"></div>
+<div>
+<h3>Prescription</h3>
+<p class="para-content">Includes tinted single vision lenses.<br>Polarized lenses available at additional cost.</p>
+<div class="sv-price">
+<div>
+<p>• 1 pair of prescription sunglasses from <strong>$199</strong> <br>• 2 pairs of prescription sunglasses from <strong>$259</strong></p>
+</div>
+</div>
+<p class="para-content">Available Filter categories:</p>
+<div>
+<p class="para-content"><strong>Filter category 2</strong> (Standard tinted lenses):<br>General purpose sunglasses. Good protection against sunglare.<br>Good UV Protection. Not suitable for driving in twilight, at night or under dull conditions.</p>
+<div>
+<p class="para-content"><strong>Filter category 3 </strong>(Polarized lenses):<br>General purpose sunglasses. High protection against sunglare. <br>Good UV Protection. Not suitable for driving in twilight, at night or under dull conditions.</p>
+</div>
+</div>
+<a href="https://oscarwylee.ca/sunglasses"><button class="btnOw">Explore Sunglasses</button></a></div>
+</section>
+<section class="price-wrapper">
+<div class="blue-block">
+<h2 class="block-center">Lenses &amp; coatings</h2>
+</div>
+<div class="sv-div">
+<h3>Popular lens upgrade</h3>
+<p class="para-content">Add-on prices are for 1 pair of glasses. Use your health fund benefits, ask for a quote. Some options may not be available in online store.</p>
+<div class="sv-price">
+<div>
+<p>• Anti glare <strong>+$20</strong></p>
+Reduces reflection for clearer vision. <br>Scratch resistant.</div>
+<div>
+<p>• Anti glare premium <strong>+$30</strong></p>
+Reduces reflection for clearer vision. <br>Scratch and smudge resistant, anti-static.</div>
+<div>
+<p>• Blue Light Filter* <strong>+$50</strong></p>
+Blocks blue light from mobile and desktop screens. <br>Includes free Anti-glare coating.</div>
+</div>
+<div class="text-box">
+<p style="font-weight: bold;">What is blue light?</p>
+<p>Blue light is emitted from digital screens such as your phone and computer. Long hours of blue light exposure could be harmful to your eyes as it may cause eye strain and disrupt your sleep quality.</p>
+<br>
+<p style="font-weight: bold;">Who needs Blue Light Filter?</p>
+<p>If your career or lifestyle relies heavily on using digital devices, we recommend using our Blue Light Filter for your glasses.</p>
+<br>
+<p style="font-weight: bold;">Find out more</p>
+<p>Please visit our <a href="https://oscarwylee.ca/blue-light-glasses/">Blue Light Glasses</a> page.</p>
+</div>
+<p>*Please note the Blue Light Filter is only available for clear lenses and is unavailable for sunglasses due to the tint. Our BLF is only available in standard 1.5, 1.6 and 1.67 index lenses.</p>
+</div>
+<div>
+<h3>Thinner &amp; lighter lenses</h3>
+<div class="sv-price">
+<div>
+<p>• Thin &amp; Light lens* +<strong>$80</strong></p>
+1.6 index up to 35% thinner/lighter.</div>
+<div>
+<p>• Super Thin &amp; Light lens* +<strong>$120</strong></p>
+1.67 index up to 50% thinner/lighter.</div>
+<div>
+<p>• Ultra Thin &amp; Light lens* +<strong>$200</strong></p>
+1.74 index up to 60% thinner/lighter.</div>
+</div>
+<p>*Aspheric lenses which include free anti-glare coating</p>
+<img src="{{media url="wysiwyg/price-guide/Thin_Lighter-02-1-1536x756.jpeg"}}" alt="" class="inpage-image  medium-image"></div>
+<div>
+<h3>Sun protection</h3>
+<div class="sv-price">
+<div>
+<p>• Tinted lenses +<strong>$30</strong></p>
+Choose from 7 available colours. <br>Includes free Anti-glare coating. <img src="{{media url="wysiwyg/price-guide/Thin_Lighter-03.jpeg"}}" alt="" class="inpage-image small-image"></div>
+<div>
+<p>• Polarized +<strong>$100</strong></p>
+High UV Protection. <br>Includes free Anti-glare coating. <img src="{{media url="wysiwyg/price-guide/Thin_Lighter-03-1.jpeg"}}" alt="" class="inpage-image small-image"></div>
+<div>
+<p>• Photochromic lenses +<strong>$100</strong></p>
+Changes from clear to darker opacity to adapt to light conditions. Transitions brand lens available for +$200. <br><i>All photochromic lenses are spheric lenses.</i> <img src="{{media url="wysiwyg/price-guide/Thin_Lighter-03-copy.jpeg"}}" alt="" class="inpage-image small-image"></div>
+</div>
+</div>
+</section>
+<section class="price-wrapper">
+<div class="blue-block">
+<h2 class="block-center">Frames</h2>
+</div>
+<div class="sv-div">
+<h3>Traditional hand assembly, designed in-house</h3>
+<p class="para-content">We believe that good design isn’t just about looking good, it’s about seeing clearly too. That’s why we use high-quality lenses for all our glasses, complete with anti-scratch and UV proof coatings.</p>
+<img src="{{media url="wysiwyg/price-guide/IMG_6479-1536x1024.jpeg"}}" alt="" class="inpage-image">
+<div class="sv-price">
+<h3>Frame Styles</h3>
+<div>
+<p>• Acetate</p>
+Also known as cellulose acetate, these frames are traditionally hand-crafted by skilled craftsmen, with each frame passing through numerous stages of production and are hand-polished to ensure a glorious lustre. Our collections are a mix of Italian Mazzucchelli and Chinese-crafted plant-based plastic, which is both durable and light-weight.</div>
+<div>
+<p>• Stainless-Steel</p>
+As part of our durable frame family, some of our most popular styles such as Kato, are now in stainless steel. These frames are hypoallergenic, corrosion resistant, light weight, and not sensitive to temperature changes.</div>
+<div>
+<p>• Titanium</p>
+Our titanium frames are durable, corrosion resistant, lightweight, hypo-allergenic, with fixed spring hinges. Much of our titanium is sourced from Japan.</div>
+<div>
+<p>• TR/Ultem material</p>
+We love our Ultem frames! They are super comfortable and very durable. Our Ultem frames are heat resistant, with high dielectric strength and flexible. The material is widely used in medical and chemical instruments. It is currently available in a range of colours for both matte and gloss finish.</div>
+</div>
+</div>
+</section>
+<section class="price-wrapper">
+<div class="blue-block">
+<h2 class="block-center">Services</h2>
+</div>
+<div class="sv-div">
+<div class="sv-price" style="margin-top: 2em; margin-bottom: 5em;">
+<div>
+<p>• Standard Eye Exam <strong>$90</strong></p>
+Standard eye checkup and prescription update in our Canadian locations.</div>
+<div>
+<p>• Combination Eye Exam <strong>$120</strong></p>
+Standard eye exam and may include Visual Fields Test, Digital Retina Scan, and Pupil Dilation Test as required by the optometrist.</div>
+<div>
+<p>• Frame adjustments <strong>FREE</strong></p>
+Lifetime service with us means you can have your OW glasses adjusted or professionally cleaned, free of charge during the life of your glasses.</div>
+<div>
+<p>• Style advice <strong>FREE</strong></p>
+Our in-store stylists are here to help you find the right pair of glasses or sunglasses. Find us in any of our Canadian locations.</div>
+<div>
+<p>• 1 YEAR Quality Guarantee</p>
+If within 1 year of purchase your glasses have any defects due to material or production faults, we will repair or replace them for you. Free of charge.</div>
+<img src="{{media url="wysiwyg/price-guide/NT_5456-1-1536x1024.jpeg"}}" alt="" class="inpage-image"> <a href="https://oscarwylee.ca/locations"><button class="btnOw">Visit us in store</button></a> <a href="https://oscarwylee.ca/faq"><button class="btnOw">Frequently Asked Questions</button></a></div>
+</div>
+</section>
+</div>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>

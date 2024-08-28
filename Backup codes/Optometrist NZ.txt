@@ -1,0 +1,59 @@
+<div style="text-align: center; margin: 1.5em 0 3em 0; background: #F7ECE1;">
+<h1 style="padding-top: 1em;"><strong>Optometrist vs. Ophthalmologist</strong></h1>
+<p style="max-width: 800px; margin: 0 auto; padding: 0.5em; line-height: 1.7em;">Both professions deal with eye care but have different levels of training and areas of expertise.<br>Understand the differences between the two to ensure that you seek the right advice for your needs.</p>
+<p style="max-width: 800px; margin: 0 auto; padding: 1em;"></p>
+</div>
+<div style="margin: 2em auto 2em auto; max-width: 90%;">
+<h3><strong>What is an Optometrist?</strong></h3>
+<p style="margin-bottom: 2em;">An Optometrist is a primary eye health care professional who provides eye exams and medical eye examinations. Only registered Optometrists regulated by the government under the Health Practitioners Competence Assurance Act can use the title and prescribe glasses and contact lenses. They may also prescribe medications to treat certain eye conditions depending on the severity of the condition. An optometrist is a primary eye care professional who provides comprehensive eye examinations.</p>
+<p></p>
+<h3><strong>What does an Optometrist do?</strong></h3>
+<p style="margin-bottom: 2em;">Most optometrists in New Zealand provide the following services:</p>
+<ul>
+<li style="margin-bottom: 2em;"><strong style="font-size: 1.2em;">Complete eye examinations</strong></li>
+<li style="margin-bottom: 2em;"><strong style="font-size: 1.2em;">Detect &amp; manage certain ocular diseases (e.g. glaucoma/macular degeneration) and prescribe medication if necessary</strong></li>
+<li style="margin-bottom: 2em;"><strong style="font-size: 1.2em;">Prescribes eyeglasses and contact lenses</strong></li>
+<li style="margin-bottom: 2em;"><strong style="font-size: 1.2em;">Conduct contact lens fittings and follow-up exams</strong></li>
+</ul>
+<p style="margin-bottom: 2em;">Also, some of them may commit their method to a specific type of eye care.</p>
+<p style="margin-bottom: 2em;">Let’s say an Optometrist that specialises in children’s vision and vision therapy, they are called Pediatric Optometrist.<br>Some may concentrate on sports vision, dry eyes, myopia management, or giving care to patients with visual disabilities or low vision.</p>
+<hr>
+<h3><strong>Ophthalmologist</strong></h3>
+<p></p>
+<p style="margin-bottom: 2em;">Ophthalmologists are medical doctors/tertiary eye care specialists who identify and manage all eye diseases and are licensed to conduct eye surgery. They have complete training in the medical care and treatment of eye health problems and can also prescribe glasses and contact lenses.</p>
+<p style="margin-bottom: 2em;">An optometrist may refer their patients to an ophthalmologist for further treatment if an eye disease or injury is identified.</p>
+<div>
+<figure class="full-width">
+<div class="row">
+<div class="desktop" style="margin-bottom: 20px;"><img style="width: 100%; margin-top: -15px;" src="{{media url="wysiwyg/2_2.jpeg"}}" alt=""></div>
+<div class="mobile style="><img style="width: 100%; margin-top: -30px;" src="{{media url="wysiwyg/1_1_.jpeg"}}" alt=""></div>
+</div>
+<hr>
+<p></p>
+<h3><strong>When to visit an Optometrist?</strong></h3>
+<p style="margin-bottom: 2em;">As your optometrist is a health professional you should expect to be asked about your age, general health, and questions about your family history of eye diseases e.g. glaucoma, heart disease, diabetes.</p>
+<p>It is important to understand that without proper diagnosis, a number of sight-threatening conditions could develop unknowingly and can damage your eyesight.</p>
+<p>Visit an optometrist for:</p>
+<ul></ul>
+<ul>
+<li style="margin-bottom: 2em;"><strong style="font-size: 1.2em;">A comprehensive eye examination</strong></li>
+<li style="margin-bottom: 2em;"><strong style="font-size: 1.2em;">Vision correction with glasses and contact lenses</strong></li>
+<li style="margin-bottom: 2em;"><strong style="font-size: 1.2em;">A vision screening or test (e.g. Police Exam, NZ Defense Force, Drivers License)</strong></li>
+<li style="margin-bottom: 2em;"><strong style="font-size: 1.2em;">Examine, treat, or refer patients with ocular disease</strong></li>
+<li style="margin-bottom: 2em;"><strong style="font-size: 1.2em;">Follow-up &amp; Co-management care of patients along with an Ophthalmologist</strong></li>
+</ul>
+<p style="margin-bottom: 2em;">If you notice a sudden or significant change in your vision, seek care from an optometrist or ophthalmologist immediately.</p>
+<hr>
+<h3><strong>Eye Tests For Kids</strong></h3>
+<p style="margin-bottom: 2em;">In New Zealand, Well Child/Tamariki Ora service is provided from 4-6 weeks to 5 years of age and includes questions about your child’s vision. There is also a B4 School Check which includes vision screening for amblyopia (lazy eye).</p>
+<p>At Oscar Wylee, we provide eye tests for kids and children. Unless screened out at earlier stages, it is recommended children have an eye test around the age of 5-6 if you have a family history of poor eyesight, short-sightedness, or notice any signs that may indicate your child has difficulty seeing clearly.</p>
+<p style="margin-bottom: 2em;">Please check our <a href="https://www.oscarwylee.co.nz/eye-health/eye-test-info.html">Eye Test Info</a> page to know more about Eye Test for Kids.</p>
+<p></p>
+</figure>
+</div>
+</div>
+<div style="text-align: center; margin: 3em 0 3em 0; background: #f7f5f2; padding-bottom: 10px;">
+<h1><strong><br>What makes Oscar Wylee <br>stand out from other optometrists</strong></h1>
+<p style="max-width: 700px; margin: 0 auto 2em auto; padding-left: 20px; padding-right: 20px;">At Oscar Wylee, we have a passion for helping patients maintain their eye health while showcasing their own way. This is why our loyalty to you is comprehensive eye examinations with the help of our qualified optometrists.</p>
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="59"}}</p>
+</div>

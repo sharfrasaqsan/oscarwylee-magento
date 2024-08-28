@@ -1,0 +1,14 @@
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="121"}}</p>
+<div class="locations-content" style="text-align: center; margin: 5px 0px 10px 0px;"><span style="font-size: 30px; font-weight: 600; color: #000000;">Photochromic Glasses</span></div>
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="122"}}</p>
+<p></p>
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="123"}}</p>
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="124"}}</p>
+<p></p>
+<hr>
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="37"}}</p>
+<p><quillbot-extension-portal></quillbot-extension-portal></p>
+
+photochromic_glasses.html
+Photochromic Glasses | Oscar Wylee
+Oscar Wylee Photochromic Lenses offer crystal clear vision indoors, darken rapidly outdoors, and fade back quickly. Find out more.

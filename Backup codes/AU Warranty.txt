@@ -1,0 +1,330 @@
+<style>
+        h2 {
+
+                /* margin-top: 4.5rem; */
+
+        }
+
+        p {
+                font-size: 16px;
+                margin-bottom: 2rem;
+        }
+
+        ul,
+        ol {
+                font-size: 16px;
+        }
+
+        .table_img {
+                display: flex;
+                flex-direction: column;
+
+        }
+
+        .terms {
+                font-style: italic;
+                font-size: 1.2rem;
+                text-align: left;
+        }
+</style>
+<p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="152"}}</p>
+<h1 style="margin-top: 20px;"><strong>Oscar Wylee Warranty </strong></h1>
+<style>
+    thead {
+        background-color: #1D49B2;
+    }
+
+    .f-row {
+
+        background-color: #9FADDA;
+        text-align: left;
+        padding: 20px;
+        color: #fff;
+        border-bottom: 5px solid;
+    }
+
+
+    .th-head {
+        padding: 16px;
+        color: #fff;
+        border-bottom: 5px solid;
+        border-left: 5px solid;
+        border-right: 5px solid;
+    }
+
+    .th-head-f {
+        padding: 16px;
+        border-top-left-radius: 25px;
+        color: #fff;
+        border-bottom: 5px solid;
+    }
+
+    .th-head-l {
+        padding: 16px;
+        border-top-right-radius: 25px;
+        color: #fff;
+        border-bottom: 5px solid;
+    }
+
+    .body-th-green {
+        background-color: #DCF3E3;
+        border-left: 5px solid white;
+        border-right: 5px solid white;
+        border-bottom: 5px solid white;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+
+    .body-th-red {
+        background-color: #FEE8EA;
+        border-left: 5px solid white;
+        border-right: 5px solid white;
+        border-bottom: 5px solid white;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .table-icons {
+        width: 25px;
+        border-radius: 25px;
+    }
+
+
+    .warranty-table {
+        overflow-x: auto;
+    }
+
+
+    .section-wapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .content-section {
+        width: 70%;
+
+    }
+
+    .image-section {
+        width: 30%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .warranty-icon {
+        width: 50%;
+    }
+
+    /* responcive */
+    @media screen and (max-width: 440px) {
+
+        .section-wapper {
+            flex-direction: column;
+        }
+
+        .content-section {
+            width: 100%;
+        }
+
+
+        .image-section {
+            width: 100%;
+        }
+
+        .f-section {
+            margin-top: 30px;
+        }
+
+
+    }
+</style>
+<div class="warranty-table">
+<table>
+<thead>
+<tr>
+<th class="th-head-f">Oscar Wylee will cover the cost of:</th>
+<th class="th-head">Factory caused damage or faults</th>
+<th class="th-head">Major failure of product *</th>
+<th class="th-head">Unacceptable quality of product *</th>
+<th class="th-head">Damage in Transit</th>
+<th class="th-head">Damage after purchase</th>
+<th class="th-head-l">Wear and tear after purchase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="f-row">Frame Damage</th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-red"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Cross.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-red"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Cross.jpg"}}" alt="tick" class="table-icons"></th>
+</tr>
+<tr>
+<th class="f-row">Lens Damage</th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-red"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Cross.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-red"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Cross.jpg"}}" alt="tick" class="table-icons"></th>
+</tr>
+<tr>
+<th class="f-row">Poor Fitting</th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-red"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Cross.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-red"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Cross.jpg"}}" alt="tick" class="table-icons"></th>
+</tr>
+<tr>
+<th class="f-row">Lifetime Cleaning and adjustment</th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-green"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Tick.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-red"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Cross.jpg"}}" alt="tick" class="table-icons"></th>
+<th class="body-th-red"><img src="{{media url="wysiwyg/warranty/Warranty_Table_Icon_Cross.jpg"}}" alt="tick" class="table-icons"></th>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table_img"><span class="terms">* Customer rights guaranteed under the ACCC Consumer Rights and Guarantees. Consumer rights apply to gifts as well as purchases.</span> <b style="margin-top: 15px; text-align: center;">Be advised, warranty coverage is subject to Oscar Wylee’s and Oscar Wylee stores discretion.</b></div>
+<!-- 12 month product guarantee strat -->
+<section class="f-section">
+<div class="section-wapper">
+<div class="content-section">
+<h2><strong>Our 12 month product guarantee:</strong></h2>
+<h3><strong>100% satisfaction guaranteed.</strong></h3>
+<h3><strong>Problems with vision? No cost repair or replacement 30 days after purchase.</strong></h3>
+<p style="margin-top: 25px;">If within <b>12 months</b> of delivery or purchase of your Oscar Wylee frames or lenses you find possible production faults, such as material issues, defective frames or damage from the products manufacturing, Oscar Wylee satisfaction guarantee offers replacement or repair of your purchase completely free of charge.</p>
+<p>Oscar Wylee also offers a repair or replacement for problems experienced with vision during everyday use for claims made within <b>30 days</b> of delivery.</p>
+<p>Goods damaged in transit also fall under our <b>12 month</b> guarantee and will entitle you to the same actions as a faulty product. If you wish to replace a faulty product that has been discontinued or is no longer available, we may offer you an exchange for a similar product or a refund.</p>
+</div>
+<div class="image-section"><img src="{{media url="wysiwyg/warranty/Warranty_Icon_3.png"}}" alt="warranty" class="warranty-icon"></div>
+</div>
+</section>
+<!-- 12 month product guarantee end -->
+<p></p>
+<!-- Lifetime care policy start -->
+<section>
+<h2><strong>Lifetime care policy</strong></h2>
+<p>Oscar Wylee offers consumers lifetime cleaning and adjustment.</p>
+</section>
+<!-- Lifetime care policy end -->
+<p></p>
+<!-- Confidence Guaranteed start -->
+<section>
+<div class="section-wapper">
+<div class="content-section">
+<h2><strong>Confidence Guaranteed:</strong></h2>
+<h3><strong>Change your mind? Sunglasses exchange available for up to 14 days.</strong></h3>
+<p style="margin-top: 25px;">At Oscar Wylee, we want your absolute satisfaction. If within 14 days of delivery, you change your mind on any of our non-prescription/ over-the-counter sunglasses, we will exchange your product for a new pair of your choice as long as the sunglasses are still in brand new and sellable condition with the original packaging intact.</p>
+<p><strong>We do not offer change of mind returns and exchanges for any other Oscar Wylee product. </strong></p>
+</div>
+<div class="image-section"><img src="{{media url="wysiwyg/warranty/Warranty_Icon_1.png"}}" alt="warranty" class="warranty-icon"></div>
+</div>
+</section>
+<!-- Confidence Guaranteed end -->
+<p></p>
+<!-- Refunds, returns and repairs start -->
+<section>
+<div class="section-wapper">
+<div class="content-section">
+<h2><strong>Refunds, returns and repairs:</strong></h2>
+<p>At Oscar Wylee we want our customers to be completely satisfied with their purchase. We therefore recommend you read our Refund, Return and Repairs Policy prior to you making a purchase from Oscar Wylee, so you are familiar with our policies and your rights under the Australian Consumer Law.</p>
+<p>We also recommend you immediately inspect any goods that we deliver to you or that you collect from an Oscar Wylee store, to ensure you are completely satisfied with the goods, including that the goods are of acceptable quality, and match the description we have provided to you.</p>
+<p>If you have any questions about this policy, please contact our <a href="https://www.oscarwylee.com.au/contact/" style="color: #003cac;">Customer Service</a>.</p>
+</div>
+<div class="image-section"><img src="{{media url="wysiwyg/warranty/Warranty_Icon_4.png"}}" alt="warranty" class="warranty-icon"></div>
+</div>
+</section>
+<!-- Refunds, returns and repairs end -->
+<p></p>
+<!-- How do I make a claim? start -->
+<section>
+<h2><strong>How do I make a claim?</strong></h2>
+<p>To claim with Oscar Wylee, simply return your glasses to your nearest store. Please be sure to have proof of purchase ready and available.</p>
+<p>Any returns will be performed at your own expense.</p>
+</section>
+<!-- How do I make a claim? end -->
+<p></p>
+<!-- What we don’t offer start -->
+<section>
+<div class="section-wapper">
+<div class="content-section">
+<h2><strong>What we don’t offer:</strong></h2>
+<p>Oscar Wylee’s customer guarantees do not apply to any of the following:</p>
+<ul>
+<li>Wear, tear and ageing</li>
+<li>Any modifications or repairs not made by Oscar Wylee</li>
+<li>Damage caused by misuse, neglect or carelessness, such as scratches from dropping or crazing on lenses due to being left in high temperatures</li>
+<li>Damage caused by natural disaster</li>
+<li>Changes to designs and/or colour after purchase</li>
+<li>Purchases or deliveries outside Australia</li>
+<li>Accidental loss or accidental damage</li>
+<li><span>Items or parts that were not purchased from Oscar Wylee (e.g. if only lenses were purchased, then the warranty does not cover any frame used for the lenses; if only frames were purchased, then the warranty does not cover any lenses used in the frames)</span></li>
+<li>Incorrect prescriptions provided to Oscar Wylee from external sources</li>
+<li>We do not cover chipped 1.5 index lenses in half-rim styles purchased. As such, we recommend 1.6 index for greater durability.</li>
+</ul>
+</div>
+<div class="image-section"><img src="{{media url="wysiwyg/warranty/Warranty_Icon_5.png"}}" alt="warranty" class="warranty-icon"></div>
+</div>
+</section>
+<!-- What we don’t offer end -->
+<p></p>
+<!-- Customer rights at Oscar Wylee start -->
+<section>
+<div class="section-wapper">
+<div class="content-section">
+<h2><strong>Customer rights at Oscar Wylee:</strong></h2>
+<h3><strong>Oscar Wylee satisfaction guaranteed.</strong></h3>
+<p>At Oscar Wylee, there are nine guarantees we give to our consumers:</p>
+<ol>
+<li>The product will be of acceptable quality</li>
+<li><span style="font-weight: 400;">The product will fit its specific purpose</span></li>
+<li>The product matches its given description</li>
+<li><span style="font-weight: 400;">The product matches the sample/demonstration model</span></li>
+<li>Oscar Wylee will honour express warranties</li>
+<li>Spare parts and repair facilities will be available for a reasonable time after product purchase</li>
+<li>Guaranteed title to the product or goods</li>
+<li>Undisturbed possession of the product or goods</li>
+<li>No undisclosed security on the product or goods</li>
+</ol>
+<p>These guarantees that cannot be excluded and are in addition to under the Australian Consumer Law. You are entitled to a replacement or refund for a major failure and compensation for any other reasonably foreseeable loss or damage. You are also entitled to have the goods repaired or replaced if the goods fail to be of acceptable quality and the failure does not amount to a major failure.</p>
+</div>
+<div class="image-section"><img src="{{media url="wysiwyg/warranty/Warranty_Icon_6.png"}}" alt="warranty" class="warranty-icon"></div>
+</div>
+</section>
+<!-- Customer rights at Oscar Wylee end -->
+<p></p>
+<!-- Gift cards start -->
+<section>
+<h2><strong>Gift cards:</strong></h2>
+<p>Any amount on gift cards must be spent <span style="font-weight: 400;">in-store or online</span>. Gift cards are not refundable or redeemable for cash or deposits.</p>
+</section>
+<!-- Gift cards end -->
+<p></p>
+<!-- International shipping start -->
+<section>
+<div class="section-wapper">
+<div class="content-section">
+<h2><strong>International shipping:</strong></h2>
+<p>At Oscar Wylee, we use DHL EXPRESS. We recommend you allow up to 2-3 weeks for delivery after your glasses have been shipped.</p>
+<p><strong>Oscar Wylee cannot control or pay for any customs or import duties applied to your package during the importation of the goods to their final destination.</strong></p>
+</div>
+<div class="image-section"><img src="{{media url="wysiwyg/warranty/Warranty_Icon_2.png"}}" alt="warranty" class="warranty-icon"></div>
+</div>
+</section>
+<!-- International shipping end -->
+<p></p>
+<!-- Contact start -->
+<section>
+<h2><strong>Contact</strong></h2>
+<p style="margin-bottom: 5em;">You can contact Oscar Wylee email via the <a style="color: #003cac;" href="/contact/">contact us form</a> or post at 320 Sussex St, Sydney, NSW 2000.</p>
+</section>
+<!-- Contact end -->

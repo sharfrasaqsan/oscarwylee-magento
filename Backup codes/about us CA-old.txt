@@ -1,0 +1,958 @@
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap");
+    
+    #maincontent {
+        padding: 0;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        color: #333333;
+    }
+    
+    .footer-item h4,
+    .footer-item h3,
+    .help-block h3,
+    .copyright span {
+        color: #fff;
+    }
+    
+    body {
+        color: #333333;
+    }
+    
+    *,
+    page-main {
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        /* color: #333333; */
+    }
+    
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 40px;
+    }
+    
+    button:hover {
+        color: white !important;
+    }
+    
+    ul,
+    ol {
+        margin-bottom: 0;
+    }
+    
+    .mainContainer {
+        max-width: 1236px;
+        margin: 0 auto;
+        padding: 0px 10px;
+    }
+    
+    .banner {
+        /* position: relative; */
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .text {
+        max-width: 100%;
+    }
+    
+    .bannerMob {
+        display: none;
+    }
+    
+    
+    
+    .title h1{
+        top: 13%;
+        padding: 2.5rem 2rem 1rem;
+        text-align: center;
+        font-size: 45px;
+        font-weight: 700;
+        /* margin: 0 1rem 2rem 1rem; */
+        /* border-bottom: 1px solid silver; */
+    }
+    
+    
+    .title h2 {
+        text-align: center ;
+        font-weight: 700;
+        padding: 2rem 2rem 1rem !important;
+    }
+    
+    .title p {
+        max-width: 1190px;
+        padding: 2rem 8rem ;
+        text-align: left ;
+        margin-left: auto ;
+        margin-right: auto;
+    }
+    
+    .history{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .history-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section-two{
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    .section-three{
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .section-four{
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section-five{
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .today-section{
+        max-width: 700px;
+        margin: 2rem auto 3rem;
+        text-align: center;
+        /* text-align-last: center !important; */
+    }
+    
+    .today-section p{
+        text-align-last: center !important;
+    }
+    
+    
+    .today-section img,
+    .history-section img{
+        max-width: 350px;
+    }
+    
+    .context {
+        width: calc(100% - 2rem);
+        padding: 0 1rem;
+    }
+    
+    .context h2 {
+        padding: 1rem 0 0 0;
+        font-weight: bold;
+        font-size: 26px;
+    }
+    
+    .context h3 {
+        padding: 2rem 0 0 0;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .context p {
+        padding: 1.5rem 0.5rem 2rem 0.5rem;
+        font-size: 16px;
+        text-align: justify;
+        text-align-last: left;
+    }
+    
+    .jvp-section h2{
+    text-align: center  !important;
+    color: #333333  !important;
+    }
+    
+    .center-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto;
+    }
+    
+    .center-section img{
+    width: 40%;
+    min-width: 350px;
+    }
+    
+    .center-section ul{
+    width: 40%;
+        max-width: 600px;
+       /* text-align: center !important;*/
+        font-size: 16px;
+    
+    }
+    
+    .flexCategory {
+        width: 100%;
+    }
+    
+    .flexCategory h3{
+        text-align: center;
+    }
+    
+    .flexContainer {
+    
+       width: 97%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem auto;
+    }
+    
+    
+    
+    
+    .flexButton {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: 2rem;
+    }
+    
+    .frames{
+        width: 97%;
+    margin: 3rem auto 1rem;
+    }
+    
+    .flex-frames{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .flex-frames a{
+        width: 32.5%;
+        min-width: 300px;
+        margin: 1rem auto;
+    }
+    
+    
+    button2 a {
+        color: #003CAC;
+    }
+    
+    button2 a:hover {
+        color: white;
+    }
+    
+    ul {
+        padding-left: 10px;
+    }
+    
+    
+    .linkTo {
+        color: #003cac;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+    
+    .context ul {
+        width: calc(100% - 4rem);
+        text-align: justify;
+        text-align-last: left;
+        padding: 1.5rem 0 1.5rem 3rem;
+    }
+    
+    
+    .context ul li {
+        padding-bottom: 1rem;
+    }
+    
+    .textMainNobg {
+        /* border-bottom: 1px solid silver; */
+        padding: 2rem 0;
+        margin: 1rem 0;
+    
+    }
+    
+    .textMainNobg h2 {
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .textMainNobg h3 {
+        color: #003CAC;
+        padding: 1rem 0;
+        margin-left: 0.5rem;
+        text-align: left;
+    }
+    
+    
+    .textMainNobg p {
+        max-width: 1160px;
+        padding-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    .textMainNobg ul {
+        margin-left: 3rem;
+    }
+    
+    
+    .flexImage {
+        width: 46%;
+        min-width: 350px;
+        margin: 0;
+    }
+    
+    .flexText {
+        width: 50%;
+        min-width: 350px;
+        padding: 1rem 0.5rem;
+        /* margin: 0 1rem; */
+        align-self: stretch;
+    }
+    
+    .flexText ul {
+        padding-top: 1rem;
+        text-align: left;
+        margin-left: 1rem;
+    }
+    
+    .flexText p {
+        text-align: left;
+    }
+    
+    .flexText img {
+        width: 100%;
+        /* margin-top: 10%; */
+        /* border-radius: 10px; */
+        /* padding-left: 8%; */
+        /* margin-top: 2rem; */
+    }
+    
+    .flexHolder{
+        width: 52.5%;
+        min-width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        /* padding: 1rem 0.5rem; */
+    }
+    
+    .flexHolder img{
+        width: 100%;
+        padding: 0.7rem 0;
+    }
+    
+    .full-width-image{
+        width: 100%;
+    }
+    
+    .product-section{
+        margin: 2rem 0 3rem;
+    }
+    
+    .product-section h2{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .product-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+    }
+    
+    .flex-box{
+        width: 48%;
+        min-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .flex-box img{
+        width: 100%;
+        margin-top: auto;
+    }
+    
+    .flex-box h3{
+        color: #003CAC;
+        padding-left: 0;
+    }
+    .text-align-left{
+        text-align: center !important;
+    }
+    
+    .smallText {
+        font-size: 13px !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .location {
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: max-content;
+        column-gap: 50px;
+        row-gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0rem;
+        /* border-top: 1px solid silver; */
+    }
+    
+    .booking-background{
+        background-color: #eaebeb;
+        margin: 1rem 0 2rem;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    
+    .booking-section{
+        width: 40%;
+        padding: 2rem;
+    }
+    
+    .booking-section h2{
+        padding: 0;
+    }
+    
+    .locationText h2 {
+        font-weight: 700;
+    }
+    
+    
+    .locationText {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .locationText p {
+        font-size: 16px;
+    }
+    
+    .locationImage {
+        width: 100%;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    
+    .allButton {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .allButton a {
+        text-decoration: none;
+    }
+    
+    .btnOw:hover {
+        background-color: black;
+        box-shadow: none !important;
+        color: #ffffff !important;
+        border: none !important;
+    }
+    
+    .btnOw {
+        background-color: #003cac;
+        width: 80%;
+        border: none;
+        color: #fff;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flex-box-one, .flex-box-two{
+        margin-right: 2em;
+    }
+    .afterpay-link{
+        text-decoration: none;
+
+    }
+    
+    @media (max-width: 992px) {
+        .title {
+            width: calc(100% - 2rem);
+            padding: 1.5rem 1rem;
+            margin: 0 0 2rem 0;
+        }
+    
+        .context {
+            width: calc(100% - 3rem);
+            padding: 0 1.5rem;
+        }
+    
+        .flexContainer {
+            margin-bottom: 2rem;
+        }
+    
+        .flexImage {
+            min-width: 280px;
+            margin: 2rem auto;
+        }
+    
+        .flexText {
+            min-width: 300px;
+            margin: 0.5rem auto;
+        }
+        .textMainNobg ul {
+            margin-left: 0rem;
+        }
+    }
+    
+    @media (max-width: 770px) {
+    .product-container{
+        flex-wrap:wrap
+    }
+    .center-section img{
+    width: 100%;
+    min-width: 250px;
+    }
+    .center-section ul{
+        width: 90% !important;
+        min-width: 250px;
+        margin: 1rem auto !important;
+            padding-left: 1.5rem !important;
+        }
+    
+    
+    .flex-frames a{
+        width: 100%;
+    }
+     .text-align-left{
+            text-align: left !important;
+        }
+        
+        .flexHolder img{
+            width: 100% ;
+        }
+        .flexHolder {
+            width: 100% ;
+        }
+    
+        .booking-section {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            min-width: 300px;
+            padding: 1rem;
+        }
+    
+        .booking-section h2{
+            text-align: center;
+        }
+        .history-section{
+        flex-wrap: wrap;
+        }
+        .flexCategory {
+            margin: 1rem 0;
+        }
+    
+        .flexCategory ul{
+            padding-left: 1.5rem !important;
+        }
+    
+        /*breakpoint*/
+        .container-3-col {
+            flex-direction: column;
+        }
+    
+        .title p {
+            padding: 0 1rem 1rem;
+        }
+    
+    
+        .flexImage,
+        .flexText {
+            width: 100%;
+        }
+    
+        .order-copy,
+        .locationImage {
+            order: 1;
+        }
+    
+        .flexImage {
+            margin: 1.5rem auto 0 auto;
+        }
+    
+        .allButton {
+            margin-bottom: 5px;
+        }
+    
+        .btnOw {
+            width: 100%;
+        }
+    
+        .context ul,
+        .context ol {
+            width: calc(100% - 6rem);
+            padding-left: 3rem;
+        }
+    
+        .context {
+            width: calc(100% - 2rem);
+            padding: 0 1rem;
+        }
+    
+    .textMainNobg {
+    padding: 0;
+    margin: 0 ;
+    }
+    
+        .textMainNobg ul {
+            margin-left: 0rem;
+        }
+        .flexHolder{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .flex-box {
+            width: 96%;
+        }
+    
+    
+    }
+    
+    @media (max-width: 480px) {
+        .product-container{
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-box{
+            margin-left: 0;
+            width: 100%;
+        }
+        .flex-box-3{
+            margin-left: 0;
+        }
+        .booking-section {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            min-width: 200px;
+            padding: 1rem;
+        }
+    
+        .flexText .flexTwo {
+            margin-top: 0 !important;
+        }
+    
+        .flexText h2 {
+            margin-bottom: 0 !important;
+            margin-top: 0 !important;
+        }
+    
+        .flexText ul {
+            padding-top: 1rem;
+            margin-left: 0.5rem;
+        }
+    
+        .flexMargin {
+            margin-top: -0.5rem !important;
+        }
+     
+      /*  .textMainNobg {
+            padding: 1rem 0.5rem;
+        } */
+    
+        .textMainNobg h2 {
+            margin-bottom: 1rem !important;
+            margin-left: 0.5rem;
+        }
+    
+        .flexContainer {
+            margin: 1rem auto;
+        }
+    
+        
+    
+        .title {
+            width: calc(100% - 1rem);
+            padding: 1rem 0.5rem;
+            margin: 0 0 1rem 0;
+        }
+    
+        .title h1 {
+            padding: 1rem;
+    margin: 2rem 0;
+        }
+    
+        .mainContainer {
+            padding: 0;
+        }
+    
+        h1 {
+            font-size: 38px;
+        }
+    
+        .flexImage {
+            min-width: 280px;
+            margin: 1rem auto;
+            max-width: 100%;
+        }
+    
+        .flexText {
+            min-width: 210px;
+            margin: 0.5rem auto;
+        }
+    
+        .padding-top-minus{
+            padding-top: 0.5rem;
+        }
+        .padding-top-plus{
+            padding-top: 1.5rem;
+        }
+        .margin-top-plus{
+            margin-top: 1.5rem;
+        }
+    
+        .banner {
+            display: none;
+        }
+    
+        .bannerMob {
+            display: flex;
+            width: 100%;
+        }
+    
+        .border {
+            padding: 1rem 0rem 1rem 0rem;
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+    
+        .context p {
+            width: calc(100% - 1rem);
+            padding: 0.5rem;
+    
+        text-align: justify;
+        text-align-last: left;
+    
+        }
+    
+        .context ul {
+            width: calc(100% - 3rem);
+            padding-left: 0rem;
+            text-align: left !important;
+        }
+    
+        .flexCategory h3{
+            text-align: left;
+            padding-left: 0;
+        }
+    
+        .flex-box p{
+            width: calc(100% - 1rem);
+            padding: 0.5rem;
+        }
+    
+        .flex-box h3{
+            padding-bottom: 0.5rem;
+    text-align: center;
+        }
+    
+        .flexHolder{
+            width: 100%;
+            min-width: 300px;
+        }
+    
+    
+        .today-section img, .history-section img {
+            max-width: 250px;
+        }
+    }
+    
+    @media (max-width: 375px) {
+    
+        /* .flexContainer{
+        max-width: 100%;
+      } */
+        .flexText {
+            min-width: 200px;
+            margin: 0.5rem auto;
+        }
+    
+        .flexImage {
+            min-width: 220px;
+            margin: 0.5rem auto;
+        }
+    
+        .location {
+            width: calc(100% - 1rem);
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            padding: 1rem 0.5rem;
+        }
+    
+        .context ul {
+            width: calc(100% - 3rem);
+            padding-left: 1.5rem;
+        }
+    
+        .locationText>* {
+            margin-bottom: 20px;
+        }
+    
+        .btnOw {
+            width: 100%;
+        }
+    
+        .flexHolder{
+            min-width: 200px;
+        }
+    }
+    
+    @media (max-width: 281px) {
+        .flexText {
+            min-width: 200px;
+            margin: 0.5rem auto;
+        }
+    
+        .flexImage {
+            min-width: 220px;
+            margin: 0.5rem auto;
+        }
+    }
+        </style>
+<div class="mainContainer"><img class="banner" src="{{media url="wysiwyg/about-us/AboutUs_banner_CA_highres-2-e1666247841879.gif"}}" alt="about us oscar wylee" title="about us oscar wylee"> <img class="bannerMob" src="{{media url="wysiwyg/about-us/AboutUs_Mob_CA.jpeg"}}" alt="about us oscar wylee" title="about us oscar wylee">
+<div class="context">
+<div class="title">
+<h1>Our Story</h1>
+<p>Oscar Wylee is a fast-growing eyewear company with a thriving in-store presence across three different countries, Canada, Australia and New Zealand. We are passionate about eye care with fully trained optometrists and high-quality equipment in every store, providing our customers with the best possible experience. <br><br>Our products cover a wide range of styles and sizes for every customer. <br><br>Come visit us for an eye exam where you can browse our affordable, high-quality frames and pick up 2 pairs of glasses from $199.</p>
+<hr class="margin-top-plus">
+<h2>How We Began</h2>
+<p>Oscar Wylee has grown rapidly since it began as an online eCommerce business in 2012. After moving into retail, we have continued on this upward trajectory, providing an exciting range of products and exceptional eye care.</p>
+</div>
+<section class="history">
+<div class="history-section section-one"><img src="{{media url="wysiwyg/about-us/blob-1.png"}}" alt="oscar wylee 2012">
+<p>Launched our first eCommerce and digital platform, offering Australian customers high-quality fashion eyewear without the price tag.</p>
+</div>
+<div class="history-section section-two">
+<p class="order-copy">The first showroom was located inside the 1875 historic building in the heart of Sydney, Australia. For the first time, Oscar Wylee introduced on-site optometrists to provide a complete optical service.</p>
+<img src="{{media url="wysiwyg/about-us/blob-2.png"}}" alt="oscar wylee 2013"></div>
+<div class="history-section section-four">
+<p class="order-copy">We opened our first two New Zealand Oscar Wylee stores in Ponsonby and St Lukes.</p>
+<img src="{{media url="wysiwyg/about-us/blob-4.png"}}" alt="oscar wylee 2019"></div>
+<div class="history-section section-five"><img src="{{media url="wysiwyg/about-us/blob-5.png"}}" alt="oscar wylee 2021">
+<p>Oscar Wylee branched into Canada with our Edmonton store in Alberta.</p>
+</div>
+<div class="today-section"><img src="{{media url="wysiwyg/about-us/blob-6.png"}}" alt=" oscar wylee today">
+<p>We currently have over 135 stores across Australia, New Zealand and Canada with plans to continue expanding our global presence.</p>
+</div>
+</section>
+<hr>
+<div class="textMainNobg">
+<h2>Our Business</h2>
+<div class="flexCategory" style="border-bottom: none;">
+<div class="flexContainer"><img class="flexImage" src="{{media url="wysiwyg/about-us/Optical-_Illo.png"}}" alt="oscar wylee Business">
+<div class="flexText">
+<h3>For the community</h3>
+<p>We are experts in eye care and aim to help all of our customers by providing them with excellent eyewear and information about their eye health.</p>
+<h3>Frames to reflect the people</h3>
+<p>We are proud that Canada is a melting pot of diverse cultures and perspectives which is reflected in our products. Our wide range of frames are designed to appeal to our diverse customers as we believe we have a pair for every person, every mood and every occasion.</p>
+<h3>How We Work</h3>
+<p>We have developed a culture of actively engaged team members who are dedicated to improving the way we do things to give you the best possible eye care experience. We call this endless improvement Kaizen, and it is one of our core values at Oscar Wylee.</p>
+<h3>Cutting out the middleman</h3>
+<p>At Oscar Wylee, we’ve cut out the distributor middleman to bring you designer-style glasses, directly from the source, at affordable prices.</p>
+</div>
+</div>
+<hr>
+<div class="jvp-section">
+<h2>We are passionate about:</h2>
+<div class="center-section">
+<ul>
+<li>Providing quality and affordable eye care in both metro and regional areas.</li>
+<li>Keeping your eyes safe from the sun by offering sunglasses with UV protection.</li>
+<li>Our <a class="linkTo" href="/joint_venture.html">Joint Venture Partnership</a>, which has a growing number of optometrists and store managers making a commitment to Oscar Wylee.</li>
+<li>Offering a wide range of lens options and add-ons to suit all customer needs.</li>
+<li>Educating our customers about optometry and how to take care of their eye health.</li>
+</ul>
+<img src="{{media url="wysiwyg/about-us/Copy-of-Snellen.png"}}" alt="oscar wylee passion"></div>
+</div>
+</div>
+</div>
+<hr>
+<div class="textMainNobg">
+<h2>Our Products</h2>
+<p>Our frames are affordable and stylish, with a wide range of modern, vintage and on-trend styles with both international and local inspiration. They are custom-made for each person, hand-assembled and hand-checked in our labs. We make sure they are of the highest quality before they are shipped to our customers.</p>
+<div class="flexCategory" style="border-bottom: none;">
+<div class="flexContainer"><img class="flexImage" src="{{media url="wysiwyg/about-us/drew_093_opt-fitpic-2022.jpeg"}}" alt="oscar wylee Business">
+<div class="flexHolder"><img src="{{media url="wysiwyg/about-us/OW-JUL22-17.jpeg"}}" alt="pink frame oscar wylee"> <img class="padding-top-minus" src="{{media url="wysiwyg/about-us/OW-JUL22-26.jpeg"}}" alt="pink frame oscar wylee"></div>
+</div>
+<h3 class="text-align-left">Taking care of your frames</h3>
+<p><strong> We offer a lifetime adjustment guarantee and a <a class="linkTo" href="/legal/oscar-wylee-warranty.html">one-year warranty</a> on our glasses, meaning you can come back and visit us if you have any issues with your frames. We can clean them, tighten any screws and readjust your frames to fit correctly. </strong></p>
+</div>
+</div>
+<hr style="margin-bottom: -2rem;">
+<div class="textMainNobg">
+<h2>Frames for Everyone</h2>
+<div class="frames" style="border-bottom: none;">
+<div class="flex-frames"><a href="/glasses.html"><img src="{{media url="wysiwyg/about-us/Frieda_319_opt-fitpic-2022.jpeg"}}" alt="oscar wylee frieda model"></a><a href="/glasses/collection/men-s.html"><img src="{{media url="wysiwyg/about-us/hunter_070_opt-fitpic-2022_1.jpeg"}}" alt="oscar wylee hunter model"></a><a href="/glasses/collection/women-s.html"> <img src="{{media url="wysiwyg/about-us/Frieda_319_opt-fitpic-2022.jpeg"}}" alt="oscar wylee frieda model"></a></div>
+</div>
+</div>
+<hr>
+<div class="product-section">
+<h2>Our Services</h2>
+<div class="product-container">
+<div class="flex-box flex-box-one">
+<h3>Bulk billed eye tests</h3>
+<p>We are grateful that in Australia, Medicare provides a subsidy for Australians to regularly get their eyes tested. At Oscar Wylee, we provide eye tests to our customers, with no gap or out-of-pocket expenses, for those with a valid Medicare card.</p>
+<img class="flexImage padding-top-plus" src="{{media url="wysiwyg/about-us/CA_eyetest_ILLOpng-1.png"}}" alt="oscar wylee Business"></div>
+<div class="flex-box flex-box-two">
+<h3>BYO</h3>
+<p>Our commitment to eye health means you can come into our stores for an eye test without buying glasses. You can also bring in your own prescription, as long as it’s not expired, and we can help you find a pair of glasses that is right for you.</p>
+<img class="flexImage padding-top-plus" src="{{media url="wysiwyg/afterpay/find-a-store.jpeg"}}" alt="oscar wylee Business"></div>
+</div>
+</div>
+<hr><!-- <div class="context"> --> <!-- Location and booking  -->
+<div class="location">
+<div class="locationText">
+<h2>Find a store near you</h2>
+<p>Come and visit us at one of our Oscar Wylee locations and our friendly staff can assist you.</p>
+<div class="allButton"><a href="/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img class="locationImage" src="{{media url="wysiwyg/about-us/find-a-store.jpeg"}}" alt="oscar wylee locations" title="oscar wylee locations"></div>
+<div class="booking-background">
+<div class="booking-section">
+<h2>Due for an eye check up?</h2>
+</div>
+<div class="booking-section"><a href="/locations/full-store-list.html"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+<!-- </div> --></div>
+</div>
+<p><quillbot-extension-portal></quillbot-extension-portal></p>

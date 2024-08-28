@@ -1,0 +1,608 @@
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap') !important;
+
+#maincontent{
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    color: #333333;
+}
+.footer-item h4, .footer-item h3, .help-block h3, .copyright span{
+color: #fff;
+}
+
+*, page-main{
+    margin: 0 ;
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    color: #333333;
+}
+
+h1{
+margin: 0;
+padding: 0;
+font-size: 40px;
+}
+
+button:hover{
+color: white !important;
+}
+
+ul{
+margin-bottom: 0;
+}
+
+    .linkTo {
+      color: #003cac;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+.mainContainer{
+    max-width: 1236px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.mobBanner{
+    display: none;
+}
+
+.desktopBanner{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    font-weight: 700;
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+}
+
+.context{
+    padding: 0 1rem 1.5rem 0.5rem;
+}
+
+.context h2{
+    padding: 1rem 0rem 1rem 2rem;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 0px 0px 0px 10px;
+    border-color: #0003c3;
+}
+
+.context p{
+    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    font-size: 16px;
+    text-align: justify;
+    text-align-last: left;
+}
+
+.infographic{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: auto;
+    align-items: center;
+    column-gap: 30px;
+   
+}
+.infographic p, 
+.infographic img{
+    width: 100%;
+}
+
+
+.cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.card{
+    width: 100%;
+    box-shadow: 3px 3px 5px silver;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.cardTop{
+    background-color: #f2f2f2;
+    text-align: center;
+    border-top: 8px solid #003CAC;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 20px;
+}
+
+.popular{
+    background-color: #003CAC;
+    color: #fff;
+    font-weight: 700;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+.cardTop h2{
+    padding-bottom: 25px;
+    padding-top: 10px;
+font-weight: bold;
+margin-top: 0;
+}
+
+.cardTop img{
+    width: 100%;
+}
+
+.cardMidd ul{
+    padding: 35px 20px 15px 35px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.cardMidd ul li{
+    padding-bottom: 15px;
+    font-weight: 500;
+font-size: 16px;
+}
+
+.cardBottom{
+    text-align: center;
+    padding: 20px 20px;
+    
+}
+
+.cardBottom img{
+    width: 50px;
+padding: 1px;
+}
+
+.priceContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.priceContainer p{
+    padding: 0;
+    margin: 0;
+}
+
+.priceText{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.priceText span{
+    color: #003CAC;
+    font-weight: 800;
+}
+
+.priceNumber{
+    font-weight: 800;
+    font-size: 22px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.dollar{
+    font-weight: 400;
+    padding-bottom: 2px;
+    padding-left: 10px;
+}
+
+.cost{
+    font-weight: 800;
+    font-size: 34px;
+    bottom: 0;
+    line-height: 28px;
+}
+
+
+.multifocalTips{
+    padding: 2rem 1.1rem ;
+}
+
+.multifocalTips ul, 
+.multifocalTips p{
+    text-align: justify;
+    text-align-last: left;
+}
+
+.multifocalTips h2{
+    padding: 1rem 0rem 1rem 2rem;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 0px 0px 0px 10px;
+    border-color: #0003c3;
+}
+}
+
+.tipTitle, .tipText{
+    padding: 1rem 0;
+}
+
+.tipText{
+font-size: 16px;
+}
+
+.tipEllements{
+    padding: 1rem 3rem;
+font-size: 16px;
+}
+
+.tipEllements li{
+    padding-bottom: 1rem;
+}
+
+.location{
+    max-width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: max-content;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem ;
+    border-top: 1px solid silver;
+}
+
+.locationText > *{
+    margin-bottom: 35px;
+}
+
+.locationText h2{
+font-weight: 700;
+}
+
+.locationText{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.locationText p{
+font-size: 16px;
+}
+
+.locationImage{
+    width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.allButton{
+    width: 100%;
+}
+
+.allButton a{
+    text-decoration: none;
+}
+
+.bookingBtnOw:hover,
+.btnOw:hover{
+ background-color: black;
+box-shadow: none !important;
+color: #ffffff !mportant;
+border: none !important;
+}
+
+.btnOw{
+    background-color: #003CAC;
+    width: 80%;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+}
+
+.booking{
+    max-width: 100%;
+    margin: 2rem;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bookingImage{
+    max-width: 40%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.bookingButton{
+    width: 40%;
+    position: absolute;
+    bottom: 20px;
+}
+
+.bookingBtnOw{
+    width: 90%;
+    background-color: #003CAC;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+box-shadow: none !important;
+}
+
+.reveal{
+     position: relative;
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    opacity: 0;
+    transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+.cards{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 650px));
+    }
+      .infographic{
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .booking{
+        margin: 1rem;
+padding: 1rem 0;
+    }
+    .bookingImage{
+        max-width: 100%;
+        min-width: 300px;
+    }
+    .bookingButton{
+        width: 90%;
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 710px) {
+    .locationImage{
+        order: 1;
+    }
+    .allButton{
+        margin-bottom: 5px;
+    }
+
+    .btnOw{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+h1{
+font-size: 38px;
+}
+    .desktopBanner{
+        display: none;
+    }
+    .mobBanner{
+        display: flex;
+        width: 100%;
+    }
+    .infographic{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+}
+
+@media (max-width: 320px) {
+    .location{
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        padding: 1rem 0.5rem ;
+    }
+    .locationText > *{
+        margin-bottom: 20px;
+    }
+    .cards{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .bookingImage{
+        max-width: 90%;
+        min-width: 250px;
+    }
+    .btnOw{
+        width: 100%;
+    }
+    .tipEllements{
+        padding: 1.2rem ;
+    }
+}
+    </style>
+<p><img class="mobBanner" src="{{media url="wysiwyg/FR/Multifocal/Multifocal_Mobile_FR.png"}}" alt="Multifocal lenses banner"></p>
+<div class="mainContainer"><img class="desktopBanner" src="{{media url="wysiwyg/FR/Multifocal/Multifocal_Desktop_FR.png"}}" alt="Multifocal lenses banner">
+<h1 class="title">Verres multifocaux</h1>
+<div class="context">
+<h2 class="elementor-heading-title elementor-size-default">Que sont-ils?</h2>
+<p><span>Les verres multifocaux sont une solution pratique qui facilite la vision à des distances variées.</span><br><br><span>Vers l’âge de 40 ans, le cristallin de l’œil perd sa capacité à changer de forme aussi facilement, ce qui entraîne une perte progressive de la capacité à voir clairement les objets de près. Ce problème lié à l’âge est connu sous le nom de presbytie. Afin d’y remédier, on prescrit souvent des lunettes de lecture ou des verres multifocaux, également appelés verres progressifs.</span><br><br><span>Les verres multifocaux sont dotés d’une augmentation progressive de la puissance, ce qui vous permet de voir de loin, à une distane intermédiaire et de près, avec une seule paire de lunettes.</span><br><br><span>Profitez de la facilité des multifocaux grâce à notre sélection de verres, adaptés à vos besoins.</span></p>
+<h2 class="elementor-heading-title elementor-size-default">Comment fonctionnent-ils ?</h2>
+<div class="infographic">
+<p><span>Les lunettes multifocales vous permettent de voir clairement à trois distances différentes en utilisant votre ordonnance pour la lecture et celle pour la vision de loin, ce qui vous donne la possibilité de lire et de voir avec clarté de près et de loin.</span><br><br><span>Les verres multifocaux offrent une transition fluide entre les ordonnances. Ce n’est pas le cas des lunettes bifocales où le verre est divisé en différents segments.</span><br><br><span>Quand vous utilisez les verres multifocaux, quelques jours à quelques semaines sont parfois necéssaires pour vous adapter confortablement aux différentes distances autour de vous.</span></p>
+<img src="{{media url="wysiwyg/FR/Multifocal/MF_4_FR.png"}}" alt="Multifocal infographic"></div>
+<h2 class="elementor-heading-title elementor-size-default">Types de verres multifocaux</h2>
+<p><span>Le choix de la bonne paire de verres multifocaux dépend de votre ordonnance, de votre mode de vie et de vos besoins.</span><br><br><span>Chez Oscar Wylee, nous proposons trois types de verres multifocaux desquels vous pouvez choisir moyennant un coût supplémentaire ajouté à vos lunettes de vue standards.</span></p>
+</div>
+<div class="cards">
+<div class="card reveal">
+<div class="cardTop"><span class="popular" style="background-color: #f2f2f2; color: #f2f2f2;">POPULAR CHOICE</span>
+<h2>Multifocaux Standard</h2>
+<img src="{{media url="wysiwyg/FR/Multifocal/MF_Types_Standard_French.png"}}" alt="Standard multifocal"></div>
+<div class="cardMidd">
+<ul>
+<li>Un certain degré de flou sur les bords de votre vision.</li>
+<li>Parfaits pour une utilisation occasionnelle des lunettes</li>
+<li>Idéaux pour les personnes disposant d’un budget limité</li>
+</ul>
+</div>
+<div class="cardBottom">
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="{{media url="wysiwyg/multifocal/single-pair-01.png"}}" alt="glasses"></div>
+<p class="priceText">1 paire avec <span>Multifocaux Standard</span></p>
+</div>
+<p class="priceNumber">+ <span class="dollar">$</span> <span class="cost">0</span></p>
+</div>
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="{{media url="wysiwyg/multifocal/single-pair-01.png"}}" alt="glasses"><img src="{{media url="wysiwyg/multifocal/single-pair-01.png"}}" alt="glasses"></div>
+<p class="priceText">2 paires avec <span>Multifocaux Standard</span></p>
+</div>
+<p class="priceNumber">+ <span class="dollar">$</span> <span class="cost">50</span></p>
+</div>
+</div>
+</div>
+<div class="card reveal">
+<div class="cardTop"><span class="popular" style="background-color: #f2f2f2; color: #f2f2f2;">POPULAR CHOICE</span>
+<h2>Multifocaux Premium</h2>
+<img src="{{media url="wysiwyg/FR/Multifocal/MF_Types_Premium_French.png"}}" alt="premium multifocal"></div>
+<div class="cardMidd">
+<ul>
+<li>Un champ plus large de vision claire</li>
+<li>Idéaux pour ceux qui portent des lunettes au bureau, notamment pour le travail sur ordinateur.</li>
+<li>Ajustement plus facile que les verres multifocaux standards</li>
+</ul>
+</div>
+<div class="cardBottom">
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="{{media url="wysiwyg/multifocal/single-pair-01.png"}}" alt="glasses"></div>
+<p class="priceText">1 paire avec <span>Multifocaux Premium</span></p>
+</div>
+<p class="priceNumber">+ <span class="dollar">$</span> <span class="cost">100</span></p>
+</div>
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="{{media url="wysiwyg/multifocal/single-pair-01.png"}}" alt="glasses"><img src="{{media url="wysiwyg/multifocal/single-pair-01.png"}}" alt="glasses"></div>
+<p class="priceText">2 paires avec <span>Multifocaux Premium</span></p>
+</div>
+<p class="priceNumber">+ <span class="dollar">$</span> <span class="cost">150</span></p>
+</div>
+</div>
+</div>
+<div class="card reveal">
+<div class="cardTop"><span class="popular">CHOIX POPULAIRES</span>
+<h2>Multifocaux Elite</h2>
+<img src="{{media url="wysiwyg/FR/Multifocal/MF_Types_Elite_French.png"}}" alt="elite multifocal"></div>
+<div class="cardMidd">
+<ul>
+<li>Champ très large de vision claire</li>
+<li>Verres polyvalents pour les exigences du style de vie moderne et le travail sur ordinateur.</li>
+<li>Offrent une vision plus naturelle et plus confortable</li>
+</ul>
+</div>
+<div class="cardBottom">
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="{{media url="wysiwyg/multifocal/single-pair-01.png"}}" alt="glasses"></div>
+<p class="priceText">1 paire avec <span>Multifocaux Elite</span></p>
+</div>
+<p class="priceNumber">+ <span class="dollar">$</span> <span class="cost">200</span></p>
+</div>
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="{{media url="wysiwyg/multifocal/single-pair-01.png"}}" alt="glasses"> <img src="{{media url="wysiwyg/multifocal/single-pair-01.png"}}" alt="glasses"></div>
+<p class="priceText">2 paires avec <span>Multifocaux Elite</span></p>
+</div>
+<p class="priceNumber">+ <span class="dollar">$</span> <span class="cost">250</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="multifocalTips">
+<h2 class="elementor-heading-title elementor-size-default">Conseils pour le port de lunettes multifocales</h2>
+<p class="tipText"><span>S’adapter à une toute nouvelle paire de lunettes multifocales peut être difficile. Mais il existe quelques conseils utiles qui peuvent faciliter la transition et vous aider à vous adapter plus rapidement à vos lunettes.</span></p>
+<ul class="tipEllements">
+<li><span>Veillez à porter vos nouveaux verres multifocaux le plus souvent possible pour encourager vos yeux à s’adapter à vos nouveaux verres.</span></li>
+<li><span>Essayez de ne pas revenir à vos anciennes lunettes car cela peut affecter les progrès que vous avez réalisés avec vos nouvelles lunettes multifocales.</span></li>
+<li><span>Bougez votre tête lorsque vous regardez autour de vous, pas seulement vos yeux. En pointant votre nez là où vous voulez voir, vous regarderez dans la partie la plus claire du verre.</span></li>
+<li><span>Si, au début, vous avez du mal à les porter, essayez d’utiliser vos nouvelles lunettes dans un environnement confortable et familier pour vous mettre en confiance.</span></li>
+<li><span>Si, après une ou deux semaines d’utilisation de vos lunettes multifocales, vous avez toujours du mal à vous adapter, rendez-vous dans un des magasins Oscar Wylee Canada près de chez vous et les membres de notre équipe sympathique vous aideront.</span></li>
+</ul>
+</div>
+<div class="location">
+<div class="locationText">
+<h2 class="elementor-heading-title elementor-size-default">Réservez un examen de la vue près de chez vous</h2>
+<p><span>Nous recommandons à chacun de passer un examen de la vue chez un optométriste au moins une fois tous les deux ans.</span></p>
+<div class="allButton"><a href="/fr/booking"> <button class="btnOw">Réserver un examen de la vue</button> </a></div>
+</div>
+<img class="locationImage" src="{{media url="wysiwyg/multifocal/book_an_eye_test.jpeg"}}" alt="location"></div>
+</div>
+<p>
+<script> 
+    function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
+   
+    </script>
+</p>

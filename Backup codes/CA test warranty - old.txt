@@ -1,0 +1,52 @@
+<style>
+.paragraph-content {
+margin-bottom: 3rem;
+}
+
+.un-list {
+margin-bottom: 3rem;
+}
+</style>
+<h1 style="text-align: center;">Oscar Wylee Warranty Policy</h1>
+<div class="paragraph-content">
+<p style="margin-top: 3em;"><b>What is covered?</b></p>
+<p><span style="font-weight: 400;">Oscar Wylee provides a 1 year warranty from the date of delivery on frames and lenses against manufacturing faults or defects. We will repair or replace faulty or defective frames or lenses free of charge for warranty claims made within 1 year of the delivery. </span></p>
+<p><span style="font-weight: 400;">Oscar Wylee also offers a repair or replacement for problems experienced with vision during everyday use for claims made within 30 days of delivery. </span></p>
+<p><span style="font-weight: 400;">If the same product has been discontinued or is no longer available, then we may offer an exchange for a similar product or a refund. </span></p>
+</div>
+<div class="paragraph-content">
+<p><b>What is not covered?</b></p>
+<p><span style="font-weight: 400;">Our warranty does not cover: </span></p>
+<ul class="un-list">
+<li>wear and tear;</li>
+<li>any modifications or repairs not made by Oscar Wylee;</li>
+<li>damage caused by misuse, neglect or carelessness (e.g. scratches from dropping or crazing to lenses due to being left in high temperatures);</li>
+<li>damage caused by natural disaster;</li>
+<li>changes to designs and/or colour after purchase;</li>
+<li>purchases or deliveries outside Canada;</li>
+<li>accidental loss or damage;</li>
+<li>items that were not purchased from Oscar Wylee (e.g. if only lenses were purchased then the warranty does not cover any frame used for the lenses; if only frames were purchased then the warranty does not any lenses used in the frames);</li>
+<li>incorrect external prescriptions provided to Oscar Wylee.</li>
+<li>We do not cover chipped 1.5 index lenses in half-rim styles purchased. As such we recommend 1.6 index for greater durability.</li>
+</ul>
+</div>
+<div class="paragraph-content">
+<p><b>How to make a claim </b></p>
+<p><span style="font-weight: 400;">To make a warranty claim you must return your glasses to your nearest Oscar Wylee store at your own expense together with proof of purchase. </span></p>
+</div>
+<div class="paragraph-content">
+<p><b>Your rights </b></p>
+<p><span style="font-weight: 400;">The benefits provided by this warranty are in addition to other rights and remedies available under the law. Our goods come with guarantees that cannot be excluded under the Canadian Consumer Product Safety Act. You are entitled to a replacement or refund for a major failure and compensation for any other reasonably foreseeable loss or damage. You are also entitled to have the goods repaired or replaced if the goods fail to be of acceptable quality and the failure does not amount to a major failure. </span></p>
+</div>
+<div class="paragraph-content">
+<p><b>Gift cards </b></p>
+<p><span style="font-weight: 400;">Gift cards are not refundable or redeemable for cash. </span></p>
+</div>
+<div class="paragraph-content">
+<p><b>International shipping </b></p>
+<p><span style="font-weight: 400;">We use DHL EXPRESS, and you should allow up to 2-3 weeks for delivery after your glasses have been shipped. Oscar Wylee cannot control or pay for any customs or import duties applied to your package during the importation of the goods to their final destination. </span></p>
+</div>
+<div class="paragraph-content">
+<p><b> Contact </b></p>
+<p><span style="font-weight: 400;">You can contact Oscar Wylee email via the <a href="/contact/">contact us</a> form. </span></p>
+</div>

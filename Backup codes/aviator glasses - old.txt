@@ -1,0 +1,46 @@
+<div class="banner-1">
+<div class="bg-desktop" style="background-image: url('{{media url="wysiwyg/banners/Aviator_Web_banner.jpg"}}');"></div>
+<div class="bg-mobile" style="background-image: url('{{media url="wysiwyg/banners/Aviator_Mobile_banner.jpg"}}');"></div>
+<div class="top_hero">
+<div class="hero_title">
+<h1>Aviator Glasses</h1>
+<p>Aviator glasses are a versatile accessory for both men and women. You can pair them with your business attire or keep it casual.</p>
+</div>
+<div class="hero_button"><a class="btn" href="#layer-product-list">Shop now</a></div>
+</div>
+</div>
+
+------
+
+<div class="banner-1">
+<div class="bg-desktop" style="background-image: url('{{media url="wysiwyg/banners/Aviator_Web_banner.jpg"}}');"></div>
+<div class="bg-mobile" style="background-image: url('{{media url="wysiwyg/banners/Aviator_Mobile_banner.jpg"}}');"></div>
+<div class="top_hero">
+<div class="hero_title">
+<h1>Aviator Glasses</h1>
+<p>Aviator glasses are an enduring fashion accessory, suitable for all genders and many face shapes. With teardrop lenses and wide face coverage, aviator glasses are a practical yet fashionable statement piece, embodying a cool vibe and swagger.</p>
+</div>
+<div class="hero_button"><a class="btn" href="#layer-product-list">Shop now</a></div>
+</div>
+</div>
+
+-------
+
+<style>
+@media (max-width: 1440px) {
+ .hero_title p {
+   font-size: 16.5px !important;
+ }
+}
+</style>
+<div class="banner-1">
+<div class="bg-desktop" style="background-image: url('{{media url="wysiwyg/banners/Aviator_Web_banner.jpg"}}');"></div>
+<div class="bg-mobile" style="background-image: url('{{media url="wysiwyg/banners/Aviator_Mobile_banner.jpg"}}');"></div>
+<div class="top_hero">
+<div class="hero_title">
+<h1>Aviator Glasses</h1>
+<p>Aviator glasses are an enduring fashion accessory, suitable for all genders and many face shapes. With teardrop lenses and wide face coverage, aviator glasses are a practical yet fashionable statement piece, embodying a cool vibe and swagger.</p>
+</div>
+<div class="hero_button"><a class="btn" href="#layer-product-list">Shop now</a></div>
+</div>
+</div>

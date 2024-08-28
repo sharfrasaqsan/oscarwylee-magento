@@ -1,0 +1,202 @@
+<style>
+    .mobBanner {
+        display: none;
+    }
+
+    <ul class="static-side-links desktop"><li id="faq-1"><a href="{{store direct_url='faq-popular.html'}}"></a></li></ul><div><select class="mobile" style="border: .2rem solid #666666;" name="formal" onchange="javascript:handleSelect(this)"><option id="option-1" value="{{store direct_url='faq-popular.html'}}"></option></select></div><p><script type="text/javascript" xml="space"> // <![CDATA[
+
+    //
+    function handleSelect(elm) {
+        window.location=elm.value;
+    }
+
+    require(['jquery'], function ($) {
+            var pages=['cms-faq-popular-html',
+            'cms-faq-ordering-html',
+            'cms-faq-prescriptions-html',
+            'cms-faq-sunglasses-html',
+            'cms-faq-returns-html',
+            'cms-faq-payment-html',
+            'cms-faq-healthfund-html',
+            'cms-faq-lenses-html',
+            'cms-faq-frames-html',
+            'cms-faq-pricing-html',
+            'cms-faq-shipping-html'];
+            var tmp=0;
+
+            for (var i=0; i < pages.length; i++) {
+                if ($('body').hasClass(pages[i])) {
+                    $('#option-' + (i + 1)).prop('selected', 'true');
+                    $('#faq-' + (i + 1)).addClass('faq-current-page');
+                }
+            }
+
+            jQuery('.faqquestion').click(function () {
+                    if (jQuery(this).hasClass('opened')) {
+                        if (jQuery(this).next().hasClass('faqanswer')) jQuery(this).next().slideUp('fast');
+                        else jQuery(this).next().find('.faqanswer').slideUp('fast');
+                        jQuery(this).removeClass('opened');
+                        return false;
+                    }
+
+                    else {
+                        if (jQuery(this).next().hasClass('faqanswer')) jQuery(this).next().slideDown('fast');
+                        else jQuery(this).next().find('.faqanswer').slideDown('fast');
+                        jQuery(this).addClass('opened');
+                        return false;
+                    }
+
+                }) jQuery('.faqheader').click(function () {
+
+                    if (jQuery(this).hasClass('opened')) {
+                        if (jQuery(this).next().hasClass('faqcontent')) jQuery(this).next().slideUp('fast');
+                        else jQuery(this).next().find('.faqcontent').slideUp('fast');
+                        jQuery(this).removeClass('opened');
+                        return false;
+                    }
+
+                    else {
+                        closeallfaq();
+                        if (jQuery(this).next().hasClass('faqcontent')) jQuery(this).next().slideDown('fast');
+                        else jQuery(this).next().find('.faqcontent').slideDown('fast');
+                        jQuery(this).addClass('opened');
+                        return false;
+                    }
+
+                }) function closeallfaq() {
+                jQuery('.faqheader').each(function (index, element) {
+                        if (jQuery(this).hasClass('opened')) {
+                            if (jQuery(this).next().hasClass('faqcontent')) jQuery(this).next().slideUp('fast');
+                            else jQuery(this).next().find('.faqcontent').slideUp('fast');
+                            jQuery(this).removeClass('opened');
+                            return false;
+                        }
+                    });
+            }
+        });
+
+    //
+    // ]]></script>
+    </p>.desktopBanner {
+        width: 100%;
+    }
+
+    #maincontent {
+        padding: 0;
+    }
+
+    @media (max-width: 767px) {
+
+        .jvp-btndownload,
+        .jvp-btninterest,
+        .joint-venture-part-2,
+        .joint-venture-part-3,
+        .joint-venture-part-4 {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .desktopBanner {
+            display: none;
+        }
+
+        .mobBanner {
+            display: flex;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .text {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+</style>
+<div class="jvp-container" style="border-bottom: none !important; padding: 0;">
+<p><img class="desktopBanner" src="{{media url="wysiwyg/joint-venture/JVP_Web_Banner.jpeg"}}" alt="banner"> <img class="mobBanner" src="{{media url="wysiwyg/joint-venture/JVP_Mobile_Banner.jpeg"}}" alt="banner"></p>
+</div>
+<div class="jvp-container"><!--Section 1-->
+<div class="joint-venture-part-1 jvp-paragraph-1">
+<div class="jvp-title-1"><span>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="27"}}</span></div>
+<div class="jvp-btndownload" style="cursor: pointer;"><a class="jvp-button" href="/pub/media/wysiwyg/pdf/JVP_Prospectus_2022_AUNZ.pdf" target="_blank" rel="noopener"> <button class="btn-download" type="submit"><span>Download our prospectus</span></button> </a></div>
+<div class="jvp-btninterest" style="cursor: pointer;"><a class="jvp-button" href="https://docs.google.com/forms/d/e/1FAIpQLSepaIZjGsVjAQedvgWppnVbTbhI91V48tMYeBw7LpY59-4lOQ/viewform" target="_blank" rel="noopener"><button class="btn-interest" type="submit"><span>Submit expression of interest</span></button> </a></div>
+<div class="text">
+<p class="promotion-text">We are an optical company with a vision of continuous improvement and growth. Our business started online and we have grown our network to 100+ stores across 3 countries with many more stores to open over the next 12 months.</p>
+<p class="promotion-text">Our brand is modern, fresh, fashion focused, and dynamic with a solid clinical presence. We pride ourselves on our partnership with our Joint Venture Partners, our team, our suppliers, and our customers. Through these relationships we have been able to build the foundation for trust, clinical excellence, customer service, and team engagement.</p>
+<p class="promotion-text">At Oscar Wylee Canada our Joint Venture Partnership model is based on our values: integrity, open mindedness, team culture, customer influence, and Kaizen – “change for better” which means we are always improving ourselves.</p>
+<p class="promotion-text">As we continue to grow we are committed to supporting our Partners with a clear strategy, streamlined processes, open feedback policy, and excellent support. We make it easy for you to do what you do best: looking after your customers. We want your customers to have the best clinical and in-store experience. We want your team to love coming to work and for you to give back to your community. Together we will build your business to be an asset for your future.</p>
+</div>
+</div>
+<!--Section 2-->
+<div class="joint-venture-part-2">
+<div class="jvp-flex-container-1">
+<div class="jvp-flex-item-left">
+<h2 class="promotion-title">Optometrist Partner</h2>
+<p>Our Optometry Joint Venture Partners are an important part of our business. They are experienced and have an exceptional rapport with our patients. They have the ability to influence, mentor, lead, and motivate. Most importantly, our Optometrist Partners are humble and professional in everything they do. Oscar Wylee Optometrists are ambitious but love to have fun, like the environment they work in.</p>
+<p>Together with the Retail Partner you will drive the success of the store. Through hardwork, professional skills, and the ability to engage with both their team and their customers you will deliver an excellent in store experience.</p>
+<p>As part of the Oscar Wylee joint venture expression of interest process, you are required to complete all areas of this <a href="https://docs.google.com/forms/d/e/1FAIpQLSepaIZjGsVjAQedvgWppnVbTbhI91V48tMYeBw7LpY59-4lOQ/viewform" id="google_form">form</a>. Rest assured your privacy is also important to us and all details are kept strictly confidential.</p>
+</div>
+<div class="jvp-flex-item-right-1"><img class="jvp-image" style="max-width: 100%;" src="{{media url="wysiwyg/joint-venture/Oscar-Wylee-optometrist-JVP-1478x1536.jpg"}}" width="502" height="368"></div>
+</div>
+<div class="jvp-flex-container">
+<div class="jvp-flex-item-left"><img class="jvp-image" style="max-width: 100%;" src="{{media url="wysiwyg/joint-venture/Oscar-Wylee-retail-manager-JVP.jpeg"}}" width="503" height="368"></div>
+<div class="jvp-flex-item-right">
+<h2 class="promotion-title">Retail and Dispensing Partner</h2>
+<p>Our Retail Joint Venture Partners are experienced in Optics and have a passion for delivering excellent customer service. They love the dynamic and fast paced environment of retail with an emphasis on style. They are known for exceeding our customers’ expectations with their service and our modern and fashion forward frames. The leadership they demonstrate supports and grows their team every day.</p>
+<p>Together with the Optometry Partner you will drive the success of the store. Through hard work, professional skills and the ability to engage with both their team and their customers they will deliver an excellent in store experience.</p>
+<p>As part of the Oscar Wylee joint venture expression of interest process, you are required to complete all areas of this <a href="https://docs.google.com/forms/d/e/1FAIpQLSepaIZjGsVjAQedvgWppnVbTbhI91V48tMYeBw7LpY59-4lOQ/viewform">form</a>. Rest assured your privacy is also important to us and all details are kept strictly confidential.</p>
+</div>
+</div>
+<div class="more-infor">
+<p class="text-more-infor">For more information on Optometrist or Retail Partnership, email us at <a href="mailto:jvp@oscarwylee.com" style="color: #003cac;">jvp@oscarwylee.com</a></p>
+</div>
+<div class="jvp-paragraph-1">
+<div class="jvp-btninterest"><a class="jvp-button" href="https://docs.google.com/forms/d/e/1FAIpQLSepaIZjGsVjAQedvgWppnVbTbhI91V48tMYeBw7LpY59-4lOQ/viewform" target="_blank" rel="noopener"><button class="btn-interest" type="submit"><span>Submit expression of interest</span></button> </a></div>
+</div>
+</div>
+<!--Section 3-->
+<div class="joint-venture-part-3">
+<div class="jvp-paragraph">
+<div class="jvp-title"><span>Reasons to become an Oscar Wylee Partner</span></div>
+<div class="text-reason-subtitle">
+<p class="reason-text">Our Joint Venture Partners have the support of a growing and successful brand. They enjoy the excitement and rewards of running their own business, motivating, and managing a high performing team. We have numerous opportunities available for inspirational business leaders to come and join our growing Joint Venture Partnership.</p>
+<p class="reason-text" style="padding: 20px 0;">At Oscar Wylee all of our Joint Venture Partners will receive:</p>
+<p class="text-reason-boldsubtitle">Market rate base salary</p>
+<p class="text-reason-boldsubtitle">Dividends generated by their business profits</p>
+<p class="text-reason-boldsubtitle">Low interest rate loan</p>
+</div>
+</div>
+</div>
+<!--Section 4-->
+<div class="joint-venture-part-4">
+<div class="jvp-paragraph">
+<div class="jvp-title"><span>Supporting owner-operated optical professionals</span></div>
+<div class="jvp-subtitle"><span>Our core focus is to support owner-operated optical professionals to build successful businesses. See our partners’ experiences and thoughts as Oscar Wylee Partners. </span></div>
+<div class="text-quotes">
+<p class="text-quotes-boldsubtitle"><q class="jvp-quotes">“Oscar Wylee’s JVP program offers a supportive avenue to partnering with a main contender in the optical industry. It is both enriching and rewarding, and I can’t wait to see how the company continues to grow!”</q></p>
+- <cite class="customer-quote"> Heba Raad, Joint Venture Partner</cite>
+<p></p>
+<p class="text-quotes-boldsubtitle"><q class="jvp-quotes">" It is exciting to be part of a growing Oscar Wylee, a fun family-like culture with vibrancy, care for customers, and fashion-forward products. I am excited by the opportunity to grow my business and lead my team! " </q></p>
+- <cite class="customer-quote">Hsin Lim, Optometrist Partner</cite>
+<p></p>
+<p class="text-quotes-boldsubtitle"><q class="jvp-quotes">" Since becoming a Retail JVP along with my Optometrist JVP partner I can clearly see a business model like no other that promotes all of the following qualities: stability, profitability, growth, and a wholesome team culture. Oscar Wylee care about integrity, open mindedness, professionalism, and most importantly you. " </q></p>
+- <cite class="customer-quote">Vanessa Katic, Retail Partner</cite>
+<p></p>
+<p class="text-quotes-boldsubtitle"><q class="jvp-quotes">" As a Joint Venture Partner I have engaged my clinical expertise and developed my entrepreneurial skills within my own store, while having full confidence that my product and supply chain, payroll, and compliance is professionally managed by Oscar Wylee. Having been a JVP in another Optometry business, I can confidently recommend the Oscar Wylee JVP model to any optometrist. " </q></p>
+- <cite class="customer-quote">Phillip Binns, Optometrist Partner</cite>
+<p></p>
+<p class="text-quotes-boldsubtitle"><q class="jvp-quotes">" The partnership provides the opportunity to grow and be part of Oscar Wylee which is becoming more widely known and preferred over other eye care companies. " </q></p>
+- <cite class="customer-quote">Sahba Sanai, Optometrist Partner</cite>
+<p></p>
+</div>
+<div class="jvp-contact">
+<p class="text-more-contact">Have questions? <a style="color: #333;">Contact us</a>. Ready to get going?</p>
+<a class="jvp-button" href="https://docs.google.com/forms/d/e/1FAIpQLSepaIZjGsVjAQedvgWppnVbTbhI91V48tMYeBw7LpY59-4lOQ/viewform" target="_blank" rel="noopener"><button class="btn-interest" type="submit"><span>Submit expression of interest</span></button> </a>
+<p class="contact-text">For any further information please contact <a href="mailto:jvp@oscarwylee.com" style="color: #003cac;">jvp@oscarwylee.com</a></p>
+</div>
+</div>
+</div>
+</div>

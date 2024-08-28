@@ -1,0 +1,208 @@
+<style xml="space"><!--
+
+/* This technique doesn't naturally cause horizontal overflow, but once there is natural vertical overflow, it causes horizontal overflow, so stopping here. */
+
+body {
+
+  overflow-x: hidden;
+
+}
+
+
+
+img { 
+
+  max-width: 100%; 
+
+}
+
+
+
+main {
+
+  max-width: 600px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+}
+
+
+
+.full-width {
+
+  width: 100vw;
+
+  position: relative;
+
+  left: 50%;
+
+  right: 50%;
+
+  margin-left: -50vw;
+
+  margin-right: -50vw;
+
+}
+
+.button1 {
+
+  background-color: #003CAC;
+
+  opacity: 0.85; 
+
+  color: white; 
+
+  border: 1px solid white;
+
+}
+
+
+
+.button1:hover {
+
+  background-color: #003CAC;
+
+  opacity: 1;
+
+  color: white;
+
+  border: 1px solid white;
+
+}
+
+.button2 {
+
+  background-color: #333333;
+
+  opacity: 0.85; 
+
+  color: white; 
+
+  border: 1px solid white;
+
+}
+
+
+
+.button2:hover {
+
+  background-color: #333333;
+
+  opacity: 1;
+
+  color: white;
+
+  border: 1px solid white;
+
+}
+
+/* COLLUMN STRUCTURE */
+.columnhf {
+  float: left;
+  padding-right: 10px;
+}
+
+.rowhf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+--></style>
+<div>
+<figure class="full-width">
+<div class="row">
+<div class="desktop" style="margin: 0 auto -6px auto; max-width: 1280px;"><img style="width: 100%;" src="{{media url="wysiwyg/healthfund/healthfunds4.jpg"}}" alt="All health funds welcome"></div>
+<div class="mobile" style="margin-bottom: -5px;"><img style="width: 100%;" src="{{media url="wysiwyg/healthfund/healthfunds4_mob.jpg"}}" alt="All health funds welcome"></div>
+</div>
+</figure>
+</div>
+<div>
+<figure class="full-width" style="background-color: #003cac; padding: 1em 0; opacity: 0.85;">
+<div class="desktop" style="font-size: 1.6em; text-align: center; margin: 1em auto; color: white; width: 80%; font-weight: bold;">We accept all health funds<br><br>We offer on the spot quotes &amp; claims for extras cover in our retail stores</div>
+<div class="mobile" style="font-size: 1.2em; text-align: center; margin: 1em 0; color: white; font-weight: bold; padding: 0 1em;">We accept all health funds<br><br>We offer on the spot quotes &amp; claims for extras cover in our retail stores</div>
+</figure>
+</div>
+<div style="padding: 0 1em;">
+<h1 style="font-size: 1.5em; text-align: left; margin: 2.5em 0 1em 0;"><strong>Get more from ‘Optical Extras’</strong></h1>
+<p>Health fund cover is divided into ‘hospital’ and ‘extras’. Extras cover is used to claim on non-hospital services like optical or dental.</p>
+<h1 style="font-size: 1.5em; text-align: left; margin: 2.5em 0 1em 0;"><strong>How and when can I claim?</strong></h1>
+<p>The claim can be processed on your behalf in-store with an eligible health fund card. The amount you can claim varies depending on the health fund you are with and your level of cover.<br><br>Claims can be made any time of year, within your claim-period, up to your maximum benefit for extras like optical.</p>
+<h1 style="font-size: 1.5em; text-align: left; margin: 2.5em 0 1em 0;"><strong>How long do my ‘benefits' last?</strong></h1>
+<p>This “benefit” or “rebate” will also have an expiry, where the unused benefits are forfeited if left unclaimed at the end of the designated time period. These cycles are usually each calendar year or each financial year (or in some cases, from your join date).</p>
+<h1 style="font-size: 1.5em; text-align: left; margin: 2.5em 0 1em 0;"><strong>What does ‘no gap’ mean, is it something I can get at Oscar Wylee?</strong></h1>
+<p>'No-gap' refers to not having to pay any out of pocket expense due to the health fund benefit covering the entire price of the eyewear. Depending on your health fund and level of cover, more complex prescriptions and lens enhancements may result in an out of pocket ‘gap’ to pay. At Oscar Wylee, our team wants to make sure you get the most value out of your optical extras so please feel free to ask for any helpful tips.</p>
+<h1 style="font-size: 1.5em; text-align: left; margin: 2.5em 0 1em 0;"><strong>How can I find out how much I can claim from optical extras?</strong></h1>
+<p>At Oscar Wylee, our teams can swipe your health fund card on a HICAPS terminal and process a quote for your favourite frames and lenses. This will show the claim amounts for the optical extras that you are entitled to.</p>
+<h1 style="font-size: 1.5em; text-align: left; margin: 2.5em 0 1em 0;"><strong>Can I claim my glasses with my health fund?</strong></h1>
+<p>Yes, if your health insurance extras packages include benefits for optical. You’ll need a prescription from an optometrist to make a claim on prescription glasses.<br><br>Your level of cover and which health fund you’re with will determine how much of a benefit you are eligible for. You may be eligible to claim two prescription glasses complete with standard single vision lenses, for no gap. If you’re unsure about what you can claim, simply visit one of our stores and our team will help explain what you’re covered for and find out how much you can claim from your health insurer.</p>
+<h1 style="font-size: 1.5em; text-align: left; margin: 2.5em 0 1em 0;"><strong>Can I claim sunglasses with my health fund?</strong></h1>
+<p>You can claim prescription sunglasses just like claiming for prescription glasses. You’ll need a prescription from an optometrist to make a claim on prescription sunglasses.<br><br>You cannot claim non-prescription sunglasses.</p>
+<h1 style="font-size: 1.5em; text-align: left; margin: 2.5em 0 1em 0;"><strong>How do I claim for my glasses?</strong></h1>
+<p>We make getting new glasses easy by helping you access your rebate on the spot in-store with most health insurers. All you need to do is simply visit one of our stores and our team members will assist you. If you have an eye test with us, we’ll have your prescription on file so all you need to remember is to bring your health fund card to make claiming simple and easy.</p>
+<h1 style="font-size: 1.5em; text-align: left; margin: 2.5em 0 1em 0;"><strong>How do I claim if I buy my glasses online?</strong></h1>
+<p>After purchasing on our <a href="/optical.html" style="color: #003cac;">website</a>, an invoice will be emailed to you with all the information you need to make a claim - including our provider number, item codes and costs.<br><br>To claim your rebate, simply send through our invoice with the relevant claim form from your health insurer. Some health funds have an online claim service to make it even easier to claim, so be sure to check with your health insurer.</p>
+<h1 style="font-size: 1.5em; text-align: left; margin: 2.5em 0 1em 0;"><strong>All health funds welcome:</strong></h1>
+<div class="rowhf">
+<div class="columnhf">
+<ul>
+<li>Bupa</li>
+<li>Medibank</li>
+<li>HCF</li>
+<li>nib</li>
+<li>HBF</li>
+<li>ADF Family Health</li>
+<li>AHM</li>
+<li>Australian Unity</li>
+<li>CBHS</li>
+</ul>
+</div>
+<div class="columnhf">
+<ul>
+<li>CUA Health Limited</li>
+<li>Defence Health</li>
+<li>Doctors Health Fund</li>
+<li>Emergency Service Health</li>
+<li>Frank</li>
+<li>GMHBA</li>
+<li>Health.com.au</li>
+<li>Healthcare Insurance</li>
+<li>HIF</li>
+</ul>
+</div>
+<div class="columnhf">
+<ul>
+<li>Navy Health</li>
+<li>Nurses &amp; Midwives Health</li>
+<li>onemedifund</li>
+<li>Peoplecare</li>
+<li>Phoenix Health Fund</li>
+<li>Police Health</li>
+<li>Qantas</li>
+<li>Queensland Country</li>
+</ul>
+</div>
+<div class="columnhf">
+<ul>
+<li>Railway &amp; Transport Health Fund</li>
+<li>Reserve Bank Health Society</li>
+<li>Suncorp</li>
+<li>Teachers Health Fund</li>
+<li>Territory Health Fund</li>
+<li>TUH</li>
+<li>Uni Health Insurance</li>
+<li>Westfund Health</li>
+</ul>
+</div>
+</div>
+</div>
+<hr style="margin-top: 1em;">
+<div style="margin: 3em 0;">
+<p style="text-align: center;"><img style="width: 200px;" src="{{media url="wysiwyg/healthfund/CBHS.png"}}" alt=""></p>
+<h1 style="text-align: center; margin: 1em auto; width: 80%; font-size: 1.5em;"><strong>Oscar Wylee is part of CBHS Optical Choice Network</strong></h1>
+<p style="text-align: center; margin: 1em auto;">Being part of the CBHS Optical Choice Network will allow it's members to get the most from their membership cover when shopping in our <a href="/locations.html" style="color: #003cac;">stores</a>.</p>
+</div>
+<hr>
+<p style="text-align: center; margin-top: 1em; margin-bottom: 1em;"><a href="/optical.html"><button class="button button1" style="box-shadow: none; padding: 30px; font-size: 1.5em; width: 310px; margin: 10px;">View glasses collection</button></a><a href="/booking/"><button class="button button1" style="box-shadow: none; padding: 30px; font-size: 1.5em; width: 310px; margin: 10px;">Book an eye test</button></a></p>

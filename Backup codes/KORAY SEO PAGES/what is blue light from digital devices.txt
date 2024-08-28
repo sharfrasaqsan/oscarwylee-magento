@@ -1,0 +1,1316 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap");
+
+#maincontent {
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #333333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.footer-item h4,
+.footer-item h3,
+.help-block h3,
+.copyright span {
+  color: #fff;
+}
+
+body {
+  color: #333333;
+}
+
+*,
+page-main {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  /* color: #333333; */
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+
+button:hover {
+  color: white !important;
+}
+
+ul,
+ol {
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 1236px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.banner {
+  max-width: 100%;
+  max-height: 450px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+
+.text {
+  max-width: 100%;
+}
+
+.bannerResponsive {
+  display: none;
+}
+
+.title {
+  width: calc(100% - 6rem);
+  padding: 2.5rem 3rem;
+  text-align: center;
+  /* margin: 0 1rem 2rem 1rem; */
+  border-bottom: 1px solid rgba(192, 192, 192, 0.7);
+}
+
+.title h1,
+.title h2 {
+  font-weight: 700;
+  padding-bottom: 3rem;
+}
+
+.title p {
+  padding: 0 6rem 2rem;
+}
+
+.context {
+  width: calc(100% - 2rem);
+  padding: 0 1rem;
+}
+
+.context h2 {
+  padding: 1rem 0 0 0;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.context h3 {
+  padding: 2rem 0 0 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.context p {
+  padding: 1.5rem 0.5rem 2rem 0.5rem;
+  font-size: 16px;
+  text-align: justify;
+  text-align-last: left;
+}
+
+/* .faqSubtitles {
+            border-top: 1px solid silver;
+        }
+
+        .faqSubtitles h3 {
+            color: #003cac;
+            font-weight: 700;
+            border-left: 10px solid #d6ece4;
+            padding: 10px;
+            margin-left: 20px;
+            margin-top: 2rem;
+        }
+
+        .faqSubtitles p {
+            margin-left: 20px;
+            padding-bottom: 5px;
+        }
+
+        .faqSubtitles ul,
+        .faqSubtitles span {
+            margin-left: 30px;
+            padding-bottom: 10px;
+
+        } */
+
+.boxShadow {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.rightShadow {
+  box-shadow: 15px 0px 15px -10px rgba(0, 0, 0, 0.1);
+}
+
+.dashedBorder {
+  border-top: 2px dotted #cbc5a3;
+  border-bottom: 2px dotted #cbc5a3;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.linkTo {
+  color: #003cac;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.context ul,
+.context ol {
+  width: calc(100% - 4rem);
+  text-align: justify;
+  text-align-last: left;
+  padding: 1.5rem 0 1.5rem 3rem;
+}
+
+.border {
+  border-bottom: 1px solid silver;
+  padding: 0rem;
+}
+
+.flatBg {
+  background-image: url(./assets/Frame\ 2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  box-shadow: 4px 4px 8px silver;
+}
+
+.flatBg::before {
+  opacity: 0.2;
+}
+
+.lastBox {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.context ul li,
+.context ol li {
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  font-size: 16px;
+}
+
+.textMain {
+  background-color: #cfd4fe;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 1rem 2rem 3rem;
+  margin: 1rem 0rem 2rem 0rem;
+  /* box-shadow: 3px 3px 6px silver; */
+  /* border-bottom: 1px solid silver; */
+  text-align: left;
+  text-align-last: left;
+}
+
+.textMain h3 {
+  color: #333333;
+  border-left: 10px solid #d6ece4;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.textMainNobg {
+  /* border-bottom: 1px solid silver; */
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.textMain h2 {
+  margin-top: 1.5rem;
+  border-left: 10px solid #003cac;
+  padding: 1rem;
+}
+
+.textMainNobg h2 {
+  border-left: 10px solid #003cac;
+  padding: 1rem;
+}
+
+.textMain h3,
+.textMainNobg h3 {
+  border-left: 10px solid #a0b3ac;
+  padding: 0.8rem;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+}
+
+.textMain h4,
+.textMainNobg h4 {
+  border-left: 10px solid #bbd0c9;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 16px;
+}
+
+.textMain h5,
+.textMainNobg h5 {
+  border-left: 10px solid #d0e8df;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  font-size: 16px;
+}
+
+.textMain strong,
+.textMainNobg strong {
+  color: #003cac;
+  padding-bottom: 10px;
+}
+
+.textMainNobg p,
+.textMain p {
+  padding-top: 1rem;
+  margin-left: 1rem;
+}
+
+.textMainNobg ul,
+.textMain ul,
+.textMain ol,
+.textMainNobg ol {
+  margin-left: 3rem;
+}
+
+.flexContainer,
+.flexContainerFrame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  /* margin-bottom: 2rem; */
+}
+
+.flexContainerFrame {
+  gap: 2.5rem;
+}
+
+.flexImage {
+  width: 44%;
+  min-width: 350px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 0 auto;
+  max-width: 410px;
+  max-height: 450px;
+  /* filter: drop-shadow(5px 5px 10px Silver);
+          -webkit-filter: drop-shadow(5px 5px 10px Silver); */
+}
+
+.flexText {
+  width: 44%;
+  min-width: 350px;
+  /* background-color: #fff; */
+  /* border-radius: 10px; */
+  /* -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px; */
+  padding: 1rem 0.5rem;
+  /* border: 2px dashed #cbc5a3; */
+  margin: 0 1rem;
+  align-self: stretch;
+}
+
+.flexText ul,
+.flexText ol {
+  padding-top: 1rem;
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.flexText p {
+  text-align: left;
+}
+
+.flexText img {
+  width: 85%;
+  /* margin-top: 10%; */
+  /* border-radius: 10px; */
+  padding-left: 12%;
+}
+
+.imageTwo {
+  width: 50%;
+  padding-top: 1rem;
+  margin: auto;
+}
+
+.flexImageRound {
+  border-radius: 15px;
+  width: 40%;
+}
+
+/* .smallText {
+  font-size: 13px !important;
+  margin-left: 1.5rem;
+  font-style: italic;
+} */
+
+span.smallText {
+  display: block;
+  font-size: 13px !important;
+  padding-left: 1.4rem !important;
+  font-style: italic;
+}
+
+.location {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+  border-top: 1px solid silver;
+}
+
+.locationText h2 {
+  font-weight: 700;
+  padding-left: 0.5rem;
+}
+
+.textBorder {
+  border-top: 1px solid silver;
+  margin-top: 5.5rem;
+  padding: 2rem;
+}
+
+.locationText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.locationText p {
+  font-size: 16px;
+}
+
+.locationImage {
+  width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.allButton {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.allButton a {
+  text-decoration: none;
+}
+
+.centerBtn {
+  text-align: center;
+}
+
+.btnOw:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+  transition: 1s;
+}
+
+.btnOw {
+  background-color: #003cac;
+  width: 80%;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pSubTitle {
+  font-size: 22px !important;
+  padding-top: 3rem !important;
+  font-weight: bold;
+  color: #6b6b6b !important;
+}
+
+.minusPadding {
+  padding-bottom: 0.5rem !important;
+}
+
+/* vertical */
+.reveal {
+  position: relative;
+  transform: translateY(65px);
+  -webkit-transform: translateY(65px);
+  -moz-transform: translateY(65px);
+  -ms-transform: translateY(65px);
+  -o-transform: translateY(65px);
+  opacity: 0;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  opacity: 1;
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #fff;
+  color: #003cac;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  border: none;
+  /* border-bottom: 2px dashed #003cac; */
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+button.accordion.active::before {
+  content: "\2212";
+}
+
+button.accordion::before {
+  content: "\002B";
+  color: #003cac;
+  font-weight: bold;
+  /* float: right; */
+  margin-left: 5px;
+  padding-right: 0.5rem;
+  font-size: 16px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.collapsible:hover {
+  background-color: #f7f7f7;
+  color: #003cac !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-style: normal;
+}
+
+.activeCollaps {
+  font-style: normal;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsContent {
+  padding: 0 1rem;
+  display: none;
+  overflow: hidden;
+  /* background-color: #003cac; */
+  font-size: 12px;
+  border-top: 1px dashed #003cac;
+  background-color: #f7f7f7;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sources {
+  margin-bottom: 2rem;
+}
+
+.minusMargin {
+  margin-top: -2rem;
+}
+
+hr {
+  opacity: 0.7;
+  border-top: 1px solid silver;
+}
+
+.booking {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.booking h2 {
+  padding: 2rem;
+  margin: 0px;
+}
+
+.booking p {
+  padding-top: 2rem;
+}
+
+.booking a {
+  width: 30%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.booking button {
+  background-color: #003cac;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  padding: 15px;
+  margin-right: 70px;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+button:not(.primary) {
+  box-shadow: inset 0 1px 0 0 #fff, inset 0 -1px 0 0 rgb(204 204 204 / 30%);
+}
+
+.booking button:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.bookingContainer {
+  border-bottom: 1px solid silver;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.booking input {
+  padding-bottom: 0.2rem;
+  border: none;
+  border-bottom: 2px solid #000;
+  margin: 1rem 0;
+  width: 20rem;
+  background-color: #f7f7f7;
+  font-size: 16px;
+}
+
+.booking input:focus {
+  outline: none;
+}
+
+.booking input::placeholder {
+  color: #a0b3ac;
+  font-size: 16px;
+}
+
+.adjustMargin {
+  text-align: center;
+}
+
+.fullWidthBtn {
+  width: 90% !important;
+}
+
+.paraHead {
+  font-size: 18px;
+  font-weight: bold;
+  color: #003cac;
+  text-align: center;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.7);
+  padding: 1rem 0 2rem 0;
+  margin: 4rem 1.5rem 3rem 1.5rem;
+}
+
+.addTopMargin {
+  margin-top: 3rem !important;
+}
+
+@media (max-width: 1248px) {
+  .flexContainerFrame {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .flexContainerFrame {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    width: calc(100% - 2rem);
+    padding: 1.5rem 1rem;
+    margin: 0 0 2rem 0;
+  }
+
+  .context {
+    width: calc(100% - 3rem);
+    padding: 0 1.5rem;
+  }
+
+  .flexContainer,
+  .flexContainerFrame {
+    margin-bottom: 2rem;
+  }
+
+  .flexImage {
+    min-width: 280px;
+    margin: 2rem auto;
+    max-width: 410px;
+    max-height: 450px;
+  }
+
+  .flexText {
+    min-width: 300px;
+    margin: 0.5rem auto;
+  }
+
+  .imageTwo {
+    width: 50%;
+  }
+
+  .booking {
+    justify-content: center;
+    margin: 1rem auto;
+  }
+
+  .booking h2 {
+    padding: 0.5rem;
+    margin: 0px;
+  }
+
+  .booking a {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .booking button {
+    margin: 1rem auto;
+  }
+
+  .booking p {
+    padding-right: 2.5rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .title p {
+    padding: 0 1rem 1rem;
+  }
+
+  .minusMarginImage {
+    margin-top: 0rem;
+    margin-bottom: -4rem;
+  }
+
+  .extraPadding {
+    padding-bottom: 2rem;
+  }
+
+  .flexText h4 {
+    padding-top: 0 !important;
+  }
+
+  .flexImageRound,
+  .flexImage,
+  .flexText {
+    width: 100%;
+  }
+
+  .imageTwo {
+    width: 60%;
+    /* padding-top: 0; */
+  }
+
+  .imageTwo,
+  .locationImage {
+    order: 1;
+  }
+
+  .flexImage {
+    margin: 1.5rem auto 0 auto;
+  }
+
+  .allButton {
+    margin-bottom: 5px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 6rem);
+    padding-left: 3rem;
+  }
+
+  .context {
+    width: calc(100% - 2rem);
+    padding: 0 1rem;
+  }
+
+  .booking h2 {
+    text-align: center;
+  }
+
+  .flexContainerFrame {
+    gap: 1rem;
+  }
+
+  /* .paraHead {
+    padding: 1rem 0 1rem 0;
+    margin: 1rem 0 2rem 0;
+  } */
+}
+
+@media (max-width: 480px) {
+.textMainNobg p,
+.textMain p {
+  margin-left: 0.5rem;
+}
+
+  .faqSubtitles h3 {
+    margin-top: 3rem;
+  }
+
+  .minusMargin {
+    margin-top: 0rem !important;
+  }
+
+  .flexText .flexTwo {
+    margin-top: 0 !important;
+  }
+
+  .flexText h2 {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .flexText ul,
+  .flexText ol {
+    padding-top: 1rem;
+    margin-left: 1.5rem !important;
+  }
+
+  .flexMargin {
+    margin-top: -0.5rem !important;
+  }
+
+  .sources {
+    margin-top: -4rem;
+  }
+
+  /* .flexText p{
+            padding: 0 0.5rem !important;
+          } */
+
+  .faqSubtitles ul,
+  .faqSubtitles span,
+  .faqSubtitles ol {
+    margin-left: 10px;
+  }
+
+  .faqSubtitles p {
+    margin-left: 0;
+  }
+
+  /* .textMain h2,
+            .textMainNobg h2 {
+                border-left: 10px solid #003cac;
+            } */
+
+  .textMain {
+    margin: 1rem 1rem 3rem 1rem;
+    padding: 1rem;
+    padding-right: 2rem;
+  }
+
+  .textMainNobg {
+    padding: 1rem 0.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .textMain h2 {
+    padding: 1rem;
+    margin-bottom: 0rem;
+    /* margin-top: 1rem !important; */
+  }
+
+  .textMainNobg h2 {
+    margin-bottom: 1rem !important;
+    margin-left: 0.5rem;
+  }
+
+  .textMain p,
+  .textMainNobg p {
+    text-align: left !important;
+    padding: 0.5rem 1rem 2rem;
+  }
+
+  .textMain ul,
+  .textMainNobg ul,
+  .textMain ol,
+  .textMainNobg ol {
+    text-align: left !important;
+    padding: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  /* .textMain h3 {
+    margin-top: 0;
+  } */
+
+  .textMainNobg h3 {
+    margin-top: 3rem;
+  }
+
+  .flexContainer,
+  .flexContainerFrame {
+    margin: 1rem 0rem;
+  }
+
+  .title {
+    width: calc(100% - 1rem);
+    padding: 1rem 0.5rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .title h1 {
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .textBorder {
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .flexImage {
+    min-width: 280px;
+    margin: 1rem auto;
+    max-width: 410px;
+    max-height: 450px;
+  }
+
+  .flexText {
+    min-width: 210px;
+    margin: -1rem auto;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .bannerResponsive {
+    display: block;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .border {
+    padding: 1rem 0rem 1rem 0rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .context p {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    text-align: justify !important;
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 3rem);
+    padding-left: 1.5rem;
+    text-align: left !important;
+  }
+
+  .context ul,
+  .context p,
+  .context ol {
+    text-align: left;
+  }
+
+  .reveal {
+    position: relative;
+    transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -o-transform: translateY(15px);
+    opacity: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+
+  span.smallText {
+    margin-left: 0.5rem;
+  }
+
+  .imageTwo {
+    width: 100%;
+  }
+
+  .booking h2 {
+    text-align: center;
+  }
+
+  .booking input {
+    width: 18rem;
+  }
+
+  .topPadding {
+    padding-top: 2rem;
+  }
+
+  .topMargin {
+    margin-top: 2rem !important;
+  }
+
+  .topbtmPadding {
+    padding: 2rem 0rem !important;
+  }
+
+  /* .paraHead {
+    padding: 1rem 0 2rem 0;
+    margin: 1rem 0.5rem 3rem 0.5rem;
+  } */
+
+  .minusMarginImage {
+    margin: 2rem auto;
+  }
+
+  .resRmvTopPaddingMargin {
+    margin-top: 0 !important;
+    padding-top: 0rem !important;
+  }
+
+  .leftPadding {
+    padding-left: 3.5rem !important;
+  }
+
+  .flexText img {
+    width: 100%;
+    padding-left: 6px;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  /* .flexContainer{
+            max-width: 100%;
+          } */
+  .flexText {
+    min-width: 200px;
+    margin: 0.5rem auto;
+  }
+
+  .flexImage {
+    min-width: 220px;
+    margin: 0.5rem auto;
+  }
+
+  .location {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 3rem);
+    padding-left: 1.5rem;
+  }
+
+  .locationText > * {
+    margin-bottom: 20px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+
+  .booking input {
+    width: 13rem;
+  }
+}
+
+@media (max-width: 281px) {
+  .flexText {
+    min-width: 200px;
+    margin: 0.5rem auto;
+  }
+
+  .flexImage {
+    min-width: 220px;
+    margin: 0.5rem auto;
+  }
+}
+
+/* New CTA button style.*/
+
+.ctaContainer {
+  max-width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4rem;
+  border-top: 1px solid silver;
+}
+
+.ctaHeading {
+  font-weight: 700;
+  padding-left: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.ctaText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ctaText p {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .ctaContainer {
+    max-width: 94%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaContainer {
+    max-width: 92%;
+  }
+}
+
+@media (max-width: 375px) {
+  .ctaContainer {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 1rem 0.5rem;
+  }
+
+  .ctaText > * {
+    margin-bottom: 20px;
+  }
+}
+
+</style>
+<p><img src="{{media url="wysiwyg/Blue-Light-from-Digital-Devices/BlueLight_Digital_Devices_Oscar_Wylee_Web_Banner_1640x940.jpg"}}" alt="Blue Light from Digital Devices Banner" class="banner" title="Blue Light from Digital Devices Banner"> <img src="{{media url="wysiwyg/Blue-Light-from-Digital-Devices/BlueLight_DigitalDevices_Oscar_Wylee_Mobile_Banner_770x990.jpg"}}" class="bannerResponsive" title="Blue Light from Digital Devices Banner" alt="Blue Light from Digital Devices Banner"></p>
+<div class="container">
+<div class="context">
+<div class="title">
+<h1>What is Blue Light from Digital Devices?</h1>
+<p>Blue light from digital devices refers to HEV (High-Energy Visible) light, similar to ultraviolet rays, that are found in digital screens such as tablets and smartphones. Blue light is also emitted from the sun. The blue light definition is a high energy light source that is measured in nanometres (nm). Blue light wavelengths measure between 380 to 500 nanometers, according to UC Davis Health.<br><br>Blue ray light is unique because the eyes cannot filter it as effectively as other colours of light, meaning more blue light reaches the eyes than any other light on the spectrum. It has been theorised that blue light, especially from digital devices, may negatively affect the eyes by disrupting sleep cycles and causing eye fatigue, eye strain and ocular migraines. People may be able to limit the effects of extended blue light exposure by resting the eyes, wearing blue light glasses or by finding anti-blue light settings, products and apps for computers, phones and televisions.</p>
+</div>
+<div class="ctaContainer topbtmPadding" style="border-top: none;">
+<div class="ctaText">
+<div class="resRmvTopPaddingMargin ctaHeading">Look after your eyes at Oscar Wylee</div>
+<p>Book an eye test with one of Oscar Wylee optometrists, bulk billed for eligible Medicare cardholders.</p>
+</div>
+<div class="ctaText"><a href="https://www.oscarwylee.com.au/booking" class="adjustMargin"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<div class="flexContainer">
+<div class="flexText minusPadding" style="margin-left: -0.5rem;">
+<h2>Where Does Blue Light Come From?</h2>
+<p><br>Blue light comes from natural sunlight and artificial sources such as smartphones, tablets, LED screens and computer screens. The natural sources of blue light are the sun, and its light. Sunlight is a constant in everyday life and causes the body to feel awake, energetic and functional. Blue light in smartphones and tablets has the same amount of wavelengths and comes from the LED lights used to make the screens.</p>
+</div>
+<div class="flexText imageTwo"><img src="{{media url="wysiwyg/Blue-Light-from-Digital-Devices/BlueLight_DigitalDevices_OscarWylee_900x600px.jpg"}}" alt="BlueLight DigitalDevices"></div>
+</div>
+<h3>What are the High-Energy Blue Light Sources?</h3>
+<p class="minusPadding">The high-energy blue light sources are the sun and technology such as smartphones, tablets, LED screens, computers, laptops and gaming systems. The sources of high-energy blue light are listed below.</p>
+<ul>
+<li><b>Smartphones:</b> Smartphones are mobile phones that have many of the same functions as computers, such as internet browsing. Smartphones may have between 400 and 490 nm of blue light.</li>
+<li><b>Tablets:</b> A tablet is a digital device that operates like a computer, only wireless. A tablet may have between 400 - 490 nm of blue light emitted.</li>
+<li><b>Computers:</b> Computers are digital devices for internet browsing, data storage and processing. Computers are a big source of blue light for many people.</li>
+<li><b>Laptops:</b> Laptops are portable computers that may emit between 400 and 490 nm of blue light.</li>
+<li><b>Gaming Consoles:</b> Gaming consoles are screens that people use to play video games on. There may be between 400 - 490 nm of blue light in a gaming console.</li>
+<li><b>LED screens:</b> Other LED screens, such as digital billboards and posters are a source of blue light.</li>
+</ul>
+<h3>What are the Natural Sources of Blue Light?</h3>
+<p>The natural source of blue light is the sun. Any other natural source of blue light is a product or extension of the sun's blue light rays. This includes glares or reflections.</p>
+<h3 class="addTopMargin">What is the Difference Between High-energy and Natural Sources of Blue Light for the Human eye?</h3>
+<p>There is no major difference between high-energy and natural sources of blue light. Blue light tends to affect the eyes the same way, regardless of the source. The only minor difference between high-energy and natural sources of blue light is the time of day that the body is likely to experience them. Blue light from the sun is experienced during the day, when it has been shown to have positive effects on the body, such as an elevation in mood and greater work productivity. Artificial blue light can be experienced at any time of day, depending on when a person is on a digital device. Blue light can disrupt sleeping patterns if a person is on their phone or their computer later in the day or at night time, as blue light helps to regulate sleep.</p>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<div class="flexContainer">
+<div class="flexText minusPadding" style="margin-left: -0.5rem;">
+<h2>What is the Blue Light Wavelength?</h2>
+<p>The blue light wavelength is a high energy wavelength, ranging between 380 to 500 nanometres (nm). Light wavelengths are the microscopic but perceivable particles that make up colours and light, known as photons. The light spectrum reaches the maximum wavelength at 700 nm, the wavelength of red light. Blue light wavelength is similar to the ultraviolet rays the sun creates on a daily basis, in that it is a small wavelength that passes through surfaces but still emits a high amount of energy.</p>
+</div>
+<div class="flexText imageTwo"><img src="{{media url="wysiwyg/Blue-Light-from-Digital-Devices/BlueLight_Spectrum_OscarWylee_900x600px.jpg"}}" alt="BlueLight Spectrum OscarWylee"></div>
+</div>
+<h3>How to Measure Wavelength of Blue Light?</h3>
+<p>The blue light wavelength is measured in nanometres. There is no conventional way to measure blue light at home without the use of specialised devices. Blue light levels are measured professionally using devices such as solarmeters, light-metres, also known as illuminance metres, and UPR tech’s handheld spectrometer. Blue light is measured in these devices by separating the levels of each form of light within the device. <br><br>Blue light may start to negatively affect the human eye at a wavelength of 400 nm and above, according to the National Institute of Medicine. Blue light levels of 400 nm and above have a chance of penetrating the retina and eye lens while still retaining high energy, causing damage to the eyes that may lead to conditions such as cataracts and dry eyes. Blue light passing through the cornea also leads to less melatonin being made in the body, affecting a person's ability to rest.</p>
+</div>
+<hr>
+<div class="textMain boxShadow">
+<h2>What are the Benefits of Blue Light for Human Eye?</h2>
+<p class="minusPadding">The benefits of blue light for human eyes are increased awareness, greater memory, an improvement in mood, improved emotional state and enhanced reflexes. Blue light also aids the body's circadian rhythm, creating better sleep. The benefits of blue light for the human eye are listed below.</p>
+<ul>
+<li><b>Awareness:</b> Blue light locks the creation of melatonin, the hormone that causes the body to feel sleepy, leading to greater sense of awareness and alertness.</li>
+<li><b>Greater memory: </b>Blue light helps memory as it heightens awareness and thought processing, including information received and the mind’s ability to retain it.</li>
+<li><b>Improved mood:</b> The energy the body creates in response to seeing or feeling blue light also affects the mind, creating a better mood.</li>
+<li><b>Enhanced reflexes:</b> Blue light creates a feeling of being awake, enhancing a person's ability to react to things at a greater speed.</li>
+<li><b>Better rest:</b> Blue light can help the body regulate sleep. Exposure to blue light in the day indicates to the body that it needs to be awake. At night, the lack of blue light tells the body that it is time to sleep.</li>
+</ul>
+</div>
+<div class="context"><hr></div>
+<div class="ctaContainer topbtmPadding" style="border-top: none;">
+<div class="ctaText">
+<div class="resRmvTopPaddingMargin ctaHeading">Get a Full Quote in Store</div>
+<p>Get fitted for your glasses at Oscar Wylee by visiting us in store and talking to our friendly staff for a complete quote.<br><br><br>All major health funds accepted in store.</p>
+</div>
+<div class="ctaText"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html" class="adjustMargin"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>What are the Effects of Blue Light on the Human Eye?</h2>
+<p class="minusPadding">The effects of blue light on the human eye is increased awareness, eye fatigue and retinal damage. The effects of blue light on the human eyes are listed below.</p>
+<ul class="minusPadding">
+<li><b>Increased awareness: </b>Blue light increases awareness by stimulating the body in the same way natural sunlight does. The stimulation blue light causes makes the body feel awake and energised, creating greater awareness and alertness in the eyes.</li>
+<li><b>Eye fatigue: </b>Blue light may cause eye fatigue as it is harder for the eye to perceive due to its low wavelength. To see blue light, the eyes increase the level of concentration for a long period at a time. This puts strain on the eyes, causing them to fatigue quickly, creating feelings of headaches, dry eyes and discomfort.</li>
+<li><b>Retinal damage:</b>&nbsp;Blue light may cause retinal damage as it is not naturally blocked by the front of the eye, resulting in the high energy light passing through the eyes and into the retina. This may cause damage to the retina.</li>
+</ul>
+<h3>What are the Concerns About Blue Light?</h3>
+<p class="minusPadding">The concerns about blue light are that it affects circadian rhythm, that it may damage the retina and that blue light may cause age-related macular degeneration (AMD). The concerns regarding blue light are as listed below.</p>
+<ul class="minusPadding">
+<li><b>Blue light disrupts the body's circadian rhythm: </b>A person's natural sleep cycle or circadian rhythm, may be affected by blue light as this light simulates the effects of sunlight, which helps us to regulate sleep. This is of particular concern during times when the eyes and the brain should be resting, such as night time.</li>
+<li><b>Blue light may damage the retina:</b> Blue light passes through the front of the eye and hits the retina, which may cause damage to the retina and accelerate vision problems.</li>
+<li><b>Blue light causes macular age-related degeneration (AMD):</b> There are concerns that blue light may damage the retina when the eye is overexposed to it. Some theorise that this damage may weaken the retina in ways that are normally only caused by ageing, increasing risk of macular degeneration.</li>
+</ul>
+<h4>How Does Blue Light Affect Work Efficiency?</h4>
+<p>Blue light affects work efficiency by improving alertness, and reducing fatigue. Blue light affects work efficiency by preventing the body from creating melatonin, the hormone the body creates to put itself to sleep, according to Harvard Health. Blue light simulates sunlight and naturally wakes up the body when it comes into contact with the skin, making a person more awake and aware, increasing work efficiency.</p>
+<div class="flexContainer">
+<div class="flexText minusPadding" style="margin-left: -0.5rem;">
+<h4>How Does Blue Light Affect Psychology?</h4>
+<p>Blue light affects psychology by elevating moods and enabling the body to create more energy, which prevents depression and assists in sleep when blue light is received during daylight hours. According to a study performed by the American Academy of Neurology, blue light therapy was shown to improve a patient's level of depression.</p>
+<h4>How Does Blue Light Affect Sleep?</h4>
+<p>Blue light affects sleep by disrupting the body's circadian rhythm, simulating sunlight and keeping the body awake. Too much blue light exposure causes the system to believe it is still in sunlight, reducing the production of melatonin, the hormone that helps us to sleep.</p>
+</div>
+<div class="flexText imageTwo"><img src="{{media url="wysiwyg/Blue-Light-from-Digital-Devices/BlueLight_AffectSleep_OscarWylee_900x600px.jpg"}}" alt="BlueLigh AffectSleep OscarWylee"></div>
+</div>
+<h4>What are the Long-term Effects of Blue Light?</h4>
+<p>The long term effects of blue light have not yet been scientifically proven. As digital blue light is a newer technology, few studies definitely state what the long term effects are. Possible effects may include age-related macular degeneration (AMD), cataracts, digital eye strain and a disrupted sleep cycle.</p>
+<h4>What are the Short-term Effects of Blue Light?</h4>
+<p>The short term effects of blue light may include increased awareness, dry eyes, eye fatigue and short headaches. Blue light is stimulating to look at, negatively affecting sleep cycles and preventing the eyes from blinking a healthy and consistent amount. This causes the eyes to dry quickly. Blue light causes increased awareness and focus, particularly on a specific object.<br><br>Eyes become fatigued when focused for too long on a single point. Keeping attention on a blue light source for too long causes discomfort in the eyes and minor headaches. These headaches and retinal pains continue until the eyes have rested</p>
+</div>
+<hr>
+<div class="textMain boxShadow">
+<h2>How Does Blue Light Affect Children?</h2>
+<p>Blue light affects children in the same way it affects adults. Blue light may affect a child’s natural sleep cycle, which may disrupt the child’s development and quality of life. A bad sleep cycle results in low energy throughout the day and a poor mental state until proper rest has been sought.</p>
+<h2>How to Protect the Human Eye from Blue Light?</h2>
+<p class="minusPadding">To protect the human eye from blue light, try wearing blue light glasses, rest the eyes from blue light sources and turn on blue light blocking functions on applicable devices. The best ways to protect the human eye from blue light are listed below.</p>
+<ul class="minusPadding">
+<li><b>Wear Blue Light Glasses:</b> Blue light glasses are effective in blocking blue light, reducing the phototoxicity of this light source by 10-20%, according to a 2017 study conducted by Tsz Wing Leung, Roger Wing-hong Li and Chea-su Kee.</li>
+<li><b>Rest from blue light sources:</b> Limiting how much blue light the body is taking in reduces negative effects associated with prolonged blue light exposure. A common rule used to promote health and reduce issues with blue light energy is referred to as the 20-20-20 rule: After looking at an object 20 feet away for 20 minutes, look away for 20 seconds.</li>
+<li><b>Turn on blue light blocking:</b> Blue light on devices such as tablets or smartphones can be reduced or blocked depending on the device. Blue light blockers are found through the device's setting or through a separate, downloadable app.</li>
+</ul>
+<h3>What Emits Blue Light?</h3>
+<p>Blue light is emitted by the sun and from artificial sources such as smartphones, computers, and fluorescent lights. Blue light and ultraviolet rays from the sun are blocked to a degree by wearing a pair of sunglasses when outdoors. Blue light from digital sources such as computers are blocked to a degree by using blue light filters, such as the ones found in glasses or additional applications and settings in digital devices.</p>
+<h4>What are the Best Methods to Reduce Blue Light exposure?</h4>
+<p>The best methods to reduce blue light exposure are resting the eyes from sources of blue light or using blue light blocking products such as blue light filters on glasses or blue light preventing apps and functions. Blue light exposure refers to the amount of blue light that enters the eye.<br><br>Blue light exposure can also be prevented by taking breaks from looking at a source of blue light for more than 20 minutes. Blue light blocking on phones and other devices are found in the item's settings. Look for ‘night shift’ or ‘blue light’ settings to turn off blue light exposure on the device.</p>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>What is Blue Light Spectrum?</h2>
+<p>The blue light spectrum is the visible blue light the human eye sees on the colour spectrum. The visible light spectrum is all the wavelengths of colour the human eye sees and perceivably measures. Blue light’s measurement on the scale is 400-500 nm, with red being at the very end of the scale at 700 nm. <br><br>Blue light filter glasses and light spectrum glasses do not disrupt the wearers ability to see blue light. Blue light glasses instead attempt to prevent the high energy that blue light wavelengths contain from passing through the eyes.</p>
+</div>
+<div class="context">
+<div class="location">
+<div class="locationText">
+<h2>Find an Oscar Wylee store near you</h2>
+<p>Our knowledgeable and friendly team can help you find a pair of stylish and affordable frames.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img class="locationImage" src="{{media url="wysiwyg/Blue-Light-from-Digital-Devices/find-a-store.jpg"}}" alt="oscar wylee Booking" title="oscar wylee Booking"></div>
+<div class="location item1"><img class="locationImage" src="{{media url="wysiwyg/Blue-Light-from-Digital-Devices/book_an_eye_test.jpg"}}" alt="book an eye test with Oscar Wylee" title="book an eye test with Oscar Wylee">
+<div class="locationText">
+<h2>Book an eye test at Oscar Wylee</h2>
+<p>Come in and see our optometrists for an eye test. If you are an eligible Medicare Card holder, our eye tests will be bulk billed.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/booking"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+</div>
+</div>
+</div>
+</div>

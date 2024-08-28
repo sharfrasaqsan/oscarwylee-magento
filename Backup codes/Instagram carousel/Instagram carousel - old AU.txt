@@ -1,0 +1,10 @@
+<div class="carousel-form">
+<div class="carousel-form__content">
+<div class="content-title">#OSCARWYLEE</div>
+<div class="loading-progress">
+<div class="loader"></div>
+</div>
+<div class="content-carousel"><img class="image" src="{{media url="wysiwyg/instagram/ig1.jpg"}}" alt=""> <img class="image" src="{{media url="wysiwyg/ig2_.png"}}" alt=""> <img class="image" src="{{media url="wysiwyg/instagram/ig3.jpg"}}" alt=""> <img class="image" src="{{media url="wysiwyg/instagram/ig4.jpg"}}" alt=""> <img class="image" src="{{media url="wysiwyg/instagram/ig5.jpg"}}" alt=""> <img class="image" src="{{media url="wysiwyg/instagram/ig6.jpg"}}" alt=""> <img class="image" src="{{media url="wysiwyg/instagram/ig7.jpg"}}" alt=""> <img class="image" src="{{media url="wysiwyg/ig8_.png"}}" alt=""> <img class="image" src="{{media url="wysiwyg/ig9.png"}}" alt=""> <img class="image" src="{{media url="wysiwyg/ig10.png"}}" alt=""></div>
+<div class="content-bottom"><img class="image" src="{{media url="wysiwyg/instagram/insta.png"}}"> <a class="link" href="https://www.instagram.com/oscarwylee/">@oscarwylee</a></div>
+</div>
+</div>

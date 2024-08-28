@@ -1,0 +1,1453 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap");
+
+#maincontent {
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #333333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.footer-item h4,
+.footer-item h3,
+.help-block h3,
+.copyright span {
+  color: #fff;
+}
+
+body {
+  color: #333333;
+}
+
+*,
+page-main {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  /* color: #333333; */
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+
+button:hover {
+  color: white !important;
+}
+
+ul,
+ol {
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 1236px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.banner {
+  max-width: 100%;
+  max-height: 450px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+
+.text {
+  max-width: 100%;
+}
+
+.bannerResponsive {
+  display: none;
+}
+
+.title {
+  width: calc(100% - 6rem);
+  padding: 2.5rem 3rem;
+  text-align: center;
+  /* margin: 0 1rem 2rem 1rem; */
+  border-bottom: 1px solid rgba(192, 192, 192, 0.7);
+}
+
+.title h1,
+.title h2 {
+  font-weight: 700;
+  padding-bottom: 3rem;
+}
+
+.title p {
+  padding: 0 6rem 2rem;
+}
+
+.context {
+  width: calc(100% - 2rem);
+  padding: 0 1rem;
+}
+
+.context h2 {
+  padding: 1rem 0 0 0;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.context h3 {
+  padding: 2rem 0 0 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.context p {
+  padding: 1.5rem 0.5rem 2rem 0.5rem;
+  font-size: 16px;
+  text-align: justify;
+  text-align-last: left;
+}
+
+/* .faqSubtitles {
+            border-top: 1px solid silver;
+        }
+
+        .faqSubtitles h3 {
+            color: #003cac;
+            font-weight: 700;
+            border-left: 10px solid #d6ece4;
+            padding: 10px;
+            margin-left: 20px;
+            margin-top: 2rem;
+        }
+
+        .faqSubtitles p {
+            margin-left: 20px;
+            padding-bottom: 5px;
+        }
+
+        .faqSubtitles ul,
+        .faqSubtitles span {
+            margin-left: 30px;
+            padding-bottom: 10px;
+
+        } */
+
+.boxShadow {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.rightShadow {
+  box-shadow: 15px 0px 15px -10px rgba(0, 0, 0, 0.1);
+}
+
+.dashedBorder {
+  border-top: 2px dotted #cbc5a3;
+  border-bottom: 2px dotted #cbc5a3;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.linkTo {
+  color: #003cac;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.context ul,
+.context ol {
+  width: calc(100% - 4rem);
+  text-align: justify;
+  text-align-last: left;
+  padding: 1.5rem 0 1.5rem 3rem;
+}
+
+.border {
+  border-bottom: 1px solid silver;
+  padding: 0rem;
+}
+
+.flatBg {
+  background-image: url(./assets/Frame\ 2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  box-shadow: 4px 4px 8px silver;
+}
+
+.flatBg::before {
+  opacity: 0.2;
+}
+
+.lastBox {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.context ul li,
+.context ol li {
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  font-size: 16px;
+}
+
+.textMain {
+  background-color: #cfd4fe;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 1rem 2rem 3rem;
+  margin: 1rem 0rem 2rem 0rem;
+  /* box-shadow: 3px 3px 6px silver; */
+  /* border-bottom: 1px solid silver; */
+  text-align: left;
+  text-align-last: left;
+}
+
+.textMain h3 {
+  color: #003cac;
+  border-left: 10px solid #d6ece4;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.textMainNobg {
+  /* border-bottom: 1px solid silver; */
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.textMain h2 {
+  margin-top: 1.5rem;
+  border-left: 10px solid #003cac;
+  padding: 1rem;
+}
+
+.textMainNobg h2 {
+  border-left: 10px solid #003cac;
+  padding: 1rem;
+}
+
+.textMain h3,
+.textMainNobg h3 {
+  border-left: 10px solid #a0b3ac;
+  padding: 0.8rem;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+}
+
+.textMain h4,
+.textMainNobg h4 {
+  border-left: 10px solid #bbd0c9;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+   font-size: 16px;
+}
+
+.textMain h5,
+.textMainNobg h5 {
+  border-left: 10px solid #d0e8df;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  font-size: 16px;
+}
+
+.textMain strong,
+.textMainNobg strong {
+  color: #003cac;
+  padding-bottom: 10px;
+}
+
+.textMainNobg p,
+.textMain p {
+  padding-top: 1rem;
+  margin-left: 1rem;
+}
+
+.textMainNobg ul,
+.textMain ul,
+.textMain ol,
+.textMainNobg ol {
+  margin-left: 3rem;
+}
+
+.flexContainer,
+.flexContainerFrame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  /* margin-bottom: 2rem; */
+}
+
+.flexContainerFrame {
+  gap: 2.5rem;
+}
+
+.flexImage {
+  width: 44%;
+  min-width: 350px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 0 auto;
+  max-width: 410px;
+  max-height: 450px;
+  /* filter: drop-shadow(5px 5px 10px Silver);
+          -webkit-filter: drop-shadow(5px 5px 10px Silver); */
+}
+
+.flexText {
+  width: 44%;
+  min-width: 350px;
+  /* background-color: #fff; */
+  /* border-radius: 10px; */
+  /* -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px; */
+  padding: 1rem 0.5rem;
+  /* border: 2px dashed #cbc5a3; */
+  margin: 0 1rem;
+  align-self: stretch;
+}
+
+.flexText ul,
+.flexText ol {
+  padding-top: 1rem;
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.flexText p {
+  text-align: left;
+}
+
+.flexText img {
+  width: 80%;
+  padding-left: 12%;
+}
+
+.imageTwo {
+  width: 50%;
+  padding-top: 1rem;
+  margin: auto;
+}
+
+.flexImageRound {
+  border-radius: 15px;
+  width: 40%;
+}
+
+/* .smallText {
+  font-size: 13px !important;
+  margin-left: 1.5rem;
+  font-style: italic;
+} */
+
+span.smallText {
+  display: block;
+  font-size: 13px !important;
+  padding-left: 1.4rem !important;
+  font-style: italic;
+}
+
+.location {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+  border-top: 1px solid silver;
+}
+
+.locationText h2 {
+  font-weight: 700;
+  padding-left: 0.5rem;
+}
+
+.textBorder {
+  border-top: 1px solid silver;
+  margin-top: 5.5rem;
+  padding: 2rem;
+}
+
+.locationText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.locationText p {
+  font-size: 16px;
+}
+
+.locationImage {
+  width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.allButton {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.allButton a {
+  text-decoration: none;
+}
+
+.centerBtn {
+  text-align: center;
+}
+
+.btnOw:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+  transition: 1s;
+}
+
+.btnOw {
+  background-color: #003cac;
+  width: 80%;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pSubTitle {
+  font-size: 22px !important;
+  padding-top: 3rem !important;
+  font-weight: bold;
+  color: #6b6b6b !important;
+}
+
+.minusPadding {
+  padding-bottom: 0.5rem !important;
+}
+
+/* vertical */
+.reveal {
+  position: relative;
+  transform: translateY(65px);
+  -webkit-transform: translateY(65px);
+  -moz-transform: translateY(65px);
+  -ms-transform: translateY(65px);
+  -o-transform: translateY(65px);
+  opacity: 0;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  opacity: 1;
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #fff;
+  color: #003cac;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  border: none;
+  /* border-bottom: 2px dashed #003cac; */
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+button.accordion.active::before {
+  content: "\2212";
+}
+
+button.accordion::before {
+  content: "\002B";
+  color: #003cac;
+  font-weight: bold;
+  /* float: right; */
+  margin-left: 5px;
+  padding-right: 0.5rem;
+  font-size: 16px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.collapsible:hover {
+  background-color: #f7f7f7;
+  color: #003cac !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-style: normal;
+}
+
+.activeCollaps {
+  font-style: normal;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsContent {
+  padding: 0 1rem;
+  display: none;
+  overflow: hidden;
+  /* background-color: #003cac; */
+  font-size: 12px;
+  border-top: 1px dashed #003cac;
+  background-color: #f7f7f7;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sources {
+  margin-bottom: 2rem;
+}
+
+.minusMargin {
+  margin-top: -2rem;
+}
+
+hr {
+  opacity: 0.7;
+  border-top: 1px solid silver;
+}
+
+.booking {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.booking h2 {
+  padding: 2rem;
+  margin: 0px;
+}
+
+.booking p {
+  padding-top: 2rem;
+}
+
+.booking a {
+  width: 30%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.booking button {
+  background-color: #003cac;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  padding: 15px;
+  margin-right: 70px;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+button:not(.primary) {
+  box-shadow: inset 0 1px 0 0 #fff, inset 0 -1px 0 0 rgb(204 204 204 / 30%);
+}
+
+.booking button:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.bookingContainer {
+  border-bottom: 1px solid silver;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.booking input {
+  padding-bottom: 0.2rem;
+  border: none;
+  border-bottom: 2px solid #000;
+  margin: 1rem 0;
+  width: 20rem;
+  background-color: #f7f7f7;
+  font-size: 16px;
+}
+
+.booking input:focus {
+  outline: none;
+}
+
+.booking input::placeholder {
+  color: #a0b3ac;
+  font-size: 16px;
+}
+
+.adjustMargin {
+  text-align: center;
+}
+
+.fullWidthBtn {
+  width: 90% !important;
+}
+
+.paraHead {
+  font-size: 18px;
+  font-weight: bold;
+  color: #003cac;
+  text-align: center;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.7);
+  padding: 1rem 0 2rem 0;
+  margin: 4rem 1.5rem 3rem 1.5rem;
+}
+
+.addTopMargin {
+  margin-top: 3rem !important;
+}
+
+@media (max-width: 1248px) {
+  .flexContainerFrame {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .flexContainerFrame {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    width: calc(100% - 2rem);
+    padding: 1.5rem 1rem;
+    margin: 0 0 2rem 0;
+  }
+
+  .context {
+    width: calc(100% - 3rem);
+    padding: 0 1.5rem;
+  }
+
+  .flexContainer,
+  .flexContainerFrame {
+    margin-bottom: 2rem;
+  }
+
+  .flexImage {
+    min-width: 280px;
+    margin: 2rem auto;
+    max-width: 410px;
+    max-height: 450px;
+  }
+
+  .flexText {
+    min-width: 300px;
+    margin: 0.5rem auto;
+  }
+
+  .imageTwo {
+    width: 50%;
+  }
+
+  .booking {
+    justify-content: center;
+    margin: 1rem auto;
+  }
+
+  .booking h2 {
+    padding: 0.5rem;
+    margin: 0px;
+  }
+
+  .booking a {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .booking button {
+    margin: 1rem auto;
+  }
+
+  .booking p {
+    padding-right: 2.5rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .title p {
+    padding: 0 1rem 1rem;
+  }
+
+  .minusMarginImage {
+    margin-top: 0rem;
+    margin-bottom: -4rem;
+  }
+
+  .extraPadding {
+    padding-bottom: 2rem;
+  }
+
+  .flexText h4 {
+    padding-top: 0 !important;
+  }
+
+  .flexImageRound,
+  .flexImage,
+  .flexText {
+    width: 100%;
+  }
+
+  .imageTwo {
+    width: 60%;
+    /* padding-top: 0; */
+  }
+
+  .imageTwo,
+  .locationImage {
+    order: 1;
+  }
+
+  .flexImage {
+    margin: 1.5rem auto 0 auto;
+  }
+
+  .allButton {
+    margin-bottom: 5px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 6rem);
+    padding-left: 3rem;
+  }
+
+  .context {
+    width: calc(100% - 2rem);
+    padding: 0 1rem;
+  }
+
+  .booking h2 {
+    text-align: center;
+  }
+
+  .flexContainerFrame {
+    gap: 1rem;
+  }
+
+  /* .paraHead {
+    padding: 1rem 0 1rem 0;
+    margin: 1rem 0 2rem 0;
+  } */
+}
+
+@media (max-width: 480px) {
+.textMainNobg p,
+.textMain p {
+  margin-left: 0.5rem;
+}
+
+.flexText img {
+  width: 96%;
+  padding-left: 5%;
+}
+
+  .faqSubtitles h3 {
+    margin-top: 3rem;
+  }
+
+  .minusMargin {
+    margin-top: 0rem !important;
+  }
+
+  .flexText .flexTwo {
+    margin-top: 0 !important;
+  }
+
+  .flexText h2 {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .flexText ul,
+  .flexText ol {
+    padding-top: 1rem;
+    margin-left: 1.5rem !important;
+  }
+
+  .flexMargin {
+    margin-top: -0.5rem !important;
+  }
+
+  .sources {
+    margin-top: -4rem;
+  }
+
+  /* .flexText p{
+            padding: 0 0.5rem !important;
+          } */
+
+  .faqSubtitles ul,
+  .faqSubtitles span,
+  .faqSubtitles ol {
+    margin-left: 10px;
+  }
+
+  .faqSubtitles p {
+    margin-left: 0;
+  }
+
+  /* .textMain h2,
+            .textMainNobg h2 {
+                border-left: 10px solid #003cac;
+            } */
+
+  .textMain {
+    margin: 1rem 1rem 3rem 1rem;
+    padding: 1rem;
+    padding-right: 2rem;
+  }
+
+  .textMainNobg {
+    padding: 1rem 0.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .textMain h2 {
+    padding: 1rem;
+    margin-bottom: 0rem;
+    /* margin-top: 1rem !important; */
+  }
+
+  .textMainNobg h2 {
+    margin-bottom: 1rem !important;
+    margin-left: 0.5rem;
+  }
+
+  .textMain p,
+  .textMainNobg p {
+    text-align: left !important;
+    padding: 0.5rem 1rem 2rem;
+  }
+
+  .textMain ul,
+  .textMainNobg ul,
+  .textMain ol,
+  .textMainNobg ol {
+    text-align: left !important;
+    padding: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  /* .textMain h3 {
+    margin-top: 0;
+  } */
+
+  .textMainNobg h3 {
+    margin-top: 3rem;
+  }
+
+  .flexContainer,
+  .flexContainerFrame {
+    margin: 1rem 0rem;
+  }
+
+  .title {
+    width: calc(100% - 1rem);
+    padding: 1rem 0.5rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .title h1 {
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .textBorder {
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .flexImage {
+    min-width: 280px;
+    margin: 1rem auto;
+    max-width: 410px;
+    max-height: 450px;
+  }
+
+  .flexText {
+    min-width: 210px;
+    margin: -1rem auto;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .bannerResponsive {
+    display: block;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .border {
+    padding: 1rem 0rem 1rem 0rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .context p {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    text-align: justify !important;
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 3rem);
+    padding-left: 1.5rem;
+    text-align: left !important;
+  }
+
+  .context ul,
+  .context p,
+  .context ol {
+    text-align: left;
+  }
+
+  .reveal {
+    position: relative;
+    transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -o-transform: translateY(15px);
+    opacity: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+
+  span.smallText {
+    margin-left: 0.5rem;
+  }
+
+  .imageTwo {
+    width: 100%;
+  }
+
+  .booking h2 {
+    text-align: center;
+  }
+
+  .booking input {
+    width: 18rem;
+  }
+
+  .topPadding {
+    padding-top: 2rem;
+  }
+
+  .topMargin {
+    margin-top: 2rem !important;
+  }
+
+  .topbtmPadding {
+    padding: 2rem 0rem !important;
+  }
+
+  /* .paraHead {
+    padding: 1rem 0 2rem 0;
+    margin: 1rem 0.5rem 3rem 0.5rem;
+  } */
+
+  .minusMarginImage {
+    margin: 2rem auto;
+  }
+
+  .resRmvTopPaddingMargin {
+    margin-top: 0 !important;
+    padding-top: 0rem !important;
+  }
+
+    .leftPadding {
+      padding-left: 3.5rem !important;
+    }
+
+    .leftPaddingResponsive {
+      padding: 3rem !important;
+}
+}
+
+@media (max-width: 375px) {
+  /* .flexContainer{
+            max-width: 100%;
+          } */
+  .flexText {
+    min-width: 200px;
+    margin: 0.5rem auto;
+  }
+
+  .flexImage {
+    min-width: 220px;
+    margin: 0.5rem auto;
+  }
+
+  .location {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 3rem);
+    padding-left: 1.5rem;
+  }
+
+  .locationText > * {
+    margin-bottom: 20px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+
+  .booking input {
+    width: 13rem;
+  }
+}
+
+@media (max-width: 281px) {
+  .flexText {
+    min-width: 200px;
+    margin: 0.5rem auto;
+  }
+
+  .flexImage {
+    min-width: 220px;
+    margin: 0.5rem auto;
+  }
+}
+
+/* New CTA button style.*/
+
+.ctaContainer {
+  max-width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+  border-top: 1px solid silver;
+}
+
+.ctaHeading {
+  font-weight: 700;
+  padding-left: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.ctaText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ctaText p {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .ctaContainer {
+    max-width: 94%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaContainer {
+    max-width: 92%;
+  }
+}
+
+@media (max-width: 375px) {
+  .ctaContainer {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 1rem 0.5rem;
+  }
+
+  .ctaText > * {
+    margin-bottom: 20px;
+  }
+}
+
+
+.products-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.individual-product {
+  border-right: 1px solid silver;
+  margin-bottom: 2em;
+  display: flex; /* margin-left: 1em; */
+}
+.individual-product:last-child {
+  border: none;
+}
+.product-name,
+.product-price {
+  text-align: center;
+}
+.product-button {
+  margin: 0 auto;
+  display: flex;
+  padding: 5px 30px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  margin-top: 1em;
+}
+.individual-product {
+  border-right: 1px solid silver;
+  margin-bottom: 2em;
+  display: flex; /* margin-left: 1em; */
+}
+.individual-product:last-child {
+  border: none;
+}
+.product-image {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+.products-section-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .products-section {
+    display: none;
+  }
+  .individual-product {
+    border-right: none;
+    border-bottom: 1px solid silver;
+    padding-bottom: 0.5em;
+    margin-bottom: 0;
+    width: 90%;
+  }
+  .individual-product {
+    display: flex;
+    margin: auto auto;
+  }
+  .product-image {
+    width: 100%;
+  }
+  .products-section-mobile {
+    display: block;
+  }
+}
+</style>
+<div><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Best_Blue_Light_WebBanner_1640x840px.jpg"}}" alt="Best Blue Light-Blocking Glasses Banner" class="banner" title="Best Blue Light-Blocking Glasses Banner"> <img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Best_Blue_Light_MobileBanner_770x900px.jpg"}}" class="bannerResponsive" title="Best Blue Light-Blocking Glasses Banner" alt="Best Blue Light-Blocking Glasses Banner"></div>
+<div class="container">
+<div class="context">
+<div class="title">
+<h1>Best Blue Light-Blocking Glasses and Reviews</h1>
+<p class="minusPadding">The best blue light-blocking glasses will be a combination of form, function and effectiveness. Just like any pair of glasses, blue light glasses are an investment in eye care and, therefore, it is important to choose the best one for you and your needs. If you spend much of your time in front of a screen such as on a computer for work, school or gaming, or find you cannot put your phone down at nighttime, we recommend you add a blue light filter to your glasses. <br><br>At Oscar Wylee, our blue light filter is a fixed additional $80 on top of any pair of optical glasses, prescription or non-prescription. The total price will depend on other add ons or lens types such as multifocal or high index lenses. <br><br>The criteria for the best blue light glasses includes the effectiveness of the blue light filter, the price of frame and the style of frame. The reasons blue light glasses are chosen are listed below.</p>
+<ol class="leftPaddingResponsive">
+<li><b>Effectiveness of blue light filter:</b> How effective the glasses are at blocking blue light is the most important factor when choosing what blue-light glasses to buy.</li>
+<li><b>Price of frame:</b> Price is another key factor as some people may try to find the cheapest price or are looking for a bigger investment in their blue light-blocking glasses.</li>
+<li><b>Style of frame:</b> The style and design of the frame of your blue light glasses is a main consideration when choosing these glasses as you can be wearing them for most of the day, therefore, you want to choose a style you feel confident and comfortable in.</li>
+</ol>
+</div>
+<div class="textMain boxShadow">
+<h2>How to Choose the Best Blue Light-Blocking Glasses?</h2>
+<p>Choosing the best blue light-blocking glasses involves assessing the effectiveness of the glasses, selecting the right lenses, finding the best frames, knowing the importance of corrective lenses and how price affects the choice. The reasons these activities are involved in choosing the best blue light glasses are listed below.</p>
+<h3>1. Effectiveness of Blue Light-Blocking Glasses</h3>
+<p>The effectiveness of blue light-blocking glasses are measured by their ability to block the artificial blue light that is emitted from digital screens and other mediums such as LED light bulbs.</p>
+<h3>2. Lenses of Blue Light-Blocking Glasses</h3>
+<p>The lenses of blue light glasses will have a blue light filter applied and can also include an anti-glare coating. Blue light glasses can be both prescription and non-prescription, meaning the lenses can have a corrective prescription or be plain.</p>
+<h3>3. Importance of Frames for Blue Light-Blocking Glasses</h3>
+<p>Frames are important for choosing blue light-blocking glasses as you want to choose a style you like and will be happy to wear for the majority of the day. You can choose frames depending on the shape of your face such as rectangle-shaped glasses for a round face. If you like the Ray-Ban style of glasses, while we do not sell this brand at Oscar Wylee, we have a wide range of styles that are sure to meet your tastes.</p>
+<h3>4. Importance of Corrective Lenses for Blue Light-Blocking Glasses</h3>
+<p>At Oscar Wylee, blue light glasses will come as either prescription or non-prescription glasses. This means that not only can you make your glasses blue light blocking, but you also acquire the vision correction you need.</p>
+<h3>5. Price Criteria for Choosing the Right Blue Light-Blocking Glasses</h3>
+<p>The price of blue light-blocking glasses varies from pair to pair and likely depend on the other aspects of the glasses such as add-ons, prescription and frame. At Oscar Wylee, you can add a blue light filter to any pair of optical glasses for an additional $80 which includes an anti-glare coating.</p>
+</div>
+<div class="context"><hr></div>
+<div class="ctaContainer topbtmPadding" style="border-top: none;">
+<div class="ctaText">
+<div class="resRmvTopPaddingMargin ctaHeading">Need a pair of blue light glasses?</div>
+<p>Book an eye test with our skilled Oscar Wylee optometrists to get a pair of prescription blue light glasses.</p>
+</div>
+<div class="ctaText"><a href="https://www.oscarwylee.com.au/booking" class="adjustMargin"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>What are the Best Blue Light Blocking Glasses for Different Criteria?</h2>
+<div class="flexContainer">
+<div class="flexText minusPadding" style="margin-left: -0.5rem;">
+<p>At Oscar Wylee, we believe that we meet all the criteria for the best blue light-blocking glasses. Our stylish frames can be made into blue light glasses by adding a blue light filter, which means, you can choose your favourite pair of glasses and not have to select from premade blue light glasses.</p>
+<h3>What are the Most Effective Blue Light Blocking Glasses?</h3>
+<p>The most effective blue light glasses will be glasses that effectively block blue light from entering the eye. They will also be glasses that are comfortable to wear and fit in with your lifestyle such as if you need prescription glasses or high index lenses.</p>
+</div>
+<div class="flexText imageTwo"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/BLF_Illustration.png"}}" alt="Best Blue Light-Blocking Glasses" class="minusMarginImage"></div>
+</div>
+<h3>What are the Cheapest Blue Light Blocking Glasses?</h3>
+<p>The base price for a blue light filter is $80 at Oscar Wylee, in addition to a standard pair of optical glasses which is $169. You can also grab two pairs of glasses from $199 and 3 pairs from $249.</p>
+<h4>Why do Yellow Lenses Block Blue Light Better?</h4>
+<p>Yellow lenses block blue light better because they absorb blue light better than clear glasses. A yellow-tinted lens eradicates the blue aspect from the light spectrum, enhancing your viewing experience. A yellow tint on blue light glasses allows for optimal clarity and can enhance depth perception and contrast.</p>
+<h5>What are Alternatives to Blue Light Glasses Without Yellow Tint?</h5>
+<p class="minusPadding">The alternatives to blue light glasses without a yellow tint include clear blue light glasses. These types of blue light-blocking glasses look just like normal glasses and have no tint on the lens.</p>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>What are the Best Blue Light Blocking Glasses for Men?</h2>
+<p class="minusPadding">The best blue light-blocking glasses for men include frames that have a strong shape and minimal design. If you like the style and shape of the Swanwick computer and blue light glasses, while we do not sell these glasses, at Oscar Wylee we have a wide range of frames for men that cater to many tastes. Our most popular blue light glasses frames for men are listed below.</p>
+<ol class="minusPadding">
+<li><b>Logan: </b>Logan is our modern take on the classic rectangular eyewear design. This version is ultra light and bold in its glory. Ladies, look out.</li>
+<li><b>Hugh: </b>Hugh’s slightly smaller fit will flatter any face shape. This classic rectangle frame will take you from breakfast to dinner - so light you might not want to take them off!</li>
+<li><b>Marco: </b>A classic brow-line glasses, reimagined. Marco has spring hinges and an adjustable nose fit for maximum comfort (and style). Now available in small.</li>
+<li><b>Benny: </b>Big, bold, Benny! This thick, rectangular frame boasts spring hinges, a unisex design and is perfect for round faces.</li>
+</ol>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/glasses/materials/benny-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Benny_Product_Block_1x_1550x847.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/hugh-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Hugh_Product_Block_1x_1550x847.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/logan-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Logan_Product_Block_1x_1550x847.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/marco-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Marco_Product_Block_1x_1550x847.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/glasses/materials/benny-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Benny_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/hugh-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Hugh_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/logan-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Logan_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/marco-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Marco_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</div>
+<hr>
+<div class="textMainNobg">
+<h2>What are the Best Blue Light Blocking Glasses for Women?</h2>
+<p class="minusPadding">The best blue light glasses for women include frames that have an interesting design and dainty shape. If you like the Centre Stage glasses from Peepers, while these are not available at Oscar Wylee, we have a wide range of frames for women that will suit your needs. Our most popular blue light glasses frames for women are listed below.</p>
+<ol class="minusPadding">
+<li><b>Serge: </b>Named after the French musician, Serge Gainsbourg - this rectangular frame channels modern of the moment shapes rather than drawing upon vintage references. With unisex bold profile, we’re not surprised why Serge is adored by many.</li>
+<li><b>Parker: </b>Rectangular and angular. For looking sharp any day of the week. Parker packs a sophisticated yet modern style.</li>
+<li><b>Frieda: </b>Feminine Frieda. This beautiful frame has a subtle cat eye and curves that accentuate your best features.</li>
+<li><b>Drew: </b>Meet Drew: Oscar Wylee’s signature transparent frame crafted to flatter all face shapes (P.S. The nose pads are super comfy).</li>
+</ol>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/drew-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Drew_Product_Block_1x_1550x847.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/frieda-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Frieda_Product_Block_1x_1550x847.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/parker-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Parker_Product_Block_1x_1550x847.jpg"}}" alt="product-image" class="product-image"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/serge-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Serge_Product_Block_1x_1550x847.jpg"}}" alt="product-image" class="product-image"></a></div>
+</div>
+<div class="products-section-mobile">
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/drew-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Drew_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/frieda-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Frieda_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/parker-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Parker_Product_Block_Mobile_596x504.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+<div class="individual-product"><a href="https://www.oscarwylee.com.au/serge-optical.html"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Product-Block-Mobile.jpg"}}" alt="product image" class="product-image-mobile"></a></div>
+</div>
+</div>
+<hr>
+<div class="textMain boxShadow">
+<h2>How do Blue Light-Blocking Glasses Work?</h2>
+<p>Blue light blocking glasses work by blocking the artificial blue light that emits from digital screens and reducing how much of this light enters the eye. Blue light glasses are worn when doing computer work, spending hours gaming or simply when on your phone.<br><br>While blue light blocking glasses are effective at filtering artificial blue light emitted from digital screens, research into the effects of blue light is still in its early stages, meaning it is too soon to conclusively say that they are successful in shielding your eyes from harm. Despite this, there is substantial evidence indicating that wearing blue light glasses is beneficial for sleep regulation. According to the Centers for Disease Control and Prevention (CDC), exposure to blue light can make it difficult to fall and stay asleep by affecting your circadian rhythm.<br><br>According to one of our Oscar Wylee optometrists, looking through blue light glasses can make lights appear dimmer, filtering out excess blue light that helps with symptoms such as eye fatigue and eye strain, especially to those who are generally light-sensitive.</p>
+<h3>Are Blue Light Glasses Worth it?</h3>
+<p>Whether blue light glasses are worth it, varies from person to person and depends on what they are hoping to get out of these glasses. If your career or lifestyle relies heavily on using digital devices, we recommend using blue light glasses.<br><br>While the research is not yet concrete, blue light glasses do not cause any harm to the eye and can be helpful in reducing symptoms such as eye fatigue that occur when looking at a screen. Oscar Wylee’s blue light glasses also have 99% UV protection which is an added benefit. <br><br>According to the Life Science Journal, it appears that blue light filters may be helpful to improve the comfort of computer users from suffering dry eyes and can reduce ocular discomfort.</p>
+</div>
+<div class="context"><hr></div>
+<div class="ctaContainer topbtmPadding" style="border-top: none;">
+<div class="ctaText">
+<div class="resRmvTopPaddingMargin ctaHeading">Visit an Oscar Wylee store</div>
+<p>Find your nearest store and our friendly staff can assist you with your optometry and eyewear needs.<br><br>All major health funds accepted in-store.</p>
+</div>
+<div class="ctaText"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html" class="adjustMargin"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>Where to Buy the Best Blue Light-Blocking Glasses?</h2>
+<p>There are many places to buy blue light glasses, such as glasses and optometry stores, electronics stores or office supply stores. You can even buy blue light glasses on online fashion websites. However, in order to find the best blue light glasses, we recommend you buy them from Oscar Wylee. At Oscar Wylee, we sell a wide range of on-trend and stylish optical glasses that can be made into blue light glasses by adding a blue light filter to the lens.</p>
+<h3 class="topMargin">Does Oscar Wylee have Blue Light-Blocking Glasses?</h3>
+<p class="minusPadding">Yes, Oscar Wylee offers blue light-blocking glasses. You can add a blue light filter to your optical glasses for an additional $80. A blue light filter is available with prescription glasses up to 1.67 index or with non-prescription glasses.</p>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>What are the Common Features of the Best Blue Light-Blocking Glasses?</h2>
+<p class="minusPadding">The common features of the best blue light-blocking glasses include a blue light filter, an anti-glare coating, a small amount of magnification, a tinted lens for colour correction and a lightweight frame.</p>
+<ol>
+<li><b>Blue Light Filter: <span style="font-weight: 400;">A blue light filter&nbsp; is a coating that is added to the lens or is built into the lens of a pair of glasses to block artificial blue light passing through to your eyes.</span></b></li>
+<li><b>Anti-glare coating: <span style="font-weight: 400;">This reflective coating is an extremely thin layer placed on the lens that removes any reflections you might normally see from the surface of your glasses.</span></b></li>
+<li><b>Magnification/prescription: <span style="font-weight: 400;">A small amount of magnification in blue light blocking glasses can prevent squinting. This is especially beneficial for people who spend much of their time gaming or doing computer work. </span></b></li>
+<li><b>Tinted lens: <span style="font-weight: 400;">Blue light glasses can have an amber or yellow tint added to the lens which offers an extra buffer against blue light.</span></b></li>
+<li><b>Lightweight frame: <span style="font-weight: 400;">For people who spend long periods of time in front of a screen, it is essential to have blue light glasses that are comfortable enough for all day wear. </span></b></li>
+</ol>
+<h3>Are Blue Light Blocking Glasses Used for Computers?</h3>
+<div class="flexContainer">
+<div class="flexText minusPadding" style="margin-left: -0.5rem;">
+<p>Yes, blue light blocking glasses are used when on a computer as they block the artificial blue light that is emitted from the screen. Computer glasses often include an intermediate prescription to help you see a computer screen more clearly and comfortably. They may also have an anti-reflective coating applied to them as well as a blue light filter to help further reduce potential eye strain induced by blue light.</p>
+<h3>Are Blue Light Blocking Glasses Used for the TV?</h3>
+<p>Yes, blue light-blocking glasses can be used when watching TV. Your television emits artificial blue light just as your computer or phone screen does. The majority of modern televisions will have an in-built blue light filter which can be switched on and off when you desire. While it is not always possible to limit your TV time, wearing blue light glasses can help with this issue.</p>
+</div>
+<div class="flexText imageTwo"><img src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/Are-Blue-Light-Blocking-Glasses-Used-for-Computers_900x600.jpg"}}" alt="Best Blue Light-Blocking Glasses" class="minusMarginImage"></div>
+</div>
+<h3>What is the Difference Between Sunglasses and Blue Light-Blocking Glasses?</h3>
+<p><span style="font-weight: 400;">The main difference between sunglasses and blue light-blocking glasses is that they are designed for different purposes. Polarised sunglasses offer UV protection and also cut out glare but they do not block or filter blue light rays. Blue light glasses, on the other hand, are specifically designed to block the artificial blue light that is emitted from digital screens. Our blue light glasses at Oscar Wylee also include UV blocking which is beneficial for situations when we do not have sunglasses on hand.</span></p>
+</div>
+<div class="context">
+<div class="location">
+<div class="locationText">
+<h2>Find a store near you</h2>
+<p>Contact your nearest Oscar Wylee store to have your eyes tested.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img class="locationImage" src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/find_a_store.jpg"}}" alt="oscar wylee Booking" title="oscar wylee Booking"></div>
+<div class="location item1"><img class="locationImage" src="{{media url="wysiwyg/Blue-Light-Blocking-Glasses/book_an_eye_test.jpg"}}" alt="book an eye test with Oscar Wylee" title="book an eye test with Oscar Wylee">
+<div class="locationText">
+<h2>Ready for an eye test?</h2>
+<p>Book an appointment with an optometrist today.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/booking"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>
+<script>
+     window.addEventListener('DOMContentLoaded', () => {
+
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+  const id = entry.target.getAttribute('id');
+  if (entry.intersectionRatio > 0) {
+    document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+  } else {
+    document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+  }
+});
+});
+
+// Track all sections that have an `id` applied
+document.querySelectorAll('section[id]').forEach((section) => {
+observer.observe(section);
+});
+
+});
+
+window.onload = function() {
+document.body.className += ' loaded'
+};
+
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+let containerDimensions = item.getBoundingClientRect();
+let containerWidth = containerDimensions.width+500;
+
+nxtBtn[i].addEventListener('click', () => {
+  item.scrollLeft += containerWidth+3;
+})
+
+preBtn[i].addEventListener('click', () => {
+  item.scrollLeft -= containerWidth;
+})
+})
+  </script>
+</p>

@@ -1,0 +1,2188 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap");
+
+#maincontent {
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #333333;
+}
+
+.footer-item h4,
+.footer-item h3,
+.help-block h3,
+.copyright span {
+  color: #fff;
+}
+
+body {
+  color: #333333;
+}
+
+*,
+page-main {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  /* color: #333333; */
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+
+h2 {
+   margin-top: 1.5rem;
+}
+
+button:hover {
+  color: white !important;
+}
+
+ul,
+ol {
+  margin-bottom: 0;
+}
+
+.mainContainer {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.banner {
+  /* position: relative; */
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  max-width: 100%;
+}
+
+.bannerMob {
+  display: none;
+}
+
+.context {
+  width: 100%;
+}
+
+.context h2 {
+  padding: 1rem 0 0 0;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.context h3 {
+  padding: 2rem 0 0 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.context p {
+  padding: 1.5rem 0rem 2rem 0rem;
+  font-size: 16px;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.title {
+  display: flex;
+  margin-top: 5rem;
+  gap: 1rem;
+  border-bottom: 1px solid gray;
+  padding-bottom: 3rem;
+}
+
+.title-left {
+  width: 40%;
+}
+
+.title-right {
+  width: 60%;
+  padding: 20px;
+  background-color: #f1e7e3;
+  box-shadow: rgba(0, 0, 0, 0.15) 3.95px 3.95px 2.6px;
+  border-radius: 15px;
+}
+
+.title-right img {
+  width: 100%;
+  display: block;
+}
+
+.title h1 {
+  top: 13%;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.title h2 {
+  text-align: center;
+  font-weight: 700;
+  padding: 2rem 2rem 1rem !important;
+}
+
+.title p {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .title {
+    display: block;
+  }
+
+  .title-left {
+    width: 100%;
+  }
+
+  .title-right {
+    width: 96%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title img {
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  .title-right {
+    width: 93%;
+   padding: 15px;
+  }
+
+ .para-adjustment {
+    hyphens: auto;
+    word-spacing: -0.05em;
+    hyphenate-limit-chars: 6;
+}
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #efefef;
+  border-radius: 10px;
+  padding: 2rem 2rem 0rem 2rem;
+}
+
+#contact-text {
+  text-align: left;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.column {
+  flex-basis: 33.33%; /* Each column takes up 33.33% of the container width */
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.column input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.column p {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 0 !important;
+  text-align-last: auto !important;
+  text-align: left;
+}
+
+.form-button-align {
+  margin-top: 3.4rem;
+}
+
+.form-button {
+  color: white;
+  background-color: #003cac;
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  border: 2px solid #003cac;
+  display: block;
+  cursor: pointer;
+  box-shadow: none !important;
+  margin-top: 2.5rem;
+}
+
+.form-button:hover {
+  background-color: white;
+  border: 2px solid #003cac;
+  color: #003cac !important;
+  transition: 0.5s;
+}
+
+.responsive-show {
+    display: none;
+}
+
+.responsive-hide {
+    display: initial;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .form-container {
+    margin-bottom: 3rem;
+  }
+
+  .column {
+    flex-basis: 50%; /* Two columns per row on smaller screens */
+  }
+
+  .form-button-align {
+    margin-top: 0;
+  }
+
+  #contact-text {
+    margin-top: 2rem;
+  }
+
+   .form-button {
+     margin-top: 0;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .column {
+    flex-basis: 100%; /* One column per row on even smaller screens */
+  }
+
+  .form-button-align {
+    margin-top: 1rem;
+  }
+
+  .textMainNobg .form-container .column p {
+    font-size: 14px;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  #contact-text {
+    padding-bottom: 2rem;
+  }
+
+  .column input[type="text"] {
+    width: 100%;
+  }
+
+  .responsive-show {
+    display: block;
+}
+
+.responsive-hide {
+    display: none;
+}
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.left-container,
+.right-container {
+  width: 45%;
+  padding: 2rem;
+  background-color: #ecf7ff;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 3.95px 3.95px 2.6px;
+}
+
+.left-container img,
+.right-container img {
+  width: 100%;
+}
+
+.left-container h3,
+.right-container h3 {
+  text-align: center !important;
+}
+
+.left-container p,
+.right-container p {
+  text-align: center !important;
+}
+
+.card-text {
+  text-align: center !important;
+  margin: 0 4rem;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    margin-bottom: 3rem;
+  }
+
+  .card-text {
+    text-align: center !important;
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .left-container,
+  .right-container {
+    width: 100%;
+  }
+
+  .card-text {
+    margin: 0;
+    width: 100%;
+  }
+
+  .card-container .card-text p {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.reason-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.reason-column {
+  width: 40%;
+}
+
+.reason-column ul {
+  padding: 0 !important;
+  padding-left: 1rem !important;
+}
+
+.reason-column ul li h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  .reason-container {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .reason-column {
+    width: 100%;
+  }
+
+  .reason-column ul {
+    padding-left: 2rem !important;
+  }
+}
+
+.download-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 0;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.complete-jvp-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: #f1e7e3;
+}
+
+.left-download > div {
+  font-size: 24px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.right-download a {
+  display: inline-block;
+  padding: 5px 100px;
+  background-color: #003cac;
+  font-weight: 700;
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  border: 3px solid #003cac;
+}
+
+.right-download a:hover {
+  background-color: #fff;
+  color: #003cac;
+  transition: 0.5s;
+}
+
+.top-download a {
+  background-color: #fff;
+  color: #003cac;
+  border: 3px solid #003cac;
+}
+
+.top-download a:hover {
+  background-color: #003cac;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.complete-jvp-cta > a {
+  display: inline-block;
+  padding: 5px 100px;
+  background-color: #fff;
+  font-weight: 700;
+  border-radius: 25px;
+  color: #003cac;
+  text-decoration: none;
+  font-size: 24px;
+  border: 3px solid #003cac;
+}
+
+@media (max-width: 768px) {
+  .download-cta-sec {
+    margin: 1rem 0 !important;
+  }
+
+  .download-cta,
+  .complete-jvp-cta {
+    flex-direction: column;
+    padding: 2rem 0;
+    margin: 3rem 0;
+  }
+
+  .left-download {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .right-download {
+    margin: 1rem 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-download a {
+    padding: 5px 20px;
+    font-size: 20px;
+  }
+}
+
+.single-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+}
+
+.single-cta .cta-heading {
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0;
+  color: #131313;
+}
+
+.single-cta a {
+  display: inline-block;
+  padding: 5px 100px;
+  background-color: #003cac;
+  font-weight: 600;
+  border-radius: 25px;
+  margin-top: 15px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #003cac;
+  margin-bottom: 1rem;
+}
+
+.single-cta a:hover {
+  background-color: #fff;
+  color: #003cac;
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .single-cta {
+    margin: 2rem 0 !important;
+  }
+
+  .single-cta-con {
+    padding: 2rem 0;
+  }
+
+  .cta-heading {
+    margin-top: 1rem;
+  }
+
+  .single-cta a {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .single-cta .cta-heading {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .single-cta a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+}
+
+.partners-section {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.left-partners {
+  width: 40%;
+}
+
+.right-partners {
+  width: 60%;
+}
+
+.right-partners img {
+  width: 100%;
+}
+
+.textMainNobg .partners-section h2 {
+  text-align: left;
+  padding: 1rem 1rem 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .partners-section {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding-top: 1rem;
+    gap: 0;
+  }
+
+  .textMainNobg .partners-section h2 {
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .left-partners {
+    width: 100%;
+  }
+
+  .right-partners {
+    width: 100%;
+  }
+}
+
+.faq-section {
+  width: 100%;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  background-color: #efefef;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.question h3 {
+  margin: 0;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #efefef;
+  margin-bottom: 5px;
+}
+
+.faq-section .answer p {
+  margin: 0;
+  margin-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-top: 0.5rem !important;
+margin-right: 3rem;
+}
+
+.faq-section .answer ul {
+  padding-top: 0;
+}
+
+.toggle {
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  font-size: 30px;
+}
+
+.toggle.expanded {
+  transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+  .answer p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .faq-section {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .question h3 {
+    font-size: 16px;
+  }
+
+  .textMainNobg .answer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .faq-section .answer ul {
+    margin-left: 3rem;
+  }
+
+.faq-section .answer p {
+  margin-left: auto;
+}
+}
+
+.slider-container {
+    border-radius: 15px;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 3.95px 3.95px 2.6px;
+    background: #ecf7ff;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.slider img {
+    max-width: 90%;
+    height: 90%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    top: 35px;
+    left: 58px;
+}
+
+.slider img.active {
+  opacity: 1;
+}
+
+.prev-arrow,
+.next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #003cac;
+}
+
+.prev-arrow {
+  left: 10px;
+}
+
+.next-arrow {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    height: 480px;
+  }
+
+.slider img {
+top: 25px;
+    left: 35px;
+}
+}
+
+@media (max-width: 480px) {
+  .slider-container {
+    height: 230px;
+  }
+
+  .prev-arrow,
+  .next-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+.slider img {
+top: 10px;
+    left: 18px;
+}
+}
+
+.history {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.history-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-two {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-three {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-four {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-five {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.today-section {
+  max-width: 700px;
+  margin: 2rem auto 3rem;
+  text-align: center;
+  /* text-align-last: center !important; */
+}
+
+.today-section p {
+  text-align-last: center !important;
+}
+
+.today-section img,
+.history-section img {
+  max-width: 350px;
+}
+
+.jvp-section h2 {
+  text-align: center !important;
+  color: #333333 !important;
+}
+
+.center-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+.center-section img {
+  width: 40%;
+  min-width: 350px;
+}
+
+.center-section ul {
+  width: 40%;
+  max-width: 600px;
+  /* text-align: center !important;*/
+  font-size: 16px;
+}
+
+.flexCategory {
+  width: 100%;
+}
+
+.flexCategory h3 {
+  text-align: center;
+}
+
+.flexContainer {
+  width: 97%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.flexButton {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+
+.frames {
+  width: 97%;
+  margin: 3rem auto 1rem;
+}
+
+.flex-frames {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-frames a {
+  width: 32.5%;
+  min-width: 300px;
+  margin: 1rem auto;
+}
+
+button2 a {
+  color: #003cac;
+}
+
+button2 a:hover {
+  color: white;
+}
+
+ul {
+  padding-left: 10px;
+}
+
+.linkTo {
+  color: #003cac;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.context ul {
+  width: calc(100% - 4rem);
+  text-align: justify;
+  text-align-last: left;
+  padding: 1.5rem 0 1.5rem 3rem;
+}
+
+.context ul li {
+  padding-bottom: 1rem;
+}
+
+.textMainNobg {
+  /* border-bottom: 1px solid silver; */
+  padding: 2rem 0;
+  margin: 1rem 0;
+}
+
+.textMainNobg h2 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.textMainNobg h3 {
+  color: #003cac;
+  padding: 1rem 0;
+  margin-left: 0.5rem;
+  text-align: left;
+}
+
+.textMainNobg p {
+  max-width: 1160px;
+  padding-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textMainNobg ul {
+  margin-left: 3rem;
+}
+
+.flexImage {
+  width: 46%;
+  min-width: 350px;
+  margin: 0;
+}
+
+.flexText {
+  width: 50%;
+  min-width: 350px;
+  padding: 1rem 0.5rem;
+  /* margin: 0 1rem; */
+  align-self: stretch;
+}
+
+.flexText ul {
+  padding-top: 1rem;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.flexText p {
+  text-align: left;
+}
+
+.flexText img {
+  width: 100%;
+  /* margin-top: 10%; */
+  /* border-radius: 10px; */
+  /* padding-left: 8%; */
+  /* margin-top: 2rem; */
+}
+
+.flexHolder {
+  width: 52.5%;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding: 1rem 0.5rem; */
+}
+
+.flexHolder img {
+  width: 100%;
+  padding: 0.7rem 0;
+}
+
+.full-width-image {
+  width: 100%;
+}
+
+.product-section {
+  margin: 2rem 0 3rem;
+}
+
+.product-section h2 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.product-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.flex-box {
+  width: 48%;
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-box img {
+  width: 100%;
+  margin-top: auto;
+}
+
+.flex-box h3 {
+  color: #003cac;
+  padding-left: 0;
+}
+.text-align-left {
+  text-align: center !important;
+}
+
+.smallText {
+  font-size: 13px !important;
+  padding-bottom: 2rem !important;
+}
+
+.location {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+  /* border-top: 1px solid silver; */
+}
+
+.booking-background {
+  background-color: #eaebeb;
+  margin: 1rem 0 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.booking-section {
+  width: 40%;
+  padding: 2rem;
+}
+
+.booking-section h2 {
+  padding: 0;
+}
+
+.locationText h2 {
+  font-weight: 700;
+}
+
+.locationText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.locationText p {
+  font-size: 16px;
+}
+
+.locationImage {
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.allButton {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.allButton a {
+  text-decoration: none;
+}
+
+.btnOw:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.btnOw {
+  background-color: #003cac;
+  width: 80%;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex-box-one,
+.flex-box-two {
+  margin-right: 2em;
+}
+.afterpay-link {
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .title {
+    width: calc(100% - 2rem);
+    padding: 1.5rem 1rem;
+    margin: 0 0 2rem 0;
+  }
+
+  .context {
+    width: calc(100% - 3rem);
+    padding: 0 1.5rem;
+  }
+
+  .flexContainer {
+    margin-bottom: 2rem;
+  }
+
+  .flexImage {
+    min-width: 280px;
+    margin: 2rem auto;
+  }
+
+  .flexText {
+    min-width: 300px;
+    margin: 0.5rem auto;
+  }
+  .textMainNobg ul {
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .product-container {
+    flex-wrap: wrap;
+  }
+  .center-section img {
+    width: 100%;
+    min-width: 250px;
+  }
+  .center-section ul {
+    width: 90% !important;
+    min-width: 250px;
+    margin: 1rem auto !important;
+    padding-left: 1.5rem !important;
+  }
+
+  .flex-frames a {
+    width: 100%;
+  }
+  .text-align-left {
+    text-align: left !important;
+  }
+
+  .flexHolder img {
+    width: 100%;
+  }
+  .flexHolder {
+    width: 100%;
+  }
+
+  .booking-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-width: 300px;
+    padding: 1rem;
+  }
+
+  .booking-section h2 {
+    text-align: center;
+  }
+  .history-section {
+    flex-wrap: wrap;
+  }
+  .flexCategory {
+    margin: 1rem 0;
+  }
+
+  .flexCategory ul {
+    padding-left: 1.5rem !important;
+  }
+
+  /*breakpoint*/
+  .container-3-col {
+    flex-direction: column;
+  }
+
+  /* .title p {
+    padding: 0 1rem 1rem;
+  } */
+
+  .flexImage,
+  .flexText {
+    width: 100%;
+  }
+
+  .order-copy,
+  .locationImage {
+    order: 1;
+  }
+
+  .flexImage {
+    margin: 1.5rem auto 0 auto;
+  }
+
+  .allButton {
+    margin-bottom: 5px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 6rem);
+    padding-left: 3rem;
+  }
+
+  .context {
+    width: calc(100% - 2rem);
+    padding: 0 1rem;
+  }
+
+  .textMainNobg {
+    padding: 0;
+    margin: 0;
+  }
+
+  .textMainNobg ul {
+    margin-left: 0rem;
+  }
+  .flexHolder {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .flex-box {
+    width: 96%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-box {
+    margin-left: 0;
+    width: 100%;
+  }
+  .flex-box-3 {
+    margin-left: 0;
+  }
+  .booking-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-width: 200px;
+    padding: 1rem;
+  }
+
+  .flexText .flexTwo {
+    margin-top: 0 !important;
+  }
+
+  .flexText h2 {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .flexText ul {
+    padding-top: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .flexMargin {
+    margin-top: -0.5rem !important;
+  }
+
+  /*  .textMainNobg {
+        padding: 1rem 0.5rem;
+    } */
+
+  .textMainNobg h2 {
+    margin-bottom: 1rem !important;
+    margin-left: 0.5rem;
+  }
+
+  .flexContainer {
+    margin: 1rem auto;
+  }
+
+  .title {
+    width: calc(100% - 1rem);
+    padding: 3rem 0;
+    margin: 0 0 3rem 0;
+  }
+
+  .title h1 {
+    padding: 0rem 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .mainContainer {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .flexImage {
+    min-width: 280px;
+    margin: 1rem auto;
+    max-width: 100%;
+  }
+
+  .flexText {
+    min-width: 210px;
+    margin: 0.5rem auto;
+  }
+
+  .padding-top-minus {
+    padding-top: 0.5rem;
+  }
+  .padding-top-plus {
+    padding-top: 1.5rem;
+  }
+  .margin-top-plus {
+    margin-top: 1.5rem;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .bannerMob {
+    display: flex;
+    width: 100%;
+  }
+
+  .border {
+    padding: 1rem 0rem 1rem 0rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .context p {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+
+    text-align: justify;
+    text-align-last: left;
+  }
+
+  .context ul {
+    width: calc(100% - 3rem);
+    padding-left: 0rem;
+    text-align: left !important;
+  }
+
+  .flexCategory h3 {
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .flex-box p {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+  }
+
+  .flex-box h3 {
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .flexHolder {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  .today-section img,
+  .history-section img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* .flexContainer{
+    max-width: 100%;
+  } */
+  .flexText {
+    min-width: 200px;
+    margin: 0.5rem auto;
+  }
+
+  .flexImage {
+    min-width: 220px;
+    margin: 0.5rem auto;
+  }
+
+  .location {
+    width: calc(100% - 1rem);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 1rem 0.5rem;
+  }
+
+  .context ul {
+    width: calc(100% - 3rem);
+    padding-left: 1.5rem;
+  }
+
+  .locationText > * {
+    margin-bottom: 20px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+
+  .flexHolder {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 281px) {
+  .flexText {
+    min-width: 200px;
+    margin: 0.5rem auto;
+  }
+
+  .flexImage {
+    min-width: 220px;
+    margin: 0.5rem auto;
+  }
+}
+
+.carousel-container {
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+  background: #ecf7ff;
+  margin-bottom: 5rem;
+}
+.wrapper {
+  max-width: 1100px;
+  width: auto;
+  position: relative;
+}
+.wrapper ul {
+  width: calc(100% - 3rem);
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 2.5rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  font-style: normal !important;
+  color: #003cac;
+}
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child {
+  left: -60px;
+}
+.wrapper i:last-child {
+  right: -60px;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 2px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: auto;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.carousel .card .img {
+  background: #8b53ff;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 18px;
+}
+.carousel .card span {
+  color: #6a6d78;
+  font-size: 14px;
+}
+.carousel .card p {
+  color: #6a6d78;
+  font-size: 14px;
+  margin: 25px 10px 0 10px;
+  padding: 10px 20px;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - -5px);
+  }
+
+  .wrapper i:first-child {
+    left: -50px;
+  }
+  .wrapper i:last-child {
+    right: -50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper .carousel {
+    grid-auto-columns: 99%;
+  }
+
+  .wrapper ul {
+    width: 100%;
+  }
+
+  .wrapper .carousel {
+    gap: 25px;
+  }
+
+  .wrapper i:first-child {
+    left: -30px;
+  }
+  .wrapper i:last-child {
+    right: -30px;
+  }
+
+  .carousel .card p {
+    width: auto;
+  }
+}
+
+#faq {
+  padding-top: 1px;
+}
+
+.download-cta-sec {
+  padding-top: 0;
+}
+
+#desktop-show {
+  display: block;
+}
+
+#responsive-show {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #desktop-show {
+    display: none;
+  }
+
+  #responsive-show {
+    display: block;
+  }
+}
+
+#my-form-status {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+}
+
+#my-form-status.with-padding {
+  padding-top: 2rem !important;
+}
+
+@media (max-width: 480px) {
+#my-form-status {
+    font-size: 16px;
+    padding-bottom: 2rem;
+    width: 95%;
+} 
+
+.next-arrow {
+   right: 0;
+}
+
+.prev-arrow {
+   left: 0;
+}
+}
+
+#faq-title {
+   padding-left: 0;
+}
+
+.card-text-heading {
+    color: #003cac;
+    padding: 2rem;
+    margin-left: 0.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.carousel-card-heading {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 1rem 0 0 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+</style>
+<div class="mainContainer"><img class="banner" src="{{media url="wysiwyg/jvp/JVP_Desktop_Banner_1.jpg"}}" alt="JVP banner" title="about us oscar wylee"> <img class="bannerMob" src="{{media url="wysiwyg/jvp/JVP_Mobile_Banner_2.jpg"}}" alt="about us oscar wylee" title="JVP banner">
+<div class="context">
+<div class="title">
+<div class="title-left">
+<h1>Oscar Wylee Joint Venture Partnership</h1>
+<p class="para-adjustment">Oscar Wylee is an Australian Optical company that has grown from humble beginnings in 2012, into an international organisation. We are proud of the handcrafted products and expert optical information that we offer to customers. <br><br>Our joint venture partnership is an opportunity for inspirational business leaders to join Oscar Wylee as part owners of our stores. With over 60 stores run by over 80 joint venture partners, we continually strive to expand our JVP program and invite new people who are excited about our brand and are committed to growing our business.</p>
+</div>
+<div class="title-right"><img src="{{media url="wysiwyg/jvp/Image_1.1.jpg"}}" alt="Oscar Wylee Joint Venture Partnership"></div>
+</div>
+<div class="textMainNobg"><form action="https://formspree.io/f/maygwbdl" method="POST" id="my-form" onsubmit="return validateForm()">
+<div class="form-container">
+<p class="responsive-show">Complete form to be contacted by one of our staff members about JVP opportunity.</p>
+<div class="column"><label for="name">Name: *</label><br><input type="text" id="name" name="name" required="" tabindex="1"> <br><br><label for="last-name">Last Name:</label><br><input type="text" id="last-name" name="last-name" tabindex="2"></div>
+<div class="column"><label for="email">Email: *</label><br><input type="text" id="email" name="email" required="" tabindex="3"> <br><br><label for="phone">Phone Number: *</label><br><input type="text" id="phone" name="phone" required="" tabindex="4"></div>
+<div class="column form-button-align">
+<p class="responsive-hide">Complete form to be contacted by one of our staff members about JVP opportunity.</p>
+<button type="submit" class="form-button" id="my-form-button">Submit</button></div>
+<div style="width: 100%;">
+<p id="contact-text">For any further information please contact <a href="#">jvp@oscarwylee.com</a>.</p>
+<p id="my-form-status"></p>
+</div>
+</div>
+</form></div>
+<div class="textMainNobg">
+<div class="card-container">
+<div class="left-container"><img src="{{media url="wysiwyg/jvp/Image_2.jpg"}}" alt="Optometrist Partner">
+<div class="card-text">
+<div class="card-text-heading">Optometrist Partner</div>
+<p>Our Optometry Joint Venture Partners are an essential part of our business. They are experienced and have an exceptional rapport with our patients. They have the ability to influence, mentor, lead, and motivate. Most importantly, our Optometrist Partners are humble and professional in everything they do.</p>
+</div>
+</div>
+<div class="right-container"><img src="{{media url="wysiwyg/jvp/Image_3.jpg"}}" alt="Retail and Dispensing Partner">
+<div class="card-text">
+<div class="card-text-heading">Retail and Dispensing Partner</div>
+<p>Our Retail Joint Venture Partners are experienced in optics and have a passion for delivering excellent customer service. They love the dynamic and fast-paced environment of retail with an emphasis on style. They are known for exceeding our customers' expectations and their leadership supports and grows their team every day.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="textMainNobg">
+<h2>Reasons to Become an Oscar Wylee Partner</h2>
+<p>At Oscar Wylee, we support our joint venture partners and provide them with the tools they need to be successful business owners. By joining our JVP program you will receive dedicated training and support to meet every store need, the ability to run your own business and the opportunity to manage a high-performing team.</p>
+<div class="reason-container">
+<div class="reason-column">
+<ul>
+<li>
+<h3>Competitive base salaries</h3>
+</li>
+<li>
+<h3>Low-interest rate loan</h3>
+</li>
+<li>
+<h3>Ability to work in the booming optical market</h3>
+</li>
+<li>
+<h3>High-quality testing equipment and technologies</h3>
+</li>
+</ul>
+</div>
+<div class="reason-column">
+<ul>
+<li>
+<h3>Dividends generated by business profits</h3>
+</li>
+<li>
+<h3>Continued company and individual growth</h3>
+</li>
+<li>
+<h3>Open feedback policy with excellent support</h3>
+</li>
+<li>
+<h3>A unique and large product range</h3>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<aside class="textMainNobg download-cta-sec">
+<div class="download-cta">
+<div class="left-download">
+<div>Ready to learn more?</div>
+</div>
+<div class="right-download top-download" id="download-btn"><a href="/pub/media/wysiwyg/pdf/JVP_Prospectus_2023_AUNZ.pdf">Download the Prospectus</a></div>
+</div>
+</aside>
+<aside class="textMainNobg single-cta" style="background-color: #f1e7e3;">
+<div class="single-cta-con">
+<div class="cta-heading">Embrace your next role as partner and get in-touch with our team!</div>
+<a href="https://www.livehire.com/talent/community/oscarwylee/jvp">Complete the JVP form</a></div>
+</aside>
+<div class="textMainNobg">
+<div class="partners-section">
+<div class="left-partners">
+<h2>Our Partners Across Australia</h2>
+<p>We currently have 51% of Oscar Wylee stores run by joint venture partners and we introduced dual store partnerships in December 2022. At Oscar Wylee, passion, drive and positive thinking are core values integral to a successful business and partnership. With more stores consistently opening, we are able to offer more opportunities to like-minded leaders to become joint venture partners.</p>
+<img src="{{media url="wysiwyg/jvp/Image_4.jpg"}}" alt="Partners Across Australia" id="responsive-show">
+<h2>Investment Value</h2>
+<p class="para-adjustment">The Oscar Wylee business offers all joint venture partners a high-value investment which includes the latest, high-quality optometrist equipment, a large inventory including optical, sunglasses, lenses and accessories, in-house manufacturing and procurement of frames and lenses and contemporary design concepts to reflect our changing market. We also believe in an excellent customer experience throughout the entire journey which is why we’ve created a more casual and comfortable browsing experience as opposed to what you might find in a traditional eyewear store.</p>
+</div>
+<div class="right-partners"><img src="{{media url="wysiwyg/jvp/Image_4.jpg"}}" alt="Partners Across Australia" id="desktop-show"></div>
+</div>
+</div>
+<div class="carousel-container">
+<div class="wrapper"><i id="left">❮</i>
+<ul class="carousel">
+<li class="card">
+<div class="img"><img src="{{media url="wysiwyg/jvp/Carousel_3.jpg"}}" alt="Heba Raad" draggable="false"></div>
+<div class="carousel-card-heading">Heba Raad</div>
+<span>Optometrist Partner,</span> <span>Oscar Wylee Burwood NSW</span>
+<p>"Oscar Wylee's JVP program offers a supportive avenue to partnering with a main contender in the optical industry. It is both enriching and rewarding, and I can't wait to see how the company continues to grow!"</p>
+</li>
+<li class="card">
+<div class="img"><img src="{{media url="wysiwyg/jvp/Carousel_2.jpg"}}" alt="Sharon Cou" draggable="false"></div>
+<div class="carousel-card-heading">Sharon Cou</div>
+<span>Optometrist Partner,</span> <span>Oscar Wylee Castle Towers NSW</span>
+<p>"The Oscar Wylee JVP Program has allowed me to flourish as an optometrist and I have been able to provide the best care for my patients and run the clinic the way I want whilst also being supported by Oscar Wylee, a company that cares about its staff and people - which is why it is growing and become one of the best in the optical industry!"</p>
+</li>
+<li class="card">
+<div class="img"><img src="{{media url="wysiwyg/jvp/Carousel_1.jpg"}}" alt="Stuart McKay" draggable="false"></div>
+<div class="carousel-card-heading">Stuart McKay</div>
+<span>Retail Partner,</span> <span>Oscar Wylee Castle Towers NSW</span>
+<p>"This partnership has given me the chance to grow and be part of a supportive and dynamic team in a way I didn't think was possible. For someone who has worked in many practices over the years I feel that I have finally found a place that truly cares about their team and shares the same values as myself. It's amazing what one can achieve with the right support network around them."</p>
+</li>
+<li class="card">
+<div class="img"><img src="{{media url="wysiwyg/jvp/Carousel_3.jpg"}}" alt="Heba Raad" draggable="false"></div>
+<div class="carousel-card-heading">Heba Raad</div>
+<span>Optometrist Partner,</span> <span>Oscar Wylee Burwood NSW</span>
+<p>"Oscar Wylee's JVP program offers a supportive avenue to partnering with a main contender in the optical industry. It is both enriching and rewarding, and I can't wait to see how the company continues to grow!"</p>
+</li>
+<li class="card">
+<div class="img"><img src="{{media url="wysiwyg/jvp/Carousel_2.jpg"}}" alt="Sharon Cou" draggable="false"></div>
+<div class="carousel-card-heading">Sharon Cou</div>
+<span>Optometrist Partner,</span> <span>Oscar Wylee Castle Towers NSW</span>
+<p>"The Oscar Wylee JVP Program has allowed me to flourish as an optometrist and I have been able to provide the best care for my patients and run the clinic the way I want whilst also being supported by Oscar Wylee, a company that cares about its staff and people - which is why it is growing and become one of the best in the optical industry!"</p>
+</li>
+<li class="card">
+<div class="img"><img src="{{media url="wysiwyg/jvp/Carousel_1.jpg"}}" alt="Stuart McKay" draggable="false"></div>
+<div class="carousel-card-heading">Stuart McKay</div>
+<span>Retail Partner,</span> <span>Oscar Wylee Castle Towers NSW</span>
+<p>"This partnership has given me the chance to grow and be part of a supportive and dynamic team in a way I didn't think was possible. For someone who has worked in many practices over the years I feel that I have finally found a place that truly cares about their team and shares the same values as myself. It's amazing what one can achieve with the right support network around them."</p>
+</li>
+</ul>
+<i id="right">❯</i></div>
+</div>
+<hr>
+<div class="textMainNobg" id="faq">
+<div class="faq-section">
+<h2 style="text-align: left;" id="faq-title">Frequently asked questions about partnerships</h2>
+<div class="question">
+<h3>What are the services you provide?</h3>
+<span class="toggle">+</span></div>
+<div class="answer">
+<p>At Oscar Wylee, we offer both optometry and eyewear services to provide a complete in-store experience where you can get your eyes checked by an optometrist, update your prescription, and find a pair of glasses all on the same day.</p>
+</div>
+<div class="question">
+<h3>How many locations do you have?</h3>
+<span class="toggle">+</span></div>
+<div class="answer">
+<p>We offer JVP opportunities in all of our trading companies, Australia, New Zealand and Canada across our 140+ stores. Our locations are available in both metro and regional areas.</p>
+</div>
+<div class="question">
+<h3>What products do you sell?</h3>
+<span class="toggle">+</span></div>
+<div class="answer">
+<p>Oscar Wylee is an eyewear company that sells a wide range of affordable and stylish glasses inspired by modern, vintage and on-trend designs. Our products cover a variety of styles and sizes for every customer, male, female, kids, seniors and everything in between.</p>
+</div>
+<div class="question">
+<h3>What is the process of becoming a JVP?</h3>
+<span class="toggle">+</span></div>
+<div class="answer">
+<p>The JVP process</p>
+<ul>
+<li>Expression of Interest</li>
+<li>Screening interview</li>
+<li>JVP Module in depth</li>
+<li>Store specific financials</li>
+<li>Presentation</li>
+<li>Approval</li>
+<li>Document Stage</li>
+<li>Onboarding</li>
+</ul>
+</div>
+<div class="question">
+<h3>What type of equipment do you have?</h3>
+<span class="toggle">+</span></div>
+<div class="answer">
+<p>At Oscar Wylee, our stores are equipped with the latest high-quality testing equipment and technologies including:</p>
+<ul style="padding-bottom: 0;">
+<li>Pretest Machine (Autorefractor, Keratometer, Pachymeter and Tonometer)</li>
+<li>Digital retinal imaging*</li>
+<li>Visual Field Machine*</li>
+<li>Optical Coherence Tomography (OCT)*</li>
+<li>Auto-vertometer</li>
+</ul>
+<p>*Available in certain stores only</p>
+</div>
+<!-- Add more questions and answers here --></div>
+</div>
+<div class="textMainNobg">
+<div class="slider-container">
+<div class="slider"><img src="{{media url="wysiwyg/jvp/Slider_1.jpg"}}" alt="Image 1"> <img src="{{media url="wysiwyg/jvp/Slider_2.jpg"}}" alt="Image 2"> <img src="{{media url="wysiwyg/jvp/Slider_3.jpg"}}" alt="Image 3"></div>
+<div class="prev-arrow">❮</div>
+<div class="next-arrow">❯</div>
+</div>
+</div>
+<aside class="textMainNobg download-cta-sec">
+<div class="complete-jvp-cta">
+<div class="left-download">
+<div>Make your next move at Oscar Wylee</div>
+</div>
+<div class="right-download"><a href="https://www.livehire.com/talent/community/oscarwylee/jvp">Complete the JVP form</a></div>
+</div>
+</aside>
+</div>
+</div>
+<p>
+<script>
+      // Get all question elements
+      const questions = document.querySelectorAll(".question");
+
+      // Add click event listener to each question
+      questions.forEach((question) => {
+        question.addEventListener("click", () => {
+          // Toggle the display of the answer
+          const answer = question.nextElementSibling;
+          const isExpanded = answer.style.maxHeight;
+
+          if (isExpanded) {
+            answer.style.maxHeight = null;
+            question.querySelector(".toggle").textContent = "+";
+          } else {
+            answer.style.maxHeight = `${answer.scrollHeight}px`;
+            question.querySelector(".toggle").textContent = "-";
+          }
+        });
+      });
+    </script>
+<script>
+      let slideIndex = 0;
+      const slides = document.querySelectorAll(".slider img");
+      const prevArrow = document.querySelector(".prev-arrow");
+      const nextArrow = document.querySelector(".next-arrow");
+
+      // Function to display the current slide
+      function showSlide() {
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+
+        slides[slideIndex].classList.add("active");
+      }
+
+      // Function to go to the next slide
+      function nextSlide() {
+        slideIndex++;
+        if (slideIndex >= slides.length) {
+          slideIndex = 0;
+        }
+        showSlide();
+      }
+
+      // Function to go to the previous slide
+      function prevSlide() {
+        slideIndex--;
+        if (slideIndex < 0) {
+          slideIndex = slides.length - 1;
+        }
+        showSlide();
+      }
+
+      // Event listeners for next and previous arrows
+      nextArrow.addEventListener("click", nextSlide);
+      prevArrow.addEventListener("click", prevSlide);
+
+      // Automatic sliding every 5 seconds
+      setInterval(nextSlide, 5000);
+
+      // Display the initial slide
+      showSlide();
+    </script>
+<script>
+      const wrapper = document.querySelector(".wrapper");
+      const carousel = document.querySelector(".carousel");
+      const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+      const arrowBtns = document.querySelectorAll(".wrapper i");
+      const carouselChildrens = [...carousel.children];
+
+      let isDragging = false,
+        isAutoPlay = true,
+        startX,
+        startScrollLeft,
+        timeoutId;
+
+      // Get the number of cards that can fit in the carousel at once
+      let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+
+      // Insert copies of the last few cards to beginning of carousel for infinite scrolling
+      carouselChildrens
+        .slice(-cardPerView)
+        .reverse()
+        .forEach((card) => {
+          carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+        });
+
+      // Insert copies of the first few cards to end of carousel for infinite scrolling
+      carouselChildrens.slice(0, cardPerView).forEach((card) => {
+        carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+      });
+
+      // Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+      carousel.classList.add("no-transition");
+      carousel.scrollLeft = carousel.offsetWidth;
+      carousel.classList.remove("no-transition");
+
+      // Add event listeners for the arrow buttons to scroll the carousel left and right
+      arrowBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          carousel.scrollLeft +=
+            btn.id == "left" ? -firstCardWidth : firstCardWidth;
+        });
+      });
+
+      const dragStart = (e) => {
+        isDragging = true;
+        carousel.classList.add("dragging");
+        // Records the initial cursor and scroll position of the carousel
+        startX = e.pageX;
+        startScrollLeft = carousel.scrollLeft;
+      };
+
+      const dragging = (e) => {
+        if (!isDragging) return; // if isDragging is false return from here
+        // Updates the scroll position of the carousel based on the cursor movement
+        carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+      };
+
+      const dragStop = () => {
+        isDragging = false;
+        carousel.classList.remove("dragging");
+      };
+
+      const infiniteScroll = () => {
+        // If the carousel is at the beginning, scroll to the end
+        if (carousel.scrollLeft === 0) {
+          carousel.classList.add("no-transition");
+          carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
+          carousel.classList.remove("no-transition");
+        }
+        // If the carousel is at the end, scroll to the beginning
+        else if (
+          Math.ceil(carousel.scrollLeft) ===
+          carousel.scrollWidth - carousel.offsetWidth
+        ) {
+          carousel.classList.add("no-transition");
+          carousel.scrollLeft = carousel.offsetWidth;
+          carousel.classList.remove("no-transition");
+        }
+
+        // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+        clearTimeout(timeoutId);
+        if (!wrapper.matches(":hover")) autoPlay();
+      };
+
+      const autoPlay = () => {
+        if (window.innerWidth < 0 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+        // Autoplay the carousel after every 2500 ms
+        timeoutId = setTimeout(
+          () => (carousel.scrollLeft += firstCardWidth),
+          2500
+        );
+      };
+      autoPlay();
+
+      carousel.addEventListener("mousedown", dragStart);
+      carousel.addEventListener("mousemove", dragging);
+      document.addEventListener("mouseup", dragStop);
+      carousel.addEventListener("scroll", infiniteScroll);
+      wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+      wrapper.addEventListener("mouseleave", autoPlay);
+    </script>
+</p>
+<p>
+<script>
+var form = document.getElementById("my-form");
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("my-form-status");
+  var formData = new FormData();
+
+  // Get the values from the input fields
+  var name = document.getElementById("name").value;
+  var lastName = document.getElementById("last-name").value;
+  var email = document.getElementById("email").value;
+  var phone = document.getElementById("phone").value;
+
+  // Set the form data in the desired order
+  formData.append("name", name);
+  formData.append("last-name", lastName);
+  formData.append("email", email);
+  formData.append("phone", phone);
+
+  try {
+    var response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      status.innerHTML =
+        "Thank you for your enquiry, one of our representatives will be in touch!";
+      status.style.backgroundColor = "#007bff";
+      status.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.1)";
+      status.classList.add("with-padding");
+      status.style.borderRadius = "5px";
+      status.style.marginBottom = "20px";
+      form.reset();
+    } else {
+      var responseData = await response.json();
+      if (responseData.hasOwnProperty("errors")) {
+        status.innerHTML = responseData.errors.map((error) => error.message).join(", ");
+      } else {
+        status.innerHTML = "Oops! There was a problem submitting your form.";
+      }
+    }
+  } catch (error) {
+    status.innerHTML = "Oops! There was a problem submitting your form.";
+  }
+}
+
+form.addEventListener("submit", handleSubmit);
+    </script>
+</p>
+<p>
+<script>
+ function validateForm() {
+    var emailInput = document.getElementById("email").value;
+    var phoneInput = document.getElementById("phone").value;
+
+    // Email validation
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(emailInput)) {
+      alert("Please enter a valid email address.");
+      return false; // Prevent form submission
+    }
+
+    // Phone number validation
+    var phoneRegex = /^\d{10}$/; // 10 digits only
+    if (!phoneRegex.test(phoneInput)) {
+      alert("Please enter a valid 10-digit phone number.");
+      return false; // Prevent form submission
+    }
+
+    // Form is valid, allow submission
+    return true;
+  }
+    </script>
+</p>
+<p></p>
+<p></p>

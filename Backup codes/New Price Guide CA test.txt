@@ -1,0 +1,2717 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+
+* {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: #333333; */
+  line-height: 1.3em;
+}
+
+#maincontent {
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.article-banner {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media (max-width: 2000px) {
+  .article-banner {
+    height: 275px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .article-banner {
+    height: 300px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .article-banner {
+    height: 300px;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mobile-banner {
+  display: none;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+.title {
+  border-bottom: 1px solid silver;
+  padding: 2.5rem 3rem;
+  margin: 2.5rem 3rem;
+  margin-top: 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 2rem 0;
+  border-left: 10px solid #003cac;
+  padding: 0.5rem;
+  font-weight: 700;
+}
+
+.linkTo {
+  color: #003cac;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.intro-section {
+  margin: 3rem;
+}
+
+.main-section section {
+  margin: 3rem;
+  border-bottom: 1px solid silver;
+}
+
+.section-border-bottom {
+  border-bottom: 1px solid silver;
+  margin: 3rem;
+}
+
+.section-border-bottom-responsive {
+  margin: 3rem;
+}
+
+@media (max-width: 480px) {
+  .subtitle {
+    font-size: 18px;
+  }
+
+.section-border-bottom {
+  margin: 1rem;
+}
+
+.section-border-bottom-responsive {
+  border-bottom: 1px solid silver;
+  margin: 1rem;
+}
+}
+
+/* Default styles for all screen sizes */
+
+/* Assuming the parent container has a specific width and height */
+.heading-banner {
+  position: relative;
+  margin-top: 5rem;
+}
+
+/* Style for the image */
+.heading-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Style for the banner content */
+.heading-banner .banner-content {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  color: #fff;
+  width: 53%;
+}
+
+/* Style for the h2 heading inside banner content */
+.banner-content h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+/* Style for the paragraph inside banner content */
+.banner-content p {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.rectangle {
+  display: none;
+}
+
+/* Responsive styles for different screen sizes */
+@media screen and (max-width: 1900px) and (min-width: 1440px) {
+  .heading-banner .banner-content {
+    top: 0;
+    width: 55%;
+  }
+
+  .banner-content h2 {
+    font-size: 60px;
+  }
+
+  .banner-content p {
+    font-size: 20px;
+  }
+}
+
+/* 1024px and above */
+@media screen and (max-width: 1024px) {
+  .heading-banner .banner-content {
+    top: 0;
+    width: 60%;
+  }
+
+  .banner-content h2 {
+    font-size: 50px;
+  }
+
+  .banner-content p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 910px) and (min-width: 769px) {
+  .heading-banner .banner-content {
+    top: -10%;
+  }
+
+.banner-content h2 {
+    font-size: 40px;
+}
+
+.banner-content p {
+    font-size: 12px;
+}
+}
+
+/* 768px and above */
+@media screen and (max-width: 768px) {
+  .heading-banner .banner-content {
+    top: -5%;
+    width: 60%;
+  }
+
+  .heading-banner .banner-content h2 {
+    font-size: 35px;
+  }
+
+  .banner-content p {
+    font-size: 12px;
+  }
+
+.heading-banner {
+  margin-top: 0;
+}
+}
+
+/* 480px and above */
+@media screen and (max-width: 480px) {
+  .heading-banner .banner-content {
+    width: 80%;
+  }
+
+  .heading-banner .banner-content h2 {
+    font-size: 35px;
+  }
+
+  .heading-banner .banner-content p {
+    font-size: 12px;
+  }
+
+  .rectangle {
+    height: 150px;
+    background-color: #89675e;
+    display: block;
+  }
+
+  .heading-banner img {
+    display: none;
+  }
+
+.responsive-margin-top {
+   margin-top: 3rem;
+}
+}
+
+/* 390px and above */
+@media screen and (max-width: 390px) {
+  .heading-banner .banner-content {
+    width: 80%;
+  }
+
+  .heading-banner .banner-content h2 {
+    font-size: 32px;
+  }
+
+  .heading-banner .banner-content p {
+    font-size: 12px;
+  }
+}
+
+/* 375px and above */
+@media screen and (max-width: 375px) {
+  .heading-banner .banner-content h2 {
+    font-size: 30px;
+  }
+
+  .heading-banner .banner-content p {
+    font-size: 12px;
+  }
+}
+
+.book-section {
+  display: flex;
+  align-items: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 0.5em;
+  padding-top: 0em;
+}
+
+.book-section p {
+  margin-bottom: 1.5em;
+}
+
+.book-section-left {
+  width: 60%;
+  margin-left: 0;
+  padding-left: 1.5em;
+}
+
+.book-section-left .heading {
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  font-size: 16px;
+  padding-bottom: 1em;
+}
+
+.book-section-left .booking-heading {
+    font-weight: 600;
+    font-size: 1.25em;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+}
+
+.book-section-right {
+  display: flex;
+  width: 25%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .book-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .book-section-right {
+    display: flex;
+    width: 40%;
+    align-items: center;
+  }
+
+  .section-border-bottom {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-section {
+    border-bottom: 1px solid silver;
+  }
+}
+
+.book-section-right a {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.btnOw:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.btnOw {
+  background-color: #003cac;
+  width: 100%;
+  /* padding: 0px 50%; */
+  border: none;
+  color: #fff;
+  height: 2em;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+  transition: all 1s ease;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.para-content {
+  /* margin-top: 1em; */
+  margin-bottom: 2em;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.list-title {
+  font-weight: 700;
+}
+
+.ordered-list,
+.unordered-list {
+  padding-left: 4rem;
+  margin-top: 2em;
+}
+
+.unordered-list {
+  margin-bottom: 2em;
+}
+
+.ordered-list li,
+.unordered-list li {
+  margin-bottom: 0.8em;
+  font-size: 16px;
+  text-align: left;
+}
+
+.pro-con {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.pro-con li {
+  margin-bottom: 1em;
+}
+
+.pro-title,
+.con-title,
+.sub-list-title,
+.sub-div-title {
+  border-left: 10px solid #b1b4b2;
+  padding: 0rem 1rem;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.sub-list-title {
+  font-size: medium;
+  margin-left: 3em;
+}
+
+.pro-list,
+.con-list {
+  margin-left: 2em;
+}
+
+.pro-section,
+.con-section {
+  flex: 1 1 0;
+}
+
+.sub-div {
+  margin-left: 2em;
+}
+
+.sub-div .para-content {
+  margin-left: 0;
+}
+
+.grid-image {
+  width: 100%;
+  margin-bottom: 0.3em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  place-items: center;
+  column-gap: 3em;
+  width: 70%;
+  margin: 2em auto;
+}
+
+.grid-item {
+  /* text-align: center; */
+  width: 100%;
+}
+
+.grid-item span {
+  font-style: italic;
+  font-weight: 700;
+  font-size: x-small;
+}
+
+.grid-text {
+  text-align: center;
+  font-size: x-small;
+  margin-bottom: 2em;
+}
+
+.grid-title {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.flex-wrapper {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.flex-image {
+  width: 80%;
+  display: flex;
+  margin: 2em auto;
+}
+
+.hightlight-list {
+  font-weight: 600;
+}
+
+.example-images {
+  row-gap: 2em;
+}
+
+.product-image {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.products-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.individual-product {
+  border-right: 1px solid silver;
+  margin-bottom: 2em;
+  display: flex;
+  /* margin-left: 1em; */
+}
+
+.individual-product:last-child {
+  border: none;
+}
+
+.product-name,
+.product-price {
+  text-align: center;
+}
+
+.product-button {
+  margin: 0 auto;
+  display: flex;
+  padding: 5px 30px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  margin-top: 1em;
+}
+
+.two-pairs-price,
+.three-pairs-price {
+  text-align: center;
+  /* margin-top: 2em; */
+  color: white;
+  font-weight: 700;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-right: 1em;
+}
+
+.two-pairs-price {
+  margin-bottom: 1em;
+}
+
+.two-pairs-price span,
+.three-pairs-price span {
+  display: block;
+}
+
+.two-pairs-price {
+  background-color: #003cac;
+}
+
+.three-pairs-price {
+  background-color: black;
+}
+
+.from {
+  font-weight: 300;
+  color: white;
+  line-height: 10px;
+}
+
+.context {
+  padding: 0 3rem;
+}
+
+.location {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+  padding-top: 0;
+  margin-top: -1em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid silver;
+}
+
+.location .heading {
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+.item1 {
+  border: none;
+}
+
+.locationText .heading {
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+.locationText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.locationText p {
+  font-size: 16px;
+  margin-top: 2em;
+}
+
+.locationImage {
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.allButton {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.allButton a {
+  text-decoration: none;
+}
+
+.allButton .btnOw {
+  width: 70%;
+  margin-left: 0;
+}
+
+.item1 {
+  padding-top: 2em;
+}
+
+.products-section-mobile {
+  display: none;
+}
+
+.nine-products-section-mobile {
+  display: none;
+}
+
+.nine-products-section {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.nine-products-section img {
+  width: 30%;
+  border-right: 1px solid silver;
+}
+
+.nine-products-section img:last-child {
+  border: none;
+}
+
+.nine-products-section-gender {
+  margin-left: 0;
+}
+
+.grid-container-mobile {
+  display: none;
+}
+
+.contents {
+  margin-bottom: 2em;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+  padding: 0;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+  width: 1em;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.pre-btn:hover {
+  background-color: white;
+  border: none;
+}
+
+.nxt-btn:hover {
+  background-color: white;
+  border: none;
+}
+
+.nine-products-section {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product-container {
+  /* padding: 0 10vw; */
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container a {
+  display: contents;
+}
+
+@media screen and (max-width: 768px) {
+.book-section {
+gap: 1rem;
+}
+}
+
+@media screen and (max-width: 440px) {
+  * {
+    line-height: 1.5em;
+  }
+
+  .title {
+    margin: 1em 0.5em;
+    padding: 0em;
+    /* padding-bottom: 0.5em; */
+    white-space: normal;
+    border: none;
+  }
+
+  .contents {
+    margin-bottom: 2em;
+  }
+
+  .intro-section,
+  .main-section section {
+    margin: 0 1em;
+  }
+
+  .ordered-list,
+  .unordered-list {
+    padding-left: 1.2em;
+  }
+
+  .pro-con {
+    flex-direction: column;
+  }
+
+  .flex-wrapper {
+    flex-direction: column;
+  }
+
+  .example-images {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+
+  .grid-item {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .product-image {
+    width: 100%;
+  }
+
+  .sub-div {
+    margin-left: 0em;
+  }
+
+  .book-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .book-section-left {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .book-section-left p {
+    margin-right: 1em;
+    text-align: justify;
+    margin-left: 1em;
+  }
+
+  .book-section-left .heading {
+    text-align: center;
+    font-size: 14px
+  }
+
+.book-section-left .booking-heading {
+text-align: center;
+    margin-top: 1.5em;
+}
+
+  .book-section-right {
+    width: 75%;
+    margin-bottom: 1em;
+  }
+
+.book-section {
+gap: 0;
+}
+
+  .desktop-banner {
+    display: none;
+  }
+
+  .mobile-banner {
+    display: block;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .products-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .individual-product {
+    border-right: none;
+    border-bottom: 1px solid silver;
+    padding-bottom: 0.5em;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .grid-image {
+    width: 90%;
+    display: flex;
+    margin: 0px auto;
+  }
+
+  .location {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3.2rem;
+  }
+
+  .locationText .heading {
+    text-size: 1.25em;
+    margin-top: 0.5em;
+    margin-bottom: -0.5em;
+  }
+
+  .allButton .btnOw {
+    width: 100%;
+  }
+
+  .item1 {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    border: none;
+    padding-bottom: 0;
+    padding-top: 3.5em;
+  }
+
+  .locationText .heading {
+    text-align: center;
+  }
+
+  .item1 .locationImage,
+  .item1 .locationText {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+  }
+
+  .products-section {
+    display: none;
+  }
+
+  .nine-products-section {
+    display: none;
+  }
+
+  .individual-product {
+    display: flex;
+    margin: auto auto;
+  }
+
+  .products-section-mobile {
+    display: block;
+  }
+
+  .nine-products-section-mobile {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .nine-products-section-mobile::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nine-products-section-mobile img {
+    width: 80%;
+  }
+
+  .grid-container-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-item span {
+    display: flex;
+    margin: 0 2em;
+  }
+
+  .grid-container-desktop {
+    display: none;
+  }
+
+  .product-container-mobile {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .nine-products-section-mobile {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+  }
+
+  .pre-btn,
+  .nxt-btn {
+    width: 3vw;
+    height: 0;
+    top: 50%;
+  }
+
+  #main-cont-wrapper {
+    margin: 0em 1em;
+  }
+
+  .para-content {
+    hyphens: auto;
+    word-spacing: 0;
+    hyphenate-limit-chars: 6;
+  }
+}
+
+/* big image */
+.big_img_wapper {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.big_img {
+  border-radius: 8px;
+  width: 80%;
+}
+
+/* image with content section */
+.image_with_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.para_wapper {
+  width: 50%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .image_with_content {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .para_wapper {
+    width: 100%;
+  }
+
+  .big_img_wapper {
+    width: 100%;
+  }
+
+  .big_img {
+    width: 100%;
+  }
+
+  .article-banner {
+    height: 500px;
+  }
+}
+
+.example-image-wrapper {
+  margin-bottom: 1em;
+  display: flex;
+}
+.example-image {
+  margin: auto;
+  width: 50%;
+  margin-bottom: 1.6rem;
+}
+
+@media (max-width: 480px) {
+  .example-image {
+    width: 100%;
+  }
+
+  .article-banner {
+    height: 400px;
+  }
+
+  #responsiveheading {
+    padding: 0 4rem;
+  }
+}
+
+/* Cards */
+
+.carousel-container {
+  margin-bottom: 3rem;
+}
+
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  justify-content: center;
+  column-gap: 80px;
+  row-gap: 15px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.cardTop {
+  background-color: #f0f6ff;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-top: 20px;
+}
+
+.popular {
+  background-color: #003cac;
+  color: #fff;
+  font-weight: 700;
+  margin: 10px;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+
+.cardTop h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: #003cac;
+}
+
+.cardTop img {
+  width: 100%;
+}
+
+.cardMidd {
+  background-color: #f0f6ff;
+  padding-bottom: 30px;
+}
+
+.cardMidd ul {
+  padding: 35px 20px 15px 35px;
+  height: 150px;
+}
+
+.cardMidd ul li {
+  padding-bottom: 15px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.cardBottom {
+  text-align: center;
+  padding: 20px 20px;
+  background-color: #f0f6ff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.cardBottom img {
+  width: 50px;
+  padding: 1px;
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 20px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.priceContainer p {
+  padding: 0;
+  margin: 0;
+}
+
+.priceText {
+  font-size: 14px;
+}
+
+.priceText span {
+  color: #003cac;
+  font-weight: 600;
+}
+
+.priceNumber {
+  font-weight: 600;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.plus {
+  padding-right: 0.5rem;
+  font-size: 30px;
+}
+
+.cost {
+  font-weight: 600;
+  font-size: 30px;
+  bottom: 0;
+  line-height: 28px;
+}
+
+.sunglass-top-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sunglass-top-block > .sunglass-top-block-h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #003cac;
+  text-align: left;
+}
+
+.sunglass-list {
+  margin-left: 2.5rem;
+  margin-bottom: 0;
+}
+
+.sunglass-list li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .cards {
+    display: flex;
+    width: 300%; /* Three cards side by side */
+    transition: transform 0.5s ease-in-out;
+    column-gap: 0;
+  }
+
+  .card {
+    width: 100%;
+    /* Your existing card styles */
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #bbb;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    width: 60px;
+    height: 15px;
+    border-radius: 15px;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 480px) {
+  .priceContainer {
+    align-items: flex-end;
+  }
+
+  .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .price {
+    text-align: left;
+  }
+
+  .plus {
+    font-size: 24px;
+  }
+
+  .cost {
+    font-size: 24px;
+  }
+}
+
+/* Frames */
+
+.frames-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frames-image img {
+  width: 95%;
+  object-fit: cover;
+}
+
+.frame-container,
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 3rem;
+}
+
+.frame-container {
+  margin-bottom: 3rem;
+}
+
+.service-container {
+  column-gap: 5rem;
+  row-gap: 3rem;
+  margin: 0 7rem;
+  margin-top: 3rem;
+}
+
+.frame-block {
+   font-size: 22px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 10px;
+}
+
+.services-block {
+  padding: 2rem;
+}
+
+.services-block {
+  background-color: #f0f6ff;
+  border-radius: 15px;
+}
+
+.services-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-heading h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 22px;
+}
+
+.frame-block h3 {
+  padding-bottom: 1rem;
+  font-size: 22px;
+}
+
+.frame-block p {
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+
+.frame-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.services-ul {
+  margin-left: 1.5rem;
+}
+
+.services-ul li {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 910px) and (min-width: 769px) {
+.service-container {
+   margin: 0;
+    margin-top: 3rem;
+}
+
+.book-section-right {
+width: 50%;
+}
+}
+
+@media (max-width: 768px) {
+  .frames-image img {
+    width: 100%;
+  }
+
+  .frame-container,
+  .service-container {
+    grid-template-columns: none;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 0;
+  }
+  
+  .service-container {
+    gap: 3rem;
+    margin: 0;
+    margin-top: 3rem;
+  }
+
+  .thinner-heading h3 {
+    font-size: 18px;
+  }
+
+  .services-ul li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+.frame-block h3 {
+font-size: 18px;
+}
+
+.frame-block p {
+font-size: 14px;
+}
+
+.services-block {
+  padding: 1rem 2rem;
+}
+}
+
+/* Location */
+
+.location {
+  max-width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid silver;
+}
+
+.locationText > * {
+  margin-bottom: 35px;
+}
+
+.locationText h2 {
+  font-weight: 700;
+}
+
+.locationText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.locationText p {
+  font-size: 16px;
+}
+
+.locationImage {
+  width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.allButton {
+  width: 100%;
+}
+
+.allButton a {
+  text-decoration: none;
+}
+
+.bookingBtnOw:hover,
+.btnOw:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.btnOw {
+  background-color: #003cac;
+  width: 80%;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+}
+
+.booking {
+  max-width: 100%;
+  margin: 2rem;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.bookingImage {
+  max-width: 40%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.bookingButton {
+  width: 40%;
+  position: absolute;
+  bottom: 20px;
+}
+
+.bookingBtnOw {
+  width: 90%;
+  background-color: #003cac;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+  box-shadow: none !important;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  opacity: 0;
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -ms-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 650px));
+  }
+  .infographic {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  .booking {
+    margin: 1rem;
+    padding: 1rem 0;
+  }
+  .bookingImage {
+    max-width: 100%;
+    min-width: 300px;
+  }
+  .bookingButton {
+    width: 90%;
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 710px) {
+  .locationImage {
+    order: 1;
+  }
+  .allButton {
+    margin-bottom: 5px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 38px;
+  }
+  .desktopBanner {
+    display: none;
+  }
+  .mobBanner {
+    display: flex;
+    width: 100%;
+  }
+  .infographic {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 320px) {
+  .location {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 1rem 0.5rem;
+  }
+  .locationText > * {
+    margin-bottom: 20px;
+  }
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .bookingImage {
+    max-width: 90%;
+    min-width: 250px;
+  }
+  .btnOw {
+    width: 100%;
+  }
+  .tipEllements {
+    padding: 1.2rem;
+  }
+}
+
+/* Top Container, Sunglasses */
+.top-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Align both cards to stretch and have equal height */
+  gap: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.top-container-card {
+  flex: 1; /* Allow the cards to grow and take equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff7e9;
+  border-radius: 15px;
+}
+
+.sunglass-bg {
+  background-color: #f4fdd9 !important;
+  padding-bottom: 2rem;
+}
+
+.top-container-card h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: #003cac;
+}
+
+.glass-image {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.glass-image img,
+.glass-image-dual img {
+  padding-right: 15px;
+}
+
+.glass-image-dual {
+  width: 67%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.glass-desc {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.sunglass-desc {
+  align-items: center;
+  font-size: 14px;
+}
+
+.glass-desc-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.glass-para {
+  text-align: center;
+  margin-bottom: 5rem;
+  color: #a0a0a0;
+}
+
+.sunglass-desc-title {
+  padding-left: 3rem;
+  margin-bottom: 0;
+}
+
+.sunglass-desc-title-desc {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+.responsive-hide {
+  display: block;
+}
+
+.deskrop-hide {
+  display: none;
+}
+
+.container-from {
+  position: relative;
+  top: -10px;
+  font-size: 14px;
+}
+
+.container-price {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#margin-bottom-sunglass {
+margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  .top-container {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+#margin-bottom-sunglass {
+margin-bottom: 0;
+}
+
+.sunglass-top-block:first-child {
+margin-bottom: 2rem;
+}
+}
+
+@media (max-width: 480px) {
+  .top-container-card h2 {
+    font-size: 22px;
+  }
+
+  #top-container-para {
+    text-align: center;
+  }
+
+  .glass-image,
+  .glass-image-dual {
+    width: 100%;
+    margin-left: 30px;
+  }
+
+ .glass-desc p {
+    width: 64%;
+}
+
+  .glass-desc-title {
+    font-size: 14px;
+  }
+
+  .responsive-hide {
+    display: none;
+  }
+
+  .deskrop-hide {
+    display: block;
+  }
+
+.container-from {
+    top: -20px;
+    left: 35px;
+    font-size: 14px;
+}
+
+.container-price {
+    font-size: 24px;
+}
+
+.glass-para {
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+  .sunglass-desc {
+    font-size: 14px;
+  }
+
+#width-70 {
+  width: 70%;
+}
+
+#width-35 {
+  width: 35%;
+}
+}
+
+/* Lense */
+.lense-container {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Align both cards to stretch and have equal height */
+  gap: 5rem;
+}
+
+.lense-block {
+  flex: 1; /* Allow the cards to grow and take equal height */
+  background-color: #fff1ea;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.lense-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lense-heading > div {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 22px;
+  margin-top: 1rem;
+}
+
+.lense-ul {
+  margin-left: 1.5rem;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .lense-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .lense-ul {
+    font-size: 14px;
+  }
+
+  .lense-block {
+    padding: 1rem 2rem;
+  }
+}
+
+/* Blue Section */
+.blue-section {
+  padding: 2rem 2rem 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Align both cards to stretch and have equal height */
+  border: 5px solid #003cac;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.blue-text {
+  border-radius: 15px;
+  /* padding: 2rem; */
+  width: 70%;
+}
+
+.blue-text-ul {
+  margin-bottom: 0;
+}
+
+.blue-text-ul li {
+  list-style: disc;
+}
+
+.blue-text h2 {
+font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #003cac;
+    font-size: 22px;
+    margin-top: 1.5rem;
+}
+
+.blue-text p {
+font-size: 16px;
+    line-height: 1.5;
+}
+
+.blue-image {
+  border-radius: 15px;
+  /* padding: 2rem; */
+  width: 30%;
+  text-align: center;
+}
+
+.blue-image img {
+  width: 50%;
+margin-top: 1.5rem;
+}
+
+.blue-para {
+  margin-bottom: 5rem;
+  color: #003cac;
+  padding: 0 1rem;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .blue-section {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .blue-text {
+    width: 100%;
+    padding: 1rem 2rem 1rem 4rem;
+  }
+
+  .blue-image {
+    width: 100%;
+  }
+
+.blue-image img {
+  width: 25%;
+}
+}
+
+@media (max-width: 480px) {
+  .blue-text ul li {
+    font-size: 14px;
+  }
+
+  .blue-text ul p {
+    font-size: 14px;
+  }
+
+  .blue-text p {
+     font-size: 14px;
+}
+
+.blue-para {
+  margin-bottom: 3rem;
+  font-size: 14px;
+}
+
+.blue-image img {
+  width: 50%;
+}
+}
+
+/* thinner container */
+
+.thinner-container {
+  padding: 1rem 0;
+  background-color: #fff1ea;
+  border-radius: 15px;
+}
+
+.thinner-price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thinner-price-block {
+  padding: 0 3rem;
+  border-right: 1px solid #a8a5a3;
+  width: 34%;
+margin-top: 2rem;
+}
+
+.thinner-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.thinner-heading-h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 22px;
+}
+
+.thinner-ul {
+  margin-left: 1.5rem;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.thinner-lenses {
+  margin: auto;
+  display: table;
+  mix-blend-mode: multiply;
+}
+
+.thinner-lenses img {
+  width: 100%;
+ margin-top: 2rem;
+}
+
+.thinner-para {
+  padding: 0 1rem;
+  font-size: 14px;
+  color: #a29e9d;
+}
+
+@media (max-width: 768px) {
+  .thinner-price-container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .thinner-price-block {
+    border-right: 0;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .thinner-heading h2 {
+    font-size: 18px;
+  }
+
+  .thinner-ul {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .thinner-price-block {
+    padding: 1rem;
+  }
+
+  .thinner-price-block li {
+    font-size: 14px;
+  }
+
+  .thinner-heading h2 {
+    font-size: 1rem;
+  }
+
+.thinner-heading-h2:first-child {
+   width: 75%;
+}
+
+.thinner-price-container {
+  padding: 0 1rem;
+}
+}
+
+/* sun protection */
+
+.sun-protection-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+.sun-protection-block {
+  flex: 1;
+  padding: 2rem 3rem;
+  width: 34%;
+  background-color: #fff1ea;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  Justify-content: space-between;
+}
+
+.sun-protection-block img {
+  width: 90%;
+  margin-top: 2rem;
+  mix-blend-mode: multiply;
+}
+
+.sun-protection-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.sun-protection-heading-h2 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 22px;
+}
+
+.sun-protection-ul {
+  margin-left: 1.5rem;
+  font-size: 14px;
+}
+
+.sun-protection-lenses {
+  margin: auto;
+  display: table;
+  mix-blend-mode: multiply;
+}
+
+  .sun-protection-image {
+    text-align: center;
+  }
+
+.sun-protection-lenses img {
+  width: 100%;
+}
+
+.sun-protection-para {
+  padding: 0 1rem;
+  font-size: 14px;
+  color: #a29e9d;
+}
+
+@media (max-width: 768px) {
+  .sun-protection-container {
+    flex-direction: column;
+    padding: 0;
+    gap: 2rem;
+  }
+
+.sun-protection-block img {
+  width: 50%;
+}
+
+  .sun-protection-block {
+    border-right: 0;
+    width: 100%;
+  }
+
+  .sun-protection h2 {
+    font-size: 18px;
+  }
+
+  .sun-protection-ul {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sun-protection-block {
+    padding: 2rem;
+  }
+
+  .sun-protection-block li {
+    font-size: 14px;
+  }
+
+  .sun-protection-ul {
+    font-size: 14px;
+  }
+
+.sun-protection-block img {
+  width: 80%;
+}
+
+#quality-guarantee {
+font-size: 14px;
+}
+}
+
+</style>
+<div class="article-banner"><img src="{{media url="wysiwyg/price-guide-new/CA_Price_Guide_banner.jpg"}}" alt="Price Guide" class="banner desktop-banner"> <img src="{{media url="wysiwyg/price-guide-new/CA_Price_Guide_banner_mobile.jpg"}}" alt="Price Guide" class="mobile-banner"></div>
+<section class="section-border-bottom">
+<div class="heading-banner"><img src="{{media url="wysiwyg/price-guide-new/Single_Vision.jpg"}}" alt="Single Vision">
+<div class="rectangle"></div>
+<div class="banner-content">
+<h2>Single Vision</h2>
+<p>Includes 1.50 index single vision lenses, hard coating, and UV protection.<br>Both options are perfect for near-sightedness or distance correction.</p>
+</div>
+</div>
+<div class="top-container">
+<div class="top-container-card">
+<h2><span style="font-weight: bold;">Standard</span> Single Vision Lenses</h2>
+<p class="deskrop-hide" id="top-container-para">Includes standard single vision lenses</p>
+<div class="glass-image"><img src="{{media url="wysiwyg/price-guide-new/eyeglasses.png"}}" alt="Eyeglasses" style="width: 100px;"></div>
+<div class="glass-desc">
+<p><span class="glass-desc-title">1 pair of optical glasses</span> <span class="responsive-hide sunglass-desc-title-desc">Includes standard single vision lenses</span></p>
+<div class="glass-price-container"><span class="container-from">from</span> <span class="container-price">$169</span></div>
+</div>
+<div class="glass-image-dual"><img src="{{media url="wysiwyg/price-guide-new/eyeglasses.png"}}" alt="Eyeglasses" style="width: 100px;"> <img src="{{media url="wysiwyg/price-guide-new/eyeglasses.png"}}" alt="Eyeglasses" style="width: 100px;"></div>
+<div class="glass-desc" style="margin-bottom: 2rem;">
+<p><span class="glass-desc-title">2 pairs of optical glasses</span> <span class="responsive-hide sunglass-desc-title-desc">Includes standard single vision lenses</span></p>
+<div class="glass-price-container"><span class="container-from">from</span> <span class="container-price">$199</span></div>
+</div>
+</div>
+<div class="top-container-card">
+<h2><span style="font-weight: bold;">Premium</span> Single Vision Lenses</h2>
+<p class="deskrop-hide" id="top-container-para">Includes standard single vision lenses<br>Frames from OW Caada Iconic range</p>
+<div class="glass-image"><img src="{{media url="wysiwyg/price-guide-new/eyeglasses2.png"}}" alt="Eyeglasses" style="width: 100px;"></div>
+<div class="glass-desc">
+<p><span class="glass-desc-title">1 pair of premium optical glasses</span> <span class="responsive-hide sunglass-desc-title-desc">Includes standard single vision lenses</span><span class="responsive-hide sunglass-desc-title-desc">Frames from OW Canada Iconic range</span></p>
+<div class="glass-price-container"><span class="container-from">from</span> <span class="container-price">$199</span></div>
+</div>
+<div class="glass-image-dual"><img src="{{media url="wysiwyg/price-guide-new/eyeglasses2.png"}}" alt="Eyeglasses" style="width: 100px;"> <img src="{{media url="wysiwyg/price-guide-new/eyeglasses2.png"}}" alt="Eyeglasses" style="width: 100px;"></div>
+<div class="glass-desc" style="margin-bottom: 2rem;">
+<p><span class="glass-desc-title">2 pairs of premium optical glasses</span> <span class="responsive-hide sunglass-desc-title-desc">Includes standard single vision lenses</span><span class="responsive-hide sunglass-desc-title-desc">Frames from OW Canada Iconic range</span></p>
+<div class="glass-price-container"><span class="container-from">from</span> <span class="container-price">$249</span></div>
+</div>
+</div>
+</div>
+<p class="glass-para">Prices are for complete glasses. Second pair must be the same prescription.</p>
+</section>
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="booking-heading">Fashion-forward Glasses</p>
+<p class="heading heading-margin">With a range of shapes, sizes and colours, there's a frame for everyone at Oscar Wylee. Explore Oscar Wylee's wide range of glasses in-store today!</p>
+</div>
+<div class="book-section-right"><a href="/glasses.html" class="btnOw">Browse Glasses</a></div>
+</aside>
+<section class="section-border-bottom-responsive">
+<div class="heading-banner responsive-margin-top"><img src="{{media url="wysiwyg/price-guide-new/Add_ons.jpg"}}" alt="Lenses &amp; Coatings">
+<div class="rectangle" style="height: 160px;"></div>
+<div class="banner-content">
+<h2>Lenses &amp; Coatings</h2>
+<p>Add-on prices are for 1 pair of glasses. Use your health fund benefits, ask for a quote. Some options may not be available in online store.</p>
+</div>
+</div>
+<div class="lense-container">
+<div class="lense-block">
+<div class="lense-heading">
+<div>Anti-glare</div>
+<div>+ $20</div>
+</div>
+<ul class="lense-ul">
+<li>Reduce reflection for clearer vision</li>
+<li>Scratch resistant</li>
+</ul>
+</div>
+<div class="lense-block">
+<div class="lense-heading">
+<div>Anti-glare Premium</div>
+<div>+ $30</div>
+</div>
+<ul class="lense-ul">
+<li>Reduce reflection for clearer vision</li>
+<li>Scratch and smudge resistant</li>
+<li>Anti-static</li>
+</ul>
+</div>
+<div class="lense-block">
+<div class="lense-heading">
+<div style="color: #003cac;">Blue Light Filter*</div>
+<div>+ $50</div>
+</div>
+<ul class="lense-ul">
+<li>Blocks blue light from mobile and desktop screens</li>
+<li>Includes free Anti-glare coating</li>
+</ul>
+</div>
+</div>
+<div class="blue-section">
+<div class="blue-text">
+<ul class="blue-text-ul">
+<ul class="blue-text-ul">
+<li>
+<h2>What is Blue light?</h2>
+</li>
+</ul>
+</ul>
+<p>Blue light is emitted from digital screens such as your phone and computer. Long hours of blue light exposure could be harmful to your eyes as it may cause eye strain and disrupt your sleep quality</p>
+<ul class="blue-text-ul">
+<ul class="blue-text-ul">
+<li>
+<h2>Who needs Blue Light Filter?</h2>
+</li>
+</ul>
+</ul>
+<p><span>If your career or lifestyle relies heavily on using digital devices, we recommend using our Blue Light Filter for your glasses.</span></p>
+<ul class="blue-text-ul">
+<li>
+<h2>Find our more</h2>
+</li>
+</ul>
+<p>Please visit our <a href="/blue-light-glasses.html">Blue Light Glasses page</a>.</p>
+</div>
+<div class="blue-image"><img src="{{media url="wysiwyg/price-guide-new/BLF_2.png"}}" alt=""></div>
+</div>
+<p class="blue-para"><span>* Please note the Blue Light Filter is only available for clear lenses and is unavailable for sunglasses due to the tint. Our BLF is only available in standard 1.5, 1.6 and 1.67 index lenses.</span></p>
+</section>
+<section class="section-border-bottom">
+<div class="heading-banner responsive-margin-top"><img src="{{media url="wysiwyg/price-guide-new/Multifocals.jpg"}}" alt="Lenses &amp; Coatings">
+<div class="rectangle" style="height: 130px;"></div>
+<div class="banner-content">
+<h2>Multifocals</h2>
+<p>Choose your type of multifocal lenses from the options below - at an additional cost on top of the Standard Optical Glasses prices, if required.</p>
+</div>
+</div>
+<div class="carousel-container">
+<div class="cards">
+<div class="card">
+<div class="cardTop">
+<h2>Multifocal <span style="font-weight: bold;">Standard</span></h2>
+<img src="{{media url="wysiwyg/price-guide-new/MF_Types_illo_01.png"}}" alt="Standard multifocal"></div>
+<div class="cardMidd">
+<ul>
+<li>Some degree of soft focus at the edge of your vision</li>
+<li>Good for occasional glasses use</li>
+<li>Ideal for those on a budget</li>
+</ul>
+</div>
+<div class="cardBottom">
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="{{media url="wysiwyg/price-guide-new/eyeglasses.png"}}" alt="glasses"></div>
+<p class="priceText">1 pair with <span>Standard Multifocal</span></p>
+</div>
+<p class="priceNumber"><span class="plus">+</span> <span class="cost">$0</span></p>
+</div>
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="{{media url="wysiwyg/price-guide-new/eyeglasses.png"}}" alt="glasses"> <img src="{{media url="wysiwyg/price-guide-new/eyeglasses.png"}}" alt="glasses"></div>
+<p class="priceText">2 pairs with <span>Standard Multifocal</span></p>
+</div>
+<p class="priceNumber"><span class="plus">+</span> <span class="cost">$50</span></p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="cardTop">
+<h2>Multifocal <span style="font-weight: bold;">Premium</span></h2>
+<img src="{{media url="wysiwyg/price-guide-new/MF_Types_illo_02.png"}}" alt="premium multifocal"></div>
+<div class="cardMidd">
+<ul>
+<li>Wider field of clear vision</li>
+<li>Ideal for those who wear glasses in the office, especially for computer work</li>
+<li>Easier adjustment than standard multifocal lenses</li>
+</ul>
+</div>
+<div class="cardBottom">
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="{{media url="wysiwyg/price-guide-new/eyeglasses.png"}}" alt="glasses"></div>
+<p class="priceText">1 pair with <span>Premium Multifocal</span></p>
+</div>
+<p class="priceNumber"><span class="plus">+</span> <span class="cost">$100</span></p>
+</div>
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="{{media url="wysiwyg/price-guide-new/eyeglasses.png"}}" alt="glasses"> <img src="{{media url="wysiwyg/price-guide-new/eyeglasses.png"}}" alt="glasses"></div>
+<p class="priceText">2 pairs with <span>Premium Multifocal</span></p>
+</div>
+<p class="priceNumber"><span class="plus">+</span> <span class="cost">$150</span></p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="cardTop">
+<h2>Multifocal <span style="font-weight: bold;">Elite</span></h2>
+<img src="{{media url="wysiwyg/price-guide-new/MF_Types_illo_03.png"}}" alt="elite multifocal"></div>
+<div class="cardMidd">
+<ul>
+<li>Very wide field of clear vision</li>
+<li>All-rounder lens for modern lifestyle demands, and a lot of computer work</li>
+<li>Provides more natural and comfortable vision</li>
+</ul>
+</div>
+<div class="cardBottom">
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="{{media url="wysiwyg/price-guide-new/eyeglasses.png"}}" alt="glasses"></div>
+<p class="priceText">1 pair with <span>Elite Multifocal</span></p>
+</div>
+<p class="priceNumber"><span class="plus">+</span> <span class="cost">$200</span></p>
+</div>
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="{{media url="wysiwyg/price-guide-new/eyeglasses.png"}}" alt="glasses"> <img src="{{media url="wysiwyg/price-guide-new/eyeglasses.png"}}" alt="glasses"></div>
+<p class="priceText">2 pairs with <span>Elite Multifocal</span></p>
+</div>
+<p class="priceNumber"><span class="plus">+</span> <span class="cost">$250</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="dots"><span class="dot active"></span> <span class="dot"></span> <span class="dot"></span></div>
+</div>
+<h2 class="subtitle" style="border-left: 10px solid #66a3ff;">Tips for wearing multifocal glasses</h2>
+<p class="para-content">Adjusting to a brand new pair of multifocals can be difficult. But there are some useful tips that can ease the transition and help you settle into your glasses quicker.</p>
+<ul class="ordered-list">
+<li>Make sure to wear your new multifocals as much as possible to encourage your eyes to adapt to your new lenses.</li>
+<li>Try not to go back to your previous glasses as it can affect the progress you have made with your new multifocals.</li>
+<li>Move your head when looking around, not just your eyes. By pointing your nose where you want to see you will be looking out the clearest part of the lens.</li>
+<li>If you are struggling to wear them initially, try using the new glasses in a comfortable and familiar environment to help build confidence.</li>
+<li>If after 1-2 weeks of using your multifocals, you are still struggling to adjust, visit an <a href="/locations/full-store-list.html">Oscar Wylee store near you</a> and our friendly team members will assist you.</li>
+</ul>
+</section>
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="booking-heading">Find an Oscar Wylee Store Near You</p>
+<p class="heading heading-margin">Come and visit your nearest Oscar Wylee store for your eye care needs including eye exams and affordable, stylish frames.</p>
+</div>
+<div class="book-section-right"><a href="/locations/full-store-list.html" class="btnOw">Find a store</a></div>
+</aside>
+<section class="section-border-bottom-responsive">
+<div class="heading-banner responsive-margin-top"><img src="{{media url="wysiwyg/price-guide-new/Add_ons.jpg"}}" alt="Lenses &amp; Coatings">
+<div class="rectangle" style="height: 150px;"></div>
+<div class="banner-content">
+<h2>Add ons</h2>
+<p>Add-on prices are for 1 pair of glasses. Use your health fund benefits, ask for a quote. Some options may not be available in online store.</p>
+</div>
+</div>
+<h2 class="subtitle" style="border-left: 10px solid #ff9d66;"><span>Thinner &amp; lighter lenses</span></h2>
+<div class="thinner-container">
+<div class="thinner-price-container">
+<div class="thinner-price-block">
+<div class="thinner-heading"><span class="thinner-heading-h2">Thin &amp; Light lens *</span> <span class="thinner-heading-h2">+ $80</span></div>
+<ul class="thinner-ul">
+<li>1.6 index up to 35% thinner/lighter</li>
+</ul>
+</div>
+<div class="thinner-price-block">
+<div class="thinner-heading"><span class="thinner-heading-h2">Super Thin &amp; Light lens *</span> <span class="thinner-heading-h2">+ $120</span></div>
+<ul class="thinner-ul">
+<li>1.67 index up to 50% thinner/lighter</li>
+</ul>
+</div>
+<div class="thinner-price-block" style="border-right: 0;">
+<div class="thinner-heading"><span class="thinner-heading-h2">Ultra Thin &amp; Light lens *</span> <span class="thinner-heading-h2">+ $200</span></div>
+<ul class="thinner-ul">
+<li>1.74 index up to 60% thinner/lighter</li>
+</ul>
+</div>
+</div>
+<div class="thinner-lenses"><img src="{{media url="wysiwyg/price-guide-new/thin_and_light_1_.jpeg"}}" alt=""></div>
+<p class="thinner-para">*Aspheric lenses which include free anti-glare coating</p>
+</div>
+<h2 class="subtitle" style="border-left: 10px solid #ff9d66;">Sun Protection</h2>
+<div class="sun-protection-container">
+<div class="sun-protection-block">
+<div class="sun-protection-desc">
+<div class="sun-protection-heading"><span class="sun-protection-heading-h2">Tinted lenses</span> <span class="sun-protection-heading-h2">+ $30</span></div>
+<ul class="sun-protection-ul">
+<li>Choose from 7 available colours.</li>
+<li>Includes free Anti-glare coating.</li>
+</ul>
+</div>
+<div class="sun-protection-image"><img src="{{media url="wysiwyg/price-guide-new/tinted.jpeg"}}" alt=""></div>
+</div>
+<div class="sun-protection-block">
+<div class="sun-protection-desc">
+<div class="sun-protection-heading"><span class="sun-protection-heading-h2">Polarized</span> <span class="sun-protection-heading-h2">+ $100</span></div>
+<ul class="sun-protection-ul">
+<li><span style="color: #000000; font-family: arial, helvetica, sans-serif;">Good UV Protection.</span></li>
+<li>Includes free Anti-glare coating.</li>
+</ul>
+</div>
+<div class="sun-protection-image"><img src="{{media url="wysiwyg/price-guide-new/polarised.jpeg"}}" alt=""></div>
+</div>
+<div class="sun-protection-block" style="border-right: 0;">
+<div class="sun-protection-desc">
+<div class="sun-protection-heading"><span class="sun-protection-heading-h2">Photochromic lenses</span> <span class="sun-protection-heading-h2">+ $100</span></div>
+<ul class="sun-protection-ul">
+<li><span style="color: #000000; font-family: arial, helvetica, sans-serif;"><span>Changes from clear to darker opacity to adapt to light conditions.</span></span></li>
+<li><span style="color: #000000; font-family: arial, helvetica, sans-serif;"><span>Transitions brand lens available for +$200.</span></span></li>
+<li><span style="color: #000000; font-family: arial, helvetica, sans-serif;"><span><i>All photochromic lenses are spheric lenses.</i></span></span></li>
+</ul>
+</div>
+<div class="sun-protection-image"><img src="{{media url="wysiwyg/price-guide-new/photochromic.jpeg"}}" alt=""></div>
+</div>
+</div>
+</section>
+<section class="section-border-bottom">
+<div class="heading-banner responsive-margin-top"><img src="{{media url="wysiwyg/price-guide-new/Sunglasses.jpg"}}" alt="Lenses &amp; Coatings">
+<div class="rectangle" style="height: 150px;"></div>
+<div class="banner-content">
+<h2>Sunglasses</h2>
+<p>All lenses inclusive of Hard Coat + UV Protection.</p>
+</div>
+</div>
+<div class="top-container" id="margin-bottom-sunglass">
+<div class="top-container-card sunglass-bg">
+<h2><span style="font-weight: bold;">Non-prescription</span></h2>
+<div class="glass-image"><img src="{{media url="wysiwyg/price-guide-new/sunglasses.png"}}" alt="" style="width: 100px;"></div>
+<p class="glass-desc-title sunglass-desc-title">1 pair of non-prescription sunglasses</p>
+<div class="glass-desc sunglass-desc" style="margin-bottom: 0.5rem;"><span style="padding-top: 5px;"><span style="padding-top: 5px;">Includes any in-store non-prescription sunglasses.<br>Frames made from <span style="font-weight: 600;">Acetate</span></span></span>
+<div id="width-35"><span class="container-from">from</span> <span class="container-price">$129</span></div>
+</div>
+<div class="glass-desc sunglass-desc"><span style="padding-top: 5px;" id="width-70">Includes any in-store non-prescription sunglasses.<br>Frames made from <span style="font-weight: 600;">Metal</span></span>
+<div id="width-35"><span class="container-from">from</span> <span class="container-price">$169</span></div>
+</div>
+<div class="glass-image-dual"><img src="{{media url="wysiwyg/price-guide-new/sunglasses.png"}}" alt="" style="width: 100px;"> <img src="{{media url="wysiwyg/price-guide-new/sunglasses.png"}}" alt="" style="width: 100px;"></div>
+<p class="glass-desc-title sunglass-desc-title">2 pairs of non-prescription sunglasses</p>
+<div class="glass-desc sunglass-desc" style="margin-bottom: 0.5rem;"><span style="padding-top: 5px;" id="width-70">Includes any in-store non-prescription sunglasses.<br>All lenses inclusive of Hard Coat + UV Protection.</span>
+<div id="width-35"><span class="container-from">from</span> <span class="container-price">$199</span></div>
+</div>
+</div>
+<div class="top-container-card" style="background: none; justify-content: space-between;">
+<div class="sunglass-top-block sunglass-bg">
+<h2><span style="font-weight: bold;">Prescription</span></h2>
+<div class="glass-image"><img src="{{media url="wysiwyg/price-guide-new/sunglasses.png"}}" alt="" style="width: 100px;"></div>
+<p class="glass-desc-title sunglass-desc-title">1 pair of prescription sunglasses</p>
+<div class="glass-desc sunglass-desc" style="margin-bottom: 0.5rem;"><span style="padding-top: 5px;" id="width-70"><span>Includes tinted single vision lenses.<br>Polarized lenses available at additional cost.</span></span>
+<div id="width-35"><span class="container-from">from</span> <span class="container-price">$199</span></div>
+</div>
+<div class="glass-image-dual"><img src="{{media url="wysiwyg/price-guide-new/sunglasses.png"}}" alt="" style="width: 100px;"> <img src="{{media url="wysiwyg/price-guide-new/sunglasses.png"}}" alt="" style="width: 100px;"></div>
+<p class="glass-desc-title sunglass-desc-title">2 pairs of prescription sunglasses</p>
+<div class="glass-desc sunglass-desc" style="margin-bottom: 0.5rem;"><span style="padding-top: 5px;" id="width-70">Includes tinted single vision lenses.<br>Polarized lenses available at additional cost.</span>
+<div id="width-35"><span class="container-from">from</span> <span class="container-price">$259</span></div>
+</div>
+</div>
+<div class="sunglass-top-block">
+<h2 class="sunglass-top-block-h2">Available Filter categories</h2>
+<ul class="sunglass-list">
+<li><span class="list-title">Filter category 2 (Standard tinted lenses):</span><br>General purpose sunglasses. Good protection against sun-glare. Good UV protection. Not suitable for driving in twilight or at night or under dull conditions.</li>
+<li style="margin-bottom: 0;"><span class="list-title">Filter category 3 (Polarized lenses):</span><br>General purpose sunglasses. High protection against sun-glare. Good UV protection. Not suitable for driving in twilight or at night or under dull conditions.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="booking-heading">Oscar Wylee Sunglasses</p>
+<p class="heading heading-margin">Protect your eyes in style with Oscar Wylee's range of sunglasses. Customize your sunglasses and choose from tinted, polarized or photochromic lenses.</p>
+</div>
+<div class="book-section-right"><a href="/sunglasses.html" class="btnOw">Discover sunglasses</a></div>
+</aside>
+<section class="section-border-bottom-responsive">
+<div class="heading-banner responsive-margin-top"><img src="{{media url="wysiwyg/price-guide-new/Frames.jpg"}}" alt="Lenses &amp; Coatings">
+<div class="rectangle" style="height: 150px;"></div>
+<div class="banner-content">
+<h2>Frames</h2>
+<p></p>
+</div>
+</div>
+<h2 class="subtitle" style="border-left: 10px solid #ffd076;">Traditional hand assembly, designed in-house</h2>
+<p class="para-content">We believe that good design isn't just about looking good, it's about seeing clearly too. That's why we use high-quality lenses for all our glasses, complete with anti-scratch and UV proof coatings.</p>
+<div class="frames-image"><img src="{{media url="wysiwyg/price-guide-new/CA_Price_Guide_HandAssembly_1025x556.png"}}" alt=""></div>
+<h2 class="subtitle" style="border-left: 10px solid #ffd076;">Frame Styles</h2>
+<div class="frame-container">
+<div class="frame-block">
+<div class="frame-text">
+<h3>Acetate</h3>
+<p><span>Also known as cellulose acetate, these frames are traditionally hand-crafted by skilled craftsmen, with each frame passing through numerous stages of production and are hand-polished to ensure a glorious lustre. Our collections are a mix of Italian Mazzucchelli and Chinese-crafted plant-based plastic, which is both durable and light-weight.</span></p>
+</div>
+<div class="frame-image"><img src="{{media url="wysiwyg/price-guide-new/CA_Price_Guide_Acetate_1025x556.png"}}" alt=""></div>
+</div>
+<div class="frame-block">
+<div class="frame-text">
+<h3>Stainless-Steel</h3>
+<p><span>As part of our durable frame family, some of our most popular styles such as Kato, are now in stainless steel. These frames are hypoallergenic, corrosion resistant, light weight, and not sensitive to temperature changes.</span></p>
+</div>
+<div class="frame-image"><img src="{{media url="wysiwyg/price-guide-new/CA_Price_Guide_SS_1025x556.png"}}" alt=""></div>
+</div>
+<div class="frame-block">
+<div class="frame-text">
+<h3><span>Titanium</span></h3>
+<p><span>Our titanium frames are durable, corrosion resistant, lightweight, hypo-allergenic, with fixed spring hinges. Much of our titanium is sourced from Japan.</span></p>
+</div>
+<div class="frame-image"><img src="{{media url="wysiwyg/price-guide-new/CA_Price_Guide_Titanium_1025x556.png"}}" alt=""></div>
+</div>
+<div class="frame-block">
+<div class="frame-text">
+<h3><span>TR/Ultem material</span></h3>
+<p><span>We love our Ultem frames! They are super comfortable and very durable. Our Ultem frames are heat resistant, with high dielectric strength and are flexible. The material is widely used in medical and chemical instruments. It is currently available in a range of colours for both matte and gloss finish.</span></p>
+</div>
+<div class="frame-image"><img src="{{media url="wysiwyg/price-guide-new/CA_Price_Guide_Ultem_1025x556.png"}}" alt=""></div>
+</div>
+</div>
+</section>
+<section class="section-border-bottom">
+<div class="heading-banner responsive-margin-top"><img src="{{media url="wysiwyg/price-guide-new/Frames.jpg"}}" alt="Lenses &amp; Coatings">
+<div class="rectangle" style="height: 150px;"></div>
+<div class="banner-content">
+<h2>Services</h2>
+<p>Provincial health cover may be available for ages: 18 years and under or 65 years and over. Please contact the store for more information.</p>
+</div>
+</div>
+<div class="service-container">
+<div class="services-block">
+<div class="services-heading">
+<h3>Standard Eye Exam</h3>
+<h3>+ $90</h3>
+</div>
+<ul class="services-ul">
+<li>Standard eye checkup and prescription update in our Canadian locations.</li>
+</ul>
+</div>
+<div class="services-block">
+<div class="services-heading">
+<h3>Combination Eye Exam</h3>
+<h3>+ $120</h3>
+</div>
+<ul class="services-ul">
+<li>Standard eye exam and may include Visual Fields Test, Digital Retina Scan, and Pupil Dilation Test as required by the optometrist.</li>
+</ul>
+</div>
+<div class="services-block">
+<div class="services-heading">
+<h3>Frame Adjustments</h3>
+<h3>Free</h3>
+</div>
+<ul class="services-ul">
+<li>Lifetime service with us means you can have your OW glasses adjusted or professionally cleaned, free of charge during the life of your glasses.</li>
+</ul>
+</div>
+<div class="services-block">
+<div class="services-heading">
+<h3>Style advice</h3>
+<h3>Free</h3>
+</div>
+<ul class="services-ul">
+<li>Our in-store stylists are here to help you find the right pair of glasses or sunglasses. Find us in any of our <a href="/locations/full-store-list.html">Canadian locations</a>.</li>
+</ul>
+</div>
+</div>
+<h2 class="subtitle" style="border-left: 10px solid #66a3ff;">1 YEAR Quality Guarantee</h2>
+<p class="para-content" id="quality-guarantee">If within 1 year of purchase your glasses have any defects due to material or production faults, we will repair or replace them for you.<span>&nbsp;Learn more about our&nbsp;</span><a href="https://test.oscarwylee.ca/legal/oscar-wylee-warranty.html" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://test.oscarwylee.ca/legal/oscar-wylee-warranty.html&amp;source=gmail&amp;ust=1691627711668000&amp;usg=AOvVaw0fxEmJWZaqbCmyL9GgcNTh" rel="noopener">Oscar Wylee Warranty</a><span>.</span></p>
+</section>
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="booking-heading">Look After Your Eyes at Oscar Wylee</p>
+<p class="heading heading-margin">Book an eye exam with one of our skilled optometrists and prioritize your eye health today.</p>
+</div>
+<div class="book-section-right"><a href="/booking" class="btnOw">Book an eye test</a></div>
+</aside>
+<p>
+<script>
+      function setupCarousel() {
+        const cards = document.querySelector(".cards");
+        const dots = document.querySelectorAll(".dot");
+        const cardWidth = cards.clientWidth / 3;
+        let slideIndex = 0;
+        let slideInterval;
+
+        function goToSlide(index) {
+          cards.style.transform = `translateX(-${index * cardWidth}px)`;
+          dots.forEach((dot, idx) => {
+            dot.classList.toggle("active", idx === index);
+          });
+        }
+
+        function autoSlide() {
+          slideIndex = (slideIndex + 1) % 3; // Adjust the 3 based on the number of cards
+          goToSlide(slideIndex);
+        }
+
+        function startAutoSlide() {
+          if (slideInterval) clearInterval(slideInterval);
+          slideInterval = setInterval(autoSlide, 3000);
+        }
+
+        function stopAutoSlide() {
+          if (slideInterval) clearInterval(slideInterval);
+        }
+
+        // Enable the carousel for responsive sizes
+        function enableCarousel() {
+          startAutoSlide();
+sung
+          // Handle click on navigation dots
+          dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+              slideIndex = index;
+              goToSlide(slideIndex);
+              startAutoSlide();
+            });
+          });
+        }
+
+        // Check if the screen width is less than or equal to 768px
+        if (window.matchMedia("(max-width: 768px)").matches) {
+          enableCarousel();
+        } else {
+          // Stop sliding for desktop sizes
+          stopAutoSlide();
+        }
+
+        // Adjust slide position on window resize
+        window.addEventListener("resize", () => {
+          if (window.matchMedia("(max-width: 768px)").matches) {
+            enableCarousel();
+          } else {
+            stopAutoSlide();
+            cards.style.transform = "translateX(0)"; // Reset the transform for desktop sizes
+            dots.forEach((dot, index) =>
+              dot.classList.toggle("active", index === 0)
+            );
+            slideIndex = 0;
+          }
+        });
+      }
+
+      setupCarousel(); // Call the setupCarousel function
+    </script>
+</p>

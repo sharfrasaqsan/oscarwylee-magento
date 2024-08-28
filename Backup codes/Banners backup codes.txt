@@ -1,0 +1,10 @@
+<div class="home-banner">
+<div class="home-banner__img">
+<div class="home-banner__img--desk" style="width: 100%;"><img src="{{media url="wysiwyg/careers__dsk.jpg"}}" alt=""></div>
+<div class="home-banner__img--mb"><img src="{{media url="wysiwyg/careers_mob.jpg"}}" alt=""></div>
+<div class="home-banner__content main-width">
+<p class="home-banner__content-title"></p>
+<div class="locations-content" style="text-align: center; max-width: 470px; margin: 0 auto; padding-top: 10em; padding-left: 1.5em; padding-right: 1.5em;"><span style="font-size: 40px; font-weight: bold;">Careers at Oscar Wylee</span></div>
+</div>
+</div>
+</div>

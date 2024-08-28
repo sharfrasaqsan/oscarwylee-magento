@@ -1,0 +1,17 @@
+<div class="jvp-title-1"><span>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="63"}}</span></div>
+<div class="jvp-title-1" style="margin-top: -0.5em;"><span>International Partnerships</span></div>
+<div><img class="jvp-image" style="max-width: 100%; margin: 1em 0; border-radius: 15px;" src="{{media url="wysiwyg/ow-store-image.jpg"}}"></div>
+<div class="text">
+<p>Oscar Wylee is a dynamic optometry brand that looks to the long term with a strong vision of continuous improvement and growth. The rapidly growing network of 80+ Oscar Wylee stores has been a hit with consumers across Australia and New Zealand, combining a fresh and modern aesthetic with a world class clinical environment.</p>
+<p>We are looking for international partners with the following characteristics to join the growth story:</p>
+<p>We are looking for international partners with the following:</p>
+<ul>
+<li>A proven track record of success in managing an optometry or retail company</li>
+<li>A growth mindset in scaling up a dynamic organisation</li>
+<li>Access to permanent capital</li>
+<li>A long term perspective and an ethical approach to business</li>
+</ul>
+<p>Please email <a href="mailto:internationalpartnerships@oscarwylee.com" style="color: #003cac;">internationalpartnerships@oscarwylee.com</a> to submit an expression of interest.</p>
+<div class="jvp-btninterest" style="cursor: pointer; max-width: 700px;"><a class="jvp-button" href="mailto:internationpartnerships@oscarwylee.com?subject=International Partnership Expression of Interest" target="_blank" rel="noopener"><button class="btn-interest" type="submit"><span>Submit your expression of interest</span></button> </a></div>
+<p style="margin-bottom: 4em;"></p>
+</div>

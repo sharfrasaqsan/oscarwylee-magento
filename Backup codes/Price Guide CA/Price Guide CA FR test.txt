@@ -1,0 +1,420 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+h3,h4{
+    color: white;
+}
+* {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //color: #333333;
+  line-height: 1.5em;
+}
+#maincontent {
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.unique-wrapper{
+    width: 75%;
+    margin: auto;
+}
+
+.blue-block {
+    align-items: center;
+    justify-content: center;
+    background-color: #003cac;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    margin-top: 5em;
+
+}
+.blue-block .block-center {
+  margin: auto;
+  margin-left: 30px;
+}
+.blue-block h2,
+.blue-block .para-content {
+  margin: 0;
+}
+.blue-block h2 {
+  margin-bottom: 10px;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0px;
+}
+.blue-block .para-content {
+  color: white;
+  margin-top: 1.2em;
+}
+.price-wrapper h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
+}
+.price-wrapper p {
+  font-size: 17px;
+}
+.para-content {
+  font-size: 17px;
+  margin-bottom: 2em;
+  line-height: 2em;
+}
+.sv-price div {
+  margin-bottom: 2em;
+  font-size: 17px;
+  line-height: 2em;
+}
+.sv-price div p {
+  font-size: 25px;
+}
+.inpage-image {
+  width: 75%;
+  border-radius: 15px;
+  margin-bottom: 1em;
+}
+.btnOw:hover {
+      background-color: black;
+      box-shadow: none !important;
+      color: #ffffff !important;
+      border: none !important;
+    }
+    .btnOw {
+      background-color: #003cac;
+      width: auto; /* padding: 0px 50%; */
+      border: none;
+      color: #fff;
+      height: 2em;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      cursor: pointer;
+      transition: all 1s ease;
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1em;
+    }
+.sv-div a{
+    text-decoration: none;
+}
+.sv-div-border {
+  border-bottom: 2px solid black;
+}
+.sv-div .multi-title {
+  font-weight: 400;
+}
+.multi-div .para-title {
+  font-size: 25px;
+  margin-bottom: 0.5em;
+}
+.text-box {
+  border: 4px solid #003cac;
+  border-radius: 15px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 1.5em;
+}
+.text-box h3 {
+  margin-top: 1em;
+}
+.small-image {
+  width: 20%;
+  display: block;
+  padding-top: 1em;
+}
+.medium-image {
+  width: 50%;
+}
+
+.price-wrapper h3 {
+color: #333333;
+}
+
+/* Banners */
+.banner-container {
+display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+}
+
+        .banner {
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        }
+
+        .bannerMob {
+            display: none;
+        }
+ .banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 89px;
+}
+
+@media (max-width: 480px) {
+            .banner {
+                display: none;
+            }
+
+            .bannerMob {
+                display: flex;
+                width: 100%;
+            }
+ .banner-text {
+        top: 40%;
+       font-size: 33px;
+      }
+
+.inpage-image {
+width: 100%;
+}
+
+.unique-wrapper {
+    width: 90%;
+}
+}
+
+.copyright {
+    background-color: #8f8f8f;
+    color: #fff !important;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 25px 50px;
+}
+</style>
+<div class="banner-container"><img class="banner" src="{{media url="wysiwyg/price-guide/IMG_5987_edited.jpg"}}" alt="Blue Filter"> <img class="bannerMob" src="{{media url="wysiwyg/price-guide/IMG_5989-1-1.jpg"}}" alt="Blue Filter">
+<h1 class="banner-text">Guide des prix</h1>
+</div>
+<div class="unique-wrapper">
+<section class="price-wrapper">
+<div class="blue-block" style="margin-top: 2rem;">
+<div class="block-center">
+<h2>Lunettes de vue</h2>
+<p class="para-content">Découvrez davantage sur les prix de nos montures et de nos verres.</p>
+</div>
+</div>
+<div class="sv-div sv-div-border">
+<h3>Verres simple vision</h3>
+<p class="para-content">Comprennent les verres simple vision d’indice 1,5,un revêtement dur et une protection anti-UV.<br>Les deux options sont idéales pour la correction de la myopie ou de l’hypermétropie.</p>
+<div class="sv-price">
+<div>
+<p><span>• 1 paire de lunettes de vue à partir de&nbsp;</span><strong>169 $ CA</strong></p>
+<span>Comprend des verres simple vision standards.</span></div>
+<div>
+<p><span>• 2 paires de lunettes de vue à partir de&nbsp;</span><b>199 $ CA</b></p>
+<span>Comprend des verres simple vision standards.</span></div>
+<div>
+<p><span>• 1 paire de lunettes de vue premium à partir de&nbsp;</span><b>199 $ CA</b></p>
+<span>Comprend des verres simple vision standards.</span><br><span>Montures de la gamme Iconic d’OW Canada.</span></div>
+<div>
+<p><span>• 2 paires de lunettes de vue premium à partir de&nbsp;</span><b>249 $ CA</b></p>
+<span>Comprend des verres simple vision standards.</span><br><span>Montures de la gamme Iconic d’OW Canada.</span></div>
+</div>
+<img src="{{media url="wysiwyg/price-guide/IMG_5070-2-1536x1006.jpeg"}}" alt="" class="inpage-image">
+<p class="para-content"><span>Les prix sont pour des lunettes complètes.</span><br><span>La seconde paire doit correspondre à la même ordonnance.</span></p>
+<a href="/glasses"> <button class="btnOw">Découvrir les lunettes</button></a></div>
+<div class="sv-div">
+<h3>Verres multifocaux</h3>
+<p class="para-content"><span>Les verres multifocaux sont fabriqués à partir de trois ordonnances différentes. Chez Oscar Wylee Canada, nous proposons une gamme de sélections Standard, Premium et Elite.<br><br>Choisissez votre type de verres multifocaux des options ci-dessous – moyennant un coût supplémentaire en plus des prix des lunettes de vue standards, le cas échéant.</span></p>
+<div class="multi-div">
+<h3 class="multi-title"><span>Multifocaux Standard</span></h3>
+<p class="para-title"><span>•</span><span>&nbsp;</span><span>1 paire pour</span><b><span>&nbsp;</span>0 $ CA</b></p>
+<p class="para-title"><span>•</span><span>&nbsp;</span><span>2 paires pour</span><b><span>&nbsp;</span>+ 50 $ CA</b></p>
+<p class="para-content"><span>Un peu de flou visuel sur les bords. Idéaux pour ceux qui portent leurs lunettes occasionnellement et pour ceux ayant un budget à respecter.</span></p>
+<img src="{{media url="wysiwyg/FR/Price-guide/Standard_FR.png"}}" alt="" class="inpage-image"></div>
+<div class="multi-div">
+<h3 class="multi-title"><span>Multifocaux Premium</span></h3>
+<p class="para-title"><span>•</span><span>&nbsp;</span><span>1 paire pour</span><b><span>&nbsp;</span>100 $ CA</b></p>
+<p class="para-title"><span>•</span><span>&nbsp;</span><span>2 paires pour</span><b><span>&nbsp;</span>+ 150 $ CA</b></p>
+<p class="para-content"><span>Champ plus large de vision nette. Idéaux pour ceux qui portent leurs lunettes au bureau, surtout pour le travail sur ordinateur.</span></p>
+<img src="{{media url="wysiwyg/FR/Price-guide/Premium_FR.png"}}" class="inpage-image" alt=""></div>
+<div class="multi-div">
+<h3 class="multi-title"><span>Multifocaux Elite</span></h3>
+<p class="para-title"><span>•</span><span>&nbsp;</span><span>1 paire pour</span><b><span>&nbsp;</span>200 $ CA</b></p>
+<p class="para-title"><span>•</span><span>&nbsp;</span><span>2 paires pour</span><b><span>&nbsp;</span>+ 250 $ CA</b></p>
+<p class="para-content"><span>Très large champ de vision nette. Des verres polyvalents, répondant aux exigences de la vie moderne, avec beaucoup de travail sur ordinateur et de présentations.</span></p>
+<img src="{{media url="wysiwyg/FR/Price-guide/Elite_FR.png"}}" class="inpage-image" alt=""></div>
+<p class="para-content"><span>Cliquer ci-dessous pour en savoir plus sur les verres multifocaux.</span></p>
+<a href="/multifocal-lenses"><button class="btnOw">Lire davantage</button></a></div>
+</section>
+<section class="price-wrapper">
+<div class="blue-block">
+<h2 class="block-center">Lunettes de soleil</h2>
+</div>
+<div class="sv-div">
+<h3><span>Pré-montées</span></h3>
+<p class="para-content"><span>Comprennent toutes lunettes de soleil pré-montées en magasin.</span><br><span>Tous les verres incluent un revêtement dur et une protection anti-UV.</span></p>
+<div class="sv-price">
+<div>
+<p><span>• 1 paire de lunettes de soleil pré-montées :</span><br><span>**Montures en acétate à partir de </span><strong>129 $ CA</strong><br><span>*Montures métalliques à partir de&nbsp;</span><b>169 $ CA</b></p>
+</div>
+<div>
+<p><span>• 2 paires de lunettes de soleil pré-montées à partir de&nbsp;</span><b>199 $ CA</b></p>
+<span>Toutes lunettes de soleil pré-montées en magasin.</span></div>
+<div>
+<p><span>• 2 paires de lunettes de soleil d’ordonnance à partir de&nbsp;</span><b>259 $ CA</b></p>
+<span>Comprennent des verres simple vision teintés.</span><br><span>Les verres polarisés sont disponibles moyennant un coût supplémentaire.</span></div>
+</div>
+<img src="{{media url="wysiwyg/price-guide/IMG_7342_sun-1536x1024.jpeg"}}" alt="" class="inpage-image"></div>
+<div>
+<h3><span>D’ordonnance</span></h3>
+<p class="para-content"><span>Comprennent des verres simple vision teintés.</span><br><span>Les verres polarisés sont disponibles moyennant un coût supplémentaire.</span></p>
+<div class="sv-price">
+<div>
+<p><span>• 1 paire de lunettes de soleil d’ordonnance à partir de&nbsp;</span><b>199 $ CA</b><br>• 2 paires de lunettes de soleil d’ordonnance à partir de <strong>259 $ CA</strong></p>
+</div>
+</div>
+<p class="para-content"><span>Catégories de filtres disponibles :</span></p>
+<div>
+<p class="para-content"><strong>Filtre de catégorie 2</strong><span>&nbsp;(verres teintés standards):</span><br><span>Lunettes de soleil d’utilisation quotidienne. Bonne protection contre les rayons solaires.</span><br><span>Bonne protection anti-UV. Ne sont pas adaptées à la conduite pendant le crépuscule, la nuit ou dans de mauvaises conditions.</span></p>
+<div>
+<p class="para-content"><strong>Filtre de catégorie 3</strong><span>&nbsp;(verres polarisés):</span><br><span>Lunettes de soleil d’utilisation quotidienne. Haute protection contre les rayons solaires.</span><br><span>Bonne protection anti-UV. Ne sont pas adaptées à la conduite pendant le crépuscule, la nuit ou dans de mauvaises conditions.</span></p>
+</div>
+</div>
+<a href="https://oscarwylee.ca/sunglasses"><button class="btnOw">Découvrir les lunettes de soleil</button></a></div>
+</section>
+<section class="price-wrapper">
+<div class="blue-block">
+<h2 class="block-center">Verres et revêtements</h2>
+</div>
+<div class="sv-div">
+<h3><span>Améliorations de verres populaires</span></h3>
+<p class="para-content"><span>Les prix complémentaires sont pour 1 paire de lunettes. Utilisez les prestations de votre caisse maladie, demandez un devis. Certaines options peuvent ne pas être disponibles en ligne.</span></p>
+<div class="sv-price">
+<div>
+<p><span>• Antireflets +</span><b>20 $ CA</b></p>
+<span>Réduisent les reflets pour une vision plus nette.</span><br><span>Résistants aux rayures.</span></div>
+<div>
+<p><span>• Antireflets Premium +</span><b>30 $ CA</b></p>
+<span>Réduisent les reflets pour une vision plus nette.</span><br><span>Résistants aux rayures et aux salissures, antistatiques.</span></div>
+<div>
+<p><span>• Anti-lumière bleue* +</span><b>50 $ CA</b></p>
+<span>Bloquent la lumière bleue émise par les écrans de téléphone et d’ordinateur.</span><br><span>Comprend un revêtement antireflets gratuit.</span></div>
+</div>
+<div class="text-box">
+<p style="font-weight: bold;"><b>Qu’est-ce que la lumière bleue?</b></p>
+<p><span>La lumière bleue est émise par les écrans numériques tels que votre téléphone portable et votre ordinateur. Les longues heures d’exposition à la lumière bleue peuvent être nocives pour vos yeux car elles peuvent causer une fatigue oculaire et perturber la qualité de votre sommeil.</span></p>
+<br>
+<p style="font-weight: bold;"><b>Qui a besoin de verres anti-lumière bleue ?</b></p>
+<p><span>Si votre profession ou votre mode de vie dépend largement de l’utilisation d’appareils numériques, nous vous recommandons d’utiliser nos verres anti-lumière bleue pour vos lunettes.</span></p>
+<br>
+<p style="font-weight: bold;"><b>Découvrez davantage</b></p>
+<p><span>Veuillez visitez notre page&nbsp;</span><a href="https://oscarwylee.ca/fr/lunettes-anti-lumiere-bleue/"><u>Verres anti-lumière bleue</u></a><span>.</span></p>
+</div>
+<p><span>*Veuillez noter que les verres anti-lumière bleue sont disponibles uniquement pour les verres transparents et ne sont pas disponibles pour les lunettes solaires à cause de la teinte. Nos verres anti-lumière bleue sont disponibles uniquement pour les indices de verres standards 1,5, 1,6 et 1,67.</span></p>
+</div>
+<div>
+<h3><span>Des verres plus minces et plus légers</span></h3>
+<div class="sv-price">
+<div>
+<p><span>• Verres minces et légers* +</span><b>+ 80 $ CA</b></p>
+<span>Indice 1,6 jusqu’à 35 % plus minces/plus légers.</span></div>
+<div>
+<p><span>• Verres super minces et légers* +</span><b>+ 120 $ CA</b></p>
+<span>Indice 1,67 jusqu’à 50 % plus minces/plus légers.</span></div>
+<div>
+<p><span>• Verres ultra minces et légers* +</span><b>200 $ CA</b></p>
+<span>Indice 1,74 jusqu’à 60 % plus minces/plus légers.</span></div>
+</div>
+<p><span>*Verres asphériques incluant un revêtement antireflets gratuit</span></p>
+<img src="{{media url="wysiwyg/price-guide/Thin_Lighter-02-1-1536x756.jpeg"}}" alt="" class="inpage-image  medium-image"></div>
+<div>
+<h3><span>Protection solaire</span></h3>
+<div class="sv-price">
+<div>
+<p><span>• Verres teintés +</span><b>30 $ CA</b></p>
+<span>Choisissez parmi 7 couleurs disponibles.</span><br><span>Comprend un revêtement antireflets gratuit.</span><br><img src="{{media url="wysiwyg/price-guide/Thin_Lighter-03.jpeg"}}" alt="" class="inpage-image small-image"></div>
+<div>
+<p><span>• Verres polarisés +</span><b>100 $ CA</b></p>
+<span>Haute protection anti-UV.</span><br><span>Comprend un revêtement antireflets gratuit.</span><br><img src="{{media url="wysiwyg/price-guide/Thin_Lighter-03-1.jpeg"}}" alt="" class="inpage-image small-image"></div>
+<div>
+<p><span>• Verres photochromiques +</span><b>100 $ CA</b></p>
+<span>Passent d’une opacité claire à une teinte plus sombre pour s’adapter aux conditions lumineuses.</span><br><span>La marque de verres Transition est disponible pour + 200 $ CA.</span><br><i>Tous les verres photochromiques sont des verres sphériques.</i><br><img src="{{media url="wysiwyg/price-guide/Thin_Lighter-03-copy.jpeg"}}" alt="" class="inpage-image small-image"></div>
+</div>
+</div>
+</section>
+<section class="price-wrapper">
+<div class="blue-block">
+<h2 class="block-center">Montures</h2>
+</div>
+<div class="sv-div">
+<h3><span>Assemblage traditionnel à la main, conçues en interne</span></h3>
+<p class="para-content"><span>Nous croyons qu’un bon design ne signifie pas seulement un beau look, mais aussi une vision nette. C’est pourquoi nous utilisons des verres de haute qualité pour toutes nos lunettes, complets avec des revêtements anti-rayures and anti-UV.</span></p>
+<img src="{{media url="wysiwyg/price-guide/IMG_6479-1536x1024.jpeg"}}" alt="" class="inpage-image">
+<div class="sv-price">
+<h3><span>Styles de montures</span></h3>
+<div>
+<p><span>• Acétate</span></p>
+<span>Appelées aussi acétate de cellulose, ces montures sont traditionnellement fabriquées à la main par des artisans talentueux. Chaque monture traverse plusieurs stades de production puis elle est polie afin de garantir son éclat. Nos collections sont un mélange de Mazzucchelli italien et de plastique d’origine végétale fabriqué en Chine. Tous les deux sont à la fois durables et légers.</span></div>
+<div>
+<p><span>• Acier inoxydable</span></p>
+<span>Faisant partie de notre famille de montures durables, certains de nos styles les plus populaires comme Kato, sont maintenant en acier inoxydable. Ces montures sont hypoallergéniques, résistantes à la corrosion, légères et insensibles aux changements de température.</span></div>
+<div>
+<p><span>• Titane</span></p>
+<span>Nos montures en titane sont durables, résistantes à la corrosion, légères, hypoallergéniques avec des charnières fixes à ressort. La majorité de notre titane provient du Japon.</span></div>
+<div>
+<p><span>• Matériau TR/Ultem</span></p>
+<span>Nous adorons nos montures en Ultem ! Elles sont super confortables et très durables. Nos montures en Ultem sont résistantes à la chaleur, flexibles et ont une forte rigidité diélectrique. Le matériau utilisé est largement utilisé dans les instruments médicaux et chimiques. Il est actuellement disponible dans une gamme de couleurs pour les finitions mattes et brillantes.</span></div>
+</div>
+</div>
+</section>
+<section class="price-wrapper">
+<div class="blue-block">
+<h2 class="block-center">Services</h2>
+</div>
+<div class="sv-div">
+<div class="sv-price" style="margin-top: 2em; margin-bottom: 5em;">
+<div>
+<p><span>• Examen de la vue standard&nbsp;</span><b>90 $ CA</b></p>
+<span>Contrôle de la vision standard et mis à jour de l’ordonnance dans nos emplacements canadiens.</span></div>
+<div>
+<p><span>• Examen de la vue combiné&nbsp;</span><b>120 $ CA</b></p>
+<span>Examen de la vue standard pouvant inclure un test de champ visuel, un scanner rétinien numérique et un test de dilatation des pupilles, comme cela est requis par l’optométriste.</span></div>
+<div>
+<p><span>• Ajustement des montures&nbsp;</span><b>GRATUIT</b></p>
+<span>Chez nous, un service à vie signifie que vous pouvez ajuster ou nettoyer vos montures par un professionnel, gratuitement, pendant toute la durée de vie de vos lunettes.</span></div>
+<div>
+<p><span>• Conseils pour les montures&nbsp;</span><b>GRATUITS</b></p>
+<span>Nos stylistes en magasin sont là pour vous aider à choisir la paire idéale de lunettes de vue ou de soleil. Retrouvez-nous dans tous nos emplacements canadiens.</span></div>
+<div>
+<p><span>• Garantie qualité de 1 AN</span></p>
+<span>Si, dans un délai de 1 an à partir de la date d’achat, vos lunettes présentent des défauts dus à des défauts du matériau ou de production, nous les réparerons ou remplacerons. Gratuitement.</span></div>
+<img src="{{media url="wysiwyg/price-guide/NT_5456-1-1536x1024.jpeg"}}" alt="" class="inpage-image"> <a href="https://oscarwylee.ca/locations"><button class="btnOw">Visitez-nous en magasin</button></a> <a href="https://oscarwylee.ca/faq"><button class="btnOw">Foire aux questions</button></a></div>
+</div>
+</section>
+</div>

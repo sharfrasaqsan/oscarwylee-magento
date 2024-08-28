@@ -1,0 +1,1345 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap");
+
+#maincontent {
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #333333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.footer-item h4,
+.footer-item h3,
+.help-block h3,
+.copyright span {
+  color: #fff;
+}
+
+body {
+  color: #333333;
+}
+
+*,
+page-main {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  /* color: #333333; */
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+
+button:hover {
+  color: white !important;
+}
+
+ul,
+ol {
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 1236px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.banner {
+  max-width: 100%;
+  max-height: 450px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+
+.text {
+  max-width: 100%;
+}
+
+.bannerResponsive {
+  display: none;
+}
+
+.title {
+  width: calc(100% - 6rem);
+  padding: 2.5rem 3rem;
+  text-align: center;
+  /* margin: 0 1rem 2rem 1rem; */
+  border-bottom: 1px solid rgba(192, 192, 192, 0.7);
+}
+
+.title h1,
+.title h2 {
+  font-weight: 700;
+  padding-bottom: 3rem;
+}
+
+.title p {
+  padding: 0 6rem 2rem;
+}
+
+.context {
+  width: calc(100% - 2rem);
+  padding: 0 1rem;
+}
+
+.context h2 {
+  padding: 1rem 0 0 0;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.context h3 {
+  padding: 2rem 0 0 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.context p {
+  padding: 1.5rem 0.5rem 2rem 0.5rem;
+  font-size: 16px;
+  text-align: justify;
+  text-align-last: left;
+}
+
+/* .faqSubtitles {
+            border-top: 1px solid silver;
+        }
+
+        .faqSubtitles h3 {
+            color: #003cac;
+            font-weight: 700;
+            border-left: 10px solid #d6ece4;
+            padding: 10px;
+            margin-left: 20px;
+            margin-top: 2rem;
+        }
+
+        .faqSubtitles p {
+            margin-left: 20px;
+            padding-bottom: 5px;
+        }
+
+        .faqSubtitles ul,
+        .faqSubtitles span {
+            margin-left: 30px;
+            padding-bottom: 10px;
+
+        } */
+
+.boxShadow {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.rightShadow {
+  box-shadow: 15px 0px 15px -10px rgba(0, 0, 0, 0.1);
+}
+
+.dashedBorder {
+  border-top: 2px dotted #cbc5a3;
+  border-bottom: 2px dotted #cbc5a3;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.linkTo {
+  color: #003cac;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.context ul,
+.context ol {
+  width: calc(100% - 4rem);
+  text-align: justify;
+  text-align-last: left;
+  padding: 1.5rem 0 1.5rem 3rem;
+}
+
+.border {
+  border-bottom: 1px solid silver;
+  padding: 0rem;
+}
+
+.flatBg {
+  background-image: url(./assets/Frame\ 2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  box-shadow: 4px 4px 8px silver;
+}
+
+.flatBg::before {
+  opacity: 0.2;
+}
+
+.lastBox {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.context ul li,
+.context ol li {
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  font-size: 16px;
+}
+
+.textMain {
+  background-color: #f1d4d0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 1rem 2rem 3rem;
+  margin: 1rem 0rem 2rem 0rem;
+  /* box-shadow: 3px 3px 6px silver; */
+  /* border-bottom: 1px solid silver; */
+  text-align: left;
+  text-align-last: left;
+}
+
+.textMain h3 {
+  color: #003cac;
+  border-left: 10px solid #d6ece4;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.textMainNobg {
+  /* border-bottom: 1px solid silver; */
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.textMain h2 {
+  margin-top: 1.5rem;
+  border-left: 10px solid #003cac;
+  padding: 1rem;
+}
+
+.textMainNobg h2 {
+  border-left: 10px solid #003cac;
+  padding: 1rem;
+}
+
+.textMain h3,
+.textMainNobg h3 {
+  border-left: 10px solid #333333;
+  padding: 0.8rem;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+}
+
+.textMain h4,
+.textMainNobg h4 {
+  /* border-left: 10px solid #ffffff; */
+  padding: 0rem;
+  margin-top: 0rem;
+  margin-left: 1rem;
+}
+
+.textMain strong,
+.textMainNobg strong {
+  color: #003cac;
+  padding-bottom: 10px;
+}
+
+.textMainNobg p,
+.textMain p {
+  padding-top: 1rem;
+  margin-left: 1rem;
+}
+
+.textMainNobg ul,
+.textMain ul,
+.textMain ol,
+.textMainNobg ol {
+  margin-left: 3rem;
+}
+
+.flexContainer,
+.flexContainerFrame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  /* margin-bottom: 2rem; */
+}
+
+.flexContainerFrame {
+  gap: 2.5rem;
+}
+
+.flexImage {
+  width: 44%;
+  min-width: 350px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 0 auto;
+  max-width: 410px;
+  max-height: 450px;
+  /* filter: drop-shadow(5px 5px 10px Silver);
+          -webkit-filter: drop-shadow(5px 5px 10px Silver); */
+}
+
+.flexText {
+  width: 44%;
+  min-width: 350px;
+  /* background-color: #fff; */
+  /* border-radius: 10px; */
+  /* -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px; */
+  padding: 1rem 0.5rem;
+  /* border: 2px dashed #cbc5a3; */
+  margin: 0 1rem;
+  align-self: stretch;
+}
+
+.flexText ul,
+.flexText ol {
+  padding-top: 1rem;
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.flexText p {
+  text-align: left;
+}
+
+.flexText img {
+  width: 83%;
+  /* margin-top: 10%; */
+  /* border-radius: 10px; */
+  padding-left: 5%;
+}
+
+.imageTwo {
+  width: 50%;
+  padding-top: 1rem;
+  margin: auto;
+}
+
+.flexImageRound {
+  border-radius: 15px;
+  width: 40%;
+}
+
+/* .smallText {
+  font-size: 13px !important;
+  margin-left: 1.5rem;
+  font-style: italic;
+} */
+
+span.smallText {
+  display: block;
+  font-size: 13px !important;
+  padding-left: 1.4rem !important;
+  font-style: italic;
+}
+
+.location {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+  border-top: 1px solid silver;
+}
+
+.locationText h2 {
+  font-weight: 700;
+  padding-left: 0.5rem;
+}
+
+.textBorder {
+  border-top: 1px solid silver;
+  margin-top: 5.5rem;
+  padding: 2rem;
+}
+
+.locationText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.locationText p {
+  font-size: 16px;
+}
+
+.locationImage {
+  width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.allButton {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.allButton a {
+  text-decoration: none;
+}
+
+.centerBtn {
+  text-align: center;
+}
+
+.btnOw:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+  transition: 1s;
+}
+
+.btnOw {
+  background-color: #003cac;
+  width: 80%;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pSubTitle {
+  font-size: 22px !important;
+  padding-top: 3rem !important;
+  font-weight: bold;
+  color: #6b6b6b !important;
+}
+
+.minusPadding {
+  padding-bottom: 0.5rem !important;
+}
+
+/* vertical */
+.reveal {
+  position: relative;
+  transform: translateY(65px);
+  -webkit-transform: translateY(65px);
+  -moz-transform: translateY(65px);
+  -ms-transform: translateY(65px);
+  -o-transform: translateY(65px);
+  opacity: 0;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  opacity: 1;
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #fff;
+  color: #003cac;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  border: none;
+  /* border-bottom: 2px dashed #003cac; */
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+button.accordion.active::before {
+  content: "\2212";
+}
+
+button.accordion::before {
+  content: "\002B";
+  color: #003cac;
+  font-weight: bold;
+  /* float: right; */
+  margin-left: 5px;
+  padding-right: 0.5rem;
+  font-size: 16px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.collapsible:hover {
+  background-color: #f7f7f7;
+  color: #003cac !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-style: normal;
+}
+
+.activeCollaps {
+  font-style: normal;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsContent {
+  padding: 0 1rem;
+  display: none;
+  overflow: hidden;
+  /* background-color: #003cac; */
+  font-size: 12px;
+  border-top: 1px dashed #003cac;
+  background-color: #f7f7f7;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sources {
+  margin-bottom: 2rem;
+}
+
+.minusMargin {
+  margin-top: -2rem;
+}
+
+hr {
+  opacity: 0.7;
+  border-top: 1px solid silver;
+}
+
+.booking {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.booking h2 {
+  padding: 2rem;
+  margin: 0px;
+}
+
+.booking p {
+  padding-top: 2rem;
+}
+
+.booking a {
+  width: 30%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.booking button {
+  background-color: #003cac;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  padding: 15px;
+  margin-right: 70px;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+button:not(.primary) {
+  box-shadow: inset 0 1px 0 0 #fff, inset 0 -1px 0 0 rgb(204 204 204 / 30%);
+}
+
+.booking button:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.bookingContainer {
+  border-bottom: 1px solid silver;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.booking input {
+  padding-bottom: 0.2rem;
+  border: none;
+  border-bottom: 2px solid #000;
+  margin: 1rem 0;
+  width: 20rem;
+  background-color: #f7f7f7;
+  font-size: 16px;
+}
+
+.booking input:focus {
+  outline: none;
+}
+
+.booking input::placeholder {
+  color: #a0b3ac;
+  font-size: 16px;
+}
+
+.adjustMargin {
+  text-align: center;
+}
+
+.fullWidthBtn {
+  width: 90% !important;
+}
+
+.paraHead {
+  font-size: 18px;
+  font-weight: bold;
+  color: #003cac;
+  text-align: center;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.7);
+  padding: 1rem 0 2rem 0;
+  margin: 4rem 1.5rem 3rem 1.5rem;
+}
+
+.addTopMargin {
+  margin-top: 2rem !important;
+}
+
+#removeTopPadding {
+  padding-top: 0 !important;
+}
+
+#removeBottomPadding {
+  padding-bottom: 0 !important;
+}
+
+@media (max-width: 1248px) {
+  .flexContainerFrame {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .flexContainerFrame {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    width: calc(100% - 2rem);
+    padding: 1.5rem 1rem;
+    margin: 0 0 2rem 0;
+  }
+
+  .context {
+    width: calc(100% - 3rem);
+    padding: 0 1.5rem;
+  }
+
+  .flexContainer,
+  .flexContainerFrame {
+    margin-bottom: 2rem;
+  }
+
+  .flexImage {
+    min-width: 280px;
+    margin: 2rem auto;
+    max-width: 410px;
+    max-height: 450px;
+  }
+
+  .flexText {
+    min-width: 300px;
+    margin: 0.5rem auto;
+  }
+
+  .imageTwo {
+    width: 50%;
+  }
+
+  .booking {
+    justify-content: center;
+    margin: 1rem auto;
+  }
+
+  .booking h2 {
+    padding: 0.5rem;
+    margin: 0px;
+  }
+
+  .booking a {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .booking button {
+    margin: 1rem auto;
+  }
+
+  .booking p {
+    padding-right: 2.5rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .title p {
+    padding: 0 1rem 1rem;
+  }
+
+  .minusMarginImage {
+    margin-top: 0rem;
+    margin-bottom: -4rem;
+  }
+
+  .extraPadding {
+    padding-bottom: 2rem;
+  }
+
+  .flexText h4 {
+    padding-top: 0 !important;
+  }
+
+  .flexImageRound,
+  .flexImage,
+  .flexText {
+    width: 100%;
+  }
+
+  .imageTwo {
+    width: 60%;
+    /* padding-top: 0; */
+  }
+
+  .imageTwo,
+  .locationImage {
+    order: 1;
+  }
+
+  .flexImage {
+    margin: 1.5rem auto 0 auto;
+  }
+
+  .allButton {
+    margin-bottom: 5px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 6rem);
+    padding-left: 3rem;
+  }
+
+  .context {
+    width: calc(100% - 2rem);
+    padding: 0 1rem;
+  }
+
+  .booking h2 {
+    text-align: center;
+  }
+
+  .flexContainerFrame {
+    gap: 1rem;
+  }
+
+  .flexText img {
+    padding-bottom: 3rem;
+    width: 98%;
+  }
+
+  /* .paraHead {
+    padding: 1rem 0 1rem 0;
+    margin: 1rem 0 2rem 0;
+  } */
+}
+
+@media (max-width: 480px) {
+.textMainNobg p,
+.textMain p {
+  margin-left: 0.5rem;
+}
+
+  .leftPaddingResponisive {
+     padding-left: 2% !important;
+}
+
+  .faqSubtitles h3 {
+    margin-top: 3rem;
+  }
+
+  .minusMargin {
+    margin-top: 0rem !important;
+  }
+
+  .flexText .flexTwo {
+    margin-top: 0 !important;
+  }
+
+  .flexText h2 {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .flexText ul,
+  .flexText ol {
+    padding-top: 1rem;
+    margin-left: 1.5rem !important;
+  }
+
+  .flexMargin {
+    margin-top: -0.5rem !important;
+  }
+
+  .sources {
+    margin-top: -4rem;
+  }
+
+  /* .flexText p{
+            padding: 0 0.5rem !important;
+          } */
+
+  .faqSubtitles ul,
+  .faqSubtitles span,
+  .faqSubtitles ol {
+    margin-left: 10px;
+  }
+
+  .faqSubtitles p {
+    margin-left: 0;
+  }
+
+  /* .textMain h2,
+            .textMainNobg h2 {
+                border-left: 10px solid #003cac;
+            } */
+
+  .textMain {
+    margin: 1rem 1rem 3rem 1rem;
+    padding: 1rem;
+    padding-right: 2rem;
+  }
+
+  .textMainNobg {
+    padding: 1rem 0.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .textMain h2 {
+    padding: 1rem;
+    margin-bottom: 0rem;
+    /* margin-top: 1rem !important; */
+  }
+
+  .textMainNobg h2 {
+    margin-bottom: 1rem !important;
+    margin-left: 0.5rem;
+  }
+
+  .textMain p,
+  .textMainNobg p {
+    text-align: left !important;
+    padding: 0.5rem 1rem 2rem;
+  }
+
+  .textMain ul,
+  .textMainNobg ul,
+  .textMain ol,
+  .textMainNobg ol {
+    text-align: left !important;
+    padding: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  /* .textMain h3 {
+    margin-top: 0;
+  } */
+
+  .textMainNobg h3 {
+    margin-top: 3rem;
+  }
+
+  .flexContainer,
+  .flexContainerFrame {
+    margin: 1rem 0rem;
+  }
+
+  .title {
+    width: calc(100% - 1rem);
+    padding: 1rem 0.5rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .title h1 {
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .textBorder {
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .flexImage {
+    min-width: 280px;
+    margin: 1rem auto;
+    max-width: 410px;
+    max-height: 450px;
+  }
+
+  .flexText {
+    min-width: 210px;
+    margin: -1rem auto;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .bannerResponsive {
+    display: block;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .border {
+    padding: 1rem 0rem 1rem 0rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .context p {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    text-align: justify !important;
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 3rem);
+    padding-left: 1.5rem;
+    text-align: left !important;
+  }
+
+  .context ul,
+  .context p,
+  .context ol {
+    text-align: left;
+  }
+
+  .reveal {
+    position: relative;
+    transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -o-transform: translateY(15px);
+    opacity: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+
+  span.smallText {
+    margin-left: 0.5rem;
+  }
+
+  .imageTwo {
+    width: 100%;
+  }
+
+  .booking h2 {
+    text-align: center;
+  }
+
+  .booking input {
+    width: 18rem;
+  }
+
+  .topPadding {
+    padding-top: 2rem;
+  }
+
+  .topMargin {
+    margin-top: 2rem !important;
+  }
+
+  .topbtmPadding {
+    padding: 2rem 0rem !important;
+  }
+
+  /* .paraHead {
+    padding: 1rem 0 2rem 0;
+    margin: 1rem 0.5rem 3rem 0.5rem;
+  } */
+
+  .minusMarginImage {
+    margin: 2rem auto;
+  }
+
+  .resRmvTopPaddingMargin {
+    margin-top: 0 !important;
+    padding-top: 0rem !important;
+  }
+
+  .flexText img {
+    padding-bottom: 0;
+  }
+
+  .paddingLeftResponsive {
+    padding-left: 2.5% !important;
+  }
+}
+
+@media (max-width: 375px) {
+  /* .flexContainer{
+            max-width: 100%;
+          } */
+  .flexText {
+    min-width: 200px;
+    margin: 0.5rem auto;
+  }
+
+  .flexImage {
+    min-width: 220px;
+    margin: 0.5rem auto;
+  }
+
+  .location {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 3rem);
+    padding-left: 1.5rem;
+  }
+
+  .locationText > * {
+    margin-bottom: 20px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+
+  .booking input {
+    width: 13rem;
+  }
+}
+
+@media (max-width: 281px) {
+  .flexText {
+    min-width: 200px;
+    margin: 0.5rem auto;
+  }
+
+  .flexImage {
+    min-width: 220px;
+    margin: 0.5rem auto;
+  }
+}
+
+/* New CTA button style.*/
+
+.ctaContainer {
+  max-width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+    padding-top: 4rem;
+  border-top: 1px solid silver;
+}
+
+.ctaHeading {
+  font-weight: 700;
+  padding-left: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.ctaText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ctaText p {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .ctaContainer {
+    max-width: 94%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaContainer {
+    max-width: 92%;
+  }
+}
+
+@media (max-width: 375px) {
+  .ctaContainer {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 1rem 0.5rem;
+  }
+
+  .ctaText > * {
+    margin-bottom: 20px;
+  }
+}
+
+</style>
+<p><img src="{{media url="wysiwyg/10-Tips-for-Eye-Health/10_Tips_for_Eye_Health_BannerWeb_Banner.jpg"}}" alt="Tips for Eye Health and Keeping Eyesight Healthy Banner" class="banner" title="Tips for Eye Health and Keeping Eyesight Healthy Banner"> <img src="{{media url="wysiwyg/10-Tips-for-Eye-Health/10_Tips_for_Eye_Health_BannerMobile_Banner.jpg"}}" class="bannerResponsive" title="Tips for Eye Health and Keeping Eyesight Healthy Banner" alt="Tips for Eye Health and Keeping Eyesight Healthy Banner"></p>
+<div class="container">
+<div class="context">
+<div class="title">
+<h1>10 Tips for Eye Health and Keeping Eyesight Healthy</h1>
+<p class="minusPadding">The top 10 tips for eye health and keeping eyesight healthy include keeping a healthy and balanced diet, getting a regular eye test, not smoking, wearing sunglasses and keeping physically active. <br><br>The eyes are one of the most sensitive organs in your body, with various structures working together to keep your eyesight going. Vision is a complex process, which is why maintaining healthy eyes is so important. Learning how to improve eye health is key to ensuring that the structures of the eye remain healthy, and work well for as long as possible.</p>
+</div>
+<div class="ctaContainer topbtmPadding" style="border-top: none;">
+<div class="ctaText">
+<div class="resRmvTopPaddingMargin ctaHeading">Are your eyes aging?</div>
+<p>Take care of your eye health and book an eye test with one of our optometrists.<br><br>Oscar Wylee optometrists perform bulk billed eye tests, with no out-of-pocket expenses for eligible Medicare Card holders.</p>
+</div>
+<div class="ctaText"><a href="https://www.oscarwylee.com.au/booking" class="adjustMargin"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<p class="minusPadding">The top 10 eye care tips for eye health and keeping eyesight healthy are listed below.</p>
+<div class="flexContainer">
+<div class="flexText minusPadding" style="margin-left: -0.5rem;">
+<ol id="removeBottomPadding">
+<li><b>Keep a Healthy and Balanced Diet:</b><br>It is important to keep a healthy and balanced diet that includes omega-3 fats, leafy greens, nuts and seeds, to help maintain the health of your eyes. These foods help to protect the structures of the eye.</li>
+<li><b>Get a Regular Eye Test:</b><br>Getting a regular eye test is an important way to keep on top of your eye health. A regular eye test allows your optometrist to track any changes to your eye and give treatment for vision issues if needed.</li>
+<li><b>Quit Smoking:</b><br>Quitting smoking is hugely helpful in keeping your eyesight healthy. Smoking has been shown to greatly increase your risk of developing eye conditions such as age-related macular degeneration (AMD). By quitting, you lower your risk of developing these conditions.</li>
+</ol>
+</div>
+<div class="flexText imageTwo"><img src="{{media url="wysiwyg/10-Tips-for-Eye-Health/10-Tips-Image-1-900x600.jpg"}}" alt="Tips for Eye Health and Keeping Eyesight Healthy" class="minusMarginImage paddingLeftResponsive"></div>
+<ol start="4" id="removeTopPadding">
+<li><b>Limit Screen Time:</b><br>By limiting your screen time or taking breaks when looking at screens for a long time, you help keep your eyesight healthy. Screen time has been connected to issues such as eye strain, eye fatigue and disruptions to sleeping patterns.</li>
+<li><b> Wear Your Shades: </b><br>Wearing your shades, or your sunglasses, when outside helps to protect your eyes and maintain eye health. UV rays from the sun are damaging to the eyes, with prolonged exposure linked to eye conditions such as cataracts. By wearing your sunglasses, you help to maintain eye health.</li>
+<li><b>Use Safety Eyewear:</b><br>It is important to use safety eyewear, such as safety glasses or goggles, if you are working in an environment in which debris, or other hazardous materials such as vapour and chemicals may touch the eye. Using safety eyewear protects the eyes and maintains eye health.</li>
+<li><b>Keep the Germs Away:</b><br>Keeping germs away from your eyes and maintaining good eye hygiene, is important in helping to keep your eyes and eyesight healthy. Not touching the eyes with dirty hands, not using old makeup, and regularly cleaning glasses helps to keep the germs away from your eyes.</li>
+<li><b>Wear Your Glasses:</b><br>Wearing your glasses helps to protect your eyesight and give your eyes the vision assistance they need.</li>
+<li><b>Tell Someone if Your Vision Changes:</b><br>It is important to tell someone like your optometrist or your doctor, if you experience any changes to your vision. These health care practitioners will be able to assess your eyes and detect any potential issues that are causing the vision problems, helping to keep you and your eyes healthy.</li>
+<li><b>Stay Physically Active:</b><br>Staying physically active is an important part of taking care of not just your eye health but your overall health. Staying fit and active reduces risk of health issues, including cardiovascular and blood vessel related issues, that cause symptoms in the eye.</li>
+</ol>
+</div>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>1. Keep a Healthy and Balanced Diet</h2>
+<div class="flexContainer">
+<div class="flexText minusPadding" style="margin-left: -0.5rem;">
+<p class="minusPadding">Keeping a healthy and balanced diet is a great way to keep your eyes and eyesight healthy. A healthy and balanced diet is described as a diet that is high in whole foods, fruits and vegetables, healthy fats and proteins. A healthy and balanced diet is one that is low in saturated fats and added sugar, however, people are generally safe to consume these in small amounts. <br><br>Keeping a healthy and balanced diet is good for your whole body and overall health, as well as being of huge benefit to the eye. By eating well, you give your body the fuel it needs, help to boost immunity and help to reduce your risk of health conditions such as diabetes, cardiovascular disease and other blood vessel related issues, which affect the eye. If people do not maintain a healthy and balanced diet, they put themselves at higher risk of chronic disease, obesity, and other health conditions such as cancers. If you do not eat well, then your eyes do not receive the nutrients needed for optimal function.</p>
+</div>
+<div class="flexText imageTwo"><img src="{{media url="wysiwyg/10-Tips-for-Eye-Health/10-Tips-Image-2-900x600.jpg"}}" alt="Tips for Eye Health and Keeping Eyesight Healthy" class="minusMarginImage paddingLeftResponsive"></div>
+</div>
+<p>In addition to keeping a healthy and balanced diet, research has shown that there are certain foods that have minerals and vitamins that specifically help with eye health, helping to reduce the risk of vision issues such as cataracts. According to Havard Health, vitamins, A, C, E, the mineral zinc and the omega-3 fatty acid DHA, may help maintain good eyesight and eye health. Foods that are good for keeping the eye healthy include fish, nuts, seeds, leafy greens, yellow and orange fruits. These foods help to protect the various structures of the eye and help prevent eye diseases such as age-related macular degeneration (AMD) and glaucoma.</p>
+</div>
+<hr>
+<div class="textMain boxShadow">
+<h2>2. Get a regular eye test</h2>
+<p>Getting a regular eye test is one of the most important tips for maintaining the health of eyes and eyesight. An eye test is defined as a procedure in which an optometrist, or other eye care professional, will check the health of your eye and assess your eyesight. An eye test involves several exams such as a tonometry test which measures intraocular eye pressure and a refraction test in which an optometrist checks the quality of your vision. <br><br>An eye test is an important part of maintaining eye health as it allows your optometrist to diagnose any vision issues such as hyperopia and astigmatism, or eye diseases such as glaucoma or cataracts. Getting a regular eye test means that these conditions can be caught early on, so they do not become a bigger problem later. <br><br>If a person does not keep up with their regular eye exams, they risk not detecting a potential eye disease or vision issue. Some eye conditions, such as age-related macular degeneration (AMD), do not show symptoms until the later stages of the disease. That’s why, even if you feel like you have clear vision, it is important to get regular eye tests. <br><br>Oscar Wylee recommends that those under 65 get a regular eye test every 2 years. People over 65 should get them annually or as recommended by their optometrist. Those with health conditions such as diabetes or with existing eye issues such as cataracts, need eye tests more regularly. Your optometrist will discuss with you how frequent your eye tests should be.</p>
+<h2>3. Quit Smoking</h2>
+<p>Quitting smoking is a major way to potentially improve eye health and eyesight. Smoking refers to the practice of consuming tobacco through use of cigarettes. Smoking is scientifically proven to be bad for your overall health, and this includes your eye health. Smoking has been shown to cause damage to various parts of the eye including the retina and the macula. Smoking has been linked to an increased risk of several eye diseases, including age-related macular degeneration (AMD), cataracts and general eye functionality. <br><br>According to the US Food and Drug Administration (FDA), those who smoke are between two to three times more likely to develop cataracts than a non-smoker. People who smoke are also up to four times more likely to develop age-related macular degeneration (AMD) than non-smokers. <br><br>Quitting smoking is a major step towards improving your eye health, and eyesight. By not smoking, you reduce your risk of developing, or worsening, any eye diseases and vision issues.</p>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>4. Limit Screen Time</h2>
+<p>Limiting screen time is one of the best tips for maintaining the health of your eye and eyesight. Screen time is described as time spent looking at a digital screen, whether this is a computer, a laptop, the TV or a smartphone. Long periods of screen time have been linked to negative effects on the eyes, including digital eye strain, eye fatigue and dry eyes. <br><br>The blue light that is found in digital screens has also been linked to negative affects on the eyes. Blue light is a type of light that is produced naturally from the sun. Blue light can also be artificial and is used in digital screens such as laptops, computers and phones. Whilst there is currently limited scientific evidence that suggests blue light has any long-term effects on the eyes, according to UAB Medicine, laboratory evidence on animals has suggested that blue light may harm the retinal cells. Blue light has also been linked to sleep disruption in humans. According to a study published in The Proceedings of the National Academy of Sciences (PNAS), conducted by Chang, Aeschbach, Duffy and Czeisler, people that go on digital devices before bed, release smaller amounts of melatonin, which is the chemical that helps us sleep. <br><br>By limiting screen time or taking breaks when looking at screens for a long time, you help to keep your eyesight healthy. If people are required to be on digital devices for extended periods of time, there are ways to protect the eyes. Use the 20/20/20 rule which suggests that for every 20 minutes of screen time, you look away for 20 seconds and focus your eyes on something 20 feet away. There are blue light blocking glasses which may help to block blue light that enters the eye and reduce digital eye strain and sleep disruptions.</p>
+<h2 class="addTopMargin">5. Wear Your Shades</h2>
+<p>Wearing your shades, or your sunglasses, is a great way to maintain the health of your eyes and eyesight. Sunglasses are a type of eyewear that is designed to protect the eyes from ultraviolet or UV light that comes from the sun. UV light has been shown to cause damage to the eyes, including the cornea, the lens, the retina and the eyelid. <br><br>According to the American Academy of Ophthalmology, long term exposure to UV light increases the risk of developing eye conditions such as cataracts and eye cancers. Retinal degeneration and non-cancerous growths such as pterygium, have been linked to prolonged UV light exposure.<br><br>It is important when buying sunglasses that you consider how much protection they have. According to the Cancer Council of Australia, there are 5 categories of protection when it comes to sunglasses, with category 3 the highest for general purpose sunglasses and category 4 the highest overall, referring to special use sunglasses.<br><br>Just like the skin, the eyes need protection from the sun. By wearing sunglasses, you can help to protect your eyes from damaging UV rays and maintain the health of your eyes and eyesight. Sunglasses are also a good way to protect your eyes from the elements whilst outside such as harsh winds, and debris.</p>
+</div>
+<hr>
+<div class="textMain boxShadow">
+<h2>6. Use Safety Eyewear</h2>
+<p>Using safety eyewear, such as safety glasses, is an important tip for keeping your eyes and eyesight healthy. Safety eyewear is defined as any type of eyewear that keeps the eyes safe and protected from potential harm or damage. Safety eyewear encompasses a range of eye protection, including safety glasses, safety goggles, face shields and face masks. Safety eyewear is made in a range of materials and can have lenses with different coloured tints, depending on what the eye needs protecting from. Polarised lenses for example reduce sun, snow and water glare. Blue lenses in safety eyewear help to protect the eyes from prolonged exposure to yellow light. <br><br>Safety eyewear is very important when working a job or undertaking an activity in which potential hazardous material could potentially come into contact with the eye, or when the eye is at risk of being injured or damaged. According to the Better Health Channel, things that cause damage to the eye include chemicals, dust, debris, compressed air, oils, bright lights or UV lights. If you do not wear safety eyewear whilst engaging in these situations, you could risk causing damage to the eye, putting your vision at risk. Potential eye injuries include scratches, burns and foreign bodies in the eye. <br><br>By wearing safety eyewear when engaging in high risk activities, you help protect your eyes and maintain good eye health.</p>
+<h2>7. Keep the Germs Away</h2>
+<p class="minusPadding">Keeping the germs away is a good tip when considering how to maintain the health of your eyes and eyesight. Keeping the germs away refers to maintaining good eye hygiene. Good eye hygiene is important as it helps to prevent the eyes from getting infections such as a sty, or inflammation, such as conjunctivitis. There are several ways to keep the germs away from your eyes including not touching the eyes with dirty hands, not using old makeup, and regularly cleaning glasses. The best ways to keep good eye hygiene are listed below.</p>
+<ul class="minusPadding">
+<li><b>Do not touch your eyes with your hands:</b> Keeping the hands away from the eyes is a good way to ensure good eye health. If there is something in the eye that can not be removed without touching your eyeball, it is best to consult an optometrist or health care professional.</li>
+<li><b>Clean your eyes with a soft material like cotton wool:</b> If the eyes need cleaning for any reason, such as eye discharge, Healthdirect recommends doing so with a material like a cotton wool pad, soaked in clean water. You should not use the same pad for both eyes as this could bring germs from one eye into the other.</li>
+<li><b>Don’t use old makeup and clean makeup brushes:</b> Old makeup harbours germs and bacteria that pose a potential infection risk to the eye. It is important to check the best by date on the packages of makeup and not use them past this. Another good tip is to wash makeup brushes regularly as these collect bacteria that could lead to an eye infection.</li>
+<li><b>Regularly clean your glasses:</b> Regularly cleaning your frames and your lenses is a good way to maintain good eye hygiene as these surfaces pick up dirt and other germs that enter the eye. Using a lens spray or clean glasses cloth, ensures the glasses are free of dirt.</li>
+</ul>
+<p>Keeping eye hygiene is a good way to maintain good eye and eyesight health.</p>
+</div>
+<div class="context"><hr></div>
+<div class="ctaContainer topbtmPadding" style="border-top: none;">
+<div class="ctaText">
+<div class="resRmvTopPaddingMargin ctaHeading">Find your nearest Oscar Wylee store</div>
+<p>Come in and see your local Oscar Wylee team for your eye health needs, including eye testing and glasses prescriptions.<br><br>All major health funds are accepted in-store.</p>
+</div>
+<div class="ctaText"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html" class="adjustMargin"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>8. Wear Your Glasses</h2>
+<p>Wearing your glasses is a good way to maintain the health of your eye and eyesight. Glasses refers to a pair of frames and lenses, either prescription or non-prescription, that you wear over your eyes. Prescription glasses are given to a patient by an optometrist, who will have tested the eyes and determined that the eyes need vision correction. Non-prescription glasses refer to sunglasses or blue light glasses. <br><br>It is important that a person wear their prescription glasses if they have been told to do so by an optometrist. If you have a condition such as hyperopia, myopia or astigmatism, you may be prescribed glasses to correct the vision problem and help the eyes see clearer. <br><br>Reasons that people do not wear their glasses include that they may be easy to forget if you are in a rush somewhere. Patients may also not wear glasses if they are going through a tough adjustment period, say going from single vision to multifocal lenses. Patients can also feel that their glasses are not right, do not help them, or make their vision worse. However, it is important that you wear your glasses to protect your eyesight and give your eyes the vision assistance they need. If you do not wear your glasses, the eyes have to work harder to see, resulting in eye strain and headaches. If a patient believes that their glasses are hindering their eyesight more than helping, or are giving them symptoms such as headaches, this is a possible indication that there is an error with the prescription lenses or frame fit. Instead of halting the wearing of glasses, patients should go back to their optometrist and get their glasses updated or fixed. <br><br>It is important to wear your prescribed glasses to maintain the health of your eyes and give your eyesight the help it needs.</p>
+<h2 class="addTopMargin">9. Tell Someone if Your Vision Changes</h2>
+<p>Telling someone if your vision changes is one of the most important tips in maintaining eye and eyesight health. A vision change is described as any changes or alterations to the way you see. Vision changes can involve blurry vision, squinting, trouble focusing the eye, black spots, floaters or flashes of light. <br><br>Some changes to vision may occur gradually, over time. If a patient has presbyopia for example, an age-related condition in which the eyes struggle to focus on nearby objects, the blurring of vision may occur slowly and worsen over time. Other vision changes may occur quickly. In this case, it is important to see an optometrist or seek medical attention as soon as possible, as these may have underlying health problems. <br><br>Vision changes, whether minor and gradual, or ones that happen fast, need to be checked by an optometrist to keep the eyes healthy and maintain good vision.</p>
+<h2 class="addTopMargin">10. Stay Physically Active</h2>
+<p class="minusPadding">Staying physically active is an important part of maintaining good eye health and eyesight. Being physically active or exercising refers to regularly engaging in some form of physical activity, whether this is walking, running, swimming, lifting weights at the gym, boxing, pilates and playing sports. According to the Australian Government’s Department of Health and Aged Care, adults ages 18-64 should have 2.5-5 hours of moderate physical activity a week and 1.25 to 2.5 hours of vigorous exercise. For adults 65 and above, the recommendation is 30 minutes of moderate activity most days. <br><br>Staying physically active is great for overall health as well as good for eye health. Exercising is hugely beneficial to your body and your eyes as it reduces the risk of health conditions such as cardiovascular disease and type 2 diabetes. It also helps to manage weight and strengthen muscles. Those who do not exercise regularly put themselves at higher risk of developing health issues, including eye problems such as age-related macular degeneration (AMD). <br><br>Staying regularly physically active is a big help in maintaining overall health, which in turn benefits eye health and eyesight.</p>
+</div>
+<hr>
+<div class="textMain boxShadow">
+<h2>Why is it Important to Keep Your Eyesight Healthy?</h2>
+<p>It is important to keep your eyesight healthy so that your eyes and vision can function as effectively as possible. Your eyes are made up of several structures that all work together to help you see. When light enters the eye, it hits the retina, a structure at the back of your eye. Cells called photoreceptors then turn the light into electrical signals that get sent to the brain via the optic nerve. It is important to keep your eyes healthy so that these processes can work well, ensuring good vision. <br><br>It is also important to keep your eyesight healthy as your eyes are one of your most important organs. The eyes allow you to see the world around you, helping you to interact with other people and complete daily tasks. If your eyesight is not kept healthy, this may interfere with daily life. Those who have eye diseases, such as age-related macular degeneration (AMD) for example, may find certain daily tasks difficult, which can affect their quality of life.</p>
+<h3>What are the Benefits of Healthy Eyesight?</h3>
+<p class="minusPadding">The benefits of having healthy eyesight include a higher quality of life and better overall health. Though there are many happy and healthy people who live good and fulfilled lives with limited or no vision, for many people, having healthy eyesight is important and something they would struggle without. Many people rely on good vision for their lifestyle and jobs. The benefits of having healthy eyes and good sight are listed below.</p>
+<ul>
+<li><b>Higher quality of life: </b>Having poor vision can affect a person’s quality of life. Not being able to see may make conducting daily activities, such as driving, more difficult. Low vision may also lead to a decrease in independence, mobility, and social interaction. According to a 2001 study by Joan Stelmack, people with low vision are at higher risk for developing anxiety and depression. Having healthy eyes can reduce the risk of these eye diseases and help you maintain a higher quality of life for longer.</li>
+<li><b>Better health: </b>Having healthy eyes and eyesight plays a role in your overall health. If people have conditions such as diabetes or cardiovascular issues, this can affect the structures of the eye. By keeping a healthy lifestyle and lowering the risk of these conditions, you will have better overall health and better eye health.</li>
+</ul>
+<h3>What is the Perfect Vision for a Healthy Eyesight?</h3>
+<p class="minusPadding">There is no such thing as perfect vision for healthy eyesight. Perfect vision means something different to each individual, depending on their lifestyle and individual needs. However, there are several criteria that one may use to measure whether they have good vision, listed below.</p>
+<ul>
+<li><b>Visual Acuity:</b> Visual acuity refers to the sharpness and clarity of your vision. Visual acuity is measured by an optometrist using an eye chart, such as a Snellen Chart. Visual acuity is measured as a fraction, with 20/20 vision widely regarded as the baseline or average vision.</li>
+<li><b>Depth perception:</b> If a person has good depth perception, they may consider themselves to have good vision. Depth perception is your eye’s ability to judge how far one object is away in relation to another object. It also refers to how the eye judges the distance of an object from the viewer.</li>
+<li><b>Peripheral vision:</b> If a person has good peripheral vision, they may consider themselves to have good eyesight. Peripheral vision refers to the part of your eyesight outside the central visual field, in simple terms the sides of your vision,</li>
+<li><b>Colour perception:</b> Colour perception refers to the eyes ability to perceive different wavelengths of light or colour. If you have good colour perception, you may consider this an indication of good eyesight.</li>
+</ul>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>What are the Good Foods that are Beneficial to Eye Health and Vision?</h2>
+<p class="minusPadding">The good foods that are beneficial to eye health and vision include fish, nuts, seeds, leafy greens, carrots, yellow and orange fruits, and eggs. Good foods are defined as those that are nutrient rich and low in refined sugar and fats. Good food is hugely beneficial as what a person eats affects their overall health, including the health of the eyes. If overall health and eye health are maintained, this helps the eyes to function well. Eating well can also help reduce the risk of eye diseases such as age-related macular degeneration (AMD) and cataracts. The good foods that are beneficial to eye health and vision are listed below.</p>
+<ul>
+<li><b>Fish:</b> Fish, such as salmon and tuna, are good for keeping eyes healthy as they are high in omega-3 fatty acids. These nutrients help improve eye health by protecting the retina and preventing eye diseases such as age-related macular degeneration (AMD). Omega-3 may reduce dry eye symptoms.</li>
+<li><b>Nuts and Seeds:</b> Nuts and seeds are good for eye health as they are high in vitamin E, which may protect the eye and prevent diseases such as cataracts.</li>
+<li><b>Leafy Greens:</b> Dark, leafy greens such as kale, spinach and collards, are good for eye health as they are high in vitamins C and E as well as the antioxidants lutein and zeaxanthin. These minerals can help to prevent eye diseases.</li>
+<li><b>Carrots:</b> Carrots are good for helping to improve eye health as they are a source of vitamin A and beta carotene, both of which protect the eye against infections and eye diseases.</li>
+<li><b>Eggs:</b> Eggs, particularly the egg yolk, are a good food for maintaining eye health as they have a range of vitamins from zinc and vitamin A to lutein and zeaxanthin. Together these nutrients help protect the cornea part of the eye, and help to reduce the risk of cataracts.</li>
+<li><b>Yellow and orange fruits:</b> Yellow and orange fruits such as oranges and grapefruits help with eye health as they provide vitamin C and E, which help protect the blood vessels in the eye. Vitamin C and E also helps to prevent eye damage, and reduce the risk of eye diseases such as age-related macular degeneration (AMD).</li>
+</ul>
+<h3>Can You take Supplements or Vitamins to Keep Your Eyesight Healthy?</h3>
+<div class="flexContainer">
+<div class="flexText minusPadding" style="margin-left: -0.5rem;">
+<p class="minusPadding">Yes, you can take supplements or vitamins to keep your eyesight healthy. However, most people will find that if they eat a balanced and healthy diet full of nutrient rich food, they will generally receive all the vitamins they need without taking a supplement. If you believe you need supplements, it is best to speak with a doctor before you begin taking them. The vitamins that may benefit the eyes and keep eyesight healthy are listed below.</p>
+<ul class="leftPaddingResponisive">
+<li><b>Omega-3:</b> Omega-3 benefits the eye by protecting its structures such as the retina.</li>
+<li><b>Vitamin C:</b> Vitamin C is an antioxidant and helps to protect the various structures of the eye.</li>
+<li><b>Vitamin A:</b> Vitamin A helps to protect the surface of the eye known as the cornea.</li>
+<li><b>Vitamin B1:</b> Vitamin B1 may help prevent eye diseases such as cataracts and diabetic retinopathy.</li>
+</ul>
+</div>
+<div class="flexText imageTwo"><img src="{{media url="wysiwyg/10-Tips-for-Eye-Health/10-Tips-Image-3-900x600.jpg"}}" alt="Tips for Eye Health and Keeping Eyesight Healthy" class="minusMarginImage paddingLeftResponsive"></div>
+</div>
+<h3>Can Eyesight be Improved Naturally?</h3>
+<p>Your eyesight can not be improved naturally if you have a vision problem such as myopia or astigmatism, as these eyesight problems have a structural cause and require optometry treatment. The way that eyesight is improved or vision issues corrected, involves treatment such as corrective glasses or a procedure such as laser eye surgery. You may be able to help keep eyes healthy by eating well, exercising, wearing sunglasses and using protective eyewear, however, these things will not improve or fix vision issues that have a structural cause.</p>
+</div>
+<hr>
+<div class="textMain boxShadow">
+<h2>How to check your Eyesight at home?</h2>
+<p>It is not recommended that you check your eyesight at home as the results of home eye tests often provide inaccurate and misleading results. If you need an eye test, book an appointment with an Oscar Wylee optometrist and they will be able to provide you with accurate results and treatment options if needed.</p>
+<h3>When Should I See an Eye Doctor?</h3>
+<p>When you should see an eye doctor depends upon which eye doctor you are seeing. There are three main types of eye care professionals; optometrists, optical dispensers and ophthalmologists. <br><br>Your optometrist is your first point of contact for eye care and is the eye care professional conducting your annual eye test. If you are under 65, it is recommended that you see an optometrist every two years. If you are above 65, then annual eye tests are recommended. <br><br>An optical dispenser dispenses glasses and fits your eyewear. You will usually see them after a consultation with your optometrist, as they use the prescription from the optometrist to find the lenses and frames that are right for you. <br><br>If you need to see an ophthalmologist, this is usually at the discretion of your optometrist or doctor, as ophthalmologists are eye care specialists, treating more serious vision problems beyond the expertise of an optometrist, such as advanced glaucoma.</p>
+</div>
+<div class="context">
+<div class="location">
+<div class="locationText">
+<h2>Find an Oscar Wylee store near you</h2>
+<p>Our friendly team can help you shop our range of frames and lenses, and our optometrists can provide eye tests and advice.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img class="locationImage" src="{{media url="wysiwyg/10-Tips-for-Eye-Health/find-a-store.jpg"}}" alt="oscar wylee Booking" title="oscar wylee Booking"></div>
+<div class="location item1"><img class="locationImage" src="{{media url="wysiwyg/10-Tips-for-Eye-Health/book-an-eye-test.jpg"}}" alt="book an eye test with Oscar Wylee" title="book an eye test with Oscar Wylee">
+<div class="locationText">
+<h2>Book an eye test at Oscar Wylee</h2>
+<p>For eligible Medicare Card holders, Oscar Wylee eye tests will be bulk billed.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/booking"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
