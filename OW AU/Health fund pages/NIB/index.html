@@ -130,29 +130,12 @@
         font-size: 1.6rem;
       }
 
-      .button1 {
-        background-color: #003cac;
-        color: white;
-        padding: 15px 30px;
-        border-radius: 30px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 20px;
-        width: 85%;
-        max-width: 400px;
-      }
-
-      .button1 a {
-        color: white;
-        text-decoration: none;
-      }
-
       .flexCategory {
         width: 100%;
         /* margin: 2rem 0; */
         /* padding: 4rem 0 1rem; */
         /* border-top: 1px solid silver;
-                   border-bottom: 1px solid silver; */
+                 border-bottom: 1px solid silver; */
       }
 
       .flexContainer {
@@ -212,106 +195,32 @@
 
       .shopBotton {
         background-color: #003cac;
-        color: white;
+        color: #fff;
         padding: 15px 30px;
         border-radius: 30px;
-        font-weight: 700;
+        font-weight: 600;
         font-size: 20px;
         line-height: 20px;
-        width: 85%;
-        border: none;
-      }
-
-      .button1 {
-        background-color: #003cac;
-        color: white;
-        padding: 15px 30px;
-        border-radius: 30px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 20px;
-        width: 85%;
-        max-width: 400px;
-      }
-
-      .button1 a {
-        color: white;
-        text-decoration: none;
+        width: 80%;
+        text-align: center;
+        cursor: pointer;
+        margin: 0 auto;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
       }
 
       .shopBotton:hover {
-        background-color: #0b0f34;
-        color: white;
+        background-color: #002a7a;
+        color: #ffffff;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
       }
 
-      .button1:hover {
-        background-color: #0b0f34;
-        color: white;
-        padding: 15px 30px;
-        border-radius: 30px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 20px;
-        width: 85%;
-        max-width: 400px;
-      }
-
-      .button2 {
-        background-color: white;
-        color: #003cac;
-        padding: 15px 30px;
-        border: solid;
-        border-radius: 30px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 20px;
-        width: auto;
-        max-width: 400px;
-      }
-
-      .button2:hover {
-        background-color: #0b0f34;
-        color: white;
-        padding: 15px 30px;
-        border-radius: 30px;
-        border: solid;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 20px;
-        width: auto;
-        max-width: 400px;
-      }
-
-      button2 a {
-        color: #003cac;
-      }
-
-      button2 a:hover {
-        color: white;
+      button:not(.primary) {
+        box-shadow: none !important;
       }
 
       ul {
         list-style-type: none;
         padding-left: 10px;
-      }
-
-      /* 3-COLUMN STRUCTURE */
-      .container-3-col {
-        display: flex;
-      }
-
-      .section-3-col {
-        flex: 1;
-        /*grow*/
-        border: none;
-      }
-
-      .dashedBorder {
-        border-top: 2px dotted #cbc5a3;
-        border-bottom: 2px dotted #cbc5a3;
-        border-radius: 15px;
-        margin-bottom: 2rem;
-        padding: 1rem;
       }
 
       .linkTo {
@@ -330,21 +239,6 @@
       .border {
         border-bottom: 1px solid silver;
         padding: 0rem;
-      }
-
-      .flatBg {
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 30px;
-        box-shadow: 4px 4px 8px silver;
-      }
-
-      .flatBg::before {
-        opacity: 0.2;
-      }
-
-      .lastBox {
-        padding: 1rem 1rem 0 1rem;
       }
 
       .context ul li {
@@ -457,32 +351,26 @@
       }
 
       .tableFirstRow th {
-        /* background-color: #dcf5ec;
-                 border-top-left-radius: 30px;
-                 border-bottom-left-radius: 30px;
-                 border-top-right-radius: 0px;
-                 color: #00a1a5;
-                 border-bottom: 10px solid #fff; */
         font-style: italic;
         text-align: center;
         vertical-align: middle;
         font-size: 16px;
-        min-width: 150px;
+        min-width: 135px;
       }
 
       .tableTitles th {
         /* color: #003cac;
-                 background-color: #e1f5ff; */
+               background-color: #e1f5ff; */
         vertical-align: middle;
         text-align: center;
       }
 
       table tr th {
         /* border-top-left-radius: 40px;
-                 border-top-right-radius: 40px;
-                 border-top: 7px solid white;
-                 border-right: 5px solid white;
-                 border-left: 5px solid white; */
+               border-top-right-radius: 40px;
+               border-top: 7px solid white;
+               border-right: 5px solid white;
+               border-left: 5px solid white; */
         font-weight: 700;
       }
 
@@ -493,10 +381,10 @@
       }
 
       /* 
-               table tr {
-                   background-color: #f7f7f7;
-                   border-radius:60px;
-               } */
+             table tr {
+                 background-color: #f7f7f7;
+                 border-radius:60px;
+             } */
 
       table tr img {
         width: 30px;
@@ -514,7 +402,7 @@
         max-width: 410px;
         max-height: 450px;
         /* filter: drop-shadow(5px 5px 10px Silver);
-                 -webkit-filter: drop-shadow(5px 5px 10px Silver); */
+               -webkit-filter: drop-shadow(5px 5px 10px Silver); */
       }
 
       .flexText {
@@ -523,9 +411,9 @@
         /* background-color: #fff; */
         /* border-radius: 10px; */
         /* -webkit-border-radius: 10px;
-                 -moz-border-radius: 10px;
-                 -ms-border-radius: 10px;
-                 -o-border-radius: 10px; */
+               -moz-border-radius: 10px;
+               -ms-border-radius: 10px;
+               -o-border-radius: 10px; */
         padding: 1rem 0.5rem;
         /* border: 2px dashed #cbc5a3; */
         margin: 0 1rem;
@@ -584,6 +472,7 @@
       .flexRow p {
         padding-right: 4rem;
         font-weight: 700;
+        max-width: 600px;
       }
 
       .smallText {
@@ -651,9 +540,9 @@
         color: #ffffff;
         width: 80%;
         padding: 15px;
+        border: 1px solid #003cac;
         font-size: 20px;
         font-weight: 600;
-        border: none;
         border-radius: 30px;
         text-align: center;
         cursor: pointer;
@@ -665,103 +554,6 @@
         background-color: #002a7a;
         color: #ffffff;
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-      }
-
-      .pSubTitle {
-        font-size: 22px !important;
-        padding-top: 3rem !important;
-        font-weight: bold;
-        color: #6b6b6b !important;
-      }
-
-      .minusPadding {
-        padding-bottom: 0.5rem !important;
-      }
-
-      /* vertical */
-      .reveal {
-        position: relative;
-        transform: translateY(65px);
-        -webkit-transform: translateY(65px);
-        -moz-transform: translateY(65px);
-        -ms-transform: translateY(65px);
-        -o-transform: translateY(65px);
-        opacity: 0;
-        transition: all 0.5s ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-      }
-
-      .reveal.active {
-        transform: translateY(0);
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
-        opacity: 1;
-      }
-
-      /* Style the button that is used to open and close the collapsible content */
-      .collapsible {
-        background-color: #fff;
-        color: #003cac;
-        cursor: pointer;
-        padding: 0.5rem 2rem;
-        width: 100%;
-        border: none;
-        /* border-bottom: 2px dashed #003cac; */
-        text-align: left;
-        outline: none;
-        font-size: 14px;
-        font-weight: bold;
-        font-style: italic;
-      }
-
-      button.accordion.active::before {
-        content: "\2212";
-      }
-
-      button.accordion::before {
-        content: "\002B";
-        color: #003cac;
-        font-weight: bold;
-        /* float: right; */
-        margin-left: 5px;
-        padding-right: 0.5rem;
-        font-size: 16px;
-      }
-
-      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-
-      .collapsible:hover {
-        background-color: #f7f7f7;
-        color: #003cac !important;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        font-style: normal;
-      }
-
-      .activeCollaps {
-        font-style: normal;
-      }
-
-      /* Style the collapsible content. Note: hidden by default */
-      .collapsContent {
-        padding: 0 1rem;
-        display: none;
-        overflow: hidden;
-        /* background-color: #003cac; */
-        font-size: 12px;
-        border-top: 1px dashed #003cac;
-        background-color: #f7f7f7;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-      }
-
-      .sources {
-        margin-bottom: 2rem;
       }
 
       @media (max-width: 992px) {
@@ -823,11 +615,6 @@
           margin: 4rem 0;
         }
 
-        /*breakpoint*/
-        .container-3-col {
-          flex-direction: column;
-        }
-
         .title h1 {
           width: calc(50% - 4rem);
           padding: 1rem 0rem;
@@ -886,16 +673,6 @@
           padding: 0 1rem;
         }
       }
-      /* 
-               @media (max-width: 541px) {
-                   
-                   .title h1 {
-                       width: 100%;
-                       max-width: 250px;
-                       padding: 1rem 0rem;
-                       top: 0;
-                   }
-               } */
 
       @media only screen and (max-width: 646px) and (min-width: 481px) {
         .title h1 {
@@ -955,14 +732,6 @@
           padding-right: 1rem !important;
         }
 
-        .sources {
-          margin-top: -4rem;
-        }
-
-        /* .flexText p{
-                   padding: 0 0.5rem !important;
-                 } */
-
         .faqSubtitles ul,
         .faqSubtitles span {
           margin-left: 10px;
@@ -971,11 +740,6 @@
         .faqSubtitles p {
           margin-left: 0;
         }
-
-        /* .textMain h2,
-                   .textMainNobg h2 {
-                       border-left: 10px solid #003cac;
-                   } */
 
         .textMain {
           margin: 1rem;
@@ -1030,11 +794,6 @@
           /* margin: 1rem; */
           /* width: 100% ; */
         }
-
-        /* 
-                   .title h1 {
-                       padding-bottom: 0rem;
-                   } */
 
         .mainContainer {
           padding: 0;
@@ -1092,36 +851,9 @@
         .context p {
           text-align: left;
         }
-
-        .reveal {
-          position: relative;
-          transform: translateY(15px);
-          -webkit-transform: translateY(15px);
-          -moz-transform: translateY(15px);
-          -ms-transform: translateY(15px);
-          -o-transform: translateY(15px);
-          opacity: 0;
-          transition: all 0.5s ease;
-          -webkit-transition: all 0.5s ease;
-          -moz-transition: all 0.5s ease;
-          -ms-transition: all 0.5s ease;
-          -o-transition: all 0.5s ease;
-        }
-
-        .reveal.active {
-          transform: translateY(0);
-          -webkit-transform: translateY(0);
-          -moz-transform: translateY(0);
-          -ms-transform: translateY(0);
-          -o-transform: translateY(0);
-          opacity: 1;
-        }
       }
 
       @media (max-width: 375px) {
-        /* .flexContainer{
-                   max-width: 100%;
-                 } */
         .flexText {
           min-width: 200px;
           margin: 0.5rem auto;
@@ -1576,7 +1308,7 @@
                 <a href="/eye-health/your-eye-test-explained.html">
                   <button
                     class="shopBotton"
-                    style="margin-bottom: 20px; box-shadow: none; width: 100%"
+                    style="margin-bottom: 20px; width: 100%"
                   >
                     Find out more
                   </button></a
@@ -1600,7 +1332,7 @@
                 <a href="/eye-health/eye-test-info/bulk-billing.html">
                   <button
                     class="shopBotton"
-                    style="margin-bottom: 20px; box-shadow: none; width: 100%"
+                    style="margin-bottom: 20px; width: 100%"
                   >
                     Find out more
                   </button></a
@@ -1628,7 +1360,7 @@
                   <a href="/eye-care/eye-test/what-is-pupillary-distance.html">
                     <button
                       class="shopBotton"
-                      style="margin-bottom: 20px; box-shadow: none; width: 100%"
+                      style="margin-bottom: 20px; width: 100%"
                     >
                       Read more
                     </button>
@@ -1652,7 +1384,7 @@
                   <a href="/booking/">
                     <button
                       class="shopBotton"
-                      style="margin-bottom: 20px; box-shadow: none; width: 100%"
+                      style="margin-bottom: 20px; width: 100%"
                     >
                       Book online
                     </button>
