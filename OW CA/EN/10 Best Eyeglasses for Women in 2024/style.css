@@ -1122,3 +1122,52 @@ h5 {
     margin-left: 0px;
   }
 }
+
+/* Product image styles */
+
+.individual-product {
+  border-right: 1px solid silver;
+  margin-bottom: 2em;
+  display: flex;
+}
+
+.individual-product:last-child {
+  border: none;
+}
+
+.product-image {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.product-image-single {
+  width: 50%;
+}
+
+.products-section-mobile {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .individual-product {
+    border-right: none;
+    border-bottom: 1px solid silver;
+    padding-bottom: 0.5em;
+    margin-bottom: 0;
+    width: 90%;
+  }
+
+  .individual-product {
+    display: flex;
+    margin: auto auto;
+  }
+
+  .product-image {
+    width: 100%;
+  }
+
+  .products-section-mobile {
+    display: block;
+  }
+}
