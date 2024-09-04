@@ -1,0 +1,742 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<style>
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .store-page-accordion-heading {
+    font-size: 15px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+  }
+
+  .accordion:hover {
+    border: none;
+  }
+
+  .accordion-wrapper .accordion:first-child {
+    border-top: 1px solid #a3a3a3;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid #a3a3a3;
+  }
+
+  /* Style for the active class */
+  .active,
+  .accordion:hover {
+    background-color: #ffffff;
+  }
+
+  .accordion-wrapper .active {
+    border-bottom: 1px solid #a3a3a3 !important;
+  }
+
+  /* Style the expand and collapse icons */
+  .icon {
+    float: right;
+  }
+
+  .panel-content {
+    padding: 20px 0px;
+  }
+
+  .store-ul {
+    list-style: disc !important;
+    margin-left: 35px !important;
+  }
+
+  .store-ul li {
+    font-size: 1.4rem !important;
+    padding-left: 5px !important;
+  }
+
+  .store-page-accordion a {
+    color: #1979c3 !important;
+  }
+
+  section.store-page-accordion {
+    margin-bottom: 60px;
+  }
+</style>
+
+<div class="static-location-detail new-layout">
+  <div class="location-detail-wrapper location-content">
+    <div class="left-container">
+      <h1 class="static-location-header">Optometrist Elizabeth</h1>
+      <p class="short-content">
+        Elizabeth City Centre<br />Shop S090, 50 Elizabeth Way<br />Elizabeth SA
+        5112
+      </p>
+      <ul>
+        <li class="position">Near Woolworths</li>
+      </ul>
+      <div class="opening-hours">
+        <p class="title">Opening hours</p>
+        <div class="store-schedule">
+          <p>
+            <span class="schedule-label">Monday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Tuesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Wednesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Thursday</span
+            ><span class="schedule-value">9:00am - 9:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Friday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Saturday</span
+            ><span class="schedule-value">9:00am - 5:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Sunday</span
+            ><span class="schedule-value">11:00am - 5:00pm</span>
+          </p>
+          <p style="font-size: 12px">
+            *Store hours reflect local standard trading hours and exclude public
+            holidays
+          </p>
+          <p>
+            <span style="text-decoration: underline; font-size: 13px"
+              ><strong
+                ><a
+                  href="https://g.page/r/CWmSuEjSUMV9EBM"
+                  target="_blank"
+                  rel="noopener"
+                  >Visit our Elizabeth City Centre Google Business page for
+                  directions, reviews, and updates.</a
+                ></strong
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="location-map">
+        <iframe
+          width="100%"
+          height="100%"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.4853052515905!2d138.66615131523267!3d-34.71815968043002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7dc550d248b89269!2sOscar%20Wylee%20Optometrist%20-%20Elizabeth!5e0!3m2!1sen!2sau!4v1634282324813!5m2!1sen!2sau"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=113"
+  phone_number="(08) 7373 3549"
+  direction_map="https://g.page/r/CWmSuEjSUMV9EBM/review"}}{{widget
+  type="Oscar\LocationReview\Block\Widget\LocationReview"
+  review_url="https://g.page/r/CWmSuEjSUMV9EBM/review"
+  location_id="4103665796596176973"}}{{widget
+  type="Oscar\Booking\Block\Widget\AboutUs"
+  banner="wysiwyg/NewStorePage/StoreFront2/Elizabeth_Centre.jpg"
+  description_label="Find an Optometrist in Elizabeth With Oscar Wylee"
+  description="Our Oscar Wylee store is located in Elizabeth City Centre and is
+  close to surrounding areas such as Hillbank, Salisbury and Craigmore. Oscar
+  Wylee Elizabeth is here to help you shop affordable, modern and vintage-style
+  frames for your prescription glasses or sunglasses. Come visit us to get
+  vision testing and comprehensive eye health tests with trained optometrists.
+  For those who live in the area, Oscar Wylee optometrists nearest to you
+  include Oscar Wylee Tea Tree Plaza. &lt;br&gt;&lt;br&gt; The Elizabeth City
+  Centre is a growing regional shopping centre with multiple eateries,
+  restaurants and a large open food court. It is a vibrant shopping and
+  entertainment centre that has many things you can explore after your
+  appointment, such as the Reading Cinemas, various boutique stores and large
+  retail brands. There are undercover and non-paid parking, a Taxi zone and pram
+  parking available for the convenience of shoppers. There are also train and
+  bus stations within walking distance. You can also go for a swim at the
+  Aquadome which is right across the street from the city centre." label="Meet
+  Our Team"
+  first_optometrist_image="wysiwyg/NewStorePage/Optometrist/Placeholder_Option_2.png"
+  first_optometrist_name="Optometrist"
+  first_optometrist_certification_one="BVisSci"
+  first_optometrist_certification_two="MOptom"
+  first_optometrist_certification_three="Therapeutically Endorsed"
+  second_optometrist_image="wysiwyg/NewStorePage/Optometrist/Placeholder_Option_2.png"
+  second_optometrist_name="Retail Partner"
+  second_optometrist_certification_one="Certificate IV in Optical Dispensing"}}
+  {{widget type="Oscar\Booking\Block\Widget\LocationService"
+  location_service="Bulk Billed Eye Examinations, Professional Frame Styling,
+  Frame Adjustments and Repairs, Visual Fields Testing, Digital Retinal
+  Scanning,Children's Eye Checks,Red Eye Assessments,Cataract Assessments, Team
+  Health Care Plans,Driver's Forms / Fitness to Drive,Diabetic
+  Assessments,Macular Degeneration Assessments"}}
+
+  <!-- store page accordion -->
+
+  <section class="store-page-accordion">
+    <div class="accordion-wrapper">
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Find an Optometrist in Elizabeth, Adelaide for an Eye Health Test
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Optometrists in Elizabeth, Adelaide in South Australia can provide
+            eye health tests. The Oscar Wylee Elizabeth glasses store offers
+            comprehensive eye tests for a bulk billed price for valid Medicare
+            cardholders. However, the average price range for an optometrist in
+            Elizabeth can vary depending on factors such as the patient’s
+            overall health. Oscar Wylee Elizabeth has a wide range of stylish
+            frames available as optical glasses and prescription sunglasses.
+          </p>
+          <p>
+            There’s no need to have an eye test with an eye doctor as our Oscar
+            Wylee Elizabeth, Adelaide optometrists are qualified and trained to
+            perform comprehensive eye tests. Eye tests involve assessing a
+            patient's vision and eye health for eye diseases. We also have an
+            optical dispenser that can provide professional frame styling and
+            fitting.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////////////// -->
+
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How to Find an Optometrist in Elizabeth, Adelaide?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find an optometrist in Elizabeth, Adelaide, you can take certain
+            steps that can help make it easier for you such as
+            <b
+              >searching online, assessing the store’s opening hours and finding
+              the directions to your chosen location.</b
+            >
+            The steps on how to find an optometrist in Elizabeth are listed
+            below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, Elizabeth optometrist near me.
+              This can also be done here on the website via our locations page.
+            </li>
+            <li>
+              Click on the Oscar Wylee link, which will take you directly to our
+              Elizabeth optometrist store page.
+            </li>
+            <li>
+              See the store’s opening hours and where the store is located
+              specifically.
+            </li>
+            <li>
+              Use the Elizabeth Google Business page link located under store
+              hours to see the directions on how to get to the store.
+            </li>
+          </ol>
+
+          <p>
+            You can also find an optometrist in Elizabeth, Adelaide by searching
+            the keywords optometrist near me. If you have locations enabled on
+            your smartphone and you’re in the Elizabeth area, our Oscar Wylee
+            Elizabeth store page should appear easily for you to click on.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////////////// -->
+
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          Is it Hard to Get an Eye Appointment in Elizabeth, Adelaide?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            No, it is not hard to get an eye appointment in Elizabeth. You can
+            easily book an appointment to see an Oscar Wylee optometrist in
+            Elizabeth right here on this page. At Oscar Wylee we have highly
+            qualified optometrists available for bulk billed eye appointments,
+            which can be booked online, over the phone, or in-store.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Compare Optometrists in Elizabeth to Each Other?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To compare optometrists in Elizabeth, you can use factors such as
+            eye
+            <b
+              >tests offered, health fund coverage, lens types and add-ons and
+              eyewear offered.</b
+            >
+            To take care of your vision and eye health, it is important to
+            receive an eye test at least once every two years. There are
+            different types of tests that can be performed in an eye test and
+            not all optometrists may offer the same tests. Health funds can be
+            used to help cover some of the cost of your frames and lenses. To
+            find out if your health fund is accepted at an Elizabeth optometrist
+            in Adelaide, visit their website. In the case of Oscar Wylee, we
+            accept all major health funds and provide on-the-spot claims
+            in-store. There are many different lens options available for
+            prescription glasses such as single vision, multifocal and high
+            index lenses. Most optometrists in Elizabeth will offer these lenses
+            although it is good to make sure. There are also lens add-ons
+            available to enhance your glasses such as anti-reflective and blue
+            light filters. Finally, if you are looking to purchase a pair of
+            glasses after your eye test, you can compare the different styles
+            and colours you are interested in from the optometrists in
+            Elizabeth, Adelaide. Oscar Wylee offers a wide range of frames with
+            vintage and modern inspirations in bold colours and subtle designs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Find an Eyeglasses Shop in Elizabeth, Adelaide?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find a glasses store in Elizabeth, you can try to follow these
+            simple steps including
+            <b
+              >searching online, selecting a convenient location and looking at
+              their health insurance policies.
+            </b>
+            The steps on how to find a glasses store in Elizabeth, Adelaide are
+            listed below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, glasses store in Elizabeth. This
+              will provide you with various options for glasses stores in the
+              whole Elizabeth, Adelaide area.
+            </li>
+            <li>
+              Select a glasses store that is most convenient for you to travel
+              to.
+            </li>
+            <li>
+              Click the link to find out more information such as opening hours,
+              exact location and directions to the glasses store in Elizabeth.
+            </li>
+            <li>
+              Read their health insurance policies to ensure you know what
+              health benefits you have access to.
+            </li>
+          </ol>
+
+          <p>
+            Our Oscar Wylee glasses store in Elizabeth, Adelaide offers primary
+            eye care services such as comprehensive eye tests as well as other
+            services performed by an optometrist and offers prescription and
+            non-prescription eyewear.
+          </p>
+        </div>
+      </div>
+
+      <!-- ////////// -->
+
+      <button class="accordion">
+        <h5 class="store-page-accordion-heading">
+          Is it Possible to Purchase Prescribed Sunglasses in Elizabeth,
+          Adelaide Without Seeing an Optometrist?
+        </h5>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Yes and no, it is possible to
+            <a href="https://www.oscarwylee.com.au/sunglasses.html"
+              >purchase prescribed sunglasses</a
+            >
+            in Elizabeth, Adelaide without seeing an optometrist if you already
+            have a prescription that has not expired. If your prescription is
+            expired, you can book an eye test to receive an updated or new
+            prescription which will require you to see an optometrist. This will
+            ensure your prescription sunglasses are appropriate for your visual
+            needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Where is the Oscar Wylee Elizabeth Optometrist Located in Adelaide?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Elizabeth optometrist is located in the Elizabeth
+            City Centre near Woolworths. Elizabeth is a suburb in outer northern
+            Adelaide in South Australia, 24 km north of the Adelaide city
+            centre.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What is the Phone Number of Oscar Wylee Elizabeth Optometrist Store?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Elizabeth optometrist store phone number is (08)
+            7373 3549. You can contact the Oscar Wylee Elizabeth store between
+            the hours of 9 am and 5:30 pm from Monday to Wednesday, 9 am and 9
+            pm on Thursdays, 9 am and 5:30 pm on Fridays, 9 am and 5 pm on
+            Saturdays and 11 am and 5 pm on Sundays.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Reviews for Oscar Wylee Elizabeth Optometrist in
+          Adelaide?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The many reviews for Oscar Wylee Elizabeth optometrist in Adelaide,
+            left by our various customers can be found here on the website as
+            well as online when you search for Oscar Wylee Elizabeth
+            optometrist. The reviews for Oscar Wylee Elizabeth optometrist are
+            listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Lisa Smallcombe: </b>
+              Very good experience. Helpful and very informative.
+            </li>
+            <li>
+              <b>Robyn Corner: </b>
+              The optometrist was lovely and gentle. Explained everything with
+              suggestions. I felt comfortable with her. Also the girl that
+              helped me with picking my glasses was great with her suggestions
+              etc. Thanks.
+            </li>
+            <li>
+              <b>Darryl Barreau: </b>
+              I was very happy with the friendly, efficient service and the
+              thoroughness of the optometrist.
+            </li>
+            <li>
+              <b>Kristen Renn: </b>
+              Excellent all round. Was able to get a walk-in appointment and
+              testing was completed quickly by friendly staff. Accommodating for
+              a pram with no concerns. Selections were easy and staff were very
+              helpful and provided genuine feedback on style.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          What Treatments or Eye Care Processes are Done in the Oscar Wylee
+          Elizabeth Optometrist Location?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The treatments or eye care processes done in the Oscar Wylee
+            Elizabeth optometrist Adelaide location include
+            <b
+              >a tonometry test, a digital photograph, a slit lamp exam and a
+              refraction test.</b
+            >
+            Additional tests that may also be performed can include
+            <b>a visual field test and a dilated fundus exam.</b> The treatments
+            or eye-care processes that are done in the Oscar Wylee Elizabeth
+            optometrist Adelaide location are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>A Tonometry Test:</b> An optometrist or optical dispenser will
+              conduct a tonometry test which involves the use of a machine that
+              will release small puffs of air into your eyes. This will assist
+              with measuring pressure in the eye.
+            </li>
+            <li>
+              <b>A Digital Photograph:</b> An optometrist or optical dispenser
+              may take a digital photograph of your eye which can be kept on
+              record to use in future appointments to evaluate any changes to
+              your eye.
+            </li>
+            <li>
+              <b>Slit Lamp Test:</b> A slit lamp test can be used to evaluate
+              your eye health, by examining your cornea and iris which are the
+              anterior and posterior of the eye.
+            </li>
+            <li>
+              <b>Refraction Test:</b> During a refraction test, an optometrist
+              will have you view an image through different lenses and ask you
+              to confirm which helps you see the image clearer.
+            </li>
+            <li>
+              <b>Visual Field Test:</b> A visual field test can assist with
+              assessing your peripheral vision, which may be beneficial for
+              identifying any signs of glaucoma.
+            </li>
+            <li>
+              <b>Dilated Fundus Exam:</b> A dilated fundus exam can help an
+              optometrist assess your health in more detail by getting a clear
+              view of the retina. This test is typically carried out for
+              patients with diabetes and those who may be at risk of developing
+              retinal damage.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How Many Optometrists Exist in Elizabeth, Adelaide?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            There are many optometrists that exist in Elizabeth, Adelaide to
+            provide eye tests and glasses, including Oscar Wylee. The amount of
+            optometrists available in an area will typically depend on the
+            population. At Oscar Wylee Elizabeth, we offer excellent optometry
+            services including eye tests performed by skilled optometrists using
+            high-quality equipment. We also have a wide range of fashion-forward
+            frames that customers can browse in a large selection of sizes and
+            colours. If you’re looking for an optometrist in Elizabeth, choose
+            Oscar Wylee and we will take care of your optometry and eyewear
+            needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Other Closest Optometrist Locations to Elizabeth,
+          Adelaide in Australia?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The other closest Oscar Wylee optometrist locations to Elizabeth in
+            Australia are
+            <b>Tea Tree Plaza, Marion, Rundle Mall and West Lakes.</b> The
+            locations and their distance from Elizabeth are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Tea Tree Plaza: </b>
+              Tea Tree Plaza is close to Elizabeth, around 16 km. The
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-tea-tree-plaza.html"
+                >Oscar Wylee Tea Tree Plaza</a
+              >
+              store is located in Modbury, South Australia, near Bevilles
+              Jeweller. Visit Oscar Wylee Tea Tree Plaza for visual fielding
+              testing and digital retinal scanning.
+            </li>
+            <li>
+              <b>Marion: </b>
+              Marion is close to Elizabeth, around 19-20 km. The
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-marion.html"
+                >Oscar Wylee Marion</a
+              >
+              store is located in Westfield Marion near Big W. Oscar Wylee
+              Marion provides bulk billed eye tests, visual field testing and
+              frame adjustments and repairs.
+            </li>
+            <li>
+              <b>Rundle Mall: </b>
+              Rundle Mall is close to Elizabeth, around 27 km. The
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-rundle-mall.html"
+                >Oscar Wylee Rundle Mall</a
+              >
+              store is located in Adelaide. Visit Oscar Wylee Rundle Mall for
+              excellent eye care and eyewear services.
+            </li>
+            <li>
+              <b>West Lakes: </b>
+              West Lakes is close to Elizabeth, around 29-30 km. The
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-west-lakes.html"
+                >Oscar Wylee West Lakes</a
+              >
+              store is located in Westfield West Lakes opposite the Universal
+              Store. For fashion-forward frames and comprehensive eye tests,
+              visit Oscar Wylee West Lakes.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="eye-health">
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_01.png'}}"
+        alt="In store eye test"
+      />
+      <div>
+        <h3>Oscar Wylee Bulk billed Eye Test</h3>
+        <p>
+          We offer optometrist-led bulk billed eye tests in-store at Oscar Wylee
+          Elizabeth City Centre for valid Medicare cardholders. Come in and have
+          your prescription updated and order a new pair of glasses on the same
+          day. Oscar Wylee in Elizabeth can keep you up-to-date on your eyesight
+          and eye health needs by assessing your vision and checking your eye
+          health for certain diseases and conditions.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_02.png'}}"
+        alt="Health funds accepted"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Health Funds Accepted in Elizabeth Oscar Wylee</h3>
+        <p>
+          Oscar Wylee in Elizabeth City Centre accepts major health funds
+          including Bupa, HCF and NIB. Our friendly retail staff are onsite to
+          process your claim in-store with a valid health fund card. We know the
+          world of insurance can be confusing, but that’s why we’re here to help
+          you navigate it and ensure you’re getting the best price for all of
+          your prescription glasses needs.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test" style="padding: 0px">
+      <img
+        src="{{media url='wysiwyg/locations/services/ow_smiley.png'}}"
+        alt="Styling advice"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Fashion-forward and Affordable Glasses</h3>
+        <p>
+          Here at Oscar Wylee Elizabeth, we have fashion-forward eyewear with
+          both local and international inspirations including the coastal
+          Australian landscape. Our experts in-store will help you choose what’s
+          best for you and your prescription needs, and you’ll leave our
+          eyeglasses shop with a pair of prescription glasses or prescription
+          sunglasses you’ll love.
+        </p>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=113"
+  phone_number="(08) 7373 3549"
+  direction_map="https://g.page/r/CWmSuEjSUMV9EBM/review"}}
+</div>
+
+<script>
+  // acordian for store page -----------------------------
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      /* Toggle between adding and removing the "active" class,
+                      to highlight the button that controls the panel */
+      this.classList.toggle("active");
+
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        this.querySelector(".icon").classList.replace("fa-minus", "fa-plus");
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        this.querySelector(".icon").classList.replace("fa-plus", "fa-minus");
+      }
+    });
+  }
+</script>

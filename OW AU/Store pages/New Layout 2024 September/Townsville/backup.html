@@ -1,0 +1,666 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<style>
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .store-page-accordion-heading {
+    font-size: 15px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+  }
+
+  .accordion:hover {
+    border: none;
+  }
+
+  .accordion-wrapper .accordion:first-child {
+    border-top: 1px solid #a3a3a3;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid #a3a3a3;
+  }
+
+  /* Style for the active class */
+  .active,
+  .accordion:hover {
+    background-color: #ffffff;
+  }
+
+  .accordion-wrapper .active {
+    border-bottom: 1px solid #a3a3a3 !important;
+  }
+
+  /* Style the expand and collapse icons */
+  .icon {
+    float: right;
+  }
+
+  .panel-content {
+    padding: 20px 0px;
+  }
+
+  .store-ul {
+    list-style: disc !important;
+    margin-left: 35px !important;
+  }
+
+  .store-ul li {
+    font-size: 1.4rem !important;
+    padding-left: 5px !important;
+  }
+
+  .store-page-accordion a {
+    color: #1979c3 !important;
+  }
+
+  section.store-page-accordion {
+    margin-bottom: 60px;
+  }
+</style>
+
+<div class="static-location-detail new-layout">
+  <div class="location-detail-wrapper location-content">
+    <div class="left-container">
+      <h1 class="static-location-header">Optometrist Townsville</h1>
+      <p class="short-content">
+        Shop 247, Main Centre<br />310-330 Ross River Rd<br />Aitkenvale QLD
+        4814
+      </p>
+      <ul>
+        <li class="position">Next to Hype DC</li>
+      </ul>
+      <div class="opening-hours">
+        <p class="title">Opening hours</p>
+        <div class="store-schedule">
+          <p>
+            <span class="schedule-label">Monday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Tuesday</span
+            ><span class="schedule-value">8:30am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Wednesday</span
+            ><span class="schedule-value">8:30am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Thursday</span
+            ><span class="schedule-value">8:30am - 7:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Friday</span
+            ><span class="schedule-value">8:30am - 5:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Saturday</span
+            ><span class="schedule-value">8:00am - 4:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Sunday</span
+            ><span class="schedule-value">10:00am - 3:00pm</span>
+          </p>
+          <p style="font-size: 12px">
+            *Store hours reflect local standard trading hours and exclude public
+            holidays
+          </p>
+          <p>
+            <span style="text-decoration: underline; font-size: 13px"
+              ><strong
+                ><a
+                  href="https://g.page/r/CQKMZiw-gwckEAE"
+                  target="_blank"
+                  rel="noopener"
+                  >Visit our Stockland Townsville Google Business page for
+                  directions, reviews, and updates.</a
+                ></strong
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="location-map">
+        <iframe
+          width="100%"
+          height="100%"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.6118398642025!2d146.76088601490466!3d-19.299239086960213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2407833e2c668c02!2sOscar%20Wylee%20Optometrist%20-%20Townsville!5e0!3m2!1sen!2sau!4v1616371523318!5m2!1sen!2sau"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=83"
+  phone_number="(07) 4700 0229"
+  direction_map="https://g.page/r/CQKMZiw-gwckEAE/review"}} {{widget
+  type="Oscar\LocationReview\Block\Widget\LocationReview"
+  review_url="https://g.page/r/CQKMZiw-gwckEBM/review"
+  location_id="2501852404734998929"}} {{widget
+  type="Oscar\Booking\Block\Widget\AboutUs"
+  banner="wysiwyg/NewStorePage/StoreFront2/Townsville.jpg"
+  description_label="Find an Optometrist in Townsville With Oscar Wylee"
+  description="Discover an Oscar Wylee in Stockland Townsville Shopping Centre,
+  next door to Michael Hill Jeweller and close to Woolworths. Our Oscar Wylee
+  Townsville optometrist can be found in-store, ready to offer you a Medicare
+  bulk billed eye test for eligible cardholders. Speak to our friendly staff to
+  find prescription glasses inspired by modern and vintage styles just for you!
+  Stockland Townsville Shopping Centre has over 3000 parking spaces and is
+  accessible by bus and the Translink Townsville Network. There is also a taxi
+  rank by the entrance. &lt;br&gt;&lt;br&gt; When you’re done getting your
+  prescriptions renewed at Oscar Wylee Townsville, why not explore Townsville's
+  largest shopping centre? Explore the mall and its 205 stores, or take a nice
+  long stroll over the Nathan Street bridge to look at the Ross River. Or leave
+  the mall and visit the Botanical Garden, Castle Hill and The Strand to find a
+  picturesque beachfront with a view of Townsville's Magnetic Island. Book an
+  eye test with Oscar Wylee as we think we have some of the best optometrists in
+  Townsville, Australia."
+  first_optometrist_image="wysiwyg/NewStorePage/StoreManager/Placeholder_Option_2.png"
+  first_optometrist_name=""}}
+  <!-- need to replace -->
+  {{widget type="Oscar\Booking\Block\Widget\LocationService"
+  location_service="Bulk Billed Eye Examinations, Professional Frame Styling,
+  Frame Adjustments and Repairs, Visual Fields Testing, Digital Retinal
+  Scanning"}}
+
+  <!-- store page accordion -->
+
+  <section class="store-page-accordion">
+    <div class="accordion-wrapper">
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Find an Optometrist in Townsville, Queensland for an Eye Health Test
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            For great eye care services including eye tests and prescription
+            updates, you can find many optometrists in Townsville, Queensland.
+            Oscar Wylee Townsville offers bulk billed eye tests for eligible
+            Medicare cardholders which involve vision assessment and detection
+            of eye diseases. Our store in Townsville also has a wide range of
+            trendy frames available as optical glasses and prescription
+            sunglasses.
+          </p>
+          <p>
+            For a comprehensive eye test, there’s no need to see an eye doctor,
+            as our Oscar Wylee optical dispensers and optometrists are trained
+            and qualified so you can expect all the necessities of an eye health
+            test in Townsville. The average price range for an optometrist in
+            Townsville, Queensland can vary depending on factors such as the
+            patient’s visual needs and age. Visit Oscar Wylee Townsville for all
+            your optometry needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////////////// -->
+
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          Is it Hard to Get an Eye Appointment in Townsville, Queensland?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            No, it is not hard to get an eye appointment in Townsville. You can
+            easily book an appointment to see an Oscar Wylee optometrist in
+            Townsville right here on this page. At Oscar Wylee we have highly
+            qualified optometrists available for bulk billed eye appointments,
+            which can be booked online or in-store.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////////////// -->
+
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          Is it Hard to Get an Eye Appointment in Southport - Australia Fair,
+          Gold Coast?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            No, it is not hard to get an eye appointment in Southport -
+            Australia Fair. You can easily book an appointment to see an Oscar
+            Wylee optometrist in Southport - Australia Fair right here on this
+            page. At Oscar Wylee we have highly qualified optometrists available
+            for bulk billed eye appointments, which can be booked online or
+            in-store.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Compare Optometrists in Townsville to Each Other?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To compare optometrists in Townsville, you can use factors such as
+            eye
+            <b
+              >tests offered, health fund coverage, lens types and add-ons and
+              eyewear offered.</b
+            >
+            To take care of your vision and eye health, it is important to
+            receive an eye test at least once every two years. There are
+            different types of tests that can be performed in an eye test and
+            not all optometrists may offer the same tests. Health funds can be
+            used to help cover some of the cost of your frames and lenses. To
+            find out if your health fund is accepted at a Townsville optometrist
+            in Queensland, visit their website. In the case of Oscar Wylee, we
+            accept all major health funds and provide on-the-spot claims
+            in-store. There are many different lens options available for
+            prescription glasses such as single vision, multifocal and high
+            index lenses. Most optometrists in Townsville will offer these
+            lenses although it is good to make sure. There are also lens add-ons
+            available to enhance your glasses such as anti-reflective and blue
+            light filters. Finally, if you are looking to purchase a pair of
+            glasses after your eye test, you can compare the different styles
+            and colours you are interested in from the optometrists in
+            Townsville, Queensland. Oscar Wylee offers a wide range of frames
+            with vintage and modern inspirations in bold colours and subtle
+            designs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Find an Eyeglasses Shop in Townsville, Queensland?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find a glasses store in Townsville, you can try to follow these
+            simple steps including
+            <b
+              >searching online, selecting a convenient location and looking at
+              their health insurance policies.</b
+            >
+            The steps on how to find a glasses store in Townsville, Queensland
+            are listed below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, glasses store in Townsville. This
+              will provide you with various options for glasses stores in the
+              whole Townsville, Queensland area.
+            </li>
+            <li>
+              Select a glasses store that is most convenient for you to travel
+              to.
+            </li>
+            <li>
+              Click the link to find out more information such as opening hours,
+              exact location and directions to the glasses store in Townsville.
+            </li>
+            <li>
+              Read their health insurance policies to ensure you know what
+              health benefits you can access.
+            </li>
+          </ol>
+
+          <p>
+            Our Oscar Wylee glasses store in Townsville, Queensland offers
+            primary eye care services such as comprehensive eye tests as well as
+            other services performed by an optometrist and offers prescription
+            and non-prescription eyewear.
+          </p>
+        </div>
+      </div>
+
+      <!-- ////////// -->
+
+      <button class="accordion">
+        <h5 class="store-page-accordion-heading">
+          Is it Possible to Purchase Prescribed Sunglasses in Townsville,
+          Queensland Without Seeing an Optometrist?
+        </h5>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Yes and no, it is possible to
+            <a href="https://www.oscarwylee.com.au/sunglasses.html"
+              >purchase prescribed sunglasses</a
+            >
+            in Townsville, Queensland without seeing an optometrist if you
+            already have a prescription that has not expired. If your
+            prescription is expired, you can book an eye test to receive an
+            updated or new prescription which will require you to see an
+            optometrist. This will ensure your prescription sunglasses are
+            appropriate for your visual needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Where is the Oscar Wylee Townsville Optometrist Located in Queensland?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Townsville optometrist is located in Stockland
+            Townsville Shopping Centre in Atikenvale next to Hype DC. Atikenvale
+            is a suburb in the urban area of Townsville in Queensland.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What is the Phone Number of Oscar Wylee Townsville Optometrist Store?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Townsville optometrist store phone number is (07)
+            4700 0229. You can contact the Oscar Wylee Townsville store between
+            the hours of 9 am and 5:30 pm on Mondays, 8:30 am and 5:30 pm on
+            Tuesdays and Wednesdays, 8:30 am and 7 pm on Thursdays, 8:30 am and
+            5 pm on Fridays, 8 am and 4 pm on Saturdays and 10 am and 3 pm on
+            Sundays.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Reviews for Oscar Wylee Townsville Optometrist in
+          Queensland?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The many reviews for Oscar Wylee Townsville optometrist in
+            Queensland, left by our various customers can be found here on the
+            website as well online when you search for Oscar Wylee Townsville
+            optometrist. The reviews for Oscar Wylee Townsville optometrist are
+            listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Chris Johnston: </b>
+              Very professional and helpful staff. A delight to deal with.
+            </li>
+            <li>
+              <b>Walter Hall: </b>
+              Very professional and helpful service from the young ladies in the
+              Stockland shopping centre branch. Highly recommended.
+            </li>
+            <li>
+              <b>Jessica Collins: </b>
+              Team were very helpful and quick at Stocklands on Saturday. Thanks
+              guys!
+            </li>
+
+            <li>
+              <b>Dr Dereck Chong: </b>
+              As always, Oscar Wylee provides professional service to the
+              community. You don’t feel that they are upselling useless
+              products. They provide a service tailored to your individual
+              needs. Highly recommend Oscar Wylee, especially the Townsville
+              team. They are the best out there.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          What Treatments or Eye Care Processes are Done in the Oscar Wylee
+          Townsville Optometrist Location?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The treatments or eye care processes done in the Oscar Wylee
+            Townsville optometrist Queensland location include
+            <b
+              >a tonometry test, a digital photograph, a slit lamp exam and a
+              refraction test.</b
+            >
+            Additional tests that may also be performed can include
+            <b>a visual field test and a dilated fundus exam.</b> The treatments
+            or eye-care processes that are done in the Oscar Wylee Townsville
+            optometrist Queensland location are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>A Tonometry Test:</b> An optometrist or optical dispenser will
+              conduct a tonometry test which involves the use of a machine that
+              will release small puffs of air into your eyes. This will assist
+              with measuring pressure in the eye.
+            </li>
+            <li>
+              <b>A Digital Photograph:</b> An optometrist or optical dispenser
+              may take a digital photograph of your eye which can be kept on
+              record to use in future appointments to evaluate any changes to
+              your eye.
+            </li>
+            <li>
+              <b>Slit Lamp Test:</b> A slit lamp test can be used to evaluate
+              your eye health, by examining your cornea and iris which are the
+              anterior and posterior of the eye.
+            </li>
+            <li>
+              <b>Refraction Test:</b> During a refraction test, an optometrist
+              will have you view an image through different lenses and ask you
+              to confirm which helps you see the image clearer.
+            </li>
+            <li>
+              <b>Visual Field Test:</b> A visual field test can assist with
+              assessing your peripheral vision, which may be beneficial for
+              identifying any signs of glaucoma.
+            </li>
+            <li>
+              <b>Dilated Fundus Exam:</b> A dilated fundus exam can help an
+              optometrist assess your health in more detail by getting a clear
+              view of the retina. This test is typically carried out for
+              patients with diabetes and those who may be at risk of developing
+              retinal damage.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How Many Optometrists Exist in Townsville, Queensland?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            There are many optometrists that exist in Townsville, Queensland to
+            provide eye tests and glasses, including Oscar Wylee. The amount of
+            optometrists available in an area will typically depend on the
+            population. At Oscar Wylee Townsville, we offer excellent optometry
+            services including eye tests performed by skilled optometrists using
+            high-quality equipment. We also have a wide range of fashion-forward
+            frames that customers can browse in a large selection of sizes and
+            colours. If you’re looking for an optometrist in Townsville, choose
+            Oscar Wylee and we will take care of your optometry and eyewear
+            needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Other Closest Optometrist Locations to Townsville,
+          Queensland in Australia?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            There are no other Oscar Wylee optometrist locations close to
+            Townsville in Australia, however, we have many stores in New South
+            Wales, Queensland, Western Australia and Victoria. If you are
+            looking for an optometrist near you, you can find the locations of
+            our many stores on our
+            <a href="https://www.oscarwylee.com.au/locations.html"
+              >full store locations page</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="eye-health">
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_01.png'}}"
+        alt="In store eye test"
+      />
+      <div>
+        <h3>Optometrist-Led Eye Tests at Oscar Wylee Townsville</h3>
+        <p>
+          Oscar Wylee Townsville offers bulk billed eye health tests for valid
+          Medicare cardholders performed by our trusted optometrists. Book your
+          yearly eye health check-up and shop for your new prescription on the
+          same day. Here at Townsville Oscar Wylee, you can take care of your
+          eyesight, and treat and examine eye diseases, both with regular eye
+          tests and with affordable frames.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_02.png'}}"
+        alt="Health funds accepted"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Major health Funds Accepted at Oscar Wylee</h3>
+        <p>
+          With in-store experts at Oscar Wylee Townsville, you won’t have to
+          navigate the ins and outs of your health fund alone. The friendly team
+          can process your health fund claim in-store with a valid health fund
+          card, so remember to bring your card to your next appointment. Here at
+          Oscar Wylee Townsville, we want to make sure you get the best
+          prescription glasses and sunglasses you need at an affordable,
+          competitive price.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test" style="padding: 0px">
+      <img
+        src="{{media url='wysiwyg/locations/services/ow_smiley.png'}}"
+        alt="Styling advice"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Stylish Frames at Oscar Wylee Townsville</h3>
+        <p>
+          Find a wide range of stylish and affordable glasses and prescription
+          sunglasses at Oscar Wylee Townsville. Visit our Oscar Wylee Townsville
+          eyeglasses shop today and chat with any one of our experts to discover
+          the perfect frames for your personal style. Plus, we have a range of
+          great deals including our prescription glasses at 2 pairs from $199
+          and 3 pairs from $249.
+        </p>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=83"
+  phone_number="(07) 4700 0229"
+  direction_map="https://g.page/r/CQKMZiw-gwckEAE/review"}}
+</div>
+
+<script>
+  // acordian for store page -----------------------------
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+      this.classList.toggle("active");
+
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        this.querySelector(".icon").classList.replace("fa-minus", "fa-plus");
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        this.querySelector(".icon").classList.replace("fa-plus", "fa-minus");
+      }
+    });
+  }
+</script>
