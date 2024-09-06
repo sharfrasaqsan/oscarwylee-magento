@@ -1,0 +1,721 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<style>
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .store-page-accordion-heading {
+    font-size: 15px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+  }
+
+  .accordion:hover {
+    border: none;
+  }
+
+  .accordion-wrapper .accordion:first-child {
+    border-top: 1px solid #a3a3a3;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid #a3a3a3;
+  }
+
+  /* Style for the active class */
+  .active,
+  .accordion:hover {
+    background-color: #ffffff;
+  }
+
+  .accordion-wrapper .active {
+    border-bottom: 1px solid #a3a3a3 !important;
+  }
+
+  /* Style the expand and collapse icons */
+  .icon {
+    float: right;
+  }
+
+  .panel-content {
+    padding: 20px 0px;
+  }
+
+  .store-ul {
+    list-style: disc !important;
+    margin-left: 35px !important;
+  }
+
+  .store-ul li {
+    font-size: 1.4rem !important;
+    padding-left: 5px !important;
+  }
+
+  .store-page-accordion a {
+    color: #1979c3 !important;
+  }
+
+  section.store-page-accordion {
+    margin-bottom: 60px;
+  }
+</style>
+
+<div class="static-location-detail new-layout">
+  <div class="location-detail-wrapper location-content">
+    <div class="left-container">
+      <h1 class="static-location-header">Optometrist Chadstone</h1>
+      <p class="short-content">
+        Chadstone Shopping Centre,<br />Shop B-081, 1341 Dandenong Road,<br />Chadstone
+        VIC 3148
+      </p>
+      <ul>
+        <li class="position">Located next door to Nandos</li>
+      </ul>
+      <div class="opening-hours">
+        <p class="title">Opening hours</p>
+        <div class="store-schedule">
+          <p>
+            <span class="schedule-label">Monday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Tuesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Wednesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Thursday</span
+            ><span class="schedule-value">9:00am - 9:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Friday</span
+            ><span class="schedule-value">9:00am - 9:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Saturday</span
+            ><span class="schedule-value">9:00am - 7:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Sunday</span
+            ><span class="schedule-value">10:00am - 6:30pm</span>
+          </p>
+          <p style="font-size: 12px">
+            *Store hours reflect local standard trading hours and exclude public
+            holidays
+          </p>
+          <p>
+            <span style="text-decoration: underline; font-size: 13px"
+              ><strong
+                ><a
+                  href="https://g.page/r/CTsvbuXKDLGBEBM"
+                  target="_blank"
+                  rel="noopener"
+                  >Visit our Chadstone Google Business page for directions,
+                  reviews, and updates.</a
+                ></strong
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="location-map">
+        <iframe
+          width="100%"
+          height="100%"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6297.69106019983!2d145.083432!3d-37.887295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x81b10ccae56e2f3b!2sOscar%20Wylee%20-%20Optometrist!5e0!3m2!1sen!2sau!4v1581919540742!5m2!1sen!2sau"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=14"
+  phone_number="(03) 9972 6771"
+  direction_map="https://g.page/r/CTsvbuXKDLGBEBM/review"}} {{widget
+  type="Oscar\LocationReview\Block\Widget\LocationReview"
+  review_url="https://g.page/r/CTsvbuXKDLGBEBM/review"
+  location_id="6016213394106207498"}} {{widget
+  type="Oscar\Booking\Block\Widget\AboutUs"
+  banner="wysiwyg/NewStorePage/StoreFront2/Chadstone_1485x1412px.jpg"
+  description_label="Find an Optometrist in Chadstone With Oscar Wylee"
+  description="Located in the middle of the Fashion Capital, you can find our
+  optometrists in Oscar Wylee Chadstone Shopping Centre neighbouring Oakleigh
+  and Malvern East. The Mall has over 10,000 parking spaces, with the closest
+  station a 20-minute walk away. Oscar Wylee Chadstone offers bulk billed eye
+  tests to valid Medicare cardholders. Find your perfect specs here in any
+  style, from modern trends to vintage classics. Our unique shopping experience
+  will let you get your prescription renewed the same day you find your new
+  favourite pair of glasses! &lt;br&gt;&lt;br&gt; Chadstone Shopping Centre is
+  the biggest shopping centre in all of Australia, offering over 530 stores and
+  250 hotel rooms. The mall’s beautiful indoor design is already worth the long
+  walk around the entire building, but with more than 20 million visitors every
+  year, there’s bound to be something to match you and your brand-new frames.
+  For those who live in the area, Oscar Wylee optometrists nearest to you
+  include Oscar Wylee Southland and Oscar Wylee Chapel St. Visit the Oscar Wylee
+  team for some of the best eye care processes in Chadstone, Australia."
+  first_optometrist_image="wysiwyg/NewStorePage/Optometrist/Placeholder_Option_2.png"
+  first_optometrist_name="Optometrist Partner"
+  first_optometrist_certification_one="BVisSc"
+  first_optometrist_certification_two="MOptom"
+  first_optometrist_certification_three="Opthalmic Medicines Prescriber"
+  second_optometrist_image="wysiwyg/NewStorePage/Optometrist/Placeholder_Option_2.png"
+  second_optometrist_name="Retail Partner"}} {{widget
+  type="Oscar\Booking\Block\Widget\LocationService" location_service="Bulk
+  Billed Eye Examinations,Professional Frame Styling,Frame Adjustments and
+  Repairs,Visual Fields Testing,Digital Retinal Scanning"}}
+
+  <!-- store page accordion -->
+  <section class="store-page-accordion">
+    <div class="accordion-wrapper">
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Find an Optometrist in Chadstone, Melbourne for an Eye Health Test
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            An optometrist in Chadstone, Melbourne can provide optometry
+            services such as an eye health test or prescription update. At Oscar
+            Wylee Chadstone, we offer eye tests at a bulk billed price for valid
+            Medicare cardholders. However, the average price range for an
+            optometrist in Chadstone can vary depending on factors such as the
+            patient’s age and overall health. We do not have an eye doctor
+            in-store, although a patient will be referred to one if needed for
+            more advanced care.
+          </p>
+          <p>
+            In-store at Oscar Wylee Chadstone, Melbourne, we have a great
+            selection of frames in different colours, sizes and styles. We have
+            an optical dispenser to provide professional styling and fitting so
+            you can feel confident picking one of these frames for your optical
+            glasses or prescription sunglasses. An eye health test in Chadstone
+            will look at a patient’s vision and eye health to detect signs of
+            eye diseases.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////////////// -->
+
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How to Find an Optometrist in Chadstone, Melbourne?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find an optometrist in Chadstone, Melbourne, you can take certain
+            steps that can help make it easier for you such as
+            <b
+              >searching online, assessing the store’s opening hours and finding
+              the directions to your chosen location.</b
+            >
+            The steps on how to find an optometrist in Chadstone are listed
+            below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, Chadstone optometrist near me.
+              This can also be done here on the website via our locations page.
+            </li>
+            <li>
+              Click on the Oscar Wylee link, which will take you directly to our
+              Chadstone optometrist store page.
+            </li>
+            <li>
+              See the store’s opening hours and where the store is located
+              specifically.
+            </li>
+            <li>
+              Use the Chadstone Google Business page link located under store
+              hours to see the directions on how to get to the store.
+            </li>
+          </ol>
+
+          <p>
+            You can also find an optometrist in Chadstone, Melbourne by
+            searching the keywords optometrist near me. If you have locations
+            enabled on your smartphone and you’re in the Chadstone area, our
+            Oscar Wylee Chadstone store page should appear easily for you to
+            click on.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////////////// -->
+
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          Is it Hard to Get an Eye Appointment in Chadstone, Melbourne?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            No, it is not hard to get an eye appointment in Chadstone. You can
+            easily book an appointment to see an Oscar Wylee optometrist in
+            Chadstone right here on this page. At Oscar Wylee we have highly
+            qualified optometrists available for bulk billed eye appointments,
+            which can be booked online, over the phone, or in-store.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Compare Optometrists in Chadstone to Each Other?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To compare optometrists in Chadstone, you can use factors such as
+            eye
+            <b
+              >tests offered, health fund coverage, lens types and add-ons and
+              eyewear offered.</b
+            >
+            To take care of your vision and eye health, it is important to
+            receive an eye test at least once every two years. There are
+            different types of tests that can be performed in an eye test and
+            not all optometrists may offer the same tests. Health funds can be
+            used to help cover some of the cost of your frames and lenses. To
+            find out if your health fund is accepted at a Chadstone optometrist
+            in Melbourne, visit their website. In the case of Oscar Wylee, we
+            accept all major health funds and provide on-the-spot claims
+            in-store. There are many different lens options available for
+            prescription glasses such as single vision, multifocal and high
+            index lenses. Most optometrists in Chadstone will offer these lenses
+            although it is good to make sure. There are also lens add-ons
+            available to enhance your glasses such as anti-reflective and blue
+            light filters. Finally, if you are looking to purchase a pair of
+            glasses after your eye test, you can compare the different styles
+            and colours you are interested in from the optometrists in
+            Chadstone, Melbourne. Oscar Wylee offers a wide range of frames with
+            vintage and modern inspirations in bold colours and subtle designs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Find an Eyeglasses Shop in Chadstone, Melbourne?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find a glasses store in Chadstone, you can try to follow these
+            simple steps including
+            <b
+              >searching online, selecting a convenient location and looking at
+              their health insurance policies.</b
+            >
+            The steps on how to find a glasses store in Chadstone, Melbourne are
+            listed below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, glasses store in Chadstone. This
+              will provide you with various options for glasses stores in the
+              whole Chadstone, Melbourne area.
+            </li>
+            <li>
+              Select a glasses store that is most convenient for you to travel
+              to.
+            </li>
+            <li>
+              Click the link to find out more information such as opening hours,
+              exact location and directions to the glasses store in Chadstone.
+            </li>
+            <li>
+              Read their health insurance policies to ensure you know what
+              health benefits you can access.
+            </li>
+          </ol>
+
+          <p>
+            Our Oscar Wylee glasses store in Chadstone, Melbourne offers primary
+            eye care services such as comprehensive eye tests as well as other
+            services performed by an optometrist and offers prescription and
+            non-prescription eyewear.
+          </p>
+        </div>
+      </div>
+
+      <!-- ////////// -->
+
+      <button class="accordion">
+        <h5 class="store-page-accordion-heading">
+          Is it Possible to Purchase Prescribed Sunglasses in Chadstone,
+          Melbourne, Without Seeing an Optometrist?
+        </h5>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Yes and no, it is possible to
+            <a href="https://www.oscarwylee.com.au/sunglasses.html"
+              >purchase prescribed sunglasses</a
+            >
+            in Chadstone, Melbourne without seeing an optometrist if you already
+            have a prescription that has not expired. If your prescription is
+            expired, you can book an eye test to receive an updated or new
+            prescription which will require you to see an optometrist. This will
+            ensure your prescription sunglasses are appropriate for your visual
+            needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Where is the Oscar Wylee Chadstone Optometrist Located in Melbourne?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Chadstone optometrist is located at the Chadstone
+            Shopping Centre, near Culture Kings. Chadstone is a suburb in
+            Melbourne, approximately 14 km south-east of the Melbourne CBD.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What is the Phone Number of Oscar Wylee Chadstone Optometrist Store?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Chadstone optometrist store phone number is (03)
+            9972 6771. You can contact the Oscar Wylee Chadstone store between
+            the hours of 9 am and 5:30 pm from Monday to Wednesday, 9 am and 9
+            pm on Thursdays and Fridays, 9 am and 7 pm on Saturdays and 10 am
+            and 6:30 pm on Sundays.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Reviews for Oscar Wylee Chadstone Optometrist in
+          Melbourne?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The many reviews for Oscar Wylee Chadstone optometrist in Melbourne,
+            left by our various customers can be found here on the website and
+            online when you search for Oscar Wylee Chadstone optometrist. The
+            reviews for Oscar Wylee Chadstone optometrist are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Hua Huang: </b>
+              Very good and professional advice.
+            </li>
+            <li>
+              <b>Suzanne Chavasse: </b>
+              The optometrist Eric, was brilliant. He was patient, knowledgeable
+              and very helpful. Even came out to give me help choosing frames.
+              Excellent service by all the staff at Chadstone.
+            </li>
+            <li>
+              <b>Glenda Steckoll: </b>
+              Good service and great choice of frames.
+            </li>
+            <li>
+              <b>Alvin Lee: </b>
+              Attentive to details and patiently explained by the optometrist
+              and store keeper. Keep up the good work team!
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          What Treatments or Eye Care Processes are Done in the Oscar Wylee
+          Chadstone Optometrist Location?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The treatments or eye care processes done in the Oscar Wylee
+            Chadstone optometrist Melbourne location include a tonometry test,
+            <b>a digital photograph, a slit lamp exam and a refraction test.</b>
+            Additional tests that may also be performed can include
+            <b>a visual field test and a dilated fundus exam.</b> The treatments
+            or eye-care processes that are done in the Oscar Wylee Chadstone
+            optometrist Melbourne location are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>A Tonometry Test:</b> An optometrist or optical dispenser will
+              conduct a tonometry test which involves the use of a machine that
+              will release small puffs of air into your eyes. This will assist
+              with measuring pressure in the eye.
+            </li>
+            <li>
+              <b>A Digital Photograph:</b> An optometrist or optical dispenser
+              may take a digital photograph of your eye which can be kept on
+              record to use in future appointments to evaluate any changes to
+              your eye.
+            </li>
+            <li>
+              <b>Slit Lamp Test:</b> A slit lamp test can be used to evaluate
+              your eye health, by examining your cornea and iris which are the
+              anterior and posterior of the eye.
+            </li>
+            <li>
+              <b>Refraction Test:</b> During a refraction test, an optometrist
+              will have you view an image through different lenses and ask you
+              to confirm which helps you see the image clearer.
+            </li>
+            <li>
+              <b>Visual Field Test:</b> A visual field test can assist with
+              assessing your peripheral vision, which may be beneficial for
+              identifying any signs of glaucoma.
+            </li>
+            <li>
+              <b>Dilated Fundus Exam:</b> A dilated fundus exam can help an
+              optometrist assess your health in more detail by getting a clear
+              view of the retina. This test is typically carried out for
+              patients with diabetes and those who may be at risk of developing
+              retinal damage.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How Many Optometrists Exist in Chadstone, Melbourne?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            There are many optometrists that exist in Chadstone, Melbourne to
+            provide eye tests and glasses, including Oscar Wylee. The number of
+            optometrists available in an area will typically depend on the
+            population. At Oscar Wylee Chadstone, we offer excellent optometry
+            services including eye tests performed by skilled optometrists using
+            high-quality equipment. We also have a wide range of fashion-forward
+            frames that customers can browse in a large selection of sizes and
+            colours. If you’re looking for an optometrist in Chadstone, choose
+            Oscar Wylee and we will take care of your optometry and eyewear
+            needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Other Closest Optometrist Locations to Chadstone,
+          Melbourne in Australia?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The other closest Oscar Wylee optometrist locations to Chadstone in
+            Australia are <b>Chapel St, Forest Hill and Southland.</b> The
+            locations and their distance from Chadstone are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Chapel St: </b>
+              Chapel St is close to Chadstone, around 10 km. The
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-chapel-st.html"
+                >Oscar Wylee Chapel St</a
+              >
+              store is located in South Yarra near Aldi. Our Oscar Wylee store
+              on Chapel St offers comprehensive eye tests and professional frame
+              styling.
+            </li>
+            <li>
+              <b>Southland: </b>
+              Southland is close to Chadstone, around 10 km. The
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-southland.html"
+                >Oscar Wylee Southland</a
+              >
+              store is located in Westfield Southland in Cheltenham, near David
+              Jones. Here you will find bulk billed eye tests and a wide range
+              of fashionable eyewear to browse.
+            </li>
+            <li>
+              <b>Forest Hill: </b>
+              Forest Hill is close to Chadstone, around 14 km. The
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-forest-hill.html"
+                >Oscar Wylee Forest Hill</a
+              >
+              store is located in the Forest Hill Chase Shopping Centre, near
+              Woolworths. You can visit Oscar Wylee Forest Hill for professional
+              optometry services.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="eye-health">
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_01.png'}}"
+        alt="in store"
+      />
+      <div>
+        <h3>Bulk Billing Available at Oscar Wylee</h3>
+        <p>
+          Choose Oscar Wylee Chadstone for your regular eye test. Our skilled
+          optometrist can assess your vision, check your eye health for certain
+          diseases, and provide an updated prescription. Oscar Wylee offers bulk
+          billing on eye tests for those with a valid Medicare card. Our trained
+          optometrists in Oscar Wylee Chadstone can update your prescription or
+          issue a new one, usually in under 30 minutes so you can shop and order
+          your glasses on the same day.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_02.png'}}"
+        alt="in store"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Oscar Wylee Accepts Leading Health Funds</h3>
+        <p>
+          Oscar Wylee Chadstone accepts all leading health funds for those with
+          a valid card. Visit us in-store and our staff and process your claim
+          and provide an on-the-spot quote for frames and lenses. Oscar Wylee
+          Chadstone helps our customers navigate the ins and outs of their
+          insurance to make sure they get the best price every single time for
+          prescription glasses and sunglasses.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test" style="padding: 0px">
+      <img
+        src="{{media url='wysiwyg/locations/services/ow_smiley.png'}}"
+        alt="Styling advice"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Frames for the Fashion-Forward at Chadstone</h3>
+        <p>
+          Here at our eyeglasses shop in Chadstone - Victoria’s Fashion Capital,
+          Oscar Wylee offers prescription eyeglasses and prescription sunglasses
+          in a variety of trendy and vintage styles. Get fitted by our experts
+          in Oscar Wylee Chadstone for a frame that matches your style and
+          compliments your face shape. Plus, you can customise your lenses with
+          a number of add-ons including a blue light filter and anti-reflective
+          coating.
+        </p>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=14"
+  phone_number="(03) 9972 6771"
+  direction_map="https://g.page/r/CTsvbuXKDLGBEBM/review"}}
+</div>
+
+<script>
+  // acordian for store page -----------------------------
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      /* Toggle between adding and removing the "active" class,
+                                  to highlight the button that controls the panel */
+      this.classList.toggle("active");
+
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        this.querySelector(".icon").classList.replace("fa-minus", "fa-plus");
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        this.querySelector(".icon").classList.replace("fa-plus", "fa-minus");
+      }
+    });
+  }
+</script>

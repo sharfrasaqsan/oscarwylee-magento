@@ -1,0 +1,720 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<style>
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .store-page-accordion-heading {
+    font-size: 15px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+  }
+
+  .accordion:hover {
+    border: none;
+  }
+
+  .accordion-wrapper .accordion:first-child {
+    border-top: 1px solid #a3a3a3;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid #a3a3a3;
+  }
+
+  /* Style for the active class */
+  .active,
+  .accordion:hover {
+    background-color: #ffffff;
+  }
+
+  .accordion-wrapper .active {
+    border-bottom: 1px solid #a3a3a3 !important;
+  }
+
+  /* Style the expand and collapse icons */
+  .icon {
+    float: right;
+  }
+
+  .panel-content {
+    padding: 20px 0px;
+  }
+
+  .store-ul {
+    list-style: disc !important;
+    margin-left: 35px !important;
+  }
+
+  .store-ul li {
+    font-size: 1.4rem !important;
+    padding-left: 5px !important;
+  }
+
+  .store-page-accordion a {
+    color: #1979c3 !important;
+  }
+
+  section.store-page-accordion {
+    margin-bottom: 60px;
+  }
+</style>
+
+<div class="static-location-detail new-layout">
+  <div class="location-detail-wrapper location-content">
+    <div class="left-container">
+      <h1 class="static-location-header">Optometrist Craigieburn</h1>
+      <p class="short-content">
+        Craigieburn Central<br />Shop D32, 340 Craigieburn Road<br />Craigieburn
+        VIC 3064
+      </p>
+      <ul>
+        <li class="position">Near Coles</li>
+      </ul>
+      <div class="opening-hours">
+        <p class="title">Opening hours</p>
+        <div class="store-schedule">
+          <p>
+            <span class="schedule-label">Monday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Tuesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Wednesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Thursday</span
+            ><span class="schedule-value">9:00am - 7:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Friday</span
+            ><span class="schedule-value">9:00am - 7:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Saturday</span
+            ><span class="schedule-value">9:00am - 5:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Sunday</span
+            ><span class="schedule-value">10:00am - 5:00pm</span>
+          </p>
+          <p style="font-size: 12px">
+            *Store hours reflect local standard trading hours and exclude public
+            holidays
+          </p>
+          <p>
+            <span style="text-decoration: underline; font-size: 13px"
+              ><strong
+                ><a
+                  href="https://g.page/r/CYw90-ORWm2DEBM"
+                  target="_blank"
+                  rel="noopener"
+                  >Visit our Craigieburn Central Google Business page for
+                  directions, reviews, and updates.</a
+                ></strong
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="location-map">
+        <iframe
+          width="100%"
+          height="100%"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.384090679555!2d144.9110356!3d-37.593118499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x836d5a91e3d33d8c!2sOscar%20Wylee%20Optometrist%20-%20Craigieburn!5e0!3m2!1sen!2sau!4v1654589990364!5m2!1sen!2sau"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=138"
+  phone_number="(03) 8313 5814"
+  direction_map="https://g.page/r/CYw90-ORWm2DEBM/review"}} {{widget
+  type="Oscar\LocationReview\Block\Widget\LocationReview"
+  review_url="https://g.page/r/CYw90-ORWm2DEBM/review"
+  location_id="14505237416169560244"}} {{widget
+  type="Oscar\Booking\Block\Widget\AboutUs"
+  banner="wysiwyg/NewStorePage/StoreFront2/Craigieburn_Central.jpg"
+  description_label="Find an Optometrist in Craigieburn With Oscar Wylee"
+  description="Our Oscar Wylee store in Craigieburn Central Shopping Centre is
+  situated in the heart of Craigieburn and offers a modern shopping experience,
+  combining the best elements of both indoor and outdoor shopping. Our fully
+  qualified and registered Craigieburn optometrist is ready and able to offer
+  you a Medicare bulk billed eye health test. Speak to our friendly staff and
+  they can help you find the perfect pair of glasses for you by browsing through
+  our affordable and fashion-forward frames. Craigieburn Centre has over 2,600
+  parking spaces for your shopping convenience as well as multiple bus stops
+  close by. &lt;br&gt;&lt;br&gt; Craigieburn Centre offers a wide variety of
+  stores and services with over 160 stores including Woolworths, Aldi, Kmart, TK
+  Maxx, and United Cinemas as well as plenty of dining options, all conveniently
+  located on the ground level. Why not go exploring the mall after your eye test
+  with Oscar Wylee Craigieburn? Plan a visit to Oscar Wylee today and experience
+  some of the best optometrist services in Craigieburn, Australia."
+  first_optometrist_image="wysiwyg/NewStorePage2/Optometrist/Placeholder_Option_2.png"
+  first_optometrist_name="Optometrist"
+  second_optometrist_image="wysiwyg/NewStorePage2/StoreManager/Placeholder_Option_2.png"
+  second_optometrist_name="Store Manager"}} {{widget
+  type="Oscar\Booking\Block\Widget\LocationService" location_service="Bulk
+  Billed Eye Examinations,Professional Frame Styling,Frame Adjustments and
+  Repairs,Visual Fields Testing"}}
+
+  <!-- store page accordion -->
+  <section class="store-page-accordion">
+    <div class="accordion-wrapper">
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Find an Optometrist in Craigieburn, Melbourne for an Eye Health Test
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            An optometrist can be found in Craigieburn, Melbourne for an eye
+            health test as well as for other eye care services. Oscar Wylee
+            Craigieburn offers bulk billed eye tests for valid cardholders,
+            courtesy of Australia’s Medicare system. The average price range for
+            an optometrist in Craigieburn can vary depending on factors such as
+            the patient’s overall health and visual needs.
+          </p>
+          <p>
+            Eye tests in Oscar Wylee Craigieburn, Melbourne, will assess a
+            patient’s vision as well as check for signs of eye disease. If a
+            patient requires more advanced treatment, they will be referred to
+            an eye doctor, known as an ophthalmologist in Australia. For an eye
+            health test, choose Oscar Wylee Craigieburn in Melbourne as we have
+            dedicated optometrists and optical dispensers in-store to help with
+            all your eye care needs. You can also browse our great selection of
+            stylish frames for your optical glasses or prescription sunglasses.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////////////// -->
+
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How to Find an Optometrist in Craigieburn, Melbourne?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find an optometrist in Craigieburn, Melbourne, you can take
+            certain steps that can help make it easier for you such as
+            <b
+              >searching online, assessing the store’s opening hours and finding
+              the directions to your chosen location.</b
+            >
+            The steps on how to find an optometrist in Craigieburn are listed
+            below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, Craigieburn optometrist near me.
+              This can also be done here on the website via our locations page.
+            </li>
+            <li>
+              Click on the Oscar Wylee link, which will take you directly to our
+              Craigieburn optometrist store page.
+            </li>
+            <li>
+              See the store’s opening hours and where the store is located
+              specifically.
+            </li>
+            <li>
+              Use the Craigieburn Google Business page link located under store
+              hours to see the directions on how to get to the store.
+            </li>
+          </ol>
+
+          <p>
+            You can also find an optometrist in Craigieburn, Melbourne by
+            searching the keywords optometrist near me. If you have locations
+            enabled on your smartphone and you’re in the Craigieburn area, our
+            Oscar Wylee Craigieburn store page should appear easily for you to
+            click on.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////////////// -->
+
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          Is it Hard to Get an Eye Appointment in Craigieburn, Melbourne?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            No, it is not hard to get an eye appointment in Craigieburn. You can
+            easily book an appointment to see an Oscar Wylee optometrist in
+            Craigieburn right here on this page. At Oscar Wylee we have highly
+            qualified optometrists available for bulk billed eye appointments,
+            which can be booked online, over the phone, or in-store.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Compare Optometrists in Craigieburn to Each Other?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To compare optometrists in Craigieburn, you can use factors such as
+            eye
+            <b
+              >tests offered, health fund coverage, lens types and add-ons and
+              eyewear offered.</b
+            >
+            To take care of your vision and eye health, it is important to
+            receive an eye test at least once every two years. There are
+            different types of tests that can be performed in an eye test and
+            not all optometrists may offer the same tests. Health funds can be
+            used to help cover some of the cost of your frames and lenses. To
+            find out if your health fund is accepted at a Craigieburn
+            optometrist in Melbourne, visit their website. In the case of Oscar
+            Wylee, we accept all major health funds and provide on-the-spot
+            claims in-store. There are many different lens options available for
+            prescription glasses such as single vision, multifocal and high
+            index lenses. Most optometrists in Craigieburn will offer these
+            lenses although it is good to make sure. There are also lens add-ons
+            available to enhance your glasses such as anti-reflective and blue
+            light filters. Finally, if you are looking to purchase a pair of
+            glasses after your eye test, you can compare the different styles
+            and colours you are interested in from the optometrists in
+            Craigieburn, Melbourne. Oscar Wylee offers a wide range of frames
+            with vintage and modern inspirations in bold colours and subtle
+            designs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Find an Eyeglasses Shop in Craigieburn, Melbourne?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find a glasses store in Craigieburn, you can try to follow these
+            simple steps including
+            <b
+              >searching online, selecting a convenient location and looking at
+              their health insurance policies.</b
+            >
+            The steps on how to find a glasses store in Craigieburn, Melbourne
+            are listed below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, glasses store in Craigieburn. This
+              will provide you with various options for glasses stores in the
+              whole Craigieburn, Melbourne area.
+            </li>
+            <li>
+              Select a glasses store that is most convenient for you to travel
+              to.
+            </li>
+            <li>
+              Click the link to find out more information such as opening hours,
+              exact location and directions to the glasses store in Craigieburn.
+            </li>
+            <li>
+              Read their health insurance policies to ensure you know what
+              health benefits you can access.
+            </li>
+          </ol>
+
+          <p>
+            Our Oscar Wylee glasses store in Craigieburn, Melbourne offers
+            primary eye care services such as comprehensive eye tests as well as
+            other services performed by an optometrist and offers prescription
+            and non-prescription eyewear.
+          </p>
+        </div>
+      </div>
+
+      <!-- ////////// -->
+
+      <button class="accordion">
+        <h5 class="store-page-accordion-heading">
+          Is it Possible to Purchase Prescribed Sunglasses in Craigieburn,
+          Melbourne, Without Seeing an Optometrist?
+        </h5>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Yes and no, it is possible to
+            <a href="https://www.oscarwylee.com.au/sunglasses.html"
+              >purchase prescribed sunglasses</a
+            >
+            in Craigieburn, Melbourne without seeing an optometrist if you
+            already have a prescription that has not expired. If your
+            prescription is expired, you can book an eye test to receive an
+            updated or new prescription which will require you to see an
+            optometrist. This will ensure your prescription sunglasses are
+            appropriate for your visual needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Where is the Oscar Wylee Craigieburn Optometrist Located in Melbourne?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Craigieburn optometrist is located in Craigieburn
+            Central Shopping Centre near Coles. The Craigieburn Central Shopping
+            Centre is located in the heart of Craigieburn on Craigieburn Road.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What is the Phone Number of Oscar Wylee Craigieburn Optometrist Store?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Craigieburn optometrist store phone number is (03)
+            8313 5814. You can contact the Oscar Wylee Craigieburn store between
+            the hours of 9 am and 5:30 pm from Monday to Wednesday, 9 am and 9
+            pm on Thursdays and Fridays, 9 am and 5 pm on Saturdays and 10 am
+            and 5 pm on Sundays.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Reviews for Oscar Wylee Craigieburn Optometrist in
+          Melbourne?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The many reviews for Oscar Wylee Craigieburn optometrist in
+            Melbourne, left by our various customers can be found here on the
+            website and online when you search for Oscar Wylee Craigieburn
+            optometrist. The reviews for Oscar Wylee Craigieburn optometrist are
+            listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Sujith De Silva: </b>
+              Great service, good quality frames for a good price. Li Sang Lay
+              was a very thorough optometrist, would highly recommend going here
+              due to the very experienced staff such as John at Craigieburn
+              Oscar Wylee!
+            </li>
+            <li>
+              <b>Sandra Lewis-Hamilton: </b>
+              I rated my experience attending Oscar Wylee for my eye test 5
+              stars because the staff were efficient, thorough and attentive.
+            </li>
+            <li>
+              <b>Sadek Rashed: </b>
+              Great service all round! Friendly staff who were helpful with
+              every question I had. Well done Oscar Wylee team!
+            </li>
+            <li>
+              <b>Furqan Mahmud:</b>
+              Good facility and excellent staff.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          What Treatments or Eye Care Processes are Done in the Oscar Wylee
+          Craigieburn Optometrist Location?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The treatments or eye care processes done in the Oscar Wylee
+            Craigieburn optometrist Melbourne location include
+            <b>a tonometry test, a slit lamp exam and a refraction test.</b>
+            Additional tests that may also be performed can include
+            <b>a visual field test and a dilated fundus exam.</b> The treatments
+            or eye-care processes that are done in the Oscar Wylee Craigieburn
+            optometrist Melbourne location are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>A Tonometry Test:</b> An optometrist or optical dispenser will
+              conduct a tonometry test which involves the use of a machine that
+              will release small puffs of air into your eyes. This will assist
+              with measuring pressure in the eye.
+            </li>
+            <!-- <li>
+                            <b>A Digital Photograph:</b> An optometrist or optical dispenser
+                            may take a digital photograph of your eye which can be kept on
+                            record to use in future appointments to evaluate any changes to
+                            your eye.
+                        </li> -->
+            <li>
+              <b>Slit Lamp Test:</b> A slit lamp test can be used to evaluate
+              your eye health, by examining your cornea and iris which are the
+              anterior and posterior of the eye.
+            </li>
+            <li>
+              <b>Refraction Test:</b> During a refraction test, an optometrist
+              will have you view an image through different lenses and ask you
+              to confirm which helps you see the image clearer.
+            </li>
+            <li>
+              <b>Visual Field Test:</b> A visual field test can assist with
+              assessing your peripheral vision, which may be beneficial for
+              identifying any signs of glaucoma.
+            </li>
+            <li>
+              <b>Dilated Fundus Exam:</b> A dilated fundus exam can help an
+              optometrist assess your health in more detail by getting a clear
+              view of the retina. This test is typically carried out for
+              patients with diabetes and those who may be at risk of developing
+              retinal damage.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How Many Optometrists Exist in Craigieburn, Melbourne?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            There are many optometrists that exist in Craigieburn, Melbourne to
+            provide eye tests and glasses, including Oscar Wylee. The number of
+            optometrists available in an area will typically depend on the
+            population. At Oscar Wylee Craigieburn, we offer excellent optometry
+            services including eye tests performed by skilled optometrists using
+            high-quality equipment. We also have a wide range of fashion-forward
+            frames that customers can browse in a large selection of sizes and
+            colours. If you’re looking for an optometrist in Craigieburn, choose
+            Oscar Wylee and we will take care of your optometry and eyewear
+            needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Other Closest Optometrist Locations to Craigieburn,
+          Melbourne in Australia?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The other closest Oscar Wylee optometrist locations to Craigieburn
+            in Australia are <b>Epping, Broadmeadows and Plenty Valley.</b> The
+            locations and their distance from Craigieburn are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Epping: </b>
+              Epping is a suburb approximately 16 km away from Craigieburn where
+              you can find optometrists including Oscar Wylee.
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-epping.html"
+                >Oscar Wylee Pacific Epping</a
+              >
+              is located on the ground floor of the Pacific Epping Shopping
+              Centre, where our team are available to provide a range of eye
+              care services.
+            </li>
+            <li>
+              <b>Broadmeadows: </b>
+              Broadmeadows is close to Craigieburn, around 13 km. The
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-broadmeadows.html"
+                >Oscar Wylee Broadmeadows</a
+              >
+              store is located in Broadmeadows Central, next to My Chemist. An
+              Oscar Wylee optometrist in Broadmeadows can provide bulk billed
+              eye tests and prescription updates.
+            </li>
+            <li>
+              <b>Plenty Valley: </b>
+              Plenty Valley is close to Craigieburn, around 20 km. The
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-plenty-valley.html"
+                >Oscar Wylee Plenty Valley</a
+              >
+              store is located in Westfield Plenty Valley, near Kmart. Here you
+              will find excellent eye care and eyewear services including eye
+              tests and frame styling.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="eye-health">
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_01.png'}}"
+        alt="In store eye test"
+      />
+      <div>
+        <h3>Bulk Billed Eye Tests in Craigieburn</h3>
+        <p>
+          Oscar Wylee Craigieburn offers optometrist-led eye tests and eye care
+          processes in-store for valid Medicare cardholders. Come in and have
+          your vision tested, your eye health checked for certain diseases and
+          your prescription updated. Book an eye test with our trusted
+          optometrist and Oscar Wylee in Craigieburn Central can keep you
+          up-to-date on your eyesight and eye health needs.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_02.png'}}"
+        alt="Health funds accepted"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Oscar Wylee Accepts Health Funds</h3>
+        <p>
+          Oscar Wylee in Craigieburn accepts leading health funds including
+          Medibank, Bupa and NIB. Bring a valid health fund card to your next
+          appointment in-store and our friendly staff can provide an on-the-spot
+          quote and process your claim. Trust our Oscar Wylee eyeglasses shop in
+          Craigieburn to ensure you get the best price every single time for all
+          of your prescription glasses needs.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test" style="padding: 0px">
+      <img
+        src="{{media url='wysiwyg/locations/services/ow_smiley.png'}}"
+        alt="Styling advice"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Fashion-Forward Glasses at Oscar Wylee</h3>
+        <p>
+          Here at our Oscar Wylee store in Craigieburn Central, you can browse a
+          wide range of prescription glasses and prescription sunglasses in a
+          variety of modern and vintage-inspired styles. Our experts can find a
+          frame that suits your face shape and compliments your personal style.
+          You can also choose to optimise your lenses from our selection of
+          add-ons such as a blue light filter or anti-reflective coating. Visit
+          Oscar Wylee Craigieburn for all your eyewear needs.
+        </p>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=138"
+  phone_number="(03) 8313 5814"
+  direction_map="https://g.page/r/CYw90-ORWm2DEBM/review"}}
+</div>
+
+<script>
+  // acordian for store page -----------------------------
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      /* Toggle between adding and removing the "active" class,
+                                  to highlight the button that controls the panel */
+      this.classList.toggle("active");
+
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        this.querySelector(".icon").classList.replace("fa-minus", "fa-plus");
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        this.querySelector(".icon").classList.replace("fa-plus", "fa-minus");
+      }
+    });
+  }
+</script>

@@ -1,996 +1,1192 @@
-<footer class="footer-accordion">
-<section class="new-accordian">
-<article class="faq">
-<h2 class="accordion">Optometry Australia: Find Optometrist Near Me</h2>
-<div class="answer">
-<p>Optometry is defined as the profession and practice of examining, diagnosing and treating eye conditions and ensuring the general eye and vision health of patients. It involves using special equipment to evaluate whether you require prescription glasses and to maintain good eye health. Optometrists are healthcare professionals who are qualified to test and examine patients’ eyes and their quality of vision, prescribe glasses and medication for minor eye problems and are able to identify signs of more serious conditions. Optical dispensers are eye care professionals that have been trained to fit and dispense frames and lenses based on the prescription provided by an optometrist or ophthalmologist. The term optician is used <a href="https://www.oscarwylee.com.au/">internationally</a> but referred to as an optical dispenser in Australia.</p>
-<p>At Oscar Wylee, you can get your eyes tested, update your prescription and shop for your glasses on the same day, however, you will not be able to receive your prescription glasses on the same day. For non-prescription sunglasses, you can browse from our wide range and get them on the day</p>
-<p>We have fully-trained and licensed optometrists in every store, with high-quality services and equipment. Oscar Wylee was first established as an online e-commerce business back in 2012 and continued advancing in the eyewear industry with reputable services both online and in-store across Australia, New Zealand and Canada and currently has over 120 stores across Australia</p>
-<p>In Australia, there are currently 6,796 registered optometrists, this number includes 284 non-practising optometrists and 17 with limited registration according to the Optometry Board of Australia as of January 2023. The total also includes the group of optometrists with no principal place of practice; which includes 60 with general registration, 4 with limited registration and 78 non-practising. The total number of optometrists in Australia consists of a varying number in each state and territory. In ACT, there are 118 optometrists with general registration and 3 non-practising optometrists. In NSW, there are currently 2,085 general optometrists, 2 limited registration and 60 of those are non-practising. NT has 35 general registered optometrists. QLD has 1,322 general registered optometrists, 2 limited and 39 non-practising. SA consists of 440 general registered optometrists and 9 non-practising. TAS currently has 121 general registered, 1 limited and 2 non-practising. VIC has 1,784 general registered, 4 limited and 57 non-practising. WA has 517 general registered, with 5 limited and 10 non-practising.</p>
-<p>You can easily find your nearest Oscar Wylee store on this locations page of our website. Find Optometrist Near Me is a way for you to find an Oscar Wylee optometrist within the area you live in. There are a few things to consider before taking an appointment with an optometrist. It is important to be familiar with what type of services optometrists have to offer so you can get a better understanding of what you can expect during your appointment. Consult with your optometrist on what you may need to bring to your appointment and if there is anything you need to prepare beforehand. Finally, ensure you have assistance with transport as the optometrist may be required to use eye drops for pupil dilation, this can cause blurred vision temporarily and sensitivity to light which may prevent you from driving or working for up to 1-24 hours. An optometrist is not an eye doctor so if they identify signs of a serious problem with your eyes or vision, they will refer you to an ophthalmologist.</p>
-<div class="accordion-img-wrapper"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_02_Find_an_Optometrist_in_Australia_900x600.jpg" alt="Find an optometrist in Australia"></div>
-</div>
-</article>
-<article class="faq">
-<h2 class="accordion">How to Find an Optometrist in Australia?</h2>
-<div class="answer">
-<p>You can find an optometrist in Australia by taking a few essential steps that may help make it easier. The steps on how to find an optometrist in Australia are listed below.</p>
-<ol>
-<li>First, search online where you can look for your nearest Oscar Wylee store. This can be done by either searching for Oscar Wylee stores near me or by directly using this locations page.</li>
-<li>Second, when you find an Oscar Wylee store that is most convenient for you, clicking on the link will take you directly to the page where you can click the ‘book appointment’ button.</li>
-<li>Third, you can also book directly on this page by clicking on the specific location based on your region.</li>
-<li>Finally, select from the available times, you will then be taken to the final step where you will need to enter your details, email and phone number.</li>
-</ol>
-<div class="accordion-img-wrapper"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_02_Find_an_Optometrist_in_Australia_900x600.jpg" alt="Find an optometrist in Australia"></div>
-</div>
-</article>
-<article class="faq">
-<h2 class="accordion">How to Take an Optometrist Appointment in Australia?</h2>
-<div class="answer">
-<p>An optometrist appointment will involve a series of tests and exams to evaluate your eye and vision health and determine whether you need glasses. These tests and exams will help the optometrist determine what grade of prescription you may need. When going to your appointment, you will need to bring your eyeglasses if you already own prescription glasses and your Medicare card. Your optometrist may also ask you some questions about your medical history. The procedure of your appointment will involve confirmation of your Medicare card number and any other health insurance you may have. You will then undergo a preliminary eye assessment, a detailed eye assessment and then finally your optometrist will take time to explain their findings and advise of the recommendations that cater to your visual needs.</p>
-<h4 style="margin-bottom: 10px;">What to Know Before Seeing an Optometrist?</h4>
-<p>Preparing yourself before coming in to see an optometrist may be helpful for the overall process, ensuring you are well-informed. The information to know before seeing an optometrist is listed below.</p>
-<ul>
-<li>Make sure you know what your symptoms are if you’re experiencing any changes or problems with your vision.</li>
-<li>A series of eye tests will be conducted to determine whether you need prescription glasses and to ensure your eyes and vision are healthy.</li>
-<li>Be prepared to inform the optometrist of your current medications for your eyes or existing conditions as well as your medical history.</li>
-<li>If you already own prescription glasses, be sure to bring them with you to your appointment so your optometrist will better understand your visual needs.</li>
-<li>Oscar Wylee offers bulk-billing services for Medicare card holders across New South Wales, Australian Capital Territory, Queensland, Northern Territory, South Australia, Victoria, Western Australia and Tasmania.</li>
-</ul>
-<div class="accordion-img-wrapper"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_03_An_Optom_Appointment_in_Australia_900x600.jpg" alt="An optometrist appointment in Australia"></div>
-</div>
-</article>
-<article class="faq">
-<h2 class="accordion">What Treatments does an Optometrist perform?</h2>
-<div class="answer">
-<p>Optometrists are healthcare professionals who can perform treatments that may help correct refractive errors, double vision and treat eye infections by prescribing glasses and/or eye drops. The treatments optometrists can perform according to Cleveland Clinic are listed below.</p>
-<ul>
-<li><strong>Refractive Errors:</strong> Refractive errors such as nearsightedness (myopia), farsightedness (hyperopia), presbyopia (age-related farsightedness) and astigmatism are common blurry vision problems that occur due to the shape of your eye preventing light from focusing on your retina. Optometrists can diagnose these conditions and prescribe glasses that may help correct them.</li>
-<li><strong>Double Vision:</strong> Double vision can be caused by a range of other problems or conditions, the optometrist will need to perform an eye test and first determine what may be causing it in order to treat it. Optometrists can advise on proper fitting glasses or certain eye exercises to help. If the underlying problem is a more serious condition you may be referred to an ophthalmologist.</li>
-<li><strong>Eye Infections:</strong> Eye infections can be minor issues and may only need antihistamine or antibacterial eye drops. If you are concerned about your symptoms you can consult with your optometrist.</li>
-</ul>
-<p>According to Optometry Australia, the Royal Australian and New Zealand College of Ophthalmologists (RANZCO) is planning to produce guidelines for optometrists to be able to administer intravitreal injections for patients with neovascular macular degeneration.</p>
-<div class="accordion-img-wrapper"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_04_Treatments_an_Optom_Performs_900x600.jpg" alt="The treatments an optometrist performs"></div>
-</div>
-</article>
-<article class="faq">
-<h2 class="accordion">Is an Optical Dispenser Different from an Optometrist?</h2>
-<div class="answer">
-<p>Yes, an optical dispenser is different from an optometrist <strong>due to their job responsibilities, education and training.</strong> Optical dispensers are responsible for dispensing frames and lenses according to the prescription supplied by an optometrist or an ophthalmologist. Optical dispensers are experts in assisting customers with selecting frames and lenses suitable for their face shape and facial features. An optometrist is responsible for conducting eye examinations for eye and vision health, for prescription glasses and to ensure there are no signs of eye conditions or diseases. Optometrists are qualified to treat minor eye problems and conditions and can refer you to an ophthalmologist if they do detect symptoms of a more serious eye condition or disease. An ophthalmologist is an eye care specialist that is qualified to diagnose and manage eye diseases and perform eye surgeries. Optical dispensers are required to complete a Certificate IV in optical dispensing and optometrists must complete a degree in optometry recognised by the Optometry Board of Australia and New Zealand, residence training and apply for graduate registration with the Australian Health Practitioner Regulation Agency (AHPRA).</p>
-<div class="accordion-img-wrapper"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_05_Optical_Dispenser_and_Optometrist_900x600.jpg" alt="Optical Dispenser and Optometrist"></div>
-</div>
-</article>
-<article class="faq">
-<h2 class="accordion">What is the Average Duration of Eye Treatment with an Optometrist?</h2>
-<div class="answer">
-<p>The average duration of eye treatment with an optometrist depends on the varying factors of an individual’s visual needs. At Oscar Wylee, we allocate approximately 20 minutes for each eye test, however, this time frame can vary, especially for those who have more complex eye conditions that require more extensive testing. Eye treatment may be in the form of prescribing glasses or regular eye checkups. Comprehensive eye exams may take longer as this may include initial testing, discussing options for treatment and any further recommendations for eye care and management. If your optometrist sees any signs of concern, they may take additional tests before possibly referring you to an ophthalmologist. The duration of treatment can change for those who need prescription glasses to those who already own prescription glasses and may need adjustments or for those who are coming in for a specific issue.</p>
-<div class="accordion-img-wrapper"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_06_Average_Duration_of_an_Eye_Test_900x600.jpg" alt="Average duration for an eye test"></div>
-</div>
-</article>
-<article class="faq">
-<h2 class="accordion">How does Eye Care Quality change from location to location in Australia?</h2>
-<div class="answer">
-<p>Eye care quality can change from location to location in Australia based on accessibility, optometry workforce availability, resources and facilities. Australians living in areas outside the major cities were found to have poor access to health services than Australians living in major cities; there are 4.8 and 3.6 attendances per person for remote areas in comparison to 6.4 visits per person for those living in major cities and inner regional areas according to Katerina Kiburg, Mingguang He and Angus Turner in a paper published in the Clinical and Experimental Ophthalmology Journal. Location matters as accessibility and a sufficient number of practising optometrists become more limited in more remote areas.</p>
-<p>Factors for eye care quality include five key areas that consist of the required standards for quality entry-level optometry care according to Optometry Australia. These five key areas include clinical care providers, professional and ethical practitioners, communicators and collaborators, scholars and lifelong learners and quality and risk managers. These five domains for assurance of quality eye care in Australia outline the optometrist’s responsibilities in meeting the patient and community’s health and well-being requirements professionally and ethically and their effective and appropriate communication that will enable inclusivity of all patients and their responsibility to work with others to provide high-quality care. It also includes the requirement of their knowledge and skills to provide safe, holistic and culturally responsive and patient-centred care, their responsibility to continue engaging in evidence-based practice, ongoing improvement through professional learning and to carefully monitor their actions through reflective processes. Finally, their responsibility to prevent harm to patients and others through the management and response to risks that may naturally occur in optometry is fundamental to the required entry-level competency standards according to Optometry Australia.</p>
-<div class="accordion-img-wrapper"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_07_Eyecare_Quality_in_Australia_900x600.jpg" alt="Eye care quality in Australia"></div>
-</div>
-</article>
-<article class="faq">
-<h2 class="accordion">What is the Cost of an Optometrist Treatment in Australia?</h2>
-<div class="answer">
-<p>At Oscar Wylee, the cost of an optometrist eye test in Australia may be covered by Medicare for eligible cardholders so there are no out-of-pocket expenses. This process is called bulk billing and is part of the Australian Government’s health coverage system known as Medicare. If you are not covered under Medicare, eye tests cost $70 each.</p>
-<div class="accordion-img-wrapper"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_08_Cost_of_an_optometrist_eye_test_in_Australia-900x600.jpg" alt="Cost of an optometrist eye test in Australia"></div>
-</div>
-</article>
-<article class="faq">
-<h2 class="accordion">Is the Cost of Optometry in Sydney higher than in other regions in Australia?</h2>
-<div class="answer">
-<p>The cost of optometry in Sydney aligns similarly with other regions in Australia. Most optometrists usually offer bulk-billing services for eligible Medicare cardholders.</p>
-<div class="accordion-img-wrapper"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_09_An-optometrist-eye-test-in-Sydney_900x600.jpg" alt="An optometrist eye test in Sydney"></div>
-</div>
-</article>
-<article class="faq">
-<h2 class="accordion">Is it easier to get "Same Day Glasses" in Sydney?</h2>
-<div class="answer">
-<p>It is easier to get same-day glasses in Sydney, mainly in case of an emergency. However, at Oscar Wylee, we do not offer same-day glasses. For non-urgent cases, it is advisable to wait until the expected time it may take according to your optometrist for your glasses to arrive and be ready for collection.</p>
-<div class="accordion-img-wrapper"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_10_Glasses_in_Sydney_900x600.jpg" alt="Glasses in Sydney. An image of Sydney."></div>
-</div>
-</article>
-<article class="faq">
-<h2 class="accordion">How to Find an Optometrist in Different Locations in Australia?</h2>
-<div class="answer">
-<p>To find an optometrist in different locations in Australia, you can look through the list above, choose from any of the stores listed in your region and then select a store based on your specific location. There are over 120 stores across Australia in all regions. The process for finding an optometrist in different locations is the same across all of our Oscar Wylee stores. In major cities in Australia, it may be easier to find optometrists in more metro locations than in regional or rural areas due to the shortage of practising optometrists and long distances of travel to access these services.</p>
-<div class="accordion-img-wrapper"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_11_Find_an_Optom_in_Different_Locations_in_Australia-900x600.jpg" alt="Find an Optometrist in Different Locations in Australia?"></div>
-</div>
-</article>
-</section>
-</footer><!-- banner start -->
-<section class="new-banner">
-<div class="desktop-banner"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/new-location-page/Locations_Image_Logo_1.jpg" alt="How to Find an Optometrist Location in Australia?"></div>
-<div class="mobile-banner"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/new-location-page/Locations_Image_Mobile_Logo_1.jpg" alt="How to Find an Optometrist Location in Australia?"></div>
-</section>
-<!-- banner end -->
-<p></p>
-<!-- dropdown start -->
-<section class="new-dropdown"><!-- <select id="myDropdown" onfocus="this.size=5;" onblur="this.size=1;" onchange="showAlert(); this.size=1; this.blur();"> --><select id="myDropdown">
-<option>Select an Optometrist Location</option>
-<optgroup label="ACT">
-<option value="belconnen">Belconnen Optometrist</option>
-<option value="canberra-centre">Canberra Optometrist</option>
-<option value="tuggeranong">Tuggeranong Optometrist</option>
-<option value="woden">Woden Optometrist</option>
-</optgroup>
-<optgroup label="NSW"><!-- <option value="bowral">Bowral Optometrist</option> --> <!-- <option value="dubbo-orana-mall">Dubbo Optometrist</option> --> <!-- <option value="salamander-bay">Salamander Bay Optometrist</option> -->
-<option value="albrny">Albury Optometrist</option>
-<option value="bankstown">Bankstown Optometrist</option>
-<option value="blacktown">Blacktown Optometrist</option>
-<option value="bondi-junction">Bondi Junction Optometrist</option>
-<option value="broadway">Broadway Optometrist</option>
-<option value="burwood">Burwood Optometrist</option>
-<option value="castle-towers">Castle Towers Optometrist</option>
-<option value="charlestown-square">Charlestown Optometrist</option>
-<option value="chatswood-chase">Chatswood Optometrist</option>
-<option value="eastgardens">Eastgardens Optometrist</option>
-<option value="erina-fair">Erina Optometrist</option>
-<option value="green-hills">Green Hills Optometrist</option>
-<option value="hornsby">Hornsby Optometrist</option>
-<option value="hurstville">Hurstville Optometrist</option>
-<option value="kotara">Kotara Optometrist</option>
-<option value="liverpool">Liverpool Optometrist</option>
-<option value="macarthur-square">Macarthur Square Optometrist</option>
-<option value="macquarie-centre">Macquarie Centre Optometrist</option>
-<option value="merrylands">Merrylands Optometrist</option>
-<option value="miranda-westfield">Miranda Optometrist</option>
-<option value="mt-druitt">Mt Druitt Optometrist</option>
-<option value="narellan-town-centre">Narellan Optometrist</option>
-<option value="newtown">Newtown Optometrist</option>
-<option value="orange">Orange Optometrist</option>
-<option value="parramatta">Parramatta Optometrist</option>
-<option value="penrith">Penrith Optometrist</option>
-<option value="rhodes-waterside">Rhodes Optometrist</option>
-<option value="rouse-hill">Rouse Hill Optometrist</option>
-<option value="shelharbour-stockland">Shelharbour Optometrist</option>
-<option value="st-ives">St Ives Optometrist</option>
-<option value="the-galeries">Sydney CBD-The Galeries Optometrist</option>
-<option value="top-ryde">Top Ryde Optometrist</option>
-<option value="tuggerah">Tuggerah Optometrist</option>
-<option value="tweed-city">Tweed City Optometrist</option>
-<option value="wagga-wagga">Wagga Wagga Optometrist</option>
-<option value="warringah">Warringah Optometrist</option>
-<option value="wetherill-park">Wetherill Park Optometrist</option>
-<option value="winston-hills">Winston Hills Optometrist</option>
-<option value="wollongong">Wollongong Optometrist</option>
-</optgroup>
-<optgroup label="NT">
-<option value="casuarina">Casuarina Optometrist</option>
-</optgroup>
-<optgroup label="QLD">
-<option value="brisbane-albert-st">Brisbane-Albert St Optometrist</option>
-<option value="cairns-central">Cairns Optometrist</option>
-<option value="capalaba">Capalaba Optometrist</option>
-<option value="carindale">Carindale Optometrist</option>
-<option value="chermside">Chermside Optometrist</option>
-<option value="helensvale">Helensvale Optometrist</option>
-<option value="indooroopilly">Indooroopilly Optometrist</option>
-<option value="kawana">Kawana Optometrist</option>
-<option value="loganholme">Loganholme Optometrist</option>
-<option value="mackay">Mackay Optometrist</option>
-<option value="maroochydore">Maroochydore Optometrist</option>
-<option value="morayfield">Morayfield Optometrist</option>
-<option value="mt-gravatt">Mt Gravatt Optometrist</option>
-<option value="noosa">Noosa Optometrist</option>
-<option value="north-lakes">North Lakes Optometrist</option>
-<option value="pacific-fair">Pacific Fair Optometrist</option>
-<option value="robina">Robina Optometrist</option>
-<option value="rockhampton">Rockhampton Optometrist</option>
-<option value="southport">Southport-Australia Fair Optometrist</option>
-<option value="orion-springfield">Springfield Optometrist</option>
-<option value="strathpine">Strathpine Optometrist</option>
-<option value="toowoomba">Toowoomba Optometrist</option>
-<option value="townsville">Townsville Optometrist</option>
-</optgroup>
-<optgroup label="SA">
-<option value="colonnades">Colonnades Optometrist</option>
-<option value="elizabeth-city-centre">Elizabeth Optometrist</option>
-<option value="marion">Marion Optometrist</option>
-<option value="rundle-mall">Rundle Mall Optometrist</option>
-<option value="tea-tree-plaza">Tea Tree Plaza Optometrist</option>
-<option value="west-lakes">West Lakes Optometrist</option>
-</optgroup>
-<optgroup label="TAS">
-<option value="hobart">Hobart Optometrist</option>
-<option value="launceston">Launceston Optometrist</option>
-<option value="rosny-park">Rosny Park Optometrist</option>
-</optgroup>
-<optgroup label="VIC"><!-- <option value="melbourne-swanston-st">Melbourne-Swanston St Optometrist</option> -->
-<option value="airport-west">Airport West Optometrist</option>
-<option value="bendigo">Bendigo Optometrist</option>
-<option value="broadmeadows">Broadmeadows Optometrist</option>
-<option value="chadstone">Chadstone Optometrist</option>
-<option value="chirnside-park">Chirnside Park Optometrist</option>
-<option value="craigieburn">Craigieburn Optometrist</option>
-<option value="cranbourne-park">Cranbourne Park Optometrist</option>
-<option value="dandenong">Dandenong Optometrist</option>
-<option value="doncaster">Doncaster Optometrist</option>
-<option value="eastland">Eastland Optometrist</option>
-<option value="epping">Epping Pacific Optometrist</option>
-<option value="forest-hill">Forest Hill Optometrist</option>
-<option value="fountain-gate">Fountain Gate Optometrist</option>
-<option value="geelong">Geelong Optometrist</option>
-<option value="glen-waverley">Glen Waverley Optometrist</option>
-<option value="greensborough">Greensborough Optometrist</option>
-<option value="highpoint">Highpoint Optometrist</option>
-<option value="keilor-downs">Keilor Downs Optometrist</option>
-<option value="knox">Knox Optometrist</option>
-<option value="melbourne-central">Melbourne Central Optometrist</option>
-<option value="melbourne-chapel-st">Melbourne-Chapel St Optometrist</option>
-<option value="melton">Melton Optometrist</option>
-<option value="mildura">Mildura Optometrist</option>
-<option value="moonee-ponds">Moonee Ponds Optometrist</option>
-<option value="mornington">Mornington Optometrist</option>
-<option value="northland">Northland Optometrist</option>
-<option value="plenty-valley">Plenty Valley Optometrist</option>
-<option value="shepparton">Shepparton Optometrist</option>
-<option value="southland">Southland Optometrist</option>
-<option value="traralgon">Traralgon Optometrist</option>
-<option value="victoria-gardens">Victoria Gardens Optometrist</option>
-<option value="watergardens">Watergardens Optometrist</option>
-<option value="werribee">Werribee Optometrist</option>
-</optgroup>
-<optgroup label="WA"><!-- <option value="fremantle">Fremantle Optometrist</option> -->
-<option value="booragoon">Booragoon Optometrist</option>
-<option value="carousel">Carousel Optometrist</option>
-<option value="claremont-quarter">Claremont Optometrist</option>
-<option value="hillarys-whitford-city">Hillarys Optometrist</option>
-<option value="joondalup">Joondalup Optometrist</option>
-<option value="karrinyup">Karrinyup Optometrist</option>
-<option value="mandurah">Mandurah Optometrist</option>
-<option value="midland-gate">Midland Gate Optometrist</option>
-<option value="morley">Morley Optometrist</option>
-<option value="rockingham">Rockingham Optometrist</option>
-</optgroup>
-</select><!-- start of ACT -->
-<div id="canberra-centre" class="store-details" style="display: none;">
-<h3>Optometrist in Canberra Centre</h3>
-<p>Come visit our optometrist in Canberra Centre Oscar Wylee, which is located in the heart of Canberra’s Central Business District, in Australia’s capital with over 450,000 residents. Our in-store optometrists are available to provide bulk billed eye tests as well as an eye treatment appointment in Canberra Centre. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-canberra-centre.html">Canberra Centre optometrists</a> perform assessment and diagnosis for eye conditions and for more advanced conditions will refer patients to an ophthalmologist, also known as an eye doctor, in Canberra Centre. Plan your trip to see our Oscar Wylee Canberra Centre optometrist where you can browse our wide range of on-trend and vintage frames as well as shop for non-prescription and prescription sunglasses.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Canberra_900x600_c.jpg" alt="Optometrist in Canberra Centre"></div>
-</div>
-<div id="belconnen" class="store-details" style="display: none;">
-<h3>Optometrist in Belconnen</h3>
-<p>Book a bulk billed Oscar Wylee eye test with an optometrist in Belconnen, close to areas including Bruce, Macquarie or Page, with over 90,000 residents. An eye treatment appointment in Belconnen can be performed by our trusted and skilled Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-belconnen.html">Belconnen optometrists</a>. Patients can also get their prescriptions updated and shop for their glasses or prescription glasses, all on the same day! Although there is no eye doctor in Belconnen at Oscar Wylee, patients may be referred to one who can provide advanced treatment. Come and visit the team in-store for optometry services provided by our Oscar Wylee Belconnen optometrist.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Belconnen_900x600_c.jpg" alt="Optometrist in Belconnen"></div>
-</div>
-<div id="tuggeranong" class="store-details" style="display: none;">
-<h3>Optometrist in Tuggeranong</h3>
-<p>Visit Oscar Wylee’s <a href="https://www.oscarwylee.com.au/locations/optometrist-tuggeranong.html">Tuggeranong optometrists</a>, located in the South.Point Shopping Centre which is local to the areas of Greenway, Oxley and Bonython. Our optometrist in Tuggeranong provides bulk billed eye tests for eligible Medicare cardholders and for more advanced eye conditions, they may refer patients to an eye doctor in Tuggeranong. For an eye treatment appointment in Tuggeranong, Oscar Wylee is the place to go, plus we have a wide range of stylish frames and prescription sunglasses you can browse in-store. Our Oscar Wylee optometrist offers services to over 85,000 residents of Tuggeranong.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Tuggeranong_900x600_c.jpg" alt="Optometrist in Tuggeranong"></div>
-</div>
-<div id="woden" class="store-details" style="display: none;">
-<h3>Optometrist in Woden</h3>
-<p>Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-woden.html">Woden optometrists</a> offer high-quality optometry services including bulk billed eye tests. For an eye treatment appointment in Woden, visit our Oscar Wylee store where you can also browse our wide range of vintage and on-trend glasses and prescription glasses. While there is not an eye doctor in Woden Oscar Wylee, our optometrist in Woden can refer patients where necessary. Come in and see the team at Oscar Wylee Woden today to experience our excellent optometrist and eyewear range catering to the 40,000 residents in Woden.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Woden_900x600_c.jpg" alt="Optometrist in Woden"></div>
-</div>
-<!-- end of ACT --> <!-- start of  NSW -->
-<div id="albrny" class="store-details" style="display: none;">
-<h3>Optometrist in Albury</h3>
-<p><a href="https://www.oscarwylee.com.au/locations/optometrist-albury.html">Albury optometrists</a> offer eye testing, prescription glasses and prescription sunglasses among the many services available. Our Oscar Wylee team cares about your eye health just as much as your customer experience, we have a qualified optometrist in Albury that will be available for any help you may need. Just like at all our Oscar Wylee stores you can expect care and excellence during your eye treatment appointment in Albury. While we do not have an eye doctor in Albury we do have an optometrist and optical dispenser that work together to ensure quality service for the Albury residents of over 56,000. You can easily make an appointment on our website to see our optometrists in Albury today</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Albury_900x600_c.jpg" alt="Optometrist in Albury"></div>
-</div>
-<div id="bankstown" class="store-details" style="display: none;">
-<h3>Optometrist in Bankstown</h3>
-<p>Make your way to our store to see our capable team and optometrists in Bankstown for primary eye care services including quality eye tests and issuing and renewing prescriptions. If you’re in need of an eye treatment appointment in Bankstown, we’ve got you covered, we can also help you with choosing the best pair of prescription glasses and prescription sunglasses. You can visit us in-store or book here on our website and our <a href="https://www.oscarwylee.com.au/locations/optometrist-bankstown.html">Bankstown optometrists</a> will be happy to carry out all the necessary services for your visual requirements. If our team identifies any signs of a more serious condition that requires further examination, you’ll be referred to an eye doctor in Bankstown. Our Oscar Wylee team are dedicated to providing the over 371,000 residents of Bankstown with the best optometry services.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Bankstown_900x600.jpg" alt="Optometrist in Bankstown"></div>
-</div>
-<!-- <div id="bowral" class="store-details" style="display: none;">
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap");
 
+#maincontent {
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #333333;
+}
 
+html {
+  scroll-behavior: smooth;
+}
 
-            <h3>Optometrist in Bowral</h3>
-            <p>
-                You can come visit an optometrist in Bowral for all your eye care health and needs. We do
-                not have an
-                eye doctor in Bowral. However, our team are trained to deliver quality eye tests and
-                prescription for
-                glasses and sunglasses. Our <a
-                    href="https://www.oscarwylee.com.au/locations/optometrist-bowral.html">Bowral
-                    optometrists</a> will
-                endeavour to make sure the over 12,000 residents of
-                Bowral have the full customer experience in-store. For an eye appointment treatment in
-                Bowral, you can
-                make a booking here on the website. Our optical dispenser and optometrist in Bowral will
-                also be able to
-                assist you with any concerns about the management of your glasses.
-            </p>
+.footer-item h4,
+.footer-item h3,
+.help-block h3,
+.copyright span {
+  color: #fff;
+}
 
-            <div class="dropdown-image-wrapper">
-                <img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Bowral_900x600_c.jpg"
-                    alt="Optometrist in Bowral" class="dropdown-image" loading="lazy" />
-            </div>
+body {
+  color: #333333;
+}
 
+*,
+page-main {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  /* color: #333333; */
+}
 
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
 
-        </div> -->
-<div id="blacktown" class="store-details" style="display: none;">
-<h3>Optometrist in Blacktown</h3>
-<p>Our <a href="https://www.oscarwylee.com.au/locations/optometrist-blacktown.html">Blacktown optometrists</a> aim to provide the city of over 430,000 residents with professional care and services to guarantee a true Oscar Wylee in-store experience. We have an optometrist in Blacktown that can assist with selecting the right prescription glasses and prescription sunglasses. We do not have an eye doctor in Blacktown but we have a highly-trained team on site. Your eye treatment appointment in Blacktown may involve a series of tests to ensure your eyes and vision are healthy. If you have any vision-related questions, come visit an optometrist in Blacktown.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Blacktown_900x600_c.jpg" alt="Optometrist in Blacktown"></div>
-</div>
-<div id="bondi-junction" class="store-details" style="display: none;">
-<h3>Optometrist in Bondi Junction</h3>
-<p>At Oscar Wylee, our <a href="https://www.oscarwylee.com.au/locations/optometrist-bondi-junction.html">Bondi Junction optometrists</a> are committed to providing the over 11 thousand residents of Bondi with comprehensive eye tests, diagnosing eye conditions and prescribing glasses. Our optometrist in Bondi Junction can help you with any concerns you may have about your eye and vision health or your prescriptions. They are also available for an eye treatment appointment in Bondi Junction. We do not have an eye doctor in Bondi Junction but we do have optometrists and optical dispensers on-site at every location. For prescription sunglasses, our optometrists at Bondi Junction Westfield can also help you with selecting the most suitable pair.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Bondi_Junction_900x600_c.jpg" alt="Optometrist in Bondi Junction"></div>
-</div>
-<div id="broadway" class="store-details" style="display: none;">
-<h3>Optometrist in Broadway</h3>
-<p>Our optometrists in Broadway are able to provide you with a prescription for glasses and sunglasses. They can assist you with selecting suitable frames and offer repair or replacement for issues with vision in everyday use for claims made within 30 days of delivery. If our <a href="https://www.oscarwylee.com.au/locations/optometrist-broadway.html">Broadway optometrists</a> detect signs of a more complex condition, you may be directed to an ophthalmologist as we do not have an eye doctor in Broadway. Our Oscar Wylee team will strive to cover any concerns you may have and are available to book you an eye treatment appointment in Broadway. You can try our frames on in our Broadway store and get some professional assistance from our capable optometrists.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Broadway_900x600_c.jpg" alt="Optometrist in Broadway"></div>
-</div>
-<div id="burwood" class="store-details" style="display: none;">
-<h3>Optometrist in Burwood</h3>
-<p>Our optometrists in Burwood are fully trained in conducting all the essential eye tests such as visual field testing, visual acuity and an eye treatment appointment in Burwood. Although we do not have an eye doctor in Burwood, we can still ensure quality services for our customers. At Oscar Wylee, our eye tests are bulk billed for eligible Medicare card holders and repairs or a replacement for problems occurring with vision during everyday use for claims within 30 days of delivery. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-burwood.html">Burwood optometrists</a> are able to help the over 40,000 residents who call Burwood home, whether it's for prescription glasses and sunglasses or general enquiries about eye health.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Burwood_900x600_c.jpg" alt="Optometrist in Burwood"></div>
-</div>
-<div id="castle-towers" class="store-details" style="display: none;">
-<h3>Optometrist in Castle Towers</h3>
-<p>We have an Oscar Wylee optometrist in Castle Towers that can assist you with any concerns you may have about your vision and eye health. For prescription glasses and prescription sunglasses, our <a href="https://www.oscarwylee.com.au/locations/optometrist-castle-towers.html">Castle Towers optometrists</a> and optical dispensers can advise what is best for you and your visual needs. We do not have an eye doctor in Castle Towers but we do have qualified optometrists and optical dispensers on-site at all our locations. They are committed and also available for an eye treatment appointment in Castle Towers, which you can make a booking for on our website. Castle Hill is home to over 35,000 residents that our optometrists at Castle Towers are dedicated to helping.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Castle_Towers_900x600_c.jpg" alt="Optometrist in Castle Towers"></div>
-</div>
-<div id="charlestown-square" class="store-details" style="display: none;">
-<h3>Optometrist in Charlestown Square</h3>
-<p>Oscar Wylee’s <a href="https://www.oscarwylee.com.au/locations/optometrist-charlestown.html">Charlestown optometrists</a> strive to deliver top quality services which include eye testing for general eye health check-ups and prescriptions. Oscar Wylee also offers prescription sunglasses which our optometrist in Charlestown will be able to assist you with. We do not have an eye doctor in Charlestown, but our optometrists on site are qualified to cover a wide range of eye health concerns. They’ll be able to professionally take you through your eye appointment treatment in Charlsetown. You can be confident in the hands of our Oscar Wylee optometrists in Charlestown that care about the eye health of the over 12,000 residents of Charlestown.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Charlestown_900x600_c.jpg" alt="Optometrist in Charlestown Square"></div>
-</div>
-<div id="chatswood-chase" class="store-details" style="display: none;">
-<h3>Optometrist in Chatswood Chase</h3>
-<p>Our optometrist in Chatswood is dedicated to the eye care and health of over 25,000 residents in Chatswood. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-chatswood-chase.html">Chatswood optometrists</a> are experts in carrying out a range of services including prescription glasses and prescription sunglasses. They are also available for an eye treatment appointment in Chatswood, which you can book on our website. Oscar Wylee does not have an eye doctor in Chatswood but we have a fully trained optometrist and optical dispenser at every location. You can expect our optometrists in Chatswood to care for all your visual needs</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Optometrist_in_Chatswood_900x600.jpg" alt="Optometrist in Chatswood Chase"></div>
-</div>
-<!-- <div id="dubbo-orana-mall" class="store-details" style="display: none;">
+button:hover {
+  color: white !important;
+}
 
+ul,
+ol {
+  margin-bottom: 0;
+}
 
-            <h3>Optometrist in Dubbo</h3>
+.container {
+  max-width: 1236px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
 
+.banner {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-            <p>
-                Our <a href="https://www.oscarwylee.com.au/locations/optometrist-dubbo.html">Dubbo
-                    optometrists</a>
-                located in Orana Mall are here to assist you with your prescription glasses and
-                tests for your vision and eye health. Our optometrists in Dubbo will help take care of you
-                during your
-                in-store experience. For prescription sunglasses, our team will also be able to assist you
-                with your
-                selection. At every Oscar Wylee location, we have an optometrist and optical dispenser to
-                provide
-                services to the Dubbo population of over 55,000. We do not have an eye doctor in Dubbo or at
-                any of our
-                stores but our team can cover many of the concerns you may have. You can book an eye
-                treatment
-                appointment in Dubbo online, which will involve comprehensive testing that is thorough and
-                painless.
-            </p>
+.text {
+  max-width: 100%;
+}
 
-            <div class="dropdown-image-wrapper">
-                <img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Dubbo_900x600_c.jpg"
-                    alt="Optometrist in Dubbo" class="dropdown-image" loading="lazy" />
-            </div>
+.bannerResponsive {
+  display: none;
+}
 
-        </div> -->
-<div id="eastgardens" class="store-details" style="display: none;">
-<h3>Optometrist in Eastgardens</h3>
-<p>At Oscar Wylee, we care about your eye health and your customer experience. Our optometrists in Eastgardens are here to provide a range of services for the over 10,000 residents of Eastgardens. Like at all our store locations, we do not have an eye doctor in Eastgardens. Our services include eye testing, prescription for glasses and prescription sunglasses which can all be done by our <a href="https://www.oscarwylee.com.au/locations/optometrist-eastgardens.html">Eastgardens optometrist</a>. For eye treatment appointments in Eastgardens, you can book them here on the website. Our Oscar Wylee optometrists are highly trained and only deliver quality services at Eastgardens.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Eastgardens_900x600_c.jpg" alt="Optometrist in Eastgardens"></div>
-</div>
-<div id="erina-fair" class="store-details" style="display: none;">
-<h3>Optometrist in Erina</h3>
-<p>Our <a href="https://www.oscarwylee.com.au/locations/optometrist-erina-fair.html">Erina optometrists</a> located in Erina Fair offer prescription glasses and prescription sunglasses as well as many other essential services. At Oscar Wylee, we care about your eye health equally as much as your in-store experience, we have a qualified optometrist in Erina that can accommodate your needs. Like at all our Oscar Wylee stores you can expect professional care during your eye appointment treatment in Erina. We do not have an eye doctor in Erina, however, we do have an optometrist and optical dispenser that work hard to deliver high quality services to the over 5,000 residents of Erina. Come see our optometrists in Erina for all your eye care needs</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Erina_Fair_900x600_c.jpg" alt="Optometrist in Erina"></div>
-</div>
-<div id="green-hills" class="store-details" style="display: none;">
-<h3>Optometrist in Green Hills</h3>
-<p>At Oscar Wylee, our optometrist in Green Hills offers a wide range of services. We prioritise your eye and vision health so we encourage you to get your eyes tested by our <a href="https://www.oscarwylee.com.au/locations/optometrist-green-hills.html">Green Hills optometrists</a>. We have an optical dispenser and optometrist on site at every Oscar Wylee location but we do not have an eye doctor in Green Hills. They are qualified to care for many different eye concerns, including an eye treatment appointment in Green Hills. You can experience high quality care from our optometrists at our Oscar Wylee store in Green Hills.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Green_Hills_900x600_c.jpg" alt="Optometrist in Green Hills"></div>
-</div>
-<div id="hornsby" class="store-details" style="display: none;">
-<h3>Optometrist in Hornsby</h3>
-<p>Come in to see one of our <a href="https://www.oscarwylee.com.au/locations/optometrist-hornsby.html">Hornsby optometrists</a> who can ensure professional assistance during your next eye treatment appointment in Hornsby. At Oscar Wylee, we offer bulk billed eye tests, prescription glasses and prescription sunglasses. Hornsby is a suburb on the North Shore of Sydney and is home to over 151,000 residents. Our optometrist in Hornsby is highly trained in carrying out diagnostic tests for most eye conditions but as we do not have an eye doctor in Hornsby, they may refer you to an ophthalmologist. We have a wide range of frames for you to browse through for your selection, which our optometrists can assist you with at our Hornsby Oscar Wylee store.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Hornsby-900x600.jpg" alt="Optometrist in Hornsby"></div>
-</div>
-<div id="hurstville" class="store-details" style="display: none;">
-<h3>Optometrist in Hurstville</h3>
-<p>Our Oscar Wylee optometrists in Hurstville are here to help you with your eye testing, prescription glasses and sunglasses as well as an eye treatment appointment in Hurstville. We accept all major health funds at Oscar Wylee so you can limit how much you pay for your frames and lenses. If you show signs of a more complex condition, our <a href="https://www.oscarwylee.com.au/locations/optometrist-hurstville.html">Hurstville optometrists</a> may direct you to an ophthalmologist as there is no eye doctor in Hurstville. At Oscar Wylee our optometrists work to create the best possible in-store experience for the Hurstville residents of over 31,000.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Hurstville_900x600_c.jpg" alt="Optometrist in Hurstville"></div>
-</div>
-<div id="kotara" class="store-details" style="display: none;">
-<h3>Optometrist in Kotara</h3>
-<p>Book an eye test with an optometrist in Kotara, home to over 4,000 residents. At Oscar Wylee, we work with high-quality equipment during our services which include bulk billed eye tests as well an eye treatment appointment in Kotara. We have a wide range of on-trend styles to select from, which our <a href="https://www.oscarwylee.com.au/locations/optometrist-kotara.html">Kotara optometrists</a> can assist you with. Though we do not have an eye doctor in Kotara, our dedicated team are capable of providing you with all the vital eyecare and eyewear services. If required, our optometrists in Kotara can refer you to an ophthalmologist for more complex conditions.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Kotara_900x600_c.jpg" alt="Optometrist in Kotara"></div>
-</div>
-<div id="liverpool" class="store-details" style="display: none;">
-<h3>Optometrist in Liverpool</h3>
-<p>At Oscar Wylee, our team are committed to caring for your eye and vision health, you can even make an eye treatment appointment in Liverpool. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-liverpool.html">Liverpool optometrists</a> can perform tests to identify a range of conditions. However, as we do not have an eye doctor in Liverpool, you may be referred to an ophthalmologist if required. Our optometrists in Liverpool are skilled and handle high-quality equipment when conducting their services. Liverpool is located in the greater Western region of Sydney and is home to over 139,000 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Liverpool_900x600_c.jpg" alt="Optometrist in Liverpool"></div>
-</div>
-<div id="macarthur-square" class="store-details" style="display: none;">
-<h3>Optometrist in Macarthur Square</h3>
-<p>Macarthur Square is located in the southwestern Sydney suburb of Campbelltown, in which there are over 180,000 residents. Our Oscar Wylee team offer bulk billed eye tests as well as an eye treatment appointment in Macarthur Square. Optometrists in Macarthur Square conduct their services with high-quality equipment and are available to assist you with your prescription glasses and sunglasses. At every Oscar Wylee location, we have fully-trained optometrists and an optical dispenser but we do not have an eye doctor in Macarthur Square. In-store, you can browse through our wide selection of frames, have your eyes tested for general health and diagnose conditions by our <a href="https://www.oscarwylee.com.au/locations/optometrist-macarthur-square.html">Macarthur Square optometrists</a>.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Macarthure_Square_900x600_c.jpg" alt="Optometrist in Macarthur Square"></div>
-</div>
-<div id="macquarie-centre" class="store-details" style="display: none;">
-<h3>Optometrist in Macquarie Centre</h3>
-<p>Visit our optometrist in Macquarie Centre, which is located opposite Macquarie University’s main campus. At Oscar Wylee, we ensure our customers are met with a high quality in-store experience, which includes an eye treatment appointment in Macquarie Centre. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-macquarie-centre.html">Macquarie Centre optometrists</a> can run comprehensive eye tests, assist you with any issues about your eye health and your glasses. Though we do not have an eye doctor in Macqaurie Centre, our team and optometrists still provide a range of services including assistance with prescription sunglasses. Macquarie is home to over 11,000 residents which our optometrists are dedicated to serving.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Macquarie_Centre_900x600_c.jpg" alt="Optometrist in Macquarie Centre"></div>
-</div>
-<div id="merrylands" class="store-details" style="display: none;">
-<h3>Optometrist in Merrylands</h3>
-<p>Oscar Wylee has excellent services provided by our optometrist in Merrylands, including Medicare bulk billed eye tests and updated prescriptions on the same day. Visit us in-store where our friendly staff can help you browse our wide range of stylish glasses including prescription sunglasses. You can easily book an eye treatment appointment in Merrylands but for more advanced treatment, you can be referred to an eye doctor in Merrylands. Visit us today where our <a href="https://www.oscarwylee.com.au/locations/optometrist-merrylands.html">Merrylands optometrist</a> provides the best care for over 24,000 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Merrylands_900x600_c.jpg" alt="Optometrist in Merrylands"></div>
-</div>
-<div id="miranda-westfield" class="store-details" style="display: none;">
-<h3>Optometrist in Miranda</h3>
-<p>We offer bulk billed eye tests and prescriptions for glasses and sunglasses as well as other services all by our <a href="https://www.oscarwylee.com.au/locations/optometrist-miranda.html">Miranda optometrists</a> and team. At Oscar Wylee, we use high-quality equipment so you can be confident in the services we provide. We don’t have an eye doctor in Miranda so for further or advanced treatment, patients will be referred. Our team are also available for eye treatment appointments in Miranda. There are over 18,000 residents in Miranda with its Westfield mall only a two minute walk from the train station. Our optometrists in Miranda will be sure to accommodate to all your needs.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Miranda_900x600_c.jpg" alt="Optometrist in Miranda"></div>
-</div>
-<div id="mt-druitt" class="store-details" style="display: none;">
-<h3>Optometrist in Mt Druitt</h3>
-<p>Come visit our optometrists in Mt Druitt for a reputable in-store experience. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-mt-druitt.html">Mt Druitt optometrists</a> strive for excellence in providing the over 17,000 residents with their services. We offer bulk billed eye tests for valid Medicare card holders and cover all major health funds. You can come to us for eye tests for your regular eye check ups and an eye treatment appointment in Mt Druitt. While we do not have an eye doctor in Mt Druitt, our optometrists still cover a range of eye health services. Our optometrists can personally assist you with selecting frames for prescription glasses and prescription sunglasses.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Mt_Druitt_900x600_c.jpg" alt="Optometrist in Mt Druitt"></div>
-</div>
-<div id="narellan-town-centre" class="store-details" style="display: none;">
-<h3>Optometrist in Narellan</h3>
-<p>Narellan is located south-west of the Sydney CBD and is home to over 4000 residents. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-narellan.html">Narellan optometrists</a> in the Narellan Town Centre are fully trained and equipped to operate all the necessary testing instruments during eye tests. We do not have an eye doctor in Narellan but if necessary, our optometrist in Narellan can refer you to one. Oscar Wylee covers major health funds and offers bulk billed eye tests and an eye treatment appointment in Narellan. Visit our optometrists in-store or browse through our wide range of vintage and on-trend inspired frames and sunglasses for your prescription.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Narellan_900x600_c.jpg" alt="Optometrist in Narellan"></div>
-</div>
-<div id="newtown" class="store-details" style="display: none;">
-<h3>Optometrist in Newtown</h3>
-<p>Our optometrist in Newtown can help you select frames suitable to your style and visual needs. We have a wide selection of fashionable frames that our <a href="https://www.oscarwylee.com.au/locations/optometrist-newtown.html">Newtown optometrists</a> and team can help you go through until you find the right pair. If there are any problems with your vision we can offer repair or replacement for claims made within 30 days of delivery. We also offer prescription sunglasses. You can book for an eye treatment appointment in Newtown online as well as in-store. Like at all our Oscar Wylee stores, we do not have an eye doctor in Newtown, however our optometrists and optical dispenser are highly qualified. Our Oscar Wylee optometrists are happy to help the over 6,000 residents in Newtown with their eyecare needs.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Newtown_900x600_c.jpg" alt="Optometrist in Newtown"></div>
-</div>
-<div id="orange" class="store-details" style="display: none;">
-<h3>Optometrist in Orange</h3>
-<p>Our Oscar Wylee optometrist in Orange can perform diagnostic tests for a range of eye conditions and diseases. Although we do not have an eye doctor in Orange, you’ll still be able to have your vision and eye health assessed. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-orange.html">Orange optometrists</a> can refer you to an ophthalmologist if there is an indication that your condition requires one. Orange has over 43,000 residents with its shopping centre right at the heart of the CBD. Our team can help you with any information about making an eye treatment appointment in Orange and what you may need to prepare beforehand. We also offer prescription sunglasses that we are also happy to assist you with choosing.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Orange_900x600_c.jpg" alt="Optometrist in Orange"></div>
-</div>
-<div id="parramatta" class="store-details" style="display: none;">
-<h3>Optometrist in Parramatta</h3>
-<p>Our Oscar Wylee optometrists in Parramatta can provide primary eye care services that include visual field testing, acuity tests and other fundamental eye tests. Should you need further examination for a more serious eye disease, our optometrist can refer you to an eye doctor in Parramatta. At Oscar Wylee, we offer prescription sunglasses and are committed to helping you find the pair that fits you best. Our team only aims for high quality during your eye treatment appointments in Parramatta, which are available to book online. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-parramatta.html">Parramatta optometrists</a> care about the eye health of the over 280,000 residents of Parramatta and are highly committed.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Parramatta_900x600_c.jpg" alt="Optometrist in Parramatta"></div>
-</div>
-<div id="penrith" class="store-details" style="display: none;">
-<h3>Optometrist in Penrith</h3>
-<p>If you’re a Penrith local or a visitor, come see our team in-store today! Our team and optometrists in Penrith are more than happy to assist you with your regular eye tests. For eye treatment appointments in Penrith, you can book them online as well as in-store. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-penrith.html">Penrith optometrists</a> are qualified and trained to diagnose many different eye conditions and diseases. However, you may need to see an eye doctor in Penrith for more advanced treatment if our optometrist identifies signs of a complex eye condition or disease. Our optometrists are dedicated to providing the over 220,000 residents of Penrith with stylish prescription glasses and sunglasses.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Penrith_900x600_c.jpg" alt="Optometrist in Penrith"></div>
-</div>
-<div id="rhodes-waterside" class="store-details" style="display: none;">
-<h3>Optometrist in Rhodes</h3>
-<p>Make a visit to our Oscar Wylee store in Rhodes, where we offer bulk billed eye tests for valid Medicare cardholders. Rhodes is home to over 11,600 residents with its shopping centre located at the geographic heart of Sydney. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-rhodes.html">Rhodes optometrists</a> are here to help with your eye care needs such as eye testing which includes visual field testing and visual acuity. We do not have an eye doctor in Rhodes, however, our team are trained to carry out the testing procedures in a comprehensive eye test. We’re also available for eye treatment appointments in Rhodes with high quality equipment. You can consult with our optometrists in Rhodes about any concerns or enquiries you may have about your prescription glasses and sunglasses.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Rhodes_900x600_c.jpg" alt="Optometrist in Rhodes"></div>
-</div>
-<div id="rouse-hill" class="store-details" style="display: none;">
-<h3>Optometrist in Rouse Hill</h3>
-<p>Our Oscar Wylee store have dedicated optometrists in Rouse Hill which is home to over 9000 residents. We do not have an eye doctor in Rouse Hill but our optometrists are able to diagnose eye conditions and diseases. For an eye treatment appointment in Rouse Hill, you can book with us in-store or on this page. Oscar Wylee’s <a href="https://www.oscarwylee.com.au/locations/optometrist-rouse-hill.html">Rouse Hill optometrists</a> can provide prescription for glasses and sunglasses.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Rouse_Hill_900x600_c.jpg" alt="Optometrist in Rouse Hill"></div>
-</div>
-<!-- <div id="salamander-bay" class="store-details" style="display: none;">
+.title {
+  width: calc(100% - 6rem);
+  padding: 2.5rem 3rem;
+  text-align: center;
+  /* margin: 0 1rem 2rem 1rem; */
+  border-bottom: 1px solid rgba(192, 192, 192, 0.7);
+}
 
+.title h1,
+.title h2 {
+  font-weight: 700;
+  padding-bottom: 3rem;
+}
 
-            <h3>Optometrist in Salamander Bay</h3>
+.title p {
+  padding: 0 6rem 2rem;
+}
 
-            <p>
-                Come visit our <a
-                    href="https://www.oscarwylee.com.au/locations/optometrist-salamander-bay.html">Salamander
-                    Bay
-                    optometrists</a>, they will be able to provide you with bulk billed eye tests.
-                They are also available to provide prescription glasses and sunglasses and an eye treatment
-                appointment
-                in Salamander Bay. Our optometrists in Salamander Bay are trained in all things optometry so
-                come see us
-                for your next eye care services. If our team see that you need a more advanced examination,
-                they may
-                refer you to an eye doctor in Salamander Bay. Our team and optometrists aim to provide the
-                over 5,000
-                residents of Salamander Bay with excellent primary eye care services.
-            </p>
+.context {
+  width: calc(100% - 2rem);
+  padding: 0 1rem;
+}
 
-            <div class="dropdown-image-wrapper">
-                <img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Salamander_Bay_900x600_c.jpg"
-                    alt="Optometrist in Salamander Bay" class="dropdown-image" loading="lazy" />
-            </div>
+.context h2 {
+  padding: 1rem 0 0 0;
+  font-weight: bold;
+  font-size: 26px;
+}
 
-        </div> -->
-<div id="shelharbour-stockland" class="store-details" style="display: none;">
-<h3>Optometrist in Shelharbour Stockland</h3>
-<p>Shellharbour has over 80,000 residents which our Oscar Wylee team are dedicated to serving. Our optometrist in Shellharbour can assist you with prescription glasses and sunglasses and diagnostic eye tests. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-shellharbour.html">Shellharbour optometrists</a> can identify a range of eye conditions and diseases. However for more serious conditions we can refer you to an eye doctor in Shellharbour. For an eye treatment appointment in Shellharbour, you can make a booking online or in-store. Come see our Oscar Wylee optometrists in Shellharbour for our high quality optometry services.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Shellharbour_900x600_c.jpg" alt="Optometrist in Shelharbour Stockland"></div>
-</div>
-<div id="st-ives" class="store-details" style="display: none;">
-<h3>Optometrist in St Ives</h3>
-<p>We have an optometrist in St Ives that can run diagnostic eye tests for a range of eye conditions and diseases. They will be able to direct you to an eye doctor in St Ives should you need further examination. At Oscar Wylee we cover major health funds so make sure to bring your private health fund card to your in-store visit. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-st-ives.html">St Ives optometrists</a> can assist you with the selection process of your prescription glasses and sunglasses. If necessary, we also provide eye appointment treatments in St Ives. St Ives is home to over 18,000 residents with its shopping centre located in the Sydney’s upper North Shore. Come see our Oscar Wylee team and optometrists in St Ives to browse our wide range of fashionable frames.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/St_Ives_900x600_c.jpg" alt="Optometrist in St Ives"></div>
-</div>
-<div id="the-galeries" class="store-details" style="display: none;">
-<h3>Optometrist in Sydney CBD The Galeries</h3>
-<p>Visit our team and optometrist in The Galeries, they are available for comprehensive eye tests, prescription glasses and sunglasses. If there are any issues with your lenses, <a href="https://www.oscarwylee.com.au/locations/optometrist-sydney-galeries.html">The Galeries optometrists</a> will be happy to check them and inform you of the next steps. We do not have an eye doctor in The Galeries, but our team cover many essential eye care services. We use high quality equipment for all our testing as well as during an eye treatment appointment. You can expect excellent optometry services in The Galeries, so plan a visit to to our optometrists located in the heart of the Sydney Central Business district.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Galeries_900x600_c.jpg" alt="Optometrist in Sydney CBD The Galeries"></div>
-</div>
-<div id="top-ryde" class="store-details" style="display: none;">
-<h3>Optometrist in Top Ryde</h3>
-<p>Our optometrists in Top Ryde are happy to help you with any enquiries you may have about our eyecare services. You can head in-store to speak with our committed team and <a href="https://www.oscarwylee.com.au/locations/optometrist-top-ryde.html">Top Ryde optometrists</a>. The City of Ryde is located in the Northern region of Sydney and has over 130,000 residents. You can have your eye treatment appointment in Top Ryde which is carried out by our capable team. If you are needing further examination for a complex condition as advised by our optometrists, you may need to see an eye doctor in Top Ryde. Our optometrists at Oscar Wylee Top Ryde will even help you with finding prescription glasses or sunglasses that suit you best.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Top_Ryde_City_900x600_c.jpg" alt="Optometrist in Top Ryde"></div>
-</div>
-<div id="tuggerah" class="store-details" style="display: none;">
-<h3>Optometrist in Tuggerah</h3>
-<p>Tuggerah is home to over 5,000 residents and has the second largest shopping centre on the Central Coast. Our Oscar Wylee optometrists in Tuggerah are available for eye tests for general check ups as well as for diagnosing eye conditions. We do not have an eye doctor in Tuggerah, however, our team will be able to refer you to one. For prescription glasses and sunglasses, our <a href="https://www.oscarwylee.com.au/locations/optometrist-tuggerah.html">Tuggerah optometrists</a> can assist you with the selection process and advise what is best for you. They are also available for eye treatment appointments in Tuggerah.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Tuggerah_900x600_c.jpg" alt="Optometrist in Tuggerah"></div>
-</div>
-<div id="tweed-city" class="store-details" style="display: none;">
-<h3>Optometrist in Tweed City</h3>
-<p>Our <a href="https://www.oscarwylee.com.au/locations/optometrist-tweed-city.html">Tweed City optometrists</a> are capable of providing primary eye care services to the residents of Tweed City of over 97,000. Oscar Wylee offers bulk billed eye tests for valid medicare card holders, be sure to bring your medicare card when paying in-store. You can book an eye treatment appointment in Tweed City online or in-store. An optometrist in Tweed City will be able to perform an eye test for your prescription glasses and sunglasses. We do not have an eye doctor in Tweed City but we cover all essential eye care services. Come browse through our wide selection of frames and see one of our optometrists in Tweed City.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Tweed_City_900x600_c.jpg" alt="Optometrist in Tweed City"></div>
-</div>
-<div id="wagga-wagga" class="store-details" style="display: none;">
-<h3>Optometrist in Wagga Wagga</h3>
-<p>Book your eye tests at our Oscar Wylee store, with one of our optometrists in Wagga Wagga. They offer bulk billing for eligible medicare card holders and we cover major health funds. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-wagga-wagga.html">Wagga Wagga optometrists</a> conduct high standard eye tests, which typically take between twenty and thirty minutes. We also conduct eye treatment appointments in Wagga Wagga which are available to book for online as well as in-store. We have a wide range of frames to choose from for your prescription glasses and sunglasses. We do not have an eye doctor in Wagga Wagga so you may be referred to one if our optometrist identifies signs of a complex disease or condition. Our optometrists are happy to help with the eye services of the over 70,000 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Wagga-Wagga_900x600_c.jpg" alt="Optometrist in Wagga Wagga"></div>
-</div>
-<div id="warringah" class="store-details" style="display: none;">
-<h3>Optometrist in Warringah</h3>
-<p>Our <a href="https://www.oscarwylee.com.au/locations/optometrist-warringah-mall.html">Waringah optometrists</a> are fully-trained to carry out comprehensive eye tests such as visual field testing and visual acuity. We do not have an eye doctor in Warringah but our team can assist you with all the services you need for your visual requirements. For bulk billing, remember to bring your medicare card to your appointment. Oscar Wylee offers prescription glasses and sunglasses and we have wide range for you to choose from. Book your eye treatment appoinment in Warringah. Our friendly team and optometrist in Warringah are dedicated to the eye health of the over 150,000 residents that call Warringah home.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Warringah_900x600_c.jpg" alt="Optometrist in Warringah"></div>
-</div>
-<div id="wetherill-park" class="store-details" style="display: none;">
-<h3>Optometrist in Wetherill Park</h3>
-<p>At Oscar Wylee as we care about your eye health and in-store experience, our optometrists in Wetherill Park are focused on bringing high quality services to the over 6,000 residents. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-wetherill-park.html">Wetherill Park optometrists</a> are qualified to perform visual acuity and visual field testing. They are able to diagnose eye conditions and diseases, for more advanced treatment you may be reffered to an eye doctor in Wetherill Park. Prescription glasses and sunglasses are available here at Oscar Wylee, which we can help you with choosing. We are also available for eye treatment appointments in Wetherill Park which our optometrists can ensure excellent care and performance in.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Wetherill-Park_900x600_c.jpg" alt="Optometrist in Wetherill Park"></div>
-</div>
-<div id="winston-hills" class="store-details" style="display: none;">
-<h3>Optometrist in Winston Hills</h3>
-<p>Come to our Oscar Wylee store in Winston Hills for your next appointment. Our optometrists in Winston Hills offer prescription glasses and sunglasses and you are welcome to try on as many as you like from our range to find the perfect fit. Our team handles high-quality equipment on-site to ensure great services. Our Winston Hills optometrists are qualified to diagnose many eye conditions and diseases, however, we do not have an eye doctor in Winston Hills. Our eye tests include visual acuity testing among other essential tests, all carried out by our <a href="https://www.oscarwylee.com.au/locations/optometrist-winston-hills.html">Winston Hills optometrists</a>. They are also available to conduct your eye treatment appointments in Winston Hills should you need one. Our Winston optometrists carry out their services with the utmost care and professionalism for the 12,000 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Winston-Hills_900x600_c.jpg" alt="Optometrist in Winston Hills"></div>
-</div>
-<div id="wollongong" class="store-details" style="display: none;">
-<h3>Optometrist in Wollongong</h3>
-<p>Our <a href="https://www.oscarwylee.com.au/locations/optometrist-wollongong-central.html">Wollongong optometrists</a> offer bulk billed eye tests in our store for all eligible medicare card holders. We do not have an eye doctor in Wollongong, we will be able to refer you to one. Oscar Wylee offers repair or replacement for problems that occur with vision during everyday use for claims made within 30 days of delivery. Our team are also available for an eye appointment treatment in Wollongong. Our optometrists in Wollongong offer their primary eye care services to over 12,500 residents</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Wollongong_900x600_c.jpg" alt="Optometrist in Wollongong"></div>
-</div>
-<!-- end of  NSW --> <!-- start northern territory -->
-<div id="casuarina" class="store-details" style="display: none;">
-<h3>Optometrist in Casuarina</h3>
-<p>Come get your eyes tested at our Oscar Wylee store, located in Casuarina Square, the largest shopping centre in the Northern Territory. Our optometrists in Casuarina are experts and carry out visual field testing and visual acuity as part of the comprehensive eye test process. We do not have an eye doctor in Casuarina but our team will strive to meet any needs you may have. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-casuarina.html">Casuarina optometrists</a> are dedicated to serving over 4,500 residents and are also available for an eye treatment appointment in Casuarina. If you want to browse our wide range of frames for prescription glasses and sunglasses, come visit us in-store.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Casuarina_900x600_c.jpg" alt="Optometrist in Casuarina"></div>
-</div>
-<!-- end northern territory --> <!-- start of QLD -->
-<div id="brisbane-albert-st" class="store-details" style="display: none;">
-<h3>Optometrist in Brisbane - Albert St</h3>
-<p>Located in the heart of the Brisbane CBD, our Oscar Wylee store is located on Albert St, across from Queen’s Street Mall. Our optometrist in Brisbane - Albert St provides Medicare, bulk billed eye tests and our friendly staff can help you find the perfect frame from our range of vintage and on-trend styles. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-albert-st.html">Brisbane - Albert St optometrists</a> provide prescriptions so you can shop for prescription sunglasses and glasses. An eye treatment appointment in Brisbane - Albert St may require the optometrist to refer the patient to an eye doctor in Brisbane - Albert St, also known as an ophthalmologist. Oscar Wylee Brisbane- Albert St offers Brisbane’s 2.28 million residents excellent optometrist and eyewear services.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Brisbane-Albert-St_900x600_c.jpg" alt="Optometrist in Brisbane - Albert St"></div>
-</div>
-<div id="cairns-central" class="store-details" style="display: none;">
-<h3>Optometrist in Cairns</h3>
-<p>Book an Oscar Wylee eye treatment appointment in Cairns Central for Medicare, bulk billed eye tests. While we do not have an eye doctor in Cairns Central Oscar Wylee, our <a href="https://www.oscarwylee.com.au/locations/optometrist-cairns.html">Cairns Central optometrists</a> can refer patients to an ophthalmologist where required. Come in-store to browse our range of stylish frames with modern and on-trend inspirations and shop for prescriptions and non-prescription sunglasses. Visit our Oscar Wylee retail staff and optometrist in Cairns Central today, offering optometry and eyewear services for 150,000 local residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Cairns_900x600_c.jpg" alt="Optometrist in Cairns"></div>
-</div>
-<div id="capalaba" class="store-details" style="display: none;">
-<h3>Optometrist in Capalaba</h3>
-<p>Our <a href="https://www.oscarwylee.com.au/locations/optometrist-capalaba.html">Capalaba optometrists</a> in Oscar Wylee offer bulk billed, in-store eye tests to all eligible Medicare cardholders and we accept all major health funds. Come in and see the retail staff and optometrists in Capalaba Park for excellent eye care and products including on-trend frames and a stylish range of non-prescription and prescription glasses. We offer eye treatment appointments in Capalaba Park but for more advanced treatment, our optometrists will refer you to an eye doctor in Capalaba Park. Plan your trip to see our Oscar Wylee optometrist in Capalaba Park which has over 18,000 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Capalaba-Park_900x600_c.jpg" alt="Optometrist in Capalaba"></div>
-</div>
-<div id="carindale" class="store-details" style="display: none;">
-<h3>Optometrist in Carindale</h3>
-<p>Our optometrists in Carindale Oscar Wylee provide bulk billed eye tests for eligible Medicare cardholders. While we do not have an eye doctor in Carindale on-site, our optometrist is able to provide eye treatment appointments in Carindale. Browse Oscar Wylee’s wide range of frames which you can turn into prescription sunglasses or multifocals. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-carindale.html">Carindale optometrists</a> offer optometry services to over 15,000 residents, so come in and visit us today.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Carindale_900x600_c.jpg" alt="Optometrist in Carindale"></div>
-</div>
-<div id="chermside" class="store-details" style="display: none;">
-<h3>Optometrist in Chermside</h3>
-<p>Visit the team at Oscar Wylee for a Medicare, bulk billed eye test with our optometrist in Chermside. After your eye treatment appointment in Chermside, our friendly staff can help you shop our affordable and stylish range of glasses including prescription sunglasses. For advanced treatment, our optometrist can refer patients to an eye doctor in Chermside, also known as an ophthalmologist. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-chermside.html">Chermside optometrists</a> offer excellent service to the over 10,000 residents of this Queensland city.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Chermside_900x600_c.jpg" alt="Optometrist in Chermside"></div>
-</div>
-<div id="mt-gravatt" class="store-details" style="display: none;">
-<h3>Optometrist in Mt Gravatt</h3>
-<p>Neighbouring the Eight Mile Plains and Macgregor areas, our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-mt-gravatt.html">Mt Gravatt optometrists</a> can be found in the Westfield Mt Gravatt Shopping Centre servicing over 3,000 residents. Book your eye treatment appointment in Mt Gravatt for a bulk billed eye test for eligible Medicare cardholders. If you require more advanced treatment our optometrists in Mt Gravatt can refer you to an ophthalmologist, also known as an eye doctor, in Mt Gravatt. Visit us in-store at Mt Gravatt today to browse our stylish frames, pick up a pair of prescription sunglasses and have your eye health checked by our optometrist.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Mt-Gravatt_900x600_c.jpg" alt="Optometrist in Mt Gravatt"></div>
-</div>
-<div id="helensvale" class="store-details" style="display: none;">
-<h3>Optometrist in Helensvale</h3>
-<p>You can find our Oscar Wylee optometrist in Helensvale, ready to provide Medicare, bulk billed eye tests. Our friendly staff are also on hand to help you shop our affordable, modern and vintage-inspired frames including prescription sunglasses. While we do not have an eye doctor in Helensvale Oscar Wylee, our <a href="https://www.oscarwylee.com.au/locations/optometrist-helensvale.html">Helensvale optometrists</a> are equipped to detect and treat certain eye conditions. Book an eye treatment appointment in Helensvale with our Oscar Wylee optometrists, who provide optometry services for the 20,000 residents of Helensvale.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Helensvale_OW_900x600_c.jpg" alt="Optometrist in Helensvale"></div>
-</div>
-<div id="indooroopilly" class="store-details" style="display: none;">
-<h3>Optometrist in Indooroopilly</h3>
-<p>Come in and visit our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-indooroopilly.html">Indooroopilly optometrists</a> who can perform Medicare, bulk billed eye tests. You can receive an eye treatment appointment in Indooroopilly although for more advanced treatment, our optometrists will refer you to an eye doctor in Indooroopilly. We also offer prescription glasses and prescription sunglasses that are both affordable and stylish. Plan a trip to see our optometrists in Indooroopilly, who service the over 13,000 residents of this Queensland suburb.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Indooroopilly_900x600_c.jpg" alt="Optometrist in Indooroopilly"></div>
-</div>
-<div id="kawana" class="store-details" style="display: none;">
-<h3>Optometrist in Kawana</h3>
-<p>Plan your trip to see our Oscar Wylee optometrists in Kawana, located in Kawana Shoppingworld in the suburb of Buddina, which has a population of just under 4,000 residents. While we do not have an eye doctor in Kawana Oscar Wylee, our optometrists perform bulk billed eye tests for eligible Medicare cardholders. Once you have your prescription updated by our <a href="https://www.oscarwylee.com.au/locations/optometrist-kawana.html">Kawana optometrists</a>, you can shop for a new pair of prescription glasses and prescription sunglasses. Book your eye treatment appointment in Kawana with our Oscar Wylee optometrists today.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Kawana_900x600_c.jpg" alt="Optometrist in Kawana"></div>
-</div>
-<div id="loganholme" class="store-details" style="display: none;">
-<h3>Optometrist in Loganholme</h3>
-<p>Our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-loganholme.html">Loganholme optometrists</a> can be found in the Hyperdome Shopping Centre, offering services to the 7,000 residents of Loganholme. Our dedicated Oscar Wylee optometrists in Loganholme provide Medicare, bulk billed eye tests. The Oscar Wylee staff can help as you shop our range of fashionable glasses at affordable prices including prescription sunglasses. While we do not have an eye doctor in Loganholme Oscar Wylee, our optometrists can provide eye treatment appointments in Loganholme.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Loganholme_900x600_c.jpg" alt="Optometrist in Loganholme"></div>
-</div>
-<div id="mackay" class="store-details" style="display: none;">
-<h3>Optometrist in Mackay</h3>
-<p>Discover our Oscar Wylee optometrist in Mackay, located in the heart of Caneland Central Shopping Centre. Mackay has a population of over 130,000 and we offer bulk billed eye tests to residents who are valid Medicare cardholders. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-mackay.html">Mackay optometrists</a> are in-store to perform eye tests, where you can have your eye health checked, update your prescription, and find your new favourite pair of glasses or prescription sunglasses on the same day! Eye treatment appointments in Mackay are available at Oscar Wylee, but for more advanced treatment, our optometrists will refer you to an eye doctor in Mackay.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Mackay_900x600_c.jpg" alt="Optometrist in Mackay"></div>
-</div>
-<div id="maroochydore" class="store-details" style="display: none;">
-<h3>Optometrist in Maroochydore</h3>
-<p>Stop by our Oscar Wylee store where our trained optometrist in Maroochydore provides bulk billed eye tests including vision testing, eye health checks and prescription updates. Here we also offer modern and vintage-style prescription glasses and prescription sunglasses at affordable prices. We do not have an eye doctor in Maroochydore Oscar Wylee, but patients are referred to an ophthalmologist where needed. For an eye treatment appointment in Maroochydore, visit our store located in Sunshine Plaza where our <a href="https://www.oscarwylee.com.au/locations/optometrist-sunshine-plaza.html">Maroochydore optometrists</a> can help the over 20,000 residents with excellent optometry services.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Maroochydore_900x600_c.jpg" alt="Optometrist in Maroochydore"></div>
-</div>
-<div id="morayfield" class="store-details" style="display: none;">
-<h3>Optometrist in Morayfield</h3>
-<p>Come revolutionise your eyesight with our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-morayfield.html">Morayfield optometrists</a>, located at Morayfield Shopping Centre. Our optometrist in Morayfield offers optometry services to over 25,000 residents. Book an eye treatment appointment in Morayfield to have your vision assessed and your eye health checked. At Oscar Wylee, we have a wide range of stylish frames with modern and vintage inspirations including non-prescription and prescription sunglasses. While there is not an eye doctor in Morayfield Oscar Wylee, our optometrists are able to refer patients to an ophthalmologist where necessary.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Morayfield_900x600_c.jpg" alt="Optometrist in Morayfield"></div>
-</div>
-<div id="noosa" class="store-details" style="display: none;">
-<h3>Optometrist in Noosa</h3>
-<p>Come in and visit our Oscar Wylee optometrist in Noosa and receive a Medicare, bulk billed eye test. Located in Noosa Civic Shopping Centre, our <a href="https://www.oscarwylee.com.au/locations/optometrist-noosa.html">Noosa optometrists</a> provide quality services to 57,000 residents and our friendly staff can help you browse our range of stylish and affordable glasses as well as prescription sunglasses. You can book an eye treatment appointment in Noosa but for more advanced treatment, patients will be referred to an eye doctor in Noosa. Plan your trip today and experience our excellent optometrist and retail staff in our Oscar Wylee Noosa store.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Noosa_900x600_c.jpg" alt="Optometrist in Noosa"></div>
-</div>
-<div id="north-lakes" class="store-details" style="display: none;">
-<h3>Optometrist in North Lakes</h3>
-<p>Plan a trip to see our Oscar Wylee optometrist in North Lakes for a bulk billed eye test for eligible Medicare cardholders. After your eye treatment appointment in North Lakes, you can shop for your glasses from a range of on-trend and vintage-style frames. We also offer non-prescription and prescription sunglasses so you can protect your eyes in style. Without an eye doctor in North Lakes onsite, our optometrists can refer patients to a nearby ophthalmologist where needed. Visit us today where our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-north-lakes.html">North Lake optometrists</a> provide services to over 23,000 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/North-Lakes_900x600_c.jpg" alt="Optometrist in North Lakes"></div>
-</div>
-<div id="orion-springfield" class="store-details" style="display: none;">
-<h3>Optometrist in Springfield</h3>
-<p>Find your local Oscar Wylee optometrist in Orion Springfield Central Shopping Centre. Springfield Central is a suburb located in the Queensland city of Ipswich which has a population of over 230,000 residents. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-springfield.html"> Springfield optometrists</a> offer Medicare bulk billed eye tests and can refer patients who need further treatment to an eye doctor in Springfield. After your eye treatment appointment in Orion Springfield, our friendly staff can help you browse our wide range of frame styles including non-prescription and prescription sunglasses. Visit our Oscar Wylee optometrist in Orion Springfield today!</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Springfield_900x600_c.jpg" alt="Optometrist in Springfield"></div>
-</div>
-<div id="pacific-fair" class="store-details" style="display: none;">
-<h3>Optometrist in Pacific Fair</h3>
-<p>Stop by your local Oscar Wylee store in Broadbeach where our dedicated <a href="https://www.oscarwylee.com.au/locations/optometrist-pacific-fair.html">Pacific Fair optometrists</a> are ready to provide Medicare, bulk billed eye tests. Once you have completed your eye treatment appointment in Pacific Fair, the friendly retail staff are on hand to help you shop our affordable and fashionable frames as well as prescription sunglasses. While there is not an eye doctor in Pacific Fair Oscar Wylee, our skilled optometrist in Pacific Fair provides excellent optometry services to the over 5,000 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Pacific-Fair_900x600_c.jpg" alt="Optometrist in Pacific Fair"></div>
-</div>
-<div id="robina" class="store-details" style="display: none;">
-<h3>Optometrist in Robina</h3>
-<p>Oscar Wylee Robina is your go-to for a wide range of frames and excellent optometry services, provided by our <a href="https://www.oscarwylee.com.au/locations/optometrist-robina.html">Robina optometrists</a>, to the area's 17,000 residents. You can book an eye treatment appointment in Robina at Oscar Wylee, although if you require more advanced treatment, you may be referred to an eye doctor in Robina. You can protect your eyes in style at Oscar Wylee with our selection of non-prescription and prescription sunglasses. Visit our optometrist in Robina Oscar Wylee today for all your optometry and eyewear needs.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Robina_900x600_c.jpg" alt="Optometrist in Robina"></div>
-</div>
-<div id="rockhampton" class="store-details" style="display: none;">
-<h3>Optometrist in Rockhampton</h3>
-<p>Discover our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-rockhampton.html">Rockhampton optometrists</a> inside the Stockland Rockhampton Shopping Centre, where you can receive a bulk billed eye test and get an updated prescription on the same day. After your eye treatment appointment in Rockhampton, you can explore our prescription eyeglasses and prescription sunglasses in a variety of modern and vintage-inspired styles. There is no eye doctor in Rockhampton Oscar Wylee but for services requiring an ophthalmologist, our optometrist in Rockhampton can refer patients where needed. We are available for the 80,0000 residents of Rockhampton, so come in and see our optometrist and the retail team today!</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Rockhampton_900x600_c.jpg" alt="Optometrist in Rockhampton"></div>
-</div>
-<div id="southport" class="store-details" style="display: none;">
-<h3>Optometrist in Southport</h3>
-<p>Visit our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-southport.html">Southport optometrists</a> for your annual eye check-up and browse our stylish and on-trend glasses. Our optometrist in Southport offers excellent services to a population of over 30,000 residents. We do not have an eye doctor in Southport Oscar Wylee but we do have a qualified optometrist who provides bulk billed eye tests for Medicare cardholders. There are many types of glasses available at Oscar Wylee such as multifocals and prescription sunglasses. Book online today for an eye treatment appointment in Southport, in the Australia Fair Shopping Centre, where our Oscar Wylee optometrists can help you with all your optometry needs.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Southport-Australia-Fair_900x600_c.jpg" alt="Optometrist in Southport"></div>
-</div>
-<div id="strathpine" class="store-details" style="display: none;">
-<h3>Optometrist in Strathpine</h3>
-<p>For all your optometry and eyewear needs, visit our Oscar Wylee optometrist in Strathpine where our friendly retail staff can help you find the perfect pair of glasses for your lifestyle and prescription needs. We also offer on-trend non-prescription and prescription sunglasses to ensure your eyes are protected. Have your eye treatment appointment in Strathpine Oscar Wylee, although, for more advanced treatment, you may be referred to an eye doctor in Strathpine. Visit us in-store where our <a href="https://www.oscarwylee.com.au/locations/optometrist-strathpine.html">Strathpine optometrists</a> provide excellent service to the 39,000 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Strathpine_900x600_c.jpg" alt="Optometrist in Strathpine"></div>
-</div>
-<div id="toowoomba" class="store-details" style="display: none;">
-<h3>Optometrist in Toowoomba</h3>
-<p>Our Oscar Wylee optometrist in Toowoomba offers bulk billed eye tests for eligible Medicare cardholders. Located in Toowoomba’s Grand Central Shopping Centre servicing a population of over 140,000, our friendly staff can help you shop for a new pair of glasses as well as prescription sunglasses and non-prescription sunglasses. While we do not have an ophthalmologist, also known as an eye doctor, in Toowoomba Oscar Wylee, our <a href="https://www.oscarwylee.com.au/locations/optometrist-toowoomba.html">Toowoomba optometrists</a> are able to assess your vision and check the health of your eye. Book your eye treatment appointment in Toowoomba with Oscar Wylee and our dedicated optometrist can help with all your optometry and eyesight requirements.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Toowoomba_900x600_c.jpg" alt="Optometrist in Toowoomba"></div>
-</div>
-<div id="townsville" class="store-details" style="display: none;">
-<h3>Optometrist in Townsville</h3>
-<p>Come get your eyes tested by our optometrist in Townsville at our Oscar Wylee store located in Stockland Townsville Shopping Centre. Browse stylish and affordable frames as well as prescription sunglasses and make sure to bring your valid health fund card as we can process your health fund claim in-store. Easily book online for an eye treatment appointment in Townsville to have your eyes assessed. If you require more advanced treatment, our <a href="https://www.oscarwylee.com.au/locations/optometrist-townsville.html">Townsville optometrists</a> will refer you to an eye doctor in Townsville. At Oscar Wylee Townsville, our optometrists provide excellent eye care to over 180,000 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Townsville_900x600_c.jpg" alt="Optometrist in Townsville"></div>
-</div>
-<!-- end of QLD --> <!-- start of VIC -->
-<div id="airport-west" class="store-details" style="display: none;">
-<h3>Optometrist in Airport West</h3>
-<p>Located in the Westfield shopping centre, our <a href="https://www.oscarwylee.com.au/locations/optometrist-airport-west.html">Airport West optometrists</a> are passionate about providing the local community of over 8000 people with high quality eye care services, including Medicare bulk billed eye tests. We do not have eye doctors in Airport West, however our team can make referrals if advanced care is required. After their eye treatment appointment in Airport West, Oscar Wylee customers can browse our range of stylish frames including prescription glasses and prescription sunglasses. For all your eye care and eyewear needs come and visit our optometrists in Airport West.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Airport-West_900x600_c.jpg" alt="Optometrist in Airport West"></div>
-</div>
-<div id="bendigo" class="store-details" style="display: none;">
-<h3>Optometrist in Bendigo</h3>
-<p>Our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-bendigo.html">Bendigo optometrists</a> are located in Bendigo Marketplace. Here, our dedicated and passionate team are available to perform a range of eye care services including Medicare bulk billed eye tests for Bendigo's 5600 residents. Whilst Oscar Wylee does not have an eye doctor in Bendigo, our team can make referrals where needed. After their eye test, our customers can shop our range of vintage and modern inspired frames, including prescription glasses and prescription sunglasses. For eye treatment appointments in Bendigo, visit our passionate Oscar Wylee optometrists in Bendigo Marketplace.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Bendigo_900x600_c.jpg" alt="Optometrist in Bendigo"></div>
-</div>
-<div id="broadmeadows" class="store-details" style="display: none;">
-<h3>Optometrist in Broadmeadows</h3>
-<p>For all your eye care needs, including Medicare bulk billed eye tests, updated prescriptions or new prescription sunglasses or new optical glasses, come and see our Oscar Wylee optometrists in Broadmeadows. Our Broadmeadows store is located in the Broadmeadows Central Shopping Centre, where our team is equipped with the latest optometry technology to provide high quality services to the suburb's 12500 residents. Whilst Oscar Wylee does not have an eye doctor in Broadmeadows, our team can refer customers on to one if needed. Book an eye treatment appointment in Broadmeadows today, and Oscar Wylee’s <a href="https://www.oscarwylee.com.au/locations/optometrist-broadmeadows.html">Broadmeadows optometrists</a> will provide excellent care on your eye care journey.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Broadmeadows_900x600_1.jpg" alt="Optometrist in Broadmeadows"></div>
-</div>
-<div id="chadstone" class="store-details" style="display: none;">
-<h3>Optometrist in Chadstone</h3>
-<p>Our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-chadstone.html">Chadstone optometrists</a> are dedicated to providing the suburb’s 9000 plus residents with high quality eye care, including Medicare bulk billed eye tests. Oscar Wylee does not have an eye doctor in Chadstone, however, our optometrists can make referrals if advanced care is needed. In addition to offering eye treatment appointments in Chadstone, our team can also help customers shop our range of stylish frames, including prescription glasses and prescription sunglasses. Book online to see our optometrists in Chadstone Shopping Centre, who are ready to assist with your eye care needs.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Chadstone_900x600_c.jpg" alt="Optometrist in Chadstone"></div>
-</div>
-<div id="craigieburn" class="store-details" style="display: none;">
-<h3>Optometrist in Craigieburn</h3>
-<p>For high quality eye treatment appointments in Craigieburn, come and see our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-craigieburn.html">Craigieburn optometrists</a>. Our services include Medicare bulk billed eye tests and prescription updates. Oscar Wylee does not have an eye doctor in Craigieburn, however referrals can be made if required. Oscar Wylee also offers a range of stylish eyewear including prescription glasses, prescription sunglasses and blue light glasses. If you are one of Craigieburn’s 65,000 residents, book an eye test with our Oscar Wylee optometrists in Craigieburn for excellent eye care services.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Craigieburn_900x600_c.jpg" alt="Optometrist in Craigieburn"></div>
-</div>
-<div id="chirnside-park" class="store-details" style="display: none;">
-<h3>Optometrist in Chirnside Park</h3>
-<p>Prioritise your eye health with a Medicare, bulk billed eye test at Oscar Wylee Chirnside. Located in Chirnside Park Shopping Centre, our <a href="https://www.oscarwylee.com.au/locations/optometrist-chirnside-park.html">Chirnside Park optometrists</a> are able to assess your vision and eye health and provide an updated prescription. There is no eye doctor in Chirnside Park Oscar Wylee but patients can be referred if necessary. After your eye treatment appointment in Chirnside Park, our friendly staff can help you find a frame to fit your needs. We offer blue light glasses, multifocals and prescription sunglasses. Our optometrist in Chirnside Park provides excellent optometry services to the 12,000 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Chirnside_900x600_c.jpg" alt="Optometrist in Chirnside Park"></div>
-</div>
-<div id="cranbourne-park" class="store-details" style="display: none;">
-<h3>Optometrist in Cranbourne Park</h3>
-<p>Our Oscar Wylee optometrists in Cranbourne Park are experts at eye care services such as eye testing for prescription glasses and many other services. If you need help with your eye health or eyewear, you can come in-store to speak directly with our <a href="https://www.oscarwylee.com.au/locations/optometrist-cranbourne-park.html">Cranbourne optometrists</a>. While we do not have an eye doctor in Cranbourne, rest assured, our team can take care of your eye concerns. Oscar Wylee covers major health funds and offers bulk billing, so be sure to bring your Medicare card in-store. Choose our team for your next eye treatment appointment in Cranbourne. Our optometrists aim for excellence in serving Cranbourne’s residents of over 25,000.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Cranbourne-Park_900x600_c.jpg" alt="Optometrist in Cranbourne Park"></div>
-</div>
-<div id="dandenong" class="store-details" style="display: none;">
-<h3>Optometrist in Dandenong</h3>
-<p>If you come to our Oscar Wylee store for your prescription eye tests, you will be able to get them bulk billed. Our optometrists in Dandenong endeavour to serve primary eye care services to the residents of Dandenong of over 150,000. We have a wide range of vintage and fashionable frames for your choosing, which our team can assist you with. If you have a serious eye condition and require more examination as advised by the optometrist, you will need to see an eye doctor in Dandenong. At Oscar Wylee, our optometrists can carry out visual acuity testing as well as an eye treatment appointment in Dandenong. If you need prescription glasses or sunglasses, Oscar Wylee’s <a href="https://www.oscarwylee.com.au/locations/optometrist-dandenong.html">Dandenong optometrists</a> can be your go-to.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Dandenong_900x600_c.jpg" alt="Optometrist in Dandenong"></div>
-</div>
-<div id="doncaster" class="store-details" style="display: none;">
-<h3>Optometrist in Doncaster</h3>
-<p>Come see our optometrists in Doncaster for excellent bulk billed eye tests. At Oscar Wylee we use high-quality equipment to make certain our optometry services are up to date for the over 31,000 residents. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-doncaster.html">Doncaster optometrists</a> are qualified to detect eye diseases and conditions. If they identify signs of a more complicated condition, you may be referred to an eye doctor in Doncaster. Our team would be more than happy and capable to conduct an eye treatment appointment in Doncaster as well as testing for prescription glasses and sunglasses.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Doncaster_900x600_c.jpg" alt="Optometrist in Doncaster"></div>
-</div>
-<div id="eastland" class="store-details" style="display: none;">
-<h3>Optometrist in Eastland</h3>
-<p>Make your eye health a priority and visit our optometrists in Eastland, located in Ringwood which is home to over 19,000 people. With our <a href="https://www.oscarwylee.com.au/locations/optometrist-eastland.html">Eastland optometrists</a> on-site, you can receive a Medicare, bulk billed eye test to have your vision and eye health assessed. If a patient requires more advanced treatment, they will be referred to an eye doctor in Ringwood. Our store, located in the Eastland Shopping Centre, offers a wide range of fashion-forward and affordable frames including prescription sunglasses. Choose to book your eye treatment appointment in Eastland with our trusted optometrists.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Eastland_900x600_c.jpg" alt="Optometrist in Eastland"></div>
-</div>
-<div id="epping" class="store-details" style="display: none;">
-<h3>Optometrist in Epping</h3>
-<p>Choose Oscar Wylee for a Medicare, bulk billed eye test. Our Oscar Wylee store is located in Victoria’s Pacific Epping Shopping Centre which services over 29,000 people. We offer eye treatment appointments in Epping performed by our skilled <a href="https://www.oscarwylee.com.au/locations/optometrist-epping.html">Epping optometrists</a>. If further treatment is required, patients will be referred to an eye doctor in Epping. For expert advice, visit us in-store and our friendly staff can help you pick out a frame that fits your lifestyle. Here you can find multifocal lenses, blue light glasses and prescription sunglasses. For all your optometry and eyewear needs, come and see our Oscar Wylee optometrist in Epping today</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Epping-Pacific_900x600_c.jpg" alt="Optometrist in Epping"></div>
-</div>
-<div id="forest-hill" class="store-details" style="display: none;">
-<h3>Optometrist in Forest Hill</h3>
-<p>You can find our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-forest-hill.html">Forest Hill optometrists</a> in the Forest Hill Chase Shopping Centre. Easily book an eye treatment appointment in Forest Hill online on our Oscar Wylee booking page. While we do not have an eye doctor in Forest Hill onsite, our optometrist is available to provide bulk billed eye tests for eligible Medicare cardholders. Visit us in-store where you can browse our wide range of frames inspired by the Australian coastal landscape. Plus, we offer non-prescription and prescription sunglasses so you can protect your eyes in style. Plan your trip to see our optometrist in Forest Hill, which is home to over 10,000 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Forest-Hill_900x600_c.jpg" alt="Optometrist in Forest Hill"></div>
-</div>
-<div id="fountain-gate" class="store-details" style="display: none;">
-<h3>Optometrist in Fountain Gate</h3>
-<p>You can make an eye treatment appointment in Fountain Gate and get your eye test bulk billed at Oscar Wylee. We have a hard-working team and excellent optometrists in Fountain Gate. They will be able to provide professional advice on how to take care of your eye health and eyewear best. We do not have an eye doctor in Fountain Gate, however, you can still expect high-quality optometry services. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-fountain-gate.html">Fountain Gate optometrists</a> can carry out necessary testing for prescription glasses and sunglasses and for diagnosing eye conditions.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Fountain-Gate_900x600_c.jpg" alt="Optometrist in Fountain Gate"></div>
-</div>
-<div id="geelong" class="store-details" style="display: none;">
-<h3>Optometrist in Geelong</h3>
-<p>Find your local optometrists in Geelong, where you can find prescription glasses and sunglasses perfect for your style and visual requirement. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-geelong.html">Geelong optometrists</a> can help you choose what fits you best based on your face shape. You can book online for an eye treatment appointment in Geelong and have your eye test bulk billed. If our optometrists find that you need further examination, they can refer you to an eye doctor in Geelong. Our Oscar Wylee optometrists are committed to caring for Geelong’s over 270,000 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Geelong_900x600_c.jpg" alt="Optometrist in Geelong"></div>
-</div>
-<div id="glen-waverley" class="store-details" style="display: none;">
-<h3>Optometrist in Glen Waverley</h3>
-<p>Our optometrists in Glen Waverley are able to provide you with a prescription for glasses and sunglasses as well as bulk billed eye tests for eligible Medicare cardholders. We do not have an eye doctor in Glen Waverley but we do have qualified optometrists and optical dispensers on-site at our locations. They are available for an eye treatment appointment in Glen Waverley, which you can make a booking for on our website. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-glen-waverley.html">Glen Waverley optometrists</a> are able to help the over 43,000 residents who call Glen Waverley home.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/TheGlen_900x600.jpg" alt="Optometrist in Glen Waverley"></div>
-</div>
-<div id="greensborough" class="store-details" style="display: none;">
-<h3>Optometrist in Greensborough</h3>
-<p>Come see our optometrists in Greensborough for your next eye test. Oscar Wylee covers major health funds and offers bulk billed eye tests. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-greensborough.html">Greensborough optometrists</a> can help you if you need any more information. We do not have an eye doctor in Greensborough so if necessary, you may be referred to an ophthalmologist. We have a variety of frames to fit any style and visual need, which you are welcome to come in and try on. Our team provides professional care during eye treatment appointments in Greensborough. Our Oscar Wylee optometrists at Greensborough are experts in helping provide prescription glasses and sunglasses for over 15,800 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Greensborough_900x600_c.jpg" alt="Optometrist in Greensborough"></div>
-</div>
-<div id="highpoint" class="store-details" style="display: none;">
-<h3>Optometrist in Highpoint</h3>
-<p>Come see our capable team and optometrists in Highpoint, where they can conduct eye tests for prescription glasses and sunglasses. We also offer bulk billing for valid Medicare cardholders, so don’t forget to bring your Medicare card when you come in for your appointment. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-highpoint.html">Highpoint optometrists</a> are trained to identify eye conditions and diseases so they will be able to refer you to an eye doctor in Highpoint when necessary. If you require an eye treatment appointment in Highpoint, our team will be more than happy to carry this out for you. They are committed to delivering quality eye care to over 87,900 residents, so come see our optometrists at Highpoint.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Highpoint-900x600_1_.jpg" alt="Optometrist in Highpoint"></div>
-</div>
-<div id="keilor-downs" class="store-details" style="display: none;">
-<h3>Optometrist in Keilor Downs</h3>
-<p>Find your local Oscar Wylee optometrist in Keilor Downs, home to over 9,000 people. Located in the Keilor Central Shopping Centre, visit us in-store for an eye treatment appointment in Keilor Downs. After your appointment with our <a href="https://www.oscarwylee.com.au/locations/optometrist-keilor-downs.html">Keilor Downs optometrists</a>, our friendly retail staff can help you browse for your perfect frame. You can shop for a wide range of glasses including multifocals, blue light glasses and prescription sunglasses. While we do not have an eye doctor in Keilor Downs onsite, our optometrists are equipped and ready to provide you with excellent optometry services.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Kelior-Downs_900x600_c.jpg" alt="Optometrist in Keilor Downs"></div>
-</div>
-<div id="knox" class="store-details" style="display: none;">
-<h3>Optometrist in Knox</h3>
-<p>Receive an eye treatment appointment in Knox in our Oscar Wylee store located at the Knox Westfield Shopping Centre. Performed by our skilled optometrists in Knox, you can have your eye test bulk billed if you are an eligible cardholder. Once you have your prescription, our retail staff can help you choose from a wide section of contemporary and vintage-inspired frames as well as non-prescription and prescription sunglasses. We do not have an Oscar Wylee eye doctor in Knox, but for further treatment, our <a href="https://www.oscarwylee.com.au/locations/optometrist-knox.html">Knox optometrists</a> are equipped to refer patients where necessary. Home to over 160,000 residents, plan your visit to Knox Oscar Wylee for all your optometry and eyewear needs.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Knox_900x600_c.jpg" alt="Optometrist in Knox"></div>
-</div>
-<div id="melbourne-chapel-st" class="store-details" style="display: none;">
-<h3>Optometrist in Melbourne - Chapel St</h3>
-<p>Discover an optometrist in Melbourne - Chapel St near you at Oscar Wylee. Our store is located in South Yarra and offers bulk billed eye tests for all eligible Medicare cardholders as provided by our registered <a href="https://www.oscarwylee.com.au/locations/optometrist-chapel-st.html">Melbourne - Chapel St optometrists</a>. After your eye treatment appointment in Melbourne - Chapel St, speak to our friendly staff and they will help you to find a fashion-forward frame to suit your needs. We also offer non-prescription and prescription sunglasses so you can protect your eyes in style. While there is no eye doctor in Melbourne - Chapel St onsite, our optometrists provide great services to the over 21,000 residents of South Yarra.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Chapel-St_c.jpg" alt="Optometrist in Melbourne - Chapel St"></div>
-</div>
-<!-- <div id="melbourne-swanston-st" class="store-details" style="display: none;">
+.context h3 {
+  padding: 2rem 0 0 0;
+  font-weight: bold;
+  font-size: 18px;
+}
 
-            <h3>Optometrist in Melbourne - Swanston St</h3>
-            <p>
-                If you’re looking for an optometrist in Melbourne - Swanston St, look no further than Oscar
-                Wylee. Found
-                in the heart of Melbourne’s CBD, a city with over 5 million people, our store offers a wide
-                range of
-                on-trend glasses that you can browse and try on. Plus, with a great selection of
-                non-prescription and
-                prescription sunglasses available, you can protect your eyes in style. Our eye treatment
-                appointments in
-                Melbourne - Swanston St are approximately 20 minutes so you can come get your eyes tested on
-                your lunch
-                break. The <a href="https://www.oscarwylee.com.au/locations/optometrist-swanston-st.html">Melbourne -
-                    Swanston St optometrists</a> perform Medicare, bulk billed eye tests, although, for
-                more advanced treatment, they will refer patients to an eye doctor in Melbourne - Swanston
-                St.
-            </p>
+.context p {
+  padding: 1.5rem 0.5rem 2rem 0.5rem;
+  font-size: 16px;
+  text-align: justify;
+  text-align-last: left;
+}
 
-            <div class="dropdown-image-wrapper">
-                <img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Swanston-St_900x600_c.jpg"
-                    alt="Optometrist in Melbourne - Swanston St" class="dropdown-image" loading="lazy" />
-            </div>
+/* .faqSubtitles {
+            border-top: 1px solid silver;
+        }
 
-        </div> -->
-<div id="melbourne-central" class="store-details" style="display: none;">
-<h3>Optometrist in Melbourne Central</h3>
-<p>Visit our optometrist in Melbourne Central for your annual eye check-up and browse our wide range of glasses in-store. While we do not have an eye doctor in Melbourne Central, our skilled optometrists are on-site to provide eye treatment appointments in Melbourne Central to assess your vision and eye health. Oscar Wylee offers prescription glasses and prescription sunglasses at affordable prices, inspired by vintage and on-trend styles. Plan your trip to see our <a href="https://www.oscarwylee.com.au/locations/optometrist-melbourne-central.html">Melbourne Central optometrists</a> who provide excellent services to over 5 million residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Melbourne-Central_900x600_c.jpg" alt="Optometrist in Melbourne Central"></div>
-</div>
-<div id="melton" class="store-details" style="display: none;">
-<h3>Optometrist in Melton</h3>
-<p>You can find our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-melton.html">Melton optometrists</a> in the Woodgrove Shopping Centre where they provide Medicare, bulk billed eye tests for the 192,000 residents in the city of Melton. Our store in Melton Woodgrove Shopping Centre offers prescription eyeglasses and prescription sunglasses in a variety of modern and vintage-inspired styles. The dedicated Oscar Wylee optometrist in Melton can assess your vision and provide an updated prescription, and for more advanced treatment, they will refer patients to an eye doctor in Melton. For excellent optometrist and eyewear services, easily book online for an eye treatment appointment in Melton.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Melton_900x600_c.jpg" alt="Optometrist in Melton"></div>
-</div>
-<div id="mildura" class="store-details" style="display: none;">
-<h3>Optometrist in Mildura</h3>
-<p>Make your eye health a priority by visiting our optometrist in Mildura, located in the Mildura Central Shopping Centre. After your eye treatment appointment in Mildura, our friendly staff are on hand to help you find your perfect frames that may be used for multifocals or even prescription sunglasses. While we do not have an eye doctor in Mildura at Oscar Wylee, our optometrists are able to refer patients to an ophthalmologist where necessary. Mildura, home to over 50,000 residents, is your go-to for all your eye care needs as our <a href="https://www.oscarwylee.com.au/locations/optometrist-mildura.html">Mildura optometrists</a> are ready to help with all your needs.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Mildura_900x600_c.jpg" alt="Optometrist in Mildura"></div>
-</div>
-<div id="moonee-ponds" class="store-details" style="display: none;">
-<h3>Optometrist in Moonee Ponds</h3>
-<p>Our Oscar <a href="https://www.oscarwylee.com.au/locations/optometrist-moonee-ponds.html">Moonee Ponds optometrists</a> offer bulk billed eye tests for eligible Medicare cardholders. At your eye treatment appointment in Moonee Ponds, you will have your eyesight assessed, your eye health checked and be provided with an updated prescription if required. With your new prescription, you can browse from a large selection of fashion-forward frames as well as find a pair of prescription sunglasses. Servicing over 16,000 residents, our optometrist in Moonee Ponds provides excellent eye care and will refer patients where necessary to an eye doctor in Moonee Ponds for more advanced treatment.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Moonee_Ponds_900x600_c.jpg" alt="Optometrist in Moonee Ponds"></div>
-</div>
-<div id="mornington" class="store-details" style="display: none;">
-<h3>Optometrist in Mornington</h3>
-<p>For all your eye care needs, visit our optometrist in Mornington, home to over 23,000 people. Our Oscar Wylee store is located in the Mornington Central Shopping Centre and offers a large selection of fashion-forward frames at affordable prices. After your eye treatment appointment in Mornington, our retail staff can help you find the best glasses for you, whether that is a pair of multifocal lenses, blue light glasses or prescription sunglasses. While we do not have an eye doctor in Mornington onsite, you can still have your vision assessed and your eye health checked by our dedicated <a href="https://www.oscarwylee.com.au/locations/optometrist-mornington.html">Mornington optometrists</a>. Come in and see the team today to experience our excellent optometrist and eyewear services.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Mornington_900x600_c.jpg" alt="Optometrist in Mornington"></div>
-</div>
-<div id="northland" class="store-details" style="display: none;">
-<h3>Optometrist in Northland</h3>
-<p>Our Oscar Wylee optometrists in Northland provide Medicare, bulk billed eye tests for the 34,000 residents of Preston. An eye treatment appointment in Northland will involve a vision check, eye health check and you can receive an updated prescription if required. After, our friendly staff are available to provide advice on the best glasses to suit your needs. We have a wide range of styles from bold to subtle as well as prescription sunglasses. The <a href="https://www.oscarwylee.com.au/locations/optometrist-northland.html">Northland optometrists</a> are equipped to provide excellent optometry services, and if a patient requires more advanced treatment, they can be referred to an eye doctor in Preston.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Northland_900x600_c.jpg" alt="Optometrist in Northland"></div>
-</div>
-<div id="plenty-valley" class="store-details" style="display: none;">
-<h3>Optometrist in Plenty Valley</h3>
-<p>Here at our store in Westfield Plenty Valley, we offer eye care services from our <a href="https://www.oscarwylee.com.au/locations/optometrist-plenty-valley.html">Plenty Valley optometrists</a> and prescription glasses and prescription sunglasses in a variety of modern and vintage-inspired styles. Book online for an eye treatment appointment in Plenty Valley to have your eye health assessed and your vision checked. While we do not have an eye doctor in Plenty Valley Oscar Wylee, our optometrists are equipped to provide excellent care to every patient. Visit us in-store today to browse of wide range of glasses and receive a bulk billed eye test performed by our optometrist in Plenty Valley, home to over 24,000 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Plenty-Valley_900x600_c.jpg" alt="Optometrist in Plenty Valley"></div>
-</div>
-<div id="shepparton" class="store-details" style="display: none;">
-<h3>Optometrist in Shepparton</h3>
-<p>Find our dedicated Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-shepparton.html">Shepparton optometrists</a> in Shepparton Marketplace, who are equipped to provide Medicare, bulk billed eye tests for eligible cardholders. In-store you can shop for a new pair of glasses or prescription sunglasses and choose from a selection of vintage and on-trend styles. An eye treatment appointment in Shepparton will assess your vision and eye health but for more advanced care, you will be referred to an eye doctor in Shepparton, also known as an ophthalmologist. Visit us today where our Oscar Wylee optometrist in Shepparton provides excellent optometry services to 68,000 residents of Shepparton.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Shepparton_900x600_c.jpg" alt="Optometrist in Shepparton"></div>
-</div>
-<div id="southland" class="store-details" style="display: none;">
-<h3>Optometrist in Southland</h3>
-<p>Make your eye health a priority and visit Oscar Wylee for excellent optometry services provided by our <a href="https://www.oscarwylee.com.au/locations/optometrist-southland.html">Southland optometrists</a>. While we do not have an eye doctor in Southland on-site, you can receive a Medicare, bulk billed eye test performed by our optometrist in Southland. After your eye treatment appointment in Southland, shop from our large selection of fashion-forward frames at affordable prices. We have multifocal lenses, blue light glasses and prescription sunglasses available. Plan a trip to see our optometrist in Oscar Wylee Southland, located in Cheltenham which has nearly 24,000 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Southland_900x600_c.jpg" alt="Optometrist in Southland"></div>
-</div>
-<div id="traralgon" class="store-details" style="display: none;">
-<h3>Optometrist in Traralgon</h3>
-<p>Find your local optometrist in Traralgon Oscar Wylee for all your optometry and eyewear needs. We offer high-quality and affordable prescription glasses and prescription sunglasses to suit every occasion. An eye treatment appointment in Traralgon is typically 20 minutes, so you can get your eyes checked on your lunch break or when out shopping. While we do not have an eye doctor in Traralgon Oscar Wylee, you can receive a Medicare, bulk billed eye test from our <a href="https://www.oscarwylee.com.au/locations/optometrist-traralgon.html">Traralgon optometrists</a>. Make the trip to Traralgon, which is home to over 26,000 residents and receive excellent eye care services provided by the Oscar Wylee staff and optometrist.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Traralgon_900x600_c.jpg" alt="Optometrist in Traralgon"></div>
-</div>
-<div id="victoria-gardens" class="store-details" style="display: none;">
-<h3>Optometrist in Victoria Gardens</h3>
-<p>Find our <a href="https://www.oscarwylee.com.au/locations/optometrist-victoria-gardens.html">Victoria Gardens optometrists</a> in Richmond’s Victoria Gardens Shopping Centre, which services a population of over 28,000 residents. Here you can receive a bulk billed eye test for eligible Medicare cardholders performed by our dedicated optometrist in Victoria Gardens. If a patient requires further treatment, they will be referred to an eye doctor in Victoria Gardens. After your eye treatment appointment in Victoria Gardens, explore the wide range of frames inspired by on-trend and vintage styles as well as prescription sunglasses. Our friendly retail staff and optometrist look forward to seeing you in our Victoria Gardens store soon.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Victoria-Gardens_900x600_c.jpg" alt="Optometrist in Victoria Gardens"></div>
-</div>
-<div id="watergardens" class="store-details" style="display: none;">
-<h3>Optometrist in Watergardens</h3>
-<p>Located in Watergardens Town Centre in Taylors Lakes, visit the team at Oscar Wylee for a Medicare, bulk billed eye test provided by our <a href="https://www.oscarwylee.com.au/locations/optometrist-watergardens.html">Watergardens optometrist</a>. While we do not have an eye doctor in Watergardens, we offer excellent eye care services including vision assessment and eye health checks. Once you have finished your eye treatment appointment in Watergardens, we have a wide range of frames you can try on including prescription sunglasses so you can protect your eyes in style. Book an appointment today with our optometrist in Watergardens, which has a population of over 16,000 people.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Watergardens_900x600_1.jpg" alt="Optometrist in Watergardens"></div>
-</div>
-<div id="werribee" class="store-details" style="display: none;">
-<h3>Optometrist in Werribee</h3>
-<p>Book an eye treatment appointment in Werribee with Oscar Wylee to experience excellent customer service and eye care. We offer bulk billed eye tests for eligible Medicare cardholders provided by our <a href="https://www.oscarwylee.com.au/locations/optometrist-werribee.html">Werribee optometrists</a>. If you require any further treatment, patients can be referred to an eye doctor in Werribee. With an updated prescription, you can receive expert advice from the retail team about the best glasses for your needs. You can choose from a wide range of lens options including blue light glasses, multifocals and prescription sunglasses. Visit us today for all your optometry and eyewear needs provided by our dedicated retail staff and optometrist in Werribee, which is home to over 55,000 residents.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Werribee_900x600_c.jpg" alt="Optometrist in Werribee"></div>
-</div>
-<!-- end of VIC --> <!-- start of WA -->
-<div id="booragoon" class="store-details" style="display: none;">
-<h3>Optometrist in Booragoon</h3>
-<p>Come and visit the team at Oscar Wylee for your eye treatment appointment in Booragoon, with services including Medicare, bulk billed eye tests and same day prescription updates. Our in-store Oscar Wylee optometrists in Booragoon are fully equipped with the latest technology, to ensure Booragoon’s population of just over 5600 people, receive quality eye care. As Oscar Wylee does not have an eye doctor in Booragoon, our optometrists can refer customers to ophthalmologists if advanced care is needed. Our knowledgeable Oscar Wylee store teams can also help you shop for a new pair of frames, from optical to prescription sunglasses. Book online and look after your eyes with our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-booragoon.html">Booragoon optometrists</a>.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Booragoon_900x600_c.jpg" alt="Optometrist in Booragoon"></div>
-</div>
-<div id="carousel" class="store-details" style="display: none;">
-<h3>Optometrist in Carousel</h3>
-<p>Our Oscar Wylee optometrists in Westfield Carousel, Cannington, are available to assist customers on their eye care journey, from Medicare, bulk billed eye tests, to the purchase of new frames including prescription sunglasses. Westfield Carousel is located in Perth, Cannington, an area with over 6000 residents. Our dedicated team are fully trained and well-equipped with modern optometry technology to carry out eye treatment appointments in Westfield Carousel, Cannington. If advanced treatment is needed, our <a href="https://www.oscarwylee.com.au/locations/optometrist-carousel.html">Westfield Carousel optometrists</a> can refer patients to eye doctors in Cannington, such as ophthalmologists. For all your eye care needs, come and visit our Oscar Wylee optometrists at Westfield Carousel, Cannington.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Carousel_900x600_c.jpg" alt="Optometrist in Carousel"></div>
-</div>
-<div id="claremont-quarter" class="store-details" style="display: none;">
-<h3>Optometrist in Claremont</h3>
-<p>For an eye treatment appointment in Claremont Quarter, come and see the Oscar Wylee team. Our Claremont Quarter store is located in the Perth suburb of Claremont, with a population of over 9000 residents. At Oscar Wylee our <a href="https://www.oscarwylee.com.au/locations/optometrist-claremont.html">Claremont optometrists</a> are available to perform Medicare, bulk billed eye tests and our friendly staff can help you shop our range of frames, from optical and blue light glasses to prescription sunglasses. Oscar Wylee does not have an eye doctor in Claremont Quarter however, our optometrists can refer customers to ophthalmologists for care as required. Book online and get your eyes tested by our optometrist in Claremont Quarter.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Claremont_900x600_c.jpg" alt="Optometrist in Claremont"></div>
-</div>
-<!-- <div id="fremantle" class="store-details" style="display: none;">
+        .faqSubtitles h3 {
+            color: #003cac;
+            font-weight: 700;
+            border-left: 10px solid #d6ece4;
+            padding: 10px;
+            margin-left: 20px;
+            margin-top: 2rem;
+        }
 
-            <h3>Optometrist in Fremantle</h3>
-            <p>
-                At Oscar Wylee our <a
-                    href="https://www.oscarwylee.com.au/locations/optometrist-fremantle.html">Fremantle
-                    optometrists</a>
-                are dedicated to providing the city’s 30,000-plus population
-                with high-quality eye care. With Medicare, bulk billed eye tests and same-day prescriptions
-                available,
-                our team is equipped with the latest optometry technology to provide high-quality eye
-                treatment
-                appointments in Fremantle. We do not have an eye doctor in Fremantle, however, our
-                optometrists in
-                Fremantle are highly trained and can make recommendations for further care if needed. Come
-                in and see
-                our Oscar Wylee Fremantle optometrists for all your eye care needs including new optical
-                glasses or
-                prescription sunglasses!
-            </p>
+        .faqSubtitles p {
+            margin-left: 20px;
+            padding-bottom: 5px;
+        }
 
-            <div class="dropdown-image-wrapper">
-                <img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Fremantle_900x600_c.jpg"
-                    alt="Optometrist in Fremantle" class="dropdown-image" loading="lazy" />
-            </div>
+        .faqSubtitles ul,
+        .faqSubtitles span {
+            margin-left: 30px;
+            padding-bottom: 10px;
 
+        } */
 
-        </div> -->
-<div id="hillarys-whitford-city" class="store-details" style="display: none;">
-<h3>Optometrist in Hillarys Whitford City</h3>
-<p>Book an eye treatment appointment in Hillarys Whitford City with our dedicated Oscar Wylee optometrists. Located in Westfield Whitford City, our team can help you shop our range of frames from optical to prescription sunglasses. Our optometrists in Hillarys Whitford City, are available to provide Medicare, bulk billed eye tests and same-day prescriptions to the city’s 11,000 plus residents. Oscar Wylee does not have an eye doctor in Hillarys Whitford City, but our optometrists can refer patients if required. Come in and see our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-whitford-city.html">Hillarys Whitford City optometrists</a> for your eye care needs.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Hillarys_900x600_c.jpg" alt="Optometrist in Hillarys Whitford City"></div>
+.boxShadow {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.rightShadow {
+  box-shadow: 15px 0px 15px -10px rgba(0, 0, 0, 0.1);
+}
+
+.dashedBorder {
+  border-top: 2px dotted #cbc5a3;
+  border-bottom: 2px dotted #cbc5a3;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.linkTo {
+  color: #003cac;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.context ul {
+  width: calc(100% - 4rem);
+  text-align: justify;
+  text-align-last: left;
+  padding: 1.5rem 0 1.5rem 3rem;
+}
+
+.border {
+  border-bottom: 1px solid silver;
+  padding: 0rem;
+}
+
+.flatBg {
+  background-image: url(./assets/Frame\ 2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  box-shadow: 4px 4px 8px silver;
+}
+
+.flatBg::before {
+  opacity: 0.2;
+}
+
+.lastBox {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.context ul li {
+  padding-bottom: 1rem;
+}
+
+.textMain {
+  background-color: #FFE0B2;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 1rem 2rem 3rem;
+  margin: 1rem 0rem 2rem 0rem;
+  /* box-shadow: 3px 3px 6px silver; */
+  /* border-bottom: 1px solid silver; */
+  text-align: left;
+  text-align-last: left;
+}
+
+.textMain h3 {
+  color: #003cac;
+  border-left: 10px solid #d6ece4;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.textMainNobg {
+  /* border-bottom: 1px solid silver; */
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.textMain h2 {
+  margin-top: 1.5rem;
+  border-left: 10px solid #003cac;
+  padding: 1rem;
+}
+
+.textMainNobg h2 {
+  border-left: 10px solid #003cac;
+  padding: 1rem;
+}
+
+.textMain h3,
+.textMainNobg h3 {
+  border-left: 10px solid #a0b3ac;
+  padding: 0.8rem;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+}
+
+.textMain h4,
+.textMainNobg h4 {
+  /* border-left: 10px solid #ffffff; */
+  padding: 0rem;
+  margin-top: 0rem;
+  margin-left: 1rem;
+}
+
+.textMain strong,
+.textMainNobg strong {
+  color: #003cac;
+  padding-bottom: 10px;
+}
+
+.textMainNobg p,
+.textMain p {
+  padding-top: 1rem;
+  margin-left: 1rem;
+}
+
+.textMainNobg ul,
+.textMain ul {
+  margin-left: 3rem;
+}
+
+.flexContainer,
+.flexContainerFrame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  /* margin-bottom: 2rem; */
+}
+
+.flexContainerFrame {
+  flex-wrap: nowrap !important;
+}
+
+.flexImage {
+  width: 44%;
+  min-width: 350px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 0 auto;
+  max-width: 410px;
+  max-height: 450px;
+  /* filter: drop-shadow(5px 5px 10px Silver);
+          -webkit-filter: drop-shadow(5px 5px 10px Silver); */
+}
+
+.flexText, .flexTextFrame {
+  width: 44%;
+  min-width: 350px;
+  /* background-color: #fff; */
+  /* border-radius: 10px; */
+  /* -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px; */
+  padding: 1rem 0.5rem;
+  /* border: 2px dashed #cbc5a3; */
+  margin: 0 1rem;
+  align-self: stretch;
+}
+
+.flexText ul {
+  padding-top: 1rem;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.flexText p, .flexTextFrame p {
+  text-align: left;
+}
+
+.flexText img {
+  width: 75%;
+  /* margin-top: 10%; */
+  /* border-radius: 10px; */
+  padding-left: 5%;
+}
+
+.imageTwo {
+  width: 35%;
+  padding-top: 1rem;
+  margin: auto;
+
+}
+
+.flexImageRound {
+  border-radius: 15px;
+  width: 40%;
+}
+
+/* .smallText {
+  font-size: 13px !important;
+  margin-left: 1.5rem;
+  font-style: italic;
+} */
+
+span.smallText {
+  display: block;
+  font-size: 13px !important;
+  padding-left: 1.4rem !important;
+  font-style: italic;
+}
+
+.location {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+  border-top: 1px solid silver;
+}
+
+.locationText h2 {
+  font-weight: 700;
+  padding-left: 0.5rem;
+}
+
+.textBorder {
+  border-top: 1px solid silver;
+  margin-top: 5.5rem;
+  padding: 2rem;
+}
+
+.locationText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.locationText p {
+  font-size: 16px;
+}
+
+.locationImage {
+  width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.allButton {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.allButton a {
+  text-decoration: none;
+}
+
+.centerBtn {
+  text-align: center;
+}
+
+.btnOw:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+  transition: 1s;
+}
+
+.btnOw {
+  background-color: #003cac;
+  width: 80%;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pSubTitle {
+  font-size: 22px !important;
+  padding-top: 3rem !important;
+  font-weight: bold;
+  color: #6b6b6b !important;
+}
+
+.minusPadding {
+  padding-bottom: 0.5rem !important;
+}
+
+/* vertical */
+.reveal {
+  position: relative;
+  transform: translateY(65px);
+  -webkit-transform: translateY(65px);
+  -moz-transform: translateY(65px);
+  -ms-transform: translateY(65px);
+  -o-transform: translateY(65px);
+  opacity: 0;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  opacity: 1;
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #fff;
+  color: #003cac;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  border: none;
+  /* border-bottom: 2px dashed #003cac; */
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+button.accordion.active::before {
+  content: "\2212";
+}
+
+button.accordion::before {
+  content: "\002B";
+  color: #003cac;
+  font-weight: bold;
+  /* float: right; */
+  margin-left: 5px;
+  padding-right: 0.5rem;
+  font-size: 16px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.collapsible:hover {
+  background-color: #f7f7f7;
+  color: #003cac !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-style: normal;
+}
+
+.activeCollaps {
+  font-style: normal;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsContent {
+  padding: 0 1rem;
+  display: none;
+  overflow: hidden;
+  /* background-color: #003cac; */
+  font-size: 12px;
+  border-top: 1px dashed #003cac;
+  background-color: #f7f7f7;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sources {
+  margin-bottom: 2rem;
+}
+
+.minusMargin {
+  margin-top: -2rem;
+}
+
+hr {
+  opacity: 0.7;
+  border-top: 1px solid silver;
+}
+
+.booking {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.booking h2 {
+  padding: 2rem;
+  margin: 0px;
+}
+
+.booking p {
+  padding-top: 2rem;
+}
+
+.booking a {
+  width: 30%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.booking button {
+  background-color: #003cac;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  padding: 15px;
+  margin-right: 70px;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+button:not(.primary) {
+  box-shadow: inset 0 1px 0 0 #fff, inset 0 -1px 0 0 rgb(204 204 204 / 30%);
+}
+
+.booking button:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.bookingContainer {
+  border-bottom: 1px solid silver;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.booking input {
+  padding-bottom: 0.2rem;
+  border: none;
+  border-bottom: 2px solid #000;
+  margin: 1rem 0;
+  width: 20rem;
+  background-color: #f7f7f7;
+  font-size: 16px;
+}
+
+.booking input:focus {
+  outline: none;
+}
+
+.booking input::placeholder {
+  color: #a0b3ac;
+  font-size: 16px;
+}
+
+.adjustMargin {
+  text-align: center;
+}
+
+.fullWidthBtn {
+  width: 90% !important;
+}
+
+.paraHead {
+  font-size: 18px;
+  font-weight: bold;
+  color: #003cac;
+  text-align: center;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.7);
+  padding: 1rem 0 2rem 0;
+  margin: 4rem 1.5rem 3rem 1.5rem;
+}
+
+.addTopMargin {
+  margin-top: 3rem !important;
+}
+
+@media (max-width: 1024px) {
+  .flexTextFrame {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    width: calc(100% - 2rem);
+    padding: 1.5rem 1rem;
+    margin: 0 0 2rem 0;
+  }
+
+  .context {
+    width: calc(100% - 3rem);
+    padding: 0 1.5rem;
+  }
+
+  .flexContainer,
+  .flexContainerFrame {
+    margin-bottom: 2rem;
+  }
+
+  .flexImage {
+    min-width: 280px;
+    margin: 2rem auto;
+    max-width: 410px;
+    max-height: 450px;
+  }
+
+  .flexText {
+    min-width: 300px;
+    margin: 0.5rem auto;
+  }
+
+  .imageTwo {
+    width: 50%;
+  }
+
+  .booking {
+    justify-content: center;
+    margin: 1rem auto;
+  }
+
+  .booking h2 {
+    padding: 0.5rem;
+    margin: 0px;
+  }
+
+  .booking a {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .booking button {
+    margin: 1rem auto;
+  }
+
+  .booking p {
+    padding-right: 2.5rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .title p {
+    padding: 0 1rem 1rem;
+  }
+
+  .minusMarginImage {
+    margin-top: -2rem;
+    margin-bottom: -4rem;
+  }
+
+  .extraPadding {
+    padding-bottom: 2rem;
+  }
+
+  .flexText h4 {
+    padding-top: 0 !important;
+  }
+
+  .flexImageRound,
+  .flexImage,
+  .flexText, .flexTextFrame {
+    width: 100%;
+  }
+
+  .imageTwo {
+    width: 60%;
+    /* padding-top: 0; */
+  }
+
+  .imageTwo,
+  .locationImage {
+    order: 1;
+  }
+
+  .flexImage {
+    margin: 1.5rem auto 0 auto;
+  }
+
+  .allButton {
+    margin-bottom: 5px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+
+  .context ul,
+  .context ol {
+    width: calc(100% - 6rem);
+    padding-left: 3rem;
+  }
+
+  .context {
+    width: calc(100% - 2rem);
+    padding: 0 1rem;
+  }
+
+  .booking h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .faqSubtitles h3 {
+    margin-top: 3rem;
+  }
+
+  .minusMargin {
+    margin-top: 0rem !important;
+  }
+
+  .flexText .flexTwo, .flexTextFrame {
+    margin-top: 0 !important;
+  }
+
+  .flexText h2, .flexTextFrame h2 {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .flexText ul {
+    padding-top: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .flexMargin {
+    margin-top: -0.5rem !important;
+  }
+
+  .sources {
+    margin-top: -4rem;
+  }
+
+  /* .flexText p{
+            padding: 0 0.5rem !important;
+          } */
+
+  .faqSubtitles ul,
+  .faqSubtitles span {
+    margin-left: 10px;
+  }
+
+  .faqSubtitles p {
+    margin-left: 0;
+  }
+
+  /* .textMain h2,
+            .textMainNobg h2 {
+                border-left: 10px solid #003cac;
+            } */
+
+  .textMain {
+    margin: 1rem 1rem 3rem 1rem;
+    padding: 1rem;
+    padding-right: 2rem;
+  }
+
+  .textMainNobg {
+    padding: 1rem 0.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .textMain h2 {
+    color: #003cac;
+    padding: 1rem;
+    margin-bottom: 0rem;
+    /* margin-top: 1rem !important; */
+  }
+
+  .textMainNobg h2 {
+    margin-bottom: 1rem !important;
+    margin-left: 0.5rem;
+  }
+
+  .textMain p,
+  .textMainNobg p {
+    text-align: left !important;
+    padding: 0.5rem 1rem 2rem;
+  }
+
+  .textMain ul,
+  .textMainNobg ul {
+    text-align: left !important;
+    padding: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  /* .textMain h3 {
+    margin-top: 0;
+  } */
+
+  .textMainNobg h3 {
+    margin-top: 3rem;
+    margin-left: 2rem;
+  }
+
+  .flexContainer,
+  .flexContainerFrame {
+    margin: 1rem 0rem;
+  }
+
+  .flexContainerFrame {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    width: calc(100% - 1rem);
+    padding: 1rem 0.5rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .title h1 {
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .textBorder {
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .flexImage {
+    min-width: 280px;
+    margin: 1rem auto;
+    max-width: 410px;
+    max-height: 450px;
+  }
+
+  .flexText, .flexTextFrame {
+    min-width: 210px;
+    margin: -1rem auto;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .bannerResponsive {
+    display: flex;
+    width: 100%;
+  }
+
+  .border {
+    padding: 1rem 0rem 1rem 0rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .context p {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    text-align: left !important;
+  }
+
+  .context ul {
+    width: calc(100% - 3rem);
+    padding-left: 1.5rem;
+    text-align: left !important;
+  }
+
+  .context ul,
+  .context p {
+    text-align: left;
+  }
+
+  .reveal {
+    position: relative;
+    transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -o-transform: translateY(15px);
+    opacity: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+
+  span.smallText {
+    margin-left: 0.5rem;
+  }
+
+  .imageTwo {
+    width: 80%;
+  }
+
+  .booking h2 {
+    text-align: center;
+  }
+
+  .booking input {
+    width: 18rem;
+  }
+
+  .topPadding {
+    padding-top: 2rem;
+  }
+
+  .topMargin {
+    margin-top: 2rem !important;
+  }
+
+  .topbtmPadding {
+    padding: 2rem 0rem !important;
+  }
+
+  .bottomPadding {
+    padding-bottom: 48px !important;
+  }
+
+  /* .paraHead {
+    padding: 1rem 0 2rem 0;
+    margin: 1rem 0.5rem 3rem 0.5rem;
+  } */
+
+  .minusMarginImage {
+    margin: 1rem auto;
+  }
+
+  .flexText img {
+    width: 100%;
+  }
+
+  .leftMargin {
+    margin-left: 2.5rem !important;
+  }
+
+  .rmvTopPaddingMargin {
+    padding-top: 0rem !important;
+    margin-top: 0rem !important;
+  }
+}
+
+@media (max-width: 375px) {
+  /* .flexContainer{
+            max-width: 100%;
+          } */
+  .flexText, .flexTextFrame {
+    min-width: 200px;
+    margin: 0.5rem auto;
+  }
+
+  .flexImage {
+    min-width: 220px;
+    margin: 0.5rem auto;
+  }
+
+  .location {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 1rem 0.5rem;
+  }
+
+  .context ul {
+    width: calc(100% - 3rem);
+    padding-left: 1.5rem;
+  }
+
+  .locationText > * {
+    margin-bottom: 20px;
+  }
+
+  .btnOw {
+    width: 100%;
+  }
+
+  .booking input {
+    width: 13rem;
+  }
+}
+
+@media (max-width: 281px) {
+  .flexText, .flexTextFrame {
+    min-width: 200px;
+    margin: 0.5rem auto;
+  }
+
+  .flexImage {
+    min-width: 220px;
+    margin: 0.5rem auto;
+  }
+}
+</style>
+<div class="container"><img src="{{media url="wysiwyg/Medicare-Bulk-Billing/Medicare_Bulk_Billing_for_Eye_Tests_and_Optometrists_Desktop.jpg"}}" alt="Medicare Bulk Billing for Eye Tests and Optometrists" class="banner" title="Medicare Bulk Billing for Eye Tests and Optometrists"> <img src="{{media url="wysiwyg/Medicare-Bulk-Billing/Medicare_Bulk_Billing_for_Eye_Tests_and_Optometrists_Mobile.jpg"}}" alt="Medicare Bulk Billing for Eye Tests and Optometrists" class="bannerResponsive" title="Medicare Bulk Billing for Eye Tests and Optometrists">
+<div class="context">
+<div class="title">
+<h1>Medicare Bulk Billing For Eye Tests And Optometrists</h1>
+<p>A comprehensive eye test is a precise way to discover if you need vision correction or have undetected eye health conditions. Thanks to Medicare bulk billing, you won’t even have to worry about the price of taking care of your eye health.</p>
 </div>
-<div id="joondalup" class="store-details" style="display: none;">
-<h3>Optometrist in Joondalup</h3>
-<p>Come in and see our optometrist in Joondalup, Perth, where we offer eye care services including Medicare, bulk billed eye tests and new frames including prescription sunglasses and optical glasses. Oscar Wylee does not have the services of an eye doctor in Joondalup, Perth, such as an ophthalmologist, however, our optometrists are highly trained and well equipped to serve the 160,000-plus population of the Joondalup local government area. We are located in Lakeside Joondalup Shopping City, a convenient location for eye treatment appointments in Joondalup, Perth. Book online and our <a href="https://www.oscarwylee.com.au/locations/optometrist-joondalup.html">Joondalup, Perth optometrists</a> can take care of you on your eye care journey.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Joondalup_900x600_c.jpg" alt="Optometrist in Joondalup"></div>
+<div class="textMainNobg">
+<h2>What is bulk billing Medicare?</h2>
+<p class="minusPadding">Medicare is <a href="https://www.servicesaustralia.gov.au/medicare" class="linkTo">Australia’s healthcare system</a>. The service was officially started in 1984. Since then, it has provided coverage and gap payments for Australian citizens and permanent residents for all payments going towards health costs and medical aid. Services Australia are currently managing it. <br><br><a href="/eye-test/bulk-billing" class="linkTo">Bulk billing</a> is when a healthcare specialist sends all the bills for their services that are covered by Medicare to the government at once, to be paid in one instance.</p>
+<span class="smallText">Source: Services Australia</span></div>
+<hr>
+<div class="textMain boxShadow">
+<h2>In-store at Oscar Wylee</h2>
+<p>A qualified optometrist is available in Oscar Wylee stores to give a bulk billed <a href="https://www.oscarwylee.com.au/eye-care/eye-test" class="linkTo">eye test</a> to all eligible Medicare cardholders. <br><br>Regardless of Medicare status, anyone seeking a professional eye test is welcome at Oscar Wylee stores. <br><br>Learn more about what happens during an eye test by reading our <a href="/glasses/eye/test-glossary" class="linkTo">eye test glossary</a>.</p>
 </div>
-<div id="karrinyup" class="store-details" style="display: none;">
-<h3>Optometrist in Karrinyup</h3>
-<p>For an eye treatment appointment in Karrinyup, come in and see the Oscar Wylee team in the Karrinyup Shopping Centre. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-karrinyup.html">Karrinyup optometrists</a> offer Medicare, bulk billed eye tests and our friendly store staff can assist in finding a pair of frames from optical to prescription sunglasses that are the right fit. Oscar Wylee optometrists in Karrinyup are trained and equipped with modern technology to serve Karrinyup’s almost 10,000 residents, including referrals to eye doctors in Karrinyup if needed. Book online and come and visit our Karrinyup optometrists for your eye care needs!</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Karrinyup_900x600_c.jpg" alt="Optometrist in Karrinyup"></div>
+<div class="context"><hr></div>
+<div class="location topbtmPadding" style="border-top: none;">
+<div class="locationText">
+<h2 class="rmvTopPaddingMargin">Ready to book an eye test?</h2>
+<p>Come to Oscar Wylee for an eye test with no out-of-pocket expenses.</p>
 </div>
-<div id="mandurah" class="store-details" style="display: none;">
-<h3>Optometrist in Mandurah</h3>
-<p>Our Oscar Wylee optometrists, located in the Mandurah Forum, are passionate about providing eye treatment appointments in Mandurah. Our services include Medicare, bulk billed eye tests and prescription updates. We also have a range of optical glasses, prescription sunglasses and non-prescription glasses, meaning there’s sure to be a style for each of Mandurah’s 90,000 residents. Oscar Wylee does not have eye doctors in Mandurah, however, our <a href="https://www.oscarwylee.com.au/locations/optometrist-mandurah.html">Mandurah optometrists</a> can refer to ophthalmologists or other eye care specialists as needed. Come in and take care of your eyes with our Oscar Wylee optometrists in Mandurah.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Mandurah_900x600_c.jpg" alt="Optometrist in Mandurah"></div>
+<div class="locationText"><a href="/booking" class="adjustMargin"> <button class="btnOw">Book an eye test</button> </a></div>
 </div>
-<div id="midland-gate" class="store-details" style="display: none;">
-<h3>Optometrist in Midland Gate</h3>
-<p>Book a Medicare bulk billed eye test with our <a href="https://www.oscarwylee.com.au/locations/optometrist-midland-gate.html">Midland Gate optometrist</a>, located in the Midland Gate Shopping Centre which services just under 10,000 residents. With an optometrist available in every Oscar Wylee store, you can receive an eye treatment appointment in Midland Gate to have your vision and eye health assessed. For more advanced treatment, patients will be referred to an eye doctor in Midland. In-store, you can shop for a new pair of frames with the help of our retail staff and also browse our selection of non-prescription and prescription sunglasses. Visit our optometrist in Midland Gate today and make your eye health a priority.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Midland-Gate_900x600_c.jpg" alt="Optometrist in Midland Gate"></div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>Are eye tests covered by Medicare?</h2>
+<p>Services Australia and Medicare will cover for eye tests as performed by a qualified optometrist. Children and any dependents under the age of 15 also qualify for this coverage.</p>
+<h3>Are eye tests bulk billed?</h3>
+<p class="leftMargin">Within limits, a professional vision test is a part of the bulk billing coverage that Medicare provides. Look for a ‘Medicare near me’ to discover which services you are entitled to.</p>
 </div>
-<div id="morley" class="store-details" style="display: none;">
-<h3>Optometrist in Morley</h3>
-<p>Located in the Galleria Shopping Centre, our Oscar Wylee store has everything you need including Medicare, bulk billed eye tests performed by our optometrist in Morley and a wide range of fashion-forward frames. Book online for an eye treatment appointment in Morley where you can receive an updated prescription if needed. When a patient requires more advanced treatment, our <a href="https://www.oscarwylee.com.au/locations/optometrist-morley-galleria.html">Morley optometrists</a> can refer them to an ophthalmologist, also known as an eye doctor, in Morley which is home to over 47,000 people. If you’re looking for a pair of prescription sunglasses or multifocal lenses, visit Oscar Wylee Morley where our retail staff and optometrist can help with your eyesight requirements.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Morley_900x600_c.jpg" alt="Optometrist in Morley"></div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>Who can get a bulk billed eye test?</h2>
+<p>A comprehensive eye test can be bulk billed at Oscar Wylee to all valid Medicare cardholders. This includes, but is not limited to, citizens and permanent residents of Australia and New Zealand, or residents of the Christmas, Norfolk and Cocos islands.</p>
 </div>
-<div id="rockingham" class="store-details" style="display: none;">
-<h3>Optometrist in Rockingham</h3>
-<p>Visit our optometrist in Rockingham for your annual eye check-up, located in the Rockingham Shopping Centre. While there is not an eye doctor in Rockingham Oscar Wylee, our optometrists provide bulk billed eye tests for eligible Medicare cardholders. After your eye treatment appointment in Rockingham, our friendly retail staff are on-hand to help with all your eyewear needs, including finding prescription glasses and prescription sunglasses. With an updated prescription, you can browse our wide selection of frames, from bold to subtle styles. Our <a href="https://www.oscarwylee.com.au/locations/optometrist-rockingham.html">Rockingham optometrists</a> service the city's 143,000 residents, providing excellent eye care.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Rockingham_900x600_c.jpg" alt="Optometrist in Rockingham"></div>
+<hr>
+<div class="textMain boxShadow">
+<h2>Bulk billed eye tests at Oscar Wylee</h2>
+<p class="minusPadding">At Oscar Wylee, not just valid Medicare cardholders are welcome for eye testing and examinations. For a more detailed explanation, see below:</p>
+<div class="flexContainerFrame">
+<div class="flexTextFrame">
+<h3>Medicare cardholder</h3>
+<p>Bulk billed eye tests are available to all eligible Medicare cardholders.</p>
 </div>
-<!-- end of WA --> <!-- start of SA -->
-<div id="rundle-mall" class="store-details" style="display: none;">
-<h3>Optometrist in Rundle Mall</h3>
-<p>Located in Adelaide, South Australia, which has a population of 25,000 as per the Australia Bureau of Statistics, our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-rundle-mall.html">Rundle Mall optometrists</a> are available to provide the community with a range of eye care services. Our optometrists are fully equipped with the latest optometry equipment to conduct eye treatment appointments in Rundle Mall, including Medicare bulk billed eye tests and the selection of new frames such as optical glasses and prescription sunglasses. Oscar Wylee does not have an eye doctor in Rundle Mall, but can refer patients on to one if advanced treatment is required. Book an eye test online and come see our optometrist in Rundle Mall!</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Adelaide-Rundle-Mall_900x600_c.jpg" alt="Optometrist in Rundle Mall"></div>
+<div class="flexTextFrame">
+<h3>International/private citizen</h3>
+<p>Eye test costs will have to be taken out of pocket. Any possible coverage must be discussed with your healthcare/ insurance provider or other relevant authority.</p>
 </div>
-<div id="colonnades" class="store-details" style="display: none;">
-<h3>Optometrist in Colonnades</h3>
-<p>For all your visual needs, come in and see our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-colonnades.html">Colonnades optometrists</a> in Noarlunga Centre. We offer high-quality eye treatment appointments in Colonnades, including services such as Medicare bulk billed eye tests. Oscar Wylee does not have an eye doctor in Colonnades, however our team can refer patients to one where needed. Our Colonnades store staff are also on hand to help the Noarlunga Centre community with a population of over 200 people, select a new pair of frames including optical glasses, blue light glasses and prescription sunglasses. Book online and come in and see our optometrist in Colonnades for your eye care needs!</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Colonnades_900x600_c.jpg" alt="Optometrist in Colonnades"></div>
+<div class="flexTextFrame">
+<h3>International Students</h3>
+<p>An eye test may have no-out-of-pocket payments with any glasses or spectacles purchased on the same day. Be sure to bring your student card.</p>
 </div>
-<div id="elizabeth-city-centre" class="store-details" style="display: none;">
-<h3>Optometrist in Elizabeth</h3>
-<p>Come in and see the team at Oscar Wylee for eye treatment appointments in Elizabeth City Centre, including services such as Medicare bulk billed eye tests and new frames like optical glasses and prescription sunglasses. Our optometrists in the Elizabeth City Centre are fully equipped with high-quality optometry technology to serve the community of Elizabeth, South Australia, with a population of over 1000 people. Oscar Wylee does not have an eye doctor in Elizabeth City Centre but can refer patients to one in the area if needed. Book online and our <a href="https://www.oscarwylee.com.au/locations/optometrist-elizabeth.html">Elizabeth City Centre optometrists</a> can take care of you on your eye care journey.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Elizabeth_900x600_c.jpg" alt="Optometrist in Elizabeth"></div>
 </div>
-<div id="marion" class="store-details" style="display: none;">
-<h3>Optometrist in Marion</h3>
-<p>Oscar Wylee offers high-quality eye treatment appointments in Marion, including services such as Medicare bulk-billed eye tests and referrals to eye doctors in the Marion and Oakland Parks area if needed. Our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-marion.html">Marion optometrists</a> are located in Marion Westfield, Oaklands Park, which serves the greater southern Adelaide area including the 3900 residents of Oaklands Park and 4000 residents in Marion. Book an appointment with our Oscar Wylee optometrists in Marion Westfield, and our friendly retail team can help you shop our range of frames including optical glasses and prescription sunglasses after your eye test.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Marion_900x600_c.jpg" alt="Optometrist in Marion"></div>
 </div>
-<div id="tea-tree-plaza" class="store-details" style="display: none;">
-<h3>Optometrist in Tea Tree Plaza</h3>
-<p>Our Oscar Wylee Modbury store is conveniently located in Tea Tree Plaza. Our Oscar Wylee team, including our <a href="https://www.oscarwylee.com.au/locations/optometrist-tea-tree-plaza.html">Tea Tree Plaza optometrists</a>, are available to help Modbury’s 5000 plus residents with Medicare bulk billed eye tests and the purchase of new frames, such as prescription sunglasses and optical glasses. To provide eye treatment appointments in Tea Tree Plaza, our optometrists are highly trained and equipped with the latest optometry technology. We do not have eye doctors in Tea Tree Plaza, however our team can make referrals where needed. Book an appointment with our Oscar Wylee optometrists in Tea Tree Plaza for your eye care needs.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Tea-Tree-Plaza_900x600_c.jpg" alt="Optometrist in Tea Tree Plaza"></div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>How often should you get your eyes checked?</h2>
+<div class="flexContainer">
+<div class="flexText">
+<p>It is recommended that you check your eyes every 2 years, even if you have not noticed any changes in your vision. This is because very early changes in your eye health may not lead to any changes in your eyesight, and may only be detected through an eye test. You may also be suffering from undetected eye strain and vision problems. <br><br>If you have noticed any changes in your vision, or have medical conditions like diabetes, or are at risk of eye conditions like glaucoma or macular degeneration, a more frequent eye examination may be recommended by your optometrist.</p>
 </div>
-<div id="west-lakes" class="store-details" style="display: none;">
-<h3>Optometrist in West Lakes</h3>
-<p>Experience excellent eye care services with an Oscar Wylee optometrist in West Lakes. We offer Medicare bulk billed eye tests for those with a valid card, performed by skilled and trusted West Lakes optometrists. While we do not have an eye doctor in West Lakes Oscar Wylee, the team is equipped to provide high-quality optometry processes and will refer patients to an ophthalmologist where needed. After your eye treatment appointment in West Lakes, you can browse our wide range of prescription glasses and prescription sunglasses. Visit Oscar Wylee in West Lakes, home to over 6,700 people, and have your eyes tested by our optometrist.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/West-Lakes900x600.jpg" alt="Optometrist in West Lakes"></div>
+<div class="flexText imageTwo"><img src="{{media url="wysiwyg/Medicare-Bulk-Billing/Medicare_Bulk_Billing_for_Eye_Tests_and_Optometrists.png"}}" alt="Medicare Bulk Billing for Eye Tests and Optometrists" class="minusMarginImage"></div>
 </div>
-<!-- end of SA --> <!-- start of TAS -->
-<div id="rosny-park" class="store-details" style="display: none;">
-<h3>Optometrist in Rosny Park</h3>
-<p>For optometry services including Medicare bulk billed eye tests and the purchase of new frames such as optical glasses and prescription sunglasses, come and see our optometrists in Rosny Park. Our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-rosny-park.html">Rosny Park optometrists</a> are located in the local Eastlands Park Shopping Centre. Our team is equipped with modern optometry technology to carry out eye treatment appointments in Rosny Park for the suburb’s small population of just over 10 people, and for the surrounding areas such as Rosny and Montagu Bay. While Oscar Wylee does not have a eye doctor in Rosny Park, referrals can be made if advanced treatment is needed.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Rosny-Park-Eastlands_900x600_c.jpg" alt="Optometrist in Rosny Park"></div>
 </div>
-<div id="hobart" class="store-details" style="display: none;">
-<h3>Optometrist in Hobart</h3>
-<p>Our Oscar Wylee <a href="https://www.oscarwylee.com.au/locations/optometrist-hobart.html">Hobart optometrists</a> offer a range of eye care services for the suburb’s 3000 residents, including Medicare bulk billed eye tests, prescription glasses and prescription sunglasses. For eye treatment appointments in Hobart, customers can find our optometrists and friendly retail team in The Cat and Fiddle Arcade. Though Oscar Wylee does not have an eye doctor in Hobart, our optometrists can refer customers to one if advanced care is needed. Come and see our Oscar Wylee optometrists in Hobart for excellent eye care and eyewear services.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Hobart_900x600_c.jpg" alt="Optometrist in Hobart"></div>
+<div class="context"><hr></div>
+<div class="location topbtmPadding" style="border-top: none;">
+<div class="locationText">
+<h2 class="rmvTopPaddingMargin">Find an Oscar Wylee store near you:</h2>
+<p>Come to Oscar Wylee to find a qualified optometrist along with your new favourite pair of glasses.</p>
 </div>
-<div id="launceston" class="store-details" style="display: none;">
-<h3>Optometrist in Launceston</h3>
-<p>For Launceston’s 3000 plus residents, our Oscar Wylee optometrists on Brisbane Stree are available to help with your eye care needs. Our optometrists in Launceston are equipped with modern technology to perform a range of services including Medicare bulk billed eye tests. Oscar Wylee does not have an eye doctor in Launceston, however, our optometrists can make referrals where needed. After an eye test with our dedicated <a href="https://www.oscarwylee.com.au/locations/optometrist-launceston.html">Launceston optometrists</a>, our customers can shop Oscar Wylee’s range of stylish frames, including prescription glasses and prescription sunglasses. For high-quality eye treatment appointments in Launceston, come and see our Oscar Wylee optometrists.</p>
-<div class="dropdown-image-wrapper"><img class="dropdown-image" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-store-images/Launceston_900x600_c.jpg" alt="Optometrist in Launceston"></div>
+<div class="locationText"><a href="/locations/full-store-list.html" class="adjustMargin"> <button class="btnOw">Find a store</button> </a></div>
 </div>
-<!-- end of TAS --></section>
-<!-- dropdown end -->
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>Does Medicare cover laser eye surgery?</h2>
+<p>In Australia, Medicare’s rebates only cover for a selection of optometrists services. As such, laser eye surgery or other intensive optical correction that requires a private party’s involvement is not included as part of Medicare’s coverage. <br><br>Full list of which services have Medicare rebates available can be found on the <a href="http://www.mbsonline.gov.au/internet/mbsonline/publishing.nsf/Content/Home" class="linkTo">Medicare Benefits Schedule</a>. <br><br>While this question is commonly asked of Medicare coverage, it must be noted that Oscar Wylee does not perform or have any laser eye surgery services.</p>
+</div>
+<hr>
+<div class="textMain boxShadow bottomPadding">
+<h2>What do eye tests cost without Medicare?</h2>
+<p>The cost of an eye test varies depending on the purpose of the eye test. Initial comprehensive eye examination is $70. Please check with our staff for further details. <br><br>Medicare covers most forms of eye testing at Oscar Wylee. However, extra charges may apply depending on the nature of testing, whether it be a specific test for certain occupations or government mandated driving licence requirements.</p>
+<h2 class="topMargin">Is bulk billing stopping in Australia?</h2>
+<p class="minusPadding">Bulk billing is available across all of Australia. However, according to <a href="https://www.theguardian.com/australia-news/2022/aug/11/gps-ditching-bulk-billing-as-costs-rise-and-medicare-rebates-lag-survey-shows" class="linkTo">The Guardian</a>, because of current events, new equipment and revenue losses sustained during the past few years, not all health professionals and optometrists are currently accepting medicare benefits as part of their services and may charge an additional fee on top of the Medicare rebate for an eye examination. <br><br>Oscar Wylee accepts bulk billing for eye examinations for all valid Medicare cardholders.</p>
+<span class="smallText"> Source: The Guardian</span></div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>Does Medicare cover glasses?</h2>
+<p>Government Medicare services will not cover the cost of glasses, contact lenses, corrective eye surgery or other optical procedures.</p>
+<h3>Claiming with health funds</h3>
+<p class="leftMargin">While Medicare might not cover for the cost of new prescription glasses, most <a href="/health-funds.html" class="linkTo">private health funds</a> have an option for covering glasses as part of a specific policy. This type of coverage is called optical extras and they can be used at optical stores and enable no gap purchases on many optical appliances.</p>
+</div>
+<div class="context">
+<div class="location">
+<div class="locationText">
+<h2>Find an Oscar Wylee store near you:</h2>
+<p>Come to Oscar Wylee to find qualified optometrist along with your new favourite pair of glasses.</p>
+<div class="allButton"><a href="/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img class="locationImage" src="{{media url="wysiwyg/Medicare-Bulk-Billing/find-a-store.jpg"}}" alt="oscar wylee Booking" title="oscar wylee Booking"></div>
+<div class="location item1"><img class="locationImage" src="{{media url="wysiwyg/Medicare-Bulk-Billing/book_an_eye_test.jpg"}}" alt="book an eye test with Oscar Wylee" title="book an eye test with Oscar Wylee">
+<div class="locationText">
+<h2>Ready to book an eye test?</h2>
+<p>Come to Oscar Wylee for an eye test with no out-of-pocket expenses.</p>
+<div class="allButton"><a href="/booking"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><quillbot-extension-portal></quillbot-extension-portal></p>
+<p><quillbot-extension-portal></quillbot-extension-portal></p>
+<p><quillbot-extension-portal></quillbot-extension-portal></p>

@@ -1,0 +1,765 @@
+<style>
+  /* Style the accordion container */
+  .accordion {
+    max-width: 100%;
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    cursor: text;
+  }
+
+  .accordion::after {
+    content: none;
+  }
+
+  /* Style the accordion items */
+  .accordion-item {
+    border-bottom: 1px solid silver;
+  }
+
+  /* Style the accordion item headers */
+  .accordion-header {
+    background-color: #ffffff;
+    padding: 12px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #444;
+    cursor: pointer !important;
+  }
+
+  .accordion-header.active {
+    border-bottom: 1px solid silver !important;
+  }
+
+  /* Style the accordion item content */
+  .accordion-content {
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .accordion-content-wrapper {
+    padding: 18px;
+  }
+
+  .accordion-content-wrapper p {
+    margin: 10px 0px;
+    font-size: 14px;
+    text-align: justify;
+    hyphens: auto;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  .accordion-content-wrapper ul {
+    list-style-type: disc !important;
+    margin: 0px !important;
+    padding: 0px 0px 0px 40px !important;
+  }
+
+  .accordion-content-wrapper ol li {
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    line-height: 21px;
+  }
+
+  .accordion-content-wrapper ul li {
+    padding-left: 0px !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #444 !important;
+    line-height: 21px !important;
+  }
+
+  /* Style the active accordion item */
+  .active .accordion-content {
+    max-height: 1000px;
+  }
+
+  /* Style the icon */
+  .accordion-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  /* Plus and Minus Icons */
+  .accordion-header::after {
+    content: "\002B";
+    color: #777;
+    font-weight: 400;
+    float: right;
+    margin-left: 5px;
+    font-size: 25px;
+    /* Plus sign */
+  }
+
+  .accordion-header.active::after {
+    content: "\2212";
+    /* Minus sign */
+  }
+
+  /* OW Styles */
+  /* .accordion .accordion-item .accordion-header h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+              font-size: 15px !important;
+              margin-bottom: 0 !important;
+              margin-top: 0 !important;
+              font-weight: 600 !important;
+              color: #444 !important;
+          } */
+
+  .accordion .accordion-item .accordion-header h2 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+  }
+
+  .accordion .accordion-item .accordion-header h3 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+  }
+
+  .accordion .accordion-item .accordion-header h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+  }
+
+  .accordion .accordion-item .accordion-header h5 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+  }
+
+  .accordion .accordion-item .accordion-header h6 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+  }
+
+  .accordion-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .accordion-btn-wrapper button {
+    background-color: #ffffff;
+    border: 1px solid #333;
+    box-shadow: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  /* acco images */
+  .accordion-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .accordion-img-wrapper img {
+    width: 60%;
+    margin: 20px 0px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .accordion-img-wrapper img {
+      width: 85%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .accordion-img-wrapper img {
+      width: 100%;
+    }
+  }
+
+  section.store-page-accordion {
+    margin: 50px 0px;
+  }
+</style>
+
+<!-- acco start -->
+<section class="store-page-accordion">
+  <div class="accordion-btn-wrapper">
+    <button id="toggleAllButton">Show All</button>
+  </div>
+  <div class="accordion">
+    <article>
+      <div class="accordion-item">
+        <div
+          class="accordion-header active"
+          style="border-top: 1px solid silver"
+        >
+          <h2>Optometry Australia: Find Optometrist Near Me</h2>
+        </div>
+        <div class="accordion-content" style="max-height: 1075px">
+          <div class="accordion-content-wrapper">
+            <p>
+              Optometry is defined as the profession and practice of examining,
+              diagnosing and treating eye conditions and ensuring the general
+              eye and vision health of patients. It involves using special
+              equipment to evaluate whether you require prescription glasses and
+              to maintain good eye health. Optometrists are healthcare
+              professionals who are qualified to test and examine patients’ eyes
+              and their quality of vision, prescribe glasses and medication for
+              minor eye problems and are able to identify signs of more serious
+              conditions. Optical dispensers are eye care professionals that
+              have been trained to fit and dispense frames and lenses based on
+              the prescription provided by an optometrist or ophthalmologist.
+              The term optician is used internationally but referred to as an
+              optical dispenser in Australia.
+            </p>
+            <p>
+              At Oscar Wylee, you can get your eyes tested, update your
+              prescription and shop for your glasses on the same day, however,
+              you will not be able to receive your prescription glasses on the
+              same day. For non-prescription sunglasses, you can browse from our
+              wide range and get them on the day
+            </p>
+            <p>
+              We have fully-trained and licensed optometrists in every store,
+              with high-quality services and equipment. Oscar Wylee was first
+              established as an online e-commerce business back in 2012 and
+              continued advancing in the eyewear industry with reputable
+              services both online and in-store across Australia, New Zealand
+              and Canada and currently has over 120 stores across Australia
+            </p>
+            <p>
+              In Australia, there are currently 6,796 registered optometrists,
+              this number includes 284 non-practising optometrists and 17 with
+              limited registration according to the Optometry Board of Australia
+              as of January 2023. The total also includes the group of
+              optometrists with no principal place of practice; which includes
+              60 with general registration, 4 with limited registration and 78
+              non-practising. The total number of optometrists in Australia
+              consists of a varying number in each state and territory. In ACT,
+              there are 118 optometrists with general registration and 3
+              non-practising optometrists. In NSW, there are currently 2,085
+              general optometrists, 2 limited registration and 60 of those are
+              non-practising. NT has 35 general registered optometrists. QLD has
+              1,322 general registered optometrists, 2 limited and 39
+              non-practising. SA consists of 440 general registered optometrists
+              and 9 non-practising. TAS currently has 121 general registered, 1
+              limited and 2 non-practising. VIC has 1,784 general registered, 4
+              limited and 57 non-practising. WA has 517 general registered, with
+              5 limited and 10 non-practising.
+            </p>
+            <p>
+              You can easily find your nearest Oscar Wylee store on this
+              locations page of our website. Find Optometrist Near Me is a way
+              for you to find an Oscar Wylee optometrist within the area you
+              live in. There are a few things to consider before taking an
+              appointment with an optometrist. It is important to be familiar
+              with what type of services optometrists have to offer so you can
+              get a better understanding of what you can expect during your
+              appointment. Consult with your optometrist on what you may need to
+              bring to your appointment and if there is anything you need to
+              prepare beforehand. Finally, ensure you have assistance with
+              transport as the optometrist may be required to use eye drops for
+              pupil dilation, this can cause blurred vision temporarily and
+              sensitivity to light which may prevent you from driving or working
+              for up to 1-24 hours. An optometrist is not an eye doctor so if
+              they identify signs of a serious problem with your eyes or vision,
+              they will refer you to an ophthalmologist.
+            </p>
+            <div class="accordion-img-wrapper">
+              <img
+                src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_01_Find_an_Optometrist_Near_Me_900x600.jpg"
+                alt="Find Optometrist Near Me"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h2>How to Find an Optometrist in Australia?</h2>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-content-wrapper">
+            <p>
+              You can find an optometrist in Australia by taking a few essential
+              steps that may help make it easier. The steps on how to
+              <a href="https://www.oscarwylee.com.au/find-optometrist"
+                >find an optometrist in Australia</a
+              >
+              are listed below.
+            </p>
+            <ol>
+              <li>
+                First, search online where you can look for your nearest Oscar
+                Wylee store. This can be done by either searching for Oscar
+                Wylee stores near me or by directly using this locations page.
+              </li>
+
+              <li>
+                Second, when you find an Oscar Wylee store that is most
+                convenient for you, clicking on the link will take you directly
+                to the page where you can click the ‘book appointment’ button.
+              </li>
+
+              <li>
+                Third, you can also book directly on this page by clicking on
+                the specific location based on your region.
+              </li>
+
+              <li>
+                Finally, select from the available times, you will then be taken
+                to the final step where you will need to enter your details,
+                email and phone number.
+              </li>
+            </ol>
+            <div class="accordion-img-wrapper">
+              <img
+                src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_02_Find-an-Optometrist-in-Australia-900x600.jpg"
+                alt="Find an optometrist in Australia"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h3>How to Take an Optometrist Appointment in Australia?</h3>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-content-wrapper">
+            <p>
+              An optometrist appointment will involve a series of tests and
+              exams to evaluate your eye and vision health and determine whether
+              you need glasses. These tests and exams will help the optometrist
+              determine what grade of prescription you may need. When going to
+              your appointment, you will need to bring your eyeglasses if you
+              already own prescription glasses and your Medicare card. Your
+              optometrist may also ask you some questions about your medical
+              history. The procedure of your appointment will involve
+              confirmation of your Medicare card number and any other health
+              insurance you may have. You will then undergo a preliminary eye
+              assessment, a detailed eye assessment and then finally your
+              optometrist will take time to explain their findings and advise of
+              the recommendations that cater to your visual needs.
+            </p>
+            <h4 style="margin-bottom: 10px">
+              What to Know Before Seeing an Optometrist?
+            </h4>
+            <p>
+              Preparing yourself before coming in to see an optometrist may be
+              helpful for the overall process, ensuring you are well-informed.
+              The information to know before seeing an optometrist is listed
+              below.
+            </p>
+            <ul>
+              <li>
+                Make sure you know what your symptoms are if you’re experiencing
+                any changes or problems with your vision.
+              </li>
+              <li>
+                A series of eye tests will be conducted to determine whether you
+                need prescription glasses and to ensure your eyes and vision are
+                healthy.
+              </li>
+              <li>
+                Be prepared to inform the optometrist of your current
+                medications for your eyes or existing conditions as well as your
+                medical history.
+              </li>
+              <li>
+                If you already own prescription glasses, be sure to bring them
+                with you to your appointment so your optometrist will better
+                understand your visual needs.
+              </li>
+              <li>
+                Oscar Wylee offers bulk-billing services for Medicare card
+                holders across New South Wales, Australian Capital Territory,
+                Queensland, Northern Territory, South Australia, Victoria,
+                Western Australia and Tasmania.
+              </li>
+            </ul>
+            <div class="accordion-img-wrapper">
+              <img
+                src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_03_An_Optom_Appointment_in_Australia_900x600.jpg"
+                alt="An optometrist appointment in Australia"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h2>What Treatments does an Optometrist perform?</h2>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-content-wrapper">
+            <p>
+              Optometrists are healthcare professionals who can perform
+              treatments that may help correct refractive errors, double vision
+              and treat eye infections by prescribing glasses and/or eye drops.
+              The treatments optometrists can perform according to Cleveland
+              Clinic are listed below.
+            </p>
+            <ul>
+              <li>
+                <b>Refractive Errors:</b>
+                Refractive errors such as nearsightedness (myopia),
+                farsightedness (hyperopia), presbyopia (age-related
+                farsightedness) and astigmatism are common blurry vision
+                problems that occur due to the shape of your eye preventing
+                light from focusing on your retina. Optometrists can diagnose
+                these conditions and prescribe glasses that may help correct
+                them.
+              </li>
+
+              <li>
+                <b>Double Vision:</b>
+                Double vision can be caused by a range of other problems or
+                conditions, the optometrist will need to perform an eye test and
+                first determine what may be causing it in order to treat it.
+                Optometrists can advise on proper fitting glasses or certain eye
+                exercises to help. If the underlying problem is a more serious
+                condition you may be referred to an ophthalmologist.
+              </li>
+
+              <li>
+                <b>Eye Infections:</b>
+                Eye infections can be minor issues and may only need
+                antihistamine or antibacterial eye drops. If you are concerned
+                about your symptoms you can consult with your optometrist.
+              </li>
+            </ul>
+            <p>
+              According to Optometry Australia, the Royal Australian and New
+              Zealand College of Ophthalmologists (RANZCO) is planning to
+              produce guidelines for optometrists to be able to administer
+              intravitreal injections for patients with neovascular macular
+              degeneration.
+            </p>
+            <div class="accordion-img-wrapper">
+              <img
+                src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_04_Treatments_an_Optom_Performs_900x600.jpg"
+                alt="The treatments an optometrist performs"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h3>Is an Optical Dispenser Different from an Optometrist?</h3>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-content-wrapper">
+            <p>
+              Yes, an optical dispenser is different from an optometrist
+              <b>due to their job responsibilities, education and training.</b>
+              Optical dispensers are responsible for dispensing frames and
+              lenses according to the prescription supplied by an optometrist or
+              an ophthalmologist. Optical dispensers are experts in assisting
+              customers with selecting frames and lenses suitable for their face
+              shape and facial features. An optometrist is responsible for
+              conducting eye examinations for eye and vision health, for
+              prescription glasses and to ensure there are no signs of eye
+              conditions or diseases. Optometrists are qualified to treat minor
+              eye problems and conditions and can refer you to an
+              ophthalmologist if they do detect symptoms of a more serious eye
+              condition or disease. An ophthalmologist is an eye care specialist
+              that is qualified to diagnose and manage eye diseases and perform
+              eye surgeries. Optical dispensers are required to complete a
+              Certificate IV in optical dispensing and optometrists must
+              complete a degree in optometry recognised by the Optometry Board
+              of Australia and New Zealand, residence training and apply for
+              graduate registration with the Australian Health Practitioner
+              Regulation Agency (AHPRA).
+            </p>
+            <div class="accordion-img-wrapper">
+              <img
+                src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_05_Optical_Dispenser_and_Optometrist_900x600.jpg"
+                alt="Optical Dispenser and Optometrist"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h3>
+            What is the Average Duration of Eye Treatment with an Optometrist?
+          </h3>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-content-wrapper">
+            <p>
+              The average duration of eye treatment with an optometrist depends
+              on the varying factors of an individual’s visual needs. At Oscar
+              Wylee, we allocate approximately 20 minutes for each eye test,
+              however, this time frame can vary, especially for those who have
+              more complex eye conditions that require more extensive testing.
+              Eye treatment may be in the form of prescribing glasses or regular
+              eye checkups. Comprehensive eye exams may take longer as this may
+              include initial testing, discussing options for treatment and any
+              further recommendations for eye care and management. If your
+              optometrist sees any signs of concern, they may take additional
+              tests before possibly referring you to an ophthalmologist. The
+              duration of treatment can change for those who need prescription
+              glasses to those who already own prescription glasses and may need
+              adjustments or for those who are coming in for a specific issue.
+            </p>
+            <div class="accordion-img-wrapper">
+              <img
+                src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_06_Average_Duration_of_an_Eye_Test_900x600.jpg"
+                alt="Average duration for an eye test"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h3>
+            How does Eye Care Quality change from location to location in
+            Australia?
+          </h3>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-content-wrapper">
+            <p>
+              Eye care quality can change from location to location in Australia
+              based on accessibility, optometry workforce availability,
+              resources and facilities. Australians living in areas outside the
+              major cities were found to have poor access to health services
+              than Australians living in major cities; there are 4.8 and 3.6
+              attendances per person for remote areas in comparison to 6.4
+              visits per person for those living in major cities and inner
+              regional areas according to Katerina Kiburg, Mingguang He and
+              Angus Turner in a paper published in the Clinical and Experimental
+              Ophthalmology Journal. Location matters as accessibility and a
+              sufficient number of practising optometrists become more limited
+              in more remote areas.
+            </p>
+            <p>
+              Factors for eye care quality include five key areas that consist
+              of the required standards for quality entry-level optometry care
+              according to Optometry Australia. These five key areas include
+              clinical care providers, professional and ethical practitioners,
+              communicators and collaborators, scholars and lifelong learners
+              and quality and risk managers. These five domains for assurance of
+              quality eye care in Australia outline the optometrist’s
+              responsibilities in meeting the patient and community’s health and
+              well-being requirements professionally and ethically and their
+              effective and appropriate communication that will enable
+              inclusivity of all patients and their responsibility to work with
+              others to provide high-quality care. It also includes the
+              requirement of their knowledge and skills to provide safe,
+              holistic and culturally responsive and patient-centred care, their
+              responsibility to continue engaging in evidence-based practice,
+              ongoing improvement through professional learning and to carefully
+              monitor their actions through reflective processes. Finally, their
+              responsibility to prevent harm to patients and others through the
+              management and response to risks that may naturally occur in
+              optometry is fundamental to the required entry-level competency
+              standards according to Optometry Australia.
+            </p>
+            <div class="accordion-img-wrapper">
+              <img
+                src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_07_Eyecare_Quality_in_Australia_900x600.jpg"
+                alt="Eye care quality in Australia"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h4>What is the Cost of an Optometrist Treatment in Australia?</h4>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-content-wrapper">
+            <p>
+              At Oscar Wylee, the cost of an optometrist eye test in Australia
+              may be covered by Medicare for eligible cardholders so there are
+              no out-of-pocket expenses. This process is called bulk billing and
+              is part of the Australian Government’s health coverage system
+              known as Medicare. If you are not covered under Medicare, eye
+              tests cost $70 each.
+            </p>
+            <div class="accordion-img-wrapper">
+              <img
+                src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_08_Cost_of_an_optometrist_eye_test_in_Australia-900x600.jpg"
+                alt="Cost of an optometrist eye test in Australia"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h5>
+            Is the Cost of Optometry in Sydney higher than in other regions in
+            Australia?
+          </h5>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-content-wrapper">
+            <p>
+              The cost of optometry in Sydney aligns similarly with other
+              regions in Australia. Most optometrists usually offer bulk-billing
+              services for eligible Medicare cardholders.
+            </p>
+            <div class="accordion-img-wrapper">
+              <img
+                src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_09_An-optometrist-eye-test-in-Sydney_900x600.jpg"
+                alt="An optometrist eye test in Sydney"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h5>Is it easier to get "Same Day Glasses" in Sydney?</h5>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-content-wrapper">
+            <p>
+              It is easier to get same-day glasses in Sydney, mainly in case of
+              an emergency. However, at Oscar Wylee, we do not offer same-day
+              glasses. For non-urgent cases, it is advisable to wait until the
+              expected time it may take according to your optometrist for your
+              glasses to arrive and be ready for collection.
+            </p>
+            <div class="accordion-img-wrapper">
+              <img
+                src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_10_Glasses_in_Sydney_900x600.jpg"
+                alt="Glasses in Sydney. An image of Sydney."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h2>
+            How to Find an Optometrist in Different Locations in Australia?
+          </h2>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-content-wrapper">
+            <p>
+              To find an optometrist in different locations in Australia, you
+              can look through the list above, choose from any of the stores
+              listed in your region and then select a store based on your
+              specific location. There are over 120 stores across Australia in
+              all regions. The process for finding an optometrist in different
+              locations is the same across all of our Oscar Wylee stores. In
+              major cities in Australia, it may be easier to find optometrists
+              in more metro locations than in regional or rural areas due to the
+              shortage of practising optometrists and long distances of travel
+              to access these services.
+            </p>
+            <div class="accordion-img-wrapper">
+              <img
+                src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/location-page-accordion-images/_11_Find-an-Optom-in-Different-Locations-in-Australia-900x600.jpg"
+                alt="Find an Optometrist in Different Locations in Australia?"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<!-- acco end -->
+
+<script>
+  // acordian for store page -----------------------------
+
+  var accordionHeaders = document.querySelectorAll(".accordion-header");
+  var accordionContents = document.querySelectorAll(".accordion-content");
+  var toggleAllButton = document.getElementById("toggleAllButton");
+
+  accordionHeaders.forEach(function (header) {
+    header.addEventListener("click", function () {
+      var content = this.nextElementSibling;
+      if (!content.style.maxHeight) {
+        document
+          .querySelectorAll(".accordion-content")
+          .forEach(function (item) {
+            item.style.maxHeight = null;
+            item.previousElementSibling.classList.remove("active");
+          });
+      }
+      this.classList.toggle("active");
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+      updateToggleButton();
+    });
+  });
+
+  toggleAllButton.addEventListener("click", function () {
+    var anyClosed = false;
+    accordionContents.forEach(function (content) {
+      if (!content.style.maxHeight) {
+        anyClosed = true;
+      }
+    });
+
+    accordionContents.forEach(function (content) {
+      content.style.maxHeight = anyClosed ? content.scrollHeight + "px" : null;
+      content.previousElementSibling.classList.toggle("active", anyClosed);
+    });
+
+    toggleAllButton.textContent = anyClosed ? "Hide All" : "Show All";
+  });
+
+  function updateToggleButton() {
+    var anyClosed = false;
+    accordionContents.forEach(function (content) {
+      if (!content.style.maxHeight) {
+        anyClosed = true;
+      }
+    });
+    toggleAllButton.textContent = anyClosed ? "Show All" : "Hide All";
+  }
+</script>

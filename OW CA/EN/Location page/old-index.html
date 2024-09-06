@@ -1,212 +1,16 @@
-<style>
-  /* Style the accordion container */
-  .accordion {
-    max-width: 100%;
-    margin: 0px 0px 20px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    cursor: text;
-  }
-
-  .accordion::after {
-    content: none;
-  }
-
-  /* Style the accordion items */
-  .accordion-item {
-    border-bottom: 1px solid silver;
-  }
-
-  /* Style the accordion item headers */
-  .accordion-header {
-    background-color: #ffffff;
-    padding: 12px;
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: #444;
-    cursor: pointer !important;
-  }
-
-  .accordion-header.active {
-    border-bottom: 1px solid silver !important;
-  }
-
-  /* Style the accordion item content */
-  .accordion-content {
-    transition: max-height 0.5s ease-out;
-    max-height: 0;
-    overflow: hidden;
-  }
-
-  .accordion-content-wrapper {
-    padding: 18px;
-  }
-
-  .accordion-content-wrapper p {
-    margin: 10px 0px;
-    font-size: 14px;
-    text-align: justify;
-    hyphens: auto;
-    line-height: 21px;
-    font-weight: 400;
-  }
-
-  .accordion-content-wrapper ul {
-    list-style-type: disc !important;
-    margin: 0px !important;
-    padding: 0px 0px 0px 40px !important;
-  }
-
-  .accordion-content-wrapper ol li {
-    font-size: 14px;
-    font-weight: 400;
-    color: #444;
-    line-height: 21px;
-  }
-
-  .accordion-content-wrapper ul li {
-    padding-left: 0px !important;
-    font-size: 14px !important;
-    font-weight: 400 !important;
-    color: #444 !important;
-    line-height: 21px !important;
-  }
-
-  /* Style the active accordion item */
-  .active .accordion-content {
-    max-height: 1000px;
-  }
-
-  /* Style the icon */
-  .accordion-icon {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-  }
-
-  /* Plus and Minus Icons */
-  .accordion-header::after {
-    content: "\002B";
-    color: #777;
-    font-weight: 400;
-    float: right;
-    margin-left: 5px;
-    font-size: 25px;
-  }
-
-  .accordion-header.active::after {
-    content: "\2212";
-  }
-
-  .accordion .accordion-item .accordion-header h2 {
-    font-size: 15px;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-weight: 600;
-    color: #444;
-    line-height: 20px;
-  }
-
-  .accordion .accordion-item .accordion-header h3 {
-    font-size: 15px;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-weight: 600;
-    color: #444;
-    line-height: 20px;
-  }
-
-  .accordion .accordion-item .accordion-header h4 {
-    font-size: 15px;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-weight: 600;
-    color: #444;
-    line-height: 20px;
-  }
-
-  .accordion .accordion-item .accordion-header h5 {
-    font-size: 15px;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-weight: 600;
-    color: #444;
-    line-height: 20px;
-  }
-
-  .accordion .accordion-item .accordion-header h6 {
-    font-size: 15px;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-weight: 600;
-    color: #444;
-    line-height: 20px;
-  }
-
-  .accordion-btn-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .accordion-btn-wrapper button {
-    background-color: #ffffff;
-    border: 1px solid #333;
-    box-shadow: none;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-
-  /* acco images */
-  .accordion-img-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .accordion-img-wrapper img {
-    width: 60%;
-    margin: 20px 0px;
-  }
-
-  @media screen and (max-width: 800px) {
-    .accordion-img-wrapper img {
-      width: 85%;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .accordion-img-wrapper img {
-      width: 100%;
-    }
-  }
-
-  section.store-page-accordion {
-    margin: 50px 0px;
-  }
-</style>
-
-<section class="store-page-accordion">
-  <div class="accordion-btn-wrapper">
-    <button id="toggleAllButton">Show All</button>
-  </div>
-  <div class="accordion">
-    <article>
-      <div class="accordion-item">
-        <div
-          class="accordion-header active"
-          style="border-top: 1px solid silver"
-        >
-          <h2>Optometry Canada: Find Optometrist Near Me</h2>
-        </div>
-        <div class="accordion-content" style="max-height: 1075px">
-          <div class="accordion-content-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <footer class="footer-accordion">
+      <section class="new-accordian">
+        <article class="faq">
+          <h2 class="accordion">Optometry Canada: Find Optometrist Near Me</h2>
+          <div class="answer">
             <p>
               Optometry is defined as the profession and practice of examining,
               diagnosing and treating eye conditions and ensuring the general
@@ -270,15 +74,10 @@
               />
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-header">
-          <h2>How to Find an Optometrist in Canada?</h2>
-        </div>
-        <div class="accordion-content">
-          <div class="accordion-content-wrapper">
+        </article>
+        <article class="faq">
+          <h2 class="accordion">How to Find an Optometrist in Canada?</h2>
+          <div class="answer">
             <p>
               You can find an optometrist in Canada by taking a few essential
               steps that may help make it easier. The steps on how to find an
@@ -313,15 +112,12 @@
               />
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-header">
-          <h2>How to Take an Optometrist Appointment in Canada?</h2>
-        </div>
-        <div class="accordion-content">
-          <div class="accordion-content-wrapper">
+        </article>
+        <article class="faq">
+          <h2 class="accordion">
+            How to Take an Optometrist Appointment in Canada?
+          </h2>
+          <div class="answer">
             <p>
               An optometrist appointment will involve a series of tests and
               exams to evaluate your eye and vision health and determine whether
@@ -373,15 +169,12 @@
               />
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-header">
-          <h2>What Treatments Does an Optometrist Perform?</h2>
-        </div>
-        <div class="accordion-content">
-          <div class="accordion-content-wrapper">
+        </article>
+        <article class="faq">
+          <h2 class="accordion">
+            What Treatments Does an Optometrist Perform?
+          </h2>
+          <div class="answer">
             <p>
               Optometrists are healthcare professionals who can perform
               treatments that may help correct refractive errors, double vision
@@ -423,15 +216,12 @@
               />
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-header">
-          <h2>Is an Optician Different from an Optometrist?</h2>
-        </div>
-        <div class="accordion-content">
-          <div class="accordion-content-wrapper">
+        </article>
+        <article class="faq">
+          <h2 class="accordion">
+            Is an Optician Different from an Optometrist?
+          </h2>
+          <div class="answer">
             <p>
               Yes, an optician is different from an optometrist
               <strong
@@ -459,17 +249,12 @@
               />
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-header">
-          <h2>
+        </article>
+        <article class="faq">
+          <h2 class="accordion">
             What is the Average Duration of Eye Treatment with an Optometrist?
           </h2>
-        </div>
-        <div class="accordion-content">
-          <div class="accordion-content-wrapper">
+          <div class="answer">
             <p>
               The average duration of eye treatment with an optometrist depends
               on the varying factors of an individual’s visual needs. At Oscar
@@ -494,18 +279,13 @@
               />
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-header">
-          <h2>
+        </article>
+        <article class="faq">
+          <h2 class="accordion">
             How does Eye Care Quality Change from Location to Location in
             Canada?
           </h2>
-        </div>
-        <div class="accordion-content">
-          <div class="accordion-content-wrapper">
+          <div class="answer">
             <p>
               Eye care quality can change from location to location in Canada
               based on accessibility, optometry workforce availability,
@@ -522,20 +302,17 @@
             <div class="accordion-img-wrapper">
               <img
                 src="https://test.oscarwylee.ca/media/wysiwyg/locations/07-CA-Eye-Care-Quality-in-Canada-900x600.jpg"
-                alt="Eye care quality in Canada"
+                alt="Eye care quality in Australia"
                 loading="lazy"
               />
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-header">
-          <h2>What is the Cost of an Optometrist Treatment in Canada?</h2>
-        </div>
-        <div class="accordion-content">
-          <div class="accordion-content-wrapper">
+        </article>
+        <article class="faq">
+          <h2 class="accordion">
+            What is the Cost of an Optometrist Treatment in Canada?
+          </h2>
+          <div class="answer">
             <p>
               At Oscar Wylee, the cost of a complete eye exam in Canada starts
               from $90. A complete eye exam with retinal imaging starts from
@@ -545,20 +322,17 @@
             <div class="accordion-img-wrapper">
               <img
                 src="https://test.oscarwylee.ca/media/wysiwyg/locations/08-CA-Cost-of-an-Optometrist-Eye-Test-in-Sydney-900x600.jpg"
-                alt="Cost of an optometrist eye test in Canada"
+                alt="Cost of an optometrist eye test in Australia"
                 loading="lazy"
               />
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-header">
-          <h2>How to Find an Optometrist in Different Locations in Canada?</h2>
-        </div>
-        <div class="accordion-content">
-          <div class="accordion-content-wrapper">
+        </article>
+        <article class="faq">
+          <h2 class="accordion">
+            How to Find an Optometrist in Different Locations in Canada?
+          </h2>
+          <div class="answer">
             <p>
               To find an optometrist in different locations in Canada, you can
               look through the list above, choose from any of the stores listed
@@ -571,69 +345,28 @@
             <div class="accordion-img-wrapper">
               <img
                 src="https://test.oscarwylee.ca/media/wysiwyg/locations/09-CA-Find-an-Optometrist-in-Canada-900x600.jpg"
-                alt="An optometrist eye test in Canada"
+                alt="An optometrist eye test in Sydney"
                 loading="lazy"
               />
             </div>
           </div>
-        </div>
+        </article>
+      </section>
+    </footer>
+    <!-- banner start -->
+    <!-- <section class="new-banner">
+      <div class="desktop-banner">
+        <img
+          src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/new-location-page/Locations_Image_Logo_1.jpg"
+          alt="How to Find an Optometrist Location in Australia?"
+        />
       </div>
-    </article>
-  </div>
-</section>
-<!-- acco end -->
-
-<script>
-  // acordian for store page -----------------------------
-
-  var accordionHeaders = document.querySelectorAll(".accordion-header");
-  var accordionContents = document.querySelectorAll(".accordion-content");
-  var toggleAllButton = document.getElementById("toggleAllButton");
-
-  accordionHeaders.forEach(function (header) {
-    header.addEventListener("click", function () {
-      var content = this.nextElementSibling;
-      if (!content.style.maxHeight) {
-        document
-          .querySelectorAll(".accordion-content")
-          .forEach(function (item) {
-            item.style.maxHeight = null;
-            item.previousElementSibling.classList.remove("active");
-          });
-      }
-      this.classList.toggle("active");
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-      updateToggleButton();
-    });
-  });
-
-  toggleAllButton.addEventListener("click", function () {
-    var anyClosed = false;
-    accordionContents.forEach(function (content) {
-      if (!content.style.maxHeight) {
-        anyClosed = true;
-      }
-    });
-
-    accordionContents.forEach(function (content) {
-      content.style.maxHeight = anyClosed ? content.scrollHeight + "px" : null;
-      content.previousElementSibling.classList.toggle("active", anyClosed);
-    });
-
-    toggleAllButton.textContent = anyClosed ? "Hide All" : "Show All";
-  });
-
-  function updateToggleButton() {
-    var anyClosed = false;
-    accordionContents.forEach(function (content) {
-      if (!content.style.maxHeight) {
-        anyClosed = true;
-      }
-    });
-    toggleAllButton.textContent = anyClosed ? "Show All" : "Hide All";
-  }
-</script>
+      <div class="mobile-banner">
+        <img
+          src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/new-location-page/Locations_Image_Mobile_Logo_1.jpg"
+          alt="How to Find an Optometrist Location in Australia?"
+        />
+      </div>
+    </section> -->
+  </body>
+</html>

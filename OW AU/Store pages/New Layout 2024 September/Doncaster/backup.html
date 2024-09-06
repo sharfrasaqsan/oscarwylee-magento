@@ -1,0 +1,728 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<style>
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .store-page-accordion-heading {
+    font-size: 15px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+  }
+
+  .accordion:hover {
+    border: none;
+  }
+
+  .accordion-wrapper .accordion:first-child {
+    border-top: 1px solid #a3a3a3;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid #a3a3a3;
+  }
+
+  /* Style for the active class */
+  .active,
+  .accordion:hover {
+    background-color: #ffffff;
+  }
+
+  .accordion-wrapper .active {
+    border-bottom: 1px solid #a3a3a3 !important;
+  }
+
+  /* Style the expand and collapse icons */
+  .icon {
+    float: right;
+  }
+
+  .panel-content {
+    padding: 20px 0px;
+  }
+
+  .store-ul {
+    list-style: disc !important;
+    margin-left: 35px !important;
+  }
+
+  .store-ul li {
+    font-size: 1.4rem !important;
+    padding-left: 5px !important;
+  }
+
+  .store-page-accordion a {
+    color: #1979c3 !important;
+  }
+
+  section.store-page-accordion {
+    margin-bottom: 60px;
+  }
+</style>
+
+<div class="static-location-detail new-layout">
+  <div class="location-detail-wrapper location-content">
+    <div class="left-container">
+      <h1 class="static-location-header">Optometrist Doncaster</h1>
+      <p class="short-content">
+        Westfield Level 2, Shop 114<br />619 Doncaster Rd &amp; Williamsons
+        Road<br />Doncaster VIC 3108
+      </p>
+      <ul>
+        <li class="position">Near Apple</li>
+      </ul>
+      <div class="opening-hours">
+        <p class="title">Opening hours</p>
+        <div class="store-schedule">
+          <p>
+            <span class="schedule-label">Monday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Tuesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Wednesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Thursday</span
+            ><span class="schedule-value">9:00am - 9:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Friday</span
+            ><span class="schedule-value">9:00am - 9:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Saturday</span
+            ><span class="schedule-value">9:00am - 6:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Sunday</span
+            ><span class="schedule-value">10:00am - 5:00pm</span>
+          </p>
+          <p style="font-size: 12px">
+            *Store hours reflect local standard trading hours and exclude public
+            holidays
+          </p>
+          <p>
+            <span style="text-decoration: underline; font-size: 13px"
+              ><strong
+                ><a
+                  href="https://g.page/r/CTitJmK4d-RfEBA"
+                  target="_blank"
+                  rel="noopener"
+                  >Visit our Doncaster Google Business page for directions,
+                  reviews, and updates.</a
+                ></strong
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="location-map">
+        <iframe
+          width="100%"
+          height="100%"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12612.912252206817!2d145.1261439!3d-37.7846947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5fe477b86226ad38!2sOscar%20Wylee%20-%20Optometrist!5e0!3m2!1sen!2sau!4v1607650787654!5m2!1sen!2sau"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=33"
+  phone_number="(03) 9973 4267"
+  direction_map="https://g.page/r/CTitJmK4d-RfEBM/review"}} {{widget
+  type="Oscar\LocationReview\Block\Widget\LocationReview"
+  review_url="https://g.page/r/CTitJmK4d-RfEBM/review"
+  location_id="13559883759234651127"}} {{widget
+  type="Oscar\Booking\Block\Widget\AboutUs"
+  banner="wysiwyg/NewStorePage/StoreFront2/Doncaster.jpg"
+  description_label="Find an Optometrist in Doncaster With Oscar Wylee"
+  description="Located in Westfield Doncaster, our Oscar Wylee store is central
+  to areas such as Kerrimuir and Templestowe. Oscar Wylee Doncaster offers
+  modern and vintage-inspired eyewear, providing prescription glasses and
+  prescription sunglasses, as well as in-store Medicare bulk billed eye tests
+  and vision testing. &lt;br&gt;&lt;br&gt; Westfield Doncaster offers excellent
+  dining and entertainment and is children and pet friendly. It is located just
+  20 minutes east of the CBD and is one of the biggest shopping centres in
+  Victoria. If you have some time after your appointment in Oscar Wylee
+  Doncaster, you can visit the Doncaster Village Cinemas in the Westfield where
+  you can see the latest films in the luxury of Gold Class. For excellent
+  optometrists, eye care processes and on-trend frames, book online or come
+  visit us at our Doncaster Oscar Wylee store."
+  first_optometrist_image="wysiwyg/NewStorePage/Optometrist/Placeholder_Option_2.png"
+  first_optometrist_name="Optometrist Partner"
+  first_optometrist_certification_one="B.Optom"
+  first_optometrist_certification_two="Therapeutically Endorsed"
+  second_optometrist_image="wysiwyg/NewStorePage/StoreManager/Placeholder_Option_2.png"
+  second_optometrist_name="Store Manager"}} {{widget
+  type="Oscar\Booking\Block\Widget\LocationService" location_service="Bulk
+  Billed Eye Examinations,Professional Frame Styling,Frame Adjustments and
+  Repairs,Visual Fields Testing,Digital Retinal Scanning"}}
+
+  <!-- store page accordion -->
+
+  <section class="store-page-accordion">
+    <div class="accordion-wrapper">
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Find an Optometrist in Doncaster, Victoria for an Eye Health Test
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            At our glasses store in Oscar Wylee Doncaster, Victoria, our team is
+            available to provide high-quality eye care services. Our optometrist
+            in Doncaster, Victoria, can provide an eye health test to assess a
+            patient's vision and whether there are any signs of eye disease. Our
+            optometrists can refer patients to an eye doctor, also known as an
+            ophthalmologist in Australia, if advanced care is needed. An optical
+            dispenser and our knowledgeable retail staff are also available
+            in-store to help customers shop for a new pair of stylish frames,
+            including prescription glasses, prescription sunglasses and
+            non-prescription eyewear.
+          </p>
+          <p>
+            At Oscar Wylee our eye tests are available at a bulk billed price as
+            part of Australia’s Medicare system. This means there are no
+            out-of-pocket expenses for eligible cardholders. The average price
+            range for an optometrist in Doncaster, Victoria can vary depending
+            on factors such as the patient’s overall health, age and visual
+            needs. If you are in need of an eye health test in Doncaster,
+            Victoria come and visit Oscar Wylee.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////////////// -->
+
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How to Find an Optometrist in Doncaster, Victoria?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find an optometrist in Doncaster, Victoria you can take certain
+            steps that can help make it easier for you such as
+            <b
+              >searching online, assessing the store’s opening hours and finding
+              the directions to your chosen location.</b
+            >
+            The steps on how to find an optometrist in Doncaster, Victoria are
+            listed below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, optometrist near me in Doncaster.
+              This can also be done here on the website via our locations page.
+            </li>
+            <li>
+              Click on the Oscar Wylee link, which will take you directly to our
+              Doncaster optometrist store page.
+            </li>
+            <li>
+              See the store’s opening hours and where the store is located
+              specifically.
+            </li>
+            <li>
+              Use the Doncaster Google Business page link located under store
+              hours to see the directions on how to get to the store.
+            </li>
+          </ol>
+          <p>
+            You can also find an optometrist in Doncaster, Victoria by searching
+            the keywords optometrist near me. If you have locations enabled on
+            your smartphone and you’re in the Doncaster, Victoria area, our
+            Doncaster store page should appear easily for you to click on.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////////////// -->
+
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          Is it Hard to Get an Eye Appointment in Doncaster, Victoria?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            No, it is not hard to get an eye appointment in Doncaster. You can
+            easily book an appointment to see an Oscar Wylee optometrist in
+            Doncaster, Victoria right here on this page. At Oscar Wylee we have
+            highly qualified optometrists available for bulk billed eye
+            appointments, which can be booked online or in-store.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Compare Optometrists in Doncaster, Victoria to Each Other?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To compare optometrists in Doncaster, Victoria, you can use factors
+            such as eye
+            <b
+              >tests offered, health fund coverage, lens types and add-ons and
+              eyewear offered.</b
+            >
+            To take care of your vision and eye health, it is important to
+            receive an eye test at least once every two years. There are
+            different types of tests that can be performed in an eye test and
+            not all optometrists may offer the same tests. Health funds can be
+            used to help cover some of the cost of your frames and lenses. To
+            find out if your health fund is accepted at an optometrist in
+            Doncaster, Victoria visit their website. In the case of Oscar Wylee,
+            we accept all major health funds and provide on-the-spot claims
+            in-store. There are many different lens options available for
+            prescription glasses such as single vision, multifocal and high
+            index lenses. Most optometrists in Doncaster, Victoria will offer
+            these lenses although it is good to make sure. There are also lens
+            add-ons available to enhance your glasses such as anti-reflective
+            and blue light filters. Finally, if you are looking to purchase a
+            pair of glasses after your eye test, you can compare the different
+            styles and colours you are interested in from the optometrists in
+            Doncaster, Victoria. Oscar Wylee offers a wide range of frames with
+            vintage and modern inspirations in bold colours and subtle designs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Find an Eyeglasses Shop in Doncaster, Victoria?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find a glasses store in Doncaster, Victoria you can try to follow
+            these simple steps including
+            <b
+              >searching online, selecting a convenient location and looking at
+              their health insurance policies.</b
+            >
+            The steps on how to find a glasses store in Doncaster, Victoria are
+            listed below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, glasses store in Doncaster,
+              Victoria. This will provide you with various options for glasses
+              stores in the whole Doncaster, Victoria area.
+            </li>
+            <li>
+              Select a glasses store that is most convenient for you to travel
+              to.
+            </li>
+            <li>
+              Click the link to find out more information such as opening hours,
+              exact location and directions to the glasses store in Doncaster.
+            </li>
+            <li>
+              Read their health insurance policies to ensure you know what
+              health benefits you have access to.
+            </li>
+          </ol>
+
+          <p>
+            Our Oscar Wylee glasses store in Doncaster, Victoria offers primary
+            eye care services such as comprehensive eye tests as well as other
+            services performed by an optometrist and offers prescription and
+            non-prescription eyewear.
+          </p>
+        </div>
+      </div>
+
+      <!-- ////////// -->
+
+      <button class="accordion">
+        <h5 class="store-page-accordion-heading">
+          Is it Possible to Purchase Prescribed Sunglasses in Doncaster,
+          Victoria Without Seeing an Optometrist?
+        </h5>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Yes and no, it is possible to
+            <a href="https://www.oscarwylee.com.au/sunglasses.html"
+              >purchase prescribed sunglasses</a
+            >
+            in Doncaster, Victoria without seeing an optometrist if you already
+            have a prescription that has not expired. If your prescription is
+            expired, you can book an eye test to receive an updated or new
+            prescription which will require you to see an optometrist. This will
+            ensure your prescription sunglasses are appropriate for your visual
+            needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Where is the Oscar Wylee Doncaster, Victoria Optometrist Located?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Doncaster optometrist is located in Doncaster’s
+            Westfield shopping centre near Big W and opposite the centre’s
+            Playworld. Westfield Doncaster can be found in Doncaster, which is a
+            suburb in Melbourne, Victoria.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What is the Phone Number of Oscar Wylee Doncaster, Victoria
+          Optometrist Store?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The phone number for our Oscar Wylee Doncaster, Victoria optometrist
+            store is (03) 9973 4267. Our Oscar Wylee Doncaster, Victoria store
+            is open, and our staff are available to be contacted, between the
+            hours of 9 am and 5:30 pm from Monday to Wednesday, 9 am and 9 pm on
+            Thursdays and Fridays, 9 am and 6 pm on Saturdays and 10 am and 5 pm
+            on Sundays.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Reviews for Oscar Wylee Doncaster, Victoria Optometrist?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The reviews for our Oscar Wylee Doncaster, Victoria optometrist,
+            left by our various customers, can be found here on the website as
+            well online when you search for Oscar Wylee Doncaster optometrist.
+            The reviews for Oscar Wylee Doncaster optometrist are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Judy Roberts: </b>
+              It was a good process. From when you entered the store you were
+              attended to. The eye examination was thorough and the results were
+              explained clearly. A good selection of frames and the assistance
+              given to select them was really good.
+            </li>
+            <li>
+              <b>SL Mac: </b>
+              Really easy, convenient and no-fuss assessment from booking to
+              choosing frames. Lovely staff and relaxed experience despite the
+              importance of testing my eyes including eye pressure. Looking
+              forward to receiving my specs.
+            </li>
+            <li>
+              <b>Fiona An: </b>
+              Extremely thorough review and wonderful selection of frames.
+              Fantastic customer service. Exceeded expectations.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          What Treatments or Eye Care Processes are Done in the Oscar Wylee
+          Doncaster, Victoria Optometrist Location?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The treatments or eye care processes done in the Oscar Wylee
+            Doncaster, Victoria optometrist location include
+            <b
+              >a tonometry test, a digital photograph, a slit lamp exam and a
+              refraction test.</b
+            >
+            Additional tests that may also be performed can include
+            <b>a visual field test and a dilated fundus exam.</b> The treatments
+            or eye-care processes that are done in the Oscar Wylee Doncaster
+            optometrist location are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>A Tonometry Test:</b> An optometrist or optical dispenser will
+              conduct a tonometry test which involves the use of a machine that
+              will release small puffs of air into your eyes. This will assist
+              with measuring pressure in the eye.
+            </li>
+            <li>
+              <b>A Digital Photograph:</b> An optometrist or optical dispenser
+              may take a digital photograph of your eye which can be kept on
+              record to use in future appointments to evaluate any changes to
+              your eye.
+            </li>
+            <li>
+              <b>Slit Lamp Test:</b> A slit lamp test can be used to evaluate
+              your eye health, by examining your cornea and iris which are the
+              anterior and posterior of the eye.
+            </li>
+            <li>
+              <b>Refraction Test:</b> During a refraction test, an optometrist
+              will have you view an image through different lenses and ask you
+              to confirm which helps you see the image clearer.
+            </li>
+            <li>
+              <b>Visual Field Test:</b> A visual field test can assist with
+              assessing your peripheral vision, which may be beneficial for
+              identifying any signs of glaucoma.
+            </li>
+            <li>
+              <b>Dilated Fundus Exam:</b> A dilated fundus exam can help an
+              optometrist assess your health in more detail by getting a clear
+              view of the retina. This test is typically carried out for
+              patients with diabetes and those who may be at risk of developing
+              retinal damage.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How Many Optometrists Exist in Doncaster, Victoria?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            There are a variety of optometrists and eye care providers that
+            exist around the Doncaster, Victoria area, including Oscar Wylee.
+            The amount of optometrists available in an area will typically
+            depend on the population. At Oscar Wylee Doncaster, Victoria, our
+            team is passionate about providing our customers with high-quality,
+            dedicated eye care. Our experienced optometrists offer bulk billed
+            eye tests for eligible Medicare cardholders to help maintain your
+            eye health. Our knowledgeable retail staff are also in-store to help
+            you shop our range of frames. If you are looking for an optometrist
+            in Doncaster, Victoria, Oscar Wylee is available to provide all your
+            eye care and eyewear needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Other Closest Optometrist Locations to Doncaster,
+          Victoria in Australia?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The other closest Oscar Wylee optometrist locations to Doncaster,
+            Victoria in Australia are
+            <b>Melbourne Central, Chapel Street and Moonee Ponds.</b> The other
+            closest optometrist locations to Doncaster, Victoria are listed
+            below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Melbourne Central:</b>
+              Melbourne Central is located near Doncaster, around a 17-18 km
+              drive away.
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-melbourne-central.html"
+                >Oscar Wylee Melbourne Central</a
+              >
+              is located in the Melbourne Central shopping centre. Come and
+              visit our optometrists at Oscar Wylee Melbourne Central who
+              provide eye tests and prescription updates. You can also find our
+              stylish selection of frames in-store.
+            </li>
+            <li>
+              <b>Chapel Street: </b>
+              Chapel Street is a location near Doncaster in which a person can
+              find several optometrists.
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-chapel-st.html"
+                >Oscar Wylee Chapel Street</a
+              >
+              is around 20 km away from Doncaster.
+            </li>
+            <li>
+              <b>Moonee Ponds:</b>
+              Moonee Ponds is a location close to Doncaster, approximately 22 km
+              away, where you can find several optometrists.
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-moonee-ponds.html"
+                >Oscar Wylee Moonee Ponds</a
+              >
+              is located in the Moonee Ponds Central Shopping Centre. Our Moonee
+              Ponds team are available to provide eye care services such as eye
+              tests and new frames.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="eye-health">
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_01.png'}}"
+        alt="in store"
+      />
+      <div>
+        <h3>Check Your Eyesight in Oscar Wylee Doncaster</h3>
+        <p>
+          There is no need to go to an optometrist’s office in order to have
+          your routine eye health test. Just stop by our Oscar Wylee store in
+          Doncaster, where we have trained eye care professionals performing
+          bulk billed eye tests for Medicare cardholders. You can get your
+          eyesight assessed, eye health checked for certain diseases and your
+          prescription updated, all in approximately 30 minutes. Book online to
+          have a quick and convenient eye test at Oscar Wylee Doncaster.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_02.png'}}"
+        alt="in store"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>We Accept Major Health Funds at Oscar Wylee</h3>
+        <p>
+          Here at Oscar Wylee Doncaster, we can process your health fund claim
+          in-store with a valid health fund card. Our friendly staff can help
+          answer any questions you have about what you’re eligible for with your
+          health fund. You won’t have to navigate the hardest parts of health
+          insurance alone - here at Oscar Wylee Doncaster, we’re here to ensure
+          you get what you need at an affordable, competitive price.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test" style="padding: 0px">
+      <img
+        src="{{media url='wysiwyg/locations/services/ow_smiley.png'}}"
+        alt="Styling advice"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Fashion-Forward Glasses at Affordable Prices</h3>
+        <p>
+          Visit Oscar Wylee Doncaster for professional frame styling from our
+          experts in-store. We’re offering vintage-style frames as well as
+          contemporary designs and colours. We have customisable prescription
+          lenses to fit your needs - whether that’s a blue light filter to help
+          with your sleep or a multifocal lens, to see at three different
+          distances, our experts in our eyeglasses shop are ready and able to
+          help you.
+        </p>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=33"
+  phone_number="(03) 9973 4267"
+  direction_map="https://g.page/r/CTitJmK4d-RfEBM/review"}}
+</div>
+
+<script>
+  // acordian for store page -----------------------------
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+      this.classList.toggle("active");
+
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        this.querySelector(".icon").classList.replace("fa-minus", "fa-plus");
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        this.querySelector(".icon").classList.replace("fa-plus", "fa-minus");
+      }
+    });
+  }
+</script>
