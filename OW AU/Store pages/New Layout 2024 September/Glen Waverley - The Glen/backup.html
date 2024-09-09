@@ -1,0 +1,727 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<style>
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .store-page-accordion-heading {
+    font-size: 15px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+  }
+
+  .accordion:hover {
+    border: none;
+  }
+
+  .accordion-wrapper .accordion:first-child {
+    border-top: 1px solid #a3a3a3;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid #a3a3a3;
+  }
+
+  /* Style for the active class */
+  .active,
+  .accordion:hover {
+    background-color: #ffffff;
+  }
+
+  .accordion-wrapper .active {
+    border-bottom: 1px solid #a3a3a3 !important;
+  }
+
+  /* Style the expand and collapse icons */
+  .icon {
+    float: right;
+  }
+
+  .panel-content {
+    padding: 20px 0px;
+  }
+
+  .store-ul {
+    list-style: disc !important;
+    margin-left: 35px !important;
+  }
+
+  .store-ul li {
+    font-size: 1.4rem !important;
+    padding-left: 5px !important;
+  }
+
+  .store-page-accordion a {
+    color: #1979c3 !important;
+  }
+
+  section.store-page-accordion {
+    margin-bottom: 60px;
+  }
+</style>
+
+<div class="static-location-detail new-layout">
+  <div class="location-detail-wrapper location-content">
+    <div class="left-container">
+      <h1 class="static-location-header">Optometrist Glen Waverley</h1>
+      <p class="short-content">
+        The Glen<br />G-030, 235 Springvale Rd<br />Glen Waverley, VIC 3150
+      </p>
+      <ul>
+        <li class="position">Near H&amp;M &amp; Target</li>
+      </ul>
+      <div class="opening-hours">
+        <p class="title">Opening hours</p>
+        <div class="store-schedule">
+          <p>
+            <span class="schedule-label">Monday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Tuesday</span
+            ><span class="schedule-value"></span>9:00am - 5:30pm
+          </p>
+          <p>
+            <span class="schedule-label">Wednesday</span
+            ><span class="schedule-value"></span>9:00am - 5:30pm
+          </p>
+          <p>
+            <span class="schedule-label">Thursday</span
+            ><span class="schedule-value"></span>9:00am - 9:00pm
+          </p>
+          <p>
+            <span class="schedule-label">Friday</span
+            ><span class="schedule-value"></span>9:00am - 7:00pm
+          </p>
+          <p>
+            <span class="schedule-label">Saturday</span
+            ><span class="schedule-value"></span>9:00am - 5:00pm
+          </p>
+          <p>
+            <span class="schedule-label">Sunday</span
+            ><span class="schedule-value"></span>10:00am - 5:00pm
+          </p>
+          <p style="font-size: 12px">
+            *Store hours reflect local standard trading hours and exclude public
+            holidays
+          </p>
+          <p>
+            <span style="text-decoration: underline; font-size: 13px"
+              ><strong
+                ><a
+                  href="https://g.page/r/CajpZ_j_SNuHEBM"
+                  target="_blank"
+                  rel="noopener"
+                  >Visit our Glen Waverley Google Business page for directions,
+                  reviews, and updates.</a
+                ></strong
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="location-map">
+        <iframe
+          width="100%"
+          height="100%"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12597.321163130786!2d145.1648733!3d-37.8759578!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad63fd244a7e8c9%3A0x87db48fff867e9a8!2sOscar%20Wylee%20Optometrist%20-%20Glen%20Waverley!5e0!3m2!1sen!2sau!4v1701742730516!5m2!1sen!2sau"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=147"
+  phone_number="(03) 7035 3821"
+  direction_map="https://g.page/r/CajpZ_j_SNuHEBM/review"}} {{widget
+  type="Oscar\LocationReview\Block\Widget\LocationReview"
+  review_url="https://g.page/r/CajpZ_j_SNuHEBM/review"
+  location_id="16161943377391398828"}} {{widget
+  type="Oscar\Booking\Block\Widget\AboutUs"
+  banner="wysiwyg/NewStorePage2/StoreFront/OW-TheGlen.jpg"
+  description_label="Find an Optometrist in Glen Waverley"
+  description="&lt;p&gt;Close to areas including Vermont South, Mount Waverley
+  and Notting Hill, our Oscar Wylee Glen Waverley store is located in The Glen
+  Shopping Centre. Oscar Wylee Glen Waverley offers bulk billed eye tests for
+  eligible Medicare cardholders to check vision and eye health as well as
+  prescription updates. Once your eye test is completed, our dedicated retail
+  staff can help you find a stylish pair of prescription or non-prescription
+  glasses from our wide selection of vintage and modern-inspired frames.
+  &lt;br&gt;&lt;br&gt;The Glen is a shopping centre in Victoria that can be
+  reached by public transport or car with over 3,500 parking spaces that can be
+  easily accessed. There are many shops to explore in The Glen including David
+  Jones, Aldi and UNIQLO. Visit Oscar Wylee Glen Waverley today to experience
+  some of the best optometry services in Glen Waverley, Australia.&lt;/p&gt;"
+  first_optometrist_image="wysiwyg/NewStorePage2/Optometrist/Placeholder_Option_2.png"
+  first_optometrist_name="Store Manager"
+  second_optometrist_image="wysiwyg/NewStorePage2/Optometrist/Placeholder_Option_2.png"
+  second_optometrist_name="Optometrist"}} {{widget
+  type="Oscar\Booking\Block\Widget\LocationService" location_service="Bulk
+  Billed Eye Examinations,Professional Frame Styling,Frame Adjustments and
+  Repairs"}}
+
+  <!-- store page accordion -->
+  <section class="store-page-accordion">
+    <div class="accordion-wrapper">
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Find an Optometrist in Glen Waverley, Melbourne for an Eye Health Test
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            An optometrist in Glen Waverley, Melbourne is a go-to destination
+            for great eye health services such as an eye health test in Glen
+            Waverley, prescription glasses, prescription sunglasses and more.
+            Our optometrists are trained to diagnose a range of eye diseases and
+            problems, so make sure to see us for professional optometry
+            services. As part of Australia’s Medicare system, we provide our eye
+            health and vision services at a bulk billed price and if your vision
+            condition requires further assessment, we can refer you to an eye
+            doctor. When you visit us in-store, you can receive help with all
+            eye health-related concerns and even eyewear concerns thanks to our
+            optical dispenser. The average price for an optometrist in Glen
+            Waverley may depend on the number of other optometrists in the area,
+            the facility they operate in and your vision requirements.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////////////// -->
+
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How to Find an Optometrist in Glen Waverley, Melbourne?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find an optometrist in Glen Waverley, Melbourne you can take
+            certain steps that can help make it easier for you such as
+            <b
+              >searching online, assessing the store’s opening hours and finding
+              the directions to your chosen location.</b
+            >
+            The steps on how to find an optometrist in Glen Waverley are listed
+            below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, Glen Waverley optometrist near me.
+              This can also be done here on the website via our locations page.
+            </li>
+            <li>
+              Click on the Oscar Wylee link, which will take you directly to our
+              Glen Waverley optometrist store page.
+            </li>
+            <li>
+              See the store’s opening hours and where the store is located
+              specifically.
+            </li>
+            <li>
+              Use the Glen Waverley Google Business page link located under
+              store hours to see the directions on how to get to the store.
+            </li>
+          </ol>
+
+          <p>
+            You can also find an optometrist in Glen Waverley by searching the
+            keywords optometrist near me. If you have locations enabled on your
+            smartphone and you’re in the Glen Waverley area, our Glen Waverley
+            store page should appear easily for you to click on.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////////////// -->
+
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          Is it Hard to Get an Eye Appointment in Glen Waverley, Melbourne?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            No, it is not hard to get an eye appointment in Glen Waverley. You
+            can easily book an appointment to see an Oscar Wylee optometrist in
+            Glen Waverley right here on this page. At Oscar Wylee we have highly
+            qualified optometrists available for bulk billed eye appointments,
+            which can be booked online or in-store.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Compare Optometrists in Glen Waverley to Each Other?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To compare optometrists in Glen Waverley, you can use factors such
+            as eye
+            <b
+              >tests offered, health fund coverage, lens types and add-ons and
+              eyewear offered.</b
+            >
+            To take care of your vision and eye health, it is important to
+            receive an eye test at least once every two years. There are
+            different types of tests that can be performed in an eye test and
+            not all optometrists may offer the same tests. Health funds can be
+            used to help cover some of the cost of your frames and lenses. To
+            find out if your health fund is accepted at Glen Waverley
+            optometrist in Melbourne, visit their website. In the case of Oscar
+            Wylee, we accept all major health funds and provide on-the-spot
+            claims in-store. There are many different lens options available for
+            prescription glasses such as single vision, multifocal and high
+            index lenses. Most optometrists in Glen Waverley will offer these
+            lenses although it is good to make sure. There are also lens add-ons
+            available to enhance your glasses such as anti-reflective and blue
+            light filters. Finally, if you are looking to purchase a pair of
+            glasses after your eye test, you can compare the different styles
+            and colours you are interested in from Glen Waverley optometrists in
+            Melbourne. Oscar Wylee offers a wide range of frames with vintage
+            and modern inspirations in bold colours and subtle designs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Find an Eyeglasses Shop in Glen Waverley, Melbourne?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find a glasses store in Glen Waverley, you can try to follow
+            these simple steps including
+            <b
+              >searching online, selecting a convenient location and looking at
+              their health insurance policies.</b
+            >
+            The steps on how to find a glasses store in Glen Waverley, Melbourne
+            are listed below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, glasses store in Glen Waverley.
+              This will provide you with various options for glasses stores in
+              the whole area of Glen Waverley.
+            </li>
+            <li>
+              Select a glasses store that is most convenient for you to travel
+              to.
+            </li>
+            <li>
+              Click the link to find out more information such as opening hours,
+              exact location and directions to the glasses store in Glen
+              Waverley.
+            </li>
+            <li>
+              Read their health insurance policies to ensure you know what
+              health benefits you have access to.
+            </li>
+          </ol>
+
+          <p>
+            Our Oscar Wylee glasses store in Glen Waverley, Melbourne offers
+            primary eye care services such as comprehensive eye tests as well as
+            other services performed by an optometrist and offers prescription
+            and non-prescription eyewear.
+          </p>
+        </div>
+      </div>
+
+      <!-- ////////// -->
+
+      <button class="accordion">
+        <h5 class="store-page-accordion-heading">
+          Is it Possible to Purchase Prescribed Sunglasses in Glen Waverley,
+          Melbourne Without Seeing an Optometrist?
+        </h5>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Yes and no, it is possible to
+            <a href="https://www.oscarwylee.com.au/sunglasses.html"
+              >purchase prescribed sunglasses</a
+            >
+            in Glen Waverley, Melbourne without seeing an optometrist if you
+            already have a prescription that has not expired. If your
+            prescription is expired, you can book an eye test to receive an
+            updated or new prescription which will require you to see an
+            optometrist. This will ensure your prescription sunglasses are
+            appropriate for your visual needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Where is the Oscar Wylee Glen Waverley Optometrist in Melbourne
+          Located?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Glen Waverley optometrist is located at The Glen
+            Shopping Centre which is located at Springvale Road. You can find
+            the Oscar Wylee Glen Waverley store near H&M & Target.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What is the Phone Number of Oscar Wylee Glen Waverley Optometrist
+          Store?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Glen Waverley optometrist store phone number is (03)
+            7035 3821. You can contact the Oscar Wylee Glen Waverley store
+            between the hours of 9 am and 5:30 pm on Monday, Tuesday, and
+            Wednesday, on Thursdays and Fridays between 9 am and 9 pm, on
+            Saturdays between 9 am and 5 pm and on Sundays between 10 am and 5
+            pm.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Reviews for Oscar Wylee Glen Waverley Optometrist in
+          Melbourne?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            There are currently no reviews for the Oscar Wylee Glen Waverley
+            optometrist store. However, you can learn more about our Glen
+            Waverley store here on our website or by visiting our team in-store.
+          </p>
+
+          <!-- <ul class="store-ul">
+                        <li>
+                            <b>Simone Bamford: </b>
+                            I couldn’t be more impressed with the service and experience at Oscar Wylee. This is the
+                            second time I have been for an eye test and new glasses at the store in Southland, and the
+                            staff are always professional and friendly, and the technology and facilities absolutely
+                            brilliant. A very smooth, easy experience all around.
+                        </li>
+                        <li>
+                            <b>Clauds I: </b>
+                            Very happy with the testing. Very thorough and I felt that I received excellent customer
+                            service. Everything was explained to me and that's the most important thing when someone
+                            examines the eyes.
+                        </li>
+                        <li>
+                            <b>Eleanor Youdell: </b>
+                            The entire experience was amazing. Knowledgeable and friendly staff. Helpful from start to
+                            finish. Lots of lovely frames to choose from. Highly recommend Oscar Wylee.
+                        </li>
+
+                    </ul> -->
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          What Treatments or Eye Care Processes are Done in the Oscar Wylee Glen
+          Waverley Optometrist Location?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The treatments or eye care processes done in the Oscar Wylee Glen
+            Waverley optometrist Melbourne location include
+            <b>a tonometry test, a slit lamp exam and a refraction test</b>.
+            Additional tests that may also be performed can include
+            <b>a dilated fundus exam.</b> The treatments or eye-care processes
+            that are done in the Oscar Wylee Glen Waverley optometrist Melbourne
+            location are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>A Tonometry Test:</b> An optometrist or optical dispenser will
+              conduct a tonometry test which involves the use of a machine that
+              will release small puffs of air into your eyes. This will assist
+              with measuring pressure in the eye.
+            </li>
+            <!-- <li>
+                            <b>A Digital Photograph:</b> An optometrist or optical dispenser
+                            may take a digital photograph of your eye which can be kept on
+                            record to use in future appointments to evaluate any changes to
+                            your eye.
+                        </li> -->
+            <li>
+              <b>Slit Lamp Test:</b> A slit lamp test can be used to evaluate
+              your eye health, by examining your cornea and iris which are the
+              anterior and posterior of the eye.
+            </li>
+            <li>
+              <b>Refraction Test:</b> During a refraction test, an optometrist
+              will have you view an image through different lenses and ask you
+              to confirm which helps you see the image clearer.
+            </li>
+            <!-- <li>
+                            <b>Visual Field Test:</b> A visual field test can assist with
+                            assessing your peripheral vision, which may be beneficial for
+                            identifying any signs of glaucoma.
+                        </li> -->
+            <li>
+              <b>Dilated Fundus Exam:</b> A dilated fundus exam can help an
+              optometrist assess your health in more detail by getting a clear
+              view of the retina. This test is typically carried out for
+              patients with diabetes and those who may be at risk of developing
+              retinal damage.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How Many Optometrists Exist in Glen Waverley, Melbourne?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Many optometrists exist in Glen Waverley, Melbourne to provide eye
+            tests and glasses, including Oscar Wylee. The number of optometrists
+            in Glen Waverley may be due to the number of residents in the area
+            and the geographical size of the suburb. If you need essential eye
+            services such as a comprehensive eye test, a wide selection of
+            prescription eyewear and more, then choose Oscar Wylee as your first
+            choice for optometry services.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Other Closest Optometrist Locations to Glen Waverley,
+          Melbourne in Australia?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The other closest Oscar Wylee optometrist locations to Glen
+            Waverley, Melbourne in Australia are
+            <b> Forest Hill, Knox, Chadstone and Eastland. </b>The other closest
+            optometrist locations to Glen Waverley are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Forest Hill: </b>
+              Forest Hill is close to Glen Waverley with 5-6 km in between
+              stores and is located at the Chase Shopping Centre. You can find
+              the
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-forest-hill.html"
+                >Oscar Wylee Forest Hill</a
+              >
+              store near Woolworths which is the perfect place to have your eyes
+              tested regularly and receive professional eyecare advice and
+              assistance.
+            </li>
+            <li>
+              <b>Knox: </b>
+              Knox is close to Glen Waverley with 8 km in between stores and is
+              located at the Westfield shopping centre at 425 Burwood Hwy. You
+              can find the
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-knox.html"
+                >Oscar Wylee Knox</a
+              >
+              store on level 1, opposite Specsavers. Here is where you can
+              receive great eye health services to care for your vision and look
+              and feel your best with fashionable frames.
+            </li>
+            <li>
+              <b>Chadstone: </b>
+              Chadstone is close to Glen Waverley with 10 km in between stores
+              and is located at the Chadstone Shopping Centre at 1341 Dandenong
+              Road. The
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-chadstone.html"
+                >Oscar Wylee Chadstone</a
+              >
+              store can be found near Culture Kings and offers essential
+              optometry services to ensure your ocular health is in optimal
+              condition. These include eye tests and prescription eyewear.
+            </li>
+            <li>
+              <b>Eastland: </b>
+              Eastland is close to Glen Waverley with 14 km in between stores
+              and is located at 175 Maroondah Highway. You can find the
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-eastland.html"
+                >Oscar Wylee Eastland</a
+              >
+              store on level 1, near Medibank. Here, our optometrists can help
+              you care for your vision with a comprehensive eye test or
+              assistance with your prescription eyewear.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="eye-health">
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_01.png'}}"
+        alt="In store eye test"
+      />
+      <div>
+        <h3>Oscar Wylee Eye Tests in Glen Waverley</h3>
+        <p>
+          At Oscar Wylee Glen Waverley, eye tests are bulk billed for eligible
+          Medicare cardholders and performed by our skilled and dedicated Oscar
+          Wylee optometrists. Our trusted optometrists offer eye care processes
+          such as checking your eye health for certain eye diseases, assessing
+          your vision and providing an updated prescription if needed. With a
+          new prescription, you can browse for a new pair of glasses and order
+          them on the same day.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_02.png'}}"
+        alt="Health funds accepted"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Leading Health Funds Accepted at Oscar Wylee</h3>
+        <p>
+          Oscar Wylee Glen Waverley in The Glen accepts major health funds for
+          those with a valid card, so remember to bring yours to your next eye
+          health test. Our experts can help you navigate the ins and outs of
+          your insurance as well as process your claim in-store or provide an
+          on-the-spot quote for Oscar Wylee lenses and frames.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test" style="padding: 0px">
+      <img
+        src="{{media url='wysiwyg/locations/services/ow_smiley.png'}}"
+        alt="Styling advice"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Stylish Frames at Glen Waverley</h3>
+        <p>
+          Our expert staff at Oscar Wylee Glen Waverley are onsite to help
+          customers find the perfect pair of glasses or sunglasses. No matter if
+          you’re buying a pair of prescription glasses or prescription
+          sunglasses, we’ve got you covered with modern and vintage-style frames
+          at affordable prices. Come in-store to get professionally fitted and
+          styled for frames where you can choose from our different lens options
+          including blue light filters, multifocals and polarised sunglasses.
+        </p>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=147"
+  phone_number="(03) 7035 3821"
+  direction_map="https://g.page/r/CajpZ_j_SNuHEBM/review"}}
+</div>
+
+<script>
+  // acordian for store page -----------------------------
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      /* Toggle between adding and removing the "active" class,
+                                  to highlight the button that controls the panel */
+      this.classList.toggle("active");
+
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        this.querySelector(".icon").classList.replace("fa-minus", "fa-plus");
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        this.querySelector(".icon").classList.replace("fa-plus", "fa-minus");
+      }
+    });
+  }
+</script>

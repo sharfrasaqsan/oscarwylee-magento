@@ -1,0 +1,738 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<style>
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .store-page-accordion-heading {
+    font-size: 15px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+  }
+
+  .accordion:hover {
+    border: none;
+  }
+
+  .accordion-wrapper .accordion:first-child {
+    border-top: 1px solid #a3a3a3;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid #a3a3a3;
+  }
+
+  /* Style for the active class */
+  .active,
+  .accordion:hover {
+    background-color: #ffffff;
+  }
+
+  .accordion-wrapper .active {
+    border-bottom: 1px solid #a3a3a3 !important;
+  }
+
+  /* Style the expand and collapse icons */
+  .icon {
+    float: right;
+  }
+
+  .panel-content {
+    padding: 20px 0px;
+  }
+
+  .store-ul {
+    list-style: disc !important;
+    margin-left: 35px !important;
+  }
+
+  .store-ul li {
+    font-size: 1.4rem !important;
+    padding-left: 5px !important;
+  }
+
+  .store-page-accordion a {
+    color: #1979c3 !important;
+  }
+
+  section.store-page-accordion {
+    margin-bottom: 60px;
+  }
+</style>
+
+<div class="static-location-detail new-layout">
+  <div class="location-detail-wrapper location-content">
+    <div class="left-container">
+      <h1 class="static-location-header">Optometrist Richmond</h1>
+      <p class="short-content">
+        Victoria Gardens Shopping Centre<br />SP 020, 620 Victoria St<br />Richmond
+        VIC 3121
+      </p>
+      <ul>
+        <li class="position">Near Coles</li>
+      </ul>
+      <div class="opening-hours">
+        <p class="title">Opening hours</p>
+        <div class="store-schedule">
+          <p>
+            <span class="schedule-label">Monday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Tuesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Wednesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Thursday</span
+            ><span class="schedule-value">9:00am - 9:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Friday</span
+            ><span class="schedule-value">9:00am - 9:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Saturday</span
+            ><span class="schedule-value">9:00am - 5:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Sunday</span
+            ><span class="schedule-value">10:00am - 5:00pm</span>
+          </p>
+          <p style="font-size: 12px">
+            *Store hours reflect local standard trading hours and exclude public
+            holidays
+          </p>
+          <p>
+            <span style="text-decoration: underline; font-size: 13px"
+              ><strong
+                ><a
+                  href="https://g.page/r/CavmvqUaHwBAEBM"
+                  target="_blank"
+                  rel="noopener"
+                  >Visit our Victoria Gardens Google Business page for
+                  directions, reviews, and updates.</a
+                ></strong
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="location-map">
+        <iframe
+          width="100%"
+          height="100%"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.9953978955646!2d145.00841951531882!3d-37.81357677975231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x40001f1aa5bee6ab!2sOscar%20Wylee%20Optometrist%20-%20Victoria%20Gardens!5e0!3m2!1sen!2sau!4v1620263518488!5m2!1sen!2sau"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=89"
+  phone_number="(03) 7012 1807"
+  direction_map="https://g.page/r/CavmvqUaHwBAEBM/review"}} {{widget
+  type="Oscar\LocationReview\Block\Widget\LocationReview"
+  review_url="https://g.page/r/CavmvqUaHwBAEBM/review"
+  location_id="1560033822068077751"}} {{widget
+  type="Oscar\Booking\Block\Widget\AboutUs"
+  banner="wysiwyg/NewStorePage/StoreFront2/Victoria_Gardens.jpg"
+  description_label="Find an Optometrist in Victoria Gardens With Oscar Wylee"
+  description="You can find our Oscar Wylee store in the Victoria Gardens
+  Shopping Centre, in Richmond. Here, our dedicated Oscar Wylee optometrists can
+  provide Medicare bulk billed eye health tests. Our friendly staff can also
+  help you shop our range of stylish and affordable eyewear. To make your
+  appointment with us, you can take the tram which stops near the centre, or
+  take one of the many buses that service the surrounding areas. The centre also
+  has paid parking available.&lt;br&gt;&lt;br&gt;Once you have finished your
+  appointment with us, why not explore all the retail, dining and entertainment
+  options available at the Victoria Gardens Shopping Centre. From Hoyts to
+  Cotton On and Fitness First, there is something for everyone. If you live
+  close to Kew or Burnley, visit Oscar Wylee Victoria Gardens for dedicated and
+  passionate optometrists near you!"
+  first_optometrist_image="wysiwyg/NewStorePage2/Optometrist/Victoria_Gardens_Optom.png"
+  first_optometrist_name="Optometrist"
+  first_optometrist_certification_one="B.Optometry"
+  second_optometrist_image="wysiwyg/NewStorePage2/StoreManager/Victoria_Gardens_SM.png"
+  second_optometrist_name="Store Manager"
+  second_optometrist_certification_one="Certificate 2 in Retail"}} {{widget
+  type="Oscar\Booking\Block\Widget\LocationService" location_service="Bulk
+  Billed Eye Examinations,Professional Frame Styling,Frame Adjustments and
+  Repairs,Visual Fields Testing,Digital Retinal Scanning"}}
+
+  <!-- store page accordion -->
+  <section class="store-page-accordion">
+    <div class="accordion-wrapper">
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Find an Optometrist in Victoria Gardens, Melbourne for an Eye Health
+          Test
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            For an eye health test in Victoria Gardens, Melbourne, visit our
+            Oscar Wylee optometrists. Our Oscar Wylee team at Victoria Gardens
+            Shopping Centre are equipped with high-quality optometry technology
+            to provide eye care services including vision testing and the
+            detection of eye diseases. Our Victoria Gardens optometrists can
+            also refer patients to an ophthalmologist, also known as an eye
+            doctor, for specialised treatment if needed. Our retail team,
+            including our optical dispensers, are also available in-store at
+            Oscar Wylee Victoria Gardens to help customers shop our range of
+            stylish frames, including prescription glasses, prescription
+            sunglasses and non-prescription glasses.
+          </p>
+          <p>
+            At our Oscar Wylee glasses shop in Victoria Gardens, Melbourne, our
+            eye tests are available at a bulk billed price, under Australia’s
+            Medicare system. The average price for an optometrist,
+            ophthalmologist or other eye care services in Victoria Gardens,
+            Melbourne can vary depending on factors such as the patient’s age,
+            visual needs and whether there are certain underlying health issues
+            present. Come and visit our dedicated team at Oscar Wylee Victoria
+            Gardens, Melbourne, where we are passionate about ensuring our
+            customers look after their eyes and find the eyewear that is right
+            for their needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////////////// -->
+
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How to Find an Optometrist in Victoria Gardens, Melbourne?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find an optometrist in Victoria Gardens, Melbourne you can take
+            certain steps that can help make it easier for you such as
+            <b
+              >searching online, assessing the store’s opening hours and finding
+              the directions to your chosen location.</b
+            >
+            The steps on how to find an optometrist in Victoria Gardens,
+            Melbourne are listed below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, optometrist near me in Victoria
+              Gardens. This can also be done here on the website via our
+              locations page.
+            </li>
+            <li>
+              Click on the Oscar Wylee link, which will take you directly to our
+              Victoria Gardens optometrist store page.
+            </li>
+            <li>
+              See the store’s opening hours and where the store is located
+              specifically.
+            </li>
+            <li>
+              Use the Victoria Gardens Google Business page link located under
+              store hours to see the directions on how to get to the store.
+            </li>
+          </ol>
+
+          <p>
+            You can also find an optometrist in Victoria Gardens, Melbourne by
+            searching the keywords optometrist near me. If you have locations
+            enabled on your smartphone and you’re in the Victoria Gardens,
+            Melbourne area, our Victoria Gardens store page should appear easily
+            for you to click on.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////////////// -->
+
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          Is it Hard to Get an Eye Appointment in Victoria Gardens, Melbourne?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            No, it is not hard to get an eye appointment in Victoria Gardens.
+            You can easily book an appointment to see an Oscar Wylee optometrist
+            in Victoria Gardens, Victoria right here on this page. At Oscar
+            Wylee we have highly qualified optometrists available for bulk
+            billed eye appointments, which can be booked online or in-store.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Compare Optometrists in Victoria Gardens, Melbourne to Each
+          Other?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To compare optometrists in Victoria Gardens, Melbourne, you can use
+            factors such as eye
+            <b
+              >tests offered, health fund coverage, lens types and add-ons and
+              eyewear offered.</b
+            >
+            To take care of your vision and eye health, it is important to
+            receive an eye test at least once every two years. There are
+            different types of tests that can be performed in an eye test and
+            not all optometrists may offer the same tests. Health funds can be
+            used to help cover some of the cost of your frames and lenses. To
+            find out if your health fund is accepted at an optometrist in
+            Victoria Gardens, Melbourne visit their website. In the case of
+            Oscar Wylee, we accept all major health funds and provide
+            on-the-spot claims in-store. There are many different lens options
+            available for prescription glasses such as single-vision, multifocal
+            and high-index lenses. Most optometrists in Victoria Gardens,
+            Melbourne will offer these lenses although it is good to make sure.
+            There are also lens add-ons available to enhance your glasses such
+            as anti-reflective and blue light filters. Finally, if you are
+            looking to purchase a pair of glasses after your eye test, you can
+            compare the different styles and colours you are interested in from
+            the optometrists in Victoria Gardens, Melbourne. Oscar Wylee offers
+            a wide range of frames with vintage and modern inspirations in bold
+            colours and subtle designs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Find an Eyeglasses Shop in Victoria Gardens, Melbourne?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find a glasses store in Victoria Gardens, Melbourne you can try
+            to follow these simple steps including
+            <b
+              >searching online, selecting a convenient location and looking at
+              their health insurance policies.</b
+            >
+            The steps on how to find a glasses store in Victoria Gardens,
+            Victoria are listed below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, glasses store in Victoria Gardens,
+              Melbourne. This will provide you with various options for glasses
+              stores in the whole Victoria Gardens, Melbourne area.
+            </li>
+            <li>
+              Select a glasses store that is most convenient for you to travel
+              to.
+            </li>
+            <li>
+              Click the link to find out more information such as opening hours,
+              exact location and directions to the glasses store in Victoria
+              Gardens.
+            </li>
+            <li>
+              Read their health insurance policies to ensure you know what
+              health benefits you have access to.
+            </li>
+          </ol>
+
+          <p>
+            Our Oscar Wylee glasses store in Victoria Gardens, Melbourne offers
+            primary eye care services such as comprehensive eye tests as well as
+            other services performed by an optometrist and offers prescription
+            and non-prescription eyewear.
+          </p>
+        </div>
+      </div>
+
+      <!-- ////////// -->
+
+      <button class="accordion">
+        <h5 class="store-page-accordion-heading">
+          Is it Possible to Purchase Prescribed Sunglasses in Victoria Gardens,
+          Melbourne Without Seeing an Optometrist?
+        </h5>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Yes and no, it is possible to
+            <a href="https://www.oscarwylee.com.au/sunglasses.html"
+              >purchase prescribed sunglasses</a
+            >
+            in Victoria Gardens, Melbourne without seeing an optometrist if you
+            already have a prescription that has not expired. If your
+            prescription is expired, you can book an eye test to receive an
+            updated or new prescription which will require you to see an
+            optometrist. This will ensure your prescription sunglasses are
+            appropriate for your visual needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Where is the Oscar Wylee Victoria Gardens, Melbourne Optometrist
+          Located?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Victoria Gardens optometrist is located in the
+            Victoria Gardens Shopping Centre. Victoria Gardens Shopping Centre
+            is located on Victoria Street in Richmond, Victoria.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What is the Phone Number of Oscar Wylee Victoria Gardens, Melbourne
+          Optometrist Store?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The phone number for our Oscar Wylee Victoria Gardens, Melbourne
+            optometrist store is (03) 7012 1807. Our Oscar Wylee Victoria
+            Gardens, Victoria store is open, and our staff are available to be
+            contacted between 9 am and 5.30 pm from Monday to Wednesday, 9 am to
+            9 pm on Thursdays and Fridays, 9 am to 5 pm on Saturdays and 10 am
+            to 5 pm on Sunday.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Reviews for Oscar Wylee Victoria Gardens, Melbourne
+          Optometrist?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The customer reviews for our Oscar Wylee Victoria Gardens, Melbourne
+            optometrist, can be found here on the website and online when you
+            search for Oscar Wylee Victoria Gardens optometrist. The reviews for
+            our Oscar Wylee Victoria Gardens optometrist are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Barry Wong: </b>
+              I was served by Andree who spent extra time and effort to ensure
+              my specific needs were met. She was professional, helpful and
+              above all interested in making a human connection that made the
+              experience worthwhile.
+            </li>
+            <li>
+              <b>Kristin Mitchell: </b>
+              I was very happy with the service at Oscar Wylee Victoria Gardens.
+              Both the optometrist and the sales girls were most helpful
+              especially when choosing frames. They were very patient in helping
+              me decide what suited me the most.
+            </li>
+            <li>
+              <b>Louise Ward: </b>
+              It was a really positive experience. I found it exceeded my
+              expectations in customer service and attention to detail. I look
+              forward to using my glasses.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          What Treatments or Eye Care Processes Are Done in the Oscar Wylee
+          Victoria Gardens, Melbourne Optometrist Location?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The treatments or eye care processes done in the Oscar Wylee
+            Victoria Gardens, Melbourne optometrist location include
+            <b
+              >a tonometry test, a digital photograph, a slit lamp exam and a
+              refraction test.</b
+            >
+            Additional tests that may also be performed can include
+            <b>a visual field test and a dilated fundus exam.</b> The treatments
+            or eye-care processes that are done in the Oscar Wylee Victoria
+            Gardens optometrist location are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>A Tonometry Test:</b> An optometrist or optical dispenser will
+              conduct a tonometry test which involves the use of a machine that
+              will release small puffs of air into your eyes. This will assist
+              with measuring pressure in the eye.
+            </li>
+            <li>
+              <b>A Digital Photograph:</b> An optometrist or optical dispenser
+              may take a digital photograph of your eye which can be kept on
+              record to use in future appointments to evaluate any changes to
+              your eye.
+            </li>
+            <li>
+              <b>Slit Lamp Test:</b> A slit lamp test can be used to evaluate
+              your eye health, by examining your cornea and iris which are the
+              anterior and posterior of the eye.
+            </li>
+            <li>
+              <b>Refraction Test:</b> During a refraction test, an optometrist
+              will have you view an image through different lenses and ask you
+              to confirm which helps you see the image clearer.
+            </li>
+            <li>
+              <b>Visual Field Test:</b> A visual field test can assist with
+              assessing your peripheral vision, which may be beneficial for
+              identifying any signs of glaucoma.
+            </li>
+            <li>
+              <b>Dilated Fundus Exam:</b> A dilated fundus exam can help an
+              optometrist assess your health in more detail by getting a clear
+              view of the retina. This test is typically carried out for
+              patients with diabetes and those who may be at risk of developing
+              retinal damage.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How Many Optometrists Exist in Victoria Gardens, Melbourne?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            There are many optometrists that exist in Richmond, Victoria and in
+            the Victoria Gardens Shopping Centre including Oscar Wylee. The
+            amount of optometrists available in an area will typically depend on
+            the population and the eye care needs of those in the area. At Oscar
+            Wylee Victoria Gardens, Melbourne, our team is passionate about
+            providing our customers with high-quality, dedicated eye care
+            services. Our optometrists are available to provide bulk billed eye
+            tests with our dedicated optometrists, prescription updates and new
+            frames. If you are looking for an optometrist in Victoria Gardens,
+            Melbourne, Oscar Wylee is available to provide all your eye care and
+            eyewear needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Other Closest Optometrist Locations to Victoria Gardens,
+          Melbourne in Australia?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The closest Oscar Wylee Optometrist locations to Victoria Gardens,
+            Melbourne are <b>Chadstone, Moonee Ponds and Doncaster.</b> The
+            closest Oscar Wylee locations to Victoria Gardens, Melbourne are
+            listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Chadstone: </b>
+              Chadstone is a suburb located approximately 15 km away from
+              Richmond and Victoria Gardens, where our Oscar Wylee optometrists
+              are available to provide eye care services such as eye tests and
+              prescription updates. Our
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-chadstone.html"
+                >Oscar Wylee Chadstone</a
+              >
+              optometrist is located on the lower ground level of the Chadstone
+              Shopping Centre.
+            </li>
+            <li>
+              <b>Moonee Ponds: </b>
+              Moonee Ponds is a suburb around 11 km away from Victoria Gardens,
+              Melbourne, where our Oscar Wylee team is available to provide
+              customers with high-quality eye care services. You can find
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-moonee-ponds.html"
+                >Oscar Wylee Moonee Ponds</a
+              >
+              on the ground level of Moonee Ponds Central Shopping Centre.
+            </li>
+            <li>
+              <b>Doncaster: </b>
+              Doncaster is a suburb located approximately 15 km away from
+              Richmond and the Victoria Gardens Shopping Centre, where you can
+              find an Oscar Wylee optometrist.
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-doncaster.html"
+                >Oscar Wylee Doncaster</a
+              >
+              is located in Doncaster Westfield where our optometrists provide
+              Medicare bulk billed eye tests.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="eye-health">
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_01.png'}}"
+        alt="In store eye test"
+      />
+      <div>
+        <h3>Oscar Wylee Bulk Billed Eye Tests</h3>
+        <p>
+          Oscar Wylee at the Victoria Gardens Shopping Centre offers Medicare
+          bulk billed eye tests with our in-store optometrists. Our trained
+          optometrists can provide eye care processes including eye tests that
+          assess vision and examine the eyes for possible eye diseases. Come in
+          and have your prescription updated and shop for a new pair of
+          eyeglasses on the same day. For some of the best optometrists in
+          Richmond, Australia, visit Oscar Wylee Victoria Gardens.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_02.png'}}"
+        alt="Health funds accepted"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Leading Health Funds Accepted at Victoria Gardens</h3>
+        <p>
+          Oscar Wylee in Victoria Gardens accepts major health funds. Bring your
+          valid health fund card to Oscar Wylee Victoria Gardens and our team
+          can process your claim as well as answer any questions about
+          eligibility. Visit Oscar Wylee Victoria Gardens and get high-quality
+          affordable eye care services.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test" style="padding: 0px">
+      <img
+        src="{{media url='wysiwyg/locations/services/ow_smiley.png'}}"
+        alt="Styling advice"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Fashion-Forward Frames at Oscar Wylee</h3>
+        <p>
+          Here at our store in Victoria Gardens Shopping Centre, we offer
+          prescription glasses, prescription sunglasses and non-prescription
+          glasses in a variety of modern and vintage-inspired styles. Oscar
+          Wylee frames come in a range of colours, sizes and shapes so come and
+          visit our Victoria Gardens eyeglasses shop and find your perfect frame
+          today!
+        </p>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=89"
+  phone_number="(03) 7012 1807"
+  direction_map="https://g.page/r/CavmvqUaHwBAEBM/review"}}
+</div>
+
+<script>
+  // acordian for store page -----------------------------
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      /* Toggle between adding and removing the "active" class,
+                                  to highlight the button that controls the panel */
+      this.classList.toggle("active");
+
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        this.querySelector(".icon").classList.replace("fa-minus", "fa-plus");
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        this.querySelector(".icon").classList.replace("fa-plus", "fa-minus");
+      }
+    });
+  }
+</script>

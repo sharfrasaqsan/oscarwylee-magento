@@ -1,0 +1,728 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+<style>
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .store-page-accordion-heading {
+    font-size: 15px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+  }
+
+  .accordion:hover {
+    border: none;
+  }
+
+  .accordion-wrapper .accordion:first-child {
+    border-top: 1px solid #a3a3a3;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid #a3a3a3;
+  }
+
+  /* Style for the active class */
+  .active,
+  .accordion:hover {
+    background-color: #ffffff;
+  }
+
+  .accordion-wrapper .active {
+    border-bottom: 1px solid #a3a3a3 !important;
+  }
+
+  /* Style the expand and collapse icons */
+  .icon {
+    float: right;
+  }
+
+  .panel-content {
+    padding: 20px 0px;
+  }
+
+  .store-ul {
+    list-style: disc !important;
+    margin-left: 35px !important;
+  }
+
+  .store-ul li {
+    font-size: 1.4rem !important;
+    padding-left: 5px !important;
+  }
+
+  .store-page-accordion a {
+    color: #1979c3 !important;
+  }
+
+  section.store-page-accordion {
+    margin-bottom: 60px;
+  }
+</style>
+
+<div class="static-location-detail new-layout">
+  <div class="location-detail-wrapper location-content">
+    <div class="left-container">
+      <h1 class="static-location-header">Optometrist Werribee</h1>
+      <p class="short-content">
+        Pacific Werribee<br />Ground Level, Shop 167<br />Corner of Derrimut Rd
+        &amp; Heaths Rd<br />Werribee VIC 3030
+      </p>
+      <ul>
+        <li class="position">Opposite Rebel Sport</li>
+      </ul>
+      <div class="opening-hours">
+        <p class="title">Opening hours</p>
+        <div class="store-schedule">
+          <p>
+            <span class="schedule-label">Monday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Tuesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Wednesday</span
+            ><span class="schedule-value">9:00am - 5:30pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Thursday</span
+            ><span class="schedule-value">9:00am - 9:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Friday</span
+            ><span class="schedule-value">9:00am - 9:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Saturday</span
+            ><span class="schedule-value">9:00am - 5:00pm</span>
+          </p>
+          <p>
+            <span class="schedule-label">Sunday</span
+            ><span class="schedule-value">10:00am - 5:00pm</span>
+          </p>
+          <p style="font-size: 12px">
+            *Store hours reflect local standard trading hours and exclude public
+            holidays
+          </p>
+          <p>
+            <span style="text-decoration: underline; font-size: 13px"
+              ><strong
+                ><a
+                  href="https://g.page/r/CbtPLJ4OAnK3EBM"
+                  target="_blank"
+                  rel="noopener"
+                  >Visit our Werribee Google Business page for directions,
+                  reviews, and updates.</a
+                ></strong
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="location-map">
+        <iframe
+          width="100%"
+          height="100%"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12561.098868585572!2d144.67894716142635!3d-37.87532635034667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb772020e9e2c4fbb!2sOscar%20Wylee%20-%20Optometrist!5e0!3m2!1sen!2sau!4v1607662640241!5m2!1sen!2sau"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=22"
+  phone_number="(03) 8763 0234"
+  direction_map="https://g.page/r/CbtPLJ4OAnK3EBM/review"}} {{widget
+  type="Oscar\LocationReview\Block\Widget\LocationReview"
+  review_url="https://g.page/r/CbtPLJ4OAnK3EBM/review"
+  location_id="12623424481446604915"}} {{widget
+  type="Oscar\Booking\Block\Widget\AboutUs"
+  banner="wysiwyg/NewStorePage/StoreFront2/Werribee.jpg" description_label="Find
+  an Optometrist in Werribee With Oscar Wylee" description="Just southwest of
+  Melbourne’s CBD and close to Hoppers Crossing, you can find our Oscar Wylee
+  Werribee store at the Pacific Werribee shopping centre. Come in and visit us
+  on the ground level, opposite Rebel Sport, where our Oscar Wylee optometrists
+  offer Medicare bulk billed eye tests for same-day prescriptions. Our Werribee
+  store staff can also help you find affordable, stylish glasses that are the
+  right fit for you.&lt;br&gt;&lt;br&gt;To arrive for your appointment, you can
+  use one of the many car parking spaces at Pacific Werribee, or take the bus.
+  There are several routes from the Wyndham Vale, Hoppers Crossing and Tarneit
+  areas that travel right to the centre. If you are in the Tarneit and Laverton
+  areas, our Oscar Wylee store at Pacific Werribee is your go-to for all your
+  optometry needs. "
+  first_optometrist_image="wysiwyg/NewStorePage/Optometrist/Placeholder_Option_2.png"
+  first_optometrist_name="Optometrist Partner"}} {{widget
+  type="Oscar\Booking\Block\Widget\LocationService" location_service="Bulk
+  Billed Eye Examinations,Professional Frame Styling,Frame Adjustments and
+  Repairs,Visual Fields Testing,Digital Retinal Scanning,Eye Examinations for
+  Police Forms or VicRoads Forms"}}
+
+  <!-- store page accordion -->
+  <section class="store-page-accordion">
+    <div class="accordion-wrapper">
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Find an Optometrist in Werribee, Victoria for an Eye Health Test
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            For high-quality eye care services including eye health tests, visit
+            our Oscar Wylee optometrists in Werribee, Victoria. At the Pacific
+            Werribee Shopping Centre, our optometrists are available to provide
+            eye tests and vision testing and detect and manage eye diseases. Our
+            optometrists can also refer customers to an eye doctor, known in
+            Australia as an ophthalmologist, for specialised management of
+            complex eye conditions. At Oscar Wylee, our eye tests are available
+            at a bulk billed price under Australia’s Medicare system. The
+            average cost for an optometrist, ophthalmologist or other eye care
+            services in the Werribee area will be dependent on an individual’s
+            eye care needs, age and underlying health conditions.
+          </p>
+          <p>
+            At our Oscar Wylee glasses shop in Werribee, Victoria, our dedicated
+            retail team, including our optical dispensers, are also available
+            in-store to help customers shop our range of prescription glasses,
+            prescription sunglasses and non-prescription glasses. At Oscar
+            Wylee, we are passionate about ensuring our customers find eyewear
+            that is right for their needs. Our team can advise on which frames
+            and lenses will best serve a person’s eye needs and adjust frames
+            where necessary. Visit our Oscar Wylee team for high-quality eye
+            care services, including eye health tests, in Werribee, Victoria.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////////////// -->
+
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How to Find an Optometrist in Werribee, Victoria?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find an optometrist in Werribee, Victoria you can take certain
+            steps that can help make it easier for you such as
+            <b
+              >searching online, assessing the store’s opening hours and finding
+              the directions to your chosen location.</b
+            >
+            The steps on how to find an optometrist in Werribee, Victoria are
+            listed below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, optometrist near me in Werribee.
+              This can also be done here on the website via our locations page.
+            </li>
+            <li>
+              Click on the Oscar Wylee link, which will take you directly to our
+              Werribee optometrist store page.
+            </li>
+            <li>
+              See the store’s opening hours and where the store is located
+              specifically.
+            </li>
+            <li>
+              Use the Werribee Google Business page link located under store
+              hours to see the directions on how to get to the store.
+            </li>
+          </ol>
+
+          <p>
+            You can also find an optometrist in Werribee, Victoria by searching
+            the keywords optometrist near me. If you have locations enabled on
+            your smartphone and you’re in the Werribee, Victoria area, our
+            Werribee store page should appear easily for you to click on.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////////////// -->
+
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          Is it Hard to Get an Eye Appointment in Werribee, Victoria?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            No, it is not hard to get an eye appointment in Werribee. You can
+            easily book an appointment to see an Oscar Wylee optometrist in
+            Werribee, Victoria right here on this page. At Oscar Wylee we have
+            highly qualified optometrists available for bulk billed eye
+            appointments, which can be booked online or in-store.
+          </p>
+        </div>
+      </div>
+
+      <!-- //////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Compare Optometrists in Werribee, Victoria to Each Other?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To compare optometrists in Werribee, Victoria, you can use factors
+            such as eye
+            <b
+              >tests offered, health fund coverage, lens types and add-ons and
+              eyewear offered.</b
+            >
+            To take care of your vision and eye health, it is important to
+            receive an eye test at least once every two years. There are
+            different types of tests that can be performed in an eye test and
+            not all optometrists may offer the same tests. Health funds can be
+            used to help cover some of the cost of your frames and lenses. To
+            find out if your health fund is accepted at an optometrist in
+            Werribee, Victoria visit their website. In the case of Oscar Wylee,
+            we accept all major health funds and provide on-the-spot claims
+            in-store. There are many different lens options available for
+            prescription glasses such as single-vision, multifocal and
+            high-index lenses. Most optometrists in Werribee, Victoria will
+            offer these lenses although it is good to make sure. There are also
+            lens add-ons available to enhance your glasses such as
+            anti-reflective and blue light filters. Finally, if you are looking
+            to purchase a pair of glasses after your eye test, you can compare
+            the different styles and colours you are interested in from the
+            optometrists in Werribee, Victoria. Oscar Wylee offers a wide range
+            of frames with vintage and modern inspirations in bold colours and
+            subtle designs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////////////// -->
+
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          How to Find an Eyeglasses Shop in Werribee, Victoria?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            To find a glasses store in Werribee, Victoria you can try to follow
+            these simple steps including
+            <b
+              >searching online, selecting a convenient location and looking at
+              their health insurance policies.</b
+            >
+            The steps on how to find a glasses store in Werribee, Victoria are
+            listed below.
+          </p>
+
+          <ol>
+            <li>
+              Search online using the phrase, glasses store in Werribee,
+              Victoria. This will provide you with various options for glasses
+              stores in the whole Werribee, Victoria area.
+            </li>
+            <li>
+              Select a glasses store that is most convenient for you to travel
+              to.
+            </li>
+            <li>
+              Click the link to find out more information such as opening hours,
+              exact location and directions to the glasses store in Werribee.
+            </li>
+            <li>
+              Read their health insurance policies to ensure you know what
+              health benefits you have access to.
+            </li>
+          </ol>
+
+          <p>
+            Our Oscar Wylee glasses store in Werribee, Victoria offers primary
+            eye care services such as comprehensive eye tests as well as other
+            services performed by an optometrist and offers prescription and
+            non-prescription eyewear.
+          </p>
+        </div>
+      </div>
+
+      <!-- ////////// -->
+
+      <button class="accordion">
+        <h5 class="store-page-accordion-heading">
+          Is it Possible to Purchase Prescribed Sunglasses in Werribee, Victoria
+          Without Seeing an Optometrist?
+        </h5>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            Yes and no, it is possible to
+            <a href="https://www.oscarwylee.com.au/sunglasses.html"
+              >purchase prescribed sunglasses</a
+            >
+            in Werribee, Victoria without seeing an optometrist if you already
+            have a prescription that has not expired. If your prescription is
+            expired, you can book an eye test to receive an updated or new
+            prescription which will require you to see an optometrist. This will
+            ensure your prescription sunglasses are appropriate for your visual
+            needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- ///////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          Where is the Oscar Wylee Werribee, Victoria Optometrist Located?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The Oscar Wylee Werribee optometrist is located on the ground level
+            of the Pacific Werribee Shopping Centre. Werribee Shopping Centre is
+            located on the corner of Derrimut Road and Heaths Road, Werribee,
+            Victoria.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What is the Phone Number of Oscar Wylee Werribee, Victoria Optometrist
+          Store?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The phone number for our Oscar Wylee Werribee, Victoria optometrist
+            store is (03) 8763 0234. Our Oscar Wylee Werribee, Victoria store is
+            open, and our staff are available to be contacted between 9 am and
+            5.30 pm from Monday to Wednesday, 9 am to 9 pm on Thursdays and
+            Fridays, 9 am to 5 pm on Saturdays and 10 am to 5 pm on Sundays.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Reviews for Oscar Wylee Werribee, Victoria Optometrist?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The customer reviews for our Oscar Wylee Werribee, Victoria
+            optometrist, can be found here on the website and online when you
+            search for Oscar Wylee Werribee optometrist. The reviews for our
+            Oscar Wylee Werribee optometrist are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Deirdre van den Bergh: </b>
+              I received excellent customer service from the front staff
+              especially from Denise the optometrist. Will definitely be using
+              them again in the future.
+            </li>
+            <li>
+              <b>Lisa Spoor: </b>
+              Great experience. I felt respected, supported and valued as a
+              customer. Staff explained the process every step of the way. They
+              communicated well and heard my concerns and used their skills and
+              technology to determine the best approach. Staff were friendly and
+              tried to connect and build a rapport with me throughout. I can't
+              wait to pick up my new glasses.
+            </li>
+            <li>
+              <b>Nadene Muller: </b>
+              The OW team members are helpful and knowledgeable. It was a
+              pleasure to experience their level of service.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h4 class="store-page-accordion-heading">
+          What Treatments or Eye Care Processes Are Done in the Oscar Wylee
+          Werribee, Victoria Optometrist Location?
+        </h4>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The treatments or eye care processes done in the Oscar Wylee
+            Werribee, Victoria optometrist location include
+            <b
+              >a tonometry test, a digital photograph, a slit lamp exam and a
+              refraction test.</b
+            >
+            Additional tests that may also be performed can include
+            <b>a visual field test and a dilated fundus exam.</b> The treatments
+            or eye-care processes that are done in the Oscar Wylee Werribee
+            optometrist location are listed below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>A Tonometry Test:</b> An optometrist or optical dispenser will
+              conduct a tonometry test which involves the use of a machine that
+              will release small puffs of air into your eyes. This will assist
+              with measuring pressure in the eye.
+            </li>
+            <li>
+              <b>A Digital Photograph:</b> An optometrist or optical dispenser
+              may take a digital photograph of your eye which can be kept on
+              record to use in future appointments to evaluate any changes to
+              your eye.
+            </li>
+            <li>
+              <b>Slit Lamp Test:</b> A slit lamp test can be used to evaluate
+              your eye health, by examining your cornea and iris which are the
+              anterior and posterior of the eye.
+            </li>
+            <li>
+              <b>Refraction Test:</b> During a refraction test, an optometrist
+              will have you view an image through different lenses and ask you
+              to confirm which helps you see the image clearer.
+            </li>
+            <li>
+              <b>Visual Field Test:</b> A visual field test can assist with
+              assessing your peripheral vision, which may be beneficial for
+              identifying any signs of glaucoma.
+            </li>
+            <li>
+              <b>Dilated Fundus Exam:</b> A dilated fundus exam can help an
+              optometrist assess your health in more detail by getting a clear
+              view of the retina. This test is typically carried out for
+              patients with diabetes and those who may be at risk of developing
+              retinal damage.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h2 class="store-page-accordion-heading">
+          How Many Optometrists Exist in Werribee, Victoria?
+        </h2>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            There are many optometrists that exist in Werribee, Victoria and the
+            Pacific Werribee Shopping Centre including Oscar Wylee. The amount
+            of optometrists available in an area will typically depend on the
+            population and the eye care needs of those in the area. At Oscar
+            Wylee Werribee, Victoria, our team is passionate about providing our
+            customers with high-quality, dedicated eye care services. Our
+            optometrists are available to provide bulk billed eye tests with our
+            dedicated optometrists, prescription updates and new frames. If you
+            are looking for an optometrist in Werribee, Victoria, Oscar Wylee is
+            available to provide all your eye care and eyewear needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////// -->
+      <button class="accordion">
+        <h3 class="store-page-accordion-heading">
+          What are the Other Closest Optometrist Locations to Werribee, Victoria
+          in Australia?
+        </h3>
+        <i class="icon fas fa-plus"></i>
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <p>
+            The closest Oscar Wylee Optometrist locations to Werribee, Victoria
+            are <b>Highpoint, Broadmeadows and Moonee Ponds.</b> The closest
+            Oscar Wylee optometrist locations to Werribee, Victoria are listed
+            below.
+          </p>
+
+          <ul class="store-ul">
+            <li>
+              <b>Highpoint: </b>
+              Highpoint is a shopping centre located in the suburb of
+              Maribyrnong, approximately 26 km from Werribee, where you can find
+              an Oscar Wylee optometrist.
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-highpoint.html"
+                >Oscar Wylee Highpoint</a
+              >
+              is located in the Highpoint Shopping Centre where our Oscar Wylee
+              team can provide a range of eye care services such as eye tests,
+              prescription updates and new frames.
+            </li>
+            <li>
+              <b>Broadmeadows: </b>
+              Broadmeadows is a suburb approximately 40 km away from Werribee,
+              where you can find our Oscar Wylee optometrists.
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-broadmeadows.html"
+                >Oscar Wylee Broadmeadows</a
+              >
+              is located in Broadmeadows Central Shopping Centre. Here, our
+              optometrists can provide Medicare bulk billed eye tests.
+            </li>
+            <li>
+              <b>Moonee Ponds: </b>
+              Moonee Ponds is a suburb located approximately 29 km away from
+              Oscar Wylee Werribee.
+              <a
+                href="https://www.oscarwylee.com.au/locations/optometrist-moonee-ponds.html"
+                >Oscar Wylee Moonee Ponds</a
+              >
+              can be found in the Moonee Ponds Central Shopping Centre where our
+              optometrists can provide Medicare bulk billed eye tests and our
+              retail staff can help customers shop our range of stylish frames.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="eye-health">
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_01.png'}}"
+        alt="in store"
+      />
+      <div>
+        <h3>Oscar Wylee Medicare Bulk Billed Eye Tests</h3>
+        <p>
+          Oscar Wylee Werribee offers bulk billed eye health tests with our
+          dedicated trained optometrists at our store in Pacific Werribee. All
+          Medicare eye tests are bulk billed so there is no out of pocket cost
+          to those with a valid Medicare card. Our eye tests include eye care
+          processes such as vision testing and eye examinations to diagnose
+          possible eye diseases and conditions. For some of the best
+          optometrists in Werribee, Australia, come to Oscar Wylee Pacific
+          Werribee.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_02.png'}}"
+        alt="in store"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Health Funds Accepted in Werribee</h3>
+        <p>
+          At our eyeglasses shop in Werribee, we accept leading health funds
+          in-store. Our knowledgeable team is on hand to help process your
+          health fund claims as well as answer any questions you have about
+          eligibility. Oscar Wylee Werribee is dedicated to ensuring that our
+          customers receive the best price for our eye care services.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test" style="padding: 0px">
+      <img
+        src="{{media url='wysiwyg/locations/services/ow_smiley.png'}}"
+        alt="Styling advice"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Expert Frame Advice at Oscar Wylee Werribee</h3>
+        <p>
+          Our team at Oscar Wylee in Pacific Werribee are passionate about
+          making sure our dedicated customers receive the eyewear that meets
+          their needs. Oscar Wylee has a range of eyewear available including
+          prescription glasses, prescription sunglasses and non-prescription
+          glasses. Oscar Wylee also has different lens options available
+          including mulitfocals and lens add-ons such as blue light filters, for
+          an additional cost. Come and see the team at Oscar Wylee Werribee for
+          all your eyewear needs!
+        </p>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="https://www.oscarwylee.com.au/booking/?location=22"
+  phone_number="(03) 8763 0234"
+  direction_map="https://g.page/r/CbtPLJ4OAnK3EBM/review"}}
+</div>
+
+<script>
+  // acordian for store page -----------------------------
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      /* Toggle between adding and removing the "active" class,
+                                  to highlight the button that controls the panel */
+      this.classList.toggle("active");
+
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        this.querySelector(".icon").classList.replace("fa-minus", "fa-plus");
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        this.querySelector(".icon").classList.replace("fa-plus", "fa-minus");
+      }
+    });
+  }
+</script>
