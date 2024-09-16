@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap");
+
+      #maincontent {
+        padding: 0;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        color: #333333;
+      }
+
+      .footer-item h4,
+      .footer-item h3,
+      .help-block h3,
+      .copyright span {
+        color: #fff;
+      }
+
+      body {
+        color: #333333;
+      }
+
+      *,
+      page-main {
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        /* color: #333333; */
+      }
+
+      h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 40px;
+      }
+
+      button:hover {
+        color: white !important;
+      }
+
+      ul,
+      ol {
+        margin-bottom: 0;
+      }
+
+      .mainContainer {
+        max-width: 1236px;
+        margin: 0 auto;
+        padding: 0px 10px;
+      }
+
+      .banner {
+        /* position: relative; */
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .text {
+        max-width: 100%;
+      }
+
+      .bannerMob {
+        display: none;
+      }
+
+      .title h1 {
+        width: calc(100% - 6rem);
+        max-width: 500px;
+        position: absolute;
+        top: 5%;
+        padding: 2.5rem 3rem;
+        text-align: center;
+        font-size: 45px;
+        /* margin: 0 1rem 2rem 1rem; */
+        /* border-bottom: 1px solid silver; */
+      }
+
+      .title h1,
+      .title h2 {
+        font-weight: 700;
+        padding-bottom: 3rem;
+      }
+
+      .title p {
+        width: calc(100% - 2rem);
+        padding: 2rem 1rem;
+        text-align: left;
+        text-align-last: left;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .context {
+        width: calc(100% - 2rem);
+        padding: 0 1rem;
+      }
+
+      .context h2 {
+        padding: 1rem 0 0 0;
+        font-weight: bold;
+        font-size: 26px;
+      }
+
+      .context h3 {
+        padding: 2rem 0 0 0;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .context p {
+        padding: 1.5rem 0.5rem 2rem 0.5rem;
+        font-size: 16px;
+        text-align: justify;
+        text-align-last: left;
+      }
+
+      .version-one h2 {
+        font-weight: bold;
+        margin: 10px;
+        font-size: 2.3rem;
+      }
+
+      .version-one p {
+        margin: 20px 10px;
+        font-size: 1.6rem;
+      }
+
+      .flexCategory {
+        width: 100%;
+        /* margin: 2rem 0; */
+        /* padding: 4rem 0 1rem; */
+        /* border-top: 1px solid silver;
+                 border-bottom: 1px solid silver; */
+      }
+
+      .flexContainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+      }
+
+      .flexCard {
+        display: flex;
+        flex-direction: column;
+        width: 46%;
+        min-width: 300px;
+        margin-bottom: 2rem;
+        background-color: #f7f7f7;
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px silver;
+        text-align: center;
+        align-self: normal;
+      }
+
+      .flexItem {
+        margin-left: auto;
+        padding: 2rem;
+      }
+
+      .flexItem img {
+        width: calc(100% - 2rem);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .flexItem h2 {
+        color: #003cac;
+        text-align: left;
+        padding-top: 2rem;
+        font-weight: bold;
+      }
+
+      .flexItem p {
+        font-weight: 400;
+        text-align: left;
+        padding-top: 1rem;
+        padding-left: 1rem;
+      }
+
+      .flexButton {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: 2rem;
+      }
+
+      .shopBotton {
+        background-color: #003cac;
+        color: #fff;
+        padding: 15px 30px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+        width: 80%;
+        text-align: center;
+        cursor: pointer;
+        margin: 0 auto;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .shopBotton:hover {
+        background-color: #002a7a;
+        color: #ffffff;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      button:not(.primary) {
+        box-shadow: none !important;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 10px;
+      }
+
+      .linkTo {
+        color: #003cac;
+        font-weight: 500;
+        text-decoration: underline;
+      }
+
+      .context ul {
+        width: calc(100% - 4rem);
+        text-align: justify;
+        text-align-last: left;
+        padding: 1.5rem 0 1.5rem 3rem;
+      }
+
+      .border {
+        border-bottom: 1px solid silver;
+        padding: 0rem;
+      }
+
+      .context ul li {
+        padding-bottom: 1rem;
+      }
+
+      .textMain {
+        background-color: #e1f5ed;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        padding: 1rem 2rem 3rem;
+        margin: 1rem 0rem 2rem 0rem;
+        /* box-shadow: 3px 3px 6px silver; */
+        /* border-bottom: 1px solid silver; */
+        text-align: left;
+        text-align-last: left;
+      }
+
+      .textMain h3 {
+        color: #003cac;
+        border-left: 10px solid #d6ece4;
+        padding: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .textMainNobg {
+        /* border-bottom: 1px solid silver; */
+        padding: 2rem;
+        margin: 1rem 0;
+      }
+
+      .textMain h2 {
+        margin-top: 1.5rem;
+        border-left: 10px solid #003cac;
+        padding: 1rem;
+      }
+
+      .textMainNobg h2 {
+        border-left: 10px solid #003cac;
+        padding: 1rem;
+      }
+
+      .textMain h3,
+      .textMainNobg h3 {
+        border-left: 10px solid #a0b3ac;
+        padding: 0.8rem;
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+      }
+
+      .textMain h4,
+      .textMainNobg h4 {
+        /* border-left: 10px solid #ffffff; */
+        padding: 0rem;
+        margin-top: 0rem;
+        margin-left: 1rem;
+      }
+
+      .textMain strong,
+      .textMainNobg strong {
+        color: #003cac;
+        padding-bottom: 10px;
+      }
+
+      .textMainNobg p,
+      .textMain p {
+        padding-top: 1rem;
+        margin-left: 1rem;
+      }
+
+      .textMainNobg ul,
+      .textMain ul {
+        margin-left: 3rem;
+      }
+
+      .flexContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        /* margin-bottom: 2rem; */
+      }
+
+      .insuranceTable {
+        display: grid;
+      }
+
+      table th {
+        padding: 1rem;
+        height: 50px;
+      }
+
+      table tr td {
+        /* border-bottom: 7px solid #fff; */
+        padding: 1rem;
+        text-align: center;
+        margin: 4rem;
+        /* background-color: #f7f7f7; */
+        overflow: auto;
+        height: 50px;
+        width: 300px;
+        vertical-align: middle !important;
+      }
+
+      table {
+        overflow-x: auto;
+      }
+
+      .tableFirstRow th {
+        /* background-color: #dcf5ec;
+               border-top-left-radius: 30px;
+               border-bottom-left-radius: 30px;
+               border-top-right-radius: 0px;
+               color: #00a1a5;
+               border-bottom: 10px solid #fff; */
+        font-style: italic;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 16px;
+        min-width: 150px;
+      }
+
+      .tableTitles th {
+        /* color: #003cac;
+               background-color: #e1f5ff; */
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      table tr th {
+        /* border-top-left-radius: 40px;
+               border-top-right-radius: 40px;
+               border-top: 7px solid white;
+               border-right: 5px solid white;
+               border-left: 5px solid white; */
+        font-weight: 700;
+      }
+
+      table {
+        margin: 2rem 1rem;
+        width: calc(100% - 2rem);
+        border-collapse: collapse;
+      }
+
+      /* 
+             table tr {
+                 background-color: #f7f7f7;
+                 border-radius:60px;
+             } */
+
+      table tr img {
+        width: 30px;
+      }
+
+      .flexImage {
+        width: 44%;
+        min-width: 350px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin: 0 auto;
+        max-width: 410px;
+        max-height: 450px;
+        /* filter: drop-shadow(5px 5px 10px Silver);
+               -webkit-filter: drop-shadow(5px 5px 10px Silver); */
+      }
+
+      .flexText {
+        width: 44%;
+        min-width: 350px;
+        /* background-color: #fff; */
+        /* border-radius: 10px; */
+        /* -webkit-border-radius: 10px;
+               -moz-border-radius: 10px;
+               -ms-border-radius: 10px;
+               -o-border-radius: 10px; */
+        padding: 1rem 0.5rem;
+        /* border: 2px dashed #cbc5a3; */
+        margin: 0 1rem;
+        align-self: stretch;
+      }
+
+      .flexText ul {
+        padding-top: 1rem;
+        text-align: left;
+        margin-left: 1rem;
+      }
+
+      .flexText p {
+        text-align: left;
+      }
+
+      .flexText img {
+        width: 85%;
+        /* margin-top: 10%; */
+        border-radius: 10px;
+        padding-left: 8%;
+        margin-top: 2rem;
+      }
+
+      .imageTwo {
+        width: 30%;
+        padding-top: 1rem;
+      }
+
+      .flexImageRound {
+        border-radius: 15px;
+        width: 40%;
+      }
+
+      .information {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+      }
+
+      .flexRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f7f7f7;
+        margin: 0.5rem 0;
+        border-radius: 15px;
+        box-shadow: 3px 3px 5px silver;
+      }
+
+      .flexRow h4 {
+        padding-left: 4rem;
+        color: #003cac;
+      }
+
+      .flexRow p {
+        padding-right: 4rem;
+        font-weight: 700;
+        max-width: 600px;
+      }
+
+      .smallText {
+        font-size: 13px !important;
+        padding-bottom: 2rem !important;
+      }
+
+      .location {
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: max-content;
+        column-gap: 50px;
+        row-gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0rem;
+        border-top: 1px solid silver;
+      }
+
+      .locationText h2 {
+        font-weight: 700;
+      }
+
+      .textBorder {
+        border-top: 1px solid silver;
+        margin-top: 5.5rem;
+        padding: 2rem;
+      }
+
+      .locationText {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .locationText p {
+        font-size: 16px;
+      }
+
+      .locationImage {
+        width: 100%;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      }
+
+      .allButton {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .allButton a {
+        text-decoration: none;
+      }
+
+      .btnOw {
+        background-color: #003cac;
+        color: #ffffff;
+        width: 80%;
+        padding: 15px;
+        border: 1px solid #003cac;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 30px;
+        text-align: center;
+        cursor: pointer;
+        margin: 0 auto;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .btnOw:hover {
+        background-color: #002a7a;
+        color: #ffffff;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 992px) {
+        .title {
+          width: calc(100% - 2rem);
+          padding: 1.5rem 1rem;
+          margin: 0 0 2rem 0;
+        }
+
+        .context {
+          width: calc(100% - 3rem);
+          padding: 0 1.5rem;
+        }
+
+        .title h1 {
+          width: calc(45% - 4rem);
+          padding: 1rem 0rem;
+          top: 4.5%;
+        }
+
+        .title p {
+          text-align: left;
+          text-align-last: left;
+          padding: 0;
+          margin: 1rem 0.5rem;
+          width: calc(100% - 1rem);
+        }
+
+        .flexContainer {
+          margin-top: 3rem;
+          margin-bottom: 1rem;
+        }
+
+        .flexImage {
+          min-width: 280px;
+          margin: 2rem auto;
+          max-width: 410px;
+          max-height: 450px;
+        }
+
+        .flexText {
+          min-width: 300px;
+          margin: 0.5rem auto;
+        }
+      }
+
+      @media only screen and (max-width: 800px) and (min-width: 771px) {
+        .title h1 {
+          top: 2.5%;
+        }
+      }
+
+      @media (max-width: 770px) {
+        .minusMargin {
+          margin-top: -3rem !important;
+        }
+
+        .flexCategory {
+          margin: 4rem 0;
+        }
+
+        .title h1 {
+          width: calc(50% - 4rem);
+          padding: 1rem 0rem;
+          top: 2%;
+        }
+
+        .minusMarginImage {
+          margin-top: -2rem;
+          margin-bottom: -2rem;
+        }
+
+        .extraPadding {
+          padding-bottom: 2rem;
+        }
+
+        .flexText h4 {
+          padding-top: 0 !important;
+        }
+
+        .flexImageRound,
+        .flexImage,
+        .flexText {
+          width: 100%;
+        }
+
+        .imageTwo {
+          width: 60%;
+          padding-top: 0;
+        }
+
+        .imageTwo,
+        .locationImage {
+          order: 1;
+        }
+
+        .flexImage {
+          margin: 1.5rem auto 0 auto;
+        }
+
+        .allButton {
+          margin-bottom: 5px;
+        }
+
+        .btnOw {
+          width: 100%;
+        }
+
+        .context ul,
+        .context ol {
+          width: calc(100% - 6rem);
+          padding-left: 3rem;
+        }
+
+        .context {
+          width: calc(100% - 2rem);
+          padding: 0 1rem;
+        }
+      }
+
+      @media only screen and (max-width: 646px) and (min-width: 481px) {
+        .title h1 {
+          top: 0.9%;
+          font-size: 34px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        table {
+          display: table-caption;
+        }
+
+        .tableFirstRow th {
+          font-size: 14px;
+          min-width: 120px;
+        }
+
+        .faqSubtitles h3 {
+          margin-top: 3rem;
+        }
+
+        .minusMargin {
+          margin-top: -1rem !important;
+          margin-bottom: -2rem;
+        }
+
+        .flexText .flexTwo {
+          margin-top: 0 !important;
+        }
+
+        .flexText h2 {
+          margin-bottom: 0 !important;
+          margin-top: 0 !important;
+        }
+
+        .flexText ul {
+          padding-top: 1rem;
+          margin-left: 0.5rem;
+        }
+
+        .flexMargin {
+          margin-top: -0.5rem !important;
+        }
+
+        .flexCard {
+          width: 100%;
+        }
+
+        .flexRow h4 {
+          padding-left: 1.5rem;
+          width: 90%;
+        }
+
+        .flexRow p {
+          width: 30%;
+          padding-right: 1rem !important;
+        }
+
+        .faqSubtitles ul,
+        .faqSubtitles span {
+          margin-left: 10px;
+        }
+
+        .faqSubtitles p {
+          margin-left: 0;
+        }
+
+        .textMain {
+          margin: 1rem;
+          padding: 1rem;
+        }
+
+        .textMainNobg {
+          padding: 1rem 0.5rem;
+        }
+
+        .textMain h2 {
+          color: #003cac;
+          padding: 1rem;
+          margin-bottom: 0rem;
+          margin-top: 1rem !important;
+        }
+
+        .textMainNobg h2 {
+          margin-bottom: 1rem !important;
+          margin-left: 0.5rem;
+        }
+
+        .textMain p,
+        .textMainNobg p {
+          text-align: left !important;
+          padding: 0.5rem 1rem 2rem;
+        }
+
+        .textMain ul {
+          text-align: left !important;
+          padding: 1.5rem;
+        }
+
+        .textMain h3,
+        .textMainNobg h3 {
+          margin-top: 0;
+        }
+
+        .flexContainer {
+          margin: 1rem 0rem;
+        }
+
+        .title h1 {
+          width: calc(100% - 2rem);
+          padding: 1rem 0rem;
+        }
+
+        .title p {
+          text-align: left;
+          text-align-last: left;
+          padding: 0;
+          /* margin: 1rem; */
+          /* width: 100% ; */
+        }
+
+        .mainContainer {
+          padding: 0;
+        }
+
+        .textBorder {
+          padding: 1rem;
+          margin-top: 3rem;
+        }
+
+        h1 {
+          font-size: 38px;
+        }
+
+        .flexImage {
+          min-width: 280px;
+          margin: 1rem auto;
+          max-width: 410px;
+          max-height: 450px;
+        }
+
+        .flexText {
+          min-width: 210px;
+          margin: 0.5rem auto;
+        }
+
+        .banner {
+          display: none;
+        }
+
+        .bannerMob {
+          display: flex;
+          width: 100%;
+        }
+
+        .border {
+          padding: 1rem 0rem 1rem 0rem;
+          margin-top: 0;
+          margin-bottom: 2rem;
+        }
+
+        .context p {
+          width: calc(100% - 2rem);
+          padding: 1rem;
+          text-align: left !important;
+        }
+
+        .context ul {
+          width: calc(100% - 3rem);
+          padding-left: 1.5rem;
+          text-align: left !important;
+        }
+
+        .context ul,
+        .context p {
+          text-align: left;
+        }
+      }
+
+      @media (max-width: 375px) {
+        .flexText {
+          min-width: 200px;
+          margin: 0.5rem auto;
+        }
+
+        .flexImage {
+          min-width: 220px;
+          margin: 0.5rem auto;
+        }
+
+        .location {
+          width: 100%;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          padding: 1rem 0.5rem;
+        }
+
+        .context ul {
+          width: calc(100% - 3rem);
+          padding-left: 1.5rem;
+        }
+
+        .locationText > * {
+          margin-bottom: 20px;
+        }
+
+        .btnOw {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 281px) {
+        .flexText {
+          min-width: 200px;
+          margin: 0.5rem auto;
+        }
+
+        .flexImage {
+          min-width: 220px;
+          margin: 0.5rem auto;
+        }
+      }
+
+      /* New CTA button style.*/
+
+      .ctaContainer {
+        max-width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: max-content;
+        column-gap: 50px;
+        row-gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid silver;
+      }
+
+      .ctaText h2 {
+        font-weight: 700;
+        padding-left: 0.5rem;
+      }
+
+      .ctaText {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .ctaText p {
+        font-size: 16px;
+      }
+
+      @media (max-width: 1024px) {
+        .ctaContainer {
+          max-width: 94%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .ctaContainer {
+          max-width: 92%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .ctaContainer {
+          padding-bottom: 2rem;
+        }
+      }
+
+      @media (max-width: 375px) {
+        .ctaContainer {
+          width: 100%;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          padding: 1rem 0.5rem;
+        }
+
+        .ctaText > * {
+          margin-bottom: 20px;
+        }
+      }
+
+      .adjustMargin {
+        text-align: center;
+      }
+
+      .second-heading {
+        font-weight: bold;
+      }
+
+      .bottom-caption {
+        color: #acacac;
+        padding: 0 0 2rem 1rem !important;
+        font-style: italic;
+        font-size: 14px !important;
+        position: relative;
+      }
+
+      .bottom-caption:first-of-type::after {
+        content: "";
+        display: block;
+        width: 95%;
+        height: 1px;
+        background-color: #acacac;
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+      }
+
+      .mobile-view {
+        display: none;
+      }
+
+      @media (max-width: 480px) {
+        .bottom-caption::after {
+          width: 35%;
+          left: 15px;
+        }
+
+        .mobile-view {
+          display: block;
+        }
+      }
+
+      .center-border {
+        position: relative;
+      }
+
+      .center-border::after {
+        content: "";
+        display: block;
+        width: 97%;
+        height: 1px;
+        background-color: #ebebeb;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .reduce-th-bold > th:not(:first-child) {
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="textOverImage">
+        <img
+          class="banner"
+          src="https://oscarwylee.com.au/media/wysiwyg/healthfund/Frank_AU_health_insurace_1920x605.jpg"
+          alt="health insurance"
+          title="health insurance"
+        />
+        <img
+          class="bannerMob"
+          src="https://oscarwylee.com.au/media/wysiwyg/healthfund/Frank_AU_health_insurance_Mob_770x900.jpg"
+          alt="health insurance"
+          title="health insurance"
+        />
+        <div class="title">
+          <h1 style="color: #000000">Frank at Oscar Wylee</h1>
+          <!--<img style="max-width: 150px; margin-top: 1rem;" src="{{media url="wysiwyg/healthfund/frank.png"}}" alt="frank logo at oscar wylee"> -->
+          <p>
+            As a member of Frank, you can claim on optical extras: Your health
+            fund’s coverage for optical services such as prescription frames,
+            lenses or glasses. Frank benefits reset every calendar year,
+            <b
+              >claim your glasses before time runs out! At the end of the year,
+              any extras you don’t use will be lost.
+            </b>
+            <br /><br />With Oscar Wylee, you can have up to 100% coverage on
+            select optical purchases when you shop with us. Look at the table
+            below to see your Frank policies name and the amount of coverage
+            that policy gives when you shop at Oscar Wylee. <br /><br />Your
+            coverage might change or not apply to extras such as add-ons,
+            coatings or tinting.
+          </p>
+        </div>
+      </div>
+      <div class="context">
+        <hr />
+        <div class="ctaContainer topbtmPadding" style="border-top: none">
+          <div class="ctaText">
+            <h2><b>Book your appointment</b></h2>
+            <p>
+              <span style="font-weight: 400"
+                >Oscar Wylle offers bulk billed eye tests to all valid medicare
+                cardholders for no gap payments. Book one today.</span
+              >
+            </p>
+          </div>
+          <div class="ctaText">
+            <a href="/booking" class="adjustMargin">
+              <button class="btnOw">Eye tests here</button></a
+            >
+          </div>
+        </div>
+        <hr />
+        <div class="information">
+          <div class="flexRow">
+            <h4>Waiting Period</h4>
+            <p>6 months</p>
+          </div>
+          <div class="flexRow">
+            <h4>Benefit Limits Reset</h4>
+            <p>1st of January</p>
+          </div>
+          <div class="flexRow">
+            <h4>Claimable Optical Extras %</h4>
+            <p>100%</p>
+          </div>
+        </div>
+        <p>
+          To learn whether your plan includes single vision lenses, bifocal
+          lenses and/or multifocal lenses, talk to your health insurance
+          provider.
+        </p>
+        <hr />
+        <div class="insuranceTable" style="margin-bottom: 1rem">
+          <table>
+            <tbody>
+              <tr class="tableTitles reduce-th-bold">
+                <th style="text-align: left; padding: 0; color: #565656">
+                  Your Extras Package Annual Limit:*
+                </th>
+                <th>Easy Extras</th>
+                <th>Simple Extras</th>
+                <th>Some Extras</th>
+                <th>Everyday Extras</th>
+                <th>More Extras</th>
+                <th>Lot’s Extras</th>
+              </tr>
+              <tr class="tableFirstRow" style="background-color: #f2f2f2">
+                <th style="font-weight: bold; margin-top: 1rem">
+                  SINGLES COVER
+                </th>
+                <td class="second-heading">$100 per person</td>
+                <td class="second-heading">$150 per person</td>
+                <td class="second-heading">$120 per person</td>
+                <td class="second-heading">$200 per person</td>
+                <td class="second-heading">$250 per person</td>
+                <td class="second-heading">$250 per person</td>
+              </tr>
+              <tr
+                class="tableFirstRow center-border"
+                style="background-color: #fafafa"
+              >
+                <th style="font-weight: bold">
+                  1 Standard OW Pair
+                  <span style="font-weight: normal">from</span> $169<span
+                    >^</span
+                  >
+                </th>
+                <td>Partial Cover</td>
+                <td>Partial Cover</td>
+                <td>Partial Cover</td>
+                <td>Covered</td>
+                <td>Covered</td>
+                <td>Covered</td>
+              </tr>
+              <tr
+                class="tableFirstRow center-border"
+                style="background-color: #fafafa"
+              >
+                <th style="font-weight: bold">
+                  2 Standard OW Pairs
+                  <span style="font-weight: normal">from</span> $199<span
+                    >^</span
+                  >
+                </th>
+                <td>Partial Cover</td>
+                <td>Partial Cover</td>
+                <td>Partial Cover</td>
+                <td>Covered</td>
+                <td>Covered</td>
+                <td>Covered</td>
+              </tr>
+              <tr class="tableFirstRow" style="background-color: #fafafa">
+                <th style="font-weight: bold">
+                  3 Standard OW Pairs
+                  <span style="font-weight: normal">from</span> $249<span
+                    >^</span
+                  >
+                </th>
+                <td>Partial Cover</td>
+                <td>Partial Cover</td>
+                <td>Partial Cover</td>
+                <td>Partial Cover</td>
+                <td>Covered</td>
+                <td>Covered</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="bottom-caption mobile-view">
+            ^Excludes add-ons. Standard frames and lenses only. Oscar Wylee's
+            standard product inclusions are calculated based on the optical
+            allowances under each health fund package and may vary. If unsure,
+            please confirm with your provider. Our two pair and three pair deals
+            are only available per person and cannot be split between two
+            people. Only one prescription can be used per offer. If you have a
+            distance and a reading prescription, this is included in the offer
+            as this is considered to be one prescription. Any prescriptions must
+            have the full name of the person claiming and a valid expiry date to
+            be able to order. If you have two different prescribed
+            prescriptions, you will need to visit a store to be eligible for our
+            two pair and three pair deals.
+          </p>
+          <table>
+            <tbody>
+              <tr class="tableFirstRow" style="background-color: #f2f2f2">
+                <th style="font-weight: bold; margin-top: 1rem">
+                  FAMILY COVER
+                </th>
+                <td class="second-heading">$100 per person</td>
+                <td class="second-heading">
+                  $300 per couple/ family<sup>1</sup>
+                </td>
+                <td class="second-heading">
+                  $240 per couple/ family<sup>1</sup>
+                </td>
+                <td class="second-heading">
+                  $400 per couple/ family<sup>1</sup>
+                </td>
+                <td class="second-heading">
+                  $500 per couple/ family<sup>1</sup>
+                </td>
+                <td class="second-heading">
+                  $500 per couple/ family<sup>1</sup>
+                </td>
+              </tr>
+              <tr
+                class="tableFirstRow center-border"
+                style="background-color: #fafafa"
+              >
+                <th style="font-weight: bold">
+                  1 Standard OW Pair
+                  <span style="font-weight: normal">from</span> $169<span
+                    >^</span
+                  >
+                </th>
+                <td>Partial Cover</td>
+                <td>Covered</td>
+                <td>Covered</td>
+                <td>Covered</td>
+                <td>Covered</td>
+                <td>Covered</td>
+              </tr>
+              <tr
+                class="tableFirstRow center-border"
+                style="background-color: #fafafa"
+              >
+                <th style="font-weight: bold">
+                  2 Standard OW Pairs
+                  <span style="font-weight: normal">from</span> $199<span
+                    >^</span
+                  >
+                </th>
+                <td>Partial Cover</td>
+                <td>Covered</td>
+                <td>Covered</td>
+                <td>Covered</td>
+                <td>Covered</td>
+                <td>Covered</td>
+              </tr>
+              <tr class="tableFirstRow" style="background-color: #fafafa">
+                <th style="font-weight: bold">
+                  3 Standard OW Pairs
+                  <span style="font-weight: normal">from</span> $249<span
+                    >^</span
+                  >
+                </th>
+                <td>Partial Cover</td>
+                <td>Covered</td>
+                <td>Partial Cover</td>
+                <td>Covered</td>
+                <td>Covered</td>
+                <td>Covered</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="bottom-caption">
+            ^Excludes add-ons. Standard frames and lenses only. Oscar Wylee’s
+            standard product inclusions are calculated based on the optical
+            allowances under each health fund package and may vary. If unsure,
+            please confirm with your provider. Our two pair and three pair deals
+            are only available per person and cannot be split between two
+            people. Only one prescription can be used per offer. If you have a
+            distance and a reading prescription, this is included in the offer
+            as this is considered to be one prescription. Any prescriptions must
+            have the full name of the person claiming and a valid expiry date to
+            be able to order. If you have two different prescribed
+            prescriptions, you will need to visit a store to be eligible for our
+            two pair and three pair deals.
+          </p>
+        </div>
+        <hr />
+        <div class="ctaContainer topbtmPadding" style="border-top: none">
+          <div class="ctaText">
+            <h2><b>Get your eyes tested</b></h2>
+            <p>
+              <span style="font-weight: 400"
+                >Test your eyes with no-gap payments! Oscar Wylee’s registered
+                optometrists offer comprehensive eye exams that are bulk billed
+                for all eligible medicare cardholders.</span
+              >
+            </p>
+          </div>
+          <div class="ctaText">
+            <a href="/booking" class="adjustMargin"
+              ><button class="btnOw">Book an eye test</button></a
+            >
+          </div>
+        </div>
+        <hr />
+        <div>
+          <p>
+            *Based on Frank Health Insurance’s
+            <a
+              class="linkTo"
+              href="https://www.frankhealthinsurance.com.au/products/extras"
+              >Cover Guide</a
+            >
+            and product factsheet as presented to the Commonwealth Ombudsman:
+            <a
+              class="linkTo"
+              href="https://www.frankhealthinsurance.com.au/products/extras/easy"
+              >1</a
+            >
+            <a
+              class="linkTo"
+              href="https://www.frankhealthinsurance.com.au/products/extras/simple"
+              >2</a
+            >
+            <a
+              class="linkTo"
+              href="https://www.frankhealthinsurance.com.au/products/extras/some"
+              >3</a
+            >
+            <a
+              class="linkTo"
+              href="https://www.frankhealthinsurance.com.au/products/extras/everyday"
+              >4</a
+            >
+            <a
+              class="linkTo"
+              href="https://www.frankhealthinsurance.com.au/products/extras/more"
+              >5</a
+            >.<br /><br />
+            <sup>1</sup> For family cover, per family/couple means the shared
+            maximum limit between family members or a couple that can be claimed
+            within a financial year. Coverage or partial coverage for our 1,2,3
+            pair deals is dependent on the annual limit under each extras plan.
+            If you or your partner, or a family member claims the majority of
+            the family/couple limit, other members may only be partially covered
+            for our 1,2,3 pair deals. <br /><br /><i
+              style="font-size: 14px; color: grey"
+              >Information correct as of September 2024.</i
+            >
+          </p>
+        </div>
+        <hr />
+        <div class="flexCategory" style="border-bottom: none">
+          <div class="flexContainer">
+            <div class="flexCard">
+              <div class="flexItem">
+                <img
+                  src="https://oscarwylee.com.au/media/wysiwyg/healthfund/optometrist-checking.png"
+                  alt="optometrist session"
+                  title="eye test consultation"
+                />
+                <h2>Your eye test explained</h2>
+                <p>
+                  Routine eye test appointments are quick and painless. Find out
+                  what to expect during an eye exam and how to understand your
+                  eye test results.
+                </p>
+              </div>
+              <div class="version-one flexButton">
+                <a href="/eye-health/your-eye-test-explained.html">
+                  <button
+                    class="shopBotton"
+                    style="margin-bottom: 20px; width: 100%"
+                  >
+                    Find out more
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="flexCard">
+              <div class="flexItem">
+                <img
+                  src="https://oscarwylee.com.au/media/wysiwyg/healthfund/bulk-bill.png"
+                  alt="bulk billing"
+                  title="bulk billing"
+                />
+                <h2>Bulk Billing</h2>
+                <p>
+                  Find out what bulk billing is and whether you're eligible to
+                  receive an eye test free of charge.
+                </p>
+              </div>
+              <div class="version-one flexButton">
+                <a href="/eye-health/eye-test-info/bulk-billing.html">
+                  <button
+                    class="shopBotton"
+                    style="margin-bottom: 20px; width: 100%"
+                  >
+                    Find out more
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flexCategory minusMargin">
+            <div class="flexContainer">
+              <div class="flexCard">
+                <div class="flexItem">
+                  <img
+                    src="https://oscarwylee.com.au/media/wysiwyg/healthfund/PD_2.png"
+                    alt="pupillary distance"
+                    title="pupillary distance"
+                  />
+                  <h2>What is Pupillary Distance? (PD)</h2>
+                  <p>
+                    Do you know your PD? It's something you'll need to know when
+                    ordering glasses online. Find out what Pupillary Distance is
+                    and how you can measure your own.
+                  </p>
+                </div>
+                <div class="version-one flexButton">
+                  <a href="/eye-care/eye-test/what-is-pupillary-distance.html">
+                    <button
+                      class="shopBotton"
+                      style="margin-bottom: 20px; width: 100%"
+                    >
+                      Read more
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="flexCard">
+                <div class="flexItem">
+                  <img
+                    src="https://oscarwylee.com.au/media/wysiwyg/healthfund/CA_eyetest_ILLO.png"
+                    alt="eye test"
+                  />
+                  <h2>Book an eye test</h2>
+                  <p>
+                    Oscar Wylee eye tests are bulk billed through Medicare. This
+                    means there will be no out-of-pocket expense for eligible
+                    Medicare cardholders.
+                  </p>
+                </div>
+                <div class="version-one flexButton">
+                  <a href="/booking/">
+                    <button
+                      class="shopBotton"
+                      style="margin-bottom: 20px; width: 100%"
+                    >
+                      Book online
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="context">
+        <!-- Location and booking  -->
+        <div class="location">
+          <div class="locationText">
+            <h2>Find a store near you</h2>
+            <p>Contact or visit your nearest store for a full quote.</p>
+            <div class="allButton">
+              <a href="/locations/full-store-list.html">
+                <button class="btnOw">Find a store</button>
+              </a>
+            </div>
+          </div>
+          <img
+            class="locationImage"
+            src="https://oscarwylee.com.au/media/wysiwyg/healthfund/find-a-store.jpg"
+            alt="oscar wylee locations"
+            title="oscar wylee locations"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
