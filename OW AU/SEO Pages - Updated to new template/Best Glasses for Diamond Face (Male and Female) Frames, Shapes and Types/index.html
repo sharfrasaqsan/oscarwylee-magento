@@ -1,0 +1,3377 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+
+  * {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #333333; */
+    line-height: 1.3em;
+    scroll-behavior: smooth;
+  }
+
+  #maincontent {
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  }
+
+  .article-banner {
+    height: 450px;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  .banner {
+    width: auto;
+    max-height: 450px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+  }
+
+  .mobile-banner {
+    display: none;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 28px;
+    }
+  }
+
+  h2 {
+    font-size: 2.6rem;
+    line-height: 1.1;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    width: 100%;
+  }
+
+  h4 {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  h5 {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .title {
+    /* border-bottom: 1px solid silver; */
+    /* padding: 2.5rem 3rem; */
+    padding: 11px 3rem;
+    /* margin: 2.5rem 3rem; */
+    margin: 0px;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 10px solid #003cac;
+    padding: 1rem;
+    font-weight: 700;
+  }
+
+  .linkTo {
+    color: #003cac;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .intro-section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .main-section section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .section-border-bottom {
+    border-bottom: 1px solid silver;
+    margin: 3rem;
+  }
+
+  .book-section {
+    display: flex;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0em;
+  }
+
+  .book-section p {
+    margin-bottom: 1.5em;
+  }
+
+  .book-section-left {
+    width: 50%;
+    margin-left: 0;
+    padding-left: 1.5em;
+  }
+
+  .book-section-left .heading {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+    padding-bottom: 1em;
+  }
+
+  .book-section-right {
+    display: flex;
+    margin: auto auto;
+    width: 30%;
+  }
+
+  .book-section-right a {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+  }
+
+  .btnOw:hover {
+    background-color: black;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    border: none !important;
+  }
+
+  .btnOw {
+    background-color: #003cac;
+    width: 100%;
+    /* padding: 0px 50%; */
+    border: none;
+    color: #fff;
+    height: 2em;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .para-content {
+    /* margin-top: 1em; */
+    margin-bottom: 2em;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .list-title {
+    font-weight: 700;
+  }
+
+  .ordered-list,
+  .unordered-list {
+    padding-left: 4rem;
+    margin-top: 2em;
+  }
+
+  .unordered-list {
+    margin-bottom: 2em;
+  }
+
+  .ordered-list li,
+  .unordered-list li {
+    margin-bottom: 0.8em;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .pro-con {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .pro-con li {
+    margin-bottom: 1em;
+  }
+
+  .pro-title,
+  .con-title,
+  .sub-list-title,
+  .sub-div-title,
+  .sub-div-h4 {
+    border-left: 10px solid #b1b4b2;
+    padding: 0rem 1rem;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  .sub-list-title {
+    font-size: medium;
+    margin-left: 3em;
+  }
+
+  .pro-list,
+  .con-list {
+    margin-left: 2em;
+  }
+
+  .pro-section,
+  .con-section {
+    flex: 1 1 0;
+  }
+
+  .sub-div {
+    margin-left: 2em;
+  }
+
+  .sub-div .para-content {
+    margin-left: 0;
+  }
+
+  .grid-image {
+    width: 100%;
+    margin-bottom: 0.3em;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    column-gap: 3em;
+    width: 70%;
+    margin: 2em auto;
+  }
+
+  .grid-item {
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  .grid-item span {
+    font-style: italic;
+    font-weight: 700;
+    font-size: x-small;
+  }
+
+  .grid-text {
+    text-align: center;
+    font-size: x-small;
+    margin-bottom: 2em;
+  }
+
+  .grid-title {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    margin-bottom: 2em;
+  }
+
+  .flex-image {
+    width: 80%;
+    display: flex;
+    margin: 2em auto;
+    margin-top: -0.5em;
+    min-width: 300px;
+    margin-left: 2em;
+  }
+
+  .hightlight-list {
+    font-weight: 600;
+  }
+
+  .example-images {
+    row-gap: 2em;
+  }
+
+  .product-image {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .products-section {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 1em;
+  }
+
+  .one-product {
+    grid-template-columns: 1fr;
+  }
+
+  .center-one-product {
+    justify-content: center;
+  }
+
+  .two-products {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .individual-product {
+    border-right: 1px solid silver;
+    margin-bottom: 2em;
+    display: flex;
+    /* margin-left: 1em; */
+  }
+
+  .product-des {
+    background-color: #ece5f2;
+    border-radius: 25px;
+    padding: 1em;
+    text-align: center;
+    font-weight: 500;
+    width: 92%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+
+  .individual-product:last-child {
+    border: none;
+  }
+
+  .product-name,
+  .product-price {
+    text-align: center;
+  }
+
+  .product-button {
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin-top: 1em;
+  }
+
+  .two-pairs-price,
+  .three-pairs-price {
+    text-align: center;
+    /* margin-top: 2em; */
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 1em;
+  }
+
+  .two-pairs-price {
+    margin-bottom: 1em;
+  }
+
+  .two-pairs-price span,
+  .three-pairs-price span {
+    display: block;
+  }
+
+  .two-pairs-price {
+    background-color: #003cac;
+  }
+
+  .three-pairs-price {
+    background-color: black;
+  }
+
+  .from {
+    font-weight: 300;
+    color: white;
+    line-height: 10px;
+  }
+
+  .context {
+    padding: 0 3rem;
+  }
+
+  .location {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: max-content;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+    padding-top: 0;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid silver;
+  }
+
+  .location .heading {
+    font-weight: 700;
+    font-size: 1.8em;
+  }
+
+  .item1 {
+    border: none;
+  }
+
+  .locationText .heading {
+    font-weight: 500;
+    font-size: 1.25em;
+  }
+
+  .locationText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.5em;
+  }
+
+  .locationText p {
+    font-size: 16px;
+    margin-top: 2em;
+  }
+
+  .locationImage {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  .allButton {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .allButton a {
+    text-decoration: none;
+  }
+
+  .allButton .btnOw {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .item1 {
+    padding-top: 2em;
+  }
+
+  .products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .nine-products-section img {
+    width: 30%;
+    border-right: 1px solid silver;
+  }
+
+  .nine-products-section img:last-child {
+    border: none;
+  }
+
+  .nine-products-section-gender {
+    margin-left: 0;
+  }
+
+  .grid-container-mobile {
+    display: none;
+  }
+
+  .contents {
+    margin-bottom: 2em;
+  }
+
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+    padding: 0;
+  }
+
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  .nxt-btn {
+    right: 0;
+  }
+
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+    width: 1em;
+  }
+
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+
+  .pre-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nxt-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nine-products-section {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .product-container {
+    /* padding: 0 10vw; */
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .product-container a {
+    display: contents;
+  }
+
+  @media screen and (max-width: 440px) {
+    * {
+      line-height: 1.5em;
+    }
+
+    .start-with-para {
+      margin-top: 2em !important;
+    }
+
+    .title {
+      margin: 1em 0.5em;
+      padding: 0em;
+      /* padding-bottom: 0.5em; */
+      white-space: normal;
+      border: none;
+    }
+
+    .contents {
+      margin-bottom: 2em;
+    }
+
+    .intro-section,
+    .main-section section {
+      margin: 0 1em;
+    }
+
+    .ordered-list,
+    .unordered-list {
+      padding-left: 1.2em;
+    }
+
+    .pro-con {
+      flex-direction: column;
+    }
+
+    .flex-wrapper {
+      flex-direction: column;
+    }
+
+    .example-images {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 2em;
+    }
+
+    .grid-item {
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .product-image {
+      width: 100%;
+    }
+
+    .sub-div {
+      margin-left: 0em;
+    }
+
+    .book-section {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .book-section-left {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .book-section-left p {
+      margin-right: 1em;
+      text-align: justify;
+      margin-left: 1em;
+    }
+
+    .book-section-left .heading {
+      text-align: center;
+      margin-top: 1.6em;
+      font-size: 1.25em;
+      margin-left: auto;
+      margin-right: auto;
+      width: 278px;
+    }
+
+    .book-section-right {
+      width: 90%;
+      margin-bottom: 1em;
+    }
+
+    .desktop-banner {
+      display: none;
+    }
+
+    .mobile-banner {
+      display: block;
+      max-width: 100%;
+      padding: 0;
+    }
+
+    .products-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .individual-product {
+      border-right: none;
+      border-bottom: 1px solid silver;
+      padding-bottom: 0.5em;
+      margin-bottom: 0;
+      width: 90%;
+      flex-direction: column;
+    }
+
+    .individual-product:last-child {
+      border-bottom: none;
+    }
+
+    .grid-image {
+      width: 90%;
+      display: flex;
+      margin: 0px auto;
+    }
+
+    .location {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5em;
+    }
+
+    .locationText .heading {
+      /* text-size: 1.25em; */
+      margin-top: 1.9em;
+      margin-bottom: -0.5em;
+    }
+
+    .allButton .btnOw {
+      width: 100%;
+    }
+
+    .item1 {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+      border: none;
+      padding-bottom: 0;
+      padding-top: 3.5em;
+    }
+
+    .locationText .heading {
+      text-align: center;
+    }
+
+    .item1 .locationImage,
+    .item1 .locationText {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+    }
+
+    .products-section {
+      display: none;
+    }
+
+    .nine-products-section {
+      display: none;
+    }
+
+    .individual-product {
+      display: flex;
+      margin: auto auto;
+    }
+
+    .products-section-mobile {
+      display: block;
+    }
+
+    .nine-products-section-mobile {
+      display: flex;
+      overflow-x: scroll;
+    }
+
+    .nine-products-section-mobile::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nine-products-section-mobile img {
+      width: 80%;
+    }
+
+    .grid-container-mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid-item span {
+      display: flex;
+      margin: 0 2em;
+    }
+
+    .grid-container-desktop {
+      display: none;
+    }
+
+    .product-container-mobile {
+      display: flex;
+      overflow-x: auto;
+    }
+
+    .nine-products-section-mobile {
+      position: relative;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+      width: 3vw;
+      height: 0;
+      top: 50%;
+    }
+
+    /* #main-cont-wrapper {
+    margin: 0em 1em;
+  } */
+
+    .para-content {
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      word-spacing: -0.05em;
+    }
+
+    .mobile-word-space {
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      word-spacing: -0.1em !important;
+      text-align: justify;
+      font-size: 16px;
+    }
+
+    h5 {
+      font-size: 15px;
+    }
+
+    .btn-helth-funds {
+      height: 60px;
+      line-height: 20px;
+    }
+  }
+
+  /* big image */
+  .big_img_wapper {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .big_img {
+    border-radius: 8px;
+    width: 80%;
+  }
+
+  /* image with content section */
+  .image_with_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .para_wapper {
+    width: 50%;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    .image_with_content {
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    .para_wapper {
+      width: 100%;
+    }
+
+    .big_img_wapper {
+      width: 100%;
+    }
+
+    .big_img {
+      width: 100%;
+    }
+
+    .article-banner {
+      height: 500px;
+    }
+  }
+
+  /* new template styles start */
+  /* publish date start */
+  .intro-section.publsih-date {
+    margin: 0rem 3rem;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+
+  .publsih-date-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .publsih-date-wrapper p {
+    margin-bottom: 0px;
+    color: #003cac;
+    font-weight: 700;
+  }
+
+  .publsih-date-wrapper p:first-child {
+    border-right: 1.5px solid silver;
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .intro-section.publsih-date {
+      margin: 0em 1em 2em 1em;
+      padding-bottom: 10px;
+    }
+
+    .publsih-date-wrapper {
+      display: inline;
+    }
+
+    .publsih-date-wrapper p {
+      margin-bottom: 8px;
+      color: #003cac;
+      font-weight: 700;
+    }
+
+    .publsih-date-wrapper p:first-child {
+      border-right: 0px;
+      margin-right: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  /* publish date end */
+
+  /* top lang-sw start */
+  .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .lang-sw img {
+    max-width: 33px;
+  }
+
+  .language-switch {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .language-switch {
+      margin-right: 65px;
+    }
+  }
+
+  @media only screen and (max-width: 820px) {
+    .language-switch {
+      margin-right: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .lang-sw {
+      align-items: flex-start;
+    }
+
+    .language-switch {
+      margin-right: 0em;
+      margin-left: 0em;
+    }
+
+    .language-switch-dropdown-itmes-wrapper {
+      top: 40px;
+    }
+  }
+
+  /* top lang-sw end */
+
+  /* a links start */
+  .a-links {
+    margin: 3rem;
+  }
+
+  .a-links a {
+    color: #003cac;
+    font-weight: 700;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1.5px solid silver;
+  }
+
+  .a-links a:last-child {
+    border-right: 0px;
+  }
+
+  @media only screen and (max-width: 820px) {
+    .a-links {
+      margin: 0rem;
+    }
+
+    .a-links nav {
+      margin: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .a-links {
+      margin: 3rem 0em;
+    }
+
+    .a-links nav {
+      margin: 3rem 1em;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  /* a link end */
+
+  /* bottom lang-sw start */
+  .bottom .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .bottom .language-switch {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  .lang-sw.bottom {
+    align-items: flex-start;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .bottom-lag-sw p {
+    margin-bottom: 0px;
+  }
+
+  .bottom-lag-sw {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .language-switch-dropdown-itmes-wrapper {
+      top: 40px;
+    }
+
+    .bottom-lag-sw {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 2em;
+      gap: 15px;
+    }
+
+    .lang-sw.bottom {
+      margin-left: 0px;
+    }
+  }
+
+  /* con-pro styles section */
+
+  .pro-con {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+  .pro-con li {
+    margin-bottom: 1em;
+  }
+
+  .pro-section,
+  .con-section {
+    flex: 1 1 0;
+  }
+
+  .pro-title,
+  .con-title {
+    border-left: 10px solid #b1b4b2;
+    padding: 0rem 1rem;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  .pro-list,
+  .con-list {
+    margin-left: 2em;
+  }
+
+  @media screen and (max-width: 440px) {
+    .pro-con {
+      flex-direction: column;
+    }
+  }
+</style>
+<div class="article-banner">
+  <img
+    src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/FaceShape_Banners_TemplateWeb_Banner.jpg'}}"
+    alt="Diamond Face Glasses, Styles, Types"
+    class="banner desktop-banner"
+  />
+  <img
+    src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/FaceShape_Banners_TemplateMobile_Banner.jpg'}}"
+    alt="Diamond Face Glasses, Styles, Types"
+    class="mobile-banner"
+  />
+</div>
+<h1 class="title">
+  Best Glasses for Diamond Face (Male and Female): Frames, Shapes and Types
+</h1>
+<!-- publish date start -->
+<div class="intro-section publsih-date">
+  <div class="publsih-date-wrapper">
+    <p>Published on February 9th, 2023</p>
+    <p><b>Updated on October 10th, 2024</b></p>
+    <!-- lang switch start -->
+    <div class="lang-sw">
+      <div class="language-switch">
+        <div class="language-switch-current" onclick="toggleVisibility()">
+          <!-- flag -->
+          <img
+            src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+            alt="Best Glasses for Diamond Face (Male and Female): Frames, Shapes and Types in Australian English"
+          />
+          Australia
+          <!-- dropdown icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="5"
+            viewBox="0 0 8 5"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z"
+              fill="black"
+            ></path>
+          </svg>
+        </div>
+        <div
+          class="language-switch-dropdown-itmes-wrapper"
+          id="secondBox"
+          style="display: none"
+        >
+          <div class="language-switch-dropdown-itmes">
+            <!-- flag -->
+            <img
+              src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+              alt="Best Glasses for Diamond Face (Male and Female): Frames, Shapes and Types in Australian English"
+            />
+            <a href="https://www.oscarwylee.com.au/glasses/face-shapes/diamond"
+              >Australia</a
+            >
+          </div>
+          <div class="language-switch-dropdown-itmes">
+            <!-- flag -->
+            <img
+              src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+              alt="Best Glasses for Diamond Face (Male and Female): Frames, Shapes and Types in Canadian English"
+            />
+            <a href="https://www.oscarwylee.ca/glasses/face-shapes/diamond">
+              Canada</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- publish date end -->
+<div class="intro-section">
+  <p class="para-content">
+    <span
+      >The best glasses for a diamond face are rectangle, square, butterfly,
+      oval, round and cat-eye, as these frame shapes help to soften sharp,
+      contoured features, bringing balance to the strong structure of this face
+      shape.</span
+    >
+  </p>
+  <p class="para-content">
+    <span
+      >A diamond shaped face is characterised by its narrow forehead and
+      prominent cheekbones, tapering down into a narrow jawline and pointed
+      chin. The cheekbones are the widest point of a diamond face. The features
+      of a diamond shaped face are defined and structured. The frame shapes that
+      are the best fit for a diamond face are ones that help to soften the sharp
+      features and contours of the face, helping to balance out its strong
+      structure. The best diamond face glasses are ones that bring attention to
+      the upper part of the face, helping to widen the forehead and bring new
+      proportions to the face. Diamond glasses for a diamond face are not
+      recommended as they add to the sharp structure of the face shape,
+      over-emphasising the hard contours.</span
+    >
+  </p>
+  <p class="para-content">
+    <span
+      >The best glasses for a diamond face, female, male, or any gender,
+      are&nbsp;<b>rectangle, square, butterfly, oval, round and cat-eye</b>. The
+      benefits of these frame shapes and why they suit a diamond face, are
+      listed below.</span
+    >
+  </p>
+  <ul class="ordered-list">
+    <li>
+      <span class="list-title">Rectangle glasses:</span> Rectangle glasses seem
+      like a contradictory frame choice when the aim is to soften the features
+      of a diamond face. However, a rectangular frame with softer angles will
+      help to complement the face’s natural contours and add width and balance
+      to the top of the face.
+    </li>
+    <li>
+      <b>Square glasses: </b
+      ><span style="font-weight: 400"
+        >Square glasses that have a thin frame or softer corners, such as a
+        squared aviator frame, or navigator frames, complement and highlight the
+        face’s natural contour. Square glasses will bring attention to the brow
+        area and help balance out a diamond face.</span
+      >
+    </li>
+    <li>
+      <b>Butterfly glasses: </b
+      ><span style="font-weight: 400"
+        >Butterfly frames, designed to mimic the shape of a butterfly wing, have
+        curved edges, with the top rim gently arched. The curved design of
+        butterfly glasses brings a softness to the features of a diamond face
+        and helps to give it balance.</span
+      >
+    </li>
+    <li>
+      <b>Oval glasses:</b
+      ><span style="font-weight: 400">
+        Oval shaped frames help to bring a softness to the sharp, contoured
+        features of a diamond face shape.</span
+      >
+    </li>
+    <li>
+      <b>Round glasses:</b
+      ><span style="font-weight: 400">
+        Round frames help to bring curves to the straight, sharp structure of a
+        diamond face, helping to balance it out.</span
+      >
+      <ul></ul>
+      <b></b>
+    </li>
+    <li>
+      <b>Cat-eye glasses: </b
+      ><span style="font-weight: 400"
+        >Cat-eye shaped frames bring attention to the eyes and brow area,
+        helping to widen the forehead and balance the face.</span
+      >
+    </li>
+  </ul>
+</div>
+<!--  CTA aside-->
+<aside class="intro-section book-section">
+  <div class="book-section-left">
+    <p class="heading">Are you ready for an eye test?</p>
+    <p style="font-size: 16px">
+      Stay on top of your eye health by booking regular eye tests. Book an
+      appointment with our dedicated Oscar Wylee optometrists, bulk billed for
+      eligible Medicare card holders.
+    </p>
+  </div>
+  <div class="book-section-right">
+    <a href="/booking"><button class="btnOw">Book an eye test</button></a>
+  </div>
+</aside>
+<!--  CTA aside-->
+<p></p>
+<!-- a liks start -->
+<div class="a-links">
+  <nav>
+    <a href="#DiamondFaces">Best Glasses Colours For Diamond Faces</a>
+    <a href="#Women">Women’s Glasses</a> <a href="#Men">Men’s Glasses</a>
+    <a href="#Diamond">Diamond Face Shape</a>
+  </nav>
+</div>
+<!-- a liks end -->
+<div class="main-section" id="main-cont-wrapper">
+  <div class="main-section">
+    <section class="square-section">
+      <h2 class="subtitle">1. Rectangular Glasses for a Diamond Face</h2>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Rectangle glasses for a diamond face seem like a contradictory choice
+          of eyewear, as a diamond face usually benefits from rounded frames to
+          soften the features. However, if a rectangle glasses frame has just
+          the right amount of angles, it is effective in complementing the
+          features of a diamond face, without enhancing the sharp and contoured
+          structure. A rectangle glasses shape for a diamond face, </span
+        ><b>refers to a frame that has lenses wider than they are tall. </b
+        ><span style="font-weight: 400"
+          >The frame is structured and angular in its design.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Rectangle glasses frames help to complement the angles of a diamond
+          shaped face, without bringing out too many sharp edges. A diamond face
+          shape is characterised by its narrow forehead, wide, defined cheeks
+          and narrow chin, tapered into a point. This structure gives the face a
+          sharp and contoured look. The right angles of a rectangular frame help
+          to complement these facial features, without over-emphasising them.
+          Rectangle frames will not completely eliminate the appearance of the
+          contours of a diamond face, like a round frame, but gently highlight
+          and complement them. Additionally, a rectangle frame helps to draw
+          attention to the eye and forehead area of a diamond face, giving it
+          width and providing the face with balance.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Rectangle frames are a clean, classic and simple design, making them
+          a long time staple in the eyewear industry. Rectangle frames are a
+          versatile eyewear frame that work for casual and formal outings,
+          transitioning well from day to night. The enduring popularity of
+          rectangle glasses means they are well suited to any season, summer or
+          winter, bringing simple sophistication to a look all year round.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Rectangle frames are suitable for all genders. Regardless of whether
+          the face is more masculine or more feminine presenting, rectangle
+          frames have the same enhancing benefits. Rectangle glasses for men
+          with a diamond face help to complement the contours of the face and
+          highlight the face's best features. Rectangle glasses for women with a
+          diamond face bring attention to the forehead and eyes, widening these
+          areas and bringing more balance to the facial structure.</span
+        >
+      </p>
+      <div class="pro-con">
+        <div class="pro-section">
+          <h3 class="pro-title">
+            The pros of rectangle eyeglasses for a diamond face are listed
+            below.
+          </h3>
+          <ul class="pro-list">
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >They’re versatile; a rectangle frame is wearable all year
+                round, to both casual and formal events.&nbsp;</span
+              >
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >An additional pro of rectangle glasses for diamond faces is
+                their ability to complement the naturally contoured features of
+                the face without over-emphasising them.</span
+              >
+            </li>
+            <li>They bring balance to the features.</li>
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="con-section">
+          <h3 class="con-title">
+            The cons of rectangle glasses for a diamond face are listed below.
+          </h3>
+          <ul class="con-list">
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >If rectangle glasses are too sharp in their structure, or the
+                angles too severe, these frames overemphasise the sharp and
+                contoured features of this face shape, unbalancing the facial
+                structure.&nbsp;</span
+              >
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >If you buy rectangle glasses for a diamond face, ensure the
+                frames are not too angular.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="products-section">
+        <div class="individual-product">
+          <a href="/miles-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Miles_Product_Block_3x_622x233.jpg'}}"
+              alt="product image"
+              class="product-image"
+            />
+          </a>
+        </div>
+        <div class="individual-product">
+          <a href="/logan-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Logan_Product_Block_3x_622x233.jpg'}}"
+              alt="product image"
+              class="product-image"
+          /></a>
+        </div>
+        <div class="individual-product">
+          <a href="/francis-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Francis_Product_Block_3x_622x233.jpg'}}"
+              alt="product image"
+              class="product-image"
+          /></a>
+        </div>
+      </div>
+      <div class="products-section-mobile">
+        <div class="individual-product">
+          <a href="/miles-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Miles_Product_Block_Mobile.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+        </div>
+        <div class="individual-product">
+          <a href="/logan-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Logan_Product_Block_Mobile.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+        </div>
+        <div class="individual-product">
+          <a href="/francis-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Francis_Product_Block_Mobile.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section class="square-section">
+      <h2 class="subtitle">2. Square Glasses for a Diamond Face</h2>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Square glasses for a diamond face seem like a contradictory eyewear
+          choice, as rounded glasses are usually a better option for helping to
+          soften the features and bring balance to a diamond face. However,
+          square shaped glasses that have a thin frame or softer corners, such
+          as a squared aviator frame, help to complement and balance the
+          features of a diamond face shape. A square glasses frame for a diamond
+          face, </span
+        ><b
+          >describes a pair of glasses with lenses that are of a similar width
+          and height.</b
+        >
+      </p>
+      <p class="para-content">
+        <b
+          ><span style="font-weight: 400"
+            >Square frames with a thin frame and softer curves, such as the
+            squared aviator or navigator frame, highlight and complement the
+            natural contours and sharpness of diamond face shape, such as the
+            strong jaw and cheeks, gently softening them. A square glasses shape
+            for a diamond face, also helps to bring attention to the forehead
+            and eye area. A diamond face shape will have a narrow forehead area.
+            By widening the forehead, square frames bring new dimensions to the
+            face.</span
+          ></b
+        >
+      </p>
+      <p class="para-content">
+        <b
+          ><span style="font-weight: 400"
+            >Square glasses are a simple and classic frame shape, a popular
+            choice among glasses wearers. The simple, clean and strong design of
+            a square frame shape, means that they are widely wearable by anyone
+            for any occasion, day or night. The enduring popularity of square
+            glasses ensures that the wearer will be on trend all year round,
+            through the summer and winter seasons.</span
+          ></b
+        >
+      </p>
+      <p class="para-content">
+        <b
+          ><span style="font-weight: 400"
+            >The simple design of square glasses suits all faces, whether more
+            feminine or masculine presenting. Square glasses for men with a
+            diamond face work to bring balance and contour to the face. Square
+            glasses for women with a diamond face are good for balancing the
+            face, lengthening and highlighting the facial features.</span
+          ></b
+        >
+      </p>
+      <div class="pro-con">
+        <div class="pro-section">
+          <h3 class="pro-title">
+            The pros of square eyeglasses for a diamond face are listed below.
+          </h3>
+          <ul class="pro-list">
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >Square glasses have wide wearability, with the simple design
+                suitable for a wide demographic of people.&nbsp;</span
+              >
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >An additional advantage of square glasses is that their
+                enduring popularity means they are a good eyewear choice,
+                fashionable all year round.
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="con-section">
+          <h3 class="con-title">
+            The main cons of square eyeglasses for a diamond face is listed
+            below.
+          </h3>
+          <ul class="con-list">
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >If a square frame is too angular, or too structured, it will
+                overemphasise the natural sharpness and angles of this face
+                shape, distorting the proportions of the face.&nbsp;</span
+              >
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >If buying square glasses for a diamond face, make sure they
+                have slightly curved corners.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="products-section">
+        <div class="individual-product">
+          <a href="/serge-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Serge_Product_Block_3x_622x233.jpg'}}"
+              alt="product image"
+              class="product-image"
+            />
+          </a>
+        </div>
+        <div class="individual-product">
+          <a href="/cliff-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Cliff_Product_Block_3x_622x233.jpg'}}"
+              alt="product image"
+              class="product-image"
+          /></a>
+        </div>
+        <div class="individual-product">
+          <a href="/francis-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Francis_Product_3x_Oscar-Wylee_622x233px.jpg'}}"
+              alt="product image"
+              class="product-image"
+          /></a>
+        </div>
+      </div>
+      <div class="products-section-mobile">
+        <div class="individual-product">
+          <a href="/serge-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Serge_Product_Block_Mobile.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+        </div>
+        <div class="individual-product">
+          <a href="/cliff-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Cliff_Product_Block_Mobile.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+        </div>
+        <div class="individual-product">
+          <a href="/francis-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Francis-049-Product-Block-Mobile-596x504.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section class="square-section">
+      <h2 class="subtitle">3. Butterfly Glasses for a Diamond Face</h2>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Butterfly glasses for a diamond face are a unique and edgy choice of
+          eyewear that help add balance to this face shape and soften the
+          features. A butterfly glasses frame for a diamond face, </span
+        ><b
+          >describes a pair of glasses that are designed to mimic the wings of a
+          butterfly.</b
+        ><span style="font-weight: 400">
+          Butterfly glasses have a gently rounded frame, with the outside edges
+          larger in height than the inside edges. The top rim of a butterfly
+          frame swoops into a thicker upper corner.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Butterfly glasses are one of the best frame shape choices for a
+          diamond face, as the round design and soft curves help to soften the
+          features and bring structure to the face. Diamond shaped faces have
+          narrow foreheads, with the cheekbones the widest and most prominent
+          facial feature. A butterfly glasses shape for a diamond face, brings
+          attention to the forehead, emphasising the eyes. This in turn widens
+          the appearance of the upper area of the face and brings some new
+          proportions. Butterfly glasses help to give a diamond shape more
+          dimension and new structure. The curves and gentle round shape of the
+          frame works to soften some of the sharp, defined features of a diamond
+          face such as the jaw, and bring balance.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Butterfly glasses are a delicate and sophisticated retro frame shape
+          that complement any outfit whether a daytime, casual look or a night
+          time, formal outfit. The simple design comes in a range of colours and
+          styles, suitable for winter and summer seasons.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >The design of a butterfly frame may be more feminine, however,
+          butterfly frames work to bring balance and soften the face, no matter
+          whether the face is masculine or feminine. Butterfly glasses for men
+          with a diamond face work to highlight the eyes and bring attention to
+          the forehead, bringing more dimension to the face. Butterfly glasses
+          for women with a diamond face help to soften the sharp and contoured
+          features of this face shape.</span
+        >
+      </p>
+      <div class="pro-con">
+        <div class="pro-section">
+          <h3 class="pro-title">
+            The pros of butterfly eyeglasses for a diamond face are listed
+            below.
+          </h3>
+          <ul class="pro-list">
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >Butterfly glasses help to soften the features and bring new
+                dimensions to the face.&nbsp;</span
+              >
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >An additional pro of butterfly glasses is that they come in a
+                variety of colours and patterns, making them the perfect frame
+                for a bold fashion statement.</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="con-section">
+          <h3 class="con-title">
+            The con of a butterfly glasses shape for a diamond face is listed
+            below.
+          </h3>
+          <ul class="con-list">
+            <li>
+              <span style="font-weight: 400">Some butterfly</span>
+              <span style="font-weight: 400"
+                >frame shapes are oversized, which make a face appear smaller
+                and bunched together.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="products-section one-product">
+        <div class="individual-product center-one-product">
+          <a href="/bronte-optical.html"
+            ><img src="{{media
+            url="wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Bronte_Product_Block2.jpg"}}"
+            alt="product-image" class="product-image product-image-single"
+            style="width: 50%;"></a
+          >
+        </div>
+      </div>
+      <div class="products-section-mobile">
+        <div class="individual-product">
+          <a href="/bronte-optical.html"
+            ><img src="{{media
+            url="wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Bronte_Product_Block_Mobile.jpg"}}"
+            alt="product image" class="product-image-mobile"></a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="square-section">
+      <h2 class="subtitle">4. Oval Glasses for a Diamond Face</h2>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Oval glasses for a diamond face are a great choice of frame, as the
+          curved design helps to balance and add a new dimension to the face.
+          Oval glasses for a diamond face </span
+        ><b>describes a frame shape that is oval or egg shaped in structure. </b
+        ><span style="font-weight: 400"
+          >An oval glasses frame has lenses wider than they are tall.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Oval glasses are a great choice for diamond faces, as the curves of
+          the frame help to bring softness to the sharp, defined features of
+          this face shape. Diamond faces have narrow foreheads, wide, defined
+          cheekbones and narrow chins, giving a sharp and pointed look to the
+          face. The oval glasses shape for a diamond face is beneficial as the
+          circular design helps to soften these features. The curved edges take
+          away from the cheeks’ sharp contour and even out the harsh lines and
+          edges. In addition to this, oval eyeglasses for a diamond face work to
+          bring new dimensions to the face. The circular design breaks up the
+          diamond shape and brings new proportions to the features.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Oval glasses are a classic frame shape. The simple structure of an
+          oval frame has made them a hugely wearable piece of eyewear, suitable
+          for a wide demographic and wearable for many occasions. Oval glasses
+          are suitable for during the day or at night, for both casual and
+          formal events. An oval glasses frame is versatile in terms of design,
+          available in many colours and frame thicknesses, making them perfect
+          for the summer or winter seasons, depending on what design you
+          chose.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >The simplicity of the oval frame shape means that these frames
+          complement any face or gender, no matter whether it is more feminine
+          or more masculine presenting. Oval glasses for women with a diamond
+          face work to soften the sharp and contoured features. Oval glasses for
+          men with a diamond face, help to give the face a new dimension by
+          adding some curve to the harsh lines.</span
+        >
+      </p>
+      <div class="pro-con">
+        <div class="pro-section">
+          <h3 class="pro-title">
+            The pros of oval glasses for a diamond face are listed below.
+          </h3>
+          <ul class="pro-list">
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >Oval glasses are a simple design,</span
+              >
+              <span style="font-weight: 400"
+                >making them wearable for a wide demographic.&nbsp;</span
+              >
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >Another pro for oval glasses is that they come in many colours
+                and thickness, making them a great eyewear choice for a fashion
+                statement, whether bold or more subdued.</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="con-section">
+          <h3 class="con-title">
+            The con of oval eyeglasses for diamond faces is listed below.
+          </h3>
+          <ul class="con-list">
+            <li>
+              <span style="font-weight: 400"
+                >Some oval glasses are undersized. An undersized frame will make
+                the cheekbones appear wider, and a narrow forehead appear
+                smaller.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="products-section two-products">
+        <div class="individual-product">
+          <a href="/thomas-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Thomas_Product_Block_3x_622x233.jpg'}}"
+              alt="product image"
+              class="product-image"
+          /></a>
+        </div>
+        <div class="individual-product">
+          <a href="/parker-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Parker_Product_Block_3x_622x233.jpg'}}"
+              alt="product image"
+              class="product-image"
+          /></a>
+        </div>
+      </div>
+      <div class="products-section-mobile">
+        <div class="individual-product">
+          <a href="/thomas-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Thomas_Product_Block_Mobile_596x504.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+        </div>
+        <div class="individual-product">
+          <a href="/parker-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Parker_Product_Block_Mobile_596x504.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!--  CTA aside-->
+    <aside class="intro-section book-section">
+      <div class="book-section-left">
+        <p class="heading">Find your local Oscar Wylee store</p>
+        <p style="font-size: 16px">
+          Come in and see the team for your eye care needs including eye
+          testing. All major health funds accepted in store.
+        </p>
+      </div>
+      <div class="book-section-right">
+        <a href="/locations/"><button class="btnOw">Find a store</button></a>
+      </div>
+    </aside>
+    <!--  CTA aside-->
+    <section class="square-section">
+      <h2 class="subtitle">5. Round Glasses for a Diamond Face</h2>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Round glasses for a diamond face are one of the most popular eyewear
+          choices, as they contrast the sharp features and harsh lines of this
+          face shape. Round glasses for a diamond face shape </span
+        ><b
+          >refers to a frame that is circular in nature, with rounded edges.
+        </b>
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >A round glasses shape for a diamond face helps to bring softness to
+          sharp, contoured features. This in turn, alters the proportions of the
+          face and provides balance. A diamond face shape is distinguishable by
+          its narrow forehead, wide cheekbones and narrow chin. The curves of a
+          round frame shape, help to soften the appearance of the narrow, hard
+          lines of the jaw, as well as the sharp cheekbones. By softening the
+          jaw and the cheeks in this way, round glasses help to bring a new
+          dimension to the face. By breaking up some of the contour and lines of
+          a diamond face shape, a round glasses frame helps to bring balance to
+          the face.&nbsp;</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Round glasses are a hugely popular frame, as they are a simple and
+          versatile design. Round glasses pair well with any outfit, whether
+          casual or formal and are suitable for both day and night time events.
+          The simplicity and neutrality of the round frame design means that it
+          is a fashionable eyewear choice all year round, in both the summer and
+          winter seasons.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >The simplicity and neutral design of round shaped glasses make them a
+          good frame choice for everyone, any gender, whether the face is more
+          feminine or masuline. Round glasses for women with a diamond face help
+          to soften the jaw and cheeks and bring balance to the face. Round
+          glasses for men with a diamond face help add a new dimension to the
+          contoured, hard lines of this face shape and give a more proportioned
+          look.</span
+        >
+      </p>
+      <div class="pro-con">
+        <div class="pro-section">
+          <h3 class="pro-title">
+            The pros of round eyeglasses for a diamond face are listed below.
+          </h3>
+          <ul class="pro-list">
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >Round glasses are a simple design, suitable to be worn for any
+                event.&nbsp;</span
+              >
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >Round glasses have been a popular eyewear choice for years,
+                meaning the frames will be in fashion all year
+                round.&nbsp;</span
+              >
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >Round faces give the perfect balance to a structured diamond
+                face.</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="con-section">
+          <h3 class="con-title">
+            The con of round glasses for a diamond is listed below.
+          </h3>
+          <ul class="con-list">
+            <li>
+              <span style="font-weight: 400"
+                >Some round glasses can be small in size and narrow. This is not
+                suitable for a diamond face as it increases the width of facial
+                features like the cheeks, affecting the balance of the
+                face.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="products-section">
+        <div class="individual-product">
+          <a href="/alya-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Alya_Product_3x_Oscar-Wylee_622x233px.jpg'}}"
+              alt="product image"
+              class="product-image"
+            />
+          </a>
+        </div>
+        <div class="individual-product">
+          <a href="/leo-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Leo_Product_Block_3x_622x233.jpg'}}"
+              alt="product image"
+              class="product-image"
+          /></a>
+        </div>
+        <div class="individual-product">
+          <a href="/luca-optical.html"
+            ><img src="{{media
+            url="wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Luca_Product_Block_3x_622x233.jpg"}}"
+            alt="product-image" class="product-image"></a
+          >
+        </div>
+      </div>
+      <div class="products-section-mobile">
+        <div class="individual-product">
+          <a href="/alya-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Alya_Product_Block_Mobile_596x504.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+        </div>
+        <div class="individual-product">
+          <a href="/leo-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Leo_Product_Block_Mobile.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+        </div>
+        <div class="individual-product">
+          <a href="/luca-optical.html"
+            ><img src="{{media
+            url="wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Luca_Product_Block_Mobile_596x504.jpg"}}"
+            alt="product image" class="product-image-mobile"></a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="square-section">
+      <h2 class="subtitle">6. Cat-eye Glasses for a Diamond Face</h2>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Cat-eye glasses for a diamond face are a stylish and fun choice of
+          eyewear that help accentuate the eye and forehead area, bringing
+          balance to the face. Cat-eye glasses for a diamond face, </span
+        ><b>describe a frame that is designed to mimic that of a cat’s eye.</b
+        ><span style="font-weight: 400">
+          The frame is curved in design, swooping up in the corners.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >A cat-eye glasses shape for a diamond face is a good choice of
+          eyewear as the upswept corners bring attention to the forehead and eye
+          area. A diamond face shape has a narrow forehead, defined cheeks and a
+          chin that tapers into a point. A cat-eye glasses frame helps to
+          highlight the upper portion of the face and widen the typically narrow
+          forehead and eye area, giving the face new dimension and more balance.
+          The circular design of cat-eye frames softens the features. The curved
+          frame lessens the contoured appearance of the jaw and cheeks, bringing
+          additional balance to the face.&nbsp;</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Cat-eye glasses have been a popular frame shape since the 50s, with
+          many celebrities and Hollywood icons such as Audrey Hepburn
+          popularising the style. Cat-eye frames have remained a staple eyewear
+          accessory, fashionable all year round, through the summer and winter
+          seasons. The feline design complements both casual and formal
+          outfits.&nbsp;</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Though cat-eye glasses are a more feminine looking frame, the design
+          works to soften and balance the features of any face, no matter
+          whether the face is more feminine or masculine. Cat-eye glasses for
+          women with a diamond face help to soften the appearance of sharp
+          features such as the jaw and the cheeks and bring balance to the face.
+          Cat-eye glasses for men with a diamond face help to bring attention to
+          the eyes, browline and forehead, helping to open up and widen this
+          area.</span
+        >
+      </p>
+      <div class="pro-con">
+        <div class="pro-section">
+          <h3 class="pro-title">
+            The pros of cat-eye frames for a diamond face are listed below.
+          </h3>
+          <ul class="pro-list">
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >Cat-eye glasses highlight the upper portion of the face and
+                bring new dimension to the features.&nbsp;</span
+              >
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >Another pro of cat-eye glasses for a diamond face shape is
+                their enduring status as a fashion piece of eyewear, making them
+                wearable all year round.</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="con-section">
+          <h3 class="con-title">
+            The cons of cat-eye glasses for diamond faces are listed below.
+          </h3>
+          <ul class="con-list">
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >Some cat-eye frames are undersized in design, or large and
+                oversized.</span
+              >
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >Neither oversized or undersized are a good choice of eyewear
+                for diamond faces as they affect the facial proportions.
+                Undersized frames make a diamond face look wider, whilst
+                oversized frames make the features look bunched up.&nbsp;</span
+              >
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >When buying cat-eye eyeglasses for a diamond face, pick a size
+                that is proportionate to your face and features.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="products-section">
+        <div class="individual-product">
+          <a href="/nina-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Nina_Product_3x_Oscar-Wylee_622x233px.jpg'}}"
+              alt="product image"
+              class="product-image"
+            />
+          </a>
+        </div>
+        <div class="individual-product">
+          <a href="/martha-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Martha-Product-Block-3x-622x233.jpg'}}"
+              alt="product image"
+              class="product-image"
+          /></a>
+        </div>
+        <div class="individual-product">
+          <a href="/dolly-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Dolly_529_Product_Block_3x_665x278.jpg'}}"
+              alt="product image"
+              class="product-image"
+          /></a>
+        </div>
+      </div>
+      <div class="products-section-mobile">
+        <div class="individual-product">
+          <a href="/nina-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Nina_Product_Block_Mobile_596x504.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+        </div>
+        <div class="individual-product">
+          <a href="/martha-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Martha-Product-Block-Mobile-596x504.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+        </div>
+        <div class="individual-product">
+          <a href="/dolly-optical.html"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Dolly_529_Product_Block_Mobile_596x504.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!--  CTA aside-->
+    <aside class="intro-section book-section">
+      <div class="book-section-left">
+        <p class="heading">Due for an eye check-up?</p>
+        <p style="font-size: 16px">
+          Get your eyes tested and stay on top of your eye health at Oscar
+          Wylee. Book an eye test with our skilled Oscar Wylee optometrists,
+          bulk billed for eligible Medicare card holders. All major health funds
+          accepted in stores.
+        </p>
+      </div>
+      <div class="book-section-right">
+        <a href="/booking"><button class="btnOw">Book an eye exam</button></a>
+      </div>
+    </aside>
+    <!--  CTA aside-->
+    <section class="square-section">
+      <h2 class="subtitle" id="DiamondFaces">
+        What are the Best Glasses Colours for Diamond Faces?
+      </h2>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >The best glasses colour for diamond faces are </span
+        ><b
+          >darker colours around the top rim, or a lighter colour around the
+          whole frame, to help soften the features and provide balance to a
+          face.</b
+        ><span style="font-weight: 400">
+          The main things to consider when picking glasses for a diamond face
+          shape, is that the frame helps to contrast the defined lines and sharp
+          features of this face shape. Rectangle, square, cat-eye, oval and
+          round frames are among the best frame shapes to do this and the colour
+          that they come in helps to further enhance these effects.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >A glasses frame for a diamond face benefits from having a darker
+          upper rim, as this helps to draw attention to the eyes and forehead
+          area. A dark upper rim will balance out the hard lines and sharp,
+          contoured structures of a diamond face. A lighter colour, especially
+          near the bottom of a frame, helps to soften the appearance of the
+          wide, defined cheekbones and bring balance to the face. Patterned
+          frame designs such as tortoise shell and floral print, are an
+          additional good choice for diamond faces.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >The benefits of darker top rim glasses or prints such as tortoise
+          shell being ideal for diamond face shapes, is that these colours and
+          patterns work for any gender and can be paired with a variety of
+          looks, casual or formal.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Other considerations when picking a glasses colour for a diamond face
+          shape is individual skin tone, hair colour and eye colour, as these
+          can affect how a pair of glasses will look. It is important to
+          remember however, that these are only suggestions. You should express
+          your personal style and individuality with whatever colour you like
+          best.</span
+        >
+      </p>
+    </section>
+    <section class="square-section">
+      <h2 class="subtitle">
+        What are the Best Glasses Styles for Diamond Faces?
+      </h2>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >The best glasses styles for diamond faces are </span
+        ><b>rectangular, square, butterfly, oval, round and cat-eye</b
+        ><span style="font-weight: 400"
+          >, as these frames help to soften and change the proportions of the
+          facial features, in turn balancing the face.</span
+        >
+      </p>
+      <div class="nine-products-section nine-products-section-gender">
+        <button class="pre-btn">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/arrow.png'}}"
+            alt="left arrow image"
+          />
+        </button>
+        <button class="nxt-btn">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/arrow.png'}}"
+            alt="right arrow image"
+          />
+        </button>
+        <div class="product-container">
+          <a href="/poppy-optical.html" rel="noopener" class="product-link"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Poppy_395_Product_Block_3x_665x278.jpg'}}"
+              alt="product-image"
+              class="product-image"
+            />
+          </a>
+          <a href="/faye-optical.html" rel="noopener" class="product-link"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Faye_Product_3x_Oscar-Wylee_622x233px.jpg'}}"
+              alt="product-image"
+              class="product-image"
+          /></a>
+          <a href="/allan-optical.html" rel="noopener" class="product-link"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Allan_Product_3x_Oscar-Wylee_622x233px.jpg'}}"
+              alt="product-image"
+              class="product-image"
+            />
+          </a>
+          <a href="/francis-optical.html" rel="noopener" class="product-link"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Francis_Product_Block_3x_622x233.jpg'}}"
+              alt="product-image"
+              class="product-image"
+            />
+          </a>
+          <a href="/julie-optical.html" rel="noopener" class="product-link"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Julie_Product_3x_Oscar-Wylee_622x233px.jpg'}}"
+              alt="product-image"
+              class="product-image"
+          /></a>
+          <a href="/toby-optical.html" rel="noopener" class="product-link"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Toby_Product_Block_3x_622x233.jpg'}}"
+              alt="product-image"
+              class="product-image"
+            />
+          </a>
+          <a href="/miles-optical.html" rel="noopener" class="product-link"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Miles_Product_Block_3x_622x233.jpg'}}"
+              alt="product-image"
+              class="product-image"
+          /></a>
+          <a href="/rae-optical.html" rel="noopener" class="product-link">
+            <img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Rae_Product_Block_3x_622x233.jpg'}}"
+              alt="product-image"
+              class="product-image"
+            />
+          </a>
+          <a href="/bronte-optical.html" rel="noopener" class="product-link"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Bronte_Product_Block2.jpg'}}"
+              alt="product-image"
+              class="product-image"
+          /></a>
+        </div>
+      </div>
+      <div class="nine-products-section-mobile">
+        <button class="pre-btn">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/arrow.png'}}"
+            alt="left arrow image"
+          />
+        </button>
+        <button class="nxt-btn">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/arrow.png'}}"
+            alt="right arrow image"
+          />
+        </button>
+        <div class="product-container">
+          <a href="/poppy-optical.html" rel="noopener"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Poppy_395_Product_Block_Mobile_596x504.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+          <a href="/faye-optical.html" rel="noopener"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Faye_Product_Block_Mobile_596x504.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+            />
+          </a>
+          <a href="/allan-optical.html" rel="noopener"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Allan_Product_Oscar-Wylee_596x504px.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+            />
+          </a>
+          <a href="/francis-optical.html" rel="noopener"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Francis_Product_Block_Mobile.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+            />
+          </a>
+          <a href="/julie-optical.html" rel="noopener"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Julie_Product_Block_Mobile_596x504.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+            />
+          </a>
+          <a href="/toby-optical.html" rel="noopener"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Toby_Product_Block_Mobile.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+            />
+          </a>
+          <a href="/miles-optical.html" rel="noopener"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Miles_Product_Block_Mobile.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+          <a href="/rae-optical.html" rel="noopener"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Rae_Product_Block_Mobile.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+            />
+          </a>
+          <a href="/bronte-optical.html" rel="noopener"
+            ><img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Bronte_Product_Block_Mobile.jpg'}}"
+              alt="product image"
+              class="product-image-mobile"
+          /></a>
+        </div>
+      </div>
+      <div class="sub-div">
+        <h3 class="sub-div-h4" id="Women">
+          What are the Woman Glasses for Diamond Face?
+        </h3>
+        <p class="para-content">
+          <span style="font-weight: 400"
+            >The best glasses for women with a diamond face are</span
+          ><b> butterfly, oval, round and cat-eye</b
+          ><span style="font-weight: 400">
+            as the curves in these frame shapes help to soften the sharper
+            features of a diamond face, such as the cheeks and jawline, and
+            bring balance to the facial structure.</span
+          >
+        </p>
+        <div class="nine-products-section nine-products-section-gender">
+          <button class="pre-btn">
+            <img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/arrow.png'}}"
+              alt="left arrow image"
+            />
+          </button>
+          <button class="nxt-btn">
+            <img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/arrow.png'}}"
+              alt="right arrow image"
+            />
+          </button>
+          <div class="product-container">
+            <a href="/juniper-optical.html" rel="noopener" class="product-link"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Juniper_Product_Block_3x_622x233.jpg'}}"
+                alt="product-image"
+                class="product-image"
+              />
+            </a>
+            <a href="/netta-optical.html" rel="noopener" class="product-link"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Netta_Product_Block_3x_622x233.jpg'}}"
+                alt="product-image"
+                class="product-image"
+            /></a>
+            <a href="/bronte-optical.html" rel="noopener" class="product-link"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Bronte_Product_Block2.jpg'}}"
+                alt="product-image"
+                class="product-image"
+              />
+            </a>
+            <a href="/odette-optical.html" rel="noopener" class="product-link"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Odette_049_Product_Block_3x_665x278.jpg'}}"
+                alt="product-image"
+                class="product-image"
+              />
+            </a>
+            <a href="h/ava-optical.html" rel="noopener" class="product-link"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Ava_Product_Block_3x_622x233.jpg'}}"
+                alt="product-image"
+                class="product-image"
+            /></a>
+            <a href="/sadie-optical.html" rel="noopener" class="product-link"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Sadie_Product_Block_3x_622x233.jpg'}}"
+                alt="product-image"
+                class="product-image"
+              />
+            </a>
+            <a href="/aries-optical.html" rel="noopener" class="product-link">
+              <img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Aries_Product_3x_Oscar-Wylee_622x233px.jpg'}}"
+                alt="product-image"
+                class="product-image"
+              />
+            </a>
+            <a href="/haskell-optical.html" rel="noopener" class="product-link"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Haskell_Product_3x_Oscar-Wylee_622x233px.jpg'}}"
+                alt="product-image"
+                class="product-image"
+            /></a>
+          </div>
+        </div>
+        <div class="nine-products-section-mobile">
+          <button class="pre-btn">
+            <img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/arrow.png'}}"
+              alt="left arrow image"
+            />
+          </button>
+          <button class="nxt-btn">
+            <img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/arrow.png'}}"
+              alt="right arrow image"
+            />
+          </button>
+          <div class="product-container">
+            <a href="/juniper-optical.html" rel="noopener"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Juniper_Product_Block_Mobile.jpg'}}"
+                alt="product image"
+                class="product-image-mobile"
+            /></a>
+            <a href="/netta-optical.html" rel="noopener"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Netta__Product_Block_Mobile.jpg'}}"
+                alt="product image"
+                class="product-image-mobile"
+              />
+            </a>
+            <a href="/bronte-optical.html" rel="noopener"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Bronte_Product_Block2.jpg'}}"
+                alt="product image"
+                class="product-image-mobile"
+              />
+            </a>
+            <a href="/odette-optical.html" rel="noopener"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Odette_049_Product_Block_Mobile_596x504.jpg'}}"
+                alt="product image"
+                class="product-image-mobile"
+              />
+            </a>
+            <a href="/ava-optical.html" rel="noopener"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Ava__Product_Block_Mobile.jpg'}}"
+                alt="product image"
+                class="product-image-mobile"
+              />
+            </a>
+            <a href="/sadie-optical.html" rel="noopener"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Sadie_Product_Block_Mobile_596x504.jpg'}}"
+                alt="product image"
+                class="product-image-mobile"
+              />
+            </a>
+            <a href="/aries-optical.html" rel="noopener"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Aries_Product_Block_Mobile_596x504.jpg'}}"
+                alt="product image"
+                class="product-image-mobile"
+              />
+            </a>
+            <a href="/haskell-optical.html" rel="noopener"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Haskell_Product_Oscar-Wylee_596x504px.jpg'}}"
+                alt="product image"
+                class="product-image-mobile"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="sub-div">
+        <h3 class="sub-div-h4" id="Men">
+          What are the Men Glasses for Diamond Face?
+        </h3>
+        <p class="para-content">
+          <span style="font-weight: 400"
+            >The best glasses for men with a diamond face are </span
+          ><b>rectangle, square, oval and round glasses</b
+          ><span style="font-weight: 400"
+            >, as the shape of these frames provide contrast to the facial
+            features.</span
+          >
+        </p>
+        <div class="nine-products-section nine-products-section-gender">
+          <button class="pre-btn">
+            <img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/arrow.png'}}"
+              alt="left arrow image"
+            />
+          </button>
+          <button class="nxt-btn">
+            <img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/arrow.png'}}"
+              alt="right arrow image"
+            />
+          </button>
+          <div class="product-container">
+            <a href="/alya-optical.html" rel="noopener" class="product-link"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Alya_Product_3x_Oscar-Wylee_622x233px.jpg'}}"
+                alt="product-image"
+                class="product-image"
+            /></a>
+            <a href="/benny-optical.html" rel="noopener" class="product-link"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Benny_Product_3x_Oscar-Wylee_622x233px.jpg'}}"
+                alt="product-image"
+                class="product-image"
+              />
+            </a>
+            <a href="/miles-optical.html" rel="noopener" class="product-link"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Miles_Product_Block_3x_622x233.jpg'}}"
+                alt="product-image"
+                class="product-image"
+              />
+            </a>
+            <a href="/rae-optical.html" rel="noopener" class="product-link"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Rae_Product_Block_3x_622x233.jpg'}}"
+                alt="product-image"
+                class="product-image"
+              />
+            </a>
+            <a href="/kevin-optical.html" rel="noopener" class="product-link"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Kevin-016-x3-Oscar-Wylee-622x233.jpg'}}"
+                alt="product-image"
+                class="product-image"
+            /></a>
+            <a href="/dolly-optical.html" rel="noopener" class="product-link">
+              <img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Dolly_529_Product_Block_3x_665x278.jpg'}}"
+                alt="product-image"
+                class="product-image"
+              />
+            </a>
+            <a href="/aries-optical.html" class="product-link"
+              ><img src="{{media
+              url="wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Aries_049_Product_Block_3x_665x278.jpg"}}"
+              alt="product-image" class="product-image"></a
+            >
+          </div>
+        </div>
+        <div class="nine-products-section-mobile">
+          <button class="pre-btn">
+            <img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/arrow.png'}}"
+              alt="left arrow image"
+            />
+          </button>
+          <button class="nxt-btn">
+            <img
+              src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/arrow.png'}}"
+              alt="right arrow image"
+            />
+          </button>
+          <div class="product-container">
+            <a href="/alya-optical.html" rel="noopener"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Alya_Product_Block_Mobile_596x504.jpg'}}"
+                alt="product image"
+                class="product-image-mobile"
+              />
+            </a>
+            <a href="/benny-optical.html" rel="noopener"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Benny_Product_Oscar-Wylee_596x504px.jpg'}}"
+                alt="product image"
+                class="product-image-mobile"
+              />
+            </a>
+            <a href="/miles-optical.html" rel="noopener"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Miles_Product_Block_Mobile.jpg'}}"
+                alt="product image"
+                class="product-image-mobile"
+            /></a>
+            <a href="/rae-optical.html" rel="noopener"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Rae_Product_Block_Mobile.jpg'}}"
+                alt="product image"
+                class="product-image-mobile"
+              />
+            </a>
+            <a href="/kevin-optical.html" rel="noopener"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Kevin-016-Mobile-Oscar-Wylee-596x504.jpg'}}"
+                alt="product image"
+                class="product-image-mobile"
+            /></a>
+            <a href="/dolly-optical.html" rel="noopener"
+              ><img
+                src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Dolly_529_Product_Block_Mobile_596x504.jpg'}}"
+                alt="product image"
+                class="product-image-mobile"
+              />
+            </a>
+            <a href="/aries-optical.html"
+              ><img src="{{media
+              url="wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Aries_049_Product_Block_Mobile_596x504.jpg}}"
+              alt="product image" class="product-image-mobile"></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="square-section">
+      <h2 class="subtitle">What are the Best Sunglasses for Diamond Faces?</h2>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >The best sunglasses for diamond shaped faces are </span
+        ><b>oval, cat-eye, aviator and browline,</b
+        ><span style="font-weight: 400">
+          as these frames help to soften sharp and contoured features like the
+          jaw and the cheeks, bringing balance to the strong structure of this
+          face shape. Oval, cat-eye, aviator and browline glasses have good
+          sized lenses, which help protect your eyes. The best sunglasses for a
+          diamond face are slightly different from the best optical glasses, as
+          sunglasses have the additional task of protecting your eyes from the
+          sun and UV rays. This means that the best sunglasses frame shape is
+          one that effectively covers the eyes. The best sunglasses for a round
+          face shape are listed below.</span
+        >
+      </p>
+      <ul class="ordered-list">
+        <li>
+          <span class="list-title">Oval sunglasses:</span> Like oval optical
+          glasses, oval sunglasses are a good choice of eyewear for a diamond
+          shaped face, as the curves of the frame help to soften the features
+          and bring new dimension to the face. Oval sunglasses come in many
+          designs and sizes, providing the coverage needed to help protect your
+          eyes.
+        </li>
+        <li>
+          <b>Cat-eye sunglasses:</b
+          ><span style="font-weight: 400">
+            Cat-eye sunglasses are beneficial for diamond faces as the swooped
+            upper corners help to bring attention to the forehead and eye area,
+            widening these more narrow features and bringing more balance to the
+            face. Cat-eye sunglasses are an enduring fashion accessory, on trend
+            throughout all seasons.</span
+          >
+        </li>
+        <li>
+          <b>Aviator sunglasses:</b
+          ><span style="font-weight: 400">
+            Aviator sunglasses are a great choice of eyewear for diamond faces
+            as the curved, tear-drop style of these glasses helps to soften the
+            sharp and contoured features of this face shape. The aviator lens
+            shape is designed to cover as much of the eye as possible for
+            maximum sun protection. Aviator sunglasses are another enduring
+            style of sunglasses, fashionable for any occasion or season.</span
+          >
+          <ul></ul>
+          <b></b>
+        </li>
+        <li>
+          <b>Browline sunglasses: </b
+          ><span style="font-weight: 400"
+            >Browline sunglasses describe a frame in which the top half of the
+            frame rim is darker, and thicker than the bottom. A browline frame
+            helps to bring attention to the upper portion of a diamond face and
+            balance out the wider cheekbones and tapered chin. The shape of the
+            lenses in a browline frame, oval or rectangle, help to give good
+            coverage and protect your eyes from the sun.</span
+          >
+        </li>
+      </ul>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >The colour choice when picking sunglasses for a diamond shaped face
+          are important. Darker colours like blacks or browns, particularly near
+          the top of the frame, make the sunglasses stand out on the top half of
+          the face, drawing attention away from the cheeks and tapered chin.
+          This helps to bring some new dimension to the face. Patterns like
+          tortoise shell and floral work with a diamond shaped face.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >Cat-eye is generally considered a more feminine frame, however, its
+          powerful ability to shape the upper portion of the face works just as
+          well on a masculine face as it does a feminine face. Cat-eye,
+          browline, oval and aviator sunglasses all work on feminine and
+          masculine faces, helping to soften the features and bring balance to
+          the face, whilst providing adequate eye coverage for sun and UV ray
+          protection.</span
+        >
+      </p>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >At Oscar Wylee, most of our glasses frames can be made into
+          sunglasses, prescription or non-prescription.</span
+        >
+      </p>
+    </section>
+    <section class="square-section">
+      <h2 class="subtitle">
+        What are the Glasses that are Not Good for Diamond Face Shape?
+      </h2>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >The glasses that are not suitable for a diamond face shape are </span
+        ><b
+          >undersized glasses, oversized glasses or those that are overly sharp
+          and angular.</b
+        ><span style="font-weight: 400">
+          These frames alter the dimensions of the face in a way that is not as
+          flattering as some other frame shapes. The frame shapes that are not
+          recommended for diamond shaped faces are listed below.</span
+        >
+      </p>
+      <ul class="ordered-list">
+        <li>
+          <span class="list-title">Oversized:</span> Oversized glasses make the
+          features of a diamond face appear very close together, narrowing the
+          forehead and the jawline. When picking glasses for diamond face
+          shapes, the goal is to balance the face. An oversized frame will not
+          achieve this balanced look, making features that should be widened
+          appear smaller.
+        </li>
+        <li>
+          <b>Undersized glasses: </b
+          ><span style="font-weight: 400"
+            >Undersized glasses distort the proportions of a diamond face by
+            making it appear wide. A diamond face shape is characterised by its
+            wide, defined cheeks, which an undersized frame accentuates, giving
+            width to areas of the face that should be minimised.</span
+          >
+          <ul></ul>
+          <b></b>
+        </li>
+        <li>
+          <b>Sharp, angular glasses:</b
+          ><span style="font-weight: 400">
+            Some angles on a diamond face, such as those from a rectangular
+            frame, help to complement sharp features, however, too many angles
+            or an overly defined frame, overemphasise the contoured lines. This
+            makes the face appear harsher in structure.</span
+          >
+        </li>
+      </ul>
+    </section>
+    <section class="square-section">
+      <h2 class="subtitle">
+        What are the Prices of Glasses for Diamond Faces?
+      </h2>
+      <p class="para-content">
+        <span
+          >At Oscar Wylee, a standard pair of optical glasses starts from $169,
+          with two pairs from $199 and three pairs from $249.</span
+        >
+      </p>
+      <div class="sub-div">
+        <h3 class="sub-div-h4">Where to Buy Glasses for Diamond Faces?</h3>
+        <p class="para-content">
+          <span
+            >At Oscar Wylee, we have a range of glasses suitable for diamond
+            faces. We carry rectangle, square, cat-eye, oval and round glasses
+            which are great frame choices for a diamond shaped face.&nbsp;</span
+          ><a href="https://www.oscarwylee.com.au/">Shop the range online</a
+          ><span>&nbsp;or in-store.</span>
+        </p>
+      </div>
+    </section>
+    <section class="square-section">
+      <h2 class="subtitle" id="Diamond">
+        How to Understand Whether You Have a Diamond face or Not?
+      </h2>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >To find out whether you have a diamond face, you need to measure the
+          face and consider the characteristics of your facial features. To find
+          out the shape of a face when measuring it, there are four main areas
+          to estimate; the forehead, the cheekbones, the jaw line and the length
+          of the face from chin to hairline. If the cheeks are the widest part
+          of your face, with the forehead narrow, the jawline narrow, and the
+          chin tapering to a point, you have a diamond face shape. The features
+          of a diamond face shape are sharp and contoured. The forehead of
+          someone with a diamond shaped face is smaller than a person with a
+          heart shaped face.</span
+        >
+      </p>
+      <div class="flex-wrapper">
+        <div class="flex-left">
+          <p class="para-content">
+            <span style="font-weight: 400"
+              >To determine if you have a diamond face you should follow the
+              instructions below.</span
+            >
+          </p>
+          <ol class="ordered-list">
+            <li>
+              Measure the length of your face from the tip of the chin to the
+              centre of the hairline.
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >Measure the width of your face, across the forehead, the cheeks
+                and the jawline. If your cheeks are the widest part of your
+                face, with your jawline significantly smaller and the forehead
+                also narrow, you have a diamond shaped face.</span
+              >
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >Consider the defining characteristics of a diamond face and if
+                you have these features.&nbsp;</span
+              >
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              <span style="font-weight: 400"
+                >Ask the questions: Is your face sharp and contoured, is your
+                jawline tapered into a point, are your forehead and hairline
+                narrow? If the answer to these questions are yes, you may have a
+                diamond shaped face.
+              </span>
+            </li>
+          </ol>
+        </div>
+        <div class="lex-right">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Diamond_Face_Diagram.jpg'}}"
+            alt="Diamond face sketch"
+            class="flex-image"
+          />
+        </div>
+      </div>
+      <div class="sub-div">
+        <h3 class="sub-div-h4">
+          How to Choose Best Glasses for Different Face Shapes?
+        </h3>
+        <p class="para-content">
+          <span>The way to choose the&nbsp;</span
+          ><a
+            href="https://www.oscarwylee.com.au/glasses/face-shapes"
+            class="linkTo"
+            >best glasses for different face shapes</a
+          ><span
+            >, is to pick a frame that complements the unique features and
+            structure of that face shape. A frame should work at emphasising
+            certain areas of the face, drawing attention away from other
+            features, to create balance. Just like with a diamond face shape,
+            other face shapes such as round, oval and rectangle have a frame
+            shape that is best suited to their facial features and
+            structure.</span
+          >
+        </p>
+        <p class="para-content">
+          <span style="font-weight: 400"
+            >Once a person has determined what face shape they have, they will
+            be aware what areas of the face to highlight, what features to
+            contour or what areas need some proportioning.&nbsp;</span
+          >
+        </p>
+        <p class="para-content">
+          <span style="font-weight: 400"
+            >When picking a frame for your face shape, consider the
+            following:</span
+          >
+        </p>
+        <ol class="ordered-list">
+          <li>
+            Pick a frame shape that highlights areas that need to be brought
+            forwards or lifted.
+          </li>
+          <li style="font-weight: 400" aria-level="1">
+            <span style="font-weight: 400"
+              >Choose a glasses frame that balances the proportions of your
+              face.&nbsp;</span
+            >
+          </li>
+          <li style="font-weight: 400" aria-level="1">
+            <span style="font-weight: 400"
+              >Pick a frame colour that helps emphasise the enhancing features
+              of your glasses.</span
+            >
+          </li>
+        </ol>
+        <p class="para-content">
+          <span style="font-weight: 400"
+            >At Oscar Wylee, we have a range of different frames to complement a
+            range of face shapes including the diamond face.</span
+          >
+        </p>
+      </div>
+    </section>
+    <!--  CTA aside-->
+    <aside class="intro-section book-section">
+      <div class="book-section-left">
+        <p class="heading">Need a new pair of glasses?</p>
+        <p style="font-size: 16px">
+          Shop our range of stylish and affordable frames, inspired by both
+          vintage and modern designs, online or in-store.
+        </p>
+      </div>
+      <div class="book-section-right">
+        <a href="/glasses.html"><button class="btnOw">Shop glasses</button></a>
+      </div>
+    </aside>
+    <!--  CTA aside-->
+    <section class="square-section">
+      <h2 class="subtitle">
+        What are the Other Accessories for Diamond Faces along with Glasses?
+      </h2>
+      <p class="para-content">
+        <span
+          >The other accessories for a diamond face alongside glasses,
+          include&nbsp;</span
+        ><b>jewellery such as earrings and necklaces, and hair accessories</b
+        ><span
+          >. A diamond face is characterised by a narrow forehead, wide cheeks
+          and tapered chin. The best accessories for a diamond face are those
+          that help to soften the features, reduce attention to the jawline and
+          widen the forehead area to balance out the face. Earrings that drop
+          down and have curves, such as hoop earrings, help to soften the sharp
+          features like the jawline and cheeks. Medium length necklaces help
+          draw attention up towards the forehead and cheeks. Hair accessories
+          such as bands and clips, should be put to the side of a diamond face
+          to help give more width to the eyes and the forehead area, and balance
+          out the face.</span
+        >
+      </p>
+    </section>
+    <section class="square-section">
+      <h2 class="subtitle">
+        Do the Best Glasses for Diamond Faces Change From Year to Year?
+      </h2>
+      <p class="para-content">
+        <span
+          >The best glasses for diamond faces do not change from year to year.
+          The best glasses for diamond faces in 2022 are&nbsp;</span
+        ><b>rectangle, square, cat-eye, oval and round glasses</b
+        ><span
+          >, the same glasses that have always been popular for this face shape.
+          Glasses, whilst an important optical tool to help people see, are also
+          considered a fashion piece. Fashion items tend to come and go in terms
+          of popularity. The best glasses for diamond faces however, are all
+          classic styles that have endured in popularity. The simple designs of
+          rectangle, square, cat-eye, oval and round glasses have solidified
+          them as staples in the fashion and optical worlds. Cat-eye glasses for
+          example, first gained popularity in the 50s, and remain a major
+          fashion piece today.</span
+        >
+      </p>
+    </section>
+    <section class="square-section">
+      <h2 class="subtitle">
+        Example Images of People with Glasses for Diamond Faces
+      </h2>
+      <div class="grid-container example-images grid-container-desktop">
+        <div class="grid-item">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Diamond_Face_Example_1_974x457.jpg'}}"
+            alt="Diamond face model picture"
+            class="grid-image"
+          /><span>Square glasses for a Diamond face</span>
+        </div>
+        <div class="grid-item">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Diamond_Face_Example_2_974x457.jpg'}}"
+            alt="Diamond face model picture"
+            class="grid-image"
+          /><span>Square glasses for a Diamond face</span>
+        </div>
+        <div class="grid-item">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Diamond_Face_Example_3_974x457.jpg'}}"
+            alt="Diamond face model picture"
+            class="grid-image"
+          /><span>Round glasses for a Diamond face</span>
+        </div>
+      </div>
+      <div class="grid-container example-images grid-container-mobile">
+        <div class="grid-item">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Diamond_Face_Example_1_700x500.jpg'}}"
+            alt="Diamond face model photo"
+            class="grid-image"
+          /><span>Square glasses for a Diamond face</span>
+        </div>
+        <div class="grid-item">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Diamond_Face_Example_2_700x500.jpg'}}"
+            alt="Diamond face model photo"
+            class="grid-image"
+          /><span>Square glasses for a Diamond face</span>
+        </div>
+        <div class="grid-item">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/best-glasses-for-diamond-face-shape/Diamond_Face_Example_3_700x500.jpg'}}"
+            alt="Diamond face model photo"
+            class="grid-image"
+          /><span>Round glasses for a Diamond face</span>
+        </div>
+      </div>
+    </section>
+    <section class="square-section">
+      <h2 class="subtitle">
+        What are the Other Face Shapes for Glasses Besides Diamond?
+      </h2>
+      <p class="para-content">
+        <span style="font-weight: 400"
+          >There are several other face shapes for glasses besides a diamond.
+          The other face shapes for glasses include </span
+        ><b>round, oval, pear and heart shaped faces</b
+        ><span style="font-weight: 400"
+          >. Each face shape is unique, and will have frames that are the most
+          complementary and flattering for that shape.</span
+        >
+      </p>
+      <ul class="ordered-list">
+        <li>
+          <span class="list-title">Round face shape:</span><span>&nbsp;</span>A
+          round face shape is circular in nature, characterised by its softer
+          features, smooth lines, full cheeks and wide cheekbones. The<span
+            >&nbsp;</span
+          ><a
+            href="https://www.oscarwylee.com.au/glasses/face-shapes/round"
+            class="linkTo"
+            >best glasses for a round face</a
+          ><span>&nbsp;</span>are square, rectangle and cat-eye as they help to
+          bring angle and structure to the face.
+        </li>
+        <li>
+          <span class="list-title">Oval face shape:</span><span>&nbsp;</span>An
+          oval face shape is similar to a round face shape in that it is
+          circular or rounder in nature. However, an oval face is thinner than a
+          round face. An oval face is longer than it is wide. The<span
+            >&nbsp;</span
+          ><a
+            href="https://www.oscarwylee.com.au/glasses/face-shapes/oval"
+            class="linkTo"
+            >best glasses for an oval face shape</a
+          ><span>&nbsp;</span>are rectangle, square and cat-eye glasses as they
+          help to cut the fullness of this face shape and give it some
+          structure.
+        </li>
+        <li>
+          <span class="list-title">Pear face shape:</span><span>&nbsp;</span>A
+          pear face shape is characterised by a narrow forehead, cheekbones
+          slightly bigger than the forehead and a wide, broad jawline. This face
+          shape resembles a triangle. The<span>&nbsp;</span
+          ><a
+            href="https://www.oscarwylee.com.au/glasses/face-shapes/pear"
+            class="linkTo"
+            >best glasses for a pear face</a
+          ><span>&nbsp;</span>are cat-eye, round and rectangle glasses as they
+          help draw attention to the eyes and balance out the fuller jaw.
+        </li>
+        <li>
+          <span class="list-title">Heart face shape:</span><span>&nbsp;</span>A
+          heart shaped face resembles an inverted or upside down triangle, with
+          a wide forehead area and a pointed chin, with high cheekbones. The
+          best glasses for a heart shaped face are oval, rounded and aviator, as
+          the curves in these frames help to soften sharp features, as well as
+          bring width to the eye area. This helps to balance out the width of
+          the forehead and hairline.
+        </li>
+      </ul>
+      <!-- lang switch start -->
+      <div class="bottom-lag-sw">
+        <p class="para-content">
+          Read Best Glasses for Diamond Face (Male and Female): Frames, Shapes
+          and Types in other Oscar Wylee regions and their languages.
+        </p>
+        <div class="lang-sw bottom">
+          <div class="language-switch">
+            <div
+              class="language-switch-current"
+              id="language-switch-current"
+              onclick="toggleVisibilityBtnTwo()"
+            >
+              <!-- flag -->
+              <img
+                src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+                alt="Best Glasses for Diamond Face (Male and Female): Frames, Shapes and Types in Australian English"
+              />
+              Australia
+              <!-- dropdown icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="5"
+                viewBox="0 0 8 5"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="language-switch-dropdown-itmes-wrapper"
+              id="language-switch-dropdown-itmes-wrapper"
+              style="display: none"
+            >
+              <div class="language-switch-dropdown-itmes">
+                <!-- flag -->
+                <img
+                  src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+                  alt="Best Glasses for Diamond Face (Male and Female): Frames, Shapes and Types in Australian English"
+                />
+                <a
+                  href="https://www.oscarwylee.com.au/glasses/face-shapes/diamond"
+                >
+                  Australia</a
+                >
+              </div>
+              <div class="language-switch-dropdown-itmes">
+                <!-- flag -->
+                <img
+                  src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                  alt="Best Glasses for Diamond Face (Male and Female): Frames, Shapes and Types in Canadian English"
+                />
+                <a href="https://www.oscarwylee.ca/glasses/face-shapes/diamond">
+                  Canada</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- lang switch end -->
+    </section>
+  </div>
+  <!-- add bottom CTA section here -->
+  <aside class="context">
+    <!-- Location and booking  -->
+    <div class="location" style="border-top: none">
+      <div class="locationText">
+        <p class="heading">Come and visit us at Oscar Wylee</p>
+        <p class="contents">
+          Find a store near you and our friendly team can help you shop our
+          range of stylish glasses.
+        </p>
+        <div class="allButton">
+          <a href="/locations/">
+            <button class="btnOw">Find a store</button>
+          </a>
+        </div>
+      </div>
+      <img
+        src="{{media url='wysiwyg/image-folder/glasses/cta/find_a_store.jpg.png'}}"
+        alt="find a location image"
+        class="locationImage"
+      />
+    </div>
+    <div class="location item1">
+      <img
+        src="{{media url='wysiwyg/image-folder/glasses/cta/Eye-Test-Oscar-Wylee-1.jpg'}}"
+        alt="book eye test image"
+        class="locationImage"
+      />
+      <div class="locationText">
+        <p class="heading">Book your next eye exam at Oscar Wylee</p>
+        <p class="contents">
+          If you have private health insurance, your eye exams may be directly
+          billed.
+        </p>
+        <div class="allButton">
+          <a href="/booking">
+            <button class="btnOw">Book an eye test</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
+<p>
+  <script>
+    const productContainers = [
+      ...document.querySelectorAll(".product-container"),
+    ];
+    const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
+    const preBtn = [...document.querySelectorAll(".pre-btn")];
+
+    productContainers.forEach((item, i) => {
+      let containerDimensions = item.getBoundingClientRect();
+      let containerWidth = containerDimensions.width;
+
+      nxtBtn[i].addEventListener("click", () => {
+        item.scrollLeft += containerWidth;
+      });
+
+      preBtn[i].addEventListener("click", () => {
+        item.scrollLeft -= containerWidth;
+      });
+    });
+
+    // top lang-sw
+    document.addEventListener("click", function (event) {
+      var secondBox = document.querySelector(
+        ".language-switch-dropdown-itmes-wrapper"
+      );
+      var firstBox = document.querySelector(".language-switch-current");
+
+      // Check if the clicked element is outside the second box and the first box
+      if (
+        !secondBox.contains(event.target) &&
+        !firstBox.contains(event.target)
+      ) {
+        secondBox.style.display = "none";
+      }
+    });
+
+    function toggleVisibility() {
+      var secondBox = document.querySelector(
+        ".language-switch-dropdown-itmes-wrapper"
+      );
+      secondBox.style.display =
+        secondBox.style.display === "none" ? "flex" : "none";
+    }
+
+    // bottom lang-sw
+    document.addEventListener("click", function (event) {
+      var secondBox = document.querySelector(
+        "#language-switch-dropdown-itmes-wrapper"
+      );
+      var firstBox = document.querySelector("#language-switch-current");
+
+      // Check if the clicked element is outside the second box and the first box
+      if (
+        !secondBox.contains(event.target) &&
+        !firstBox.contains(event.target)
+      ) {
+        secondBox.style.display = "none";
+      }
+    });
+
+    function toggleVisibilityBtnTwo() {
+      var secondBox = document.querySelector(
+        "#language-switch-dropdown-itmes-wrapper"
+      );
+      secondBox.style.display =
+        secondBox.style.display === "none" ? "flex" : "none";
+    }
+  </script>
+</p>
