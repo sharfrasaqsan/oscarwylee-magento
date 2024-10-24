@@ -40,6 +40,16 @@ body {
   display: none;
 }
 
+h1 {
+  font-size: 34px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+
 h2 {
   font-size: 2.6rem;
   line-height: 1.1;
@@ -105,7 +115,7 @@ h5 {
 .book-section {
   display: flex;
   padding-left: 1em;
-  padding-bottom: 2.5em;
+  padding-bottom: 0.5em;
   padding-top: 0em;
 }
 
@@ -122,7 +132,7 @@ h5 {
 .book-section-left .heading {
   font-weight: 500;
   margin-bottom: 0.5em;
-  font-size: 1.5em;
+  font-size: 1.25em;
   padding-bottom: 1em;
 }
 
@@ -371,9 +381,6 @@ h5 {
   line-height: 10px;
 }
 
-.product-right {
-}
-
 .context {
   padding: 0 3rem;
 }
@@ -406,7 +413,7 @@ h5 {
 
 .locationText .heading {
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .locationText {
@@ -629,7 +636,7 @@ h5 {
   .book-section-left .heading {
     text-align: center;
     margin-top: 1.6em;
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin-left: auto;
     margin-right: auto;
     width: 278px;
@@ -637,7 +644,7 @@ h5 {
 
   .book-section-right {
     width: 90%;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
   }
 
   .desktop-banner {
@@ -676,7 +683,7 @@ h5 {
   }
 
   .locationText .heading {
-    text-size: 1.5em;
+    text-size: 1.25em;
     margin-top: 1.9em;
     margin-bottom: -0.5em;
   }
@@ -857,10 +864,11 @@ h5 {
 .publsih-date-wrapper p {
   margin-bottom: 0px;
   color: #003cac;
+  font-weight: 700;
 }
 
 .publsih-date-wrapper p:first-child {
-  border-right: 1.5px solid silver;
+  /* border-right: 1.5px solid silver; */
   margin-right: 20px;
   padding-right: 20px;
 }
@@ -878,6 +886,7 @@ h5 {
   .publsih-date-wrapper p {
     margin-bottom: 8px;
     color: #003cac;
+    font-weight: 700;
   }
 
   .publsih-date-wrapper p:first-child {

@@ -41,6 +41,16 @@
     display: none;
   }
 
+  h1 {
+    font-size: 34px;
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 28px;
+    }
+  }
+
   h2 {
     font-size: 2.6rem;
     line-height: 1.1;
@@ -106,7 +116,7 @@
   .book-section {
     display: flex;
     padding-left: 1em;
-    padding-bottom: 2.5em;
+    padding-bottom: 0.5em;
     padding-top: 0em;
   }
 
@@ -123,7 +133,7 @@
   .book-section-left .heading {
     font-weight: 500;
     margin-bottom: 0.5em;
-    font-size: 1.5em;
+    font-size: 1.25em;
     padding-bottom: 1em;
   }
 
@@ -140,35 +150,32 @@
     text-decoration: none;
   }
 
-  .btnOw:hover {
-    background-color: black;
-    box-shadow: none !important;
-    color: #ffffff !important;
-    border: none !important;
-  }
-
   .btnOw {
     background-color: #003cac;
-    width: 100%;
-    /* padding: 0px 50%; */
-    border: none;
     color: #fff;
-    height: 2em;
-    font-size: 20px;
+    width: 100%;
+    height: 2.5em;
+    font-size: 18px;
     font-weight: 600;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border: 2px solid transparent;
+    border-radius: 25px;
     cursor: pointer;
-    transition: all 1s ease;
-    letter-spacing: 1px;
-    margin: 0 auto;
-    display: flex;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    padding: 0 20px;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 1.5em;
+    transition: all 1s ease;
+  }
+
+  .btnOw:hover {
+    background-color: #001f5c;
+    color: #ffffff;
+    border-color: #001f5c;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15) !important;
   }
 
   .para-content {
@@ -404,7 +411,7 @@
 
   .locationText .heading {
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
   .locationText {
@@ -627,7 +634,7 @@
     .book-section-left .heading {
       text-align: center;
       margin-top: 1.6em;
-      font-size: 1.5em;
+      font-size: 1.25em;
       margin-left: auto;
       margin-right: auto;
       width: 278px;
@@ -635,7 +642,7 @@
 
     .book-section-right {
       width: 90%;
-      margin-bottom: 3em;
+      margin-bottom: 1em;
     }
 
     .desktop-banner {
@@ -670,11 +677,11 @@
     .location {
       display: flex;
       flex-direction: column;
-      padding-bottom: 5em;
+      padding-bottom: 3em;
     }
 
     .locationText .heading {
-      /* text-size: 1.5em; */
+      /* text-size: 1.25em; */
       margin-top: 1.9em;
       margin-bottom: -0.5em;
     }
@@ -859,7 +866,7 @@
   }
 
   .publsih-date-wrapper p:first-child {
-    border-right: 1.5px solid silver;
+    /* border-right: 1.5px solid silver; */
     margin-right: 20px;
     padding-right: 20px;
   }
@@ -877,6 +884,7 @@
     .publsih-date-wrapper p {
       margin-bottom: 8px;
       color: #003cac;
+      font-weight: 700;
     }
 
     .publsih-date-wrapper p:first-child {
@@ -1112,562 +1120,61 @@
       margin-left: 0px;
     }
   }
+
+  /* Product Widget */
+  @media (min-width: 801px), print {
+    .page-layout-1column
+      .page-wrapper
+      .block-products-list
+      .products-grid
+      .widget-product-grid
+      .product-item
+      .label-wrapper
+      .label-container
+      .label-discount {
+      padding: 5px 5px;
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 639px) {
+    .page-layout-1column
+      .page-wrapper
+      .block-products-list
+      .products-grid
+      .widget-product-grid
+      .product-item
+      .label-wrapper
+      .label-container
+      .label-discount {
+      font-size: 8.8px;
+      padding: 0px 5px;
+    }
+  }
 </style>
 
 <div class="article-banner">
-  <img
-    src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Web_Banner_1640x840px.jpeg'}}"
-    alt="Turning off Blue Light on my device"
-    class="banner desktop-banner"
-  />
-  <img
-    src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Mob_Banner_770x900px.jpg'}}"
-    alt="Turning off Blue Light on my device"
-    class="mobile-banner"
-  />
+  <img src="/" alt="Sport sunglasses" class="banner desktop-banner" />
+  <img src="/" alt="Sport sunglasses" class="mobile-banner" />
 </div>
 
-<h1 class="title">How to Turn On and Off Blue Light On iPhone and Android</h1>
+<h1 class="title">Sport Sunglasses: How They Work and Key Features</h1>
 
 <!-- publish date start -->
 <div class="intro-section publsih-date">
   <div class="publsih-date-wrapper">
-    <p>Published on October 23rd, 2024</p>
-    <!-- <p><b>Updated on February 29th, 2024</b></p> -->
+    <p>Published on October 22nd, 2024</p>
+    <!-- <p><b>Updated on August 23rd, 2024</b></p> -->
 
-    <!-- lang switch start -->
-    <div class="lang-sw">
-      <div class="language-switch">
-        <div class="language-switch-current" onclick="toggleVisibility()">
-          <!-- flag -->
-          <img
-            src="{{media url='wysiwyg/NZ_Flag.jpg'}}"
-            alt="How to Turn On and Off Blue Light On iPhone and Android in New Zealand English"
-          />
-          New Zealand
-
-          <!-- dropdown icon -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="8"
-            height="5"
-            viewBox="0 0 8 5"
-            fill="none"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z"
-              fill="black"
-            />
-          </svg>
-        </div>
-
-        <div
-          class="language-switch-dropdown-itmes-wrapper"
-          id="secondBox"
-          style="display: none"
-        >
-          <div class="language-switch-dropdown-itmes">
-            <!-- flag -->
-            <img
-              src="{{media url='wysiwyg/AU_Flag.jpg'}}"
-              alt="How to Turn On and Off Blue Light On iPhone and Android in Australian English"
-            />
-            <a
-              href="https://www.oscarwylee.com.au/glasses/blue-light/how-to-turn-off"
-              >Australia</a
-            >
-          </div>
-
-          <div class="language-switch-dropdown-itmes">
-            <!-- flag -->
-            <img
-              src="{{media url='wysiwyg/NZ_Flag.jpg'}}"
-              alt="How to Turn On and Off Blue Light On iPhone and Android in New Zealand English"
-            />
-            <a
-              href="https://www.oscarwylee.co.nz/glasses/blue-light/how-to-turn-off"
-              >New Zealand
-            </a>
-          </div>
-
-          <div class="language-switch-dropdown-itmes">
-            <!-- flag -->
-            <img
-              src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-              alt="How to Turn On and Off Blue Light On iPhone and Android in Canadian English"
-            />
-            <a href="https://oscarwylee.ca/glasses/blue-light/how-to-turn-off"
-              >Canada</a
-            >
-          </div>
-
-          <div class="language-switch-dropdown-itmes">
-            <!-- flag -->
-            <img
-              src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-              alt="How to Turn On and Off Blue Light On iPhone and Android in Canadian French"
-            />
-            <a
-              href="https://oscarwylee.ca/fr/glasses/blue-light/how-to-turn-off"
-              >Canadian French
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- publish date end -->
-
-<div class="intro-section">
-  <p class="para-content">content</p>
-</div>
-
-<!--  CTA aside-->
-<aside class="intro-section book-section">
-  <div class="book-section-left">
-    <p class="heading">Book your next eye test with our team at Oscar Wylee</p>
-    <p style="font-size: 16px">
-      Look after your eye health at Oscar Wylee and get an eye test with one of
-      our dedicated optometrists.
-    </p>
-  </div>
-  <div class="book-section-right">
-    <a href="/booking"><button class="btnOw">Book an eye test</button></a>
-  </div>
-</aside>
-<!--  CTA aside-->
-
-<!-- a liks start -->
-<div class="a-links">
-  <nav>
-    <a href="#definition">Definition</a>
-    <a href="#iphone">iPhone</a>
-    <a href="#android">Android</a>
-    <a href="#advantages">Advantages</a>
-  </nav>
-</div>
-<!-- a liks end -->
-
-<div class="main-section" id="main-cont-wrapper">
-  <div class="main-section">
-    <section class="square-section">
-      <h2 class="subtitle" id="definition">What is Blue Light?</h2>
-      <p class="para-content">content</p>
-
-      <div class="sub-div">
-        <h3 class="con-title">Is Blue Light harmful to your eyes?</h3>
-        <p class="para-content">content</p>
-      </div>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle" id="iphone">
-        How to Turn On and Off Blue Light on iPhone using Night Shift?
-      </h2>
-      <p class="para-content">content</p>
-
-      <ol class="ordered-list">
-        <li>
-          <span class="list-title">Open Settings:</span> This takes you to where
-          you control the settings on your phone, including the blue light.
-        </li>
-      </ol>
-
-      <div class="sub-div">
-        <h3 class="con-title">1. Open the Settings</h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image1_900x600.jpg'}}"
-              alt="Open the Settings"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image1_900x600.jpg'}}"
-              alt="Open the Settings"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">2. Tap "Display and Brightness"</h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image2_900x600.jpg'}}"
-              alt="Tap 'Display and Brightness'"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image2_900x600.jpg'}}"
-              alt="Tap 'Display and Brightness'"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">3. Click "Night Shift"</h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image3_900x600.jpg'}}"
-              alt="Click 'Night Shift'"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image3_900x600.jpg'}}"
-              alt="Click 'Night Shift'"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          4. You Can Choose Either "Manually Enable Until Tomorrow" or
-        </h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img src="{{media
-            url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image4_900x600.jpg'}}"ow'
-            or" class="product-image" />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image4_900x600.jpg'}}"
-              alt="You can choose either 'Manually Enable Until Tomorrow' or"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">5. You Can Tap "Scheduled"</h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image5_900x600.jpg'}}"
-              alt="You can tap 'Scheduled'"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image5_900x600.jpg'}}"
-              alt="You can tap 'Scheduled'"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="sub-div">
-          <h4 class="con-title">
-            Does "Night Shift" in iPhone Totally Block the Blue Light your
-            Device Emits?
-          </h4>
-          <p class="para-content">content</p>
-        </div>
-
-        <div class="sub-div">
-          <h4 class="con-title">
-            Is it Recommended to Keep "Night Shift" On All the Time?
-          </h4>
-          <p class="para-content">content</p>
-        </div>
-      </div>
-    </section>
-
-    <!--  CTA aside-->
-    <aside class="intro-section book-section">
-      <div class="book-section-left">
-        <p class="heading">Find an Oscar Wylee store near you</p>
-        <p style="font-size: 16px">
-          Come in and see the team at Oscar Wylee for your eye care needs
-          including eye testing and fashionable frames.
-        </p>
-      </div>
-      <div class="book-section-right">
-        <a href="/locations/full-store-list.html"
-          ><button class="btnOw">Find a store</button></a
-        >
-      </div>
-    </aside>
-    <!--  CTA aside-->
-
-    <section class="square-section">
-      <h2 class="subtitle" id="android">
-        How to Turn On and Off Blue Light On Android?
-      </h2>
-      <p class="para-content">content</p>
-
-      <ol class="ordered-list">
-        <li>
-          <span class="list-title">Open the "Settings" on your phone:</span>
-          The Settings holds the controls needed to control blue light.
-        </li>
-      </ol>
-
-      <div class="sub-div">
-        <h3 class="con-title">1. Open the "Settings" On Your Phone</h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image6_900x600.jpg'}}"
-              alt="Open the Settings' on your phone"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image6_900x600.jpg'}}"
-              alt="Open the Settings' on your phone"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">2. Select "Display"</h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image7_900x600.jpg'}}"
-              alt="Select 'Display'"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image7_900x600.jpg'}}"
-              alt="Select 'Display'"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">3. Tap On "Eye Comfort"</h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image8_900x600.jpg'}}"
-              alt="Tap on 'Eye Comfort'"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image8_900x600.jpg'}}"
-              alt="Tap on 'Eye Comfort'"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">4. You Can Select the "Adaptive" Option or</h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image9_900x600.jpg'}}"
-              alt="You can Select 'Adaptive' option or"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image9_900x600.jpg'}}"
-              alt="You can Select 'Adaptive' option or"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          5. Choose Custom to Adjust the Colour Temperature
-        </h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image10_900x600.jpg'}}"
-              alt="Choose Custom to adjust the color temperature"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image10_900x600.jpg'}}"
-              alt="Choose Custom to adjust the color temperature"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          6. Select Schedule to Customise the Schedule of Your Blue Light Filter
-        </h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image11_900x600.jpg'}}"
-              alt="Select Schedule to customise the schedule of your Blue Light Filter"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image11_900x600.jpg'}}"
-              alt="Select Schedule to customise the schedule of your Blue Light Filter"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="sub-div">
-          <h4 class="con-title">
-            Does Blue Light Filter in Android Phones totally block the Blue
-            Light it emits?
-          </h4>
-          <p class="para-content">content</p>
-        </div>
-
-        <div class="sub-div">
-          <h4 class="con-title">
-            Is it Recommended to Keep the Blue Light Filter On All the Time?
-          </h4>
-          <p class="para-content">content</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle" id="advantages">
-        What are the Advantages of Using Blue Light Filter On Your Phone?
-      </h2>
-      <p class="para-content">content</p>
-
-      <ul class="ordered-list">
-        <li>
-          <span class="list-title">Protects the eyes:</span> A Blue light filter
-          on phones can potentially reduce the amount of blue light entering the
-          eye, protecting it from discomfort.
-        </li>
-      </ul>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle" id="care">
-        What are Other Alternatives to Protect Your Eyes from the Blue Light
-        Your Devices Emit?
-      </h2>
-      <p class="para-content">content</p>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          Do Desktop Computers and Laptops also have a Blue Light Filter?
-        </h3>
-        <p class="para-content">content</p>
-      </div>
-
-      <!-- lang switch start -->
-      <div class="bottom-lag-sw">
-        <p class="para-content">
-          Read How to Turn On and Off Blue Light On iPhone and Android in other
-          Oscar Wylee regions and their languages.
-        </p>
-
-        <div class="lang-sw bottom">
+    <!-- <div class="lang-sw">
           <div class="language-switch">
-            <div
-              class="language-switch-current"
-              id="language-switch-current"
-              onclick="toggleVisibilityBtnTwo()"
-            >
-              <!-- flag -->
+            <div class="language-switch-current" onclick="toggleVisibility()">
               <img
-                src="{{media url='wysiwyg/NZ_Flag.jpg'}}"
-                alt="How to Turn On and Off Blue Light On iPhone and Android in New Zealand English"
+                src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+                alt="Sport Sunglasses: How They Work and Key Features in Australian English"
               />
-              New Zealand
+              Australia
 
-              <!-- dropdown icon -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="8"
@@ -1686,61 +1193,351 @@
 
             <div
               class="language-switch-dropdown-itmes-wrapper"
-              id="language-switch-dropdown-itmes-wrapper"
+              id="secondBox"
               style="display: none"
             >
               <div class="language-switch-dropdown-itmes">
-                <!-- flag -->
                 <img
                   src="{{media url='wysiwyg/AU_Flag.jpg'}}"
-                  alt="How to Turn On and Off Blue Light On iPhone and Android in Australian English"
+                  alt="Sport Sunglasses: How They Work and Key Features in Australian English"
                 />
-                <a
-                  href="https://www.oscarwylee.com.au/glasses/blue-light/how-to-turn-off"
-                  >Australia
-                </a>
+                <a href="#"> Australia</a>
               </div>
 
               <div class="language-switch-dropdown-itmes">
-                <!-- flag -->
                 <img
                   src="{{media url='wysiwyg/NZ_Flag.jpg'}}"
-                  alt="How to Turn On and Off Blue Light On iPhone and Android in New Zealand English"
+                  alt="Sport Sunglasses: How They Work and Key Features in New Zealand English"
                 />
-                <a
-                  href="https://www.oscarwylee.co.nz/glasses/blue-light/how-to-turn-off"
-                  >New Zealand</a
-                >
+                <a href="#"> New Zealand</a>
               </div>
 
               <div class="language-switch-dropdown-itmes">
-                <!-- flag -->
                 <img
                   src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-                  alt="How to Turn On and Off Blue Light On iPhone and Android in Canadian English"
+                  alt="Sport Sunglasses: How They Work and Key Features in Canadian English"
                 />
-                <a
-                  href="https://oscarwylee.ca/glasses/blue-light/how-to-turn-off"
-                >
-                  Canada
-                </a>
+                <a href="#"> Canada</a>
               </div>
 
               <div class="language-switch-dropdown-itmes">
-                <!-- flag -->
                 <img
                   src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-                  alt="How to Turn On and Off Blue Light On iPhone and Android in Canadian French"
+                  alt="Sport Sunglasses: How They Work and Key Features in Canadian French"
                 />
-                <a
-                  href="https://oscarwylee.ca/fr/glasses/blue-light/how-to-turn-off"
-                  >Canadian French</a
-                >
+                <a href="#"> Canadian French</a>
               </div>
             </div>
           </div>
+        </div> -->
+  </div>
+</div>
+<!-- publish date end -->
+
+<div class="intro-section">
+  <p class="para-content">Content</p>
+</div>
+
+<!--  CTA aside-->
+<aside class="intro-section book-section">
+  <div class="book-section-left">
+    <p class="heading">Take Care of Your Eyes at Oscar Wylee</p>
+    <p style="font-size: 16px">
+      It is recommended that you have an eye test with an optometrist at least
+      once every 2 years, unless otherwise advised. Book your eye test at Oscar
+      Wylee today.
+    </p>
+  </div>
+  <div class="book-section-right">
+    <a href="/booking"><button class="btnOw">Book an eye test</button></a>
+  </div>
+</aside>
+<!--  CTA aside-->
+
+<!-- a liks start -->
+<div class="a-links">
+  <nav>
+    <a href="#Defintion">Defintion</a>
+    <a href="#Benefits">Benefits</a>
+    <a href="#Features">Key Features</a>
+    <a href="#Aspects">Aspects to Consider</a>
+  </nav>
+</div>
+<!-- a liks end -->
+
+<div class="main-section" id="main-cont-wrapper">
+  <div class="main-section">
+    <section class="square-section">
+      <h2 class="subtitle" id="Defintion">What Are Sport Sunglasses?</h2>
+      <p class="para-content">Content</p>
+    </section>
+
+    <section class="square-section">
+      <h2 class="subtitle" id="Benefits">
+        What are the Benefits of Sports Sunglasses for Different Types of
+        Sports?
+      </h2>
+      <p class="para-content">Content</p>
+
+      <ul class="ordered-list">
+        <li>
+          <span class="list-title">Running:</span>
+          Running is a sport in which sports sunglasses can be beneficial as
+          they can help to provide UV protection, cut glare if polarised and
+          help with vision comfort on brighter days.
+        </li>
+      </ul>
+
+      <div class="sub-div">
+        <h3 class="con-title">What Lens Coatings Can Sport Sunglasses Have?</h3>
+        <p class="para-content">Content</p>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">
+          How Important is Lens Colour for Sport Sunglasses?
+        </h3>
+        <p class="para-content">Content</p>
+
+        <div class="products-section" style="width: 60%; margin: 40px auto">
+          <div class="individual-product" style="margin-bottom: 0px">
+            <img
+              src="/"
+              alt="Four pairs of Oscar Wylee sports glasses with different colour lenses."
+              class="product-image"
+            />
+          </div>
+        </div>
+
+        <div class="products-section-mobile" style="margin-bottom: 40px">
+          <div class="individual-product">
+            <img
+              src="/"
+              alt="Four pairs of Oscar Wylee sports glasses with different colour lenses."
+              class="product-image"
+            />
+          </div>
         </div>
       </div>
+    </section>
+
+    <!--  CTA aside-->
+    <aside class="intro-section book-section">
+      <div class="book-section-left">
+        <p class="heading">Visit an Oscar Wylee Store Near You</p>
+        <p style="font-size: 16px">
+          We have highly qualified teams in-store, dedicated to helping with
+          your eye care needs.
+        </p>
+      </div>
+      <div class="book-section-right">
+        <a href="/locations/full-store-list.html"
+          ><button class="btnOw">Find a store</button></a
+        >
+      </div>
+    </aside>
+    <!--  CTA aside-->
+
+    <section class="square-section">
+      <h2 class="subtitle" id="Features">
+        What are the Key Features of Sport Sunglasses?
+      </h2>
+      <p class="para-content">Content</p>
+
+      <ul class="ordered-list">
+        <li>
+          <span class="list-title">Impact resistant lenses::</span>
+          Impact resistant lenses are a key feature of Oscar Wylee sports
+          sunglasses. Impact resistant lenses help make sure that if a person is
+          playing a sport in which there is contact, or a likelihood of the
+          glasses being hit or coming off the face, they will be less likely to
+          break under the impact.
+        </li>
+      </ul>
+
+      <div class="products-section" style="width: 60%; margin: 40px auto">
+        <div class="individual-product" style="margin-bottom: 0px">
+          <img
+            src="/"
+            alt="A pair of Oscar Wylee sports glasses detailing its key features, including lightweight materials, impact-resistant lenses, anti-slip technology, snap hinges, and single lenses."
+            class="product-image"
+          />
+        </div>
+      </div>
+
+      <div class="products-section-mobile" style="margin-bottom: 40px">
+        <div class="individual-product">
+          <img
+            src="/"
+            alt="A pair of Oscar Wylee sports glasses detailing its key features, including lightweight materials, impact-resistant lenses, anti-slip technology, snap hinges, and single lenses."
+            class="product-image"
+          />
+        </div>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">
+          How do Polarised Lenses Enhance Sport Sunglasses?
+        </h3>
+        <p class="para-content">Content</p>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title" id="Aspects">
+          What Should You Look for When Choosing Athletic Sunglasses?
+        </h3>
+        <p class="para-content">Content</p>
+
+        <ul class="ordered-list">
+          <li>
+            <span class="list-title">Style:</span>
+            There are many different styles of sports sunglasses, including
+            shape, colour and size. A person should consider choosing sports
+            sunglasses that best reflect their personal style, as well as meet
+            their eye care and sporting needs.
+          </li>
+        </ul>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">Do Sport Sunglasses Need Prescription?</h3>
+        <p class="para-content">Content</p>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">
+          How do Sport Sunglasses Differ from Regular Sunglasses?
+        </h3>
+        <p class="para-content">Content</p>
+
+        <div class="products-section" style="width: 60%; margin: 40px auto">
+          <div class="individual-product" style="margin-bottom: 0px">
+            <img
+              src="/"
+              alt="A man wearing a pair of sports sunglasses next to a man wearing a pair of regular sunglasses."
+              class="product-image"
+            />
+          </div>
+        </div>
+
+        <div class="products-section-mobile" style="margin-bottom: 40px">
+          <div class="individual-product">
+            <img
+              src="/"
+              alt="A man wearing a pair of sports sunglasses next to a man wearing a pair of regular sunglasses."
+              class="product-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="square-section">
+      <h2 class="subtitle">What are the Best Sports Sunglasses for Men?</h2>
+      <p class="para-content">Content</p>
+
+      <ul class="ordered-list">
+        <li>
+          <span class="list-title">Nolan:</span>
+          Nolan may be one of the best sports sunglasses for men thanks to its
+          timeless square-shaped design and excellent performance features.
+          Nolan comes with the highest level of protection against UV, provides
+          comfort and resistance to impact.
+        </li>
+      </ul>
+
+      <div class="sub-div">
+        <h3 class="con-title">
+          Which Women's Sport Sunglasses are Most Recommended?
+        </h3>
+        <p class="para-content">Content</p>
+
+        <ul class="ordered-list">
+          <li>
+            <span class="list-title">Genevieve:</span>
+            Genevieve is a recommended sport sunglasses for women with its
+            perfect oval shape that is both flattering and comfortable.
+            Genevieve is durable, flexible, lightweight and features UV 400
+            protection.
+          </li>
+        </ul>
+      </div>
+
+      <!-- lang switch start -->
+      <!-- <div class="bottom-lag-sw">
+            <p class="para-content">
+              Read Sport Sunglasses: How They Work and Key Features in other Oscar Wylee regions and their languages.
+            </p>
+
+            <div class="lang-sw bottom">
+              <div class="language-switch">
+                <div
+                  class="language-switch-current"
+                  id="language-switch-current"
+                  onclick="toggleVisibilityBtnTwo()"
+                >
+                  <img
+                    src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+                    alt="Sport Sunglasses: How They Work and Key Features in Australian English"
+                  />
+                  Australia
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="5"
+                    viewBox="0 0 8 5"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  class="language-switch-dropdown-itmes-wrapper"
+                  id="language-switch-dropdown-itmes-wrapper"
+                  style="display: none"
+                >
+                  <div class="language-switch-dropdown-itmes">
+                    <img
+                      src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+                      alt="Sport Sunglasses: How They Work and Key Features in Australian English"
+                    />
+                    <a href="#"> Australia</a>
+                  </div>
+
+                  <div class="language-switch-dropdown-itmes">
+                    <img
+                      src="{{media url='wysiwyg/NZ_Flag.jpg'}}"
+                      alt="Sport Sunglasses: How They Work and Key Features in New Zealand English"
+                    />
+                    <a href="#"> New Zealand</a>
+                  </div>
+
+                  <div class="language-switch-dropdown-itmes">
+                    <img
+                      src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                      alt="Sport Sunglasses: How They Work and Key Features in Canadian English"
+                    />
+                    <a href="#"> Canada</a>
+                  </div>
+
+                  <div class="language-switch-dropdown-itmes">
+                    <img
+                      src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                      alt="Sport Sunglasses: How They Work and Key Features in Canadian French"
+                    />
+                    <a href="#"> Canadian French</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
       <!-- lang switch end -->
     </section>
   </div>
@@ -1750,33 +1547,35 @@
     <!-- Location and booking  -->
     <div class="location" style="border-top: none">
       <div class="locationText">
-        <p class="heading">Find your local Oscar Wylee store</p>
+        <p class="heading">Oscar Wylee Accepts Major Health Funds In-store</p>
         <p class="contents">
-          Our team can help you shop our range of stylish and affordable frames.
+          Visit Oscar Wylee in-store for eye care services and your health fund
+          may help cover some of the cost.
         </p>
         <div class="allButton">
-          <a href="/health-insurance.html">
-            <button class="btnOw">Explore health insurance</button>
+          <a href="/health-funds.html">
+            <button class="btnOw">Explore Health Funds</button>
           </a>
         </div>
       </div>
       <img
         src="{{media url='wysiwyg/image-folder/glasses/cta/Health-Fund-CTA.jpg'}}"
-        alt="Oscar Wylee Health insurance"
+        alt="find a location image"
         class="locationImage"
       />
     </div>
+
     <div class="location item1">
       <img
         src="{{media url='wysiwyg/image-folder/glasses/cta/Eye-Test-Oscar-Wylee-5.jpg'}}"
-        alt="Oscar Wylee Book an eye test"
+        alt="book eye test image"
         class="locationImage"
       />
       <div class="locationText">
-        <p class="heading">Book an eye test at Oscar Wylee</p>
+        <p class="heading">Prioritise Your Eye Health at Oscar Wylee</p>
         <p class="contents">
-          Our optometrists provide high quality eye tests and assistance for any
-          eye concerns you may have.
+          Oscar Wylee optometrists are available to perform eye tests, bulk
+          billed for eligible Medicare card holders.
         </p>
         <div class="allButton">
           <a href="/booking">

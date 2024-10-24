@@ -41,6 +41,16 @@
     display: none;
   }
 
+  h1 {
+    font-size: 34px;
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 28px;
+    }
+  }
+
   h2 {
     font-size: 2.6rem;
     line-height: 1.1;
@@ -106,7 +116,7 @@
   .book-section {
     display: flex;
     padding-left: 1em;
-    padding-bottom: 2.5em;
+    padding-bottom: 0.5em;
     padding-top: 0em;
   }
 
@@ -123,7 +133,7 @@
   .book-section-left .heading {
     font-weight: 500;
     margin-bottom: 0.5em;
-    font-size: 1.5em;
+    font-size: 1.25em;
     padding-bottom: 1em;
   }
 
@@ -404,7 +414,7 @@
 
   .locationText .heading {
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
   .locationText {
@@ -627,7 +637,7 @@
     .book-section-left .heading {
       text-align: center;
       margin-top: 1.6em;
-      font-size: 1.5em;
+      font-size: 1.25em;
       margin-left: auto;
       margin-right: auto;
       width: 278px;
@@ -635,7 +645,7 @@
 
     .book-section-right {
       width: 90%;
-      margin-bottom: 3em;
+      margin-bottom: 1em;
     }
 
     .desktop-banner {
@@ -674,7 +684,7 @@
     }
 
     .locationText .heading {
-      /* text-size: 1.5em; */
+      /* text-size: 1.25em; */
       margin-top: 1.9em;
       margin-bottom: -0.5em;
     }
@@ -859,7 +869,7 @@
   }
 
   .publsih-date-wrapper p:first-child {
-    border-right: 1.5px solid silver;
+    /* border-right: 1.5px solid silver; */
     margin-right: 20px;
     padding-right: 20px;
   }
@@ -877,6 +887,7 @@
     .publsih-date-wrapper p {
       margin-bottom: 8px;
       color: #003cac;
+      font-weight: 700;
     }
 
     .publsih-date-wrapper p:first-child {
@@ -901,7 +912,7 @@
   }
 
   .language-switch {
-    width: 164px;
+    width: 175px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1030,7 +1041,7 @@
   }
 
   .bottom .language-switch {
-    width: 164px;
+    width: 175px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1116,24 +1127,25 @@
 
 <div class="article-banner">
   <img
-    src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Web_Banner_1640x840px.jpeg'}}"
-    alt="Turning off Blue Light on my device"
+    src="assets/Iris-Anatomy-Function-and-Iris-related-Conditions-Oscar-Wylee-1640x940.jpg"
+    alt="Inflammation des paupières (blépharite)"
     class="banner desktop-banner"
   />
   <img
-    src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Mob_Banner_770x900px.jpg'}}"
-    alt="Turning off Blue Light on my device"
+    src="assets/Iris-Anatomy-Function-and-Iris-related-Conditions-Oscar-Wylee-770x990.jpg"
+    alt="Inflammation des paupières (blépharite)"
     class="mobile-banner"
   />
 </div>
 
-<h1 class="title">How to Turn On and Off Blue Light On iPhone and Android</h1>
+<h1 class="title">
+  Flashs lumineux au coin de l’œil : origine, causes et traitement
+</h1>
 
 <!-- publish date start -->
 <div class="intro-section publsih-date">
   <div class="publsih-date-wrapper">
-    <p>Published on October 23rd, 2024</p>
-    <!-- <p><b>Updated on February 29th, 2024</b></p> -->
+    <p>Publié le 11 Octobre 2024</p>
 
     <!-- lang switch start -->
     <div class="lang-sw">
@@ -1141,10 +1153,10 @@
         <div class="language-switch-current" onclick="toggleVisibility()">
           <!-- flag -->
           <img
-            src="{{media url='wysiwyg/NZ_Flag.jpg'}}"
-            alt="How to Turn On and Off Blue Light On iPhone and Android in New Zealand English"
+            src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+            alt=" en français canadien"
           />
-          New Zealand
+          Français canadien
 
           <!-- dropdown icon -->
           <svg
@@ -1169,50 +1181,39 @@
           style="display: none"
         >
           <div class="language-switch-dropdown-itmes">
-            <!-- flag -->
             <img
               src="{{media url='wysiwyg/AU_Flag.jpg'}}"
-              alt="How to Turn On and Off Blue Light On iPhone and Android in Australian English"
+              alt="Flashs lumineux au coin de l’œil : origine, causes et traitement en français canadien "
             />
             <a
-              href="https://www.oscarwylee.com.au/glasses/blue-light/how-to-turn-off"
-              >Australia</a
+              href="https://www.oscarwylee.com.au/glasses/eye/seeing-flashing-lights-in-corner-of-eye"
+            >
+              Australie</a
             >
           </div>
 
           <div class="language-switch-dropdown-itmes">
-            <!-- flag -->
-            <img
-              src="{{media url='wysiwyg/NZ_Flag.jpg'}}"
-              alt="How to Turn On and Off Blue Light On iPhone and Android in New Zealand English"
-            />
-            <a
-              href="https://www.oscarwylee.co.nz/glasses/blue-light/how-to-turn-off"
-              >New Zealand
-            </a>
-          </div>
-
-          <div class="language-switch-dropdown-itmes">
-            <!-- flag -->
             <img
               src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-              alt="How to Turn On and Off Blue Light On iPhone and Android in Canadian English"
+              alt="Flashs lumineux au coin de l’œil : origine, causes et traitement en anglais canadien"
             />
-            <a href="https://oscarwylee.ca/glasses/blue-light/how-to-turn-off"
-              >Canada</a
+            <a
+              href="https://oscarwylee.ca/glasses/eye/seeing-flashing-lights-in-corner-of-eye"
+            >
+              Canada</a
             >
           </div>
 
           <div class="language-switch-dropdown-itmes">
-            <!-- flag -->
             <img
               src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-              alt="How to Turn On and Off Blue Light On iPhone and Android in Canadian French"
+              alt="Flashs lumineux au coin de l’œil : origine, causes et traitement en français canadien"
             />
             <a
-              href="https://oscarwylee.ca/fr/glasses/blue-light/how-to-turn-off"
-              >Canadian French
-            </a>
+              href="https://oscarwylee.ca/fr/glasses/eye/seeing-flashing-lights-in-corner-of-eye"
+            >
+              Français canadien</a
+            >
           </div>
         </div>
       </div>
@@ -1222,20 +1223,23 @@
 <!-- publish date end -->
 
 <div class="intro-section">
-  <p class="para-content">content</p>
+  <p class="para-content">Content</p>
 </div>
 
 <!--  CTA aside-->
 <aside class="intro-section book-section">
   <div class="book-section-left">
-    <p class="heading">Book your next eye test with our team at Oscar Wylee</p>
+    <p class="heading">Il est temps de passer un examen de la vue ?</p>
     <p style="font-size: 16px">
-      Look after your eye health at Oscar Wylee and get an eye test with one of
-      our dedicated optometrists.
+      Réservez un examen de la vue avec des optométristes indépendants basés
+      chez Oscar Wylee, qui vous aideront à prendre votre santé oculaire en
+      main.
     </p>
   </div>
   <div class="book-section-right">
-    <a href="/booking"><button class="btnOw">Book an eye test</button></a>
+    <a href="/fr/booking"
+      ><button class="btnOw">Réserver un examen de la vue</button></a
+    >
   </div>
 </aside>
 <!--  CTA aside-->
@@ -1243,10 +1247,10 @@
 <!-- a liks start -->
 <div class="a-links">
   <nav>
-    <a href="#definition">Definition</a>
-    <a href="#iphone">iPhone</a>
-    <a href="#android">Android</a>
-    <a href="#advantages">Advantages</a>
+    <a href="#Définition">Définition</a>
+    <a href="#Causes">Causes</a>
+    <a href="#Traitements">Traitements</a>
+    <a href="#Quand">Quand faut-il consulter</a>
   </nav>
 </div>
 <!-- a liks end -->
@@ -1254,137 +1258,130 @@
 <div class="main-section" id="main-cont-wrapper">
   <div class="main-section">
     <section class="square-section">
-      <h2 class="subtitle" id="definition">What is Blue Light?</h2>
-      <p class="para-content">content</p>
-
-      <div class="sub-div">
-        <h3 class="con-title">Is Blue Light harmful to your eyes?</h3>
-        <p class="para-content">content</p>
-      </div>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle" id="iphone">
-        How to Turn On and Off Blue Light on iPhone using Night Shift?
+      <h2 class="subtitle" id="Définition">
+        Que signifient les flashs lumineux au coin de l’œil ?
       </h2>
-      <p class="para-content">content</p>
+      <p class="para-content">Content</p>
 
-      <ol class="ordered-list">
-        <li>
-          <span class="list-title">Open Settings:</span> This takes you to where
-          you control the settings on your phone, including the blue light.
-        </li>
-      </ol>
-
-      <div class="sub-div">
-        <h3 class="con-title">1. Open the Settings</h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image1_900x600.jpg'}}"
-              alt="Open the Settings"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image1_900x600.jpg'}}"
-              alt="Open the Settings"
-              class="product-image"
-            />
-          </div>
+      <div class="products-section" style="width: 60%; margin: 40px auto">
+        <div class="individual-product" style="margin-bottom: 0px">
+          <img
+            src="assets/01-Structure-of-the-Iris-900x600.jpg"
+            alt="Un flash lumineux tel qu’il sera vu dans le champ de vision d’une personne."
+            class="product-image"
+          />
         </div>
       </div>
 
-      <div class="sub-div">
-        <h3 class="con-title">2. Tap "Display and Brightness"</h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image2_900x600.jpg'}}"
-              alt="Tap 'Display and Brightness'"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image2_900x600.jpg'}}"
-              alt="Tap 'Display and Brightness'"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">3. Click "Night Shift"</h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image3_900x600.jpg'}}"
-              alt="Click 'Night Shift'"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image3_900x600.jpg'}}"
-              alt="Click 'Night Shift'"
-              class="product-image"
-            />
-          </div>
+      <div class="products-section-mobile" style="margin-bottom: 40px">
+        <div class="individual-product">
+          <img
+            src="assets/01-Structure-of-the-Iris-900x600.jpg"
+            alt="Un flash lumineux tel qu’il sera vu dans le champ de vision d’une personne."
+            class="product-image"
+          />
         </div>
       </div>
 
       <div class="sub-div">
         <h3 class="con-title">
-          4. You Can Choose Either "Manually Enable Until Tomorrow" or
+          Quelle partie de l’œil est touchée par les flashs lumineux au coin de
+          l’œil ?
         </h3>
-        <p class="para-content">content</p>
+        <p class="para-content">Content</p>
 
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img src="{{media
-            url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image4_900x600.jpg'}}"ow'
-            or" class="product-image" />
+        <div class="sub-div">
+          <h4 class="con-title">
+            Les flashs lumineux et les mouches volantes (corps flottants)
+            sont-ils la même chose ?
+          </h4>
+          <p class="para-content">Content</p>
+
+          <div class="products-section" style="width: 60%; margin: 40px auto">
+            <div class="individual-product" style="margin-bottom: 0px">
+              <img
+                src="assets/01-Structure-of-the-Iris-900x600.jpg"
+                alt="Une image montrant des flashs lumineux comparée à une image montrant des mouches volantes qui marque la différence entre les deux."
+                class="product-image"
+              />
+            </div>
           </div>
-        </div>
 
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image4_900x600.jpg'}}"
-              alt="You can choose either 'Manually Enable Until Tomorrow' or"
-              class="product-image"
-            />
+          <div class="products-section-mobile" style="margin-bottom: 40px">
+            <div class="individual-product">
+              <img
+                src="assets/01-Structure-of-the-Iris-900x600.jpg"
+                alt="Une image montrant des flashs lumineux comparée à une image montrant des mouches volantes qui marque la différence entre les deux."
+                class="product-image"
+              />
+            </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="square-section">
+      <h2 class="subtitle" id="Causes">
+        Quelles sont les causes des flashs lumineux au coin de l’œil ?
+      </h2>
+      <p class="para-content">Content</p>
+
+      <ul class="ordered-list">
+        <li>
+          <span class="list-title"
+            >Le décollement postérieur du vitré (DPV) :
+          </span>
+          Le décollement postérieur du vitré (DPV) est une affection dans
+          laquelle le liquide du corps vitré se décolle de la rétine, ce qui
+          provoque des flashs lumineux au coin de l’œil.
+        </li>
+      </ul>
 
       <div class="sub-div">
-        <h3 class="con-title">5. You Can Tap "Scheduled"</h3>
-        <p class="para-content">content</p>
+        <h3 class="con-title">1. Le décollement postérieur du vitré (DPV)</h3>
+        <p class="para-content">Content</p>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">2. Les traumas oculaires</h3>
+        <p class="para-content">Content</p>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">3. Le décollement de la rétine</h3>
+        <p class="para-content">Content</p>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">4. La migraine</h3>
+        <p class="para-content">Content</p>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">5. Le syndrome de Stickler</h3>
+        <p class="para-content">Content</p>
+      </div>
+    </section>
+
+    <section class="square-section">
+      <h2 class="subtitle">
+        Quelle est la fréquence des flashs lumineux dans le champ de vision
+        périphérique ?
+      </h2>
+      <p class="para-content">Content</p>
+
+      <div class="sub-div">
+        <h3 class="con-title">
+          Dans quelle mesure les flashs lumineux au coin de l’œil sont-ils
+          graves ?
+        </h3>
+        <p class="para-content">Content</p>
 
         <div class="products-section" style="width: 60%; margin: 40px auto">
           <div class="individual-product" style="margin-bottom: 0px">
             <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image5_900x600.jpg'}}"
-              alt="You can tap 'Scheduled'"
+              src="assets/01-Structure-of-the-Iris-900x600.jpg"
+              alt="Diagramme d’un œil montrant un décollement postérieur du vitré provoquant des flashs lumineux."
               class="product-image"
             />
           </div>
@@ -1393,8 +1390,8 @@
         <div class="products-section-mobile" style="margin-bottom: 40px">
           <div class="individual-product">
             <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image5_900x600.jpg'}}"
-              alt="You can tap 'Scheduled'"
+              src="assets/01-Structure-of-the-Iris-900x600.jpg"
+              alt="Diagramme d’un œil montrant un décollement postérieur du vitré provoquant des flashs lumineux."
               class="product-image"
             />
           </div>
@@ -1402,17 +1399,17 @@
 
         <div class="sub-div">
           <h4 class="con-title">
-            Does "Night Shift" in iPhone Totally Block the Blue Light your
-            Device Emits?
+            Les flashs lumineux au coin de l’œil sont-ils le symptôme d’une
+            maladie oculaire ?
           </h4>
-          <p class="para-content">content</p>
+          <p class="para-content">Content</p>
         </div>
 
         <div class="sub-div">
           <h4 class="con-title">
-            Is it Recommended to Keep "Night Shift" On All the Time?
+            Les flashs lumineux peuvent-ils être inoffensifs ?
           </h4>
-          <p class="para-content">content</p>
+          <p class="para-content">Content</p>
         </div>
       </div>
     </section>
@@ -1420,237 +1417,62 @@
     <!--  CTA aside-->
     <aside class="intro-section book-section">
       <div class="book-section-left">
-        <p class="heading">Find an Oscar Wylee store near you</p>
+        <p class="heading">Besoin de mettre votre ordonnance à jour ?</p>
         <p style="font-size: 16px">
-          Come in and see the team at Oscar Wylee for your eye care needs
-          including eye testing and fashionable frames.
+          Visitez un magasin Oscar Wylee près de chez vous où des optométristes
+          indépendants vous aideront à recevoir une nouvelle ordonnance et nos
+          vendeurs vous assisteront pour magasiner vos montures.
         </p>
       </div>
       <div class="book-section-right">
-        <a href="/locations/full-store-list.html"
-          ><button class="btnOw">Find a store</button></a
+        <a href="/fr/locations/"
+          ><button class="btnOw">Trouver un magasin</button></a
         >
       </div>
     </aside>
     <!--  CTA aside-->
 
     <section class="square-section">
-      <h2 class="subtitle" id="android">
-        How to Turn On and Off Blue Light On Android?
+      <h2 class="subtitle" id="Traitements">
+        Comment traite-t-on les flashs lumineux au coin de l’œil ?
       </h2>
-      <p class="para-content">content</p>
-
-      <ol class="ordered-list">
-        <li>
-          <span class="list-title">Open the "Settings" on your phone:</span>
-          The Settings holds the controls needed to control blue light.
-        </li>
-      </ol>
-
-      <div class="sub-div">
-        <h3 class="con-title">1. Open the "Settings" On Your Phone</h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image6_900x600.jpg'}}"
-              alt="Open the Settings' on your phone"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image6_900x600.jpg'}}"
-              alt="Open the Settings' on your phone"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">2. Select "Display"</h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image7_900x600.jpg'}}"
-              alt="Select 'Display'"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image7_900x600.jpg'}}"
-              alt="Select 'Display'"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">3. Tap On "Eye Comfort"</h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image8_900x600.jpg'}}"
-              alt="Tap on 'Eye Comfort'"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image8_900x600.jpg'}}"
-              alt="Tap on 'Eye Comfort'"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">4. You Can Select the "Adaptive" Option or</h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image9_900x600.jpg'}}"
-              alt="You can Select 'Adaptive' option or"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image9_900x600.jpg'}}"
-              alt="You can Select 'Adaptive' option or"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
+      <p class="para-content">Content</p>
 
       <div class="sub-div">
         <h3 class="con-title">
-          5. Choose Custom to Adjust the Colour Temperature
+          Quelle est la durée du traitement des flashs lumineux dans le champ de
+          vision périphérique ?
         </h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image10_900x600.jpg'}}"
-              alt="Choose Custom to adjust the color temperature"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image10_900x600.jpg'}}"
-              alt="Choose Custom to adjust the color temperature"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          6. Select Schedule to Customise the Schedule of Your Blue Light Filter
-        </h3>
-        <p class="para-content">content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image11_900x600.jpg'}}"
-              alt="Select Schedule to customise the schedule of your Blue Light Filter"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="{{media url='wysiwyg/image-folder/glasses/blue-light/how-to-turn-off/Blue_Light_Image11_900x600.jpg'}}"
-              alt="Select Schedule to customise the schedule of your Blue Light Filter"
-              class="product-image"
-            />
-          </div>
-        </div>
+        <p class="para-content">Content</p>
 
         <div class="sub-div">
           <h4 class="con-title">
-            Does Blue Light Filter in Android Phones totally block the Blue
-            Light it emits?
+            Les flashs lumineux peuvent-ils être traités de façon permanente ?
           </h4>
-          <p class="para-content">content</p>
-        </div>
-
-        <div class="sub-div">
-          <h4 class="con-title">
-            Is it Recommended to Keep the Blue Light Filter On All the Time?
-          </h4>
-          <p class="para-content">content</p>
+          <p class="para-content">Content</p>
         </div>
       </div>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle" id="advantages">
-        What are the Advantages of Using Blue Light Filter On Your Phone?
-      </h2>
-      <p class="para-content">content</p>
-
-      <ul class="ordered-list">
-        <li>
-          <span class="list-title">Protects the eyes:</span> A Blue light filter
-          on phones can potentially reduce the amount of blue light entering the
-          eye, protecting it from discomfort.
-        </li>
-      </ul>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle" id="care">
-        What are Other Alternatives to Protect Your Eyes from the Blue Light
-        Your Devices Emit?
-      </h2>
-      <p class="para-content">content</p>
 
       <div class="sub-div">
         <h3 class="con-title">
-          Do Desktop Computers and Laptops also have a Blue Light Filter?
+          Comment prévenir l’apparition des flashs lumineux au coin de l’œil ?
         </h3>
-        <p class="para-content">content</p>
+        <p class="para-content">Content</p>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title" id="Quand">
+          Quand faut-il consulter un médecin pour des flashs lumineux au coin de
+          l’œil ?
+        </h3>
+        <p class="para-content">Content</p>
       </div>
 
       <!-- lang switch start -->
       <div class="bottom-lag-sw">
         <p class="para-content">
-          Read How to Turn On and Off Blue Light On iPhone and Android in other
-          Oscar Wylee regions and their languages.
+          Lisez Flashs lumineux au coin de l’œil : origine, causes et traitement
+          et régions où Oscar Wylee est présent
         </p>
 
         <div class="lang-sw bottom">
@@ -1662,10 +1484,10 @@
             >
               <!-- flag -->
               <img
-                src="{{media url='wysiwyg/NZ_Flag.jpg'}}"
-                alt="How to Turn On and Off Blue Light On iPhone and Android in New Zealand English"
+                src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                alt=" en français canadien"
               />
-              New Zealand
+              Français canadien
 
               <!-- dropdown icon -->
               <svg
@@ -1690,51 +1512,38 @@
               style="display: none"
             >
               <div class="language-switch-dropdown-itmes">
-                <!-- flag -->
                 <img
                   src="{{media url='wysiwyg/AU_Flag.jpg'}}"
-                  alt="How to Turn On and Off Blue Light On iPhone and Android in Australian English"
+                  alt="Flashs lumineux au coin de l’œil : origine, causes et traitement en français canadien "
                 />
                 <a
-                  href="https://www.oscarwylee.com.au/glasses/blue-light/how-to-turn-off"
-                  >Australia
-                </a>
-              </div>
-
-              <div class="language-switch-dropdown-itmes">
-                <!-- flag -->
-                <img
-                  src="{{media url='wysiwyg/NZ_Flag.jpg'}}"
-                  alt="How to Turn On and Off Blue Light On iPhone and Android in New Zealand English"
-                />
-                <a
-                  href="https://www.oscarwylee.co.nz/glasses/blue-light/how-to-turn-off"
-                  >New Zealand</a
+                  href="https://www.oscarwylee.com.au/glasses/eye/seeing-flashing-lights-in-corner-of-eye"
+                >
+                  Australie</a
                 >
               </div>
 
               <div class="language-switch-dropdown-itmes">
-                <!-- flag -->
                 <img
                   src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-                  alt="How to Turn On and Off Blue Light On iPhone and Android in Canadian English"
+                  alt="Flashs lumineux au coin de l’œil : origine, causes et traitement en anglais canadien"
                 />
                 <a
-                  href="https://oscarwylee.ca/glasses/blue-light/how-to-turn-off"
+                  href="https://oscarwylee.ca/glasses/eye/seeing-flashing-lights-in-corner-of-eye"
                 >
-                  Canada
-                </a>
+                  Canada</a
+                >
               </div>
 
               <div class="language-switch-dropdown-itmes">
-                <!-- flag -->
                 <img
                   src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-                  alt="How to Turn On and Off Blue Light On iPhone and Android in Canadian French"
+                  alt="Flashs lumineux au coin de l’œil : origine, causes et traitement en français canadien"
                 />
                 <a
-                  href="https://oscarwylee.ca/fr/glasses/blue-light/how-to-turn-off"
-                  >Canadian French</a
+                  href="https://oscarwylee.ca/fr/glasses/eye/seeing-flashing-lights-in-corner-of-eye"
+                >
+                  Français canadien</a
                 >
               </div>
             </div>
@@ -1750,37 +1559,43 @@
     <!-- Location and booking  -->
     <div class="location" style="border-top: none">
       <div class="locationText">
-        <p class="heading">Find your local Oscar Wylee store</p>
+        <p class="heading">
+          Chez Oscar Wylee, donnez la priorité à votre santé oculaire
+        </p>
         <p class="contents">
-          Our team can help you shop our range of stylish and affordable frames.
+          Des optométristes indépendants sont disponibles pour réaliser des
+          examens de la vue chez Oscar Wylee
         </p>
         <div class="allButton">
-          <a href="/health-insurance.html">
-            <button class="btnOw">Explore health insurance</button>
+          <a href="/fr/health-insurance/">
+            <button class="btnOw">Explorer l’assurance santé</button>
           </a>
         </div>
       </div>
       <img
-        src="{{media url='wysiwyg/image-folder/glasses/cta/Health-Fund-CTA.jpg'}}"
-        alt="Oscar Wylee Health insurance"
+        src="{{media url='wysiwyg/image-folder/glasses/cta/Assurance-sante.jpg'}}"
+        alt="Explorer l’assurance santé"
         class="locationImage"
       />
     </div>
     <div class="location item1">
       <img
-        src="{{media url='wysiwyg/image-folder/glasses/cta/Eye-Test-Oscar-Wylee-5.jpg'}}"
-        alt="Oscar Wylee Book an eye test"
+        src="{{media url='wysiwyg/image-folder/glasses/cta/Eye-Test-Oscar-Wylee-1.jpg'}}"
+        alt="Réserver un examen de la vue"
         class="locationImage"
       />
       <div class="locationText">
-        <p class="heading">Book an eye test at Oscar Wylee</p>
+        <p class="heading">
+          À la recherche de votre prochaine paire de lunettes ?
+        </p>
         <p class="contents">
-          Our optometrists provide high quality eye tests and assistance for any
-          eye concerns you may have.
+          Trouvez le magasin Oscar Wylee le plus près de chez vous où notre
+          équipe sympathique vous aidera à trouver les lunettes qui vous
+          conviennent le mieux.
         </p>
         <div class="allButton">
-          <a href="/booking">
-            <button class="btnOw">Book an eye test</button>
+          <a href="/fr/booking">
+            <button class="btnOw">Réserver un examen de la vue</button>
           </a>
         </div>
       </div>
