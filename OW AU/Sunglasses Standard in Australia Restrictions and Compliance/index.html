@@ -150,35 +150,32 @@
     text-decoration: none;
   }
 
-  .btnOw:hover {
-    background-color: black;
-    box-shadow: none !important;
-    color: #ffffff !important;
-    border: none !important;
-  }
-
   .btnOw {
     background-color: #003cac;
-    width: 100%;
-    /* padding: 0px 50%; */
-    border: none;
     color: #fff;
-    height: 2em;
-    font-size: 20px;
+    width: 100%;
+    height: 2.5em;
+    font-size: 18px;
     font-weight: 600;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border: 2px solid transparent;
+    border-radius: 25px;
     cursor: pointer;
-    transition: all 1s ease;
-    letter-spacing: 1px;
-    margin: 0 auto;
-    display: flex;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    padding: 0 20px;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 1.5em;
+    transition: all 1s ease;
+  }
+
+  .btnOw:hover {
+    background-color: #001f5c;
+    color: #ffffff;
+    border-color: #001f5c;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15) !important;
   }
 
   .para-content {
@@ -680,7 +677,7 @@
     .location {
       display: flex;
       flex-direction: column;
-      padding-bottom: 5em;
+      padding-bottom: 3em;
     }
 
     .locationText .heading {
@@ -912,7 +909,7 @@
   }
 
   .language-switch {
-    width: 175px;
+    width: 164px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1041,7 +1038,7 @@
   }
 
   .bottom .language-switch {
-    width: 175px;
+    width: 164px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1123,515 +1120,71 @@
       margin-left: 0px;
     }
   }
+
+  /* Product Widget */
+  @media (min-width: 801px), print {
+    .page-layout-1column
+      .page-wrapper
+      .block-products-list
+      .products-grid
+      .widget-product-grid
+      .product-item
+      .label-wrapper
+      .label-container
+      .label-discount {
+      padding: 5px 5px;
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 639px) {
+    .page-layout-1column
+      .page-wrapper
+      .block-products-list
+      .products-grid
+      .widget-product-grid
+      .product-item
+      .label-wrapper
+      .label-container
+      .label-discount {
+      font-size: 8.8px;
+      padding: 0px 5px;
+    }
+  }
 </style>
 
 <div class="article-banner">
   <img
     src="/"
-    alt="Inflammation des paupières (blépharite)"
+    alt="Sunglasses with UV protection meeting Australian safety standards"
     class="banner desktop-banner"
   />
   <img
     src="/"
-    alt="Inflammation des paupières (blépharite)"
+    alt="Sunglasses with UV protection meeting Australian safety standards"
     class="mobile-banner"
   />
 </div>
 
 <h1 class="title">
-  La cataracte : définition, types, causes, symptômes, traitement, et prévention
+  Sunglasses Standard in Australia: Restrictions and Compliance
 </h1>
 
 <!-- publish date start -->
 <div class="intro-section publsih-date">
   <div class="publsih-date-wrapper">
-    <p>Publié le 25 Octobre 2024</p>
+    <p>Published on October 30th, 2024</p>
+    <!-- <p><b>Updated on August 23rd, 2024</b></p> -->
 
-    <!-- lang switch start -->
-    <div class="lang-sw">
-      <div class="language-switch">
-        <div class="language-switch-current" onclick="toggleVisibility()">
-          <!-- flag -->
-          <img
-            src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-            alt=" en français canadien"
-          />
-          Français canadien
-
-          <!-- dropdown icon -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="8"
-            height="5"
-            viewBox="0 0 8 5"
-            fill="none"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z"
-              fill="black"
-            />
-          </svg>
-        </div>
-
-        <div
-          class="language-switch-dropdown-itmes-wrapper"
-          id="secondBox"
-          style="display: none"
-        >
-          <div class="language-switch-dropdown-itmes">
-            <img
-              src="{{media url='wysiwyg/AU_Flag.jpg'}}"
-              alt="La cataracte : définition, types, causes, symptômes, traitement, et prévention en français canadien "
-            />
-            <a href="https://www.oscarwylee.com.au/glasses/eye/cataracts">
-              Australie</a
-            >
-          </div>
-
-          <div class="language-switch-dropdown-itmes">
-            <img
-              src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-              alt="La cataracte : définition, types, causes, symptômes, traitement, et prévention en anglais canadien"
-            />
-            <a href="https://oscarwylee.ca/glasses/eye/cataracts"> Canada</a>
-          </div>
-
-          <div class="language-switch-dropdown-itmes">
-            <img
-              src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-              alt="La cataracte : définition, types, causes, symptômes, traitement, et prévention en français canadien"
-            />
-            <a href="https://oscarwylee.ca/fr/glasses/eye/cataracts">
-              Français canadien</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- publish date end -->
-
-<div class="intro-section">
-  <p class="para-content">Content</p>
-</div>
-
-<!--  CTA aside-->
-<aside class="intro-section book-section">
-  <div class="book-section-left">
-    <p class="heading">Prenez soin de vos yeux chez Oscar Wylee</p>
-    <p style="font-size: 16px">
-      Des optométristes indépendants dévoués réalisent des examens complets de
-      la vue pour évaluer votre santé oculaire et votre vision.
-    </p>
-  </div>
-  <div class="book-section-right">
-    <a href="/fr/booking"
-      ><button class="btnOw">Réserver un examen de la vue</button></a
-    >
-  </div>
-</aside>
-<!--  CTA aside-->
-
-<!-- a liks start -->
-<div class="a-links">
-  <nav>
-    <a href="#Définition">Définition</a>
-    <a href="#Types">Types</a>
-    <a href="#risque">Facteurs de risque</a>
-    <a href="#Symptômes">Symptômes</a>
-    <a href="#Traitement">Traitement</a>
-  </nav>
-</div>
-<!-- a liks end -->
-
-<div class="main-section" id="main-cont-wrapper">
-  <div class="main-section">
-    <section class="square-section">
-      <h2 class="subtitle" id="Définition">Qu’est-ce qu’une cataracte ?</h2>
-      <p class="para-content">Content</p>
-
-      <div class="products-section" style="width: 60%; margin: 40px auto">
-        <div class="individual-product" style="margin-bottom: 0px">
-          <img
-            src="/"
-            alt="Œil normal vs œil avec cataracte"
-            class="product-image"
-          />
-        </div>
-      </div>
-
-      <div class="products-section-mobile" style="margin-bottom: 40px">
-        <div class="individual-product">
-          <img
-            src="/"
-            alt="Œil normal vs œil avec cataracte"
-            class="product-image"
-          />
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">Comment la cataracte affecte-t-elle l’œil ?</h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          Quelles parties de l’œil sont touchées par la cataracte ?
-        </h3>
-        <p class="para-content">Content</p>
-      </div>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle" id="Types">
-        Quels sont les différents types de cataracte ?
-      </h2>
-      <p class="para-content">Content</p>
-
-      <ol class="ordered-list">
-        <li>
-          <span class="list-title">La cataracte corticale : </span>
-          La cataracte corticale est un type courant de cataracte, caractérisé
-          par l’opacification des fibres entourant le centre du cristallin,
-          appelé nucleus.
-        </li>
-      </ol>
-
-      <div class="products-section" style="width: 60%; margin: 40px auto">
-        <div class="individual-product" style="margin-bottom: 0px">
-          <img
-            src="/"
-            alt="Les différents types de cataractes"
-            class="product-image"
-          />
-        </div>
-      </div>
-
-      <div class="products-section-mobile" style="margin-bottom: 40px">
-        <div class="individual-product">
-          <img
-            src="/"
-            alt="Les différents types de cataractes"
-            class="product-image"
-          />
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">1. La cataracte corticale</h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">2. La cataracte congénitale</h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">3. La cataracte nucléaire</h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">4. La cataracte secondaire</h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">5. La cataracte traumatique</h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">6. La cataracte sous-capsulaire postérieure</h3>
-        <p class="para-content">Content</p>
-      </div>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle">Quelles sont les causes des cataractes ?</h2>
-      <p class="para-content">Content</p>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle" id="risque">
-        Quels sont les facteurs de risque de la cataracte ?
-      </h2>
-      <p class="para-content">Content</p>
-
-      <ul class="ordered-list">
-        <li>
-          <span class="list-title">Le tabagisme : </span>
-          Le tabagisme peut augmenter le risque de cataracte car il a un effet
-          nocif sur les protéines de l’œil. Selon l’American Food and Drug
-          Administration, les fumeurs ont 2 à 3 fois plus de chance de
-          développer des cataractes.
-        </li>
-      </ul>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          La prise de certains médicaments constitue-t-elle un risque de
-          développer une cataracte ?
-        </h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">La cataracte est-elle héréditaire ?</h3>
-        <p class="para-content">Content</p>
-      </div>
-    </section>
-
-    <!--  CTA aside-->
-    <aside class="intro-section book-section">
-      <div class="book-section-left">
-        <p class="heading">
-          Localisez le magasin Oscar Wylee le plus près de chez vous
-        </p>
-        <p style="font-size: 16px">
-          Trouvez votre équipe locale Oscar Wylee, qui vous aidera à magasiner
-          notre gamme de montures tendance
-        </p>
-      </div>
-      <div class="book-section-right">
-        <a href="/fr/locations/"
-          ><button class="btnOw">Trouver un magasin</button></a
-        >
-      </div>
-    </aside>
-    <!--  CTA aside-->
-
-    <section class="square-section">
-      <h2 class="subtitle" id="Symptômes">
-        Quelles sont les symptômes de la cataracte ?
-      </h2>
-      <p class="para-content">Content</p>
-
-      <ul class="ordered-list">
-        <li>
-          <span class="list-title">La vision floue ou trouble : </span>
-          La cataracte peut affecter la vision d’une personne, provoquant une
-          vision trouble ou floue.
-        </li>
-      </ul>
-
-      <div class="sub-div">
-        <h3 class="con-title">1. La vision floue ou trouble</h3>
-        <p class="para-content">Content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="/"
-              alt="Une personne souffrant d’une vision floue ou trouble"
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="/"
-              alt="Une personne souffrant d’une vision floue ou trouble"
-              class="product-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">2. La sensibilité aux lumières vives</h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">3. La difficulté à voir la nuit</h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          4. La perception de halos autour des sources lumineuses
-        </h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          5. Les couleurs qui paraissent ternes ou jaunâtres
-        </h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">6. La vision double</h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          7. L'ajustement fréquent des lunettes ou des lentilles de contact
-        </h3>
-        <p class="para-content">Content</p>
-      </div>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle">Comment diagnostique-t-on la cataracte ?</h2>
-      <p class="para-content">Content</p>
-
-      <div class="products-section" style="width: 60%; margin: 40px auto">
-        <div class="individual-product" style="margin-bottom: 0px">
-          <img src="/" alt="Diagnostic de la cataracte" class="product-image" />
-        </div>
-      </div>
-
-      <div class="products-section-mobile" style="margin-bottom: 40px">
-        <div class="individual-product">
-          <img src="/" alt="Diagnostic de la cataracte" class="product-image" />
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          Quelle est la cataracte la plus diagnostiquée ?
-        </h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          Comment la cataracte peut-elle être une cause de cécité ?
-        </h3>
-        <p class="para-content">Content</p>
-
-        <div class="sub-div">
-          <h4 class="con-title">La cataracte et le glaucome sont-ils liés ?</h4>
-          <p class="para-content">Content</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle" id="Traitement">
-        Quel est le traitement de la cataracte ?
-      </h2>
-      <p class="para-content">Content</p>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          Quel est le taux de succès de la chirurgie de la cataracte ?
-        </h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">Combien coûte une chirurgie de la cataracte ?</h3>
-        <p class="para-content">Content</p>
-
-        <div class="sub-div">
-          <h4 class="con-title">
-            La chirurgie de la cataracte est-elle douloureuse ?
-          </h4>
-          <p class="para-content">Content</p>
-        </div>
-
-        <div class="sub-div">
-          <h4 class="con-title">
-            La cataracte peut-elle guérir sans chirurgie ?
-          </h4>
-          <p class="para-content">Content</p>
-        </div>
-
-        <div class="sub-div">
-          <h4 class="con-title">
-            Les personnes souffrant d’uvéite peuvent-ils développer une
-            cataracte ?
-          </h4>
-          <p class="para-content">Content</p>
-        </div>
-
-        <div class="sub-div">
-          <h4 class="con-title">
-            Les lunettes de vue peuvent-elles aider dans le traitement de la
-            cataracte ?
-          </h4>
-          <p class="para-content">Content</p>
-
-          <div class="products-section" style="width: 60%; margin: 40px auto">
-            <div class="individual-product" style="margin-bottom: 0px">
-              <img
-                src="/"
-                alt="Une personne âgée portant des lunettes de vue"
-                class="product-image"
-              />
-            </div>
-          </div>
-
-          <div class="products-section-mobile" style="margin-bottom: 40px">
-            <div class="individual-product">
-              <img
-                src="/"
-                alt="Une personne âgée portant des lunettes de vue"
-                class="product-image"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle">Comment éviter la cataracte ?</h2>
-      <p class="para-content">Content</p>
-
-      <ol class="ordered-list">
-        <li>
-          <span class="list-title">Le port de lunettes de soleil : </span>
-          Le port de lunettes de soleil aiderait à protéger les yeux des rayons
-          nocifs émis par le soleil. Cela peut aider à éviter la cataracte car
-          une exposition prolongée au soleil sans aucune protection adéquate
-          contre les UV peut augmenter le risque de formation des cataractes
-          dans les yeux.
-        </li>
-      </ol>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          Comment le port de lunettes de soleil peut-il aider à éviter la
-          formation de la cataracte ?
-        </h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <!-- lang switch start -->
-      <div class="bottom-lag-sw">
-        <p class="para-content">
-          Lisez La cataracte : définition, types, causes, symptômes, traitement,
-          et prévention et régions où Oscar Wylee est présent
-        </p>
-
-        <div class="lang-sw bottom">
+    <!-- <div class="lang-sw">
           <div class="language-switch">
-            <div
-              class="language-switch-current"
-              id="language-switch-current"
-              onclick="toggleVisibilityBtnTwo()"
-            >
-              <!-- flag -->
+            <div class="language-switch-current" onclick="toggleVisibility()">
               <img
-                src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-                alt=" en français canadien"
+                src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+                alt="Sunglasses Standard in Australia: Restrictions and Compliance in Australian English"
               />
-              Français canadien
+              Australia
 
-              <!-- dropdown icon -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="8"
@@ -1650,42 +1203,339 @@
 
             <div
               class="language-switch-dropdown-itmes-wrapper"
-              id="language-switch-dropdown-itmes-wrapper"
+              id="secondBox"
               style="display: none"
             >
               <div class="language-switch-dropdown-itmes">
                 <img
                   src="{{media url='wysiwyg/AU_Flag.jpg'}}"
-                  alt="La cataracte : définition, types, causes, symptômes, traitement, et prévention en français canadien "
+                  alt="Sunglasses Standard in Australia: Restrictions and Compliance in Australian English"
                 />
-                <a href="https://www.oscarwylee.com.au/glasses/eye/cataracts">
-                  Australie</a
-                >
+                <a href="#"> Australia</a>
+              </div>
+
+              <div class="language-switch-dropdown-itmes">
+                <img
+                  src="{{media url='wysiwyg/NZ_Flag.jpg'}}"
+                  alt="Sunglasses Standard in Australia: Restrictions and Compliance in New Zealand English"
+                />
+                <a href="#"> New Zealand</a>
               </div>
 
               <div class="language-switch-dropdown-itmes">
                 <img
                   src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-                  alt="La cataracte : définition, types, causes, symptômes, traitement, et prévention en anglais canadien"
+                  alt="Sunglasses Standard in Australia: Restrictions and Compliance in Canadian English"
                 />
-                <a href="https://oscarwylee.ca/glasses/eye/cataracts">
-                  Canada</a
-                >
+                <a href="#"> Canada</a>
               </div>
 
               <div class="language-switch-dropdown-itmes">
                 <img
                   src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-                  alt="La cataracte : définition, types, causes, symptômes, traitement, et prévention en français canadien"
+                  alt="Sunglasses Standard in Australia: Restrictions and Compliance in Canadian French"
                 />
-                <a href="https://oscarwylee.ca/fr/glasses/eye/cataracts">
-                  Français canadien</a
-                >
+                <a href="#"> Canadian French</a>
               </div>
+            </div>
+          </div>
+        </div> -->
+  </div>
+</div>
+<!-- publish date end -->
+
+<div class="intro-section">
+  <p class="para-content">Content</p>
+</div>
+
+<!--  CTA aside-->
+<aside class="intro-section book-section">
+  <div class="book-section-left">
+    <p class="heading">Take Care of Your Eye Health at Oscar Wylee</p>
+    <p style="font-size: 16px">
+      Our passionate team has got you covered for all things eye care.
+    </p>
+  </div>
+  <div class="book-section-right">
+    <a href="/booking"><button class="btnOw">Book an eye test</button></a>
+  </div>
+</aside>
+<!--  CTA aside-->
+
+<!-- a liks start -->
+<div class="a-links">
+  <nav>
+    <a href="#Mandatory">Mandatory Standards</a>
+    <a href="#Categories">Sunglasses Categories</a>
+    <a href="#UV400">Checking UV 400 on Sunglasses</a>
+    <a href="#Penalties">Penalties for Non-Compliance</a>
+  </nav>
+</div>
+<!-- a liks end -->
+
+<div class="main-section" id="main-cont-wrapper">
+  <div class="main-section">
+    <section class="square-section">
+      <h2 class="subtitle">
+        What are the Mandatory Standards for Sunglasses and Fashion Spectacles
+        in Australia?
+      </h2>
+      <p class="para-content">Content</p>
+
+      <ul class="ordered-list">
+        <li>
+          <span class="list-title">UV Protection Requirements:</span>
+          UV protection requirements are a mandatory standard for sunglasses to
+          help prevent short-term and long-term damage caused by the sun’s light
+          UV rays.
+        </li>
+      </ul>
+
+      <div class="sub-div">
+        <h3 class="con-title" id="Mandatory">1. UV Protection Requirements</h3>
+        <p class="para-content">Content</p>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">2. Lens Categories</h3>
+        <p class="para-content">Content</p>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">3. Impact Resistance</h3>
+        <p class="para-content">Content</p>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">4. Frame Durability</h3>
+        <p class="para-content">Content</p>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">5. Labelling and Warnings</h3>
+        <p class="para-content">Content</p>
+
+        <div class="sub-div">
+          <h4 class="con-title" id="Categories">
+            How are Sunglasses Categorised Based on UV Protection and Lens Tint?
+          </h4>
+          <p class="para-content">Content</p>
+        </div>
+
+        <div class="sub-div">
+          <h4 class="con-title">
+            Why is Impact Resistance Important for Sunglasses and Spectacles?
+          </h4>
+          <p class="para-content">Content</p>
+
+          <div class="products-section" style="width: 60%; margin: 40px auto">
+            <div class="individual-product" style="margin-bottom: 0px">
+              <img
+                src="/"
+                alt="A graphic of broken sunglasses on the ground"
+                class="product-image"
+              />
+            </div>
+          </div>
+
+          <div class="products-section-mobile" style="margin-bottom: 40px">
+            <div class="individual-product">
+              <img
+                src="/"
+                alt="A graphic of broken sunglasses on the ground"
+                class="product-image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-div">
+          <h4 class="con-title" id="UV400">
+            How Can You Check if Sunglasses are UV400?
+          </h4>
+          <p class="para-content">Content</p>
+
+          <div class="products-section" style="width: 60%; margin: 40px auto">
+            <div class="individual-product" style="margin-bottom: 0px">
+              <img
+                src="/"
+                alt="A graphic of a UV light torch shone on a pair of glasses revealing the glow of the lenses, indicating a lack of UV 400 protection."
+                class="product-image"
+              />
+            </div>
+          </div>
+
+          <div class="products-section-mobile" style="margin-bottom: 40px">
+            <div class="individual-product">
+              <img
+                src="/"
+                alt="A graphic of a UV light torch shone on a pair of glasses revealing the glow of the lenses, indicating a lack of UV 400 protection."
+                class="product-image"
+              />
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!--  CTA aside-->
+    <aside class="intro-section book-section">
+      <div class="book-section-left">
+        <p class="heading">Visit a Store Near You</p>
+        <p style="font-size: 16px">
+          You can browse our range of fashionable frames in-store or talk to our
+          retail team and optometrist.
+        </p>
+      </div>
+      <div class="book-section-right">
+        <a href="/locations/full-store-list.html"
+          ><button class="btnOw">Find a store</button></a
+        >
+      </div>
+    </aside>
+    <!--  CTA aside-->
+
+    <section class="square-section">
+      <h2 class="subtitle">
+        What Restrictions Apply to Using Sunglasses While Driving?
+      </h2>
+      <p class="para-content">Content</p>
+
+      <div class="sub-div">
+        <h3 class="con-title" id="Penalties">
+          What are the Penalties for Non-Compliance with Australian Sunglasses
+          Standards?
+        </h3>
+        <p class="para-content">Content</p>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">
+          How can you Choose the Right Sunglasses for Different Activities?
+        </h3>
+        <p class="para-content">Content</p>
+
+        <ol class="ordered-list">
+          <li>
+            <span class="list-title"> Think about the fit:</span>
+            Think about the fit of the sunglasses and if they are comfortable on
+            your face. They should feel snug behind the ears and temples but not
+            cause pain. If you are in need of sunglasses for physical activities
+            outdoors, wrap-around sunglasses may be more suitable. They prevent
+            UV light rays from reaching over the top or from the sides of the
+            frame. Polarised lenses may also be a recommended option to reduce
+            glare and increase contrast of images.
+          </li>
+        </ol>
+
+        <div class="sub-div">
+          <h4 class="con-title">Does Australia have Strong UV Rays?</h4>
+          <p class="para-content">Content</p>
+        </div>
+
+        <div class="sub-div">
+          <h4 class="con-title">
+            Does Oscar Wylee Meet the Sunglasses Standards in Australia?
+          </h4>
+          <p class="para-content">Content</p>
+
+          <div class="products-section" style="width: 60%; margin: 40px auto">
+            <div class="individual-product" style="margin-bottom: 0px">
+              <img
+                src="/"
+                alt="A woman wearing Oscar Wylee sunglasses"
+                class="product-image"
+              />
+            </div>
+          </div>
+
+          <div class="products-section-mobile" style="margin-bottom: 40px">
+            <div class="individual-product">
+              <img
+                src="/"
+                alt="A woman wearing Oscar Wylee sunglasses"
+                class="product-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- lang switch start -->
+      <!-- <div class="bottom-lag-sw">
+            <p class="para-content">
+              Read Sunglasses Standard in Australia: Restrictions and Compliance in other Oscar Wylee regions and their languages.
+            </p>
+
+            <div class="lang-sw bottom">
+              <div class="language-switch">
+                <div
+                  class="language-switch-current"
+                  id="language-switch-current"
+                  onclick="toggleVisibilityBtnTwo()"
+                >
+                  <img
+                    src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+                    alt="Sunglasses Standard in Australia: Restrictions and Compliance in Australian English"
+                  />
+                  Australia
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="5"
+                    viewBox="0 0 8 5"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  class="language-switch-dropdown-itmes-wrapper"
+                  id="language-switch-dropdown-itmes-wrapper"
+                  style="display: none"
+                >
+                  <div class="language-switch-dropdown-itmes">
+                    <img
+                      src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+                      alt="Sunglasses Standard in Australia: Restrictions and Compliance in Australian English"
+                    />
+                    <a href="#"> Australia</a>
+                  </div>
+
+                  <div class="language-switch-dropdown-itmes">
+                    <img
+                      src="{{media url='wysiwyg/NZ_Flag.jpg'}}"
+                      alt="Sunglasses Standard in Australia: Restrictions and Compliance in New Zealand English"
+                    />
+                    <a href="#"> New Zealand</a>
+                  </div>
+
+                  <div class="language-switch-dropdown-itmes">
+                    <img
+                      src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                      alt="Sunglasses Standard in Australia: Restrictions and Compliance in Canadian English"
+                    />
+                    <a href="#"> Canada</a>
+                  </div>
+
+                  <div class="language-switch-dropdown-itmes">
+                    <img
+                      src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                      alt="Sunglasses Standard in Australia: Restrictions and Compliance in Canadian French"
+                    />
+                    <a href="#"> Canadian French</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
       <!-- lang switch end -->
     </section>
   </div>
@@ -1695,38 +1545,39 @@
     <!-- Location and booking  -->
     <div class="location" style="border-top: none">
       <div class="locationText">
-        <p class="heading">Recevez un devis complet en magasin</p>
+        <p class="heading">Major Health Funds Accepted In-store</p>
         <p class="contents">
-          Les principales assurances santé sont acceptées chez Oscar Wylee. Pour
-          plus d’informations, visitez notre équipe en magasin
+          For the purchase of frames and lenses, use your private health fund
+          insurance to limit how much you pay from your own pocket.
         </p>
         <div class="allButton">
-          <a href="/fr/health-insurance/">
-            <button class="btnOw">Explorer l’assurance santé</button>
+          <a href="/health-funds.html">
+            <button class="btnOw">Explore Health Funds</button>
           </a>
         </div>
       </div>
       <img
-        src="{{media url='wysiwyg/image-folder/glasses/cta/Assurance-sante.jpg'}}"
-        alt="Explorer l’assurance santé"
+        src="{{media url='wysiwyg/image-folder/glasses/cta/Health-Fund-CTA.jpg'}}"
+        alt="find a location image"
         class="locationImage"
       />
     </div>
+
     <div class="location item1">
       <img
-        src="{{media url='wysiwyg/image-folder/glasses/cta/Eye-Test-Oscar-Wylee-2.jpg'}}"
-        alt="Réserver un examen de la vue"
+        src="{{media url='wysiwyg/image-folder/glasses/cta/Eye-Test-Oscar-Wylee-1.jpg'}}"
+        alt="book eye test image"
         class="locationImage"
       />
       <div class="locationText">
-        <p class="heading">Comment va votre vision ?</p>
+        <p class="heading">Ready to book an eye test?</p>
         <p class="contents">
-          Si la santé de vos yeux vous préoccupe, réservez un examen complet de
-          la vue avec un optométriste indépendant.
+          At Oscar Wylee we offer bulk billed eye tests for all eligible
+          medicare card holders.
         </p>
         <div class="allButton">
-          <a href="/fr/booking">
-            <button class="btnOw">Réserver un examen de la vue</button>
+          <a href="/booking">
+            <button class="btnOw">Book an eye test</button>
           </a>
         </div>
       </div>
