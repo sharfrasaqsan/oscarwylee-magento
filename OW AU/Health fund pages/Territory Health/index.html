@@ -1019,6 +1019,17 @@
   .reduce-th-bold > th:not(:first-child) {
     font-weight: 500;
   }
+
+  .context > .information > .flexRow > .right-aligned {
+    text-align: right;
+    text-align-last: right;
+  }
+
+  @media (max-width: 480px) {
+    .context > .information > .flexRow > .right-aligned {
+      text-align-last: left;
+    }
+  }
 </style>
 
 <div class="mainContainer">
@@ -1086,7 +1097,7 @@
       </div>
       <div class="flexRow">
         <h4>Benefit Limits Reset</h4>
-        <p style="text-align: right; text-align-last: right">
+        <p class="right-aligned">
           Membership Year: Your coverage renews on the date you first purchased
           it.
         </p>

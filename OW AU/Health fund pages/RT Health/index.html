@@ -1019,6 +1019,17 @@
   .reduce-th-bold > th:not(:first-child) {
     font-weight: 500;
   }
+
+  .context > .information > .flexRow > .right-aligned {
+    text-align: right;
+    text-align-last: right;
+  }
+
+  @media (max-width: 480px) {
+    .context > .information > .flexRow > .right-aligned {
+      text-align-last: left;
+    }
+  }
 </style>
 
 <div class="mainContainer">
@@ -1081,7 +1092,7 @@
     <div class="information">
       <div class="flexRow">
         <h4>Waiting Period</h4>
-        <p style="text-align: right; text-align-last: right">
+        <p class="right-aligned">
           3 Months for Value Extras, Smart Extras and Top Extras 6 months for
           Fit and Healthy Extras, Deluxe Extras and Healthy Choice Extras
         </p>

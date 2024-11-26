@@ -1019,6 +1019,17 @@
   .reduce-th-bold > th:not(:first-child) {
     font-weight: 500;
   }
+
+  .context > .information > .flexRow > .right-aligned {
+    text-align: right;
+    text-align-last: right;
+  }
+
+  @media (max-width: 480px) {
+    .context > .information > .flexRow > .right-aligned {
+      text-align-last: left;
+    }
+  }
 </style>
 
 <div class="mainContainer">
@@ -1045,11 +1056,11 @@
       <p>
         As a member of Queensland Country, you can claim on optical extras using
         your health fund’s coverage for optical services, such as prescription
-        frames, lenses or glasses. Queensland Country benefits reset every 2
-        rolling years,
+        frames, lenses or glasses. Queensland Country benefits reset every
+        membership year,
         <b
-          >claim your glasses before time runs out! At the end of the year, any
-          extras you don’t use will be lost.
+          >claim your glasses before time runs out! Any extras you don’t use
+          will be lost.
         </b>
         <br /><br />
         With Oscar Wylee, you can have up to 100% coverage on select optical
@@ -1086,7 +1097,7 @@
       </div>
       <div class="flexRow">
         <h4>Benefit Limits Reset</h4>
-        <p style="text-align: right; text-align-last: right">
+        <p class="right-aligned">
           Membership Year: Membership Year limits are calculated from the
           anniversary date of the establishment of the policy
         </p>

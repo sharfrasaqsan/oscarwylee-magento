@@ -1019,8 +1019,18 @@
   .reduce-th-bold > th:not(:first-child) {
     font-weight: 500;
   }
-</style>
 
+  .context > .information > .flexRow > .right-aligned {
+    text-align: right;
+    text-align-last: right;
+  }
+
+  @media (max-width: 480px) {
+    .context > .information > .flexRow > .right-aligned {
+      text-align-last: left;
+    }
+  }
+</style>
 <div class="mainContainer">
   <div class="textOverImage">
     <img
@@ -1051,12 +1061,12 @@
           >claim your glasses before time runs out! Any extras you don’t use
           will be lost.
         </b>
-        <br /><br />
-        With Oscar Wylee, you can have up to 100% coverage on select optical
-        purchases when you shop with us. Look at the table below to see your
-        Teachers Health policy’s name and the amount of coverage that policy
-        gives when you shop at Oscar Wylee.<br /><br />Your coverage might
-        change or not apply to extras such as add-ons, coatings or tinting.
+        <br /><br />With Oscar Wylee, you can have up to 100% coverage on select
+        optical purchases when you shop with us. Look at the table below to see
+        your Teachers Health policy’s name and the amount of coverage that
+        policy gives when you shop at Oscar Wylee.<br /><br />Your coverage
+        might change or not apply to extras such as add-ons, coatings or
+        tinting.
       </p>
     </div>
   </div>
@@ -1090,9 +1100,9 @@
       </div>
       <div class="flexRow">
         <h4>Claimable Benefits %</h4>
-        <p style="text-align: right; text-align-last: right">
-          100% for Basic Extras, maximum benefit amount applies to Mid Extras
-          and Top Extras
+        <p class="right-aligned">
+          100% for Basic Extras, maximum benefit amount applies to StarterPak,
+          Mid Extras and Top Extras
         </p>
       </div>
     </div>

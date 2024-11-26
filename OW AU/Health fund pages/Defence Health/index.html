@@ -336,7 +336,7 @@
     /* background-color: #f7f7f7; */
     overflow: auto;
     height: 50px;
-    width: 1010px;
+    width: 300px;
     vertical-align: middle !important;
   }
 
@@ -380,7 +380,7 @@
     border-collapse: collapse;
   }
 
-  /* 
+  /*
              table tr {
                  background-color: #f7f7f7;
                  border-radius:60px;
@@ -1019,38 +1019,56 @@
   .reduce-th-bold > th:not(:first-child) {
     font-weight: 500;
   }
+
+  .context > .information > .flexRow > .right-aligned {
+    text-align: right;
+    text-align-last: right;
+  }
+
+  @media (max-width: 480px) {
+    .context > .information > .flexRow > .right-aligned {
+      text-align-last: left;
+    }
+  }
 </style>
+
 <div class="mainContainer">
   <div class="textOverImage">
     <img
       class="banner"
-      src="https://oscarwylee.com.au/media/wysiwyg/healthfund/AU_RBHS_1920x605.png"
-      alt="Reserve Bank Health Society at Oscar Wylee"
-      title="Reserve Bank Health Society at Oscar Wylee"
+      src="https://oscarwylee.com.au/media/wysiwyg/healthfund/Defence_AU_health_insurace_1920x605.jpg"
+      alt="Defence Health at Oscar Wylee"
+      title="Defence Health at Oscar Wylee"
     />
     <img
       class="bannerMob"
-      src="https://oscarwylee.com.au/media/wysiwyg/healthfund/AU_RBHS_770x900.png"
-      alt="Reserve Bank Health Society at Oscar Wylee"
-      title="Reserve Bank Health Society at Oscar Wylee"
+      src="https://oscarwylee.com.au/media/wysiwyg/healthfund/Defence_AU_health_insurance_Mob_770x900.jpg"
+      alt="Defence Health at Oscar Wylee"
+      title="Defence Health at Oscar Wylee"
     />
     <div class="title">
-      <h1 style="color: #fff">Reserve Bank Health Society at Oscar Wylee</h1>
-      <img
+      <h1 style="color: #fff">Defence Health at Oscar Wylee</h1>
+      <!-- <img
         style="max-width: 150px; margin-top: 1rem"
-        src="https://oscarwylee.com.au/media/wysiwyg/healthfund/RBHS_Logo.png"
-        alt="Reserve Bank Health Society Logo"
-      />
+        src="https://oscarwylee.com.au/media/wysiwyg/healthfund/Teachers_Union_Logo.png"
+        alt="Teachers Union Health Logo"
+      /> -->
       <p>
-        As a member of RBHS, you can claim on optical extras using your health
-        fund’s coverage for optical services, such as prescription frames,
-        lenses or glasses. RBHS benefits can roll over to a maximum amount of
-        $920 after 2 rolling years per person. <br /><br />With Oscar Wylee, you
-        can have up to 90% coverage on select optical purchases when you shop
-        with us. Look at the table below to see your RBHS policy’s name and the
-        amount of coverage that policy gives when you shop at Oscar Wylee.<br /><br />Your
-        coverage might change or not apply to extras such as add-ons, coatings
-        or tinting.
+        As a member of Defence Health, you can claim on optical extras using
+        your health fund’s coverage for optical services, such as prescription
+        frames, lenses or glasses. Defence Health benefits reset every financial
+        year,
+        <b
+          >claim your glasses before time runs out, any extras you don’t use
+          will be lost.
+        </b>
+        <br /><br />
+        With Oscar Wylee, you can have up to 100% coverage on select optical
+        purchases when you shop with us. Look at the table below to see your
+        Defence Health policy’s name and the amount of coverage that policy
+        gives when you shop at Oscar Wylee.
+        <br /><br />Your coverage might change or not apply to extras such as
+        add-ons, coatings or tinting.
       </p>
     </div>
   </div>
@@ -1076,15 +1094,15 @@
     <div class="information">
       <div class="flexRow">
         <h4>Waiting Period</h4>
-        <p>12 Months</p>
+        <p>2 Months</p>
       </div>
       <div class="flexRow">
         <h4>Benefit Limits Reset</h4>
-        <p>1st of January<sup>1</sup></p>
+        <p>1st of July</p>
       </div>
       <div class="flexRow">
         <h4>Claimable Benefits %</h4>
-        <p>90%</p>
+        <p>100%</p>
       </div>
     </div>
     <p>
@@ -1099,11 +1117,15 @@
             <th style="text-align: left; padding: 0; color: #565656">
               Your Extras Package Annual Limit:*
             </th>
-            <th>Premium Extras Cover</th>
+            <th>Essential Extras</th>
+            <th>Value Extras</th>
+            <th>Premier Extras</th>
           </tr>
           <tr class="tableFirstRow" style="background-color: #f2f2f2">
             <th style="font-weight: bold; margin-top: 1rem">SINGLES COVER</th>
-            <td class="second-heading">$460</td>
+            <td class="second-heading">$170</td>
+            <td class="second-heading">$255</td>
+            <td class="second-heading">$300</td>
           </tr>
           <tr
             class="tableFirstRow center-border"
@@ -1113,7 +1135,9 @@
               1 Standard OW Pair
               <span style="font-weight: normal">from</span> $169<span>^</span>
             </th>
-            <td>Partial Cover</td>
+            <td>Covered</td>
+            <td>Covered</td>
+            <td>Covered</td>
           </tr>
           <tr
             class="tableFirstRow center-border"
@@ -1124,6 +1148,8 @@
               <span style="font-weight: normal">from</span> $199<span>^</span>
             </th>
             <td>Partial Cover</td>
+            <td>Covered</td>
+            <td>Covered</td>
           </tr>
           <tr class="tableFirstRow" style="background-color: #fafafa">
             <th style="font-weight: bold">
@@ -1131,6 +1157,8 @@
               <span style="font-weight: normal">from</span> $249<span>^</span>
             </th>
             <td>Partial Cover</td>
+            <td>Covered</td>
+            <td>Covered</td>
           </tr>
         </tbody>
       </table>
@@ -1151,7 +1179,9 @@
         <tbody>
           <tr class="tableFirstRow" style="background-color: #f2f2f2">
             <th style="font-weight: bold; margin-top: 1rem">FAMILY COVER</th>
-            <td class="second-heading">$460 per person</td>
+            <td class="second-heading">$170 per person</td>
+            <td class="second-heading">$255 per person</td>
+            <td class="second-heading">$300 per person</td>
           </tr>
           <tr
             class="tableFirstRow center-border"
@@ -1161,7 +1191,9 @@
               1 Standard OW Pair
               <span style="font-weight: normal">from</span> $169<span>^</span>
             </th>
-            <td>Partial Cover</td>
+            <td>Covered</td>
+            <td>Covered</td>
+            <td>Covered</td>
           </tr>
           <tr
             class="tableFirstRow center-border"
@@ -1172,6 +1204,8 @@
               <span style="font-weight: normal">from</span> $199<span>^</span>
             </th>
             <td>Partial Cover</td>
+            <td>Covered</td>
+            <td>Covered</td>
           </tr>
           <tr class="tableFirstRow" style="background-color: #fafafa">
             <th style="font-weight: bold">
@@ -1179,6 +1213,8 @@
               <span style="font-weight: normal">from</span> $249<span>^</span>
             </th>
             <td>Partial Cover</td>
+            <td>Covered</td>
+            <td>Covered</td>
           </tr>
         </tbody>
       </table>
@@ -1216,27 +1252,28 @@
     <hr />
     <div>
       <p>
-        *Based on Reserve Bank Health Society’s
+        *Based on Defence Health’s
         <a
           class="linkTo"
-          href="https://www.myrbhs.com.au/help-centre/download-forms/"
+          href="https://www.defencehealth.com.au/health-insurance-for-defence-connections/forms-and-brochures/"
           >Cover Guide</a
         >
         and product factsheet as presented to the Commonwealth Ombudsman
         <a
           class="linkTo"
-          href="https://www.myrbhs.com.au/siteassets/documents/cover-descriptions/premium-extras.pdf"
+          href="https://www.defencehealth.com.au/getmedia/2eaab4f8-1f0c-4d0a-9d46-8f65788acfb7/def0527-essentialsextras_productguide_0724_web.pdf"
           >1</a
-        >. The benefit limit for frames after 1 year is $180 and $360 after 2
-        years and for single vision lenses, $185 after 1 year and $370 after 2
-        years.<br /><br /><sup>1</sup> With Reserve Bank Health Society, all
-        multiple year benefits (2 years and over) are calculated on a rolling
-        year basis, that is, from the first date of service, instead of
-        calculation on a calendar year basis. This means a limit of $460 becomes
-        $920 after 2 rolling years. Get in contact with your health fund
-        provider to learn your benefit limitation period.<br /><br /><i
-          style="font-size: 14px; color: grey"
         >
+        <a
+          class="linkTo"
+          href="https://www.defencehealth.com.au/getmedia/789f362a-f3ad-414f-aeaa-f193b64b34ae/def0527-valueextras_productguide_0724_web.pdf"
+          >2</a
+        >
+        <a
+          class="linkTo"
+          href="https://www.defencehealth.com.au/getmedia/caf02808-7d43-4f58-a927-e2f23ded0422/def0527-premierextras_productguide_0724_web.pdf"
+          >3</a
+        >.<br /><br /><i style="font-size: 14px; color: grey">
           Information correct as of November 2024.
         </i>
       </p>
