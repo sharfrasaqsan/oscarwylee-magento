@@ -1,0 +1,1533 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+
+* {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: #333333; */
+  line-height: 1.3em;
+  scroll-behavior: smooth;
+}
+
+#maincontent {
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.article-banner {
+  height: 450px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.banner {
+  width: auto;
+  max-height: 450px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+
+.mobile-banner {
+  display: none;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  font-size: 2.6rem;
+  line-height: 1.1;
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 1.1;
+  width: 100%;
+}
+
+h4 {
+  font-size: 16px;
+  width: 100%;
+}
+
+h5 {
+  font-size: 16px;
+  width: 100%;
+}
+
+.title {
+  /* border-bottom: 1px solid silver; */
+  /* padding: 2.5rem 3rem; */
+  padding: 11px 3rem;
+  /* margin: 2.5rem 3rem; */
+  margin: 0px;
+  margin-top: 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.subtitle {
+  padding: 2rem;
+  margin: 2rem 0;
+  border-left: 10px solid #003cac;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.linkTo {
+  color: #003cac;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.intro-section {
+  margin: 3rem;
+  border-bottom: 1px solid silver;
+}
+
+.main-section section {
+  margin: 3rem;
+  border-bottom: 1px solid silver;
+}
+
+.section-border-bottom {
+  border-bottom: 1px solid silver;
+  margin: 3rem;
+}
+
+.book-section {
+  display: flex;
+  padding-left: 1em;
+  padding-bottom: 0.5em;
+  padding-top: 0em;
+}
+
+.book-section p {
+  margin-bottom: 1.5em;
+}
+
+.book-section-left {
+  width: 50%;
+  margin-left: 0;
+  padding-left: 1.5em;
+}
+
+.book-section-left .heading {
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  font-size: 1.25em;
+  padding-bottom: 1em;
+}
+
+.book-section-right {
+  display: flex;
+  margin: auto auto;
+  width: 30%;
+}
+
+.book-section-right a {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.btnOw:hover {
+  background-color: black;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.btnOw {
+  background-color: #003cac;
+  width: 100%;
+  /* padding: 0px 50%; */
+  border: none;
+  color: #fff;
+  height: 2em;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+  transition: all 1s ease;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.para-content {
+  /* margin-top: 1em; */
+  margin-bottom: 2em;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.list-title {
+  font-weight: 700;
+}
+
+.ordered-list,
+.unordered-list {
+  padding-left: 4rem;
+  margin-top: 2em;
+}
+
+.unordered-list {
+  margin-bottom: 2em;
+}
+
+.ordered-list li,
+.unordered-list li {
+  margin-bottom: 0.8em;
+  font-size: 16px;
+  text-align: left;
+}
+
+.pro-con {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.pro-con li {
+  margin-bottom: 1em;
+}
+
+.pro-title,
+.con-title,
+.sub-list-title,
+.sub-div-title {
+  border-left: 10px solid #b1b4b2;
+  padding: 0rem 1rem;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.sub-list-title {
+  font-size: medium;
+  margin-left: 3em;
+}
+
+.pro-list,
+.con-list {
+  margin-left: 2em;
+}
+
+.pro-section,
+.con-section {
+  flex: 1 1 0;
+}
+
+.sub-div {
+  margin-left: 2em;
+}
+
+.sub-div .para-content {
+  margin-left: 0;
+}
+
+.grid-image {
+  width: 100%;
+  margin-bottom: 0.3em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  place-items: center;
+  column-gap: 3em;
+  width: 70%;
+  margin: 2em auto;
+}
+
+.grid-item {
+  /* text-align: center; */
+  width: 100%;
+}
+
+.grid-item span {
+  font-style: italic;
+  font-weight: 700;
+  font-size: x-small;
+}
+
+.grid-text {
+  text-align: center;
+  font-size: x-small;
+  margin-bottom: 2em;
+}
+
+.grid-title {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.flex-wrapper {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.flex-image {
+  width: 80%;
+  display: flex;
+  margin: 2em auto;
+}
+
+.hightlight-list {
+  font-weight: 600;
+}
+
+.example-images {
+  row-gap: 2em;
+}
+
+.product-image {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.products-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.individual-product {
+  border-right: 1px solid silver;
+  margin-bottom: 2em;
+  display: flex;
+  /* margin-left: 1em; */
+}
+
+.individual-product:last-child {
+  border: none;
+}
+
+.product-name,
+.product-price {
+  text-align: center;
+}
+
+.product-button {
+  margin: 0 auto;
+  display: flex;
+  padding: 5px 30px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  margin-top: 1em;
+}
+
+.two-pairs-price,
+.three-pairs-price {
+  text-align: center;
+  /* margin-top: 2em; */
+  color: white;
+  font-weight: 700;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-right: 1em;
+}
+
+.two-pairs-price {
+  margin-bottom: 1em;
+}
+
+.two-pairs-price span,
+.three-pairs-price span {
+  display: block;
+}
+
+.two-pairs-price {
+  background-color: #003cac;
+}
+
+.three-pairs-price {
+  background-color: black;
+}
+
+.from {
+  font-weight: 300;
+  color: white;
+  line-height: 10px;
+}
+
+.context {
+  padding: 0 3rem;
+}
+
+.location {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+  padding-top: 0;
+  margin-top: -1em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid silver;
+}
+
+.location .heading {
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.item1 {
+  border: none;
+}
+
+.locationText .heading {
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+.locationText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1.5em;
+}
+
+.locationText p {
+  font-size: 16px;
+  margin-top: 2em;
+}
+
+.locationImage {
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.allButton {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.allButton a {
+  text-decoration: none;
+}
+
+.allButton .btnOw {
+  width: 70%;
+  margin-left: 0;
+}
+
+.item1 {
+  padding-top: 2em;
+}
+
+.products-section-mobile {
+  display: none;
+}
+
+.nine-products-section-mobile {
+  display: none;
+}
+
+.nine-products-section {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.nine-products-section img {
+  width: 30%;
+  border-right: 1px solid silver;
+}
+
+.nine-products-section img:last-child {
+  border: none;
+}
+
+.nine-products-section-gender {
+  margin-left: 0;
+}
+
+.grid-container-mobile {
+  display: none;
+}
+
+.contents {
+  margin-bottom: 2em;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+  padding: 0;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+  width: 1em;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.pre-btn:hover {
+  background-color: white;
+  border: none;
+}
+
+.nxt-btn:hover {
+  background-color: white;
+  border: none;
+}
+
+.nine-products-section {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product-container {
+  /* padding: 0 10vw; */
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container a {
+  display: contents;
+}
+
+@media screen and (max-width: 440px) {
+  * {
+    line-height: 1.5em;
+  }
+
+  .start-with-para {
+    margin-top: 2em !important;
+  }
+
+  .title {
+    margin: 1em 0.5em;
+    padding: 0em;
+    /* padding-bottom: 0.5em; */
+    white-space: normal;
+    border: none;
+  }
+
+  .contents {
+    margin-bottom: 2em;
+  }
+
+  .intro-section,
+  .main-section section {
+    margin: 0 1em;
+  }
+
+  .ordered-list,
+  .unordered-list {
+    padding-left: 1.2em;
+  }
+
+  .pro-con {
+    flex-direction: column;
+  }
+
+  .flex-wrapper {
+    flex-direction: column;
+  }
+
+  .example-images {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+
+  .grid-item {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .product-image {
+    width: 100%;
+  }
+
+  .sub-div {
+    margin-left: 0em;
+  }
+
+  .book-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .book-section-left {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .book-section-left p {
+    margin-right: 1em;
+    text-align: justify;
+    margin-left: 1em;
+  }
+
+  .book-section-left .heading {
+    text-align: center;
+    margin-top: 1.6em;
+    font-size: 1.25em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 278px;
+  }
+
+  .book-section-right {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  .desktop-banner {
+    display: none;
+  }
+
+  .mobile-banner {
+    display: block;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .products-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .individual-product {
+    border-right: none;
+    border-bottom: 1px solid silver;
+    padding-bottom: 0.5em;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .grid-image {
+    width: 90%;
+    display: flex;
+    margin: 0px auto;
+  }
+
+  .location {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5em;
+  }
+
+  .locationText .heading {
+    text-size: 1.25em;
+    margin-top: 1.9em;
+    margin-bottom: -0.5em;
+  }
+
+  .allButton .btnOw {
+    width: 100%;
+  }
+
+  .item1 {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    border: none;
+    padding-bottom: 0;
+    padding-top: 3.5em;
+  }
+
+  .locationText .heading {
+    text-align: center;
+  }
+
+  .item1 .locationImage,
+  .item1 .locationText {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+  }
+
+  .products-section {
+    display: none;
+  }
+
+  .nine-products-section {
+    display: none;
+  }
+
+  .individual-product {
+    display: flex;
+    margin: auto auto;
+  }
+
+  .products-section-mobile {
+    display: block;
+  }
+
+  .nine-products-section-mobile {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .nine-products-section-mobile::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nine-products-section-mobile img {
+    width: 80%;
+  }
+
+  .grid-container-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-item span {
+    display: flex;
+    margin: 0 2em;
+  }
+
+  .grid-container-desktop {
+    display: none;
+  }
+
+  .product-container-mobile {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .nine-products-section-mobile {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+  }
+
+  .pre-btn,
+  .nxt-btn {
+    width: 3vw;
+    height: 0;
+    top: 50%;
+  }
+
+  #main-cont-wrapper {
+    margin: 0em 1em;
+  }
+
+  .para-content {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
+  }
+
+  .mobile-word-space {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.1em !important;
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
+
+  .btn-helth-funds {
+    height: 60px;
+    line-height: 20px;
+  }
+}
+
+/* big image */
+.big_img_wapper {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.big_img {
+  border-radius: 8px;
+  width: 80%;
+}
+
+/* image with content section */
+.image_with_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.para_wapper {
+  width: 50%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .image_with_content {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .para_wapper {
+    width: 100%;
+  }
+
+  .big_img_wapper {
+    width: 100%;
+  }
+
+  .big_img {
+    width: 100%;
+  }
+
+  .article-banner {
+    height: 500px;
+  }
+}
+
+/* new template styles start */
+/* publish date start */
+.intro-section.publsih-date {
+  margin: 0rem 3rem;
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+
+.publsih-date-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.publsih-date-wrapper p {
+  margin-bottom: 0px;
+  color: #003cac;
+  font-weight: 700;
+}
+
+.publsih-date-wrapper p:first-child {
+  /* border-right: 1.5px solid silver; */
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .intro-section.publsih-date {
+    margin: 0em 1em 2em 1em;
+    padding-bottom: 10px;
+  }
+
+  .publsih-date-wrapper {
+    display: inline;
+  }
+
+  .publsih-date-wrapper p {
+    margin-bottom: 8px;
+    color: #003cac;
+    font-weight: 700;
+  }
+
+  .publsih-date-wrapper p:first-child {
+    border-right: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+}
+
+/* publish date end */
+
+/* top lang-sw start */
+.lang-sw {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 0px;
+}
+
+.lang-sw img {
+  max-width: 33px;
+}
+
+.language-switch {
+  width: 164px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 4px 0px;
+  position: relative;
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+.language-switch-current {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  width: 100%;
+  justify-content: space-around;
+  border: 1px solid black;
+  padding: 4px 0px;
+  cursor: pointer;
+}
+
+.language-switch-dropdown-itmes-wrapper {
+  border: 1px solid;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  top: 33px;
+  background-color: #fff;
+}
+
+.language-switch-dropdown-itmes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 9px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .language-switch {
+    margin-right: 65px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .language-switch {
+    margin-right: 3rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .lang-sw {
+    align-items: flex-start;
+  }
+
+  .language-switch {
+    margin-right: 0em;
+    margin-left: 0em;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    top: 40px;
+  }
+}
+
+/* top lang-sw end */
+
+/* a links start */
+.a-links {
+  margin: 3rem;
+}
+
+.a-links a {
+  color: #003cac;
+  font-weight: 700;
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1.5px solid silver;
+}
+
+.a-links a:last-child {
+  border-right: 0px;
+}
+
+@media only screen and (max-width: 820px) {
+  .a-links {
+    margin: 0rem;
+  }
+
+  .a-links nav {
+    margin: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .a-links {
+    margin: 3rem 0em;
+  }
+
+  .a-links nav {
+    margin: 3rem 1em;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+}
+
+/* a link end */
+
+/* bottom lang-sw start */
+.bottom .lang-sw {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 0px;
+}
+
+.bottom .language-switch {
+  width: 164px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 4px 0px;
+  position: relative;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.language-switch-current {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  width: 100%;
+  justify-content: space-around;
+  border: 1px solid black;
+  padding: 4px 0px;
+  cursor: pointer;
+}
+
+.language-switch-dropdown-itmes-wrapper {
+  border: 1px solid;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  top: 33px;
+  background-color: #fff;
+}
+
+.language-switch-dropdown-itmes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 9px;
+}
+
+.lang-sw.bottom {
+  align-items: flex-start;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+.bottom-lag-sw p {
+  margin-bottom: 0px;
+}
+
+.bottom-lag-sw {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 500px) {
+  .language-switch-dropdown-itmes-wrapper {
+    top: 40px;
+  }
+
+  .bottom-lag-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2em;
+    gap: 15px;
+  }
+
+  .lang-sw.bottom {
+    margin-left: 0px;
+  }
+}
+
+</style>
+<div class="article-banner"><img src="{{media url="wysiwyg/image-folder/glasses/eye/common-problems/Top-25-Common-Eye-ProblemsWeb-Banner.jpg"}}" alt="Common Eye Problems: Symptoms and Causes" class="banner desktop-banner"> <img src="{{media url="wysiwyg/image-folder/glasses/eye/common-problems/Top-25-Common-Eye-ProblemsMobile-Banner.jpg"}}" alt="Common Eye Problems: Symptoms and Causes" class="mobile-banner"></div>
+<h1 class="title">Top 25 Common Eye Problems</h1>
+<!-- publish date start -->
+<div class="intro-section publsih-date">
+<div class="publsih-date-wrapper">
+<p>Published on May 21st, 2024</p>
+<!-- <p><b>Updated on March 21st, 2024</b></p> --> <!-- lang switch start -->
+<div class="lang-sw">
+<div class="language-switch">
+<div class="language-switch-current" onclick="toggleVisibility()"><!-- flag --> <img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="Top 25 Common Eye Problems in Canadian English"> Canada <!-- dropdown icon --> <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z" fill="black"></path> </svg></div>
+<div class="language-switch-dropdown-itmes-wrapper" id="secondBox" style="display: none;">
+<div class="language-switch-dropdown-itmes"><!-- flag --> <img src="{{media url='wysiwyg/AU_Flag.jpg'}}" alt="Top 25 Common Eye Problems in Australian English"> <a href="https://www.oscarwylee.com.au/glasses/eye/common-problems">Australia</a></div>
+<div class="language-switch-dropdown-itmes"><!-- flag --> <img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="Top 25 Common Eye Problems in Canadian English"> <a href="https://www.oscarwylee.ca/glasses/common-problems"> Canada</a></div>
+<div class="language-switch-dropdown-itmes"><!-- flag --> <img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="Top 25 Common Eye Problems in Canadian French"> <a href="https://oscarwylee.ca/fr/glasses/eye/common-problems"> Canadian French</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- publish date end -->
+<div class="intro-section">
+<p class="para-content"><span style="font-weight: 400;">The top common eye problems include glaucoma, cataracts, dry eyes, presbyopia and many more. Eye problems are a broad term for any conditions, eye abnormalities, eye diseases or eye issues that affect the eye. This could include common symptoms such as itchy eyes, watery eyes, dry eyes and red eyes. This umbrella term may also include common eye conditions that cause problems to the eyes such as vision loss or eye pain including glaucoma, cataracts and uveitis.</span></p>
+<p class="para-content"><span style="font-weight: 400;">The top common eye problems are those that affect a large number of people and that require treatment or assessment from eye care professionals. The top 25 common eye problems and their definitions are listed below.</span></p>
+<ol class="ordered-list">
+<li style="font-weight: 400;" aria-level="1"><b>Glaucoma:</b><span style="font-weight: 400;"> Glaucoma is an eye condition that causes a loss of peripheral vision (visual field loss) through damage to the optic nerve.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Cataracts:</b><span style="font-weight: 400;"> Cataracts form in the eye lens as a result of clumping of protein, leading to a decline in clear vision which commonly occurs naturally with advancing age.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Uveitis:</b><span style="font-weight: 400;"> Uveitis refers to a group of conditions that causes eye inflammation and damages the uvea which is the middle layer of the eye.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Dry eyes:</b><span style="font-weight: 400;"> Dry eye syndrome is caused by either the tears in the eyes evaporating too quickly or the eyes not producing enough tears.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Presbyopia:</b><span style="font-weight: 400;"> Presbyopia is an age-related eye condition that occurs when the lens inside the eye becomes more rigid, becoming less able to focus clearly at near distances.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Floaters:</b><span style="font-weight: 400;"> Floaters in the eye is a very common condition that usually occurs naturally with age and causes spots and lines to drift and float through a person’s vision.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Red eyes:</b><span style="font-weight: 400;"> Red eyes occur when the tiny blood vessels on the white part of the eye dilate, making the eye look more red than usual.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Night blindness:</b><span style="font-weight: 400;"> Night blindness is an eye problem that impairs a person’s vision meaning they struggle to see in dim light or at night.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Lazy eyes:</b><span style="font-weight: 400;"> Lazy eyes, also known as amblyopia, is an eye condition that describes a person with one eye that has weaker vision than the other.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Colour blindness:</b><span style="font-weight: 400;"> Colour blindness is an eye condition that means a person is able to perceive colour but has trouble telling the difference between certain colours.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Eyestrain:</b><span style="font-weight: 400;"> Eyestrain is a very common eye problem and is caused by the eyes concentrating on tasks or objects for a long period of time.&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Vision changes:</b><span style="font-weight: 400;"> Vision changes are a common sign of many eye conditions and are characterised by a sudden difference in your ability to see normally.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Excess tearing:</b><span style="font-weight: 400;"> Excess tearing causes watery eyes due to the eyes producing too many tears or there being an issue with the film drainage of the eyes.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Retinal disorders:</b><span style="font-weight: 400;"> Retinal disorders are a term for a group of conditions that affect the retina. Common retinal disorders and diseases include age-related macular degeneration and retinal tear and detachment.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Eyelid problems:</b><span style="font-weight: 400;"> Eyelid problems are eye conditions that affect the eyelids, potentially making them swollen, painful and irritated.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Corneal diseases: </b><span style="font-weight: 400;">Corneal diseases are diseases that mainly affect the cornea. Some common corneal diseases include keratitis, eye herpes and pterygium.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Problems with contact lenses:</b><span style="font-weight: 400;"> People may experience problems with contact lenses that can lead to certain eye conditions and symptoms.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Cross eyes (strabismus) and nystagmus:</b><span style="font-weight: 400;"> Crossed eyes is an eye condition that occurs when one eye turns in a different direction than the other eye. Nystagmus causes involuntary movement of the eyes which can be side-to-side, circular or up and down.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Conjunctivitis (pink eye): </b><span style="font-weight: 400;">Conjunctivitis is an inflammation of the conjunctiva, a lining covering the white part of the eye and underneath the eyelids.&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Keratoconus:</b><span style="font-weight: 400;"> Keratoconus is an eye disease that affects the cornea, making it thin and bulge outwards.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Chalazion (eyelid cyst):</b><span style="font-weight: 400;"> A chalazion is an eyelid cyst that is a sign of a blocked oil gland, usually underneath the upper eyelid, resulting in swelling of the affected area.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Pterygium (noncancerous growth on the conjunctiva):</b><span style="font-weight: 400;"> Pterygium, also known as surfer’s eye, is a benign, noncancerous eye growth on the conjunctiva.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Pinguecula (yellowish growth on the conjunctiva):</b><span style="font-weight: 400;"> A pinguecula is a yellow, raised growth on the conjunctiva that usually contains calcium, fat or protein.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Diabetic retinopathy:</b><span style="font-weight: 400;"> Diabetic retinopathy is a complication of diabetes where the small blood vessels in the back of the eye are damaged.&nbsp;&nbsp;</span>
+<ol></ol>
+<b></b></li>
+<li style="font-weight: 400;" aria-level="1"><b>Age-related macular degeneration:</b><span style="font-weight: 400;"> Age-related macular degeneration is a common eye condition that causes a painless loss of central vision.</span></li>
+</ol>
+</div>
+<!--  CTA aside-->
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="heading">When Was the Last Time You Had Your Eyes Checked?</p>
+<p style="font-size: 16px; letter-spacing: -0.5px;">Book an appointment today with a trusted independent optometrist for a comprehensive eye exam.</p>
+</div>
+<div class="book-section-right"><a href="https://www.oscarwylee.ca/booking"><button class="btnOw">Book an eye exam</button></a></div>
+</aside>
+<!--  CTA aside-->
+<p></p>
+<!-- a liks start -->
+<div class="a-links"><nav><a href="#conditions">Eye Conditions</a> <a href="#avoid">How to Avoid</a> <a href="#definition">Definition</a> <a href="#causes">Causes</a> <a href="#symptoms">Symptoms</a></nav></div>
+<!-- a liks end -->
+<div class="main-section" id="main-cont-wrapper">
+<div class="main-section">
+<section class="square-section">
+<h2 class="subtitle" id="conditions">1. Glaucoma</h2>
+<p class="para-content"><span style="font-weight: 400;">Glaucoma is a </span><b>group of eye problems caused by damage to the optic nerve, resulting from issues with the eye’s intraocular fluid drainage system.</b><span style="font-weight: 400;"> It can eventually lead to complete vision loss and can occur in either one eye or both eyes. Glaucoma is more likely to develop in people who are of older age, have a family history of glaucoma, have thin corneas, are near or far-sighted and have diabetes. For many people with this eye condition, there are usually no symptoms which makes early detection quite difficult. Although in advanced, severe glaucoma, tunnel vision can occur which results in mobility issues. In acute angle closure glaucoma, symptoms include pain, red eyes, headaches, blurry vision, halos around lights and nausea.</span></p>
+<p class="para-content"><span style="font-weight: 400;">The types of glaucoma are open-angle glaucoma, normal tension glaucoma, congenital glaucoma, traumatic glaucoma, secondary glaucoma, pseudoexfoliation and uveitic glaucoma. Glaucoma can be diagnosed through an eye pressure test, an eye health check and a visual field test. Glaucoma may be treated with anti-glaucoma medication, prescription eye drops, laser treatment and surgery. </span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">2. Cataracts</h2>
+<p class="para-content"><span style="font-weight: 400;">Cataracts are a type of eye condition that</span><b> forms in the eye lens due to the clumping of protein, leading to a decline in clear vision.</b><span style="font-weight: 400;"> This process occurs naturally with advancing age, which is why they are so common. Some of the main causes of cataracts include being born with congenital cataracts, sustaining trauma to the eye, from medication and if you have diabetes. Symptoms of cataracts include cloudy or foggy vision, double vision in one eye, poor night vision and increased sensitivity to light.</span></p>
+<p class="para-content"><span style="font-weight: 400;">Age-related cataracts can be categorised into three main types, these being nuclear, cortical and posterior subcapsular. Cataracts can be diagnosed through an eye exam and their progression can be monitored by your optometrist. According to the Kellogg Eye Center, by the age of 65, over 90% of people will have developed a form of cataract. Cataracts may be prevented by wearing sunglasses to protect the eyes which may help to delay the onset of early cataracts. Early cataracts may be treated with a change in the person’s prescription and for advanced cataracts, surgery may be recommended.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">3. Uveitis</h2>
+<p class="para-content"><span style="font-weight: 400;">Uveitis refers to a </span><b>group of conditions that causes eye inflammation, commonly due to the immune system fighting an infection.</b><span style="font-weight: 400;"> This eye condition causes damage to the uvea which is the middle layer of the eye and is made up of the choroid, ciliary body and iris. Uveitis can be caused by two main reasons, infection such as shingles and histoplasmosis and autoimmune diseases such as AIDS, Lupus and psoriasis. The symptoms of uveitis include eye floaters, blurry vision, red eyes, eye pain and sensitivity to light. According to the National Eye Institute, there are four main types of uveitis that affect separate parts of the eye, these are anterior uveitis, intermediate uveitis, posterior uveitis and panuveitis.</span></p>
+<p class="para-content"><span style="font-weight: 400;">This eye condition is diagnosed through a dilated eye exam performed by an optometrist and through an understanding of the patient’s medical history. This eye condition is common for people between the ages of 20 and 60 and people who smoke cigarettes have a higher risk of developing uveitis. Prevention of this eye condition comes in the form of preventing the autoimmune diseases that cause it. Uveitis may be treated with medication such as eye drops, injections or pills.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">4. Dry Eyes</h2>
+<p class="para-content"><span style="font-weight: 400;">Dry eyes is an eye condition that occurs when the </span><b>eyes are unable to produce enough tears or tears aren't able to provide adequate lubrication to the surface of the eyes.</b><span style="font-weight: 400;"> Dry eyes can be caused by multiple factors, such as the eyes not producing enough tears, or the tears in your eyes drying out too quickly. Dry eyes could also be caused by issues in the tear film and its makeup. The tear film is composed of three layers and if one of these layers is compromised, it could lead to dry eyes.</span></p>
+<p class="para-content"><span style="font-weight: 400;">The symptoms of dry eyes include a feeling of burning, itchy or scratching eyes, the eyes becoming sensitive to light, redness around the eyes and blurry vision. Dry eyes can be diagnosed by a healthcare professional often using a Schirmer test that measures the eyes’ production of tears. Dry eye treatment involves artificially moisturising the eyes using eye drops which may alleviate or ease the symptoms. For more severe cases of dry eyes, steroid drops may be used in the treatments.</span></p>
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img src="{{media url="wysiwyg/image-folder/glasses/eye/common-problems/Top-25-Common-Eye-Problems-Image-1-900x600.jpg"}}" alt="A person in pain from dry eyes." class="product-image"></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img src="{{media url="wysiwyg/image-folder/glasses/eye/common-problems/Top-25-Common-Eye-Problems-Image-1-900x600.jpg"}}" alt="A person in pain from dry eyes." class="product-image"></div>
+</div>
+</section>
+<section class="square-section">
+<h2 class="subtitle">5. Presbyopia</h2>
+<p class="para-content" style="letter-spacing: -0.05px;"><span style="font-weight: 400;">Presbyopia is a </span><b>common age-related eye condition that causes the eyes to lose the ability to focus on close objects.</b><span style="font-weight: 400;"> Presbyopia is a type of refractive error and is a natural part of ageing for a majority of people. Presbyopia is caused by the lens in the eyes becoming harder and losing its flexibility as the eyes age. As the lens is less flexible, the eyes don’t change shape to allow for greater levels of focus. The symptoms of presbyopia include struggling to see things up close, your vision blurring when reading at a normal distance and having headaches or eye strain after you've been reading.</span></p>
+<p class="para-content"><span style="font-weight: 400;">There are 5 stages of presbyopia that most commonly occur as the eyes age. These types are incidental presbyopia, functional presbyopia, absolute presbyopia, premature presbyopia and nocturnal presbyopia. It can be diagnosed through an eye exam with an optometrist who will assess your vision and discuss treatment if necessary. Presbyopia symptoms can be treated with corrective prescriptions. Reading glasses are the most common type of treatment for presbyopia but they may also recommend multifocal lenses to correct any other vision conditions that are present.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">6. Floaters</h2>
+<p class="para-content"><span style="font-weight: 400;">Floaters, or </span><a href="https://oscarwylee.ca/glasses/eye/floaters-definition"><span style="font-weight: 400;">eye floaters</span></a><span style="font-weight: 400;">, is an eye condition that </span><b>causes small specks or spots to appear in a person’s vision due to changes in the vitreous fluid that fills the eye.</b><span style="font-weight: 400;"> If a person has floaters in the eye, it does not typically affect their vision although they can be more noticeable when looking at bright light. The main causes of eye floaters include eye disease, diabetic retinopathy, asteroid hyalosis, eye tumours, eye injury, ageing and bleeding in the eye. Eye floaters can look different to every person but some common things they may see as floaters are lines, strings, cobwebs, threadlike strands and black or grey dots.</span></p>
+<p class="para-content"><span style="font-weight: 400;">Eye floaters are diagnosed through an eye exam performed by an optometrist who will assess the eye which may include having the eyes dilated to allow the optometrist to better see the vitreous and back of the eye. Eye floaters are a common condition, especially for older people due to the eyes naturally ageing which causes the fluid that fills the eyeball to shrink, causing small particles to move and float across your vision. According to Healthdirect Australia, eye floaters cannot be prevented although they can be managed if they are affecting the person’s vision or everyday life. For the people that require treatment, they may be recommended by their eye doctor to have eye surgery or laser therapy to treat the eye floaters.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">7. Red Eyes</h2>
+<p class="para-content"><span style="font-weight: 400;">Red eyes is a common symptom of many eye conditions and is </span><b>caused by the dilation of small blood vessels that are in the white of the eye which causes the eyes to appear more red than usual. </b><span style="font-weight: 400;">The common cause of </span><a href="https://oscarwylee.ca/glasses/eye/red-or-bloodshot"><span style="font-weight: 400;">red or bloodshot eyes</span></a><span style="font-weight: 400;"> include allergies, dry eyes and broken blood vessels. The symptoms of red or bloodshot eyes include itching, eye pain, eye discharge, swollen eyes and changes to your vision.</span></p>
+<p class="para-content"><span style="font-weight: 400;">Red eyes can be diagnosed through an eye exam by an optometrist who will assess the appearance of the eye and also perform standard eye exams. There are multiple ways to prevent red or bloodshot eyes, some of which include staying hydrated, avoiding fans at night, using a humidifier and using eye drops. Red eyes should first be assessed by an eye care professional and they may advise treatments such as eye drops including lubricating, antibiotic, antiviral, steroid and allergy eye drops and avoiding allergy triggers.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">8. Night Blindness</h2>
+<p class="para-content"><span style="font-weight: 400;">Night blindness is an eye problem that </span><b>impairs a person’s vision in a way that causes them to struggle to see in dim light or at night</b><span style="font-weight: 400;">. Also known as nyctalopia, night blindness can impact a person’s life, affecting their ability to drive at night. The common causes of night blindness include glaucoma, myopia, vitamin A deficiency, cataracts and diabetes. The main symptom of night blindness is difficulty seeing in the dark. Additional symptoms may include a sensitivity to light, seeing halos or glare around lights and having cloudy or blurry vision when in dim light.</span></p>
+<p class="para-content"><span style="font-weight: 400;">It is important to have your vision seen by an optometrist if you suspect you have night blindness to determine if another eye condition is causing it and, therefore, can be treated. Night blindness cannot be prevented if it is congenital or genetic. However, to reduce your risk of developing night blindness, you can lead a healthy lifestyle including eating a balanced diet, especially foods with vitamin A. Night blindness may be treated with corrective lenses such as prescription glasses and contact lenses, or with surgery if it is caused by a serious eye condition.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">9. Lazy Eyes</h2>
+<p class="para-content"><span style="font-weight: 400;">Lazy eyes, also known as amblyopia, is an eye condition that </span><b>describes a person with one eye that has weaker vision than the other due to developmental issues such as unusual nerve pathways to the retina. </b><span style="font-weight: 400;">The causes of lazy eye include glaucoma, refractive amblyopia, strabismus and trauma to the eye. Symptoms of this eye condition may include eye misalignment, nearsightedness, farsightedness, crossed eyes, and repeated squinting and closing of the eyes.</span></p>
+<p class="para-content"><span style="font-weight: 400;">This eye condition can be diagnosed through assessment from a healthcare professional such as an optometrist. They will perform several diagnostic tests to determine if a person has lazy eyes, these may include checking their visual acuity and performing a cover test to see how well the eyes follow a moving object. A Lazy eye can look like a crossed eye, or a misaligned eye and also be completely normal. Lazy eye is a common condition that affects 3 in 100 children, according to the National Eye Institute, an institute of the American government. Lazy eyes cannot be prevented although early diagnosis and treatment of lazy eyes can reduce any possible harm the condition could cause. Its treatments include corrective eyeglasses or contact lenses, patches for the eyes, eye drops and eye training.</span></p>
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img src="{{media url="wysiwyg/image-folder/glasses/eye/common-problems/Top-25-Common-Eye-Problems-Image-2-900x600.jpg"}}" alt="A person who has a lazy eye." class="product-image"></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img src="{{media url="wysiwyg/image-folder/glasses/eye/common-problems/Top-25-Common-Eye-Problems-Image-2-900x600.jpg"}}" alt="A person who has a lazy eye." class="product-image"></div>
+</div>
+</section>
+<section class="square-section">
+<h2 class="subtitle">10. Colour Blindness</h2>
+<p class="para-content"><span style="font-weight: 400;">Colour blindness is an eye condition that means a person is </span><b>able to perceive colour but has trouble telling the difference between certain colours.</b><span style="font-weight: 400;"> Colour blindness is typically genetic, therefore, you are likely to develop this eye condition if there is a family history of it. It may also be caused by other conditions such as multiple sclerosis and diabetes. Symptoms of colourblindness include difficulty seeing colours and their brightness and an inability to tell the difference between similar colours.</span></p>
+<p class="para-content"><span style="font-weight: 400;">According to Healthdirect Australia, there are three main types of colour blindness, these are red-green colourblindness (deuteranopia and protanopia), blue-yellow colour blindness (tritanopia) and complete colour blindness (monochromatism). Colour blindness can be diagnosed by an optometrist through various colour vision tests to determine if the person has colour blindness and what type. There is no prevention for colour blindness that is congenital but there are ways a person can potentially prevent colour blindness from developing later in life such as getting regular eye exams and leading a healthy lifestyle. There is no treatment available for congenital colour blindness although education and management of a person’s colour vision deficiency can minimise disruption to their lives.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">11. Eyestrain</h2>
+<p class="para-content"><span style="font-weight: 400;">Eyestrain is a very common eye problem </span><b>caused by the eyes concentrating on tasks or objects for a long period of time.</b><span style="font-weight: 400;"> It typically doesn’t pose any threat to eye health or overall health. There are three main causes of eyestrain and fatigue, these include writing and typing, driving long distances and reading for long periods of time without eye rest. The symptoms of eyestrain include trouble focusing, double or blurred vision, sore or irritated eyes and increased sensitivity to light. Eye fatigue can be diagnosed by an eye care professional or general practitioner by assessing the symptoms the person is experiencing and understanding when these symptoms occur and what they are related to.</span></p>
+<p class="para-content"><span style="font-weight: 400;">Eye fatigue may be prevented by blinking often to moisten the eyes when concentrating on specific tasks and when working on a computer, enlarging the text on the screen to make it easier to read. Wearing glasses may also be used to correct refractive errors which may be underlying causes of eye fatigue and strain. Eyestrain can be managed and treated with various types of lifestyle changes and treatment methods, some of which include rest, taking breaks between intense concentration and using lubricating eye drops.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">12. Vision Changes</h2>
+<p class="para-content"><span style="font-weight: 400;">Vision changes are a common sign of many eye conditions and are </span><b>characterised by a sudden difference in your ability to see normally.</b></p>
+<p class="para-content"><b>If your vision changes, you should see an optometrist immediately as it could be a sign of a serious eye condition that needs treatment.</b></p>
+<p class="para-content"><b><span style="font-weight: 400;">Vision changes are commonly caused by refractive errors that affect the eye’s capacity to see clearly, these include myopia, hyperopia and astigmatism. Vision changes may be caused by a wide variety of eye conditions but some of the most common are cataracts, age-related macular degeneration and diabetic retinopathy. Possible vision changes include blurred vision, double vision, cloudy vision, spots in vision and loss of vision.</span></b></p>
+<p class="para-content"><b><span style="font-weight: 400;">While vision changes cannot necessarily be prevented, there are some steps a person can take to ensure they are protecting their eyes from certain problems. This includes having regular eye exams, leading a healthy and balanced lifestyle and being aware of your family history of eye problems. Treatments for vision changes are dependent on the cause, for example, if the vision changes are due to refractive errors, they can be treated with prescription glasses. Other more involved treatments such as laser therapy and surgery may be used to treat diabetic retinopathy and glaucoma.</span></b></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">13. Excess Tearing</h2>
+<p class="para-content"><span style="font-weight: 400;">Excess tearing, also known as watery eyes and clinically as epiphora, </span><b>occurs when there is an overflow of tears, spilling onto the face.</b><span style="font-weight: 400;"> Excess tearing or watery eyes are caused by two main reasons, overproduction of tears and blocked tear ducts. Other causes may include dry eyes, allergies and keratitis. The main symptom of excess tearing is an overflow of tears in the eyes spilling onto the face. It may also lead to eye redness, blurred vision and sore eyes.</span></p>
+<p class="para-content"><span style="font-weight: 400;">Excess tearing can be diagnosed by a healthcare professional through an eye examination to determine the cause of the tearing. They may also check the pressure of the eye and your nose passages. Treatment for excess tearing depends on the cause of the condition. If it is caused by blocked tear ducts, surgery may be suggested. Eye drops may be suggested if the excess tears are caused by irritation.</span></p>
+</section>
+<!--  CTA aside-->
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="heading">Find a Store Near You</p>
+<p style="font-size: 16px;">Come and visit the Oscar Wylee team for all your optometry and eyewear needs. Plus, you can browse our wide range of stylish frames.</p>
+</div>
+<div class="book-section-right"><a href="https://www.oscarwylee.ca/locations/"><button class="btnOw">Find a store</button></a></div>
+</aside>
+<!--  CTA aside-->
+<section class="square-section">
+<h2 class="subtitle">14. Retinal Disorders</h2>
+<p class="para-content"><span style="font-weight: 400;">Retinal disorders are a </span><b>term for a group of conditions that affect the retina</b><span style="font-weight: 400;">. The retina is a layer of tissue located directly at the back of the eye and its main function is to receive light that comes in through the eye's lens and translate that light into images. The retina is made up of two parts, the macula, and the peripheral retina. According to the Mayo Clinic, the common retinal disorders and diseases include age-related macular degeneration, diabetic retinopathy, retinal tear and detachment and macular hole. Some of the common symptoms among retinal disorders include loss of vision, loss of visual field, eye floaters, blurred or distorted vision and seeing flashes of light.</span></p>
+<p class="para-content"><span style="font-weight: 400;">Retinal disorders are diagnosed by an optometrist or ophthalmologist through a comprehensive eye exam. They will also ask for your medical and family history and assess the retina using a slit lamp. The treatment for retinal disorders depends on the specific disorder. For example, retinal tears and detachment may be treated through surgery and diabetic retinopathy can be treated with laser treatment, surgery and injections. </span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">15. Eyelid Problems</h2>
+<p class="para-content"><span style="font-weight: 400;">Eyelid problems are </span><b>eye conditions that affect the eyelids, potentially making them swollen, painful and irritated.</b><span style="font-weight: 400;"> There are many different eye conditions that may cause eyelid problems with many of them not posing a threat to your sight. </span><b>Although it is important to seek attention from an optometrist if you have eyelid problems.</b><span style="font-weight: 400;"> Some of the common causes of eyelid problems are chalazia, conjunctivitis, allergies and blepharitis. There is a wide range of symptoms associated with eyelid problems that vary depending on the eye condition. Some of the most common symptoms include inflammation of the eyelid, flaky, sticky or itchy eyelids and lumps on the eyelid. </span></p>
+<p class="para-content"><span style="font-weight: 400;">Eyelid problems can be categorised into different types including inflammatory and mechanical. Eyelid problems can be diagnosed through a comprehensive eye exam performed by an optometrist. They will assess the eye and ask questions about the duration you have experienced the problem. There are a number of tips a person can follow in an attempt to prevent eyelid problems. These include practising good hygiene by washing your eyelids regularly as well as your hands, avoiding rubbing and touching your eyes and protecting your eyes from UV radiation by wearing glasses and a hat when in the sun.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">16. Corneal Diseases</h2>
+<p class="para-content"><span style="font-weight: 400;">Corneal diseases are </span><b>types of diseases that mainly affect the cornea. </b><span style="font-weight: 400;">The cornea is the clear outer layer at the front of the eye, according to the National Eye Institute. It is located in the very front portion of the eye and controls how much light enters the eyes and focuses the light that is received. Some common corneal diseases include keratitis, eye herpes, corneal dystrophies, dry eyes and pterygium. The causes of corneal diseases depend on the specific diseases. For example, the causes of keratitis include injury and bacteria, eye herpes is usually caused by HSV-1 and the main cause of pterygium is eye exposure to the sun’s UV radiation.</span></p>
+<p class="para-content"><span style="font-weight: 400;">Corneal diseases may cause pain, decreased visual acuity, tearing, redness, blurred vision, red eyes, watery eyes and sensitivity to light. To receive a diagnosis for corneal diseases, you need to visit an optometrist for a comprehensive eye exam. While corneal diseases may not be prevented there are steps a person can take to potentially reduce their risk of developing certain eye diseases. According to the Cleveland Clinic, this includes protecting the eyes from an injury, washing your hands thoroughly and reducing contact with people who have contagious conjunctivitis. The treatments for corneal diseases may include eye drops, laser surgery, a corneal transplant and medication.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">17. Problems with Contact Lenses</h2>
+<p class="para-content"><span style="font-weight: 400;">People may experience problems with contact lenses that can </span><b>lead to certain eye conditions and symptoms.</b><span style="font-weight: 400;"> Contact lenses are corrective devices that cover the surface of the eye to make your vision clear. Problems with contact lenses can be caused by using unclean contact lenses, sleeping in contact lenses and not replacing contacts when advised. Problems with contact lenses and incorrect use can lead to symptoms of inflammation, sore eyes, red eyes and watery eyes. According to Better Health, other symptoms may include dry eyes, infection and an allergic reaction.</span></p>
+<p class="para-content"><span style="font-weight: 400;">You may be able to prevent problems with contact lenses by following certain steps such as obeying the instructions from your eye care professional, cleaning the contact lenses with approved products and washing your hands and drying them thoroughly before handling contact lenses. Treatment for problems with contacts depends on the type of problem. An eye care professional should be the one to prescribe treatments.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">18. Crossed Eyes (Strabismus) and Nystagmus</h2>
+<p class="para-content"><span style="font-weight: 400;">Crossed eyes, also known as strabismus, is an eye condition that commonly affects children and </span><b>occurs when one eye turns in a different direction than the other eye.</b><span style="font-weight: 400;"> People with strabismus have lesser control of eye movement according to the Cleveland Clinic, which means they are not able to retain ocular alignment. There are many causes of crossed eyes (strabismus) such as family history, medical conditions and refractive errors. The most common symptoms of crossed eyes include double vision, misaligned-looking eyes, turning the head to view objects and improper depth perception. There are two types of crossed eyes (strabismus), intermittent exotropia and accommodative esotropia. The first occurs when only one eye is fixated on an object and the other points outwards, the second type occurs when one or both eyes cross when trying to focus on a target.</span></p>
+<p class="para-content"><span style="font-weight: 400;">Eye care professionals are able to diagnose and treat crossed eyes (strabismus) by testing refraction, visual acuity, alignment and eye health. According to the Children’s Health Queensland Hospital and Health Service, crossed eyes affect approximately 5 in every 100 children. Crossed eyes cannot be prevented although it can be treated with glasses and contact lenses, prism lenses, medications, vision therapy, patching and eye muscle surgery.</span></p>
+<p class="para-content"><span style="font-weight: 400;">Nystagmus is an eye condition that <b>causes involuntary movement of the eyes which can be side-to-side, circular or up and down.</b> It can occur in both eyes and may happen for a few seconds or be permanent. According to Johns Hopkins Medicine, the two types of nystagmus are pendular nystagmus and jerk nystagmus. This eye condition can be caused by brain diseases but it may also be congenital.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">19. Conjunctivitis (pink eye)</h2>
+<p class="para-content"><span style="font-weight: 400;">Conjunctivitis, known colloquially as pink eye, is </span><b>an inflammation, irritation or infection of the conjunctiva. </b><span style="font-weight: 400;">The conjunctiva is the clear membrane that sits over the white parts of the eye and the inner eyelids. Conjunctivitis may be caused by bacteria, a chemical splash in the eye, a reaction to eye drops, viruses and a reaction to certain allergens. The symptoms of conjunctivitis include a red conjunctiva, itchy eyes, eye discharge and an inflamed conjunctiva. There are multiple different types of pink eye, including bacterial conjunctivitis, viral conjunctivitis and allergic conjunctivitis.</span></p>
+<p class="para-content"><span style="font-weight: 400;">Conjunctivitis (pinkeye) can be diagnosed by an optometrist through an examination of the eye and based on the person’s symptoms and patient history. According to the National Eye Institute, pink eye is one of the most common eye conditions for children and adults. This eye condition may be prevented from spreading through frequent hand washing, not touching the eyes, not sharing personal items and avoiding wearing contact lenses when you have an active conjunctivitis infection. The treatments for conjunctivitis will be decided by an eye care professional and may include synthetic tears, eye drops and applying a compress to the affected eye. The type of treatment that an eye care professional will decide on is also determined by what type of conjunctivitis a person has.</span></p>
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img src="{{media url="wysiwyg/image-folder/glasses/eye/common-problems/Top-25-Common-Eye-Problems-Image-3-900x600.jpg"}}" alt="An eye affected by conjunctivitis (pink eye)." class="product-image"></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img src="{{media url="wysiwyg/image-folder/glasses/eye/common-problems/Top-25-Common-Eye-Problems-Image-3-900x600.jpg"}}" alt="An eye affected by conjunctivitis (pink eye)." class="product-image"></div>
+</div>
+</section>
+<section class="square-section">
+<h2 class="subtitle">20. Keratoconus</h2>
+<p class="para-content"><span style="font-weight: 400;">Keratoconus is an eye condition that </span><b>affects the cornea, making it thin and bulge outwards into a cone shape.</b><span style="font-weight: 400;"> Keratoconus typically occurs in both eyes although it can affect one more significantly. The causes of keratoconus are currently unknown although there are certain risk factors that mean you are more likely to develop this eye condition. These risk factors include a family history of keratoconus, allergies, eczema and excessive and vigorous eye rubbing. The symptoms of keratoconus may include sensitivity to light, distorted vision, blurry vision and issues with driving at night.</span></p>
+<p class="para-content"><span style="font-weight: 400;">Keratoconus can be diagnosed through an eye exam performed by an optometrist using a slit lamp. According to the American Academy of Ophthalmology, they will also observe inferior or central corneal thinning. Keratoconus can not typically be prevented although there are certain ways a person can lower their chances of developing this eye condition. This includes wearing sunglasses to protect the eyes from UV radiation and not rubbing the eyes. Treatment for the eye condition keratoconus may include prescription glasses, contact lenses and surgery.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">21. Chalazion (eyelid cyst)</h2>
+<p class="para-content"><span style="font-weight: 400;">A chalazion, also known as an internal hordeolum or an eyelid cyst, is </span><b>a sign of a blocked oil gland, usually underneath the upper eyelid, resulting in swelling of the affected area.</b><span style="font-weight: 400;"> It may feel tender to touch and after a period of time, a harder, red lump will start to form. The causes of chalazia are posterior blepharitis, rosacea, seborrheic dermatitis, tuberculosis and viral infection. Chalazia often starts as a stye, therefore, it can be difficult to determine which eye condition you have. </span></p>
+<p class="para-content"><span style="font-weight: 400;">A chalazion can be diagnosed by a health care professional such as an optometrist through a visual assessment of the eye. If the chalazion requires further, more advanced treatment, they may refer the patient to an ophthalmologist. While it is not always feasible to prevent developing a <a href="https://oscarwylee.ca/glasses/eye/chalazion">chalazion</a>, there are certain things you can do to reduce your chances of one forming on your eyelid such as practising good hygiene. A chalazion will typically go away on its own after a few weeks to a month, but if it is affecting a person’s vision or not improving, seek treatment from an optometrist. Other things you can do to treat a chalazion and prevent it from getting worse are to avoid contact lens wear and makeup, avoid squeezing, rubbing or touching the chalazion and use warm compresses with a gentle massage to unclog the blocked oil gland.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">22. Pterygium (noncancerous growth on the conjunctiva)</h2>
+<p class="para-content"><span style="font-weight: 400;">Pterygium, also known as surfer’s eye, is </span><b>a benign, noncancerous eye growth on the conjunctiva.</b><span style="font-weight: 400;"> It appears white or pinkish in colour, usually with visible blood vessels and formed into a triangular shape. The exact cause of pterygium is not conclusively known, however, it is thought the main cause of pterygium is exposure to ultraviolet radiation from the sun. Environmental factors may also contribute to the formation of pterygium, including pollen, smoke, sand, wind and dust. The symptoms of pterygium may include diminished and blurry vision, redness, mild eye pain, dry eyes, a wedge-shaped growth on the eye and the feeling of having something in your eye.</span></p>
+<p class="para-content"><span style="font-weight: 400;">Pterygium is diagnosed through an eye exam most likely performed by an optometrist. They will use a microscopic tool to examine the growth and diagnose where appropriate. Pterygium may be prevented but not cured by limiting exposure to the sun and UV radiation and the only treatment for the eye condition itself is surgery. Eye drops and topical medication can be used to help the area if it is inflamed or irritated.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">23. Pinguecula (yellowish growth on the conjunctiva)</h2>
+<p class="para-content"><span style="font-weight: 400;">A pinguecula is </span><b>a yellow, raised growth on the conjunctiva that usually contains calcium, fat or protein</b><span style="font-weight: 400;">, according to the American Academy of Ophthalmology. Pinguecula is thought to be caused by exposure to UV rays and environmental factors such as wind, sand and dust from hot and dry climates. The symptoms of this eye condition include a raised, yellow growth on the conjunctiva and eye redness and irritation.</span></p>
+<p class="para-content"><span style="font-weight: 400;">According to the American Optometric Association, a pinguecula can be diagnosed by an eye health professional through a comprehensive eye exam. They will evaluate the front structure of the eye specifically to determine a diagnosis.&nbsp; The main way to prevent this eye condition is to limit your exposure to the sun’s UV rays. This can be done by practising sun safety and wearing sunglasses and a broad-brimmed hat. A pinguecula can sometimes cause irritation, which may be treated with eye drops or gels to lubricate the eyes. If the irritation is more severe, your eye care professional may prescribe steroid drops.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">24. Diabetic Retinopathy</h2>
+<p class="para-content"><span style="font-weight: 400;">Diabetic retinopathy (DR) is </span><b>a complication of diabetes that causes damage to the small blood vessels in the back of the eye. </b><span style="font-weight: 400;">Diabetic retinopathy can be classified into three different categories, non-proliferative DR, proliferative DR and cystoid macular oedema. Vision loss prevention for diabetic retinopathy includes having good control of your blood sugar levels, seeing your general practitioner for blood tests, yearly diabetic eye exams with your optometrist and regular visits to an ophthalmologist, who can closely monitor your diabetic retinopathy. According to the Baker Heart and Diabetes Institute, approximately one in three people will develop some form of diabetic eye disease as a result of diabetes.</span></p>
+<p class="para-content"><span style="font-weight: 400;">The treatment available from an ophthalmologist for diabetic retinopathy includes laser treatment, injections and surgery. According to Healthdirect Australia, the symptoms you may experience if you have diabetic retinopathy are blurred vision, pain in the eyes, eye floaters, sensitivity to glare and trouble seeing at night. This eye condition may be diagnosed through an eye exam and you may be referred to an ophthalmologist if necessary.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">25. Age-Related Macular Degeneration</h2>
+<p class="para-content"><span style="font-weight: 400;">Age-related macular degeneration (AMD) is a common eye problem that </span><b>causes a painless loss of central vision.</b><span style="font-weight: 400;"> It affects the macula, which is the part of the eye that is used when looking straight ahead to focus on an object. Some of the symptoms of age-related macular degeneration include gradual blurring of vision, distortion of straight lines, difficulty seeing things centrally struggle with reading and fading of colours.</span></p>
+<p class="para-content"><span style="font-weight: 400;">There are two types of age-related macular degeneration, dry AMD and wet AMD. Dry AMD is the more common variant and is characterised by a loss of retinal cells at the macula due to damage in the underlying layer. Wet AMD occurs when new blood vessels grow under the retina and macula, which may leak blood or other fluids into the eye. AMD is diagnosed through a series of tests performed by an optometrist including a full exam and understanding of your medical history and more specifically a visual field test. AMD may be prevented by eating a healthy, well-balanced diet, wearing sunglasses, avoiding smoking and regular exercise. Currently, there is no treatment for dry AMD although wet AMD may be treated with injections to slow vision loss. </span></p>
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img src="{{media url="wysiwyg/image-folder/glasses/eye/common-problems/Top-25-Common-Eye-Problems-Image-4-900x600.jpg"}}" alt="An eyeball demonstrating the eye condition age-related macular degeneration." class="product-image"></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img src="{{media url="wysiwyg/image-folder/glasses/eye/common-problems/Top-25-Common-Eye-Problems-Image-4-900x600.jpg"}}" alt="An eyeball demonstrating the eye condition age-related macular degeneration." class="product-image"></div>
+</div>
+</section>
+<section class="square-section">
+<h2 class="subtitle">How to Identify the Common Eye Problem?</h2>
+<p class="para-content" style="letter-spacing: -0.25px;"><span style="font-weight: 400;">There is one main way to identify if you have a common eye problem which is to first </span><b>have an eye exam with an optometrist.</b><span style="font-weight: 400;"> Optometrists are trained to assess, diagnose, manage and treat your vision and any eye problems you may have. The results of an eye exam enable optometrists to provide tailored advice on how to best support your visual needs, which vary with age and the type of work you do. An optometrist may also refer you to an ophthalmologist for further treatment when necessary.</span></p>
+<div class="sub-div">
+<h3 class="con-title" id="avoid">How to Avoid Common Eye Problems?</h3>
+<p class="para-content"><span style="font-weight: 400;">There are many different ways a person can avoid common eye problems and protect their overall eye health. These include </span><b>getting regular eye exams, protecting your eyes from the sun, taking breaks when using digital devices, practising good hygiene, eating a healthy diet, quitting smoking and wearing eye protection.</b><span style="font-weight: 400;"> The ways to avoid common eye problems and their definitions are listed below.</span></p>
+<ol class="ordered-list">
+<li>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><b>Get regular eye exams:</b><span style="font-weight: 400;"> Book a regular eye exam so that your optometrist can track any changes to your eye and vision and provide treatment for vision issues if needed.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Protect your eyes from the sun: </b><span style="font-weight: 400;">Wear sunglasses as they are extremely important for avoiding eye problems and for overall eye health as they protect your eye from harmful UV rays.&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Take breaks when using digital devices: </b><span style="font-weight: 400;">Take breaks when using digital devices and limit your screen time when possible to prevent eye strain and keep your eyesight healthy.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Practise good hygiene:</b><span style="font-weight: 400;"> Practise good hygiene and maintain good eye health by not touching your eyes with dirty hands, regularly cleaning your glasses and not using old makeup.&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Eat a healthy diet:</b> <b>&nbsp;</b><span style="font-weight: 400;">Keep a healthy and balanced diet that includes omega-3 fats, leafy greens, nuts and seeds to help to maintain the health of your eyes.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Quit smoking: </b><span style="font-weight: 400;">Lower your risk of developing age-related macular degeneration and other conditions by quitting smoking.</span></li>
+</ol>
+<b>Wear eye protection: </b><span style="font-weight: 400;">Use safety eyewear such as safety glasses or goggles if you are working in an environment in which debris or other hazardous materials such as vapour and chemicals may touch the eye.</span></li>
+</ol>
+</div>
+<div class="sub-div">
+<h3 class="con-title">Which Eye Problem is the Most Common Among Kids?</h3>
+<p class="para-content" style="letter-spacing: -0.25px;"><span style="font-weight: 400;">The eye problem that is the </span><b>most common among kids is refractive errors</b><span style="font-weight: 400;">. According to the Canadian Ophthalmological Society, other common eye problems in children include strabismus and amblyopia.</span></p>
+</div>
+<div class="sub-div">
+<h3 class="con-title">Which Eye Problem is the Most Common Among Adults?</h3>
+<p class="para-content"><span style="font-weight: 400;">Refractive errors are one of the most common eye problems among adults which affects a person’s ability to see clearly. According to a 2021 article published in the National Library of Medicine, </span><b>myopia (nearsightedness) is the most common refractive error and predisposes the eye to many conditions that cause blindness in adulthood. </b><span style="font-weight: 400;">Another article in the National Library of Medicine reported that there are an estimated 2.3 billion people in the world who suffer from poor vision due to a refractive error.</span></p>
+</div>
+<div class="sub-div">
+<h3 class="con-title">Which Eye Problem is the Most Common Among Elders?</h3>
+<p class="para-content"><span style="font-weight: 400;">Some eye problems are more common among elders as they are </span><b>age-related and occur due to the ageing process. </b><span style="font-weight: 400;">Major eye diseases that cause visual impairment for people over the age of 55 are age-related macular degeneration, cataracts, glaucoma and diabetic retinopathy. In the case of age-related macular degeneration, these eye problems are common among the elderly as it is caused by damage to the macula due to ageing.</span></p>
+</div>
+</section>
+<section class="square-section">
+<h2 class="subtitle" id="definition">What is an Eye Problem?</h2>
+<p class="para-content"><span style="font-weight: 400;">An eye problem is </span><b>a broad term for any condition, disease or issue that affects the eye.</b><span style="font-weight: 400;"> This could include common symptoms such as itchy eyes, watery eyes, dry eyes and red eyes. There are also common eye conditions that cause problems to the eyes such as vision loss or eye pain including glaucoma, cataracts and uveitis. An eye problem can be identified by an eye care professional such as an optometrist or ophthalmologist who can then manage and treat the condition.</span></p>
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img src="{{media url="wysiwyg/image-folder/glasses/eye/common-problems/Top-25-Common-Eye-Problems-Image-5-900x600.jpg"}}" alt="A woman sitting at her desk in pain from an eye problem." class="product-image"></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img src="{{media url="wysiwyg/image-folder/glasses/eye/common-problems/Top-25-Common-Eye-Problems-Image-5-900x600.jpg"}}" alt="A woman sitting at her desk in pain from an eye problem." class="product-image"></div>
+</div>
+<div class="sub-div">
+<h3 class="con-title" id="causes">What are the Causes of an Eye Problem?</h3>
+<p class="para-content"><span style="font-weight: 400;">There are many different eye conditions that cause eye problems some of which are </span><b>refractive errors, eye injections, allergies, dry eye syndrome, age-related eye conditions, trauma, neurological conditions and systemic conditions.</b><span style="font-weight: 400;"> These causes of eye problems and their definitions are listed below.</span></p>
+<ul class="ordered-list">
+<li style="font-weight: 400;" aria-level="1"><b>Refractive errors:</b><span style="font-weight: 400;"> Refractive errors, such as nearsightedness, farsightedness, astigmatism and presbyopia may cause eye problems such as blurry vision, eyestrain and squinting.&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Eye infections: </b><span style="font-weight: 400;">Eye infections, such as conjunctivitis or keratitis, can be caused by bacteria, viruses, or other pathogens and according to Healthdirect Australia, may lead to swollen, red or painful eyes.&nbsp;&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Allergies:</b><span style="font-weight: 400;"> Allergies can cause redness, itching, and other eye symptoms, particularly during allergy season. Common irritants that cause eye allergies include pollen, dust and pet dander.&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Dry eye syndrome:</b><span style="font-weight: 400;"> Dry eye syndrome occurs when the eyes do not produce enough tears or the tears evaporate too quickly which can make the eyes feel itchy, burning and scratchy.&nbsp;&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Age-related eye conditions:</b><span style="font-weight: 400;"> As people age, they may be at risk for age-related eye conditions, such as cataracts, age-related macular degeneration, glaucoma or presbyopia.&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Trauma: </b><span style="font-weight: 400;">Eye trauma, such as a foreign object in the eye or a blow to the eye can cause very serious eye problems such as vision changes, pain and bleeding in the eye.&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Neurological conditions: </b><span style="font-weight: 400;">Neurological conditions, such as multiple sclerosis or optic neuritis, can cause eye problems such as eye pain and vision loss.</span></li>
+<li><b>Systemic conditions: </b><span style="font-weight: 400;">Systemic conditions involve the entire body or multiple organs. Some systemic conditions, such as diabetes or high blood pressure, can cause eye problems and damage.</span></li>
+</ul>
+</div>
+<div class="sub-div">
+<h3 class="con-title" id="symptoms">What are the Symptoms of an Eye Problem?</h3>
+<p class="para-content"><span style="font-weight: 400;">There are many different symptoms that people can experience as a result of an eye problem, some of which can be a symptom of multiple eye conditions. Some of the common symptoms of eye problems include </span><b>blurred or distorted vision, redness or swelling, eye pain or discomfort, sensitivity to light, eye discharge, eye floaters, double vision and loss of vision or visual field</b><span style="font-weight: 400;">. These symptoms and their definitions are listed below.</span></p>
+<ul class="ordered-list">
+<li style="font-weight: 400;" aria-level="1"><b>Blurred or distorted vision:</b><span style="font-weight: 400;"> Blurred or distorted vision refers to eyes that are unable to focus properly resulting in unclear and hazy vision. It may be caused by cataracts, glaucoma and dry eyes.&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Redness or swelling:</b><span style="font-weight: 400;"> Eyes may become red or swollen due to many eye conditions such as allergies, conjunctivitis and dry eyes. This may also lead to eye pain, itching and eye discharge.&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Eye pain or discomfort:</b><span style="font-weight: 400;"> Eye pain or discomfort may be caused by trauma to the eye such as an eye injury or from different eye conditions such as glaucoma, conjunctivitis or a stye.&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Sensitivity to light:</b><span style="font-weight: 400;"> Light sensitivity, also referred to as photophobia, occurs when bright light causes discomfort to the eyes and is a common symptom of conjunctivitis, dry eyes and cataracts.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Eye discharge: </b><span style="font-weight: 400;">Eye discharge is a common occurrence that is typically not a concern. Although, if there is a large amount of discharge or it causes eye issues, you should seek attention from an eye care professional.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Eye floaters: </b><span style="font-weight: 400;">Eye floaters can appear as black spots, cobwebs or squiggly lines in a person’s vision and occurs naturally from age or may be caused by trauma and bleeding in the eye.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Double vision:</b><span style="font-weight: 400;"> Double vision, also known as diplopia, is a common symptom of cataracts, lazy eye and nerve issues and causes a person to see two images that may overlap or be completely distinct.&nbsp;</span></li>
+<li><b>Loss of vision or visual field: </b><span style="font-weight: 400;">Loss of vision or visual field is an unfortunate outcome for select eye conditions such as glaucoma and cataracts. Visual field loss can involve only a small part of a person’s vision or a large area.</span></li>
+</ul>
+<div class="sub-div">
+<h4 class="con-title">Can Eye Issues Have an Impact on the Body?</h4>
+<p class="para-content" style="letter-spacing: -0.05px;"><span style="font-weight: 400;">Yes, </span><b>eye issues can have an impact on the body, especially for people with loss of vision. </b><span style="font-weight: 400;">According to the National Library of Medicine, people with eye issues and vision impairment are associated with an increased risk of fractures which greatly impacts the body. Mobility can also be affected by eye issues as eyesight is the main sense used to navigate the three-dimensional space around you.</span></p>
+</div>
+</div>
+<!-- lang switch start -->
+<div class="bottom-lag-sw">
+<p class="para-content">Read Top 25 Common Eye Problems in other Oscar Wylee regions and their languages.</p>
+<div class="lang-sw bottom">
+<div class="language-switch">
+<div class="language-switch-current" id="language-switch-current" onclick="toggleVisibilityBtnTwo()"><!-- flag --> <img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="Top 25 Common Eye Problems in Canadian English"> Canada <!-- dropdown icon --> <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z" fill="black"></path> </svg></div>
+<div class="language-switch-dropdown-itmes-wrapper" id="language-switch-dropdown-itmes-wrapper" style="display: none;">
+<div class="language-switch-dropdown-itmes"><!-- flag --> <img src="{{media url='wysiwyg/AU_Flag.jpg'}}" alt="Top 25 Common Eye Problems in Australian English"> <a href="https://www.oscarwylee.com.au/glasses/eye/common-problems"> Australia</a></div>
+<div class="language-switch-dropdown-itmes"><!-- flag --> <img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="Top 25 Common Eye Problems in Canadian English"> <a href="https://www.oscarwylee.ca/glasses/common-problems"> Canada</a></div>
+<div class="language-switch-dropdown-itmes"><!-- flag --> <img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="Top 25 Common Eye Problems in Canadian French"> <a href="https://oscarwylee.ca/fr/glasses/eye/common-problems"> Canadian French</a></div>
+</div>
+</div>
+</div>
+</div>
+<!-- lang switch end --></section>
+</div>
+<!-- add bottom CTA section here -->
+<aside class="context"><!-- Location and booking  -->
+<div class="location" style="border-top: none;">
+<div class="locationText">
+<p class="heading">We Accept Leading Health Insurances</p>
+<p class="contents">Visit your local Oscar Wylee today for your eye care needs, and your health insurance may help cover some of the cost.</p>
+<div class="allButton"><a href="https://oscarwylee.ca/health-insurance/"> <button class="btnOw">Health Insurance</button> </a></div>
+</div>
+<img src="{{media url='wysiwyg/image-folder/glasses/cta/find-a-store.jpg'}}" alt="find a location image" class="locationImage"></div>
+<div class="location item1"><img src="{{media url='wysiwyg/image-folder/glasses/cta/find_a_store_1_1__1.png'}}" alt="book eye test image" class="locationImage">
+<div class="locationText">
+<p class="heading">Prioritise Your Eye Health</p>
+<p class="contents">If you are worried about your eye health, book a comprehensive eye exam with a skilled independent optometrist.</p>
+<div class="allButton"><a href="https://www.oscarwylee.ca/booking"> <button class="btnOw">Book an eye exam</button> </a></div>
+</div>
+</div>
+</aside>
+</div>
+<p>
+<script>
+      const productContainers = [
+        ...document.querySelectorAll(".product-container"),
+      ];
+      const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
+      const preBtn = [...document.querySelectorAll(".pre-btn")];
+
+      productContainers.forEach((item, i) => {
+        let containerDimensions = item.getBoundingClientRect();
+        let containerWidth = containerDimensions.width;
+
+        nxtBtn[i].addEventListener("click", () => {
+          item.scrollLeft += containerWidth;
+        });
+
+        preBtn[i].addEventListener("click", () => {
+          item.scrollLeft -= containerWidth;
+        });
+      });
+
+      // top lang-sw
+      document.addEventListener("click", function (event) {
+        var secondBox = document.querySelector(
+          ".language-switch-dropdown-itmes-wrapper"
+        );
+        var firstBox = document.querySelector(".language-switch-current");
+
+        // Check if the clicked element is outside the second box and the first box
+        if (
+          !secondBox.contains(event.target) &&
+          !firstBox.contains(event.target)
+        ) {
+          secondBox.style.display = "none";
+        }
+      });
+
+      function toggleVisibility() {
+        var secondBox = document.querySelector(
+          ".language-switch-dropdown-itmes-wrapper"
+        );
+        secondBox.style.display =
+          secondBox.style.display === "none" ? "flex" : "none";
+      }
+
+      // bottom lang-sw
+      document.addEventListener("click", function (event) {
+        var secondBox = document.querySelector(
+          "#language-switch-dropdown-itmes-wrapper"
+        );
+        var firstBox = document.querySelector("#language-switch-current");
+
+        // Check if the clicked element is outside the second box and the first box
+        if (
+          !secondBox.contains(event.target) &&
+          !firstBox.contains(event.target)
+        ) {
+          secondBox.style.display = "none";
+        }
+      });
+
+      function toggleVisibilityBtnTwo() {
+        var secondBox = document.querySelector(
+          "#language-switch-dropdown-itmes-wrapper"
+        );
+        secondBox.style.display =
+          secondBox.style.display === "none" ? "flex" : "none";
+      }
+    </script>
+</p>

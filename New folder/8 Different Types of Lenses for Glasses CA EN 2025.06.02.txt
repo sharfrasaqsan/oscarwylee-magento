@@ -1,0 +1,1434 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+
+  * {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #333333; */
+    line-height: 1.3em;
+    scroll-behavior: smooth;
+  }
+
+  #maincontent {
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  }
+
+  .article-banner {
+    height: 450px;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  .banner {
+    width: auto;
+    max-height: 450px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+  }
+
+  .mobile-banner {
+    display: none;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  .title {
+    /* border-bottom: 1px solid silver; */
+    /* padding: 2.5rem 3rem; */
+    padding: 11px 3rem;
+    /* margin: 2.5rem 3rem; */
+    margin: 0px;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 10px solid #003cac;
+    padding: 1rem;
+    font-weight: 700;
+  }
+
+  .linkTo {
+    color: #003cac;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .intro-section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .main-section section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .section-border-bottom {
+    border-bottom: 1px solid silver;
+    margin: 3rem;
+  }
+
+  .book-section {
+    display: flex;
+    padding-left: 1em;
+    padding-bottom: 2.5em;
+    padding-top: 0em;
+  }
+
+  .book-section p {
+    margin-bottom: 1.5em;
+  }
+
+  .book-section-left {
+    width: 50%;
+    margin-left: 0;
+    padding-left: 1.5em;
+  }
+
+  .book-section-left .heading {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+  }
+
+  .book-section-right {
+    display: flex;
+    margin: auto auto;
+    width: 30%;
+  }
+
+  .book-section-right a {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+  }
+
+  .btnOw:hover {
+    background-color: black;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    border: none !important;
+  }
+
+  .btnOw {
+    background-color: #003cac;
+    width: 100%;
+    /* padding: 0px 50%; */
+    border: none;
+    color: #fff;
+    height: 2em;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .para-content {
+    /* margin-top: 1em; */
+    margin-bottom: 2em;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .list-title {
+    font-weight: 700;
+  }
+
+  .ordered-list,
+  .unordered-list {
+    padding-left: 4rem;
+    margin-top: 2em;
+  }
+
+  .unordered-list {
+    margin-bottom: 2em;
+  }
+
+  .ordered-list li,
+  .unordered-list li {
+    margin-bottom: 0.8em;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .pro-con {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .pro-con li {
+    margin-bottom: 1em;
+  }
+
+  .pro-title,
+  .con-title,
+  .sub-list-title,
+  .sub-div-title {
+    border-left: 10px solid #b1b4b2;
+    padding: 0rem 1rem;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  .sub-list-title {
+    font-size: medium;
+    margin-left: 3em;
+  }
+
+  .pro-list,
+  .con-list {
+    margin-left: 2em;
+  }
+
+  .pro-section,
+  .con-section {
+    flex: 1 1 0;
+  }
+
+  .sub-div {
+    margin-left: 2em;
+  }
+
+  .sub-div .para-content {
+    margin-left: 0;
+  }
+
+  .grid-image {
+    width: 100%;
+    margin-bottom: 0.3em;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    column-gap: 3em;
+    width: 70%;
+    margin: 2em auto;
+  }
+
+  .grid-item {
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  .grid-item span {
+    font-style: italic;
+    font-weight: 700;
+    font-size: x-small;
+  }
+
+  .grid-text {
+    text-align: center;
+    font-size: x-small;
+    margin-bottom: 2em;
+  }
+
+  .grid-title {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    margin-bottom: 2em;
+  }
+
+  .flex-image {
+    width: 80%;
+    display: flex;
+    margin: 2em auto;
+  }
+
+  .hightlight-list {
+    font-weight: 600;
+  }
+
+  .example-images {
+    row-gap: 2em;
+  }
+
+  .product-image {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .products-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .individual-product {
+    border-right: 1px solid silver;
+    margin-bottom: 2em;
+    display: flex;
+    /* margin-left: 1em; */
+  }
+
+  .individual-product:last-child {
+    border: none;
+  }
+
+  .product-name,
+  .product-price {
+    text-align: center;
+  }
+
+  .product-button {
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin-top: 1em;
+  }
+
+  .two-pairs-price,
+  .three-pairs-price {
+    text-align: center;
+    /* margin-top: 2em; */
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 1em;
+  }
+
+  .two-pairs-price {
+    margin-bottom: 1em;
+  }
+
+  .two-pairs-price span,
+  .three-pairs-price span {
+    display: block;
+  }
+
+  .two-pairs-price {
+    background-color: #003cac;
+  }
+
+  .three-pairs-price {
+    background-color: black;
+  }
+
+  .from {
+    font-weight: 300;
+    color: white;
+    line-height: 10px;
+  }
+
+  .product-right {
+  }
+
+  .context {
+    padding: 0 3rem;
+  }
+
+  .location {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: max-content;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+    padding-top: 0;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid silver;
+  }
+
+  .location .heading {
+    font-weight: 700;
+    font-size: 1.8em;
+  }
+
+  .item1 {
+    border: none;
+  }
+
+  .locationText .heading {
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+
+  .locationText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.5em;
+  }
+
+  .locationText p {
+    font-size: 16px;
+    margin-top: 2em;
+  }
+
+  .locationImage {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  .allButton {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .allButton a {
+    text-decoration: none;
+  }
+
+  .allButton .btnOw {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .item1 {
+    padding-top: 2em;
+  }
+
+  .products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .nine-products-section img {
+    width: 30%;
+    border-right: 1px solid silver;
+  }
+
+  .nine-products-section img:last-child {
+    border: none;
+  }
+
+  .nine-products-section-gender {
+    margin-left: 0;
+  }
+
+  .grid-container-mobile {
+    display: none;
+  }
+
+  .contents {
+    margin-bottom: 2em;
+  }
+
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+    padding: 0;
+  }
+
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  .nxt-btn {
+    right: 0;
+  }
+
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+    width: 1em;
+  }
+
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+
+  .pre-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nxt-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nine-products-section {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .product-container {
+    /* padding: 0 10vw; */
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .product-container a {
+    display: contents;
+  }
+
+  @media screen and (max-width: 440px) {
+    * {
+      line-height: 1.5em;
+    }
+
+    .start-with-para {
+      margin-top: 2em !important;
+    }
+
+    .title {
+      margin: 1em 0.5em;
+      padding: 0em;
+      /* padding-bottom: 0.5em; */
+      white-space: normal;
+      border: none;
+    }
+
+    .contents {
+      margin-bottom: 2em;
+    }
+
+    .intro-section,
+    .main-section section {
+      margin: 0 1em;
+    }
+
+    .ordered-list,
+    .unordered-list {
+      padding-left: 1.2em;
+    }
+
+    .pro-con {
+      flex-direction: column;
+    }
+
+    .flex-wrapper {
+      flex-direction: column;
+    }
+
+    .example-images {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 2em;
+    }
+
+    .grid-item {
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .product-image {
+      width: 100%;
+    }
+
+    .sub-div {
+      margin-left: 0em;
+    }
+
+    .book-section {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .book-section-left {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .book-section-left p {
+      margin-right: 1em;
+      text-align: justify;
+      margin-left: 1em;
+    }
+
+    .book-section-left .heading {
+      text-align: center;
+      margin-top: 1.6em;
+      font-size: 1.5em;
+      margin-left: auto;
+      margin-right: auto;
+      width: 278px;
+    }
+
+    .book-section-right {
+      width: 90%;
+      margin-bottom: 3em;
+    }
+
+    .desktop-banner {
+      display: none;
+    }
+
+    .mobile-banner {
+      display: block;
+      max-width: 100%;
+      padding: 0;
+    }
+
+    .products-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .individual-product {
+      border-right: none;
+      border-bottom: 1px solid silver;
+      padding-bottom: 0.5em;
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    .grid-image {
+      width: 90%;
+      display: flex;
+      margin: 0px auto;
+    }
+
+    .location {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5em;
+    }
+
+    .locationText .heading {
+      text-size: 1.5em;
+      margin-top: 1.9em;
+      margin-bottom: -0.5em;
+    }
+
+    .allButton .btnOw {
+      width: 100%;
+    }
+
+    .item1 {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+      border: none;
+      padding-bottom: 0;
+      padding-top: 3.5em;
+    }
+
+    .locationText .heading {
+      text-align: center;
+    }
+
+    .item1 .locationImage,
+    .item1 .locationText {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+    }
+
+    .products-section {
+      display: none;
+    }
+
+    .nine-products-section {
+      display: none;
+    }
+
+    .individual-product {
+      display: flex;
+      margin: auto auto;
+    }
+
+    .products-section-mobile {
+      display: block;
+    }
+
+    .nine-products-section-mobile {
+      display: flex;
+      overflow-x: scroll;
+    }
+
+    .nine-products-section-mobile::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nine-products-section-mobile img {
+      width: 80%;
+    }
+
+    .grid-container-mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid-item span {
+      display: flex;
+      margin: 0 2em;
+    }
+
+    .grid-container-desktop {
+      display: none;
+    }
+
+    .product-container-mobile {
+      display: flex;
+      overflow-x: auto;
+    }
+
+    .nine-products-section-mobile {
+      position: relative;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+      width: 3vw;
+      height: 0;
+      top: 50%;
+    }
+
+    #main-cont-wrapper {
+      margin: 0em 1em;
+    }
+
+    .para-content {
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      word-spacing: -0.05em;
+    }
+
+    .mobile-word-space {
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      word-spacing: -0.1em !important;
+      text-align: justify;
+      font-size: 16px;
+    }
+
+    h5 {
+      font-size: 15px;
+    }
+
+    .btn-helth-funds {
+      height: 60px;
+      line-height: 20px;
+    }
+  }
+
+  /* big image */
+  .big_img_wapper {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .big_img {
+    border-radius: 8px;
+    width: 80%;
+  }
+
+  /* image with content section */
+  .image_with_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .para_wapper {
+    width: 50%;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    .image_with_content {
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    .para_wapper {
+      width: 100%;
+    }
+
+    .big_img_wapper {
+      width: 100%;
+    }
+
+    .big_img {
+      width: 100%;
+    }
+
+    .article-banner {
+      height: 500px;
+    }
+  }
+</style>
+<!-- new template styles start -->
+<style>
+  /* publish date start */
+  .intro-section.publsih-date {
+    margin: 0rem 3rem;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+
+  .publsih-date-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .publsih-date-wrapper p {
+    margin-bottom: 0px;
+    color: #003cac;
+    font-weight: 500;
+  }
+
+  .publsih-date-wrapper p:first-child {
+    border-right: 1.5px solid silver;
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .intro-section.publsih-date {
+      margin: 0em 1em 2em 1em;
+      padding-bottom: 10px;
+    }
+
+    .publsih-date-wrapper {
+      display: inline;
+    }
+
+    .publsih-date-wrapper p {
+      margin-bottom: 8px;
+      color: #003cac;
+      font-weight: 500;
+    }
+
+    .publsih-date-wrapper p:first-child {
+      border-right: 0px;
+      margin-right: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  /* publish date end */
+
+  /* top lang-sw start */
+  .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .lang-sw img {
+    max-width: 33px;
+  }
+
+  .language-switch {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    /* margin-left: 20px; */
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .language-switch {
+      margin-right: 65px;
+    }
+  }
+
+  @media only screen and (max-width: 820px) {
+    .language-switch {
+      margin-right: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .lang-sw {
+      align-items: flex-start;
+    }
+
+    .language-switch {
+      margin-right: 0em;
+      margin-left: 0em;
+    }
+
+    .language-switch-dropdown-itmes-wrapper {
+      top: 40px;
+    }
+  }
+
+  /* top lang-sw end */
+
+  /* a links start */
+  .a-links {
+    margin: 3rem;
+  }
+
+  .a-links a {
+    color: #003cac;
+    font-weight: 700;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1.5px solid silver;
+  }
+
+  .a-links a:last-child {
+    border-right: 0px;
+  }
+
+  @media only screen and (max-width: 820px) {
+    .a-links {
+      margin: 0rem;
+    }
+
+    .a-links nav {
+      margin: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .a-links {
+      margin: 3rem 0em;
+    }
+
+    .a-links nav {
+      margin: 3rem 1em;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  /* a link end */
+
+  /* bottom lang-sw start */
+  .bottom .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .bottom .language-switch {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  .lang-sw.bottom {
+    align-items: flex-start;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .bottom-lag-sw p {
+    margin-bottom: 0px;
+  }
+
+  .bottom-lag-sw {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .language-switch-dropdown-itmes-wrapper {
+      top: 40px;
+    }
+
+    .bottom-lag-sw {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 2em;
+      gap: 15px;
+    }
+
+    .lang-sw.bottom {
+      margin-left: 0px;
+    }
+  }
+
+  /* bottom lang sw end */
+</style>
+<div class="article-banner"><img src="{{media url='wysiwyg/image-folder/glasses/eye/types-of-lenses/8-Different-Types-of-Lenses-for-Glasses_Oscar-Wylee_1640x940.jpg'}}" alt="Types of Lenses" class="banner desktop-banner"> <img src="{{media url='wysiwyg/image-folder/glasses/eye/types-of-lenses/8_Different_Types_of_Lenses_for_Glasses_Oscar-Wylee_770x990.jpg'}}" alt="Types of Lenses" class="mobile-banner"></div>
+<h1 class="title">8 Different Types of Lenses for Glasses</h1>
+<!-- publish date start -->
+<div class="intro-section publsih-date">
+<div class="publsih-date-wrapper">
+<p><b>Published on April 8th, 2024</b></p>
+<!-- <p><b>Updated on January 11th, 2024</b></p> --> <!-- lang switch start -->
+<div class="lang-sw">
+<div class="language-switch">
+<div class="language-switch-current" onclick="toggleVisibility()"><!-- flag --> <img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="8 Different Types of Lenses for Glasses in Canadian English"> Canada <!-- dropdown icon --> <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z" fill="black"></path> </svg></div>
+<div class="language-switch-dropdown-itmes-wrapper" id="secondBox" style="display: none;">
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/AU_Flag.jpg'}}" alt="8 Different Types of Lenses for Glasses in Australian English"> <a href="https://www.oscarwylee.com.au/glasses/eye/types-of-lenses">Australia</a></div>
+<div class="language-switch-dropdown-itmes"><!-- flag --> <img src="{{media url='wysiwyg/NZ_Flag.jpg'}}" alt="8 Different Types of Lenses for Glasses in New Zealand English"> <a href="https://www.oscarwylee.co.nz/glasses/eye/types-of-lenses">New Zealand</a></div>
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="8 Different Types of Lenses for Glasses in Canadian English"> <a href="https://oscarwylee.ca/glasses/eye/types-of-lenses">Canada</a></div>
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="8 Different Types of Lenses for Glasses in Canadian French"> <a href="https://oscarwylee.ca/fr/glasses/eye/types-of-lenses">Canadian French</a></div>
+</div>
+</div>
+</div>
+</div>
+<!-- lang switch end --></div>
+<!-- publish date end -->
+<div class="intro-section">
+<p class="para-content">Lenses for glasses are pieces of material placed inside a glasses frame to offer the wearer clear vision and protect the eyes. Lenses are usually glass or plastic and can be either prescription or non-prescription. Eyeglass lenses are used for vision correction, most commonly for refractive errors which include myopia (nearsightedness), hyperopia (farsightedness), presbyopia and astigmatism. There are eight common different types of lenses for glasses which are <b>multifocal lenses, photochromic lenses, tinted lenses, high index lenses, single vision lenses, digital (blue light filter) lenses, polarized lenses and prism lenses</b>. These lenses and their definitions are listed below.</p>
+<ul class="ordered-list">
+<li><span class="list-title">Multifocal lenses:</span> Multifocal lenses contain three different prescriptions, near, intermediate and distance to correct a person’s vision. Multifocals have a seamless transition between the three prescriptions.</li>
+<li><span class="list-title">Photochromic lenses:</span> Photochromic lenses are prescription lenses with a chemical coating that causes the lenses to darken in response to ultraviolet rays emitted from the sun.</li>
+<li><span class="list-title">Tinted lenses:</span> Tinted lenses are most often used in sunglasses to protect the eyes from UV rays. There are also tinted lenses in an array of colours that are used as fashion sunglasses that do not offer eye protection.</li>
+<li><span class="list-title">High index lenses:</span> High index lenses are a type of lens that is lighter and thinner than the standard lens and are ideal for those who have a high prescription.</li>
+<li><span class="list-title">Single vision lenses:</span> Single vision lenses contain one prescription over the entire lens which is used to correct a single vision issue which can include near vision and distance vision.</li>
+<li><span class="list-title">Digital (blue light filter) lenses: </span> Digital lenses, also known as blue light filter lenses, are designed to block potentially harmful artificial blue light rays emitted by digital screens.</li>
+<li><span class="list-title">Polarised lenses:</span> Polarized lenses are a type of glasses lens that reduces glare. Polarisation can either be built into the lens material or applied as a coating over the lens.</li>
+<li><span class="list-title">Prism lenses:</span> Prism lenses are a type of glasses lens that refracts light to ensure it enters the eye properly. These types of lenses are prescribed to treat vision conditions including double vision.</li>
+</ul>
+<!-- <p class="para-content start-with-para">
+          When you burn your eye, immediate actions that may be recommended to take are to <b>flush the eye with clean
+              lukewarm water for 15 minutes, do not rub your eyes, cover the eye with a clean cloth, avoid irritants,
+              don’t
+              put anything else in your eye and seek medical help.</b> The immediate actions to take when you burn your
+          eye are
+          listed below.
+      </p> --></div>
+<div class="main-section" id="main-cont-wrapper"><!--  CTA aside-->
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="heading m-width-cta-1">Eye Exams Available at Oscar Wylee</p>
+<p style="font-size: 16px;">With an independent optometrist in-store, you can get your eyes examined and pick out your new glasses on the same day.</p>
+</div>
+<div class="book-section-right"><a href="https://oscarwylee.ca/booking"> <button class="btnOw">Book an eye exam</button> </a></div>
+</aside>
+<!--  CTA aside--> <!-- a liks start -->
+<div class="a-links"><nav><a href="#types">Types of Lenses </a> <a href="#how-to-choose">How to Choose</a> <a href="#cleaning">Cleaning </a></nav></div>
+<!-- a liks end -->
+<div class="main-section">
+<section class="square-section" id="types">
+<h2 class="subtitle">1. Multifocal Lenses</h2>
+<p class="para-content">Multifocal lenses <b>contain three different prescriptions for near, intermediate and distance vision correction</b>. Multifocals have a seamless transition between the three prescriptions making for uninterrupted vision. <a href="https://oscarwylee.ca/multifocal-lenses/">Multifocal lenses</a>, also known as progressive lenses, are typically offered in three different levels, standard, premium and elite. A multifocal standard lens will offer clear vision for all three distances but may include apparent areas of soft focus at the edges of the lens. A multifocal premium lens offers a wider range of clear vision with moderate areas of soft focus at the edges of a person’s vision. Finally, a multifocal elite lens is the highest quality of multifocals and offers very minimal areas of soft focus and is the easiest to adapt to. Multifocal lenses are a great solution for people who don’t want to constantly switch between near and distance glasses, they can get clear and comfortable vision all in the one pair.</p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">2. Photochromic Lenses</h2>
+<p class="para-content"><span style="font-weight: 400;">Photochromic lenses are a type of transition or adaptive lens that are </span><b>prescription lenses with a chemical coating, that causes the lenses to darken in response to contact with ultraviolet rays emitted from the sun. </b><span style="font-weight: 400;">These lenses will even darken on cloudy or rainy days as the reaction is still active. Photochromic lenses are a pair of optical glasses and sunglasses in one, perfect for people who need vision correction in their sunnies. Photochromic lenses offer clear and comfortable vision as well as UV protection. Oscar Wylee offers photochromic lenses for all lens indexes and Transitions® GEN 8 lenses for an additional price. Transitions® Gen8 ™ lenses are long-lasting and durable, available in brown and true-grey lens colour options.</span></p>
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img src="{{media url='wysiwyg/image-folder/glasses/eye/types-of-lenses/_01_Photochromic-Lenses_900x600.jpg'}}" alt="A pair of Oscar Wylee glasses demonstrating how photochromic lenses work." class="product-image"></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img src="{{media url='wysiwyg/image-folder/glasses/eye/types-of-lenses/_01_Photochromic-Lenses_900x600.jpg'}}" alt="A pair of Oscar Wylee glasses demonstrating how photochromic lenses work." class="product-image"></div>
+</div>
+</section>
+<section class="square-section">
+<h2 class="subtitle">3. Tinted Lenses</h2>
+<p class="para-content">Tinted lenses are <b>most often used in sunglasses to protect the eyes from UV rays. There are also tinted lenses in an array of colours that are used as fashion sunglasses that do not offer eye protection</b>. Some blue light glasses can also have an amber tint added to the lens which offers an extra buffer against blue light and are often advertised for gaming and computer use. Tinted lenses are used for sunglasses which are eyewear designed to protect the eyes from the sun, by containing lenses that block ultraviolet rays. At Oscar Wylee, we offer <a href="https://oscarwylee.ca/sunglasses.html">sunglasses</a> tints in grey, brown and green as well as mirror tints in pink, blue, silver and orange. Also, all prescription sunglasses ordered online at Oscar Wylee will come with polarized lenses as standard, unless otherwise stated, which is an additional $100 per pair.</p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">4. High Index Lenses</h2>
+<p class="para-content">High index lenses are a type of lens that <b>is lighter and thinner than the standard lens and is ideal for those who have a high prescription.</b> Oscar Wylee offers high index lenses in a 1.6 index, 1.67 index and 1.74 index. 1.6 index lenses are recommended for prescriptions up to +/- 3 diopters, 1.67 index lenses are recommended for prescriptions up to +/- 4 diopters and 1.74 index lenses are ideal for all prescriptions but are recommended for those with +/-4 diopters and above. High index lenses are beneficial as they are lighter and thinner than standard lenses, offer clearer and sharper vision as light has less area to travel through and are often chosen for their aesthetics as they reduce the magnification and minification of the eyes. High index lenses are available for most types of lenses including multifocals, bifocals and single vision lenses.</p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">5. Single Vision Lenses</h2>
+<p class="para-content">Single vision lenses contain one prescription over the entire lens which is used to <b>correct a single vision issue which can include near vision and distance vision.</b> Glasses with single vision lenses are prescribed by an optometrist to correct refractive errors including myopia, hyperopia, presbyopia and astigmatism, by ensuring that light is refracted onto the retina properly. Single vision lenses that correct near vision are also known as reading glasses and make tasks such as reading or knitting easier. The lenses used in single vision glasses are typically either convex or concave, depending on the refractive errors being corrected. Single vision lenses are ideal for people who only need one form of vision correction whether that be for near or distance vision. For those who need correction for both near and far distances, multifocal lenses are an ideal choice.</p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">6. Digital (Blue Light Filter) Lenses</h2>
+<p class="para-content">Digital lenses, also known as blue light filter lenses, are <b>designed to block potentially harmful artificial blue light rays emitted by digital screens.</b> Blue light filter lenses work by reducing the amount of blue light that enters the eye due to a special coating on the lens which either absorbs or reflects blue light. These types of lenses are known as digital lenses as they are ideal for people who spend much of their time working on a computer for school, work or gaming, as artificial light is emitted from digital screens. People who use screens for long periods may experience negative side effects such as dry eyes, eye strain, headaches and blurry vision. These symptoms may be improved by wearing lenses with a <a href="https://oscarwylee.ca/blue-light-glasses/">blue light filter</a>.</p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">7. Polarised Lenses</h2>
+<p class="para-content">Polarized lenses are a <b>type of glasses lens that reduces glare</b>. Polarisation can either be built into the lens material or applied as a coating over the lens. Polarized lenses work by cutting out the amount of horizontal light that enters the lens and hits the eye, which can additionally reduce eye strain and improve sight in high-glare environments such as when driving or fishing. While polarized lenses' main function is to reduce glare, they can also offer UV protection as most retailers will add UV protection to polarized sunglasses or lenses. However, this may not always be true, so it is best to check whether polarized lenses contain UV protection. At Oscar Wylee, all of our polarized glasses have UV protection.</p>
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img src="{{media url='wysiwyg/image-folder/glasses/eye/types-of-lenses/_02_Polarised_Lenses_900x600.jpg'}}" alt="A pair of Oscar Wylee glasses demonstrating what it looks like without polarisation and with polarisation." class="product-image"></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img src="{{media url='wysiwyg/image-folder/glasses/eye/types-of-lenses/_02_Polarised_Lenses_900x600.jpg'}}" alt="A pair of Oscar Wylee glasses demonstrating what it looks like without polarisation and with polarisation." class="product-image"></div>
+</div>
+</section>
+<section class="square-section">
+<h2 class="subtitle">8. Prism Lenses</h2>
+<p class="para-content">Prism lenses are a <b>type of glasses lens that refracts light to ensure it enters the eye properly.</b> These types of lenses are prescribed to treat vision conditions including double vision, also known as diplopia, as well as other binocular vision issues. Prism lenses help with double vision as they can ensure that your eyes have matching light refraction which eliminates the possibility of your brain perceiving images as double. Prism lenses correct double vision by changing the direction of light towards the retina. Typically, the brain is able to transform the objects seen by each individual eye into one image. Oscar Wylee offers prism lenses at no extra cost to a standard pair of glasses, they are simply an added factor to your prescription.</p>
+</section>
+<!--  CTA aside-->
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="heading m-width-cta-2">Learn More About Lenses In-store</p>
+<p style="font-size: 16px;">Visit a store near you where our friendly staff can answer any questions you have about our lens options.</p>
+</div>
+<div class="book-section-right"><a href="https://oscarwylee.ca/locations/"> <button class="btnOw">Find a store</button> </a></div>
+</aside>
+<!--  CTA aside-->
+<section class="square-section" id="how-to-choose">
+<h2 class="subtitle">How to Choose the Types of Lenses for Glasses?</h2>
+<p class="para-content">To choose the types of lenses for glasses that are right for you there are key tips you can follow. Firstly, <b>listen to the advice of the optometrist and retail staff</b>. If you have an eye exam in-store, the optometrist will pass your prescription along to the retail staff who will recommend a type of lens for your glasses. The retail staff member will also talk you through the different lens options available. Next, <b>consider your lifestyle needs</b>. For example, if you spend lots of time working on a computer or other screens, you may want to add a blue light filter to your glasses lenses. Or if you need vision correction and also want a pair of sunglasses, you can try photochromic lenses. Finally, <b>understand the different types of lenses on offer</b>. You can do your own research or ask the retail staff who will be happy to help.</p>
+<div class="sub-div">
+<h3 class="con-title">What are the Best Lenses for Glasses?</h3>
+<p class="para-content">The best lenses for glasses <b>depend on the person, specifically their prescription and lifestyle needs</b>. The best lenses will also be recommended by an optometrist or optician once your eyes have been tested and they have your prescription. For example, if a patient has issues with near and distance vision, the best eyeglasses lenses for them may be multifocals. High index lenses are often the best lens option for people who have a high prescription so that the lenses in the glasses are not too heavy.</p>
+</div>
+<div class="sub-div">
+<h3 class="con-title">What Lens Types Does Oscar Wylee Offer?</h3>
+<p class="para-content">Oscar Wylee <b>offers a lot of different types of lenses, such as single vision lenses, adaptive lenses, multifocal lenses, tinted lenses, high index lenses, blue light filter lenses, polarized lenses, prism lenses and bifocal lenses.</b> Single vision lenses are our standard lenses and come with scratch-resistant and UV coatings. You can also purchase non-prescription glasses which are lenses with no prescription. This may be ideal for people who want blue light filter glasses but do not require vision correction.</p>
+<div class="sub-div">
+<h4 class="con-title">Does Oscar Wylee Offer Multifocal Lenses?</h4>
+<p class="para-content">Yes, <b>Oscar Wylee offers three types of multifocal lenses, Multifocal Standard, Multifocal Premium and Multifocal Elite.</b> Our Multifocal Standard lenses have some degree of soft focus at the edge of a person’s vision, are good for occasional glasses use and are ideal for those on a budget. The Multifocal Premium offers a wider field of clear vision, is ideal for those who wear glasses in the office for computer work and is easier to adjust to compared to standard multifocal lenses. Multifocal Elite lenses have a very wide field of clear vision, are an all-rounder lens for modern lifestyle demands and a lot of computer work, and provide more comfortable and natural vision.</p>
+</div>
+</div>
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img src="{{media url='wysiwyg/image-folder/glasses/eye/types-of-lenses/_03_Does_Oscar_Wylee_Offer_Multifocal_Lenses_900x600.jpg'}}" alt="An example of multifocal glasses with a near prescription to help a person read a book and distance vision to see far away objects. " class="product-image"></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img src="{{media url='wysiwyg/image-folder/glasses/eye/types-of-lenses/_03_Does_Oscar_Wylee_Offer_Multifocal_Lenses_900x600.jpg'}}" alt="An example of multifocal glasses with a near prescription to help a person read a book and distance vision to see far away objects. " class="product-image"></div>
+</div>
+<div class="sub-div">
+<div class="sub-div">
+<h4 class="con-title">Does Oscar Wylee Offer Reading Glasses?</h4>
+<p class="para-content">Yes, <b>Oscar Wylee offers reading glasses which are single vision lenses that correct a person’s near vision.</b> The lenses in reading glasses act as a magnifying glass, by enlarging objects close to your eyes when reading or doing other close-up activities such as writing or knitting. Reading glasses can be used for people who have presbyopia. Presbyopia is an age-related eye condition that commonly affects people over the age of 40 as it is caused by the natural ageing process which disrupts the lens, causing blurry close-up vision.</p>
+</div>
+<div class="sub-div">
+<h4 class="con-title">Does Oscar Wylee Provide High-Index (Thinner and Lighter) Lenses?</h4>
+<p class="para-content">Yes, <b>Oscar Wylee provides three levels of high-index lenses, a 1.6 index extra thin and light lens, a 1.67 index super thin and light lens and a 1.74 index ultra thin and light lens</b>. The 1.6 index lens is 35% lighter and thinner than our standard 1.5 index lens and is recommended for prescriptions up to +/- 3 diopters. The 1.67 index lens is 50% lighter and thinner than our standard lens and is recommended for prescriptions up to +/- 4 diopters. Our thinnest lens, 1.74 index, is 60% lighter and thinner than our standard lens and is ideal for all prescriptions but is recommended for those with +/-4 diopters and above.</p>
+</div>
+</div>
+<div class="sub-div">
+<h3 class="con-title">What Lens Extras Does Oscar Wylee Offer?</h3>
+<p class="para-content">The lens extras Oscar Wylee offers include <b>Premium Anti-Reflective, Blue Light Filter, Blue Light Filter Premium, Tinted Lenses, Adaptive Lenses and Polarisation.</b> Also, our standard single vision lenses come with scratch-resistant and UV coatings. Our Anti Reflective Premium coating reduces reflection for clear vision and includes scratch and smudge-resistant coatings as well as anti-static technology. The Blue Light Filter add-on reduces blue light and includes basic Anti-Reflective coating as well as scratch-resistant and anti-static coating.</p>
+<div class="sub-div">
+<h4 class="con-title">Do I Have to Pay Extra for Lens Coatings?</h4>
+<p class="para-content">Yes, <b>typically lens coatings costs extra as they are an additional protection or enhancement of the lenses of glasses</b>. Lens coatings can include a blue light filter, an anti-glare coating, anti-scratch coating and polarisation. However, at Oscar Wylee, all of our prescription lenses come with scratch-resistant and UV coatings at no extra cost.</p>
+</div>
+<div class="sub-div">
+<h4 class="con-title">Can I Add Any Lens Coatings After My Glasses Arrive?</h4>
+<p class="para-content">No, <b>you cannot typically add lens coatings after your glasses have arrived.</b> At Oscar Wylee, our lenses are treated before they're cut to fit your new glasses. As a result of this, we are unable to add coatings after production has finished. If you want to add additional lens coatings you will have to purchase another pair of glasses.</p>
+</div>
+</div>
+</section>
+<section class="square-section" id="cleaning">
+<h2 class="subtitle">How Important is Cleaning the Lenses of Glasses?</h2>
+<p class="para-content">Cleaning the lenses of glasses is <b>very important as it can ensure your vision is clear and spotless as well as prevent infectious diseases from reaching your eyes.</b> Cleaning your lenses is easy and should be incorporated into your daily routine. The steps to properly clean your glasses include blowing on your glasses to remove dust or particles that may scratch the surface of the lenses if you rub them in. Then spray both sides of the lenses with an official lens cleaner and wipe them in a circular motion using a microfibre cloth.</p>
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img src="{{media url='wysiwyg/image-folder/glasses/eye/types-of-lenses/_04_How_Important_is_Cleaning_the_Lenses_of_Glasses_900x600.jpg'}}" alt="A person cleaning the lenses of Oscar Wylee glasses with a microfibre cloth." class="product-image"></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img src="{{media url='wysiwyg/image-folder/glasses/eye/types-of-lenses/_04_How_Important_is_Cleaning_the_Lenses_of_Glasses_900x600.jpg'}}" alt="A person cleaning the lenses of Oscar Wylee glasses with a microfibre cloth." class="product-image"></div>
+</div>
+<div class="sub-div">
+<h3 class="con-title">How Often Should You Clean Your Lenses?</h3>
+<p class="para-content">You should <b>clean your lenses daily or whenever you feel they need to be cleaned.</b> Cleaning your lenses is important as it may protect the eyes from infectious diseases and also give you clear and comfortable vision. Not only is cleaning your lenses important, but you should also use the right tools to ensure they are cleaned correctly. To ensure your lenses are cleaned properly and not damaged, use an official cleanser and lens spray as well as a microfibre cloth.</p>
+</div>
+<!-- lang switch start -->
+<div class="bottom-lag-sw">
+<p class="para-content">Read 8 Different Types of Lenses for Glasses in other Oscar Wylee regions and their languages.</p>
+<div class="lang-sw bottom">
+<div class="language-switch">
+<div class="language-switch-current" id="language-switch-current" onclick="toggleVisibilityBtnTwo()"><!-- flag --> <img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="8 Different Types of Lenses for Glasses in Canadian English"> Canada <!-- dropdown icon --> <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z" fill="black"></path> </svg></div>
+<div class="language-switch-dropdown-itmes-wrapper" id="language-switch-dropdown-itmes-wrapper" style="display: none;">
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/AU_Flag.jpg'}}" alt="8 Different Types of Lenses for Glasses in Australian English"> <a href="https://www.oscarwylee.com.au/glasses/eye/types-of-lenses">Australia</a></div>
+<div class="language-switch-dropdown-itmes"><!-- flag --> <img src="{{media url='wysiwyg/NZ_Flag.jpg'}}" alt="8 Different Types of Lenses for Glasses in New Zealand English"> <a href="https://www.oscarwylee.co.nz/glasses/eye/types-of-lenses">New Zealand</a></div>
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="8 Different Types of Lenses for Glasses in Canadian English"> <a href="https://oscarwylee.ca/glasses/eye/types-of-lenses">Canada</a></div>
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="8 Different Types of Lenses for Glasses in Canadian French"> <a href="https://oscarwylee.ca/fr/glasses/eye/types-of-lenses">Canadian French</a></div>
+</div>
+</div>
+</div>
+</div>
+<!-- lang switch end --></section>
+</div>
+<!-- add bottom CTA section here --> <!-- Location and booking  --> <!-- <aside class="context">
+          <div class="location" style="border-top: none;">
+              <div class="locationText">
+                  <p class="heading mobile-width-fix-1">Get a Full Quote in Store</p>
+                  <p class="contents">
+                      Get fitted for your multifocal glasses at Oscar Wylee by visiting us in store
+                      and talk to our friendly staff for a complete quote.
+                  </p>
+                  <div class="allButton"><a href="https://oscarwylee.ca/locations/">
+                          <button class="btnOw">Find a store</button> </a></div>
+              </div>
+  
+  
+  
+  
+  
+              <img src="{{media url='wysiwyg/image-folder/glasses/cta/CTA-5-OW.jpg'}}"
+                  alt="Explore health funds at Oscar Wylee" class="locationImage" />
+  
+  
+  
+  
+          </div>
+  
+  
+  
+  
+          <div class="location item1">
+  
+  
+              <img src="{{media url='wysiwyg/image-folder/glasses/cta/CTA-2-OW_1_.jpg'}}"
+                  alt="Book an eye test at Oscar Wylee" class="locationImage" />
+  
+  
+              <div class="locationText">
+                  <p class="heading mobile-width-fix-2">Renew Your Prescription</p>
+                  <p class="contents">
+                      Don’t let your eye health get away from you. Renew your glasses prescription with an Oscar Wylee
+                      optometrist today.
+                  </p>
+                  <div class="allButton"><a href="https://oscarwylee.ca/booking"> <button class="btnOw">Book an
+                              eye test</button> </a></div>
+              </div>
+          </div>
+  
+          
+  
+  
+  
+  
+      </aside> -->
+<aside class="context"><!-- Location and booking  -->
+<div class="location" style="border-top: none;">
+<div class="locationText">
+<p class="heading mobile-width-fix-1">Get a Full Quote In-store</p>
+<p class="contents">Major health insurances’ accepted at Oscar Wylee. Visit our team in-store for more information.</p>
+<div class="allButton"><a href="https://oscarwylee.ca/health-insurance/"> <button class="btnOw">Explore health insurance</button> </a></div>
+</div>
+<img src="{{media url='wysiwyg/image-folder/glasses/cta/CA-Health-Insurance-small-banner_1.jpg'}}" alt="Explore health funds at Oscar Wylee" class="locationImage"></div>
+<div class="location item1"><img src="{{media url='wysiwyg/image-folder/glasses/cta/CTA-2-OW_1__1.jpg'}}" alt="Book an eye test at Oscar Wylee" class="locationImage">
+<div class="locationText">
+<p class="heading mobile-width-fix-2">Due for an Eye Exam?</p>
+<p class="contents">Take care of your eye health and book a comprehensive eye exam with an independent optometrist.</p>
+<div class="allButton"><a href="https://oscarwylee.ca/booking"> <button class="btnOw">Book an eye exam</button> </a></div>
+</div>
+</div>
+</aside>
+</div>
+<p>
+<script>
+    const productContainers = [
+      ...document.querySelectorAll(".product-container"),
+    ];
+    const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
+    const preBtn = [...document.querySelectorAll(".pre-btn")];
+
+    productContainers.forEach((item, i) => {
+      let containerDimensions = item.getBoundingClientRect();
+      let containerWidth = containerDimensions.width;
+
+      nxtBtn[i].addEventListener("click", () => {
+        item.scrollLeft += containerWidth;
+      });
+
+      preBtn[i].addEventListener("click", () => {
+        item.scrollLeft -= containerWidth;
+      });
+    });
+
+    // top lang-sw
+    document.addEventListener("click", function (event) {
+      var secondBox = document.querySelector(
+        ".language-switch-dropdown-itmes-wrapper"
+      );
+      var firstBox = document.querySelector(".language-switch-current");
+
+      // Check if the clicked element is outside the second box and the first box
+      if (
+        !secondBox.contains(event.target) &&
+        !firstBox.contains(event.target)
+      ) {
+        secondBox.style.display = "none";
+      }
+    });
+
+    function toggleVisibility() {
+      var secondBox = document.querySelector(
+        ".language-switch-dropdown-itmes-wrapper"
+      );
+      secondBox.style.display =
+        secondBox.style.display === "none" ? "flex" : "none";
+    }
+
+    // bottom lang-sw
+    document.addEventListener("click", function (event) {
+      var secondBox = document.querySelector(
+        "#language-switch-dropdown-itmes-wrapper"
+      );
+      var firstBox = document.querySelector("#language-switch-current");
+
+      // Check if the clicked element is outside the second box and the first box
+      if (
+        !secondBox.contains(event.target) &&
+        !firstBox.contains(event.target)
+      ) {
+        secondBox.style.display = "none";
+      }
+    });
+
+    function toggleVisibilityBtnTwo() {
+      var secondBox = document.querySelector(
+        "#language-switch-dropdown-itmes-wrapper"
+      );
+      secondBox.style.display =
+        secondBox.style.display === "none" ? "flex" : "none";
+    }
+  </script>
+</p>

@@ -1,0 +1,520 @@
+<style>
+  /* Style the accordion container */
+  .accordion {
+    max-width: 100%;
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    cursor: text;
+  }
+
+  .accordion::after {
+    content: none;
+  }
+
+  /* Style the accordion items */
+  .accordion-item {
+    border-bottom: 1px solid silver;
+  }
+
+  /* Style the accordion item headers */
+  .accordion-header {
+    background-color: #ffffff;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #444;
+    cursor: pointer !important;
+  }
+
+  .accordion-header.active {
+    border-bottom: 1px solid silver !important;
+  }
+
+  /* Style the accordion item content */
+  .accordion-content {
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .accordion-content-wrapper {
+    padding: 18px;
+  }
+
+  .accordion-content-wrapper p {
+    margin: 10px 0px;
+    font-size: 14px;
+    text-align: justify;
+    hyphens: auto;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  .new-accordian .accordion-content-wrapper ol,
+  ul {
+    font-size: 14px !important;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  /* Style the active accordion item */
+  .active .accordion-content {
+    max-height: 1000px;
+  }
+
+  /* Style the icon */
+  .accordion-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  /* Plus and Minus Icons */
+  .accordion-header::after {
+    content: '\002B';
+    color: #777;
+    font-weight: 400;
+    float: right;
+    margin-left: 5px;
+    font-size: 25px;
+    /* Plus sign */
+  }
+
+  .accordion-header.active::after {
+    content: '\2212';
+    /* Minus sign */
+  }
+
+  /* OW Styles */
+  .accordion .accordion-item .accordion-header h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+  }
+
+  .accordion-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .accordion-btn-wrapper button {
+    background-color: #ffffff;
+    border: 1px solid #333;
+    box-shadow: none;
+    border-radius: 8px;
+  }
+
+  .accordion-btn-wrapper button:hover {
+    border: 1px solid #333 !important;
+  }
+
+  /* acco image */
+  .acco-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .acco-img {
+    max-width: 150px;
+  }
+
+
+  @media screen and (max-width: 500px) {
+    .acco-img {
+      max-width: 220px;
+    }
+  }
+
+  /* smart css fixes */
+  body.oscar_booking-index-index .new-accordian .accordion:after {
+    content: unset;
+  }
+</style>
+<div class="acco-img-wrapper"><img class="acco-img" src="{{media url='wysiwyg/Locations_Graphic_1280x1280px.png'}}" alt=""></div>
+<footer class="footer-accordion">
+<section class="new-accordian">
+<div class="accordion-btn-wrapper"><button id="toggleAllButton">Show All</button></div>
+<div class="accordion">
+<article>
+<div class="accordion-item">
+<div class="accordion-header active" style="border-top: 1px solid silver;">
+<h1>Eye Exam: Definition, Types, and How to Book an Eye Exam</h1>
+</div>
+<div class="accordion-content" style="max-height: 1000px;">
+<div class="accordion-content-wrapper">
+<p>An eye exam is a procedure to assess a patient’s vision and overall eye health which involves specific tests such as a <b>visual acuity test, tonometry test, slit lamp exam and refractive test.</b> Regular eye exams are essential as they can detect eye diseases which is crucial in preventing vision loss. You can book an eye exam at Oscar Wylee online at our booking page or visit one of our many stores across Canada. If you’re looking for eye exams near me, you can put in your postcode on our booking page to see what your closest Oscar Wylee location is. We currently have 13 stores across Canada in Alberta, British Columbia, Nova Scotia, Ontario and Quebec. Keep reading to learn more about eye exams including the different types and how to book an eye exam.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>How to Book an Eye Exam?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>The steps involved in booking an eye exam include selecting a location preferred for the eye exam, <b>selecting a time and date that works best for you and going to your scheduled eye exam appointment.</b> These steps and their definition are listed below.</p>
+<ol>
+<li><b>Select a location preferred for the eye exam:</b> Choose an Oscar Wylee location that works best for you and your travel situation.</li>
+<li><b>Select the preferred time and date for the eye exam in the chosen location:</b> Find your closest Oscar Wylee location for your eye exam or simply a store that works for you and your needs.</li>
+<li><b>Go to your scheduled eye exam appointment:</b> Once you have booked a date and time for your eye exam appointment, the next step is getting there.</li>
+</ol>
+<h3>1. Select a Location Preferred for the Eye Exam.</h3>
+<p>Booking an eye exam online at Oscar Wylee is easy. The first step is to <b>find your closest location or simply a store that works for you and your needs.</b> We have over 13 stores in Canada in Alberta, British Columbia, Nova Scotia, Ontario and Quebec.</p>
+<h3>2. Select the Preferred Time and Date for the Eye Exam in the Chosen Location.</h3>
+<p>The next step in booking an eye exam is to <b>select your preferred time and date at your chosen location.</b> Eye exams at Oscar Wylee are quick and convenient, taking approximately 20 minutes, so you can come in on your lunch break or when out shopping. Our stores have different opening hours which you can find on the individual store pages.</p>
+<h3>3. Go to your Scheduled Eye Exam Appointment.</h3>
+<p>Once you have <b>booked a date and time for your eye exam appointment, the next step is getting there.</b> Many of our stores are located in shopping centres with parking available onsite and instructions on how to get there. Public transport may also be an option for you either by bus, train or tram. You can find out more information on how to arrive at your scheduled eye exam appointment on our individual store pages.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>What are the Different Types of Eye Exams?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>The different types of eye exams that a person may experience in a comprehensive eye exam include a <b>colour blindness test, a tonometry test, a visual acuity test, a visual field test, pachymetry, a refraction test, an eye movement test, retinal examination, a pupil function test and a slit lamp examination.</b> These exams and their definitions are listed below.</p>
+<ul>
+<li><b>Colour blindness test:</b> A colour blindness test, also known as a colour vision test, is used to detect the specific colours a person can see.</li>
+<li><b>Tonometry test:</b> A tonometry test is performed by an optometrist or optician at the start of an eye exam appointment, to measure intraocular eye pressure.</li>
+<li><b>Visual acuity test:</b> A visual acuity test is performed to assess the sharpness and clarity of a patient’s vision.</li>
+<li><b>Visual field test:</b> A visual field test quantifies how well a person sees through each eye, individually and binocularly.</li>
+<li><b>Pachymetry:</b> A pachymetry test is a quick examination that measures the thickness of a person’s cornea.</li>
+<li><b>Refraction test:</b> A refraction test is used to detect refractive errors such as nearsightedness (myopia), farsightedness (hyperopia), astigmatism and presbyopia.</li>
+<li><b>Eye movement test:</b> An eye movement test, also known as extraocular muscle function testing, is performed by an optometrist to evaluate the movement of ocular muscles.</li>
+<li><b>Retinal examination:</b> A retinal examination is a diagnostic test performed by an optometrist to closely examine the optic nerve and retina which are located at the back of the eye.</li>
+<li><b>Pupil function test:</b> A pupil function test is performed to assess the condition of the patient’s pupils to evaluate the health of the retina, optic nerve and brain.</li>
+<li><b>Slit-lamp examination:</b> A slit-lamp examination allows the optometrist to observe different structures of the eye using a microscope.</li>
+</ul>
+<h3>1. Colour Blindness Test</h3>
+<p>A colour blindness test, also known as a colour vision test, is <b>used to detect the specific colours a person can see.</b> A colour vision test typically uses a colour plate test performed by an optometrist which uses images made up of different coloured dots with a number in the middle for the patient to identify. There are different colour plates made up of certain colours to identify different types of colour blindness which is an eye condition that causes issues with a person’s colour vision. Colour vision deficiency causes a person to see colours in a different way than other people or to have trouble seeing specific colours.</p>
+<h3>2. Tonometry Test</h3>
+<p>A tonometry test is performed by an optometrist or optician at the start of an eye exam appointment, known as pre-testing, to <b>measure intraocular eye pressure.</b> One type of tonometry test called non-contact tonometry involves a machine that blows a puff of air into the eyes using a rapid air pulse which flattens the patient's cornea to measure the pressure. A tonometry test is often used to diagnose the eye condition glaucoma as one of its main signs is high eye pressure.</p>
+<h3>3. Visual Acuity Test</h3>
+<p>A visual acuity test is <b>performed to assess the sharpness and clarity of a patient’s vision.</b> Visual acuity is tested one eye at a time commonly using a Snellen chart or can also be tested with a LogMAR eye chart. This test involves a patient reading letters from an eye chart which will give the optometrist a measure of their visual acuity using a fraction, for example, 20/20. A visual acuity test is used to detect refractive errors such as nearsightedness, farsightedness and astigmatism.</p>
+<div class="accordion-img-wrapper"><img src="https://d2o51ft7emegr.cloudfront.net/pub/media/wysiwyg/booking-accordion-images/_01_Visual-Acuity-Test-900x600.jpg" alt="Patient having a Visual Acuity Test"></div>
+<h3>4. Visual Field Test</h3>
+<p>A visual field test <b>quantifies how well a person sees through each eye, individually and binocularly.</b> An optometrist performs this test which allows them to establish a baseline of the patient's vision to diagnose eye diseases as well as eye injuries. The test is typically performed on a machine and maps the patient’s visual scope including their peripheral vision which allows the optometrist to identify any vision loss present. The length of time for a visual field test can differ depending on the type of test performed and the model of the machine, varying from 10-40 minutes.</p>
+<h3>5. Pachymetry</h3>
+<p>A pachymetry test is a quick examination that <b>measures the thickness of a person’s cornea.</b> A pachymetry test is typically performed to identify signs of glaucoma but can also be used to diagnose conditions of the cornea. The process of this test can include using a probing tool or may be done without contact, using a pretesting machine. A pachymetry test takes approximately five minutes and is performed by an eye care professional.</p>
+<h3>6. Refraction Test</h3>
+<p>A refraction test is used to <b>detect refractive errors such as nearsightedness (myopia), farsightedness (hyperopia), astigmatism and presbyopia.</b> The types of refraction tests include a retinoscopy, phoropter refraction test and an autorefractor test. A retinoscopy tests for refraction using a retinoscope which is a handheld device that shines light into the patient’s eyes to determine how light reflects off the retina. A phoropter refraction test involves the patient looking through various lenses in a phoropter and the optometrist will select the most appropriate combination of lenses to find their prescription for glasses or contact lenses. Lastly, an autorefractor test is performed using an autorefractor, which is a computer-controlled machine that measures refraction.</p>
+<h3>7. Eye Movement Test</h3>
+<p>An eye movement test, also known as extraocular muscle function testing, is <b>performed by an optometrist to evaluate the movement of ocular muscles.</b> The test involves a patient moving their eyes in different directions which can help the optometrist see if any abnormalities with movement could be contributing to uncontrolled eye movements.</p>
+<h3>8. Retinal Examination</h3>
+<p>A retinal examination, also known as an ophthalmoscopy or fundoscopy, is a <b>diagnostic test performed by an optometrist to closely examine the optic nerve and retina</b> which are located at the back of the eye. A retinal examination typically involves using specialised tools such as an ophthalmoscope to check for signs of eye diseases or any other irregularities. Certain eye diseases that can be diagnosed in a retinal examination include eye cancer, glaucoma and macular degeneration. This procedure can also provide important information about medical diagnoses such as diabetes and high blood pressure.</p>
+<h3>9. Pupil Function Test</h3>
+<p>A pupil function test is performed to <b>assess the condition of the patient’s pupils to evaluate the health of the retina, optic nerve and brain.</b> A pupil function test may involve shining a light on each of the pupils to test if they constrict in response to light. The test will record the size and shape of the pupil while this takes place.</p>
+<div class="accordion-img-wrapper"><img src="https://d2o51ft7emegr.cloudfront.net/pub/media/wysiwyg/booking-accordion-images/_02_Pupil-Function-Test-900x600.jpg" alt="Patient undergoing a pupil function test"></div>
+<h3>10. Slit-lamp Examination</h3>
+<p>A slit-lamp examination <b>allows the optometrist to observe different structures of the eye using a microscope</b> with a bright light which produces a visualisation of the eye in the form of three-dimensional measurements. A slit-lamp exam will look at a patient's lens, cornea, optic nerve and retina to identify possible signs of eye diseases or abnormalities such as glaucoma, macular degeneration and cataracts. This eye exam may require the patient’s eyes to be dilated as it allows the optometrist to have better visualisation of the eye.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>What are the Signs that Indicate a Need for an Immediate Eye Exam?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>There are certain signs a person can look out for that indicate they should book an appointment for an immediate eye exam. These signs include <b>changes to your vision such as blurry vision, seeing spots in your vision or double vision, pain in and about the eyes, if you have a foreign body in your eye and light sensitivity.</b> It is also important to have regular eye exams at least once every two years so an optometrist can assess your vision and eye health and detect eye diseases in their early stages.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h3>How Often Should One Undergo a Comprehensive Eye Exam?</h3>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>At Oscar Wylee, <b>we recommend everyone undergo a comprehensive eye exam at least once every two years.</b> Other factors may impact how often a person should have an eye exam, which includes the age of the patient, if they have any eye diseases and if they have certain medical conditions. If a person is over the age of 65, a yearly eye exam is recommended as a person’s eyes change as they get older. A person with glaucoma or a retinal detachment will likely have more frequent eye exams so an optometrist can monitor these conditions. Finally, if a person has diabetes or high blood pressure, they may also need more frequent eye exams as these conditions can affect a person’s vision.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h3>How Much Does an Eye Exam Cost?</h3>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>How much an eye exam costs <b>depends on your age and the province you live in as you may be able to receive some coverage from the provincial government.</b> If you are not eligible, eye exams at Oscar Wylee are available for a fee depending on your province.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>What is the Importance of Having an Eye Exam?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>There are many <b>important benefits of having an eye exam which include maintaining good eye health, detecting eye conditions and monitoring vision.</b> Regular eye exams allow optometrists to monitor a patient’s eyes and compare them to see if any changes need to be addressed. For many eye conditions, early detection is key to preserving eyesight. It is best to book eye exam appointments when advised rather than waiting until you have an issue with your eyesight. Another important benefit is eye exams assess a person's vision and determine whether they need glasses for vision correction. Vision can also change over time, especially as you age so you may need a new prescription every few years.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h3>Is There Any Risk in Having an Eye Exam?</h3>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>No, <b>there are no risks involved in having an eye exam, rather eye exams are extremely important in maintaining eye health</b> as well as your overall wellbeing. In the case of many eye diseases, early detection is crucial as it can prevent vision loss which is why regular eye exams are so important.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h3>How do Eye Exams Differ for Children and Adults?</h3>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>An eye exam for a child and an adult is <b>largely similar although will differ slightly to cater to a child’s ability to read and understand the tests as well as their stage of development.</b> According to Peel Region in Canada, the Ontario Health Insurance Plan (OHIP) covers free eye exams once a year for children 19 years and under.</p>
+<div class="accordion-img-wrapper"><img src="https://d2o51ft7emegr.cloudfront.net/pub/media/wysiwyg/booking-accordion-images/_CA-03_Childrens-Eye-Test-900x600.jpg" alt="Child getting their eyes examined by an optometrist"></div>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h3>What Kind of Doctor Conducts Eye Exams?</h3>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>An <b>optometrist, also known as a doctor of optometry, conducts eye exams.</b> An eye doctor in Canada is a licensed, board-certified healthcare professional who provides first point of contact eye care services.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h3>How Long is an Eye Exam?</h3>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>An eye exam at Oscar Wylee is <b>approximately 20 minutes, although this can vary depending on the patient.</b> Factors that may affect the duration of an eye exam include the age of the patient, the tests being performed and any eye conditions or diseases the patient may have. If you require glasses, more time will be spent after the appointment with an optical dispenser or retail team member who can answer any questions you have and provide guidance on the types of lenses that are best for you and your prescription needs.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h4>Can Eye Exams Detect Other Issues Like Diabetes?</h4>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>Yes, <b>eye exams can detect other medical conditions such as diabetes and high blood pressure.</b> According to Stanford University, a retinal examination can provide important information about a medical diagnosis including high blood pressure and diabetes. A retinal examination is a type of test involving specialised tools like an ophthalmoscope which looks at a patient’s retina and optic nerve.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>Optometry Canada: Find Optometrist Near Me</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>Optometry is defined as the profession and practice of examining, diagnosing and treating eye conditions and ensuring the general eye and vision health of patients. It involves using special equipment to evaluate whether you require prescription glasses and to maintain good eye health. Optometrists are healthcare professionals who are qualified to test and examine patients’ eyes and their quality of vision, prescribe glasses and medication for minor eye problems and are able to identify signs of more serious conditions. Opticians are eye care professionals who have been trained to fit and dispense frames and lenses based on the prescription provided by an optometrist or ophthalmologist.</p>
+<p>At Oscar Wylee, you can get your eyes examined, update your prescription and shop for your glasses on the same day, however, you will not be able to receive your prescription glasses on the same day. For non-prescription sunglasses, you can browse from our wide range and receive them on the day. At Oscar Wylee Canada, you can see fully-trained and licensed independent optometrists for a comprehensive eye exam. Oscar Wylee was first established as an online e-commerce business back in 2012 and continued advancing in the eyewear industry with reputable services both online and in-store across Australia, New Zealand and Canada.</p>
+<p>According to IBISWorld, there are 6,278 optometrist businesses as of 2023, which is an increase of 3.8% from 2022. The total number of optometrists in Canada consists of a varying number in each province. In Alberta, there were a total of 917 as of 2023 according to the Alberta College of Optometrists. In British Columbia, there are approximately 1,000 registered optometrists according to the College of Health and Care Professionals of BC. According to the Nova Scotia College of Optometrists, there are more than a hundred Doctors of Optometry in the communities of Nova Scotia. According to IBISWorld, there are 2,618 optometrist businesses in Ontario. There are 1,357 optometrist businesses in Quebec, according to IBISWorld.</p>
+<p>You can easily find your nearest Oscar Wylee store on this locations page of our website. Find Optometrist Near Me is a way for you to find an independent optometrist located at Oscar Wylee in the area where you live. There are a few things to consider before making an appointment with an optometrist. It is important to be familiar with the types of services optometrists have to offer so you can get a better understanding of what you can expect during your appointment. Consult with your optometrist on what you may need to bring to your appointment and if there is anything you need to prepare beforehand. Finally, ensure you have assistance with transport as the optometrist may be required to use eye drops for pupil dilation, this can cause blurred vision temporarily and sensitivity to light which may prevent you from driving or working for up to 1-24 hours.</p>
+<div class="accordion-img-wrapper"><img src="https://test.oscarwylee.ca/media/wysiwyg/locations/01-CA-Optometrist-Near-Me-900x600.jpg" alt="Find an optometrist in Canada" loading="lazy"></div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>How to Find an Optometrist in Canada?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>You can find an optometrist in Canada by taking a few essential steps that may help make it easier. The steps on how to find an optometrist in Canada are listed below.</p>
+<ol>
+<li>First, search online where you can look for your nearest Oscar Wylee store. This can be done by either searching for Oscar Wylee stores near me or by directly using this locations page.</li>
+<li>Second, when you find an Oscar Wylee store that is most convenient for you, clicking on the link will take you directly to the page where you can click the ‘book appointment’ button.</li>
+<li>Third, you can also book directly on this page by clicking on the specific location based on your region.</li>
+<li>Finally, select from the available times. You will then be taken to the final step where you will need to enter your details, email and phone number.</li>
+</ol>
+<div class="accordion-img-wrapper"><img src="https://test.oscarwylee.ca/media/wysiwyg/locations/02-CA-Optometrist-in-Canada-900x600.jpg" alt="Find an optometrist in Canada" loading="lazy"></div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>How to Take an Optometrist Appointment in Canada?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>An optometrist appointment will involve a series of tests and exams to evaluate your eye and vision health and determine whether you need glasses. These tests and exams will help the optometrist determine what grade of prescription you may need. When going to your appointment, you will need to bring your eyeglasses if you already own prescription glasses. The optometrist may also ask you some questions about your medical history. In an eye exam, you will undergo a preliminary eye assessment, a detailed eye assessment and then finally the optometrist will take time to explain their findings and advise on the recommendations that cater to your visual needs.</p>
+<h4 style="margin-bottom: 10px;">What to Know Before Seeing an Optometrist?</h4>
+<p>Preparing yourself before coming in to see an optometrist may be helpful for the overall process, ensuring you are well-informed. The information to know before seeing an optometrist is listed below.</p>
+<ul>
+<li>Make sure you know what your symptoms are if you’re experiencing any changes or problems with your vision.</li>
+<li>A series of eye exams will be conducted to determine whether you need prescription glasses and to ensure your eyes and vision are healthy.</li>
+<li>Be prepared to inform the optometrist of your current medications for your eyes or existing conditions as well as your medical history.</li>
+<li>If you already own prescription glasses, be sure to bring them with you to your appointment so your optometrist will better understand your visual needs.</li>
+</ul>
+<div class="accordion-img-wrapper"><img src="https://test.oscarwylee.ca/media/wysiwyg/locations/03-CA-An-Optometrist-Appointment-in-Canada-900x600.jpg" alt="An optometrist appointment in Canada" loading="lazy"></div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>What Treatments Does an Optometrist Perform?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>Optometrists are healthcare professionals who can perform treatments that may help correct refractive errors, double vision and treat eye infections by prescribing glasses and/or eye drops. The treatments optometrists can perform according to Cleveland Clinic are listed below.</p>
+<ul>
+<li><strong>Refractive Errors:</strong> Refractive errors such as nearsightedness (myopia), farsightedness (hyperopia), presbyopia (age-related farsightedness) and astigmatism are common blurry vision problems that occur due to the shape of your eye preventing light from focusing on your retina. Optometrists can diagnose these conditions and prescribe glasses that may help correct them.</li>
+<li><strong>Double Vision:</strong> Double vision can be caused by a range of other problems or conditions, the optometrist will need to perform an eye exam and first determine what may be causing it in order to treat it. Optometrists can advise on proper fitting glasses or certain eye exercises to help. If the underlying problem is a more serious condition you may be referred to an ophthalmologist.</li>
+<li><strong>Eye Infections:</strong> Eye infections can be minor issues and may only need antihistamine or antibacterial eye drops. If you are concerned about your symptoms you can consult with your optometrist.</li>
+</ul>
+<div class="accordion-img-wrapper"><img src="https://test.oscarwylee.ca/media/wysiwyg/locations/04-CA-The-Treatment-an-Optometrist-Performs-900x600.jpg" alt="The treatments an optometrist performs" loading="lazy"></div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>Is an Optician Different from an Optometrist?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>Yes, an optician is different from an optometrist <strong>due to their job responsibilities, education and training.</strong> Opticians are responsible for dispensing frames and lenses according to the prescription supplied by an optometrist or an ophthalmologist. You will likely see an optician working alongside an optometrist, but they will not have the same level of training or provide the same services. An optician will help fit frames for customers, give advice on the right lenses and manage the supply of glasses. They will not be able to conduct comprehensive eye exams like an optometrist, nor can they write prescriptions. According to the Opticians Association of Canada, an optician will have to undergo training at an accredited institution before they can begin practice. This can take from a year to 3 years, depending on the study load undertaken.</p>
+<div class="accordion-img-wrapper"><img src="https://test.oscarwylee.ca/media/wysiwyg/locations/05-CA-Optician-and-Optometrist-900x600.jpg" alt="Optical Dispenser and Optometrist" loading="lazy"></div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>What is the Average Duration of Eye Treatment with an Optometrist?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>The average duration of eye treatment with an optometrist depends on the varying factors of an individual’s visual needs. At Oscar Wylee, we allocate approximately 20 minutes for each eye exam, however, this time frame can vary, especially for those who have more complex eye conditions that require more extensive testing. Eye treatment may be in the form of prescribing glasses or regular eye checkups. Comprehensive eye exams may take longer as this may include initial testing, discussing options for treatment and any further recommendations for eye care and management. If your optometrist sees any signs of concern, they may take additional tests before possibly referring you to an ophthalmologist. The duration of treatment can change for those who need prescription glasses to those who already own prescription glasses and may need adjustments or for those who are coming in for a specific issue.</p>
+<div class="accordion-img-wrapper"><img src="https://test.oscarwylee.ca/media/wysiwyg/locations/06-CA-Average-Duration-of-an-Eye-Exam-900x600.jpg" alt="Average duration for an eye test" loading="lazy"></div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>How does Eye Care Quality Change from Location to Location in Canada?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>Eye care quality can change from location to location in Canada based on accessibility, optometry workforce availability, resources and facilities. According to an article published in the National Library of Medicine titled, Geographic availability to optometry services across Canada, optometrists across Canada are predominantly located in urban areas with the national mean ratio being 1.70 optometrists per 10,000 people. This article concluded there are gaps in geographic availability relative to ‘need’ and ‘supply’ factors. Therefore, in terms of accessibility, there is an uneven distribution of optometrists across Canada making a person’s access to eye care dependent on their location.</p>
+<div class="accordion-img-wrapper"><img src="https://test.oscarwylee.ca/media/wysiwyg/locations/07-CA-Eye-Care-Quality-in-Canada-900x600.jpg" alt="Eye care quality in Canada" loading="lazy"></div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>What is the Cost of an Optometrist Treatment in Canada?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>At Oscar Wylee, the cost of a complete eye exam in Canada starts from $90. A complete eye exam with retinal imaging starts from $120. Provincial health cover may be available for ages 18 years and under or 65 years and over.</p>
+<div class="accordion-img-wrapper"><img src="https://test.oscarwylee.ca/media/wysiwyg/locations/08-CA-Cost-of-an-Optometrist-Eye-Test-in-Sydney-900x600.jpg" alt="Cost of an optometrist eye test in Canada" loading="lazy"></div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>How to Find an Optometrist in Different Locations in Canada?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>To find an optometrist in different locations in Canada, you can look through the list above, choose from any of the stores listed in your region and then select a store based on your specific location. There are 13 stores across Canada located in Alberta, British Columbia, Nova Scotia, Ontario and Quebec. The process for finding an optometrist in different locations is the same across all of our Oscar Wylee stores.</p>
+<div class="accordion-img-wrapper"><img src="https://test.oscarwylee.ca/media/wysiwyg/locations/09-CA-Find-an-Optometrist-in-Canada-900x600.jpg" alt="An optometrist eye test in Canada" loading="lazy"></div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+</footer>
+<p>
+<script>
+    var accordionHeaders = document.querySelectorAll('.accordion-header');
+    var accordionContents = document.querySelectorAll('.accordion-content');
+    var toggleAllButton = document.getElementById('toggleAllButton');
+
+    accordionHeaders.forEach(function (header) {
+      header.addEventListener('click', function () {
+        var content = this.nextElementSibling;
+        if (!content.style.maxHeight) {
+          document.querySelectorAll('.accordion-content').forEach(function (item) {
+            item.style.maxHeight = null;
+            item.previousElementSibling.classList.remove('active');
+          });
+        }
+        this.classList.toggle('active');
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+        updateToggleButton();
+      });
+    });
+
+    toggleAllButton.addEventListener('click', function () {
+      var anyClosed = false;
+      accordionContents.forEach(function (content) {
+        if (!content.style.maxHeight) {
+          anyClosed = true;
+        }
+      });
+
+      accordionContents.forEach(function (content) {
+        content.style.maxHeight = anyClosed ? content.scrollHeight + "px" : null;
+        content.previousElementSibling.classList.toggle('active', anyClosed);
+      });
+
+      toggleAllButton.textContent = anyClosed ? 'Hide All' : 'Show All';
+    });
+
+    function updateToggleButton() {
+      var anyClosed = false;
+      accordionContents.forEach(function (content) {
+        if (!content.style.maxHeight) {
+          anyClosed = true;
+        }
+      });
+      toggleAllButton.textContent = anyClosed ? 'Show All' : 'Hide All';
+    }
+  </script>
+</p>

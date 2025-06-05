@@ -1,0 +1,874 @@
+<style>
+  .navigation,
+  .breadcrumbs,
+  .page-header .header.panel,
+  .header.content,
+  .page-wrapper > .widget,
+  .page-wrapper > .page-bottom,
+  .block.category.event,
+  .top-container,
+  .page-main,
+  .main-width,
+  .footer.content {
+    max-width: 1380px;
+  }
+
+  .static-location-detail.new-layout .location-service .title,
+  .static-location-detail.new-layout
+    .location-about-us
+    .right-description
+    .description
+    .title {
+    margin-bottom: 25px;
+  }
+</style>
+<!-- store accordion styles start -->
+<style>
+  /* Style the accordion container */
+  .accordion {
+    max-width: 100%;
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    cursor: text;
+  }
+
+  .accordion::after {
+    content: none;
+  }
+
+  /* Style the accordion items */
+  .accordion-item {
+    border-bottom: 1px solid silver;
+  }
+
+  /* Style the accordion item headers */
+  .accordion-header {
+    background-color: #ffffff;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #444;
+    cursor: pointer !important;
+  }
+
+  .accordion-header.active {
+    border-bottom: 1px solid silver !important;
+  }
+
+  /* Style the accordion item content */
+  .accordion-content {
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .accordion-content-wrapper {
+    padding: 18px;
+  }
+
+  .accordion-content-wrapper p {
+    margin: 10px 0px;
+    font-size: 14px;
+    text-align: justify;
+    hyphens: auto;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  .accordion-content-wrapper ul {
+    list-style-type: disc !important;
+    margin: 0px !important;
+    padding: 0px 0px 0px 40px !important;
+  }
+
+  .accordion-content-wrapper ol li {
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    line-height: 21px;
+  }
+
+  .accordion-content-wrapper ul li {
+    padding-left: 0px !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #444 !important;
+    line-height: 21px !important;
+  }
+
+  .accordion-content-wrapper ul li a {
+    color: #1979c3 !important;
+    font-weight: 400 !important;
+  }
+
+  /* Style the active accordion item */
+  .active .accordion-content {
+    max-height: 1000px;
+  }
+
+  /* Style the icon */
+  .accordion-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  /* Plus and Minus Icons */
+  .accordion-header::after {
+    content: "\002B";
+    color: #777;
+    font-weight: 400;
+    float: right;
+    margin-left: 5px;
+    font-size: 25px;
+    /* Plus sign */
+  }
+
+  .accordion-header.active::after {
+    content: "\2212";
+    /* Minus sign */
+  }
+
+  /* OW Styles */
+  /* .accordion .accordion-item .accordion-header h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+          font-size: 15px !important;
+          margin-bottom: 0 !important;
+          margin-top: 0 !important;
+          font-weight: 600 !important;
+          color: #444 !important;
+      } */
+
+  .accordion .accordion-item .accordion-header h2 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+  }
+
+  .accordion .accordion-item .accordion-header h3 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+  }
+
+  .accordion .accordion-item .accordion-header h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+  }
+
+  .accordion .accordion-item .accordion-header h5 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+  }
+
+  .accordion .accordion-item .accordion-header h6 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+  }
+
+  .accordion-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .accordion-btn-wrapper button {
+    background-color: #ffffff;
+    border: 1px solid #333;
+    box-shadow: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+</style>
+<!-- store accordion styles end -->
+<div class="static-location-detail new-layout">
+  <div class="location-detail-wrapper location-content">
+    <div class="left-container">
+      <h1 class="static-location-header">Optometrist Dieppe Champlain Place</h1>
+      <p class="short-content">
+        477 Paul Street, N010A<br />Dieppe, NB, E1A 4X5
+      </p>
+      <ul>
+        <li class="position">En face de Starbucks</li>
+      </ul>
+      <div class="opening-hours">
+        <h2>Opening hours</h2>
+        <div class="store-schedule">
+          <p>
+            <span class="schedule-label">Lundi</span
+            ><span class="schedule-value">de 10 h à 18 h</span>
+          </p>
+          <p>
+            <span class="schedule-label">Mardi</span
+            ><span class="schedule-value">de 10 h à 18 h</span>
+          </p>
+          <p>
+            <span class="schedule-label">Mercredi</span
+            ><span class="schedule-value">de 10 h à 21 h</span>
+          </p>
+          <p>
+            <span class="schedule-label">Jeudi</span
+            ><span class="schedule-value">de 10 h à 21 h</span>
+          </p>
+          <p>
+            <span class="schedule-label">Vendredi</span
+            ><span class="schedule-value">de 10 h à 21 h</span>
+          </p>
+          <p>
+            <span class="schedule-label">Samedi</span
+            ><span class="schedule-value">de 10 h à 18 h</span>
+          </p>
+          <p>
+            <span class="schedule-label">Dimanche</span
+            ><span class="schedule-value">Fermé</span>
+          </p>
+          <p style="font-size: 12px">
+            *Les heures d’ouverture du magasin reflètent les heures ouvrables
+            standard et excluent les jours fériés
+          </p>
+          <p>
+            <span style="text-decoration: underline; font-size: 13px">
+              <strong>
+                <a
+                  href="https://maps.app.goo.gl/32KRaDSKV1yrAM8n8"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Allez sur notre page d’accueil Google de Champlain Place pour
+                  les indications, les commentaires et les mises à jour.
+                </a>
+              </strong>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="location-map">
+        <iframe
+          width="100%"
+          height="100%"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2766.7758352673823!2d-64.7591436!3d46.0954455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca0b937f69386c9%3A0x84de39c9b0eb26ab!2sOscar%20Wylee%20-%20Champlain%20Place%20Dieppe!5e0!3m2!1sen!2sau!4v1743164623395!5m2!1sen!2sau"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="/fr/booking/?location=10015" phone_number="(506)
+  830-7812" direction_map="https://g.page/r/Casm67DJOd6EEBM/review"}} {{widget
+  type="Oscar\Booking\Block\Widget\AboutUs"
+  banner="wysiwyg/new-store-page/Champlain-Place_1485x1412.jpg"
+  description_label="À propos du magasin Oscar Wylee de la Place Champlain"
+  description="Si vous résidez dans la cité maritime city of Dieppe, notre
+  magasin Oscar Wylee de la Place Champlain est votre choix incontournable pour
+  des services d’optométrie et de soins oculaires de grande qualité. Prenez le
+  bus qui passe par un des nombreux arrêts de bus situés convenablement devant
+  la Place Champlain, ou garez votre voiture dans une des nombreuses aires de
+  stationnement du centre commercial. Des optométristes indépendants fournissent
+  une facturation directe à la plupart des principales compagnies d’assurances
+  santé. Lorsque vous aurez terminé votre examen de la vue, notre sympathique
+  équipe de ventes vous aidera à magasiner parmi notre gamme de montures
+  abordables et à la mode.<br /><br />Lorsque vous aurez accompli votre
+  rendez-vous, pourquoi ne pas profiter au maximum de la Place Champlain, le
+  plus grand centre commercial sur un seul bâtiment du Canada Atlantique ? Des
+  vêtements aux jouets, vous trouverez tous ce dont vous avez envie dans les
+  plus de 120 magasins que compte la Place Champlain !<br /><br />Visitez-nous
+  aujourd’hui dans notre magasin de lunettes Oscar Wylee, et profitez des
+  meilleurs services d’optométrie à Dieppe au Nouveau Brunswick !<br /><br />Vous
+  recherchez un autre emplacement de magasin Oscar Wylee ? Visitez un &lt;a
+  href=&quot;/locations/&quot;&gt;optométriste proche de chez moi&lt;/a&gt;."
+  label="Membres de l'équipe"
+  first_optometrist_image="wysiwyg/new-store-page/SM-Champlain-Place.png"
+  first_optometrist_name="Gestionnaire de magasin"
+  first_optometrist_certification_one="Opticien agréé et autorisé"}}
+  <!-- services -->
+  {{widget type="Oscar\Booking\Block\Widget\LocationService"
+  location_service="Examens de la vue avec facturation directe, Stylisme
+  professionnel des montures, Réparations et ajustements des montures, Balayage
+  rétinien numérique, Test de la vision binoculaire"}}
+  <!-- acco start -->
+  <section class="store-page-accordion">
+    <div class="accordion-btn-wrapper">
+      <button id="toggleAllButton">Show All</button>
+    </div>
+    <div class="accordion">
+      <article>
+        <div class="accordion-item">
+          <div
+            class="accordion-header active"
+            style="border-top: 1px solid silver"
+          >
+            <h2>
+              Trouvez un optométriste à la Place Champlain pour un examen de la
+              santé oculaire
+            </h2>
+          </div>
+          <div class="accordion-content" style="max-height: 1000px">
+            <div class="accordion-content-wrapper">
+              <p>
+                Si vous avez besoin d’un examen de la santé oculaire et d’autres
+                services de soins oculaires tels qu’une mise à jour de votre
+                ordonnance et de nouvelles montures, vous pouvez trouver des
+                optométristes indépendants à la Place Champlain, à Dieppe. Des
+                optométristes indépendants basés chez Oscar Wylee fournissent
+                des examens de la vue comprenant des tests de vision et la
+                détection des affections et des maladies oculaires. Les autres
+                services de soins oculaires disponibles chez Oscar Wylee de la
+                Place Champlain comprennent les mises à jour des ordonnances et
+                les conseils de soins oculaires. Nous n’avons pas
+                d’ophtalmologiste disponible à la Place Champlain. Cependant,
+                vous trouverez des soins oculaires minutieux grâce à nos
+                excellents docteurs en optométrie - également appelés
+                optométristes – indépendants, en magasin. À la Place Champlain,
+                le prix moyen d’un examen chez un optométriste dépend souvent de
+                plusieurs facteurs tels que l’âge du patient, son état de santé
+                et ses besoins oculaires.
+              </p>
+              <p>
+                Dans le magasin de lunettes Oscar Wylee de la Place Champlain, à
+                Dieppe, nous proposons une large gamme de montures disponibles
+                pour les lunettes de vue, les lunettes de soleil d’ordonnance et
+                les lunettes sans ordonnance.
+              </p>
+              <p>
+                Notre équipe de ventes, y compris nos opticiens, sont
+                disponibles en magasin pour aider les clients dans le choix de
+                nos montures. Si vous avez besoin d’ajustements ou d’additions
+                tels qu’un filtre anti-lumière bleue, notre équipe vous y
+                aidera, garantissant que tous nos clients repartent avec des
+                lunettes qui conviennent à leur vision et aux besoins de leur
+                mode de vie. Si vous recherchez des services de soins oculaires
+                de grande qualité, tels que de nouvelles montures ou des examens
+                de la santé oculaire à la Place Champlain à Dieppe, visitez
+                notre équipe Oscar Wylee !
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h2>Comment trouver un optométriste à la Place Champlain ?</h2>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                Pour trouver un optométriste à la Place Champlain, vous pouvez
+                prendre certaines mesures qui vous faciliteront la tâche, telles
+                que
+                <b
+                  >la recherche en ligne, la recherche des heures d’ouverture du
+                  magasin et la découverte de l’itinéraire pour arriver à
+                  l’emplacement que vous avez choisi.</b
+                >
+                Les étapes pour trouver un optométriste à Dieppe, à la Place
+                Champlain sont énumérées ci-dessous.
+              </p>
+              <ol>
+                <li>
+                  Cherchez en ligne en utilisant la phrase « optométriste près
+                  de chez moi à Dieppe, à la Place Champlain ». Vous pouvez
+                  également le faire ici sur le site web, via notre page «
+                  emplacements ».
+                </li>
+                <li>
+                  Cliquez sur le lien Oscar Wylee, qui vous mènera directement
+                  vers la page de notre magasin d’optométrie de la Place
+                  Champlain.
+                </li>
+                <li>
+                  Vérifiez les heures d’ouverture du magasin et son emplacement
+                  spécifique.
+                </li>
+                <li>
+                  Utilisez le lien de la page Google Business de notre magasin
+                  de la Place Champlain, situé sous les heures d’ouverture du
+                  magasin, pour voir les directions permettant d’arriver au
+                  magasin.
+                </li>
+              </ol>
+              <p>
+                Vous pouvez également trouver un optométriste à Dieppe, à la
+                Place Champlain, en cherchant les mots-clés « optométriste près
+                de chez moi ». Si le paramètre des emplacements est activé sur
+                votre smartphone et que vous êtes dans la région de Dieppe, la
+                page de notre magasin Oscar Wylee de la Place Champlain
+                apparaîtra facilement afin que vous puissiez cliquer dessus.
+              </p>
+              <p>
+                Est-il difficile d’avoir un rendez-vous pour un examen de la vue
+                à la Place Champlain ? Non, avoir un rendez-vous pour un examen
+                de la vue à la Place Champlain, à Dieppe, n’est pas difficile.
+                Vous pouvez prendre rendez-vous pour consulter un optométriste
+                indépendant chez Oscar Wylee à la Place Champlain tout
+                simplement en cliquant ici sur cette page. Chez Oscar Wylee, des
+                optométristes sont disponibles pour effectuer des rendez-vous
+                pour des examens complets de la vue, qui peuvent être réservés
+                en ligne, par téléphone ou en magasin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>
+              Comment faire la comparaison entre les optométristes de la Place
+              Champlain?
+            </h3>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                Pour comparer entre les optométristes de la Place Champlain, à
+                Dieppe, vous pouvez consulter des facteurs tels que les
+                <b
+                  >examens de la vue proposés, la couverture de l’assurance
+                  santé, les types de verres ainsi que les lunettes et additions
+                  proposées.</b
+                >
+                Pour protéger votre vision et votre santé oculaire, il est
+                important de subir un examen de la vue au moins une fois tous
+                les deux ans. Plusieurs types de tests différents peuvent être
+                réalisés durant un examen de la vue. Toutefois, les
+                optométristes ne proposent pas tous les mêmes tests. Vous pouvez
+                utiliser l’assurance santé pour couvrir une part du prix de vos
+                montures et de vos verres. Pour savoir si votre assurance santé
+                est acceptée chez un optométriste à la Place Champlain,
+                consultez leur site web. Chez Oscar Wylee, notre équipe
+                facturera directement votre assurance santé pour vous aider à
+                couvrir les frais de vos soins de santé. Plusieurs options de
+                verres sont disponibles pour les lunettes d’ordonnance tels que
+                les verres simple vision, les verres progressifs et les verres à
+                indice élevé. La plupart des optométristes de la Place
+                Champlain, à Dieppe, proposent ces verres. Cependant, il serait
+                préférable de le vérifier. Les additions aux verres, telles que
+                les verres antireflets et les filtres anti-lumière bleue, sont
+                aussi disponibles pour améliorer vos lunettes. Enfin, si vous
+                souhaitez acquérir une paire de lunettes après votre examen de
+                la vue, vous pouvez comparer les différents modèles et couleurs
+                qui vous intéressent chez les optométristes de la Place
+                Champlain. Oscar Wylee propose une large gamme de montures
+                d’inspiration vintage et moderne, dans des coloris audacieux et
+                des designs subtils.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4>
+              Comment trouver un magasin de lunettes à la Place Champlain ?
+            </h4>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                Pour trouver un magasin de lunettes à la Place Champlain, vous
+                pouvez essayer de suivre ces simples mesures comprenant
+                <b
+                  >la recherche en ligne, la sélection d’un emplacement
+                  convenable et la vérification de ses politiques d’assurance
+                  santé.</b
+                >
+                Les étapes pour trouver un magasin de lunettes à la Place
+                Champlain, sont énumérées ci-dessous
+              </p>
+              <ol>
+                <li>
+                  Cherchez en ligne en utilisant la phrase : « magasin de
+                  lunettes à la Place Champlain ». Cela vous fournira plusieurs
+                  options de magasins de lunettes dans toute la région de la
+                  Place Champlain.
+                </li>
+                <li>
+                  Sélectionnez le magasin de lunettes le plus pratique pour vous
+                  en matière d’emplacement.
+                </li>
+                <li>
+                  Cliquez sur le lien pour trouver plus d’informations telles
+                  que les heures d’ouverture, l’emplacement exact et les
+                  directions précises pour arriver au magasin de lunettes à la
+                  Place Champlain.
+                </li>
+                <li>
+                  Lisez ses politiques d’assurance santé pour vérifier à quels
+                  avantages vous avez droit.
+                </li>
+              </ol>
+              <p>
+                Notre magasin de lunettes Oscar Wylee à la Place Champlain,
+                propose des services de soins oculaires essentiels tels que les
+                examens de la vue complets et d’autres services effectués par un
+                optométriste indépendant, ainsi que des lunettes avec ou sans
+                ordonnance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h5>
+              Est-il possible d’acheter des lunettes de soleil d’ordonnance à la
+              Place Champlain sans consulter un optométriste ?
+            </h5>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                Oui et non, il est possible d’
+                <a href="/fr/sunglasses.html"
+                  >acheter des lunettes de soleil d’ordonnance</a
+                >
+                à la Place Champlain à Dieppe, sans consulter un optométriste,
+                si vous avez déjà une ordonnance qui n’est pas périmée. Si votre
+                ordonnance est périmée, vous avez la possibilité de réserver un
+                examen de la vue afin de mettre à jour votre ordonnance ou bien
+                en recevoir une nouvelle, après consultation d’un optométriste.
+                Ainsi, vos lunettes de soleil d’ordonnance seront certainement
+                adaptées à vos besoins visuels.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h2>
+              Où est situé le magasin d’optométrie Oscar Wylee de la Place
+              Champlain ?
+            </h2>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                Le magasin Oscar Wylee de Dieppe est situé à la Place Champlain,
+                à l’adresse suivante : 477 Paul Street, N010A, Place Champlain,
+                Dieppe, Nouveau Brunswick, E1A 4X5. Il est facilement accessible
+                en voiture ou en bus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4>
+              Quels traitements ou interventions de soins oculaires sont
+              disponibles au magasin d’optométrie Oscar Wylee de la Place
+              Champlain ?
+            </h4>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                Les traitements ou interventions de soins oculaires disponibles
+                au magasin d’optométrie Oscar Wylee de la Place Champlain
+                comprennent
+                <b
+                  >le test de tonométrie, la photographie digitale, l’examen
+                  avec la lampe à fente, et le test de réfraction.</b
+                >
+                Des tests supplémentaires peuvent aussi être effectués, tels
+                qu’<b>un examen du fond d’œil avec dilatation.</b> Les
+                traitements ou interventions de soins oculaires disponibles au
+                magasin d’optométrie Oscar Wylee de la Place Champlain, sont
+                énumérés ci-dessous.
+              </p>
+              <ul>
+                <li>
+                  <b>Le test de tonométrie : </b> Un optométriste ou un opticien
+                  conduira un test de tonométrie qui consiste à utiliser une
+                  machine qui souffle de petites bouffées d’air dans vos yeux.
+                  Cela permettra de mesurer la pression intraoculaire.
+                </li>
+                <li>
+                  <b>La photographie digitale : </b> L’optométriste ou
+                  l’opticien prendra une photo de votre œil, qui sera
+                  sauvegardée dans le dossier. Cette photo sera utilisée dans
+                  les prochains rendez-vous afin de surveiller tout changement
+                  dans votre œil.
+                </li>
+                <li>
+                  <b>L’examen avec la lampe à fente : </b> Un examen avec la
+                  lampe à fente peut être utilisé pour évaluer votre santé
+                  oculaire, en examinant votre cornée (l’avant de votre œil) et
+                  votre iris (l’arrière de votre œil).
+                </li>
+                <li>
+                  <b>Le test de réfraction : </b> Durant un test de réfraction,
+                  l’optométriste vous montrera une image à travers plusieurs
+                  verres différents. Il vous demandera quels verres vous
+                  permettent de voir l’image le plus nettement possible.
+                </li>
+                <li>
+                  <b>L’examen du fond d’œil avec dilatation : </b> Un examen du
+                  fond d’œil avec dilatation permet à l’optométriste d’évaluer
+                  plus précisément votre santé en observant clairement votre
+                  rétine. Cet examen est généralement réalisé chez les patients
+                  diabétiques et ceux à risque de développer des lésions
+                  rétiniennes.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h2>
+              Combien d’optométristes sont disponibles à la Place Champlain ?
+            </h2>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                Plusieurs optométristes sont disponibles à Dieppe et à la Place
+                Champlain, y compris des optométristes indépendants basés chez
+                Oscar Wylee. Le nombre d’optométristes disponibles dans une
+                région dépend généralement de la population de cette région et
+                de ses besoins en matière de soins oculaires. Chez Oscar Wylee
+                de la Place Champlain, notre équipe travaille avec passion afin
+                de fournir aux clients des services de soins oculaires dévoués
+                et de grande qualité. Des optométristes indépendants sont
+                disponibles pour fournir des examens complets de la vue, des
+                mises à jour des ordonnances et de nouvelles montures. Si vous
+                recherchez un optométriste à la Place Champlain, à Dieppe, notre
+                magasin Oscar Wylee répondra à tous vos besoins en matière de
+                lunettes et de soins oculaires.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>
+              Quels sont les autres emplacements d’optométristes les plus
+              proches de la Place Champlain, au Canada?
+            </h3>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                Il n’y a aucun autre magasin Oscar Wylee proche de la Place
+                Champlain. Si vous cherchez un optométriste en Ontario ou dans
+                d’autres provinces canadiennes, vous pouvez trouver leurs
+                emplacements sur notre page
+                <a href="/fr/locations/">emplacements des magasins</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- acco end -->
+  <div class="eye-health">
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_01.png'}}"
+        alt="In store eye test"
+      />
+      <div>
+        <h3>Des lunettes mode à la Place Champlain</h3>
+        <p>
+          Oscar Wylee s’engage à fournir des lunettes à la pointe de la mode,
+          pour tout type de visage. Nous proposons des montures de lunettes
+          modernes et de style vintage à des prix abordables pour tous. Nous
+          proposons des verres d’ordonnance sur mesure, afin de répondre à vos
+          besoins, tels que les verres avec filtre anti-lumière bleue et les
+          verres progressifs. Nos experts en magasin sont aptes et prêts à vous
+          aider pour choisir votre paire de lunettes idéale.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_02.png'}}"
+        alt="Health funds accepted"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Contrôlez votre vision à la Place Champlain</h3>
+        <p>
+          Vous souhaitez renouveler votre ordonnance avant de magasiner une
+          nouvelle paire de lunettes ? Visitez notre magasin Oscar Wylee à la
+          Place Champlain. Nous avons des optométristes indépendants basés chez
+          Oscar Wylee, qui effectuent des rendez-vous pour des examens de la
+          vue. Chez Oscar Wylee Canada, nous pouvons facturer directement la
+          plupart des principales assurances santé avec eClaims. En moins d’une
+          heure, vous pouvez mettre votre ordonnance à jour, contrôler votre
+          vision et magasiner une nouvelle paire de lunettes.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test" style="padding: 0px">
+      <img
+        src="{{media url='wysiwyg/locations/services/ow_smiley.png'}}"
+        alt="Styling advice"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Les assurances santé sont acceptées chez Oscar Wylee</h3>
+        <p>
+          Ici, chez Oscar Wylee de la Place Champlain, nous acceptons la
+          facturation directe à la plupart des assurances santé. Nous
+          facturerons directement votre assurance santé et nous soumettrons vos
+          réclamations, vous évitant de payer à l’avance pour vos lunettes de
+          vue, vos lunettes de soleil d’ordonnance ou votre examen de la vue.
+          Vous aurez à payer uniquement la différence, le cas échéant, en
+          fonction de la couverture des soins oculaires de votre assurance santé
+          et du prix de vos lunettes. Ici, chez Oscar Wylee de la Place
+          Champlain, nous sommes là pour garantir que vos besoins en matière de
+          soins oculaires sont satisfaits, à des prix abordables et imbattables
+        </p>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="/fr/booking/?location=10015" phone_number="(506)
+  830-7812" direction_map="https://g.page/r/CWsdyxZQ8_XKEBM/review"}}
+</div>
+<p>
+  <script>
+    // alt text
+    let getStoreImage = document.querySelector(
+      ".location-about-us .image-banner>img"
+    );
+    getStoreImage.setAttribute(
+      "alt",
+      "Oscar Wylee Canada Ontario Upper Canada Mall Store"
+    );
+
+    let getEmpImage = document.querySelectorAll(".optometrist .image>img");
+    getEmpImage[0].setAttribute(
+      "alt",
+      "Oscar Wylee Canada Ontario Upper Canada Mall Store Optometrist"
+    );
+    getEmpImage[1].setAttribute(
+      "alt",
+      "Oscar Wylee Canada Ontario Upper Canada Mall Store Manager"
+    );
+  </script>
+  <script>
+    var accordionHeaders = document.querySelectorAll(".accordion-header");
+    var accordionContents = document.querySelectorAll(".accordion-content");
+    var toggleAllButton = document.getElementById("toggleAllButton");
+
+    accordionHeaders.forEach(function (header) {
+      header.addEventListener("click", function () {
+        var content = this.nextElementSibling;
+        if (!content.style.maxHeight) {
+          document
+            .querySelectorAll(".accordion-content")
+            .forEach(function (item) {
+              item.style.maxHeight = null;
+              item.previousElementSibling.classList.remove("active");
+            });
+        }
+        this.classList.toggle("active");
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+        updateToggleButton();
+      });
+    });
+
+    toggleAllButton.addEventListener("click", function () {
+      var anyClosed = false;
+      accordionContents.forEach(function (content) {
+        if (!content.style.maxHeight) {
+          anyClosed = true;
+        }
+      });
+
+      accordionContents.forEach(function (content) {
+        content.style.maxHeight = anyClosed
+          ? content.scrollHeight + "px"
+          : null;
+        content.previousElementSibling.classList.toggle("active", anyClosed);
+      });
+
+      toggleAllButton.textContent = anyClosed ? "Hide All" : "Show All";
+    });
+
+    function updateToggleButton() {
+      var anyClosed = false;
+      accordionContents.forEach(function (content) {
+        if (!content.style.maxHeight) {
+          anyClosed = true;
+        }
+      });
+      toggleAllButton.textContent = anyClosed ? "Show All" : "Hide All";
+    }
+  </script>
+  <script>
+    // our service name change
+    var our_services = document.querySelector(".location-service strong");
+    our_services.innerHTML = "Nos services";
+
+    // CTA booking name change
+    var book_appoiment = document.querySelectorAll(".a-button");
+    book_appoiment[0].innerHTML = "Prenez rendez-vous";
+    book_appoiment[1].innerHTML = "Prenez rendez-vous";
+
+    // CTA call us name change
+    var call_us = document.querySelectorAll(".store-phone");
+    call_us[0].innerHTML = "Appelez-nous : (506) 830-7812";
+    call_us[2].innerHTML = "Appelez-nous : (506) 830-7812";
+
+    // CTA leave a review name change
+    var call_us = document.querySelectorAll(".store-phone");
+    call_us[1].innerHTML = "Laissez un commentaire !";
+    call_us[3].innerHTML = "Laissez un commentaire !";
+  </script>
+</p>

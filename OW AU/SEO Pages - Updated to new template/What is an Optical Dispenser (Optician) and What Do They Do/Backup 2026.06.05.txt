@@ -1,0 +1,1480 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap");
+
+  #maincontent {
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    color: #333333;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .footer-item h4,
+  .footer-item h3,
+  .help-block h3,
+  .copyright span {
+    color: #fff;
+  }
+
+  body {
+    color: #333333;
+  }
+
+  *,
+  page-main {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    /* color: #333333; */
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+  }
+
+  button:hover {
+    color: white !important;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+
+  .container {
+    max-width: 1236px;
+    margin: 0 auto;
+    padding: 0px 10px;
+  }
+
+  .banner {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+
+  .bannerResponsive {
+    display: none;
+  }
+
+  .title {
+    width: calc(100% - 6rem);
+    padding: 2.5rem 3rem;
+    text-align: center;
+    /* margin: 0 1rem 2rem 1rem; */
+    /* border-bottom: 1px solid rgba(192, 192, 192, 0.7); */
+  }
+
+  .title h1,
+  .title h2 {
+    font-weight: 700;
+    padding-bottom: 3rem;
+  }
+
+  .title p {
+    padding: 0 6rem 2rem;
+  }
+
+  .context {
+    width: calc(100% - 2rem);
+    padding: 0 1rem;
+  }
+
+  .context h2 {
+    padding: 1rem 0 0 0;
+    font-weight: bold;
+    font-size: 26px;
+  }
+
+  .context h3 {
+    padding: 2rem 0 0 0;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .context p {
+    padding: 1.5rem 0.5rem 2rem 0.5rem;
+    font-size: 16px;
+    text-align: justify;
+    text-align-last: left;
+  }
+
+  /* .faqSubtitles {
+                border-top: 1px solid silver;
+            }
+    
+            .faqSubtitles h3 {
+                color: #003cac;
+                font-weight: 700;
+                border-left: 10px solid #d6ece4;
+                padding: 10px;
+                margin-left: 20px;
+                margin-top: 2rem;
+            }
+    
+            .faqSubtitles p {
+                margin-left: 20px;
+                padding-bottom: 5px;
+            }
+    
+            .faqSubtitles ul,
+            .faqSubtitles span {
+                margin-left: 30px;
+                padding-bottom: 10px;
+    
+            } */
+
+  .boxShadow {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  }
+
+  .rightShadow {
+    box-shadow: 15px 0px 15px -10px rgba(0, 0, 0, 0.1);
+  }
+
+  .dashedBorder {
+    border-top: 2px dotted #cbc5a3;
+    border-bottom: 2px dotted #cbc5a3;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .linkTo {
+    color: #003cac;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  .context ul {
+    width: calc(100% - 4rem);
+    text-align: justify;
+    text-align-last: left;
+    padding: 1.5rem 0 1.5rem 3rem;
+  }
+
+  .border {
+    border-bottom: 1px solid silver;
+    padding: 0rem;
+  }
+
+  .flatBg {
+    background-image: url(./assets/Frame\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    box-shadow: 4px 4px 8px silver;
+  }
+
+  .flatBg::before {
+    opacity: 0.2;
+  }
+
+  .lastBox {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .context ul li {
+    padding-bottom: 1rem;
+  }
+
+  .textMain {
+    background-color: #e1e1ff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 1rem 2rem 3rem;
+    margin: 1rem 0rem 2rem 0rem;
+    /* box-shadow: 3px 3px 6px silver; */
+    /* border-bottom: 1px solid silver; */
+    text-align: left;
+    text-align-last: left;
+  }
+
+  .textMain h3 {
+    color: #003cac;
+    border-left: 10px solid #d6ece4;
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .textMainNobg {
+    /* border-bottom: 1px solid silver; */
+    padding: 2rem;
+    margin: 1rem 0;
+  }
+
+  .textMain h2 {
+    margin-top: 1.5rem;
+    border-left: 10px solid #003cac;
+    padding: 1rem;
+  }
+
+  .textMainNobg h2 {
+    border-left: 10px solid #003cac;
+    padding: 1rem;
+  }
+
+  .textMain h3,
+  .textMainNobg h3 {
+    border-left: 10px solid #a0b3ac;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+  }
+
+  .textMain h4,
+  .textMainNobg h4 {
+    /* border-left: 10px solid #ffffff; */
+    padding: 0rem;
+    margin-top: 0rem;
+    margin-left: 1rem;
+  }
+
+  .textMain strong,
+  .textMainNobg strong {
+    color: #003cac;
+    padding-bottom: 10px;
+  }
+
+  .textMainNobg p,
+  .textMain p {
+    padding-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .textMainNobg ul,
+  .textMain ul {
+    margin-left: 3rem;
+  }
+
+  .flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* margin-bottom: 2rem; */
+  }
+
+  .flexImage {
+    width: 44%;
+    min-width: 350px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 0 auto;
+    max-width: 410px;
+    max-height: 450px;
+    /* filter: drop-shadow(5px 5px 10px Silver);
+              -webkit-filter: drop-shadow(5px 5px 10px Silver); */
+  }
+
+  .flexText {
+    width: 44%;
+    min-width: 350px;
+    /* background-color: #fff; */
+    /* border-radius: 10px; */
+    /* -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              -ms-border-radius: 10px;
+              -o-border-radius: 10px; */
+    padding: 1rem 0.5rem;
+    /* border: 2px dashed #cbc5a3; */
+    margin: 0 1rem;
+    align-self: stretch;
+  }
+
+  .flexText ul {
+    padding-top: 1rem;
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  .flexText p {
+    text-align: left;
+  }
+
+  .flexText img {
+    width: 85%;
+    /* margin-top: 10%; */
+    border-radius: 10px;
+    padding-left: 8%;
+    margin-top: -2rem;
+  }
+
+  .imageTwo {
+    width: 35%;
+    padding-top: 1rem;
+  }
+
+  .flexImageRound {
+    border-radius: 15px;
+    width: 40%;
+  }
+
+  /* .smallText {
+      font-size: 13px !important;
+      margin-left: 1.5rem;
+      font-style: italic;
+    } */
+
+  span.smallText {
+    display: block;
+    font-size: 13px !important;
+    padding-left: 1.4rem !important;
+    font-style: italic;
+  }
+
+  .location {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: max-content;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+    border-top: 1px solid silver;
+  }
+
+  .locationText h2 {
+    font-weight: 700;
+    padding-left: 0.5rem;
+  }
+
+  .textBorder {
+    border-top: 1px solid silver;
+    margin-top: 5.5rem;
+    padding: 2rem;
+  }
+
+  .locationText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .locationText p {
+    font-size: 16px;
+  }
+
+  .locationImage {
+    width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+
+  .allButton {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .allButton a {
+    text-decoration: none;
+  }
+
+  .btnOw:hover {
+    background-color: black;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    border: none !important;
+    transition: 1s;
+  }
+
+  .btnOw {
+    background-color: #003cac;
+    width: 80%;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pSubTitle {
+    font-size: 22px !important;
+    padding-top: 3rem !important;
+    font-weight: bold;
+    color: #6b6b6b !important;
+  }
+
+  .minusPadding {
+    padding-bottom: 0.5rem !important;
+  }
+
+  /* vertical */
+  .reveal {
+    position: relative;
+    transform: translateY(65px);
+    -webkit-transform: translateY(65px);
+    -moz-transform: translateY(65px);
+    -ms-transform: translateY(65px);
+    -o-transform: translateY(65px);
+    opacity: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Style the button that is used to open and close the collapsible content */
+  .collapsible {
+    background-color: #fff;
+    color: #003cac;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    width: 100%;
+    border: none;
+    /* border-bottom: 2px dashed #003cac; */
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  button.accordion.active::before {
+    content: "\2212";
+  }
+
+  button.accordion::before {
+    content: "\002B";
+    color: #003cac;
+    font-weight: bold;
+    /* float: right; */
+    margin-left: 5px;
+    padding-right: 0.5rem;
+    font-size: 16px;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+  .collapsible:hover {
+    background-color: #f7f7f7;
+    color: #003cac !important;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-style: normal;
+  }
+
+  .activeCollaps {
+    font-style: normal;
+  }
+
+  /* Style the collapsible content. Note: hidden by default */
+  .collapsContent {
+    padding: 0 1rem;
+    display: none;
+    overflow: hidden;
+    /* background-color: #003cac; */
+    font-size: 12px;
+    border-top: 1px dashed #003cac;
+    background-color: #f7f7f7;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .sources {
+    margin-bottom: 2rem;
+  }
+
+  .minusMargin {
+    margin-top: -2rem;
+  }
+
+  hr {
+    opacity: 0.7;
+    border-top: 1px solid silver;
+  }
+
+  .booking {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem auto;
+  }
+
+  .booking h2 {
+    padding: 2rem;
+    margin: 0px;
+  }
+
+  .booking p {
+    padding-top: 2rem;
+  }
+
+  .booking a {
+    width: 30%;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .booking button {
+    background-color: #003cac;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    padding: 15px;
+    margin-right: 70px;
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  button:not(.primary) {
+    box-shadow: inset 0 1px 0 0 #fff, inset 0 -1px 0 0 rgb(204 204 204 / 30%);
+  }
+
+  .booking button:hover {
+    background-color: black;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    border: none !important;
+    transition: 1s;
+    cursor: pointer;
+  }
+
+  .bookingContainer {
+    border-bottom: 1px solid silver;
+    padding: 2rem;
+    margin: 1rem 0;
+  }
+
+  .booking input {
+    padding-bottom: 0.2rem;
+    border: none;
+    border-bottom: 2px solid #000;
+    margin: 1rem 0;
+    width: 20rem;
+    background-color: #f7f7f7;
+    font-size: 16px;
+  }
+
+  .booking input:focus {
+    outline: none;
+  }
+
+  .booking input::placeholder {
+    color: #a0b3ac;
+    font-size: 16px;
+  }
+
+  .adjustMargin {
+    text-align: center;
+  }
+
+  @media (max-width: 992px) {
+    .title {
+      width: calc(100% - 2rem);
+      padding: 1.5rem 1rem;
+      margin: 0 0 2rem 0;
+    }
+
+    .context {
+      width: calc(100% - 3rem);
+      padding: 0 1.5rem;
+    }
+
+    .flexContainer {
+      margin-bottom: 2rem;
+    }
+
+    .flexImage {
+      min-width: 280px;
+      margin: 2rem auto;
+      max-width: 410px;
+      max-height: 450px;
+    }
+
+    .flexText {
+      min-width: 300px;
+      margin: 0.5rem auto;
+    }
+
+    .imageTwo {
+      width: 50%;
+    }
+
+    .booking {
+      justify-content: center;
+      margin: 1rem auto;
+    }
+
+    .booking h2 {
+      padding: 0.5rem;
+      margin: 0px;
+    }
+
+    .booking a {
+      width: 90%;
+      margin: 1rem auto;
+    }
+
+    .booking button {
+      margin: 1rem auto;
+    }
+
+    .booking p {
+      padding-right: 2.5rem;
+    }
+  }
+
+  @media (max-width: 770px) {
+    .title p {
+      padding: 0 1rem 1rem;
+    }
+
+    .minusMarginImage {
+      margin-top: -2rem;
+      margin-bottom: -4rem;
+    }
+
+    .extraPadding {
+      padding-bottom: 2rem;
+    }
+
+    .flexText h4 {
+      padding-top: 0 !important;
+    }
+
+    .flexImageRound,
+    .flexImage,
+    .flexText {
+      width: 100%;
+    }
+
+    .imageTwo {
+      width: 60%;
+      padding-top: 0;
+    }
+
+    .imageTwo,
+    .locationImage {
+      order: 1;
+    }
+
+    .flexImage {
+      margin: 1.5rem auto 0 auto;
+    }
+
+    .allButton {
+      margin-bottom: 5px;
+    }
+
+    .btnOw {
+      width: 100%;
+    }
+
+    .context ul,
+    .context ol {
+      width: calc(100% - 6rem);
+      padding-left: 3rem;
+    }
+
+    .context {
+      width: calc(100% - 2rem);
+      padding: 0 1rem;
+    }
+
+    .booking h2 {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .faqSubtitles h3 {
+      margin-top: 3rem;
+    }
+
+    .minusMargin {
+      margin-top: 0rem !important;
+    }
+
+    .flexText .flexTwo {
+      margin-top: 0 !important;
+    }
+
+    .flexText h2 {
+      margin-bottom: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    .flexText ul {
+      padding-top: 1rem;
+      margin-left: 0.5rem;
+    }
+
+    .flexMargin {
+      margin-top: -0.5rem !important;
+    }
+
+    .sources {
+      margin-top: -4rem;
+    }
+
+    /* .flexText p{
+                padding: 0 0.5rem !important;
+              } */
+
+    .faqSubtitles ul,
+    .faqSubtitles span {
+      margin-left: 10px;
+    }
+
+    .faqSubtitles p {
+      margin-left: 0;
+    }
+
+    /* .textMain h2,
+                .textMainNobg h2 {
+                    border-left: 10px solid #003cac;
+                } */
+
+    .textMain {
+      margin: 1rem;
+      padding: 1rem;
+      padding-right: 2rem;
+    }
+
+    .textMainNobg {
+      padding: 1rem 0.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .textMain h2 {
+      color: #003cac;
+      padding: 1rem;
+      margin-bottom: 0rem;
+      margin-top: 1rem !important;
+    }
+
+    .textMainNobg h2 {
+      margin-bottom: 1rem !important;
+      margin-left: 0.5rem;
+    }
+
+    .textMain p,
+    .textMainNobg p {
+      text-align: left !important;
+      padding: 0.5rem 1rem 2rem;
+    }
+
+    .textMain ul,
+    .textMainNobg ul {
+      text-align: left !important;
+      padding: 1.5rem;
+      margin-left: 2rem;
+    }
+
+    .textMain h3,
+    .textMainNobg h3 {
+      margin-top: 0;
+    }
+    .flexContainer {
+      margin: 1rem 0rem;
+    }
+
+    .title {
+      width: calc(100% - 1rem);
+      padding: 1rem 0.5rem;
+      margin: 0 0 1rem 0;
+    }
+
+    .title h1 {
+      padding-bottom: 3rem;
+      padding-top: 2rem;
+    }
+
+    .container {
+      padding: 0;
+    }
+
+    .textBorder {
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    h1 {
+      font-size: 38px;
+    }
+
+    .flexImage {
+      min-width: 280px;
+      margin: 1rem auto;
+      max-width: 410px;
+      max-height: 450px;
+    }
+
+    .flexText {
+      min-width: 210px;
+      margin: 0.5rem auto;
+    }
+
+    .banner {
+      display: none;
+    }
+
+    .bannerResponsive {
+      display: flex;
+      width: 100%;
+    }
+
+    .border {
+      padding: 1rem 0rem 1rem 0rem;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+
+    .context p {
+      width: calc(100% - 2rem);
+      padding: 1rem;
+      text-align: left !important;
+    }
+
+    .context ul {
+      width: calc(100% - 3rem);
+      padding-left: 1.5rem;
+      text-align: left !important;
+    }
+
+    .context ul,
+    .context p {
+      text-align: left;
+    }
+
+    .reveal {
+      position: relative;
+      transform: translateY(15px);
+      -webkit-transform: translateY(15px);
+      -moz-transform: translateY(15px);
+      -ms-transform: translateY(15px);
+      -o-transform: translateY(15px);
+      opacity: 0;
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+    }
+
+    .reveal.active {
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      opacity: 1;
+    }
+
+    span.smallText {
+      margin-left: 0.5rem;
+    }
+
+    .imageTwo {
+      width: 80%;
+    }
+
+    .booking h2 {
+      text-align: center;
+    }
+
+    .booking input {
+      width: 18rem;
+    }
+  }
+
+  @media (max-width: 375px) {
+    /* .flexContainer{
+                max-width: 100%;
+              } */
+    .flexText {
+      min-width: 200px;
+      margin: 0.5rem auto;
+    }
+
+    .flexImage {
+      min-width: 220px;
+      margin: 0.5rem auto;
+    }
+
+    .location {
+      width: 100%;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      padding: 1rem 0.5rem;
+    }
+
+    .context ul {
+      width: calc(100% - 3rem);
+      padding-left: 1.5rem;
+    }
+
+    .locationText > * {
+      margin-bottom: 20px;
+    }
+
+    .btnOw {
+      width: 100%;
+    }
+
+    .booking input {
+      width: 13rem;
+    }
+  }
+
+  @media (max-width: 281px) {
+    .flexText {
+      min-width: 200px;
+      margin: 0.5rem auto;
+    }
+
+    .flexImage {
+      min-width: 220px;
+      margin: 0.5rem auto;
+    }
+  }
+</style>
+<!-- new template styles start -->
+<style>
+  /* publish date start */
+
+  .intro-section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .intro-section.publsih-date {
+    margin: 0rem 3rem;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+
+  .publsih-date-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .publsih-date-wrapper p {
+    margin-bottom: 0px;
+    color: #003cac;
+    font-weight: 500;
+  }
+
+  .publsih-date-wrapper p:first-child {
+    border-right: 1.5px solid silver;
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .intro-section.publsih-date {
+      margin: 0em 1em 2em 1em;
+      padding-bottom: 10px;
+    }
+
+    .publsih-date-wrapper {
+      display: inline;
+    }
+
+    .publsih-date-wrapper p {
+      margin-bottom: 8px;
+      color: #003cac;
+      font-weight: 500;
+    }
+
+    .publsih-date-wrapper p:first-child {
+      border-right: 0px;
+      margin-right: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  /* publish date end */
+
+  /* top lang-sw start */
+  .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .lang-sw img {
+    max-width: 33px;
+  }
+
+  .language-switch {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 94%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .language-switch {
+      margin-right: 65px;
+    }
+  }
+
+  @media only screen and (max-width: 820px) {
+    .language-switch {
+      margin-right: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .lang-sw {
+      align-items: flex-start;
+    }
+
+    .language-switch {
+      margin-right: 0em;
+      margin-left: 0em;
+    }
+
+    .language-switch-dropdown-itmes-wrapper {
+      top: 40px;
+    }
+  }
+
+  /* top lang-sw end */
+
+  /* a links start */
+  .a-links {
+    margin: 3rem;
+  }
+
+  .a-links a {
+    color: #003cac;
+    font-weight: 700;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1.5px solid silver;
+  }
+
+  .a-links a:last-child {
+    border-right: 0px;
+  }
+
+  @media only screen and (max-width: 820px) {
+    .a-links {
+      margin: 0rem;
+    }
+
+    .a-links nav {
+      margin: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .a-links {
+      margin: 3rem 0em;
+    }
+
+    .a-links nav {
+      margin: 3rem 1em;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  /* a link end */
+
+  /* bottom lang-sw start */
+  .bottom .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .bottom .language-switch {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 94%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  .lang-sw.bottom {
+    align-items: flex-start;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .bottom-lag-sw p {
+    margin-bottom: 0px;
+  }
+
+  .bottom-lag-sw {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .language-switch-dropdown-itmes-wrapper {
+      top: 33px;
+    }
+
+    .bottom-lag-sw {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 2em;
+      gap: 15px;
+    }
+
+    .lang-sw.bottom {
+      margin-left: 0px;
+    }
+  }
+
+  /* bottom lang sw end */
+</style>
+<!-- new template styles end -->
+<div class="container"><img src="{{media url='wysiwyg/Optical-Dispenser/Optical_dispenser_desktop_1.jpg'}}" alt="Optical Dispenser banner" title="Optical Dispenser banner" class="banner"> <img src="{{media url='wysiwyg/Optical-Dispenser/Optical_dispenser_mobile_1.jpg'}}" alt="Optical Dispenser banner" title="Optical Dispenser banner" class="bannerResponsive">
+<h1 class="title">What is an Optical Dispenser (Optician) and What Do They Do?</h1>
+<!-- publish date start -->
+<div class="intro-section publsih-date">
+<div class="publsih-date-wrapper">
+<p>Published on September 12th, 2023</p>
+<p><b>Updated on January 8th, 2025</b></p>
+<!-- publish date end --> <!-- lang switch start -->
+<div class="lang-sw">
+<div class="language-switch">
+<div class="language-switch-current" onclick="toggleVisibility()"><!-- flag --> <img src="{{media url='wysiwyg/AU_Flag.jpg'}}" alt="What is an Optical Dispenser (Optician) and What Do They Do? in Australian English"> Australia <!-- dropdown icon --> <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z" fill="black"></path> </svg></div>
+<div class="language-switch-dropdown-itmes-wrapper" id="secondBox" style="display: none;">
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/AU_Flag.jpg'}}" alt="What is an Optical Dispenser (Optician) and What Do They Do? in Australian English"> <a href="https://www.oscarwylee.com.au/eye-care/optometrist/what-is-an-optical-dispenser.html">Australia</a></div>
+<div class="language-switch-dropdown-itmes"><!-- flag --> <img src="{{media url='wysiwyg/NZ_Flag.jpg'}}" alt="What is a Dispensing Optician and What Do They Do? in New Zealand English"> <a href="https://www.oscarwylee.co.nz/eye-care/optometry/what-is-a-dispensing-optician.html">New Zealand</a></div>
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="What is an Optician and What Do They Do? in Canadian English"> <a href="https://oscarwylee.ca/eye-care/optometry/what-is-an-optician.html">Canada</a></div>
+</div>
+</div>
+</div>
+<!-- lang switch end --></div>
+</div>
+<!-- publish date end -->
+<div class="context">
+<div class="textMainNobg intro-section">
+<p>When it comes to eye care, there are often a team of professionals who work together to make sure you are getting the best services possible. If you are getting a regular eye test, you will be more than familiar with an optometrist and what they do. If you have ever had a more serious eye problem, like advanced glaucoma or cataracts, you will be familiar with an ophthalmologist, also known as an eye surgeon. <br><br>If you have ever had glasses fitted, then you will have worked with a dispensing optician, although you may not have known it, as they often have a different name. In Australia, we have chosen to use the term optical dispenser instead of optician, as it is less likely to get confused with an optometrist. <br><br>Keep reading to find out more about optical dispensers, why we use this term in Australia and what role optical dispensers play in your eye care team.</p>
+</div>
+<!-- a liks start -->
+<div class="a-links"><nav><a href="#Definition">Definition</a> <a href="#Role-Description">Role Description</a> <a href="#How-to-Become-an-Optician">How to Become an Optician</a></nav></div>
+<!-- a liks end -->
+<div class="textMainNobg">
+<h2 id="Definition">What is an optical dispenser?</h2>
+<div class="flexContainer">
+<div class="flexText">
+<p>An optical dispenser is an eye care professional who is responsible for fitting and dispensing glasses. The term optician originated in the UK, where it relates to eye care professionals who both prescribe and dispense glasses. <br><br>As this definition is very closely related to optometry and is often confused for it, optician is not a term we use in Australia. We instead use the terms <a href="/eye-care/optometrist" class="linkTo">optometrists</a> and optical dispensers to differentiate between those who perform eye exams and prescribe lenses (optometrists), and those who interpret prescriptions and assist customers with fitting their glasses (optical dispensers).</p>
+</div>
+<img alt="">
+<div class="flexText imageTwo"><img src="{{media url='wysiwyg/Optical-Dispenser/Optical_dispenser.png'}}" alt="Optical dispenser" class="minusMarginImage"></div>
+</div>
+</div>
+<div class="context"><hr></div>
+<div class="textMain boxShadow">
+<h2 id="Role-Description">What does an optical dispenser do?</h2>
+<p>An optical dispenser has a range of responsibilities. These include fitting corrective lenses for patients, measuring the distance between a patient's pupils to ensure the best fit for glasses, and offering advice on selecting the right frames. Optical dispensers do not prescribe glasses or diagnose eye conditions. <br><br>Optical dispensers play an important role in helping an optometrist and <a href="/eye-care/optometrist/ophthalmologist.html" class="linkTo">ophthalmologist</a>, to meet patient needs and provide the appropriate treatments. <br><br>At Oscar Wylee, we have a dedicated and passionate team of eye care professionals in store that can help with your vision needs. If you need an eye test for instance, <a href="/booking" class="linkTo">you can book online</a> and our optometrists, optical dispensers and front of house staff, will work together to sort out any prescriptions or eye care that you need.</p>
+<h3>What does an optical dispenser do on a daily basis?</h3>
+<p class="minusPadding">What an optical dispenser will do day to day is dependent upon what environment they work in. If they work in an optical dispensary, their responsibilities will include filling prescriptions, adjusting frames and lenses, and giving advice to patients. If they work at an optometrists office, they will perform similar duties, but may work closer with an eye care team including the optometrists. An optical dispenser may also work in other eye care centres or even laboratories.</p>
+<span class="smallText">Source: The Australasian College of Optical Dispensing (ACOD)</span>
+<p>If an optical dispenser is working in a store like Oscar Wylee, where we provide both optometry services and optical dispensing, the day to day will often revolve around patients and customer service. They will make sure everyone’s eye care needs are met by fitting glasses, giving advice and making adjustments to lenses or frames.</p>
+<p class="minusMargin minusPadding">Other duties may include:</p>
+<ul>
+<li>Ordering lenses for the store.</li>
+<li>Checking that lenses or frames are free from defects.</li>
+<li>Repairing damaged lenses or frames.</li>
+</ul>
+</div>
+<div class="context"><hr></div>
+<div class="location" style="border-top: none;">
+<div class="locationText">
+<h2>Looking for your next pair of glasses?</h2>
+<p>Find your nearest Oscar Wylee store and our friendly staff can assist you.</p>
+</div>
+<div class="locationText"><a href="/locations/full-store-list.html" class="adjustMargin"> <button class="btnOw">Locate a store</button> </a></div>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2 id="How-to-Become-an-Optician">How to become an optical dispenser?</h2>
+<p class="minusPadding">To start a career as an optical dispenser, you are required to attain a qualification in the optometry field. You will also need the appropriate technical training to develop practical skills.</p>
+<div class="flexContainer">
+<div class="flexText">
+<h3>What do you need to study to become an optical dispenser?</h3>
+<p>You will need to complete a course to become an optical dispenser. In Australia, The Australasian College of Optical Dispensing (ACOD) offers a Certificate IV in Optical Dispensing which will provide you with the necessary qualifications. <br><br>You could also complete the training via an institution like TAFE NSW, that offers the same certificate. This schooling and training is followed by a period of work experience or an apprenticeship to get hands on knowledge.</p>
+</div>
+<div class="flexText">
+<h3>How long does it take to become an optical dispenser?</h3>
+<p class="minusPadding">To become an optical dispenser, it will take up to two years. The completion of a Certificate IV in Optical Dispensing for instance, can take anywhere from 12 to 18 months. If you study part time, it may take longer. You will then do the required work experience before entering into the workplace as an optical dispenser.</p>
+<span class="smallText">Source: The Australasian College of Optical Dispensing (ACOD)</span></div>
+</div>
+</div>
+<div class="context"><hr></div>
+<div class="textMain boxShadow">
+<h2>What skills does an optical dispenser need?</h2>
+<p style="padding-bottom: 0;">An optical dispenser will need to have a range of skills to excel in the field. The most important are:</p>
+<ul>
+<li>A good knowledge of eye health, such as vision abnormalities and disorders.</li>
+<li>A comprehensive understanding of how lenses and frames work.</li>
+<li>Ability to interpret a glasses prescription.</li>
+<li>Ability to measure a pupillary distance.</li>
+<li>Good communication skills to work alongside an optometrist and other eye care staff.</li>
+</ul>
+<p style="padding-top: 0;">As optical dispensing is a customer facing role, you will also need good customer service skills.</p>
+</div>
+<div class="context"><hr></div>
+<div class="textMainNobg">
+<h2>Oscar Wylee optical dispensers</h2>
+<p>Here at Oscar Wylee, we have in-store dispensing staff that can help you with your lens and frames needs. Find your nearest Oscar Wylee store <a href="/locations/full-store-list.html" class="linkTo">on our store locator page</a>, and come in and see us for more information.</p>
+<!-- lang switch start -->
+<div class="bottom-lag-sw">
+<p class="para-content">Read What is an Optical Dispenser (Optician) and What Do They Do? in other Oscar Wylee regions and their languages.</p>
+<div class="lang-sw bottom">
+<div class="language-switch">
+<div class="language-switch-current" id="language-switch-current" onclick="toggleVisibilityBtnTwo()"><!-- flag --> <img src="{{media url='wysiwyg/AU_Flag.jpg'}}" alt="What is an Optical Dispenser (Optician) and What Do They Do? in Australian English"> Australia <!-- dropdown icon --> <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z" fill="black"></path> </svg></div>
+<div class="language-switch-dropdown-itmes-wrapper" id="language-switch-dropdown-itmes-wrapper" style="display: none;">
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/AU_Flag.jpg'}}" alt="What is an Optical Dispenser (Optician) and What Do They Do? in Australian English"> <a href="https://www.oscarwylee.com.au/eye-care/optometrist/what-is-an-optical-dispenser.html">Australia</a></div>
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/NZ_Flag.jpg'}}" alt="What is a Dispensing Optician and What Do They Do? in New Zealand English"> <a href="https://www.oscarwylee.co.nz/eye-care/optometry/what-is-a-dispensing-optician.html">New Zealand</a></div>
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="What is an Optician and What Do They Do? in Canadian English"> <a href="https://oscarwylee.ca/eye-care/optometry/what-is-an-optician.html">Canada</a></div>
+</div>
+</div>
+</div>
+</div>
+<!-- lang switch end --></div>
+<div class="context">
+<div class="location">
+<div class="locationText">
+<h2>Find a store near you</h2>
+<p>Contact or visit your nearest store for a full quote.</p>
+<p>All major health funds accepted in store.</p>
+<div class="allButton"><a href="/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img class="locationImage" src="{{media url='wysiwyg/Optical-Dispenser/find_a_store.jpg'}}" alt="find a store" title="find a store"></div>
+<div class="location"><img class="locationImage" src="{{media url='wysiwyg/Optical-Dispenser/book_an_eye_test_1.jpg'}}" alt="book an eye test with Oscar Wylee" title="book an eye test with Oscar Wylee">
+<div class="locationText">
+<h2>Are you in need of an eye test?</h2>
+<p>We recommend everyone has a complete eye examination at least once every two years.</p>
+<p>Book yours today with Oscar Wylee</p>
+<div class="allButton"><a href="/booking"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>
+<script>
+    const productContainers = [
+      ...document.querySelectorAll(".product-container"),
+    ];
+    const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
+    const preBtn = [...document.querySelectorAll(".pre-btn")];
+
+    productContainers.forEach((item, i) => {
+      let containerDimensions = item.getBoundingClientRect();
+      let containerWidth = containerDimensions.width;
+
+      nxtBtn[i].addEventListener("click", () => {
+        item.scrollLeft += containerWidth;
+      });
+
+      preBtn[i].addEventListener("click", () => {
+        item.scrollLeft -= containerWidth;
+      });
+    });
+
+    // top lang-sw
+    document.addEventListener("click", function (event) {
+      var secondBox = document.querySelector(
+        ".language-switch-dropdown-itmes-wrapper"
+      );
+      var firstBox = document.querySelector(".language-switch-current");
+
+      // Check if the clicked element is outside the second box and the first box
+      if (
+        !secondBox.contains(event.target) &&
+        !firstBox.contains(event.target)
+      ) {
+        secondBox.style.display = "none";
+      }
+    });
+
+    function toggleVisibility() {
+      var secondBox = document.querySelector(
+        ".language-switch-dropdown-itmes-wrapper"
+      );
+      secondBox.style.display =
+        secondBox.style.display === "none" ? "flex" : "none";
+    }
+
+    // bottom lang-sw
+    document.addEventListener("click", function (event) {
+      var secondBox = document.querySelector(
+        "#language-switch-dropdown-itmes-wrapper"
+      );
+      var firstBox = document.querySelector("#language-switch-current");
+
+      // Check if the clicked element is outside the second box and the first box
+      if (
+        !secondBox.contains(event.target) &&
+        !firstBox.contains(event.target)
+      ) {
+        secondBox.style.display = "none";
+      }
+    });
+
+    function toggleVisibilityBtnTwo() {
+      var secondBox = document.querySelector(
+        "#language-switch-dropdown-itmes-wrapper"
+      );
+      secondBox.style.display =
+        secondBox.style.display === "none" ? "flex" : "none";
+    }
+  </script>
+</p>

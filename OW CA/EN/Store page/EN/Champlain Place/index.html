@@ -1,0 +1,872 @@
+<style>
+  .navigation,
+  .breadcrumbs,
+  .page-header .header.panel,
+  .header.content,
+  .page-wrapper > .widget,
+  .page-wrapper > .page-bottom,
+  .block.category.event,
+  .top-container,
+  .page-main,
+  .main-width,
+  .footer.content {
+    max-width: 1380px;
+  }
+
+  .static-location-detail.new-layout .location-service .title,
+  .static-location-detail.new-layout
+    .location-about-us
+    .right-description
+    .description
+    .title {
+    margin-bottom: 25px;
+  }
+</style>
+<!-- store accordion styles start -->
+<style>
+  /* Style the accordion container */
+  .accordion {
+    max-width: 100%;
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    cursor: text;
+  }
+
+  .accordion::after {
+    content: none;
+  }
+
+  /* Style the accordion items */
+  .accordion-item {
+    border-bottom: 1px solid silver;
+  }
+
+  /* Style the accordion item headers */
+  .accordion-header {
+    background-color: #ffffff;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #444;
+    cursor: pointer !important;
+  }
+
+  .accordion-header.active {
+    border-bottom: 1px solid silver !important;
+  }
+
+  /* Style the accordion item content */
+  .accordion-content {
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .accordion-content-wrapper {
+    padding: 18px;
+  }
+
+  .accordion-content-wrapper p {
+    margin: 10px 0px;
+    font-size: 14px;
+    text-align: justify;
+    hyphens: auto;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  .accordion-content-wrapper ul {
+    list-style-type: disc !important;
+    margin: 0px !important;
+    padding: 0px 0px 0px 40px !important;
+  }
+
+  .accordion-content-wrapper ol li {
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    line-height: 21px;
+  }
+
+  .accordion-content-wrapper ul li {
+    padding-left: 0px !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #444 !important;
+    line-height: 21px !important;
+  }
+
+  .accordion-content-wrapper ul li a {
+    color: #1979c3 !important;
+    font-weight: 400 !important;
+  }
+
+  /* Style the active accordion item */
+  .active .accordion-content {
+    max-height: 1000px;
+  }
+
+  /* Style the icon */
+  .accordion-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  /* Plus and Minus Icons */
+  .accordion-header::after {
+    content: "\002B";
+    color: #777;
+    font-weight: 400;
+    float: right;
+    margin-left: 5px;
+    font-size: 25px;
+    /* Plus sign */
+  }
+
+  .accordion-header.active::after {
+    content: "\2212";
+    /* Minus sign */
+  }
+
+  /* OW Styles */
+  /* .accordion .accordion-item .accordion-header h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+          font-size: 15px !important;
+          margin-bottom: 0 !important;
+          margin-top: 0 !important;
+          font-weight: 600 !important;
+          color: #444 !important;
+      } */
+
+  .accordion .accordion-item .accordion-header h2 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+  }
+
+  .accordion .accordion-item .accordion-header h3 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+  }
+
+  .accordion .accordion-item .accordion-header h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+  }
+
+  .accordion .accordion-item .accordion-header h5 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+  }
+
+  .accordion .accordion-item .accordion-header h6 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    line-height: 20px;
+  }
+
+  .accordion-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .accordion-btn-wrapper button {
+    background-color: #ffffff;
+    border: 1px solid #333;
+    box-shadow: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+</style>
+<!-- store accordion styles end -->
+<div class="static-location-detail new-layout">
+  <div class="location-detail-wrapper location-content">
+    <div class="left-container">
+      <h1 class="static-location-header">Optometrist Dieppe Champlain Place</h1>
+      <p class="short-content">
+        477 Paul Street, N010A<br />Dieppe, NB, E1A 4X5
+      </p>
+      <ul>
+        <li class="position">Next to RW&amp;CO.</li>
+      </ul>
+      <div class="opening-hours">
+        <h2>Opening hours</h2>
+        <div class="store-schedule">
+          <p>
+            <span class="schedule-label">Monday</span
+            ><span class="schedule-value">10:00AM – 6:00PM</span>
+          </p>
+          <p>
+            <span class="schedule-label">Tuesday</span
+            ><span class="schedule-value">10:00AM – 6:00PM</span>
+          </p>
+          <p>
+            <span class="schedule-label">Wednesday</span
+            ><span class="schedule-value">10:00AM – 9:00PM</span>
+          </p>
+          <p>
+            <span class="schedule-label">Thursday</span
+            ><span class="schedule-value">10:00AM – 9:00PM</span>
+          </p>
+          <p>
+            <span class="schedule-label">Friday</span
+            ><span class="schedule-value">10:00AM – 9:00PM</span>
+          </p>
+          <p>
+            <span class="schedule-label">Saturday</span
+            ><span class="schedule-value">10:00AM – 6:00PM</span>
+          </p>
+          <p>
+            <span class="schedule-label">Sunday</span
+            ><span class="schedule-value">Closed</span>
+          </p>
+          <p style="font-size: 12px">
+            *Store hours reflect local standard trading hours and exclude public
+            holidays
+          </p>
+          <p>
+            <span style="text-decoration: underline; font-size: 13px">
+              <strong>
+                <a
+                  href="https://maps.app.goo.gl/32KRaDSKV1yrAM8n8"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Visit our Champlain Place Google Business page for directions,
+                  reviews, and updates.
+                </a>
+              </strong>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="location-map">
+        <iframe
+          width="100%"
+          height="100%"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2766.7758352673823!2d-64.7591436!3d46.0954455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca0b937f69386c9%3A0x84de39c9b0eb26ab!2sOscar%20Wylee%20-%20Champlain%20Place%20Dieppe!5e0!3m2!1sen!2sau!4v1743164623395!5m2!1sen!2sau"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="/booking/?location=10015" phone_number="(506) 830-7812"
+  direction_map="https://g.page/r/Casm67DJOd6EEBM/review"}} {{widget
+  type="Oscar\Booking\Block\Widget\AboutUs"
+  banner="wysiwyg/new-store-page/Champlain-Place_1485x1412.jpg"
+  description_label="About Oscar Wylee Champlain Place" description="If you live
+  in the maritime city of Dieppe, our Oscar Wylee store at Champlain Place is
+  your go-to for high-quality optometry and eye care services. There are bus
+  stops conveniently outside Champlain Place, or utilise the many car parking
+  spaces in the shopping centre. Independent optometrists will provide direct
+  billing to most major health insurance providers. Once you are done with your
+  eye exam, our friendly retail team will help you shop our range of affordable
+  and stylish frames.&lt;br&gt;&lt;br&gt;When you finish your appointment, why
+  not make the most of Champlain Place, the largest single-building shopping
+  centre in Atlantic Canada? With over 120 stores, you’ll find everything you
+  need at Champlain Place, from clothes to toys! &lt;br&gt;&lt;br&gt;Come in and
+  see us at our Oscar Wylee eyeglasses shop today, and experience some of the
+  best optometry services in Dieppe, New Brunswick!" label="Meet Our Team"
+  first_optometrist_image="wysiwyg/new-store-page/Placeholder_Option_2-5.png"
+  first_optometrist_name="Store Manager"}}
+  <!-- services -->
+  {{widget type="Oscar\Booking\Block\Widget\LocationService"
+  location_service="Direct Billing Eye Examinations, Professional Frame Styling,
+  Frame Adjustments and Repairs,Digital Retinal Scanning, Binocular Vision
+  Assessment"}}
+  <!-- acco start -->
+  <section class="store-page-accordion">
+    <div class="accordion-btn-wrapper">
+      <button id="toggleAllButton">Show All</button>
+    </div>
+    <div class="accordion">
+      <article>
+        <div class="accordion-item">
+          <div
+            class="accordion-header active"
+            style="border-top: 1px solid silver"
+          >
+            <h2>
+              Find an Optometrist in Champlain Place for an Eye Health Exam
+            </h2>
+          </div>
+          <div class="accordion-content" style="max-height: 1000px">
+            <div class="accordion-content-wrapper">
+              <p>
+                You can find an independent optometrist in Champlain Place in
+                Dieppe for an eye health exam and other eye care services such
+                as prescription updates and new frames. Independent optometrists
+                located at Oscar Wylee are available to perform eye exams that
+                will include vision testing and the detection of eye diseases
+                and eye conditions. Other eye care services available at Oscar
+                Wylee Champlain Place include prescription updates and eye care
+                advice. We do not have an ophthalmologist in Champlain Place.
+                However, you will find thorough eye care with the assistance of
+                our excellent independent Doctors of Optometry, known as
+                optometrists, located on-site. In Champlain Place, the average
+                cost for an optometrist exam often depends on factors such as a
+                person's age, health and eye care needs.
+              </p>
+              <p>
+                At Oscar Wylee’s glasses shop in Champlain Place, Dieppe we have
+                a wide range of frames available for purchase including
+                prescription glasses, prescription sunglasses and
+                non-prescription glasses. Our retail team, including our
+                opticians, are located in-store to help customers shop our
+                frames. If you need adjustments or lens add-ons such as a blue
+                light filter, our team will be able to assist with this,
+                ensuring all of our customers leave with eyewear that is right
+                for their vision and lifestyle needs. For high-quality eye care
+                services such as new frames or eye health exams in Champlain
+                Place in Dieppe come and visit our Oscar Wylee team!
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h2>How to Find an Optometrist in Dieppe Champlain Place?</h2>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                To find an optometrist in Dieppe Champlain Place you can take
+                certain steps that can help make it easier for you such as
+                <b
+                  >searching online, assessing the store’s opening hours and
+                  finding the directions to your chosen location.</b
+                >
+                The steps on how to find an optometrist in Dieppe at Champlain
+                Place are listed below.
+              </p>
+              <ol>
+                <li>
+                  Search online using the phrase, ‘optometrist near me in Dieppe
+                  Champlain Place’. This can also be done here on the website
+                  via our locations page.
+                </li>
+                <li>
+                  Click on the Oscar Wylee link, which will take you directly to
+                  our Champlain Place optometrist store page.
+                </li>
+                <li>
+                  See the store’s opening hours and where the store is located
+                  specifically.
+                </li>
+                <li>
+                  Use the Champlain Place Google Business page link located
+                  under store hours to see the directions on how to get to the
+                  store.
+                </li>
+              </ol>
+              <p>
+                You can also find an optometrist in Dieppe, Champlain Place by
+                searching the keywords ‘optometrist near me.’ If you have
+                locations enabled on your smartphone and you’re in the Dieppe
+                area, our Champlain Place store page should appear easily for
+                you to click on.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>Is it Hard to Get an Eye Appointment in Champlain Place?</h3>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                No, it is not hard to get an eye exam appointment at Champlain
+                Place in Dieppe. You can easily book an appointment to see an
+                optometrist in Champlain Place right here on this page. At Oscar
+                Wylee, we have highly qualified independent optometrists
+                available in our stores for comprehensive eye appointments,
+                which can be booked online or in-store.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4>
+              How to Compare Optometrists in Champlain Place to Each Other?
+            </h4>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                To compare optometrists in Champlain Place in Dieppe, you can
+                compare factors such as eye
+                <b
+                  >exams offered, health insurance coverage, lens types and
+                  add-ons and eyewear offered.</b
+                >
+                To take care of your vision and eye health, it is important to
+                receive an eye exam at least once every two years. Different
+                types of tests can be performed in an eye exam, and not all
+                optometrists may offer the same tests. Health insurance can be
+                used to help cover some of the cost of your frames and lenses.
+                To find out if your health insurance is accepted at an
+                optometrist in Champlain Place, visit their website. In the case
+                of Oscar Wylee, we accept all major health insurances and
+                provide on-the-spot claims in-store. There are many different
+                lens options available for prescription glasses, such as
+                single-vision, multifocal, and high-index lenses. Most
+                optometrists in Dieppe at Champlain Place will offer these
+                lenses, although it is good to make sure. There are also lens
+                add-ons available to enhance your glasses, such as
+                anti-reflective coating and blue light filters. Finally, if you
+                are looking to purchase a pair of glasses after your eye exam,
+                you can compare the different styles and colours you are
+                interested in from the optometrists in Champlain Place. Oscar
+                Wylee offers a wide range of frames with vintage and modern
+                inspirations in bold colours and subtle designs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4>How to Find an Eyeglasses Shop in Champlain Place?</h4>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                To find an eyeglasses store in Champlain Place, you can try to
+                follow these simple steps, including
+                <b
+                  >searching online, selecting a convenient location and looking
+                  at their health insurance policies.</b
+                >
+                The steps on how to find a glasses store in Champlain Place are
+                listed below.
+              </p>
+              <ol>
+                <li>
+                  Search online using the phrase ‘glasses store in Champlain
+                  Place.’ This will provide you with various options for glasses
+                  stores in the whole Champlain Place area.
+                </li>
+                <li>
+                  Select a glasses store that is most convenient for you to
+                  travel to.
+                </li>
+                <li>
+                  Click the link to find out more information, such as opening
+                  hours, exact location, and directions to the glasses store in
+                  Champlain Place.
+                </li>
+                <li>
+                  Read their health insurance policies to ensure you know what
+                  health benefits you have access to.
+                </li>
+              </ol>
+              <p>
+                Our Oscar Wylee glasses store in Champlain Place offers primary
+                eye care services such as comprehensive eye exams as well as
+                other services performed by an independent optometrist and
+                offers prescription and non-prescription eyewear.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h5>
+              Is it Possible to Purchase Prescribed Sunglasses in Champlain
+              Place Without Seeing an Optometrist?
+            </h5>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                Yes and no, it is possible to
+                <a href="https://oscarwylee.ca/sunglasses.html"
+                  >purchase prescribed sunglasses</a
+                >
+                in Champlain Place, Dieppe without seeing an optometrist if you
+                already have a prescription that has not expired. If your
+                prescription is expired, you can book an eye exam to receive an
+                updated or new prescription which will require you to see an
+                optometrist. This will ensure your prescription sunglasses are
+                appropriate for your visual needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h2>
+              Where is the Oscar Wylee Champlain Place Optometrist Located?
+            </h2>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                Oscar Wylee is located in Champlain Place in Dieppe. The address
+                is 477 Paul Street, N010A, Champlain Place, Dieppe, New
+                Brunswick, E1A 4X5 easily accessible by car or bus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- <article>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>
+                  What is the Phone Number of Oscar Wylee Champlain Place Store?
+              </h3>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-wrapper">
+                <p>
+                  The Oscar Wylee Champlain Place store phone number is
+                  <a href="tel:365-337-0084">365-337-0084</a>. You can contact the
+                  Oscar Wylee Champlain Place store between the hours of 10 am
+                  and 8 pm from Monday to Saturday, and 11 am to 7 pm on Sundays.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>
+                What are the Reviews for Oscar Wylee Champlain Place?
+              </h3>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-wrapper">
+                <p>
+                  The many reviews for Oscar Wylee Champlain Place in Dieppe,
+                  left by our various customers can be found here on the website
+                  and online when you search for Oscar Wylee Champlain Place.
+                  The reviews for Oscar Wylee Champlain Place are listed below.
+                </p>
+                <ul>
+                  <li>
+                    <b>Doug Wilkinson: </b> Very nice people. Great service,
+                    excellent advice. I'll be going back.
+                  </li>
+                  <li>
+                    <b>Lucie Dumas: </b>Very good service, helpful and
+                    knowledgeable. Got my glasses fixed for free within a few
+                    minutes!
+                  </li>
+                  <li>
+                    <b>Esmaeil Ghassemi: </b> Exceptional Services and Warm
+                    Hospitality! I recently visited OW for a minor eyeglass
+                    repair, and I couldn't be more impressed. They fixed the issue
+                    for free and the welcoming atmosphere and friendly staff left
+                    a lasting positive impression. I highly recommend it.
+                  </li>
+                  <li>
+                    <b>Sahar Nikoonejad: </b>I had a great experience in this
+                    branch. William is knowledgeable and willing to help.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article> -->
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4>
+              What Treatments or Eye Care Processes Are Offered in the Oscar
+              Wylee Champlain Place Optometrist Location?
+            </h4>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                The treatments or eye care processes done in the Oscar Wylee
+                Champlain Place optometrist location include a tonometry test, a
+                slit lamp exam, a digital photograph, and a refraction test.
+                Additional tests that may also be performed can include a
+                dilated fundus exam. The treatments or eye-care processes that
+                are done in the Oscar Wylee Champlain Place optometrist location
+                are listed below.
+              </p>
+              <ul>
+                <li>
+                  <b>A Tonometry Test: </b>An optometrist or optician will
+                  conduct a tonometry test which involves the use of a machine
+                  that will release small puffs of air into your eyes. This will
+                  assist with measuring pressure in the eye.
+                </li>
+                <li>
+                  <b>A Digital Photograph: </b>An optometrist or optician may
+                  take a digital photograph of your eye which can be kept on
+                  record to use in future appointments to evaluate any changes
+                  to your eye.
+                </li>
+                <li>
+                  <b>Slit Lamp Test: </b>A slit lamp test can be used to
+                  evaluate your eye health, by examining your cornea and iris
+                  which are the anterior and posterior of the eye.
+                </li>
+                <li>
+                  <b>Refraction Test: </b> During a refraction test, an
+                  optometrist will have you view an image through different
+                  lenses and ask you to confirm which helps you see the image
+                  clearer.
+                </li>
+                <!-- <li><b>Visual Field Test: </b>A visual field test can assist with assessing your
+                                      peripheral vision, which may be beneficial for identifying any signs of glaucoma.
+                                  </li> -->
+                <li>
+                  <b>Dilated Fundus Exam: </b> A dilated fundus exam can help an
+                  optometrist assess your health in more detail by getting a
+                  clear view of the retina. This test is typically carried out
+                  for patients with diabetes and those who may be at risk of
+                  developing retinal damage.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h2>How Many Optometrists Exist in Champlain Place?</h2>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                Many optometrists exist in Dieppe and in Champlain Place,
+                including independent optometrists located at Oscar Wylee. The
+                amount of optometrists available in an area will typically
+                depend on the population and the eye care needs of those in the
+                area. At Oscar Wylee Champlain Place in Dieppe, our team is
+                passionate about providing our customers with high-quality,
+                dedicated eye care services. Independent optometrists are
+                available to provide comprehensive eye exams, prescription
+                updates and new frames. If you are looking for an optometrist in
+                Dieppe at Champlain Place, our Oscar Wylee store is available to
+                provide all your eye care and eyewear needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>
+              What are the Other Closest Optometrist Locations to Champlain
+              Place in Canada?
+            </h3>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content-wrapper">
+              <p>
+                There are no other close Oscar Wylee locations in proximity to
+                Champlain Place. If you are looking for an optometrist in
+                Ontario and other Canadian provinces you can find their
+                locations on our
+                <a href="https://oscarwylee.ca/locations/"
+                  >full store locations</a
+                >
+                page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- acco end -->
+  <div class="eye-health">
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_01.png'}}"
+        alt="In store eye test"
+      />
+      <div>
+        <h3>Trendy Glasses in Champlain Place</h3>
+        <p>
+          Oscar Wylee is committed to providing fashion-forward glasses for
+          every face. We offer modern and vintage-style glasses frames at an
+          affordable cost for everyone. We offer customizable prescription
+          lenses to fit your needs, such as blue light lenses and multifocal
+          lenses. Our experts in-store are ready and able to help you pick out
+          the perfect pair of glasses.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test">
+      <img
+        src="{{media url='wysiwyg/locations/services/instore_02.png'}}"
+        alt="Health funds accepted"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Check Your Eyesight in Champlain Place</h3>
+        <p>
+          Want to get your prescription renewed before shopping for a new pair
+          of glasses? Come to our Oscar Wylee store in Champlain Place. We have
+          independent optometrists located at Oscar Wylee that offer eye exam
+          appointments. At Oscar Wylee Canada, we can directly bill most major
+          insurance providers with eClaims. You can get your prescription
+          updated, eye health checked, and shop for a new pair of eyeglasses all
+          in under 1 hour.
+        </p>
+      </div>
+    </div>
+    <div class="eye-test" style="padding: 0px">
+      <img
+        src="{{media url='wysiwyg/locations/services/ow_smiley.png'}}"
+        alt="Styling advice"
+        width="900"
+        height="900"
+      />
+      <div>
+        <h3>Health Insurance Accepted at Oscar Wylee</h3>
+        <p>
+          Here at Oscar Wylee Champlain Place, we accept direct billing to most
+          major health insurance providers. We will bill your health insurance
+          provider directly and submit your claims, saving you from paying
+          upfront for your prescription glasses, prescription sunglasses, or eye
+          exams. You would only pay the difference if applicable, depending on
+          your vision insurance coverage and the cost of your glasses. Here at
+          Oscar Wylee Champlain Place, we’re here to ensure your eyecare needs
+          are fulfilled at an affordable, competitive price.
+        </p>
+      </div>
+    </div>
+  </div>
+  {{widget type="Oscar\Booking\Block\Widget\LocationButton"
+  book_appointment_href="/booking/?location=10014" phone_number="(506) 830-7812"
+  direction_map="https://g.page/r/CWsdyxZQ8_XKEBM/review"}}
+</div>
+<p>
+  <script>
+    // alt text
+    let getStoreImage = document.querySelector(
+      ".location-about-us .image-banner>img"
+    );
+    getStoreImage.setAttribute(
+      "alt",
+      "Oscar Wylee Canada Ontario Upper Canada Mall Store"
+    );
+
+    let getEmpImage = document.querySelectorAll(".optometrist .image>img");
+    getEmpImage[0].setAttribute(
+      "alt",
+      "Oscar Wylee Canada Ontario Upper Canada Mall Store Optometrist"
+    );
+    getEmpImage[1].setAttribute(
+      "alt",
+      "Oscar Wylee Canada Ontario Upper Canada Mall Store Manager"
+    );
+  </script>
+  <script>
+    var accordionHeaders = document.querySelectorAll(".accordion-header");
+    var accordionContents = document.querySelectorAll(".accordion-content");
+    var toggleAllButton = document.getElementById("toggleAllButton");
+
+    accordionHeaders.forEach(function (header) {
+      header.addEventListener("click", function () {
+        var content = this.nextElementSibling;
+        if (!content.style.maxHeight) {
+          document
+            .querySelectorAll(".accordion-content")
+            .forEach(function (item) {
+              item.style.maxHeight = null;
+              item.previousElementSibling.classList.remove("active");
+            });
+        }
+        this.classList.toggle("active");
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+        updateToggleButton();
+      });
+    });
+
+    toggleAllButton.addEventListener("click", function () {
+      var anyClosed = false;
+      accordionContents.forEach(function (content) {
+        if (!content.style.maxHeight) {
+          anyClosed = true;
+        }
+      });
+
+      accordionContents.forEach(function (content) {
+        content.style.maxHeight = anyClosed
+          ? content.scrollHeight + "px"
+          : null;
+        content.previousElementSibling.classList.toggle("active", anyClosed);
+      });
+
+      toggleAllButton.textContent = anyClosed ? "Hide All" : "Show All";
+    });
+
+    function updateToggleButton() {
+      var anyClosed = false;
+      accordionContents.forEach(function (content) {
+        if (!content.style.maxHeight) {
+          anyClosed = true;
+        }
+      });
+      toggleAllButton.textContent = anyClosed ? "Show All" : "Hide All";
+    }
+  </script>
+</p>

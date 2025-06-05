@@ -1,0 +1,1663 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+
+  * {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #333333; */
+    line-height: 1.3em;
+    scroll-behavior: smooth;
+  }
+
+  #maincontent {
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  }
+
+  .article-banner {
+    height: 450px;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  .banner {
+    width: auto;
+    max-height: 450px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+  }
+
+  .mobile-banner {
+    display: none;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 28px;
+    }
+  }
+
+  h2 {
+    font-size: 2.6rem;
+    line-height: 1.1;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    width: 100%;
+  }
+
+  h4 {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  h5 {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .title {
+    /* border-bottom: 1px solid silver; */
+    /* padding: 2.5rem 3rem; */
+    padding: 11px 3rem;
+    /* margin: 2.5rem 3rem; */
+    margin: 0px;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 10px solid #003cac;
+    padding: 1rem;
+    font-weight: 700;
+  }
+
+  .linkTo {
+    color: #003cac;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .intro-section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .main-section section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .section-border-bottom {
+    border-bottom: 1px solid silver;
+    margin: 3rem;
+  }
+
+  .book-section {
+    display: flex;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0em;
+  }
+
+  .book-section p {
+    margin-bottom: 1.5em;
+  }
+
+  .book-section-left {
+    width: 50%;
+    margin-left: 0;
+    padding-left: 1.5em;
+  }
+
+  .book-section-left .heading {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+    padding-bottom: 1em;
+  }
+
+  .book-section-right {
+    display: flex;
+    margin: auto auto;
+    width: 30%;
+  }
+
+  .book-section-right a {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+  }
+
+  .btnOw:hover {
+    background-color: black;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    border: none !important;
+  }
+
+  .btnOw {
+    background-color: #003cac;
+    width: 100%;
+    /* padding: 0px 50%; */
+    border: none;
+    color: #fff;
+    height: 2em;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .para-content {
+    /* margin-top: 1em; */
+    margin-bottom: 2em;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .list-title {
+    font-weight: 700;
+  }
+
+  .ordered-list,
+  .unordered-list {
+    padding-left: 4rem;
+    margin-top: 2em;
+  }
+
+  .unordered-list {
+    margin-bottom: 2em;
+  }
+
+  .ordered-list li,
+  .unordered-list li {
+    margin-bottom: 0.8em;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .pro-con {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .pro-con li {
+    margin-bottom: 1em;
+  }
+
+  .pro-title,
+  .con-title,
+  .sub-list-title,
+  .sub-div-title {
+    border-left: 10px solid #b1b4b2;
+    padding: 0rem 1rem;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  .sub-list-title {
+    font-size: medium;
+    margin-left: 3em;
+  }
+
+  .pro-list,
+  .con-list {
+    margin-left: 2em;
+  }
+
+  .pro-section,
+  .con-section {
+    flex: 1 1 0;
+  }
+
+  .sub-div {
+    margin-left: 2em;
+  }
+
+  .sub-div .para-content {
+    margin-left: 0;
+  }
+
+  .grid-image {
+    width: 100%;
+    margin-bottom: 0.3em;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    column-gap: 3em;
+    width: 70%;
+    margin: 2em auto;
+  }
+
+  .grid-item {
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  .grid-item span {
+    font-style: italic;
+    font-weight: 700;
+    font-size: x-small;
+  }
+
+  .grid-text {
+    text-align: center;
+    font-size: x-small;
+    margin-bottom: 2em;
+  }
+
+  .grid-title {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    margin-bottom: 2em;
+  }
+
+  .flex-image {
+    width: 80%;
+    display: flex;
+    margin: 2em auto;
+  }
+
+  .hightlight-list {
+    font-weight: 600;
+  }
+
+  .example-images {
+    row-gap: 2em;
+  }
+
+  .product-image {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .products-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .individual-product {
+    border-right: 1px solid silver;
+    margin-bottom: 2em;
+    display: flex;
+    /* margin-left: 1em; */
+  }
+
+  .individual-product:last-child {
+    border: none;
+  }
+
+  .product-name,
+  .product-price {
+    text-align: center;
+  }
+
+  .product-button {
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin-top: 1em;
+  }
+
+  .two-pairs-price,
+  .three-pairs-price {
+    text-align: center;
+    /* margin-top: 2em; */
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 1em;
+  }
+
+  .two-pairs-price {
+    margin-bottom: 1em;
+  }
+
+  .two-pairs-price span,
+  .three-pairs-price span {
+    display: block;
+  }
+
+  .two-pairs-price {
+    background-color: #003cac;
+  }
+
+  .three-pairs-price {
+    background-color: black;
+  }
+
+  .from {
+    font-weight: 300;
+    color: white;
+    line-height: 10px;
+  }
+
+  .context {
+    padding: 0 3rem;
+  }
+
+  .location {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: max-content;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+    padding-top: 0;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid silver;
+  }
+
+  .location .heading {
+    font-weight: 700;
+    font-size: 1.8em;
+  }
+
+  .item1 {
+    border: none;
+  }
+
+  .locationText .heading {
+    font-weight: 500;
+    font-size: 1.25em;
+  }
+
+  .locationText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.5em;
+  }
+
+  .locationText p {
+    font-size: 16px;
+    margin-top: 2em;
+  }
+
+  .locationImage {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  .allButton {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .allButton a {
+    text-decoration: none;
+  }
+
+  .allButton .btnOw {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .item1 {
+    padding-top: 2em;
+  }
+
+  .products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .nine-products-section img {
+    width: 30%;
+    border-right: 1px solid silver;
+  }
+
+  .nine-products-section img:last-child {
+    border: none;
+  }
+
+  .nine-products-section-gender {
+    margin-left: 0;
+  }
+
+  .grid-container-mobile {
+    display: none;
+  }
+
+  .contents {
+    margin-bottom: 2em;
+  }
+
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+    padding: 0;
+  }
+
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  .nxt-btn {
+    right: 0;
+  }
+
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+    width: 1em;
+  }
+
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+
+  .pre-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nxt-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nine-products-section {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .product-container {
+    /* padding: 0 10vw; */
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .product-container a {
+    display: contents;
+  }
+
+  @media screen and (max-width: 440px) {
+    * {
+      line-height: 1.5em;
+    }
+
+    .start-with-para {
+      margin-top: 2em !important;
+    }
+
+    .title {
+      margin: 1em 0.5em;
+      padding: 0em;
+      /* padding-bottom: 0.5em; */
+      white-space: normal;
+      border: none;
+    }
+
+    .contents {
+      margin-bottom: 2em;
+    }
+
+    .intro-section,
+    .main-section section {
+      margin: 0 1em;
+    }
+
+    .ordered-list,
+    .unordered-list {
+      padding-left: 1.2em;
+    }
+
+    .pro-con {
+      flex-direction: column;
+    }
+
+    .flex-wrapper {
+      flex-direction: column;
+    }
+
+    .example-images {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 2em;
+    }
+
+    .grid-item {
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .product-image {
+      width: 100%;
+    }
+
+    .sub-div {
+      margin-left: 0em;
+    }
+
+    .book-section {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .book-section-left {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .book-section-left p {
+      margin-right: 1em;
+      text-align: justify;
+      margin-left: 1em;
+    }
+
+    .book-section-left .heading {
+      text-align: center;
+      margin-top: 1.6em;
+      font-size: 1.25em;
+      margin-left: auto;
+      margin-right: auto;
+      width: 230px;
+    }
+
+    .book-section-right {
+      width: 90%;
+      margin-bottom: 1em;
+    }
+
+    .desktop-banner {
+      display: none;
+    }
+
+    .mobile-banner {
+      display: block;
+      max-width: 100%;
+      padding: 0;
+    }
+
+    .products-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .individual-product {
+      border-right: none;
+      border-bottom: 1px solid silver;
+      padding-bottom: 0.5em;
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    .grid-image {
+      width: 90%;
+      display: flex;
+      margin: 0px auto;
+    }
+
+    .location {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 3em;
+    }
+
+    .locationText .heading {
+      text-size: 1.25em;
+      margin-top: 1.9em;
+      margin-bottom: -0.5em;
+    }
+
+    .allButton .btnOw {
+      width: 100%;
+    }
+
+    .item1 {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+      border: none;
+      padding-bottom: 0;
+      padding-top: 3.5em;
+    }
+
+    .locationText .heading {
+      text-align: center;
+      margin-right: auto;
+      width: 238px;
+      margin-left: auto;
+    }
+
+    .item1 .locationImage,
+    .item1 .locationText {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+    }
+
+    .products-section {
+      display: none;
+    }
+
+    .nine-products-section {
+      display: none;
+    }
+
+    .individual-product {
+      display: flex;
+      margin: auto auto;
+    }
+
+    .products-section-mobile {
+      display: block;
+    }
+
+    .nine-products-section-mobile {
+      display: flex;
+      overflow-x: scroll;
+    }
+
+    .nine-products-section-mobile::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nine-products-section-mobile img {
+      width: 80%;
+    }
+
+    .grid-container-mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid-item span {
+      display: flex;
+      margin: 0 2em;
+    }
+
+    .grid-container-desktop {
+      display: none;
+    }
+
+    .product-container-mobile {
+      display: flex;
+      overflow-x: auto;
+    }
+
+    .nine-products-section-mobile {
+      position: relative;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+      width: 3vw;
+      height: 0;
+      top: 50%;
+    }
+
+    #main-cont-wrapper {
+      margin: 0em 1em;
+    }
+
+    .para-content {
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      word-spacing: -0.05em;
+    }
+
+    .mobile-word-space {
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      word-spacing: -0.1em !important;
+      text-align: justify;
+      font-size: 16px;
+    }
+
+    h5 {
+      font-size: 15px;
+    }
+
+    .btn-helth-funds {
+      height: 60px;
+      line-height: 20px;
+    }
+  }
+
+  /* big image */
+  .big_img_wapper {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .big_img {
+    border-radius: 8px;
+    width: 80%;
+  }
+
+  /* image with content section */
+  .image_with_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .para_wapper {
+    width: 50%;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    .image_with_content {
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    .para_wapper {
+      width: 100%;
+    }
+
+    .big_img_wapper {
+      width: 100%;
+    }
+
+    .big_img {
+      width: 100%;
+    }
+
+    .article-banner {
+      height: 500px;
+    }
+
+    /* product margin fix */
+    .column.main .product-items {
+      margin-left: 0px;
+    }
+
+    /* product price fix */
+    .page-layout-1column
+      .page-wrapper
+      .block-products-list
+      .products-grid.non-swiper
+      .widget-product-grid
+      .product-item
+      .label-wrapper
+      .label-container
+      .label-discount {
+      padding: 5px 5px;
+    }
+
+    .block-products-list
+      .widget-product-grid
+      .product-item
+      .label-wrapper
+      .label-container
+      .label-discount {
+      line-height: 0;
+    }
+  }
+
+  /* new template styles start */
+  /* publish date start */
+  .intro-section.publsih-date {
+    margin: 0rem 3rem;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+
+  .publsih-date-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .publsih-date-wrapper p {
+    margin-bottom: 0px;
+    color: #003cac;
+    /* font-weight: 700; */
+  }
+
+  .publsih-date-wrapper p:first-child {
+    /* border-right: 1.5px solid silver; */
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .intro-section.publsih-date {
+      margin: 0em 1em 2em 1em;
+      padding-bottom: 10px;
+    }
+
+    .publsih-date-wrapper {
+      display: inline;
+    }
+
+    .publsih-date-wrapper p {
+      margin-bottom: 8px;
+      color: #003cac;
+      font-weight: 700;
+    }
+
+    .publsih-date-wrapper p:first-child {
+      border-right: 0px;
+      margin-right: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  /* publish date end */
+
+  /* top lang-sw start */
+  .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .lang-sw img {
+    max-width: 33px;
+  }
+
+  .language-switch {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .language-switch {
+      margin-right: 65px;
+    }
+  }
+
+  @media only screen and (max-width: 820px) {
+    .language-switch {
+      margin-right: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .lang-sw {
+      align-items: flex-start;
+    }
+
+    .language-switch {
+      margin-right: 0em;
+      margin-left: 0em;
+    }
+
+    .language-switch-dropdown-itmes-wrapper {
+      top: 40px;
+    }
+  }
+
+  /* top lang-sw end */
+
+  /* a links start */
+  .a-links {
+    margin: 3rem;
+  }
+
+  .a-links a {
+    color: #003cac;
+    font-weight: 700;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1.5px solid silver;
+  }
+
+  .a-links a:last-child {
+    border-right: 0px;
+  }
+
+  @media only screen and (max-width: 820px) {
+    .a-links {
+      margin: 0rem;
+    }
+
+    .a-links nav {
+      margin: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .a-links {
+      margin: 3rem 0em;
+    }
+
+    .a-links nav {
+      margin: 3rem 1em;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  /* a link end */
+
+  /* bottom lang-sw start */
+  .bottom .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .bottom .language-switch {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  .lang-sw.bottom {
+    align-items: flex-start;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .bottom-lag-sw p {
+    margin-bottom: 0px;
+  }
+
+  .bottom-lag-sw {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .language-switch-dropdown-itmes-wrapper {
+      top: 40px;
+    }
+
+    .bottom-lag-sw {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 2em;
+      gap: 15px;
+    }
+
+    .lang-sw.bottom {
+      margin-left: 0px;
+    }
+  }
+</style>
+<div class="article-banner">
+  <img
+    src="{{media url='wysiwyg/image-folder/glasses/acetate-frame/Acetate-Glasses-Material-Benefits-and-Caring-Tips-Oscar-Wylee-V2-1640x840.jpg'}}"
+    alt="Acetate Frame Glasses"
+    class="banner desktop-banner"
+  />
+  <img
+    src="{{media url='wysiwyg/image-folder/glasses/acetate-frame/Acetate-Glasses-Material-Benefits-and-Caring-Tips-Oscar-Wylee-V2-770x990.jpg'}}"
+    alt="Acetate Frame Glasses"
+    class="mobile-banner"
+  />
+</div>
+<h1 class="title">Acetate Glasses: Material, Benefits and Caring Tips</h1>
+<!-- publish date start -->
+<div class="intro-section publsih-date">
+  <div class="publsih-date-wrapper">
+    <p><b>Published on November 22nd, 2024</b></p>
+    <!-- <p><b>Updated on October 29th, 2024</b></p> -->
+    <!-- lang switch start -->
+  </div>
+</div>
+<!-- publish date end -->
+<div class="intro-section">
+  <p class="para-content">
+    Acetate glasses are
+    <b
+      >a popular eyewear choice in which the glasses frame is made from a
+      bioplastic material called acetate</b
+    >. Acetate is a popular material for eyewear as it has many benefits
+    including strength, a lightweight feel, longevity, and hypoallergenic
+    properties. Acetate glasses are made through a process that involves adding
+    dye to cellulose acetate, rolling this material into a sheet, cutting the
+    frame shapes from them, polishing and then constructing. Acetate glasses,
+    like glasses made of any other material, need to be taken care of to ensure
+    longevity. Ways to care for acetate glasses include using two hands when
+    handling the frames, keeping them clean, and placing them in a case when you
+    aren’t using them. Read on for more information about acetate material
+    glasses.
+  </p>
+</div>
+<!--  CTA aside-->
+<aside class="intro-section book-section">
+  <div class="book-section-left">
+    <p class="heading">Take Care of Your Eyes at Oscar Wylee</p>
+    <p style="font-size: 16px">
+      Book a Medicare bulk billed eye test with our in-store Oscar Wylee
+      optometrists and stay on top of your eye health.
+    </p>
+  </div>
+  <div class="book-section-right">
+    <a href="/booking"><button class="btnOw">Book an eye test</button></a>
+  </div>
+</aside>
+<!--  CTA aside-->
+<p></p>
+<!-- a liks start -->
+<div class="a-links">
+  <nav>
+    <a href="#Definition">Definition</a> <a href="#Made">How they are made</a>
+    <a href="#Benefits">Benefits</a> <a href="#Care">Care</a>
+  </nav>
+</div>
+<!-- a liks end -->
+<div class="main-section" id="main-cont-wrapper">
+  <div class="main-section">
+    <section class="square-section">
+      <h2 class="subtitle" id="Definition">What are Acetate Frame Glasses?</h2>
+      <p class="para-content">
+        Acetate frame glasses
+        <b
+          >refer to a pair of glasses that have been made with an acetate
+          material</b
+        >. Acetate, also known as cellulose acetate, is a bioplastic. Acetate is
+        generally made from cotton fibres or wood pulp. Acetate eyeglass frames
+        can come in a variety of colours, patterns, shapes and styles. They are
+        known for being hypoallergenic, making them ideal for those who suffer
+        from allergies. At Oscar Wylee, we sell a range of acetate glasses. Shop
+        our
+        <a href="https://www.oscarwylee.com.au/glasses/materials/acetate.html"
+          >acetate glasses collection online</a
+        >
+        or in-store.
+      </p>
+      {{widget type="Magento\CatalogWidget\Block\Product\ProductsList"
+      show_pager="0" products_count="10"
+      template="Magento_CatalogWidget::product/widget/content/grid.phtml"
+      conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`sku`,`operator`:`()`,`value`:`serge_optical,mai_optical,duckworth_optical,jinky_optical,parker_optical,mesa_optical`^]^]"}}
+      <div class="sub-div">
+        <h3 class="sub-div-title">
+          What Makes Acetate a Popular Material for Eyewear Frames?
+        </h3>
+        <p class="para-content">
+          Acetate is
+          <b
+            >a popular material for eyewear as it is generally a strong,
+            flexible and hypoallergenic material</b
+          >. Acetate can be a stronger material for a glasses frame when
+          compared to thin metal frames. Acetate is resistant to warping,
+          ensuring high quality and longevity. Its lightweightedness and
+          hypoallergenic nature ultimately makes it a pair of glasses suitable
+          for many faces.
+        </p>
+        <div class="sub-div">
+          <h4 class="sub-div-title">Are there Acetate Vintage Sunglasses?</h4>
+          <p class="para-content">
+            Yes,
+            <b>there are acetate vintage sunglasses and glasses in general</b>.
+            According to the Association of British Dispensing Opticians,
+            cellulose acetate was first used in the making of glasses frames
+            around the 1950s. This means there are many
+            <a href="https://www.oscarwylee.com.au/glasses/vintage"
+              >vintage glasses</a
+            >
+            and sunglasses that are made from acetate, from 60’s to 80’s
+            inspired styles.
+          </p>
+        </div>
+        <h3 class="sub-div-title">
+          Why Choose Acetate Glasses Over Metal Frames?
+        </h3>
+        <p class="para-content">
+          There are
+          <b
+            >advantages and disadvantages to acetate and metal frames, meaning
+            the reason for choosing acetate as your glasses material is a purely
+            personal choice</b
+          >. Acetate glasses have many benefits including being hypoallergenic
+          and strong. Acetate glasses can also have brighter, more lasting
+          colours as the dye is added directly to the material. Metal frames
+          also have advantages including being more lightweight than acetate
+          frames and can also be durable. However, they may feel less
+          comfortable than acetate glasses. They are more prone to bending or
+          warping over time, potentially leading to irritation and it can be
+          insensitive to certain skin types. Acetate glasses are ultimately
+          better for a more comfortable fit that can accommodate more skin
+          types.
+        </p>
+      </div>
+      <div class="products-section" style="width: 60%; margin: 40px auto">
+        <div class="individual-product" style="margin-bottom: 0px">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/acetate-frame/How-does-Acetate-Compare-to-Metal-Frames-in-Eyewear-900x600.jpg'}}"
+            alt="Oscar Wylee metal frames next to Oscar Wylee acetate frames."
+            class="product-image"
+          />
+        </div>
+      </div>
+      <div class="products-section-mobile" style="margin-bottom: 40px">
+        <div class="individual-product">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/acetate-frame/How-does-Acetate-Compare-to-Metal-Frames-in-Eyewear-900x600.jpg'}}"
+            alt="Oscar Wylee metal frames next to Oscar Wylee acetate frames."
+            class="product-image"
+          />
+        </div>
+      </div>
+      <div class="sub-div">
+        <div class="sub-div">
+          <h4 class="sub-div-title">Are Acetate Frames Hypoallergenic?</h4>
+          <p class="para-content">
+            Yes, acetate frames
+            <b>are generally considered to be hypoallergenic</b>. Hypoallergenic
+            means that a material or substance is less likely to cause an
+            allergic reaction than other types of materials. For those who wear
+            glasses and have sensitive skin or allergies, acetate frames may be
+            a good choice to prevent skin irritation.
+          </p>
+        </div>
+        <h3 class="sub-div-title" id="Made">How are Acetate Glasses Made?</h3>
+        <p class="para-content">
+          The process of making an acetate glasses frame can differ depending on
+          the manufacturer, but will generally involve
+          <b
+            >adding dye to cellulose acetate, rolling this material into a
+            sheet, cutting the frame shapes from them, polishing and
+            construction</b
+          >. The way that acetate glasses are made at Oscar Wylee is listed
+          below.
+        </p>
+        <ol class="ordered-list">
+          <li>
+            <span class="list-title">Add dye to cellulose acetate:</span> Adding
+            dye to cellulose acetate is the first step in making our glasses at
+            Oscar Wylee. This cellulose acetate is then rolled into a sheet.
+          </li>
+          <li>
+            <span class="list-title">Cut frame shape:</span> Cutting the frame
+            shape is the next step in the creation of acetate glasses. The shape
+            of the glasses is cut from the sheet of acetate by a machine called
+            a CNC milling machine. This machine sculpts the cutting of the lens
+            holes, the grooves for the hinges, and the nose bridge to make the
+            front of the frame. To create the patterned or multi-coloured
+            frames, small acetate pieces are cut from the individually coloured
+            sheets. This means each patterned frame will be unique.
+          </li>
+          <li>
+            <span class="list-title">Polish frames:</span> Polishing is the next
+            step in making acetate frames. First, an aggressive buffing wheel is
+            used to smooth out the connection that was filled and remove any
+            filling marks or gouges. Then, a gentler wheel is then used to
+            smooth out the acetate. The frames are polished for around 48 to 76
+            hours in the tumbling barrels. These tumblers are filled with small
+            chips of beech and birch wood. This generates a slight abrasion
+            eliminating imperfections, thus making the surface of the frames
+            smooth.
+          </li>
+          <li>
+            <span class="list-title">Construction:</span> Construction is the
+            final step in making acetate frames. Rivets and hinges are added,
+            the temples are individually hand screwed to the front of the frame,
+            and core wires are inserted into each temple so they don’t lose
+            their shape. Once the frame is ready, the lenses are cut one by one
+            to fit each frame perfectly.
+          </li>
+        </ol>
+      </div>
+      <div class="products-section" style="width: 60%; margin: 40px auto">
+        <div class="individual-product" style="margin-bottom: 0px">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/acetate-frame/How-are-Acetate-Glasses-Made-900x600.jpg'}}"
+            alt="Acetate glasses frame being cut by a machine."
+            class="product-image"
+          />
+        </div>
+      </div>
+      <div class="products-section-mobile" style="margin-bottom: 40px">
+        <div class="individual-product">
+          <img
+            src="{{media url='wysiwyg/image-folder/glasses/acetate-frame/How-are-Acetate-Glasses-Made-900x600.jpg'}}"
+            alt="Acetate glasses frame being cut by a machine."
+            class="product-image"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="square-section">
+      <h2 class="subtitle" id="Benefits">
+        What are the Benefits of Acetate Frames?
+      </h2>
+      <p class="para-content">
+        The benefits of acetate frames include
+        <b
+          >strength, a lightweight feel, longevity, and that they can be
+          hypoallergenic</b
+        >. The benefits of acetate frames are listed below.
+      </p>
+      <ul class="unordered-list">
+        <li>
+          <span class="list-title">Strength:</span>Strength is a benefit of
+          acetate frames. Acetate is a strong and durable material and can
+          withstand a certain amount of wear and tear. However, glasses are not
+          invincible and it is also important to be careful when handling them.
+        </li>
+        <li>
+          <span class="list-title">Lightweight feel:</span> The lightweight feel
+          is a benefit of acetate frames. Whilst this material is relatively
+          sturdy and strong, it still has a lightweight feel, and won't sit
+          heavy on the face.
+        </li>
+        <li>
+          <span class="list-title">Longevity:</span> Longevity is another
+          benefit of acetate frames. Longevity means that acetate glasses will
+          generally maintain their overall look, functionality and shape, longer
+          than frames made of other materials such as thin metal. However,
+          looking after your glasses is also a major part of prolonging their
+          longevity.
+        </li>
+        <li>
+          <span class="list-title">Hypoallergenic:</span> Acetate’s
+          hypoallergenic properties are another benefit of choosing this
+          material for your frame. Hypoallergenic means that a material is less
+          likely to cause skin irritation than other materials. Acetate may be a
+          good choice of frame material for people who have sensitive skin.
+        </li>
+      </ul>
+      <div class="sub-div">
+        <h3 class="sub-div-title">
+          Can Acetate Frames Be Combined with Gold Metals?
+        </h3>
+        <p class="para-content">
+          Acecate frames <b>can be combined with small gold metal fixtures</b>.
+          These are often found in the nose bridge or temples for added
+          foundational support and flair. The gold metal accents provide added
+          durability in the areas that need it, the bridge and frame temples
+          needing strong support. Aesthetically,
+          <a href="https://www.oscarwylee.com.au/glasses/gold-frame"
+            >gold frame glasses</a
+          >
+          are glamorous choices that complement many other colour schemes
+          seamlessly. Having gold accents on your acetate frame will add a pop
+          of luxe edge.
+        </p>
+        <h3 class="sub-div-title" id="Care">How to Care for Acetate Frames?</h3>
+        <p class="para-content">
+          The way to care for acetate frames includes
+          <b
+            >using two hands when handling the frames, keeping them clean, and
+            placing them in a case when you aren’t using them</b
+          >. The ways to care for acetate frames are listed below.
+        </p>
+        <ul class="unordered-list">
+          <li>
+            <span class="list-title">Use two hands when handling frames:</span
+            >Using two hands when handling frames is an important way to care
+            for them. Taking off your glasses or holding them by one arm can
+            lead to them becoming misaligned or warped
+          </li>
+          <li>
+            <span class="list-title">Keep clean:</span> Keeping your acetate
+            frames clean is an important part of caring for them. To keep your
+            acetate frames clean, you can pat them down with water and a mild
+            soap.
+            <b
+              >It is important to dry the frames thoroughly immediately after
+              cleaning</b
+            >. To keep the lens clean, use a lens cleaner and microfibre
+            clothes.
+          </li>
+          <li>
+            <span class="list-title">Place in case when not using:</span>
+            Placing your acetate frames in their case when you are not using
+            them is a good way to take care of them. If glasses are not stored
+            properly when not in use, it can increase the chances of them being
+            broken. They may be dropped if hanging from clothes or sat on.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--  CTA aside-->
+    <aside class="intro-section book-section">
+      <div class="book-section-left">
+        <p class="heading">Find an Oscar Wylee Store Near You</p>
+        <p style="font-size: 16px">
+          Come and visit your local Oscar Wylee store where our friendly team
+          will help you shop our range of stylish frames.
+        </p>
+      </div>
+      <div class="book-section-right">
+        <a href="/locations/"><button class="btnOw">Find a store</button></a>
+      </div>
+    </aside>
+    <!--  CTA aside-->
+    <section class="square-section">
+      <div class="sub-div">
+        <div class="sub-div">
+          <h4 class="sub-div-title">Are Acetate Frames Durable?</h4>
+          <p class="para-content">
+            Yes, <b>acetate frames can be durable</b>. Acetate is a strong and
+            durable material, which means it can withstand a certain amount of
+            wear and tear. Compared to traditional plastic frames, they offer
+            superior durability and flexibility. This makes them less likely to
+            be damaged, and capable of providing a more comfortable fit.
+            However, acetate is not unbreakable and it is important that people
+            care for their glasses to ensure their longevity. Care instructions
+            can be found alongside your acetate glasses purchase. Ensure you
+            follow these to maintain their high quality.
+          </p>
+          <h4 class="sub-div-title">
+            Is Acetate a Lightweight Option for Eyeglasses Frames?
+          </h4>
+          <p class="para-content">
+            Yes, <b>acetate is a lightweight option for eyeglasses frames</b>.
+            This makes it a comfortable eye glass frame perfect for prolonged
+            wear. Unlike slightly heavier metals, acetate doesn’t put excess
+            pressure on the bridge of the nose or temples. Acetate eyeglass
+            frames are perfect for those who prefer a lighter frame on their
+            faces.
+          </p>
+          <h4 class="sub-div-title">Are Acetate Frames Eco-Friendly?</h4>
+          <p class="para-content">
+            Acetate frames <b>are eco-friendly in many aspects</b>. Acetate is
+            made from natural materials such as cotton and wood pulp which are
+            biodegradable, unlike traditional plastic eyeglass frames. However
+            their ability to biodegrade is highly dependent on the conditions in
+            which the material is discarded, the added chemical structure in the
+            material, and the finishes that have been applied to it. Therefore,
+            it cannot be considered a completely eco-friendly material.
+          </p>
+          <h4 class="sub-div-title">
+            Can you Get Acetate Prescription Glasses?
+          </h4>
+          <p class="para-content">
+            Yes, <b>there are acetate prescription glasses available</b>. Anyone
+            can enjoy the benefits of wearing acetate eyewear customised with
+            their
+            <a href="https://www.oscarwylee.com.au/glasses/prescription"
+              >prescription lens</a
+            >. With a variety of colours, shapes and sizes to choose from,
+            acetate glasses are a reliable pair.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- add bottom CTA section here -->
+  <aside class="context">
+    <!-- Location and booking  -->
+    <div class="location" style="border-top: none">
+      <div class="locationText">
+        <p class="heading">Oscar Wylee Accepts Major Health Funds In-store</p>
+        <p class="contents">
+          Visit Oscar Wylee in-store for eye care services and your health fund
+          may help cover some of the cost.
+        </p>
+        <div class="allButton">
+          <a href="/health-funds.html">
+            <button class="btnOw">Explore health funds</button>
+          </a>
+        </div>
+      </div>
+      <img
+        src="{{media url='wysiwyg/image-folder/glasses/cta/Health-Fund-CTA.jpg'}}"
+        alt="Health Fund at Oscar Wylee"
+        class="locationImage"
+      />
+    </div>
+    <div class="location item1">
+      <img
+        src="{{media url='wysiwyg/image-folder/glasses/cta/Eye-Test-Oscar-Wylee-1.jpg'}}"
+        alt="book eye test image"
+        class="locationImage"
+      />
+      <div class="locationText">
+        <p class="heading">Are You Due for an Eye Test?</p>
+        <p class="contents">
+          Book online and our Oscar Wylee optometrists will perform a Medicare
+          bulk billed eye test to keep your eye health on track.
+        </p>
+        <div class="allButton">
+          <a href="/booking">
+            <button class="btnOw">Book an eye test</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
+<p>
+  <script>
+    const productContainers = [
+      ...document.querySelectorAll(".product-container"),
+    ];
+    const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
+    const preBtn = [...document.querySelectorAll(".pre-btn")];
+
+    productContainers.forEach((item, i) => {
+      let containerDimensions = item.getBoundingClientRect();
+      let containerWidth = containerDimensions.width;
+
+      nxtBtn[i].addEventListener("click", () => {
+        item.scrollLeft += containerWidth;
+      });
+
+      preBtn[i].addEventListener("click", () => {
+        item.scrollLeft -= containerWidth;
+      });
+    });
+
+    // top lang-sw
+    document.addEventListener("click", function (event) {
+      var secondBox = document.querySelector(
+        ".language-switch-dropdown-itmes-wrapper"
+      );
+      var firstBox = document.querySelector(".language-switch-current");
+
+      // Check if the clicked element is outside the second box and the first box
+      if (
+        !secondBox.contains(event.target) &&
+        !firstBox.contains(event.target)
+      ) {
+        secondBox.style.display = "none";
+      }
+    });
+
+    function toggleVisibility() {
+      var secondBox = document.querySelector(
+        ".language-switch-dropdown-itmes-wrapper"
+      );
+      secondBox.style.display =
+        secondBox.style.display === "none" ? "flex" : "none";
+    }
+
+    // bottom lang-sw
+    document.addEventListener("click", function (event) {
+      var secondBox = document.querySelector(
+        "#language-switch-dropdown-itmes-wrapper"
+      );
+      var firstBox = document.querySelector("#language-switch-current");
+
+      // Check if the clicked element is outside the second box and the first box
+      if (
+        !secondBox.contains(event.target) &&
+        !firstBox.contains(event.target)
+      ) {
+        secondBox.style.display = "none";
+      }
+    });
+
+    function toggleVisibilityBtnTwo() {
+      var secondBox = document.querySelector(
+        "#language-switch-dropdown-itmes-wrapper"
+      );
+      secondBox.style.display =
+        secondBox.style.display === "none" ? "flex" : "none";
+    }
+  </script>
+</p>

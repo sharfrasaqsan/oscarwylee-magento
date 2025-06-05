@@ -1,0 +1,1631 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+
+  * {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #333333; */
+    line-height: 1.3em;
+    scroll-behavior: smooth;
+  }
+
+  #maincontent {
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  }
+
+  .article-banner {
+    height: 450px;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  .banner {
+    width: auto;
+    max-height: 450px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+  }
+
+  .mobile-banner {
+    display: none;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 28px;
+    }
+  }
+
+  h2 {
+    font-size: 2.6rem;
+    line-height: 1.1;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    width: 100%;
+  }
+
+  h4 {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  h5 {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .title {
+    /* border-bottom: 1px solid silver; */
+    /* padding: 2.5rem 3rem; */
+    padding: 11px 3rem;
+    /* margin: 2.5rem 3rem; */
+    margin: 0px;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 10px solid #003cac;
+    padding: 1rem;
+    font-weight: 700;
+  }
+
+  .linkTo {
+    color: #003cac;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .intro-section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .main-section section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .section-border-bottom {
+    border-bottom: 1px solid silver;
+    margin: 3rem;
+  }
+
+  .book-section {
+    display: flex;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0em;
+  }
+
+  .book-section p {
+    margin-bottom: 1.5em;
+  }
+
+  .book-section-left {
+    width: 50%;
+    margin-left: 0;
+    padding-left: 1.5em;
+  }
+
+  .book-section-left .heading {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+    padding-bottom: 1em;
+  }
+
+  .book-section-right {
+    display: flex;
+    margin: auto auto;
+    width: 30%;
+  }
+
+  .book-section-right a {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+  }
+
+  .btnOw:hover {
+    background-color: black;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    border: none !important;
+  }
+
+  .btnOw {
+    background-color: #003cac;
+    width: 100%;
+    /* padding: 0px 50%; */
+    border: none;
+    color: #fff;
+    height: 2em;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .para-content {
+    /* margin-top: 1em; */
+    margin-bottom: 2em;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .list-title {
+    font-weight: 700;
+  }
+
+  .ordered-list,
+  .unordered-list {
+    padding-left: 4rem;
+    margin-top: 2em;
+  }
+
+  .unordered-list {
+    margin-bottom: 2em;
+  }
+
+  .ordered-list li,
+  .unordered-list li {
+    margin-bottom: 0.8em;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .pro-con {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .pro-con li {
+    margin-bottom: 1em;
+  }
+
+  .pro-title,
+  .con-title,
+  .sub-list-title,
+  .sub-div-title {
+    border-left: 10px solid #b1b4b2;
+    padding: 0rem 1rem;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  .sub-list-title {
+    font-size: medium;
+    margin-left: 3em;
+  }
+
+  .pro-list,
+  .con-list {
+    margin-left: 2em;
+  }
+
+  .pro-section,
+  .con-section {
+    flex: 1 1 0;
+  }
+
+  .sub-div {
+    margin-left: 2em;
+  }
+
+  .sub-div .para-content {
+    margin-left: 0;
+  }
+
+  .grid-image {
+    width: 100%;
+    margin-bottom: 0.3em;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    column-gap: 3em;
+    width: 70%;
+    margin: 2em auto;
+  }
+
+  .grid-item {
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  .grid-item span {
+    font-style: italic;
+    font-weight: 700;
+    font-size: x-small;
+  }
+
+  .grid-text {
+    text-align: center;
+    font-size: x-small;
+    margin-bottom: 2em;
+  }
+
+  .grid-title {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    margin-bottom: 2em;
+  }
+
+  .flex-image {
+    width: 80%;
+    display: flex;
+    margin: 2em auto;
+  }
+
+  .hightlight-list {
+    font-weight: 600;
+  }
+
+  .example-images {
+    row-gap: 2em;
+  }
+
+  .product-image {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .products-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .individual-product {
+    border-right: 1px solid silver;
+    margin-bottom: 2em;
+    display: flex;
+    /* margin-left: 1em; */
+  }
+
+  .individual-product:last-child {
+    border: none;
+  }
+
+  .product-name,
+  .product-price {
+    text-align: center;
+  }
+
+  .product-button {
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin-top: 1em;
+  }
+
+  .two-pairs-price,
+  .three-pairs-price {
+    text-align: center;
+    /* margin-top: 2em; */
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 1em;
+  }
+
+  .two-pairs-price {
+    margin-bottom: 1em;
+  }
+
+  .two-pairs-price span,
+  .three-pairs-price span {
+    display: block;
+  }
+
+  .two-pairs-price {
+    background-color: #003cac;
+  }
+
+  .three-pairs-price {
+    background-color: black;
+  }
+
+  .from {
+    font-weight: 300;
+    color: white;
+    line-height: 10px;
+  }
+
+  .context {
+    padding: 0 3rem;
+  }
+
+  .location {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: max-content;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+    padding-top: 0;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid silver;
+  }
+
+  .location .heading {
+    font-weight: 700;
+    font-size: 1.8em;
+  }
+
+  .item1 {
+    border: none;
+  }
+
+  .locationText .heading {
+    font-weight: 500;
+    font-size: 1.25em;
+  }
+
+  .locationText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.5em;
+  }
+
+  .locationText p {
+    font-size: 16px;
+    margin-top: 2em;
+  }
+
+  .locationImage {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  .allButton {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .allButton a {
+    text-decoration: none;
+  }
+
+  .allButton .btnOw {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .item1 {
+    padding-top: 2em;
+  }
+
+  .products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .nine-products-section img {
+    width: 30%;
+    border-right: 1px solid silver;
+  }
+
+  .nine-products-section img:last-child {
+    border: none;
+  }
+
+  .nine-products-section-gender {
+    margin-left: 0;
+  }
+
+  .grid-container-mobile {
+    display: none;
+  }
+
+  .contents {
+    margin-bottom: 2em;
+  }
+
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+    padding: 0;
+  }
+
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  .nxt-btn {
+    right: 0;
+  }
+
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+    width: 1em;
+  }
+
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+
+  .pre-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nxt-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nine-products-section {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .product-container {
+    /* padding: 0 10vw; */
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .product-container a {
+    display: contents;
+  }
+
+  @media screen and (max-width: 440px) {
+    * {
+      line-height: 1.5em;
+    }
+
+    .start-with-para {
+      margin-top: 2em !important;
+    }
+
+    .title {
+      margin: 1em 0.5em;
+      padding: 0em;
+      /* padding-bottom: 0.5em; */
+      white-space: normal;
+      border: none;
+    }
+
+    .contents {
+      margin-bottom: 2em;
+    }
+
+    .intro-section,
+    .main-section section {
+      margin: 0 1em;
+    }
+
+    .ordered-list,
+    .unordered-list {
+      padding-left: 1.2em;
+    }
+
+    .pro-con {
+      flex-direction: column;
+    }
+
+    .flex-wrapper {
+      flex-direction: column;
+    }
+
+    .example-images {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 2em;
+    }
+
+    .grid-item {
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .product-image {
+      width: 100%;
+    }
+
+    .sub-div {
+      margin-left: 0em;
+    }
+
+    .book-section {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .book-section-left {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .book-section-left p {
+      margin-right: 1em;
+      text-align: justify;
+      margin-left: 1em;
+    }
+
+    .book-section-left .heading {
+      text-align: center;
+      margin-top: 1.6em;
+      font-size: 1.25em;
+      margin-left: auto;
+      margin-right: auto;
+      width: 278px;
+    }
+
+    .book-section-right {
+      width: 90%;
+      margin-bottom: 1em;
+    }
+
+    .desktop-banner {
+      display: none;
+    }
+
+    .mobile-banner {
+      display: block;
+      max-width: 100%;
+      padding: 0;
+    }
+
+    .products-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .individual-product {
+      border-right: none;
+      border-bottom: 1px solid silver;
+      padding-bottom: 0.5em;
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    .grid-image {
+      width: 90%;
+      display: flex;
+      margin: 0px auto;
+    }
+
+    .location {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5em;
+    }
+
+    .locationText .heading {
+      /* text-size: 1.25em; */
+      margin-top: 1.9em;
+      margin-bottom: -0.5em;
+    }
+
+    .allButton .btnOw {
+      width: 100%;
+    }
+
+    .item1 {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+      border: none;
+      padding-bottom: 0;
+      padding-top: 3.5em;
+    }
+
+    .locationText .heading {
+      text-align: center;
+    }
+
+    .item1 .locationImage,
+    .item1 .locationText {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+    }
+
+    .products-section {
+      display: none;
+    }
+
+    .nine-products-section {
+      display: none;
+    }
+
+    .individual-product {
+      display: flex;
+      margin: auto auto;
+    }
+
+    .products-section-mobile {
+      display: block;
+    }
+
+    .nine-products-section-mobile {
+      display: flex;
+      overflow-x: scroll;
+    }
+
+    .nine-products-section-mobile::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nine-products-section-mobile img {
+      width: 80%;
+    }
+
+    .grid-container-mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid-item span {
+      display: flex;
+      margin: 0 2em;
+    }
+
+    .grid-container-desktop {
+      display: none;
+    }
+
+    .product-container-mobile {
+      display: flex;
+      overflow-x: auto;
+    }
+
+    .nine-products-section-mobile {
+      position: relative;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+      width: 3vw;
+      height: 0;
+      top: 50%;
+    }
+
+    #main-cont-wrapper {
+      margin: 0em 1em;
+    }
+
+    .para-content {
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      word-spacing: -0.05em;
+    }
+
+    .mobile-word-space {
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      word-spacing: -0.1em !important;
+      text-align: justify;
+      font-size: 16px;
+    }
+
+    h5 {
+      font-size: 15px;
+    }
+
+    .btn-helth-funds {
+      height: 60px;
+      line-height: 20px;
+    }
+  }
+
+  /* big image */
+  .big_img_wapper {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .big_img {
+    border-radius: 8px;
+    width: 80%;
+  }
+
+  /* image with content section */
+  .image_with_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .para_wapper {
+    width: 50%;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    .image_with_content {
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    .para_wapper {
+      width: 100%;
+    }
+
+    .big_img_wapper {
+      width: 100%;
+    }
+
+    .big_img {
+      width: 100%;
+    }
+
+    .article-banner {
+      height: 500px;
+    }
+  }
+
+  /* new template styles start */
+  /* publish date start */
+  .intro-section.publsih-date {
+    margin: 0rem 3rem;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+
+  .publsih-date-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .publsih-date-wrapper p {
+    margin-bottom: 0px;
+    color: #003cac;
+    font-weight: 700;
+  }
+
+  .publsih-date-wrapper p:first-child {
+    border-right: 1.5px solid silver;
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .intro-section.publsih-date {
+      margin: 0em 1em 2em 1em;
+      padding-bottom: 10px;
+    }
+
+    .publsih-date-wrapper {
+      display: inline;
+    }
+
+    .publsih-date-wrapper p {
+      margin-bottom: 8px;
+      color: #003cac;
+      font-weight: 700;
+    }
+
+    .publsih-date-wrapper p:first-child {
+      border-right: 0px;
+      margin-right: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  /* publish date end */
+
+  /* top lang-sw start */
+  .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .lang-sw img {
+    max-width: 33px;
+  }
+
+  .language-switch {
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .language-switch {
+      margin-right: 65px;
+    }
+  }
+
+  @media only screen and (max-width: 820px) {
+    .language-switch {
+      margin-right: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .lang-sw {
+      align-items: flex-start;
+    }
+
+    .language-switch {
+      margin-right: 0em;
+      margin-left: 0em;
+    }
+
+    .language-switch-dropdown-itmes-wrapper {
+      top: 40px;
+    }
+  }
+
+  /* top lang-sw end */
+
+  /* a links start */
+  .a-links {
+    margin: 3rem;
+  }
+
+  .a-links a {
+    color: #003cac;
+    font-weight: 700;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1.5px solid silver;
+  }
+
+  .a-links a:last-child {
+    border-right: 0px;
+  }
+
+  @media only screen and (max-width: 820px) {
+    .a-links {
+      margin: 0rem;
+    }
+
+    .a-links nav {
+      margin: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .a-links {
+      margin: 3rem 0em;
+    }
+
+    .a-links nav {
+      margin: 3rem 1em;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  /* a link end */
+
+  /* bottom lang-sw start */
+  .bottom .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .bottom .language-switch {
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  .lang-sw.bottom {
+    align-items: flex-start;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .bottom-lag-sw p {
+    margin-bottom: 0px;
+  }
+
+  .bottom-lag-sw {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .language-switch-dropdown-itmes-wrapper {
+      top: 40px;
+    }
+
+    .bottom-lag-sw {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 2em;
+      gap: 15px;
+    }
+
+    .lang-sw.bottom {
+      margin-left: 0px;
+    }
+  }
+
+  .cta-top-border {
+    border-top: 1px solid silver;
+    padding-top: 3rem;
+  }
+
+  @media (max-width: 480px) {
+    .cta-top-border {
+      padding-top: 0rem;
+    }
+  }
+</style>
+
+<div class="article-banner">
+  <img src="/" alt="Verres à prisme" class="banner desktop-banner" />
+  <img src="/" alt="Verres à prisme" class="mobile-banner" />
+</div>
+
+<h1 class="title">Les lunettes anti-lumière bleue sont-elles efficaces ?</h1>
+
+<!-- publish date start -->
+<div class="intro-section publsih-date">
+  <div class="publsih-date-wrapper">
+    <p>Publié le 23 Mai 2025</p>
+
+    <!-- lang switch start -->
+    <div class="lang-sw">
+      <div class="language-switch">
+        <div class="language-switch-current" onclick="toggleVisibility()">
+          <!-- flag -->
+          <img
+            src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+            alt="Les lunettes anti-lumière bleue sont-elles efficaces ? et fonctions en français canadien"
+          />
+          Français canadien
+
+          <!-- dropdown icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="5"
+            viewBox="0 0 8 5"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+
+        <div
+          class="language-switch-dropdown-itmes-wrapper"
+          id="secondBox"
+          style="display: none"
+        >
+          <div class="language-switch-dropdown-itmes">
+            <img
+              src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+              alt="Les lunettes anti-lumière bleue sont-elles efficaces ? et fonctions en anglais australien"
+            />
+            <a href="https://www.oscarwylee.com.au/glasses/blue-light/works">
+              Australie</a
+            >
+          </div>
+
+          <div class="language-switch-dropdown-itmes">
+            <img
+              src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+              alt="Les lunettes anti-lumière bleue sont-elles efficaces ? et fonctions en anglais canadien"
+            />
+            <a href="https://oscarwylee.ca/glasses/blue-light/works">Canada</a>
+          </div>
+
+          <div class="language-switch-dropdown-itmes">
+            <img
+              src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+              alt="Les lunettes anti-lumière bleue sont-elles efficaces ? et fonctions en français canadien"
+            />
+            <a href="https://oscarwylee.ca/fr/glasses/blue-light/works">
+              Français canadien</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- publish date end -->
+
+<div class="intro-section">
+  <p class="para-content">Content</p>
+</div>
+
+<!--  CTA aside-->
+<aside class="intro-section book-section">
+  <div class="book-section-left">
+    <p class="heading">Surveillez la santé de vos yeux.</p>
+    <p style="font-size: 16px">
+      Réservez un examen de la vue avec nos optométristes indépendants chez
+      Oscar Wylee et recevez des services de soins oculaires de grande qualité.
+    </p>
+  </div>
+  <div class="book-section-right">
+    <a href="/fr/booking"
+      ><button class="btnOw">Réserver un examen de la vue</button></a
+    >
+  </div>
+</aside>
+<!--  CTA aside-->
+
+<!-- a liks start -->
+<div class="a-links">
+  <nav>
+    <a href="#Avantages">Avantages</a>
+    <a href="#Efficacité">Efficacité</a>
+    <a href="#Critères">Critères</a>
+    <a href="#nocive">La lumière bleue est-elle nocive ?</a>
+  </nav>
+</div>
+<!-- a liks end -->
+
+<div class="main-section" id="main-cont-wrapper">
+  <div class="main-section">
+    <section class="square-section">
+      <h2 class="subtitle" id="Avantages">
+        Quels sont les avantages des lunettes anti-lumière bleue ?
+      </h2>
+      <p class="para-content">Content</p>
+
+      <ul class="ordered-list">
+        <li>
+          <span class="list-title">Protéger les yeux : </span>
+          Les lunettes anti-lumière bleue peuvent potentiellement réduire la
+          quantité de lumière bleue qui pénètre dans les yeux, les protégeant
+          ainsi.
+        </li>
+      </ul>
+
+      <div class="products-section" style="width: 60%; margin: 40px auto">
+        <div class="individual-product" style="margin-bottom: 0px">
+          <img src="/" alt="" class="product-image" />
+        </div>
+      </div>
+
+      <div class="products-section-mobile" style="margin-bottom: 40px">
+        <div class="individual-product">
+          <img src="/" alt="" class="product-image" />
+        </div>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">
+          Dois-je acheter des lunettes anti-lumière bleue ?
+        </h3>
+        <p class="para-content">Content</p>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title" id="Efficacité">
+          Les lunettes anti-lumière bleue sont-elles efficaces ?
+        </h3>
+        <p class="para-content">Content</p>
+      </div>
+    </section>
+
+    <section class="square-section">
+      <h2 class="subtitle">
+        Quels facteurs affectent l’efficacité des lunettes anti-lumière bleue ?
+      </h2>
+      <p class="para-content">Content</p>
+
+      <div class="products-section" style="width: 60%; margin: 40px auto">
+        <div class="individual-product" style="margin-bottom: 0px">
+          <img src="/" alt="" class="product-image" />
+        </div>
+      </div>
+
+      <div class="products-section-mobile" style="margin-bottom: 40px">
+        <div class="individual-product">
+          <img src="/" alt="" class="product-image" />
+        </div>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title" id="Critères">
+          Quels sont les critères les plus importants des lunettes anti-lumière
+          bleue?
+        </h3>
+        <p class="para-content">Content</p>
+
+        <ol class="ordered-list">
+          <li>
+            <span class="list-title">L’ajustement des montures : </span>
+            Lors du choix des lunettes anti-lumière bleue, le critère le plus
+            important est une monture qui est correctement ajustée à votre
+            visage. Des montures qui ne sont pas correctement ajustées tomberont
+            du visage ou distordront votre vision.
+          </li>
+          <li>
+            <span class="list-title"
+              >Les montures qui correspondent à votre style personnel :
+            </span>
+            Trouver des montures qui reflètent votre personnalité et votre style
+            personnel est le second critère le plus important lors de l’achat de
+            lunettes anti-lumière bleue.
+          </li>
+          <li>
+            <span class="list-title"
+              >L’ordonnance correcte de vos verres :
+            </span>
+            Enfin, lors de l’achat de lunettes anti-lumière bleue, il est
+            important de s’assurer que votre ordonnance est correcte. Si la
+            puissance de votre ordonnance est trop faible ou trop élevée, vous
+            souffrirez de vision distordue, de fatigue oculaire ou de maux de
+            tête. Si vous sentez que votre ordonnance n’est pas correcte,
+            veillez à la vérifier auprès de votre optométriste. Notre filtre
+            anti-lumière bleue Oscar Wylee peut être appliqué à des verres sans
+            ordonnance.
+          </li>
+        </ol>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">
+          Quel est le prix des lunettes anti-lumière bleue ?
+        </h3>
+        <p class="para-content">Content</p>
+      </div>
+    </section>
+
+    <!--  CTA aside-->
+    <aside class="intro-section book-section">
+      <div class="book-section-left">
+        <p class="heading">Trouvez votre magasin Oscar Wylee local</p>
+        <p style="font-size: 16px">
+          Venez consulter notre équipe pour tous vos besoins en matière de soins
+          oculaires. Elle sera ravie de vous aider à découvrir le montant que
+          votre assurance santé privée peut couvrir.
+        </p>
+      </div>
+      <div class="book-section-right">
+        <a href="/fr/locations/"
+          ><button class="btnOw">Trouver un magasin</button></a
+        >
+      </div>
+    </aside>
+    <!--  CTA aside-->
+
+    <section class="square-section">
+      <h2 class="subtitle">Qui a inventé les lunettes anti-lumière bleue ?</h2>
+      <p class="para-content">Content</p>
+    </section>
+
+    <section class="square-section">
+      <h2 class="subtitle">
+        Comment les lunettes anti-lumière bleue protègent-elles vos yeux ?
+      </h2>
+      <p class="para-content">Content</p>
+
+      <div class="sub-div">
+        <h3 class="con-title">
+          Les lunettes anti-lumière bleue valent-elles la peine ?
+        </h3>
+        <p class="para-content">Content</p>
+      </div>
+    </section>
+
+    <section class="square-section">
+      <h2 class="subtitle" id="nocive">
+        Pourquoi la lumière bleue est-elle nocive pour les yeux ?
+      </h2>
+      <p class="para-content">Content</p>
+
+      <div class="products-section" style="width: 60%; margin: 40px auto">
+        <div class="individual-product" style="margin-bottom: 0px">
+          <img src="/" alt="" class="product-image" />
+        </div>
+      </div>
+
+      <div class="products-section-mobile" style="margin-bottom: 40px">
+        <div class="individual-product">
+          <img src="/" alt="" class="product-image" />
+        </div>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title">
+          La lumière bleue est-elle aussi nocive pour les enfants que pour les
+          adultes ?
+        </h3>
+        <p class="para-content">Content</p>
+      </div>
+    </section>
+
+    <section class="square-section">
+      <h2 class="subtitle">
+        Comment s’assurer si les lunettes anti-lumière bleue sont efficaces ?
+      </h2>
+      <p class="para-content">Content</p>
+
+      <div class="sub-div">
+        <h3 class="con-title">
+          Quelle est la durée de vie des lunettes anti-lumière bleue ?
+        </h3>
+        <p class="para-content">Content</p>
+
+        <div class="sub-div">
+          <h4 class="con-title">
+            Est-il possible de réparer les lunettes anti-lumière bleue ?
+          </h4>
+          <p class="para-content">Content</p>
+        </div>
+      </div>
+
+      <!-- lang switch start -->
+      <div class="bottom-lag-sw">
+        <p class="para-content">
+          Lisez Les lunettes anti-lumière bleue sont-elles efficaces ? et
+          régions où Oscar Wylee est présent
+        </p>
+
+        <div class="lang-sw bottom">
+          <div class="language-switch">
+            <div
+              class="language-switch-current"
+              id="language-switch-current"
+              onclick="toggleVisibilityBtnTwo()"
+            >
+              <!-- flag -->
+              <img
+                src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                alt="Les lunettes anti-lumière bleue sont-elles efficaces ? et fonctions en français canadien"
+              />
+              Français canadien
+
+              <!-- dropdown icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="5"
+                viewBox="0 0 8 5"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+
+            <div
+              class="language-switch-dropdown-itmes-wrapper"
+              id="language-switch-dropdown-itmes-wrapper"
+              style="display: none"
+            >
+              <div class="language-switch-dropdown-itmes">
+                <img
+                  src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+                  alt="Les lunettes anti-lumière bleue sont-elles efficaces ? et fonctions en anglais australien"
+                />
+                <a
+                  href="https://www.oscarwylee.com.au/glasses/blue-light/works"
+                >
+                  Australie</a
+                >
+              </div>
+
+              <div class="language-switch-dropdown-itmes">
+                <img
+                  src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                  alt="Les lunettes anti-lumière bleue sont-elles efficaces ? et fonctions en anglais canadien"
+                />
+                <a href="https://oscarwylee.ca/glasses/blue-light/works">
+                  Canada</a
+                >
+              </div>
+
+              <div class="language-switch-dropdown-itmes">
+                <img
+                  src="{{media url='wysiwyg/CA_Flag.jpg'}}"
+                  alt="Les lunettes anti-lumière bleue sont-elles efficaces ? et fonctions en français canadien"
+                />
+                <a href="https://oscarwylee.ca/fr/glasses/blue-light/works">
+                  Français canadien</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- lang switch end -->
+    </section>
+  </div>
+
+  <!-- add bottom CTA section here -->
+  <aside class="context">
+    <!-- Location and booking  -->
+    <div class="location" style="border-top: none">
+      <div class="locationText">
+        <p class="heading">Réservez un examen de la vue</p>
+        <p class="contents">
+          Prenez un rendez-vous avec un optométriste indépendant, pour évaluer
+          votre vision et votre santé oculaire.
+        </p>
+        <div class="allButton">
+          <a href="/fr/booking">
+            <button class="btnOw">Réserver un examen de la vue</button>
+          </a>
+        </div>
+      </div>
+      <img
+        src="{{media url='wysiwyg/image-dossier/lunettes/cta/Reserver-un-examen-de-la-vue-5.jpg'}}"
+        alt="Réserver un examen de la vue"
+        class="locationImage"
+      />
+    </div>
+    <div class="location item1">
+      <img
+        src="{{media url='wysiwyg/image-folder/glasses/cta/find-a-store.jpg'}}"
+        alt="Assurance santé privée"
+        class="locationImage"
+      />
+      <div class="locationText">
+        <p class="heading">Assurance santé privée</p>
+        <p class="contents">
+          Votre assurance santé pourrait vous aider à couvrir une partie des
+          frais de votre examen de la vue chez Oscar Wylee ou de vos nouvelles
+          lunettes de vue.
+        </p>
+        <div class="allButton">
+          <a href="">
+            <button class="btnOw">Découvrir l’assurance santé</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<script>
+  const productContainers = [
+    ...document.querySelectorAll(".product-container"),
+  ];
+  const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
+  const preBtn = [...document.querySelectorAll(".pre-btn")];
+
+  productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener("click", () => {
+      item.scrollLeft += containerWidth;
+    });
+
+    preBtn[i].addEventListener("click", () => {
+      item.scrollLeft -= containerWidth;
+    });
+  });
+
+  // top lang-sw
+  document.addEventListener("click", function (event) {
+    var secondBox = document.querySelector(
+      ".language-switch-dropdown-itmes-wrapper"
+    );
+    var firstBox = document.querySelector(".language-switch-current");
+
+    // Check if the clicked element is outside the second box and the first box
+    if (!secondBox.contains(event.target) && !firstBox.contains(event.target)) {
+      secondBox.style.display = "none";
+    }
+  });
+
+  function toggleVisibility() {
+    var secondBox = document.querySelector(
+      ".language-switch-dropdown-itmes-wrapper"
+    );
+    secondBox.style.display =
+      secondBox.style.display === "none" ? "flex" : "none";
+  }
+
+  // bottom lang-sw
+  document.addEventListener("click", function (event) {
+    var secondBox = document.querySelector(
+      "#language-switch-dropdown-itmes-wrapper"
+    );
+    var firstBox = document.querySelector("#language-switch-current");
+
+    // Check if the clicked element is outside the second box and the first box
+    if (!secondBox.contains(event.target) && !firstBox.contains(event.target)) {
+      secondBox.style.display = "none";
+    }
+  });
+
+  function toggleVisibilityBtnTwo() {
+    var secondBox = document.querySelector(
+      "#language-switch-dropdown-itmes-wrapper"
+    );
+    secondBox.style.display =
+      secondBox.style.display === "none" ? "flex" : "none";
+  }
+</script>

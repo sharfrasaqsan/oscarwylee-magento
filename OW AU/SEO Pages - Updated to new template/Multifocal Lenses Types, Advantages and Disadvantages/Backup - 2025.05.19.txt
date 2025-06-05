@@ -1,0 +1,1318 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+
+  * {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #333333; */
+    line-height: 1.3em;
+  }
+
+  #maincontent {
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  }
+
+  .article-banner {
+    height: 450px;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  .banner {
+    width: auto;
+    max-height: 450px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+  }
+
+  .mobile-banner {
+    display: none;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  .title {
+    border-bottom: 1px solid silver;
+    padding: 2.5rem 3rem;
+    margin: 2.5rem 3rem;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 10px solid #003cac;
+    padding: 1rem;
+    font-weight: 700;
+  }
+
+  .linkTo {
+    color: #003cac;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .intro-section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .main-section section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .section-border-bottom {
+    border-bottom: 1px solid silver;
+    margin: 3rem;
+  }
+
+  .book-section {
+    display: flex;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0em;
+  }
+
+  .book-section p {
+    margin-bottom: 1.5em;
+  }
+
+  .book-section-left {
+    width: 50%;
+    margin-left: 0;
+    padding-left: 1.5em;
+  }
+
+  .book-section-left .heading {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+    padding-bottom: 1em;
+  }
+
+  .book-section-right {
+    display: flex;
+    margin: auto auto;
+    width: 30%;
+  }
+
+  .book-section-right a {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+  }
+
+  .btnOw:hover {
+    background-color: black;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    border: none !important;
+  }
+
+  .btnOw {
+    background-color: #003cac;
+    width: 100%;
+    /* padding: 0px 50%; */
+    border: none;
+    color: #fff;
+    height: 2em;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .para-content {
+    /* margin-top: 1em; */
+    margin-bottom: 2em;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .list-title {
+    font-weight: 700;
+  }
+
+  .ordered-list,
+  .unordered-list {
+    padding-left: 4rem;
+    margin-top: 2em;
+  }
+
+  .unordered-list {
+    margin-bottom: 2em;
+  }
+
+  .ordered-list li,
+  .unordered-list li {
+    margin-bottom: 0.8em;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .pro-con {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .pro-con li {
+    margin-bottom: 1em;
+  }
+
+  .pro-title,
+  .con-title,
+  .sub-list-title,
+  .sub-div-title {
+    border-left: 10px solid #b1b4b2;
+    padding: 0rem 1rem;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  .sub-list-title {
+    font-size: medium;
+    margin-left: 3em;
+  }
+
+  .pro-list,
+  .con-list {
+    margin-left: 2em;
+  }
+
+  .pro-section,
+  .con-section {
+    flex: 1 1 0;
+  }
+
+  .sub-div {
+    margin-left: 2em;
+  }
+
+  .sub-div .para-content {
+    margin-left: 0;
+  }
+
+  .grid-image {
+    width: 100%;
+    margin-bottom: 0.3em;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    column-gap: 3em;
+    width: 70%;
+    margin: 2em auto;
+  }
+
+  .grid-item {
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  .grid-item span {
+    font-style: italic;
+    font-weight: 700;
+    font-size: x-small;
+  }
+
+  .grid-text {
+    text-align: center;
+    font-size: x-small;
+    margin-bottom: 2em;
+  }
+
+  .grid-title {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    margin-bottom: 2em;
+  }
+
+  .flex-image {
+    width: 80%;
+    display: flex;
+    margin: 2em auto;
+  }
+
+  .hightlight-list {
+    font-weight: 600;
+  }
+
+  .example-images {
+    row-gap: 2em;
+  }
+
+  .product-image {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .products-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .individual-product {
+    border-right: 1px solid silver;
+    margin-bottom: 2em;
+    display: flex;
+    /* margin-left: 1em; */
+  }
+
+  .individual-product:last-child {
+    border: none;
+  }
+
+  .product-name,
+  .product-price {
+    text-align: center;
+  }
+
+  .product-button {
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin-top: 1em;
+  }
+
+  .two-pairs-price,
+  .three-pairs-price {
+    text-align: center;
+    /* margin-top: 2em; */
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 1em;
+  }
+
+  .two-pairs-price {
+    margin-bottom: 1em;
+  }
+
+  .two-pairs-price span,
+  .three-pairs-price span {
+    display: block;
+  }
+
+  .two-pairs-price {
+    background-color: #003cac;
+  }
+
+  .three-pairs-price {
+    background-color: black;
+  }
+
+  .from {
+    font-weight: 300;
+    color: white;
+    line-height: 10px;
+  }
+
+  .context {
+    padding: 0 3rem;
+  }
+
+  .location {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: max-content;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+    padding-top: 0;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid silver;
+  }
+
+  .location .heading {
+    font-weight: 700;
+    font-size: 1.25em;
+  }
+
+  .item1 {
+    border: none;
+  }
+
+  .locationText .heading {
+    font-weight: 500;
+    font-size: 1.25em;
+  }
+
+  .locationText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .locationText p {
+    font-size: 16px;
+    margin-top: 2em;
+  }
+
+  .locationImage {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  .allButton {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .allButton a {
+    text-decoration: none;
+  }
+
+  .allButton .btnOw {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .item1 {
+    padding-top: 2em;
+  }
+
+  .products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .nine-products-section img {
+    width: 30%;
+    border-right: 1px solid silver;
+  }
+
+  .nine-products-section img:last-child {
+    border: none;
+  }
+
+  .nine-products-section-gender {
+    margin-left: 0;
+  }
+
+  .grid-container-mobile {
+    display: none;
+  }
+
+  .contents {
+    margin-bottom: 2em;
+  }
+
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+    padding: 0;
+  }
+
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  .nxt-btn {
+    right: 0;
+  }
+
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+    width: 1em;
+  }
+
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+
+  .pre-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nxt-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nine-products-section {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .product-container {
+    /* padding: 0 10vw; */
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .product-container a {
+    display: contents;
+  }
+
+  @media screen and (max-width: 440px) {
+    * {
+      line-height: 1.5em;
+    }
+
+    .title {
+      margin: 1em 0.5em;
+      padding: 0em;
+      /* padding-bottom: 0.5em; */
+      white-space: normal;
+      border: none;
+    }
+
+    .contents {
+      margin-bottom: 2em;
+    }
+
+    .intro-section,
+    .main-section section {
+      margin: 0 1em;
+    }
+
+    .ordered-list,
+    .unordered-list {
+      padding-left: 1.2em;
+    }
+
+    .pro-con {
+      flex-direction: column;
+    }
+
+    .flex-wrapper {
+      flex-direction: column;
+    }
+
+    .example-images {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 2em;
+    }
+
+    .grid-item {
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .product-image {
+      width: 100%;
+    }
+
+    .sub-div {
+      margin-left: 0em;
+    }
+
+    .book-section {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .book-section-left {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .book-section-left p {
+      margin-right: 1em;
+      text-align: justify;
+      margin-left: 1em;
+    }
+
+    .book-section-left .heading {
+      text-align: center;
+      font-size: 1.25em;
+      margin-top: 1.5em;
+    }
+
+    .book-section-right {
+      width: 90%;
+      margin-bottom: 1em;
+    }
+
+    .desktop-banner {
+      display: none;
+    }
+
+    .mobile-banner {
+      display: block;
+      max-width: 100%;
+      padding: 0;
+    }
+
+    .products-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .individual-product {
+      border-right: none;
+      border-bottom: 1px solid silver;
+      padding-bottom: 0.5em;
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    .grid-image {
+      width: 90%;
+      display: flex;
+      margin: 0px auto;
+    }
+
+    .location {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 3.2rem;
+    }
+
+    .locationText .heading {
+      text-size: 1.25em;
+      margin-top: 0.5em;
+      margin-bottom: -0.5em;
+    }
+
+    .allButton .btnOw {
+      width: 100%;
+    }
+
+    .item1 {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+      border: none;
+      padding-bottom: 0;
+      padding-top: 3.5em;
+    }
+
+    .locationText .heading {
+      text-align: center;
+    }
+
+    .item1 .locationImage,
+    .item1 .locationText {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+    }
+
+    .products-section {
+      display: none;
+    }
+
+    .nine-products-section {
+      display: none;
+    }
+
+    .individual-product {
+      display: flex;
+      margin: auto auto;
+    }
+
+    .products-section-mobile {
+      display: block;
+    }
+
+    .nine-products-section-mobile {
+      display: flex;
+      overflow-x: scroll;
+    }
+
+    .nine-products-section-mobile::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nine-products-section-mobile img {
+      width: 80%;
+    }
+
+    .grid-container-mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid-item span {
+      display: flex;
+      margin: 0 2em;
+    }
+
+    .grid-container-desktop {
+      display: none;
+    }
+
+    .product-container-mobile {
+      display: flex;
+      overflow-x: auto;
+    }
+
+    .nine-products-section-mobile {
+      position: relative;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+      width: 3vw;
+      height: 0;
+      top: 50%;
+    }
+
+    #main-cont-wrapper {
+      margin: 0em 1em;
+    }
+
+    .para-content {
+      hyphens: auto;
+      word-spacing: -0.05em;
+      hyphenate-limit-chars: 6;
+    }
+  }
+
+  /* big image */
+  .big_img_wapper {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .big_img {
+    border-radius: 8px;
+    width: 80%;
+  }
+
+  /* image with content section */
+  .image_with_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .para_wapper {
+    width: 50%;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    .image_with_content {
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    .para_wapper {
+      width: 100%;
+    }
+
+    .big_img_wapper {
+      width: 100%;
+    }
+
+    .big_img {
+      width: 100%;
+    }
+
+    .article-banner {
+      height: 500px;
+    }
+  }
+
+  .example-image-wrapper {
+    margin-bottom: 1em;
+    display: flex;
+  }
+  .example-image {
+    margin: auto;
+    width: 50%;
+    margin-bottom: 1.6rem;
+  }
+
+  .article-banner {
+    height: 450px;
+  }
+
+  @media (max-width: 480px) {
+    .example-image {
+      width: 100%;
+    }
+
+    .article-banner {
+      height: 500px;
+    }
+
+    #responsiveheading {
+      padding: 0 4rem;
+    }
+  }
+
+  /* Table */
+
+  .table-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  th,
+  td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #e0e0e0;
+  }
+
+  @media (max-width: 768px) {
+    th,
+    td {
+      padding: 6px 10px;
+    }
+
+    table {
+      font-size: 12px;
+    }
+  }
+</style>
+<div class="article-banner"><img src="{{media url='wysiwyg/image-folder/glasses/eye/multifocal-lenses/Multifocal-Lenses_What-is-it_-How-it-Works_-and-Uses_Oscar-Wylee_1640x940.jpg'}}" alt="Multifocal Lenses" class="banner desktop-banner"> <img src="{{media url='wysiwyg/image-folder/glasses/eye/multifocal-lenses/Multifocal_Lenses__What_is_it_How_it_Works_and_Uses_Oscar-Wylee_770x990.jpg'}}" alt="Multifocal Lenses" class="mobile-banner"></div>
+<h1 class="title">Multifocal Lenses: Meaning and How it Works</h1>
+<style>
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin: 3rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .card {
+    width: 100%;
+    box-shadow: 3px 3px 5px silver;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+
+  .cardTop {
+    background-color: #f2f2f2;
+    text-align: center;
+    border-top: 8px solid #003cac;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 20px;
+  }
+
+  .popular {
+    background-color: #003cac;
+    color: #fff;
+    font-weight: 700;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 30px;
+  }
+
+  .cardTop h2 {
+    padding-bottom: 25px;
+    padding-top: 10px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  .cardTop img {
+    width: 100%;
+  }
+
+  .cardMidd ul {
+    padding: 35px 20px 0px 35px;
+    min-height: 204px;
+    margin-bottom: 0px;
+  }
+
+  .cardMidd ul li {
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .cardBottom {
+    text-align: center;
+    padding: 20px 20px;
+  }
+
+  .cardBottom img {
+    width: 50px;
+    padding: 1px;
+  }
+
+  .priceContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 50px;
+  }
+
+  .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .priceContainer p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .priceText {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .priceText span {
+    color: #003cac;
+    font-weight: 800;
+  }
+
+  .priceNumber {
+    font-weight: 800;
+    font-size: 22px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .dollar {
+    font-weight: 400;
+    padding-bottom: 2px;
+    padding-left: 10px;
+  }
+
+  .cost {
+    font-weight: 700;
+    font-size: 34px;
+    bottom: 0;
+    line-height: 28px;
+  }
+
+  .multifocalTips {
+    padding: 2rem 1.1rem;
+  }
+
+  .multifocalTips ul,
+  .multifocalTips p {
+    text-align: justify;
+    text-align-last: left;
+  }
+
+  .multifocalTips h2 {
+    font-weight: bold;
+  }
+
+  .tipTitle,
+  .tipText {
+    padding: 1rem 0;
+  }
+
+  .tipText {
+    font-size: 16px;
+  }
+
+  .tipEllements {
+    padding: 1rem 3rem;
+    font-size: 16px;
+  }
+
+  .tipEllements li {
+    padding-bottom: 1rem;
+  }
+
+  @media (max-width: 992px) {
+    .cards {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 650px));
+    }
+
+    .cardMidd ul {
+      padding: 35px 20px 0px 35px;
+      min-height: 150px;
+      margin-bottom: 0px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .cards {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+</style>
+<!-- new content start -->
+<div class="cards">
+<div class="card reveal active">
+<div class="cardTop"><span class="popular" style="background-color: #f2f2f2; color: #f2f2f2;">POPULAR CHOICE</span>
+<h2>Multifocal Standard</h2>
+<img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/MF_Types_illo_01.png" alt="Standard multifocal"></div>
+<div class="cardMidd">
+<ul>
+<li>Some degree of soft focus at the edge of your vision</li>
+<li>Good for occasional glasses use</li>
+<li>Ideal for those on a budget</li>
+</ul>
+</div>
+<div class="cardBottom">
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"></div>
+<p class="priceText">1 pair with <span>Standard Multifocal</span></p>
+</div>
+<p class="priceNumber">+ <span class="dollar">$</span> <span class="cost">0</span></p>
+</div>
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"></div>
+<p class="priceText">2 pairs with <span>Standard Multifocal</span></p>
+</div>
+<p class="priceNumber">+ <span class="dollar">$</span> <span class="cost">80</span></p>
+</div>
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"> <img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"></div>
+<p class="priceText">3 pairs with <span>Standard Multifocal</span></p>
+</div>
+<p class="priceNumber">+ <span class="dollar">$</span> <span class="cost">130</span></p>
+</div>
+</div>
+</div>
+<div class="card reveal active">
+<div class="cardTop"><span class="popular" style="background-color: #f2f2f2; color: #f2f2f2;">POPULAR CHOICE</span>
+<h2>Multifocal Premium</h2>
+<img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/MF_Types_illo_02.png" alt="premium multifocal"></div>
+<div class="cardMidd">
+<ul>
+<li>Wider field of clear vision</li>
+<li>Ideal for those who wear glasses in the office, especially for computer work</li>
+<li>Easier adjustment than standard multifocal lenses</li>
+</ul>
+</div>
+<div class="cardBottom">
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"></div>
+<p class="priceText">1 pair with <span>Premium Multifocal</span></p>
+</div>
+<p class="priceNumber">+ <span class="dollar">$</span> <span class="cost">130</span></p>
+</div>
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"></div>
+<p class="priceText">2 pairs with <span>Premium Multifocal</span></p>
+</div>
+<p class="priceNumber">+ <span class="dollar">$</span> <span class="cost">180</span></p>
+</div>
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"></div>
+<p class="priceText">3 pairs with <span>Premium Multifocal</span></p>
+</div>
+<p class="priceNumber">+ <span class="dollar">$</span> <span class="cost">230</span></p>
+</div>
+</div>
+</div>
+<div class="card reveal active">
+<div class="cardTop"><span class="popular">POPULAR CHOICE</span>
+<h2>Multifocal Elite</h2>
+<img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/MF_Types_illo_03.png" alt="elite multifocal"></div>
+<div class="cardMidd">
+<ul>
+<li>Very wide field of clear vision</li>
+<li>All-rounder lens for modern lifestyle demands, and a lot of computer work</li>
+<li>Provides more natural and comfortable vision</li>
+</ul>
+</div>
+<div class="cardBottom">
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"></div>
+<p class="priceText">1 pair with <span>Elite Multifocal</span></p>
+</div>
+<p class="priceNumber">+ <span class="dollar">$</span> <span class="cost">235</span></p>
+</div>
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"> <img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"></div>
+<p class="priceText">2 pairs with <span>Elite Multifocal</span></p>
+</div>
+<p class="priceNumber">+ <span class="dollar">$</span> <span class="cost">285</span></p>
+</div>
+<div class="priceContainer">
+<div class="price">
+<div class="priceImages"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"> <img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"> <img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/single-pair-01.png" alt="glasses"></div>
+<p class="priceText">3 pairs with <span>Elite Multifocal</span></p>
+</div>
+<p class="priceNumber">+ <span class="dollar">$</span> <span class="cost">335</span></p>
+</div>
+</div>
+</div>
+</div>
+<!-- new content end -->
+<div class="intro-section">
+<p class="para-content mobile-para-margin"><span style="font-weight: 400;">Multifocal lenses </span><b>feature three different prescription strengths all within one pair which works by enabling clear vision for near, intermediate and distance vision</b><span style="font-weight: 400;">. Multifocal lenses may be advantageous for those who require prescription glasses for reading and improved distance vision and patients diagnosed with presbyopia. The disadvantage of multifocal lenses may be the adjustment phase as patients typically take time learning to properly use them. It is important to note that there are also multifocal contact lenses, however, Oscar Wylee does not provide contact lenses. This article will expand further on the meaning of multifocal, the advantages and disadvantages and explore differences between other types of lenses.</span></p>
+</div>
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="heading heading-margin">Are You in Need of Multifocal Lenses?</p>
+<p class="para-content">Come see our staff in-store for assistance with your vision concerns and for an eye test.</p>
+</div>
+<div class="book-section-right"><a href="/booking" class="btnOw">Book an eye test</a></div>
+</aside>
+<section class="section-border-bottom">
+<h2 class="subtitle">What is a Multifocal Lens?</h2>
+<p class="para-content"><span style="font-weight: 400;">Multifocal lenses are defined as</span><b> lenses designed to provide clear vision for near, intermediate and distance vision issues</b><span style="font-weight: 400;">. It is common to wonder what is multifocal? If you’re not familiar with different lens types, they refer to multiple prescriptions and are also known as</span><a href="https://www.oscarwylee.com.au/glasses/eye/progressive-lenses"><span style="font-weight: 400;"> progressive lenses</span></a><span style="font-weight: 400;">. Multifocal lenses can make it more convenient to view through different distances without the need to use more than one pair of glasses.</span></p>
+<div class="sub-div">
+<h3 class="sub-div-title">Are Multifocal Lenses the Same as Progressive Lenses?</h3>
+<p class="para-content"><span style="font-weight: 400;">Yes, multifocal lenses </span><b>are the same as progressive lenses. Progressive lenses can describe the gradual transition in prescription strength within the lenses as opposed to a visible line separating the prescriptions</b><span style="font-weight: 400;">. At Oscar Wylee, we offer multifocal standard, multifocal premium and the most popular choice, multifocal elite. You may select any of these options for an additional cost on top of your standard optical glasses choice.</span></p>
+</div>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">How do Multifocal Lenses Work?</h2>
+<p class="para-content"><span style="font-weight: 400;">Multifocal lenses work by </span><b>allowing you to see at three different distances all within one lens, combining prescriptions for near, intermediate and distance vision</b><span style="font-weight: 400;">. The bottom portion of multifocal lenses is intended for near vision, the middle portion helps with intermediate vision and the top portion improves distance vision.</span></p>
+<div class="sub-div">
+<h3 class="sub-div-title">What are the Different Types of Multifocal Lenses?</h3>
+<p class="para-content" style="letter-spacing: -0.05px;"><span style="font-weight: 400;">The different types of multifocal lenses are </span><b>trifocal lenses</b><span style="font-weight: 400;"> and </span><b>bifocal lenses. </b><span style="font-weight: 400;">Trifocal lenses and bifocal lenses are similar to multifocal lenses in their provision of multiple prescription strengths, however, they slightly differ in design. The different types of multifocal lenses are listed below.</span></p>
+<ul class="ordered-list">
+<li><b>Trifocal Lenses: </b><span style="font-weight: 400;">Trifocal lenses are lenses also made with three different prescription strengths, which are separated by visible lines and are available in two types.</span></li>
+<li><span style="font-weight: 400;"><b>Bifocal Lenses: </b>Bifocal lenses are intended to improve near and distance vision in one lens.</span></li>
+</ul>
+<div class="sub-div">
+<h4 class="sub-div-title">1. Trifocal Lenses</h4>
+<p class="para-content"><span style="font-weight: 400;">Trifocal lenses </span><b>enable clear vision for near, intermediate and distance vision which are divided by visible lines.</b><span style="font-weight: 400;"> The two types of trifocal lenses are flat-top, which are designed with their near vision portion and intermediate vision portion fitted in a D shape. This helps enable improved peripheral vision. Executive trifocal lenses may offer a broader range of vision with the different prescription strengths stretched completely across each lens. This may be a good option for individuals with a vision condition and who are over the age of 40. Those who may require varying ranges of vision correction may also opt for trifocal lenses according to NVision Centres. Trifocals differ from multifocal lenses due to their visible lines and the layout shape of the different prescription strengths. It is important to note that Oscar Wylee does not offer trifocal lenses.</span></p>
+</div>
+<div class="sub-div">
+<h4 class="sub-div-title">2. Bifocal Lenses</h4>
+<p class="para-content"><span style="font-weight: 400;">Bifocal lenses </span><b>have a near vision portion and a distance vision portion and can come in four different types, half-moon, round segment, ribbon segment and executive</b><span style="font-weight: 400;"> according to the Optometrists Network. Individuals may choose to use bifocal lenses if they only require vision correction for reading and distance-centered tasks such as driving. Bifocal lenses differ from multifocal lenses as they have clear visible lines, while multifocal lenses do not. Bifocal lenses only feature two different prescription strengths while multifocal and trifocal have three different prescription strengths.</span></p>
+<div class="example-image-wrapper"><img src="{{media url='wysiwyg/image-folder/glasses/eye/multifocal-lenses/_01_Different-Types-of-Multifocal-Lenses_900x600.jpg'}}" alt="Example of single-lens, bifocal, trifocal and multifocal" class="example-image"></div>
+</div>
+</div>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">How are Multifocal Lenses Made?</h2>
+<p class="para-content"><span style="font-weight: 400;">Multifocal lenses are</span><b> made following the typical eyeglasses production process which may involve designing the lens and selecting the right lens material. The last steps may include&nbsp; lens manufacturing and finally checking the quality of the glasses.</b><span style="font-weight: 400;"> Multifocal lenses are typically </span><b>made out of either glass or plastic</b><span style="font-weight: 400;">. The optical dispenser may decide which material to use based on the patient’s prescription.</span></p>
+<div class="sub-div">
+<h3 class="sub-div-title">Who are Multifocal Lenses Made For?</h3>
+<p class="para-content"><span style="font-weight: 400;">Multifocal lenses are </span><b>typically made for those who have difficulties with distance, intermediate and near vision. </b><span style="font-weight: 400;">Multifocal lenses may be especially helpful when you require a certain prescription strength for reading and a different prescription strength for driving.</span></p>
+<div class="example-image-wrapper"><img src="{{media url='wysiwyg/image-folder/glasses/eye/multifocal-lenses/_02_Multifocal-Lenses-for-Different-Distances_900x600.jpg'}}" alt="Person using multifocal lenses for reading, computer use and distance views." class="example-image"></div>
+<div class="sub-div">
+<h4 class="sub-div-title">Are Multifocal Lenses for Older People Only?</h4>
+<p class="para-content"><span style="font-weight: 400;">No, multifocal lenses are </span><b>not for older people only, as multifocal lenses can be helpful for other ages</b><span style="font-weight: 400;">. Older people typically use multifocal lenses due to age-related issues that affect their vision such as presbyopia. However, individuals of any age who already use prescription glasses and find themselves struggling with both near and distance vision may choose to opt for multifocal lenses.</span></p>
+</div>
+<div class="sub-div">
+<h4 class="sub-div-title">Can People With Farsightedness Wear Multifocal Glasses?</h4>
+<p class="para-content"><span style="font-weight: 400;">Yes and no, people with farsightedness (hyperopia) </span><b>can wear multifocal glasses if they are also experiencing difficulty with distance and near vision</b><span style="font-weight: 400;">. However, people who only experience </span><a href="https://www.oscarwylee.com.au/glasses/eye/hyperopia"><span style="font-weight: 400;">farsightedness</span></a><span style="font-weight: 400;"> may not require multifocal glasses as they are designed to correct vision for multiple distances.</span></p>
+</div>
+<div class="sub-div">
+<h4 class="sub-div-title">Are Glasses For Astigmatism Multifocal?</h4>
+<p class="para-content"><span style="font-weight: 400;">No, glasses for astigmatism are </span><b>not exclusively multifocal, they can also be single vision. The most suitable glasses for astigmatism may include lenses that are cylindrical</b><span style="font-weight: 400;"> to help with the proper refraction of light. </span><a href="https://www.oscarwylee.com.au/glasses/eye/astigmatism"><span style="font-weight: 400;">Astigmatism</span></a><span style="font-weight: 400;"> can cause blurry vision as it affects the shape of your cornea and how your eye processes light. Cylindrical lenses assist with correcting astigmatism in patients as they compensate for the curves in the cornea that are uneven. However, individuals with astigmatism may find multifocal lenses beneficial if they also have another eye condition such as presbyopia.</span></p>
+<div class="example-image-wrapper"><img src="{{media url='wysiwyg/image-folder/glasses/eye/multifocal-lenses/_03_Are_glasses_for_astigmatism_multifocal_900x600.jpg'}}" alt="Diagram of how astigmatism affected eye processes light before and after lens correction" class="example-image"></div>
+</div>
+</div>
+<div class="sub-div">
+<h4 class="sub-div-title">Who Should Not Wear Multifocal Lenses?</h4>
+<p class="para-content" style="letter-spacing: -0.05px;"><span style="font-weight: 400;">Those who only </span><b>have one vision condition such as farsightedness (hyperopia) should not wear multifocal lenses</b><span style="font-weight: 400;"> as single-lens prescription glasses are effective for correcting most vision problems. </span><b>Patients diagnosed with eye diseases and conditions such as glaucoma, cataracts or macular degeneration</b><span style="font-weight: 400;"> may not benefit from multifocal lenses if the glasses are not improving their vision and will likely have a different treatment plan prescribed by an ophthalmologist.</span></p>
+</div>
+<div class="sub-div">
+<h3 class="sub-div-title">How Do I Know if My Eyeglasses Prescription Requires Multifocal Lenses?</h3>
+<p class="para-content"><span style="font-weight: 400;">You may know if your eyeglasses prescription requires multifocal lenses </span><b>if the ADD section of your prescription has numbers in it</b><span style="font-weight: 400;">. The ADD column of your eyeglasses prescription will indicate whether you require multifocal lenses or reading glasses as it is used to indicate how much additional power is needed for reading. An optometrist or optical dispenser will also advise whether you require multifocal lenses.</span></p>
+</div>
+<div class="sub-div">
+<h3 class="sub-div-title">How Long Do Multifocal Lenses Last?</h3>
+<p class="para-content"><span style="font-weight: 400;">Multifocal lenses typically last </span><b>up to two years like most standard prescription glasses</b><span style="font-weight: 400;">. The recommendation for updating your prescription is every 2 years depending on your condition or as advised by your optometrist. It is important to have regular eye tests for early detection of eye problems and to maintain ocular health.</span></p>
+<div class="sub-div">
+<h4 class="sub-div-title">How to Take Care of Multifocal Lenses?</h4>
+<p class="para-content"><span style="font-weight: 400;">To take care of multifocal lenses, </span><b>it is important to practice proper storage and handling and regular cleaning</b><span style="font-weight: 400;">. Take care of your multifocal lenses by storing them in the case they come with when you are not using them. This will help ensure they are kept in a safe place and prevent any accidental damages from occurring. When putting on your multifocal lenses or taking them off, it is best to use both hands to prevent the arms from loosening and maintain correct alignment. Cleaning them with the microfibre cloth that your glasses come with and cleaning the lenses with an official lens cleaner can help maintain their condition.</span></p>
+</div>
+</div>
+</section>
+<aside class="context">
+<div class="location" style="border-top: none;">
+<div class="locationText">
+<p class="heading">Find Your Nearest Oscar Wylee Store</p>
+<p class="contents contents-margin contents-margin-2">We offer Medicare bulk billed eye tests and expert advice on eye care. Visit us in-store for your optometry and eyewear needs.</p>
+<div class="allButton"><a href="/locations/full-store-list.html" class="btnOw">Find a store</a></div>
+</div>
+<img src="{{media url='wysiwyg/image-folder/glasses/cta/find-a-store.jpg'}}" alt="Find an Oscar Wylee store" class="locationImage"></div>
+</aside>
+<section class="section-border-bottom">
+<h2 class="subtitle">What are the Advantages of Multifocal Lenses?</h2>
+<p class="para-content"><span style="font-weight: 400;">The advantages of multifocal lenses are the convenience of using </span><b>one pair of glasses</b><span style="font-weight: 400;"> for viewing multiple distances, </span><b>providing optimal vision, no image jump and no visible lines. </b><span style="font-weight: 400;">The advantages of multifocal lenses are listed below.</span></p>
+<ul class="ordered-list">
+<li><b>One Pair of Glasses: </b><span style="font-weight: 400;">One pair of glasses for viewing multiple distances may be an advantage for those who require more than one pair of glasses for reading and driving. They will only need to rely on one pair and will not need to constantly switch between pairs.</span></li>
+<li><span style="font-weight: 400;"><b>Provide Optimal Vision: </b>Multifocal lenses help provide optimal vision at each distance for users. This can ensure comfort and confidence when engaging in activities that require different ranges of vision.</span></li>
+<li><span style="font-weight: 400;"><b>No Image Jump:</b> Multifocal lenses have a seamless transition between the different prescription strengths so there are no “image jumps” according to All About Vision. When using bifocals or trifocals, there are often sudden changes in the clarity of images when moving your eyes to different objects, this is known as image jumps. Using multifocal lenses helps prevent this.</span></li>
+<li><span style="font-weight: 400;"><b>No Visible Lines:</b>&nbsp;Multifocal lenses have no visible lines separating the different prescription strengths like trifocal lenses do. This may make them more cosmetically appealing to individuals who require multifocal glasses.</span></li>
+</ul>
+</section>
+<section class="section-border-bottom">
+<h2 class="subtitle">What are the Disadvantages of Multifocal Lenses?</h2>
+<p class="para-content"><span style="font-weight: 400;">The disadvantages of multifocal lenses are possibly the </span><b>adjustment period, headaches, distorted vision and higher price</b><span style="font-weight: 400;">. The disadvantages of multifocal lenses are listed below.</span></p>
+<ul class="ordered-list">
+<li><b>Adjustment Period: </b><span style="font-weight: 400;">The adjustment period when initially using multifocal lenses may be a disadvantage as learning to properly use them during different tasks may take some time for most users. When looking at the different sections, it is important to also move your head instead of just moving your eyes.</span></li>
+<li><span style="font-weight: 400;"><b>Headaches: </b>Headaches can commonly occur when first using multifocal lenses due to the potential eye strain. However, this should alleviate after getting used to them. It may be helpful to take breaks if you start to experience headaches to rest your eyes and try again later.</span></li>
+<li><span style="font-weight: 400;"><b>Distorted Vision: </b>Distorted vision may occur when looking to the sides of multifocal lenses due to there being more than one prescription strength incorporated into one lens. Peripheral distortion is a common feature of multifocals and the amount of distortion is present according to which level of multifocal you choose. At Oscar Wylee, choosing the elite multifocal option will result in less peripheral distortion compared to the standard and premium option.</span></li>
+<li><span style="font-weight: 400;"><b>Higher Price: </b>Multifocal lenses may come at a higher price than standard single vision lenses due to the expertise and technology required to make multifocal lenses for glasses and that they contain three different prescriptions.</span></li>
+</ul>
+</section>
+<section class="section-border-bottom">
+<section class="section-border-bottom">
+<h2 class="subtitle">How Much Do Multifocal Lenses Cost?</h2>
+<p class="para-content"><span style="font-weight: 400;">The cost of multifocal lens glasses can </span><b>vary depending on where you decide to purchase them</b><span style="font-weight: 400;">. At Oscar Wylee our most popular choice of elite multifocal lenses is an additional $235 for one pair on top of your standard optical glasses selection.</span></p>
+<div class="sub-div">
+<h3 class="sub-div-title">What are the Price Factors for Multifocal Lenses?</h3>
+<p class="para-content"><span style="font-weight: 400;">The price factors for multifocal lenses </span><b>can potentially depend on how they were made, the level of prescription strength for each portion of the lens and the type of frame used</b><span style="font-weight: 400;">. The price of multifocal lenses may differ between different optometrists and eyewear companies depending on the production process involved and the visual requirements of different individuals. There are certain frames that multifocal lenses fit more optimally in, however, they can be cut to fit in small to large-sized frames. Therefore, the price may be significantly influenced by which frame you choose to have your multifocal lenses placed in.</span></p>
+<div class="sub-div">
+<h4 class="sub-div-title">Are Multifocal Glasses Expensive Compared to Multifocal Contact Lenses?</h4>
+<p class="para-content"><span style="font-weight: 400;">No, multifocal contact lenses </span><b>may be more expensive than multifocal glasses as multifocal contact lenses typically need to be replaced more frequently than multifocal glasses.</b><span style="font-weight: 400;"> Therefore, in the long term, contact lenses can likely result in a higher price than optical glasses. The cost of multifocal lenses also largely depends on the brand and how many are included per pack.</span></p>
+</div>
+<div class="sub-div">
+<h4 class="sub-div-title">Are Multifocal Lenses better than Monofocal Lenses?</h4>
+<p class="para-content"><span style="font-weight: 400;">Yes and no, </span><b>multifocal lenses may be better for those who require multiple prescription strengths</b><span style="font-weight: 400;">. However, if you only have one vision condition, you may only need monofocal lenses for correction as they contain a single prescription.</span></p>
+</div>
+</div>
+<!-- new banner --></section>
+</section>
+<style>
+    .new-banner .desktopBanner {
+      display: block;
+      margin-bottom: 40px;
+    }
+
+    .new-banner .mobBanner {
+      display: none;
+    }
+
+    @media (max-width: 400px) {
+      .new-banner .desktopBanner {
+        display: none;
+      }
+
+      .new-banner .mobBanner {
+        display: block;
+        margin-bottom: 40px;
+      }
+    }
+  </style>
+<section class="section-border-bottom">
+<div class="new-banner"><img class="desktopBanner" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/Multifocal_Web_Banner_1620x617.png" alt="Multifocal lenses banner"> <img class="mobBanner" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/Multifocal-Lenses-assets/Multifocal_Mobile_Banner_770x900.jpg" alt="Multifocal lenses banner"></div>
+</section>
+<aside class="context"><!-- Location and booking  -->
+<div class="location" style="border-top: none;">
+<div class="locationText">
+<p class="heading" id="responsiveheading">Oscar Wylee Accepts Leading Health Funds In-store</p>
+<p class="contents">Visit Oscar Wylee for your optometry needs, and your health fund may help cover some of the cost. Bring a valid health fund card to your local store for a full quote.</p>
+<div class="allButton"><a href="/health-funds.html" class="btnOw">Health Fund </a></div>
+</div>
+<img src="{{media url='wysiwyg/image-folder/glasses/cta/Health-Fund-homepage-small-banner-3.jpg'}}" alt="Health Funds at Oscar Wylee" class="locationImage"></div>
+<div class="location item1"><img src="{{media url='wysiwyg/image-folder/glasses/cta/CTA-5-OW.jpg'}}" alt="Book an Eye Test at Oscar Wylee" class="locationImage">
+<div class="locationText">
+<p class="heading">Have You Had Your Eyes Tested Recently?</p>
+<p class="contents">Book an appointment with one of our optometrists today to stay on top of your eye health.</p>
+<div class="allButton"><a href="/booking" class="btnOw">Book an eye test</a></div>
+</div>
+</div>
+</aside>

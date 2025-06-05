@@ -1,0 +1,1442 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+
+  * {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #333333; */
+    line-height: 1.3em;
+    scroll-behavior: smooth;
+  }
+
+  #maincontent {
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  }
+
+  .article-banner {
+    height: 450px;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  .banner {
+    width: auto;
+    max-height: 450px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+  }
+
+  .mobile-banner {
+    display: none;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  .title {
+    /* border-bottom: 1px solid silver; */
+    /* padding: 2.5rem 3rem; */
+    padding: 11px 3rem;
+    /* margin: 2.5rem 3rem; */
+    margin: 0px;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 10px solid #003cac;
+    padding: 1rem;
+    font-weight: 700;
+  }
+
+  .linkTo {
+    color: #003cac;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .intro-section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .main-section section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .section-border-bottom {
+    border-bottom: 1px solid silver;
+    margin: 3rem;
+  }
+
+  .book-section {
+    display: flex;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-top: 0em;
+  }
+
+  .book-section p {
+    margin-bottom: 1.5em;
+  }
+
+  .book-section-left {
+    width: 50%;
+    margin-left: 0;
+    padding-left: 1.5em;
+  }
+
+  .book-section-left .heading {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+  }
+
+  .book-section-right {
+    display: flex;
+    margin: auto auto;
+    width: 30%;
+  }
+
+  .book-section-right a {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+  }
+
+  .btnOw:hover {
+    background-color: black;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    border: none !important;
+  }
+
+  .btnOw {
+    background-color: #003cac;
+    width: 100%;
+    /* padding: 0px 50%; */
+    border: none;
+    color: #fff;
+    height: 2em;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .para-content {
+    /* margin-top: 1em; */
+    margin-bottom: 2em;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .list-title {
+    font-weight: 700;
+  }
+
+  .ordered-list,
+  .unordered-list {
+    padding-left: 4rem;
+    margin-top: 2em;
+  }
+
+  .unordered-list {
+    margin-bottom: 2em;
+  }
+
+  .ordered-list li,
+  .unordered-list li {
+    margin-bottom: 0.8em;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .pro-con {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .pro-con li {
+    margin-bottom: 1em;
+  }
+
+  .pro-title,
+  .con-title,
+  .sub-list-title,
+  .sub-div-title {
+    border-left: 10px solid #b1b4b2;
+    padding: 0rem 1rem;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  .sub-list-title {
+    font-size: medium;
+    margin-left: 3em;
+  }
+
+  .pro-list,
+  .con-list {
+    margin-left: 2em;
+  }
+
+  .pro-section,
+  .con-section {
+    flex: 1 1 0;
+  }
+
+  .sub-div {
+    margin-left: 2em;
+  }
+
+  .sub-div .para-content {
+    margin-left: 0;
+  }
+
+  .grid-image {
+    width: 100%;
+    margin-bottom: 0.3em;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    column-gap: 3em;
+    width: 70%;
+    margin: 2em auto;
+  }
+
+  .grid-item {
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  .grid-item span {
+    font-style: italic;
+    font-weight: 700;
+    font-size: x-small;
+  }
+
+  .grid-text {
+    text-align: center;
+    font-size: x-small;
+    margin-bottom: 2em;
+  }
+
+  .grid-title {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    margin-bottom: 2em;
+  }
+
+  .flex-image {
+    width: 80%;
+    display: flex;
+    margin: 2em auto;
+  }
+
+  .hightlight-list {
+    font-weight: 600;
+  }
+
+  .example-images {
+    row-gap: 2em;
+  }
+
+  .product-image {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .products-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .individual-product {
+    border-right: 1px solid silver;
+    margin-bottom: 2em;
+    display: flex;
+    /* margin-left: 1em; */
+  }
+
+  .individual-product:last-child {
+    border: none;
+  }
+
+  .product-name,
+  .product-price {
+    text-align: center;
+  }
+
+  .product-button {
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin-top: 1em;
+  }
+
+  .two-pairs-price,
+  .three-pairs-price {
+    text-align: center;
+    /* margin-top: 2em; */
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 1em;
+  }
+
+  .two-pairs-price {
+    margin-bottom: 1em;
+  }
+
+  .two-pairs-price span,
+  .three-pairs-price span {
+    display: block;
+  }
+
+  .two-pairs-price {
+    background-color: #003cac;
+  }
+
+  .three-pairs-price {
+    background-color: black;
+  }
+
+  .from {
+    font-weight: 300;
+    color: white;
+    line-height: 10px;
+  }
+
+  .product-right {
+  }
+
+  .context {
+    padding: 0 3rem;
+  }
+
+  .location {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: max-content;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+    padding-top: 0;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid silver;
+  }
+
+  .location .heading {
+    font-weight: 700;
+    font-size: 1.8em;
+  }
+
+  .item1 {
+    border: none;
+  }
+
+  .locationText .heading {
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+
+  .locationText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.5em;
+  }
+
+  .locationText p {
+    font-size: 16px;
+    margin-top: 2em;
+  }
+
+  .locationImage {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  .allButton {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .allButton a {
+    text-decoration: none;
+  }
+
+  .allButton .btnOw {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .item1 {
+    padding-top: 2em;
+  }
+
+  .products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .nine-products-section img {
+    width: 30%;
+    border-right: 1px solid silver;
+  }
+
+  .nine-products-section img:last-child {
+    border: none;
+  }
+
+  .nine-products-section-gender {
+    margin-left: 0;
+  }
+
+  .grid-container-mobile {
+    display: none;
+  }
+
+  .contents {
+    margin-bottom: 2em;
+  }
+
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+    padding: 0;
+  }
+
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  .nxt-btn {
+    right: 0;
+  }
+
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+    width: 1em;
+  }
+
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+
+  .pre-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nxt-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nine-products-section {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .product-container {
+    /* padding: 0 10vw; */
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .product-container a {
+    display: contents;
+  }
+
+  @media screen and (max-width: 440px) {
+    * {
+      line-height: 1.5em;
+    }
+
+    .start-with-para {
+      margin-top: 2em !important;
+    }
+
+    .title {
+      margin: 1em 0.5em;
+      padding: 0em;
+      /* padding-bottom: 0.5em; */
+      white-space: normal;
+      border: none;
+    }
+
+    .contents {
+      margin-bottom: 2em;
+    }
+
+    .intro-section,
+    .main-section section {
+      margin: 0 1em;
+    }
+
+    .ordered-list,
+    .unordered-list {
+      padding-left: 1.2em;
+    }
+
+    .pro-con {
+      flex-direction: column;
+    }
+
+    .flex-wrapper {
+      flex-direction: column;
+    }
+
+    .example-images {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 2em;
+    }
+
+    .grid-item {
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .product-image {
+      width: 100%;
+    }
+
+    .sub-div {
+      margin-left: 0em;
+    }
+
+    .book-section {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .book-section-left {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .book-section-left p {
+      margin-right: 1em;
+      text-align: justify;
+      margin-left: 1em;
+    }
+
+    .book-section-left .heading {
+      text-align: center;
+      margin-top: 1.6em;
+      font-size: 1.5em;
+      margin-left: auto;
+      margin-right: auto;
+      width: 254px;
+    }
+
+    .book-section-right {
+      width: 90%;
+      margin-bottom: 3em;
+    }
+
+    .desktop-banner {
+      display: none;
+    }
+
+    .mobile-banner {
+      display: block;
+      max-width: 100%;
+      padding: 0;
+    }
+
+    .products-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .individual-product {
+      border-right: none;
+      border-bottom: 1px solid silver;
+      padding-bottom: 0.5em;
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    .grid-image {
+      width: 90%;
+      display: flex;
+      margin: 0px auto;
+    }
+
+    .location {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5em;
+    }
+
+    .locationText .heading {
+      text-size: 1.5em;
+      margin-top: 1.9em;
+      margin-bottom: -0.5em;
+    }
+
+    .allButton .btnOw {
+      width: 100%;
+    }
+
+    .item1 {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+      border: none;
+      padding-bottom: 0;
+      padding-top: 3.5em;
+    }
+
+    .locationText .heading {
+      text-align: center;
+    }
+
+    .item1 .locationImage,
+    .item1 .locationText {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+    }
+
+    .products-section {
+      display: none;
+    }
+
+    .nine-products-section {
+      display: none;
+    }
+
+    .individual-product {
+      display: flex;
+      margin: auto auto;
+    }
+
+    .products-section-mobile {
+      display: block;
+    }
+
+    .nine-products-section-mobile {
+      display: flex;
+      overflow-x: scroll;
+    }
+
+    .nine-products-section-mobile::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nine-products-section-mobile img {
+      width: 80%;
+    }
+
+    .grid-container-mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid-item span {
+      display: flex;
+      margin: 0 2em;
+    }
+
+    .grid-container-desktop {
+      display: none;
+    }
+
+    .product-container-mobile {
+      display: flex;
+      overflow-x: auto;
+    }
+
+    .nine-products-section-mobile {
+      position: relative;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+      width: 3vw;
+      height: 0;
+      top: 50%;
+    }
+
+    #main-cont-wrapper {
+      margin: 0em 1em;
+    }
+
+    .para-content {
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      word-spacing: -0.05em;
+    }
+
+    .mobile-word-space {
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      word-spacing: -0.1em !important;
+      text-align: justify;
+      font-size: 16px;
+    }
+
+    h5 {
+      font-size: 15px;
+    }
+
+    .btn-helth-funds {
+      height: 60px;
+      line-height: 20px;
+    }
+  }
+
+  /* big image */
+  .big_img_wapper {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .big_img {
+    border-radius: 8px;
+    width: 80%;
+  }
+
+  /* image with content section */
+  .image_with_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .para_wapper {
+    width: 50%;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    .image_with_content {
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    .para_wapper {
+      width: 100%;
+    }
+
+    .big_img_wapper {
+      width: 100%;
+    }
+
+    .big_img {
+      width: 100%;
+    }
+
+    .article-banner {
+      height: 500px;
+    }
+  }
+</style>
+<!-- new template styles start -->
+<style>
+  /* publish date start */
+  .intro-section.publsih-date {
+    margin: 0rem 3rem;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+
+  .publsih-date-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .publsih-date-wrapper p {
+    margin-bottom: 0px;
+    color: #003cac;
+    font-weight: 500;
+  }
+
+  .publsih-date-wrapper p:first-child {
+    border-right: 1.5px solid silver;
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .intro-section.publsih-date {
+      margin: 0em 1em 2em 1em;
+      padding-bottom: 10px;
+    }
+
+    .publsih-date-wrapper {
+      display: inline;
+    }
+
+    .publsih-date-wrapper p {
+      margin-bottom: 8px;
+      color: #003cac;
+      font-weight: 500;
+    }
+
+    .publsih-date-wrapper p:first-child {
+      border-right: 0px;
+      margin-right: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  /* publish date end */
+
+  /* top lang-sw start */
+  .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .lang-sw img {
+    max-width: 33px;
+  }
+
+  .language-switch {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .language-switch {
+      margin-right: 65px;
+    }
+  }
+
+  @media only screen and (max-width: 820px) {
+    .language-switch {
+      margin-right: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .lang-sw {
+      align-items: flex-start;
+    }
+
+    .language-switch {
+      margin-right: 0em;
+      margin-left: 0em;
+    }
+
+    .language-switch-dropdown-itmes-wrapper {
+      top: 40px;
+    }
+  }
+
+  /* top lang-sw end */
+
+  /* a links start */
+  .a-links {
+    margin: 3rem;
+  }
+
+  .a-links a {
+    color: #003cac;
+    font-weight: 700;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1.5px solid silver;
+  }
+
+  .a-links a:last-child {
+    border-right: 0px;
+  }
+
+  @media only screen and (max-width: 820px) {
+    .a-links {
+      margin: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .a-links {
+      margin: 3rem 1em;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  /* a link end */
+
+  /* bottom lang-sw start */
+  .bottom .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .bottom .language-switch {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  .lang-sw.bottom {
+    align-items: flex-start;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .bottom-lag-sw p {
+    margin-bottom: 0px;
+  }
+
+  .bottom-lag-sw {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .language-switch-dropdown-itmes-wrapper {
+      top: 40px;
+    }
+
+    .bottom-lag-sw {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 2em;
+      gap: 15px;
+    }
+
+    .lang-sw.bottom {
+      margin-left: 0px;
+    }
+
+    .column.main .product-items {
+      margin-left: 0;
+    }
+
+    .page-layout-1column
+      .page-wrapper
+      .block-products-list
+      .products-grid.non-swiper
+      .widget-product-grid
+      .product-item
+      .label-wrapper
+      .label-container
+      .label-discount {
+      font-size: 9.32px;
+      padding: 0px 5px;
+    }
+  }
+
+  /* bottom lang sw end */
+</style>
+<!-- new template styles end -->
+<div class="article-banner"><img class="banner desktop-banner" src="{{media url='wysiwyg/image-folder/glasses/eye/photochromic-lenses/Transition-Lenses-_Photochromic-Glasses_-Web-Banner-1940x840.jpg'}}" alt="Photochromic Lenses"> <img class="mobile-banner" src="{{media url='wysiwyg/image-folder/glasses/eye/photochromic-lenses/Transition-Lenses-_Photochromic-Glasses_-Mobile-Banner-770x900.jpg'}}" alt="Photochromic Lenses"></div>
+<div class="title-wrapper">
+<h1 class="title">Transition Lenses (Photochromic Glasses): How It Works, Cost and Benefits</h1>
+</div>
+<div class="intro-section publsih-date">
+<div class="publsih-date-wrapper"><!-- publish date start -->
+<p>Published on November 1st, 2023</p>
+<p><strong>Updated on February 14th, 2025</strong></p>
+<!-- publish date end -->
+<div class="lang-sw">
+<div class="language-switch">
+<div class="language-switch-current" onclick="toggleVisibility()"><!-- flag --> <img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/AU_Flag.jpg" alt=" Transition Lenses (Photochromic Glasses): How It Works, Cost and Benefits in Australian English"> Australia <!-- dropdown icon --> <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z" fill="black"></path> </svg></div>
+<div id="secondBox" class="language-switch-dropdown-itmes-wrapper" style="display: none;">
+<div class="language-switch-dropdown-itmes"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/AU_Flag.jpg" alt=" Transition Lenses (Photochromic Glasses): How It Works, Cost and Benefits in Australian English"> <a href="https://www.oscarwylee.com.au/glasses/eye/photochromic-lenses">Australia</a></div>
+<div class="language-switch-dropdown-itmes"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/CA_Flag.jpg" alt=" Transition Lenses (Photochromic Glasses): How It Works, Cost and Benefits in Canadian English"> <a href="https://oscarwylee.ca/glasses/eye/photochromic-lenses">Canada</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="intro-section">
+<p class="para-content"><span style="font-weight: 400;">Transition Lenses (photochromic glasses) are </span><b>a form of prescription glasses lenses that change from a clear to a dark tint when the glasses are exposed to sunlight. </b><span style="font-weight: 400;">Photochromic lenses are also known as transition lenses due to their function, as they “transition” from clear to dark. Here at Oscar Wylee, we provide the brand Transitions</span><span style="font-weight: 400;">® GEN S</span><span style="font-weight: 400;"> photochromic lenses at an additional price. The primary use for photochromic lenses is to provide both the vision correction of prescription glasses and the UV protection of sunglasses without needing to change frames. The benefits of photochromic lenses are their convenience, cost-effectiveness and their built-in UV protection. Having glasses that turn into sunglasses when exposed to sunlight can be handy for individuals as it removes the need to buy two different frames. Glasses with transition lenses or photochromic lenses work through a chemical reaction, in which a chemical or dye in the lens reacts when exposed to UV light.</span></p>
+</div>
+<!--  CTA aside-->
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="heading m-width-cta-1">See Our Passionate Team For Quality Eye Care</p>
+<p style="font-size: 16px;">We have dedicated optometrists at all our stores.</p>
+</div>
+<div class="book-section-right"><a href="https://www.oscarwylee.com.au/booking"> <button class="btnOw">Book an eye test</button> </a></div>
+</aside>
+<!--  CTA aside-->
+<p></p>
+<!-- a liks start -->
+<div class="a-links"><nav><a href="#Definition">Definition</a> <a href="#Polarised">Photochromic Lenses and Polarised Lenses</a> <a href="#Blue">Photochromic Lenses and Blue Light</a> <a href="#Factors">Performance Factors</a></nav></div>
+<!-- a liks end -->
+<div id="main-cont-wrapper" class="main-section">
+<div class="main-section">
+<section id="Definition" class="square-section">
+<h2 class="subtitle">What are Transition Lenses or Photochromic Lenses</h2>
+<p class="para-content"><span style="font-weight: 400;">Photochromic lenses are </span><strong>a type of glasses lens that are clear when inside or in the shade but will darken to resemble the tint of sunglasses when they are exposed to sunlight</strong><span style="font-weight: 400;">. A photochromic lens is coated with a chemical that darkens in response to direct ultraviolet light that is emitted from the sun. </span><span style="font-weight: 400;">Photochromic lenses</span><span style="font-weight: 400;"> or </span><span style="font-weight: 400;">adaptive lenses</span> <span style="font-weight: 400;">may be suitable for people who need the vision correction provided by normal prescription glasses but do not want to switch between prescription glasses and sunglasses when moving inside and outside. Photochromic lenses adapt according to the available sunlight meaning a person can have sunglasses and prescription glasses all in one. Learn more about our photochromic lenses, what they are and how they work below.</span></p>
+<div class="sub-div">
+<h3 class="con-title">What Do Photochromic Lenses Do?</h3>
+<p class="para-content"><span style="font-weight: 400;">Photochromic lenses </span><strong>change from clear to a dark tint when you are exposed to sunlight. They are designed to provide clear vision and protection from sun exposure all in one frame. </strong><span style="font-weight: 400;">The darkening of the lens is due to the molecules in the lenses that are light-sensitive and change their structure when exposed to sunlight. When they are out of the sunlight or in the shade, they return to clear lenses.</span></p>
+</div>
+<!-- SEO Image 1 Alt + Tag: Illustrated cloud and moon, cloud and sun and sun above the different shade levels of photochromic lenses. -->
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img class="product-image" src="{{media url='wysiwyg/image-folder/glasses/eye/photochromic-lenses/What-Do-Photochromic-Lenses-Do-900x600.jpg'}}" alt="Illustrated cloud and moon, cloud and sun and sun above the different shade levels of photochromic lenses."></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img class="product-image" src="{{media url='wysiwyg/image-folder/glasses/eye/photochromic-lenses/What-Do-Photochromic-Lenses-Do-900x600.jpg'}}" alt="Illustrated cloud and moon, cloud and sun and sun above the different shade levels of photochromic lenses."></div>
+</div>
+<div class="sub-div">
+<h3 class="con-title">How Much Do Transition Lenses Cost For Glasses?</h3>
+<p class="para-content"><span style="font-weight: 400;">Photochromic lenses are at </span><strong>an additional cost on top of the price of a standard pair of glasses. </strong><span style="font-weight: 400;">The price range for prescription glasses with photochromic lenses </span><strong>can differ depending on your vision requirements.</strong></p>
+<div class="sub-div">
+<h4 class="con-title">Do Transition Lenses Block UV Light?</h4>
+<p class="para-content"><span style="font-weight: 400;">Yes, photochromic lenses </span><strong>can block UV light, however, this will depend on the brand of your frames. </strong><span style="font-weight: 400;">The inclusion of UV light protection in lenses can differ across different eyewear companies.</span><strong> At Oscar Wylee, UV 400 protection is featured in all our lenses for prescription and non-prescription eyewear,</strong><span style="font-weight: 400;"> therefore, our photochromic lenses can block UV light. UV 400 protection on lenses means that they protect up to 400 nanometres of UV light. UV light or ultraviolet light is defined as radiation energy emitted from the sun and occurs in three forms, UVA, UVB and UVC. UVA measures around 315-400 nanometres (nm), UVB measures 280-315 nm and UVC is 100-280 nm according to the World Health Organisation (WHO). <a href="https://www.oscarwylee.com.au/glasses/eye/uv-blocking">UV-blocking lenses</a> are essential for optimal eye protection during sun exposure and can help prevent the build-up of UV light damage according to the Cancer Council.</span></p>
+<h4 class="con-title">Are Transition Lenses Worth it?</h4>
+<p class="para-content"><span style="font-weight: 400;">Yes, transition lenses can be worth it </span><strong>depending on your preferences and lifestyle</strong><span style="font-weight: 400;">. Transition lenses are convenient as they eliminate the need for needing to switch between your prescription frames and sunglasses when out and about. Transition lenses may be especially suitable for those who frequently shift between indoor and outdoor environments, those who don’t want to carry more than one pair of glasses and people who may have light sensitivity or are vulnerable to eye strain.</span></p>
+</div>
+</div>
+<!-- SEO Image 2 Alt Text: A three-part image showing a person wearing photochromic lenses as they change from clear indoors, to mid-transition in cloudy weather, and dark outdoors.-->
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img class="product-image" src="{{media url='wysiwyg/image-folder/glasses/eye/photochromic-lenses/Are-Photochromic-Lenses-Worth-it_900x600.jpg'}}" alt="three-part image showing a person wearing photochromic lenses as they change from clear indoors, to mid-transition in cloudy weather, and dark outdoors."></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img class="product-image" src="{{media url='wysiwyg/image-folder/glasses/eye/photochromic-lenses/Are-Photochromic-Lenses-Worth-it_900x600.jpg'}}" alt="three-part image showing a person wearing photochromic lenses as they change from clear indoors, to mid-transition in cloudy weather, and dark outdoors."></div>
+</div>
+</section>
+<section class="square-section">
+<h2 class="subtitle">What are the Benefits of Photochromic Lenses?</h2>
+<p class="para-content"><span style="font-weight: 400;">The benefits of photochromic lenses include</span><strong> convenience, UV protection, cost-effectiveness, and style and aesthetics.</strong><span style="font-weight: 400;"> The benefits of photochromic lenses are listed below. </span></p>
+<!-- ol ul -->
+<ul class="ordered-list">
+<li><strong>Convenience: </strong><span style="font-weight: 400;">One of the significant benefits of photochromic lenses is their convenience as you can have vision correction and sun protection in just one frame.</span></li>
+<li><strong>UV Protection:</strong><span style="font-weight: 400;"> UV protection for your eyes can help prevent damage from prolonged exposure to the sun’s UV light. </span></li>
+<li><strong>Cost-Effectiveness: </strong><span style="font-weight: 400;">Cost-effectiveness is a benefit of photochromic lenses as it eliminates the need to buy more than one frame.</span></li>
+<li><span style="font-weight: 400;"><strong>Style and Aesthetics:</strong> Style and aesthetics are another benefit of photochromic lenses as they provide wearers with a fashionable look.</span></li>
+</ul>
+<p>&nbsp;</p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">1. Convenience</h2>
+<p class="para-content"><span style="font-weight: 400;">A significant benefit of photochromic lenses is their convenience </span><strong>as they combine the functions of sunglasses and prescription lenses in one frame,</strong><span style="font-weight: 400;"> meaning people do not need to switch between glasses. You can change between indoor and outdoor environments with seamless transitioning frames.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">2. UV Protection</h2>
+<p class="para-content"><span style="font-weight: 400;">UV protection for your eyes can </span><strong>help prevent damage from prolonged exposure to the sun’s UV light. </strong><span style="font-weight: 400;">While many photochromic lenses do feature UV protection, not all eyewear brands provide the same amount of protection. Therefore it is important to check that your lenses have UV 400 protection. All Oscar Wylee lenses are equipped with UV 400 protection, ensuring the highest level of protection for your eyes even when wearing photochromic lenses.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">3. Cost-Effectiveness</h2>
+<p class="para-content"><span style="font-weight: 400;">Photochromic lenses can be a cost-effective eyewear choice</span><strong> as the combination of sunglasses and prescription glasses in one frame limits the need to buy two separate frames. </strong><span style="font-weight: 400;">However, the price range for photochromic lenses can be different between individuals depending on their prescription needs.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">4. Style and Aesthetics</h2>
+<p class="para-content"><span style="font-weight: 400;">Photochromic lenses may also provide visual benefits with their style and aesthetics as </span><strong>you can get them added onto a wide range of different frame options.</strong><span style="font-weight: 400;"> Oscar Wylee has a wide range of frames in varied styles and colours you may add photochromic lenses to. You can experience clear vision and sun protection without compromising style.</span></p>
+<!-- SEO Image 3 Alt + Tag: Infographic of photochromic lens benefits, which consists of a coin to represent cost-effectiveness, two pairs of glasses to represent 2 pairs of glasses in 1, another pair of glasses to represent built-in UV protection and an eye to represent eye comfort. -->
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img class="product-image" src="{{media url='wysiwyg/image-folder/glasses/eye/photochromic-lenses/What-are-the-Benefits-of-Photochromic-Lenses-900x600.jpg'}}" alt="Infographic of photochromic lens benefits, which consists of a coin to represent cost-effectiveness, two pairs of glasses to represent 2 pairs of glasses in 1, another pair of glasses to represent built-in UV protection and an eye to represent eye comfort."></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img class="product-image" src="{{media url='wysiwyg/image-folder/glasses/eye/photochromic-lenses/What-are-the-Benefits-of-Photochromic-Lenses-900x600.jpg'}}" alt="Infographic of photochromic lens benefits, which consists of a coin to represent cost-effectiveness, two pairs of glasses to represent 2 pairs of glasses in 1, another pair of glasses to represent built-in UV protection and an eye to represent eye comfort."></div>
+</div>
+<div class="sub-div">
+<h3 class="con-title">Do Transition Lenses Work Indoors?</h3>
+<p class="para-content"><span style="font-weight: 400;">Yes, transition lenses do work indoors </span><strong>as they will appear clear and provide vision correction. </strong><span style="font-weight: 400;">When you are indoors or when you are out of direct light exposure, photochromic lenses will return to clear lenses.</span></p>
+<div class="sub-div">
+<h4 class="con-title">Do Transition Lenses Work at Night?</h4>
+<p class="para-content"><span style="font-weight: 400;">Yes and no, transition lenses can work at night as </span><strong>they will remain clear and provide clear vision.</strong><span style="font-weight: 400;"> However, transition lenses won’t shift to a dark tint as there is no sunlight and therefore, no need for the glasses to provide sun protection.</span></p>
+<h4 class="con-title">Are Photochromic Lenses Suitable For Driving?</h4>
+<p class="para-content"><span style="font-weight: 400;">Photochromic lenses </span><strong>can be used as optical glasses when driving during the day, but they may not fully transition into the darker sunglass tint. Some photochromic lenses require exposure to ultraviolet (UV) light, which is emitted from the sun, to turn from a clear to a darker tint. </strong><span style="font-weight: 400;">According to the Cancer Council, the glass used for the windshield and windows will block one type of UV light called UVB light. The amount of UVA light that is blocked depends on the material of the windshield. The ability of the windshield and windows in a car to block UV rays means that photochromic lenses may not work as well as if they have been exposed to direct sunlight. It may be necessary to have separate sunglasses for driving.</span></p>
+</div>
+</div>
+</section>
+<section id="Impact" class="square-section">
+<h2 class="subtitle">What Types of Glasses Can Have Transition Lenses?</h2>
+<p class="para-content"><span style="font-weight: 400;">The type of glasses that can have transition lenses </span><strong>can be up to your preference</strong><span style="font-weight: 400;">. You can choose most types of glasses for transition lenses as they are typically produced with special dyes that chemically react when exposed to sunlight according to Eye Care Centre. At Oscar Wylee you can choose from a wide selection of frames to add transition lenses to. Our styles are a mix of classic, vintage-inspired, modern, minimal and bold.</span></p>
+<!-- SEO Image 4 Alt + Tag: Three pairs of different glasses frames that can have transition lenses  -->
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img class="product-image" src="{{media url='wysiwyg/image-folder/glasses/eye/photochromic-lenses/What-Types-of-Glasses-Can-Have-Transition-Lenses-900x600.jpg'}}" alt="Three pairs of different glasses frames that can have transition lenses"></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img class="product-image" src="{{media url='wysiwyg/image-folder/glasses/eye/photochromic-lenses/What-Types-of-Glasses-Can-Have-Transition-Lenses-900x600.jpg'}}" alt="Three pairs of different glasses frames that can have transition lenses"></div>
+</div>
+<div id="Polarised" class="sub-div">
+<h3 class="con-title">What is the Difference Between Transition Lenses and Polarised Lenses?</h3>
+<p class="para-content"><span style="font-weight: 400;">The difference between transition lenses and polarised lenses </span><strong>is their purposes</strong><span style="font-weight: 400;">. </span><strong>Transition lenses are photochromic, meaning they automatically adjust their tint in response to UV light, darkening in bright sunlight and returning to clear when indoors or in low-light conditions</strong><span style="font-weight: 400;">. This adaptability makes them convenient for people who frequently move between indoor and outdoor environments, as they eliminate the need to switch between prescription glasses and sunglasses. On the other hand, </span><a href="https://www.oscarwylee.com.au/glasses/eye/polarised-lenses"><strong>polarised lenses</strong></a><strong> are designed to reduce glare by filtering out horizontal light waves that reflect off surfaces like water, roads, or snow.</strong><span style="font-weight: 400;"> This helps enhance visual clarity and comfort, particularly in bright conditions. While transition lenses focus on adapting to light levels, polarised lenses focus on reducing glare for optimal vision and comfort, especially during outdoor activities like driving, fishing, or skiing. These two types of lenses address different aspects of vision. </span></p>
+<div class="sub-div">
+<h4 class="con-title">Can Transition Lenses Replace Sunglasses?</h4>
+<p class="para-content"><span style="font-weight: 400;">Yes, transition lenses may be used as sunglasses for the purpose of UV protection. </span><b>Transition lenses are designed to shift from clear to dark when exposed to ultraviolet light. Transition lenses are essentially glasses that turn into sunglasses when in the sun. </b><span style="font-weight: 400;">The dark photochromic lens will work in the same way as the tint on regular sunglasses, helping to protect the eyes from UV radiation emitted from the sun. Both our in-house brand and the Transitions</span><span style="font-weight: 400;">®</span><span style="font-weight: 400;"> brand offer category 3 protection when the lenses are at their darkest making them suitable to function as sunglasses. However, if a person requires additional protection from their sunglasses, such as protection from glare in the form of polarisation, this may not be included. It is important to check with the retailer of your transition lenses to be certain of what protection they offer so you can ensure your eye care needs are being met.</span></p>
+</div>
+</div>
+</section>
+<!--  CTA aside-->
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="heading m-width-cta-2">We Offer Bulk Billed Eye Tests!</p>
+<p style="font-size: 16px;">See our team in-store or book your next appointment online.</p>
+</div>
+<div class="book-section-right"><a href="https://www.oscarwylee.com.au/locations/full-store-list.html"> <button class="btnOw">Find a store</button> </a></div>
+</aside>
+<!--  CTA aside-->
+<section id="Blue" class="square-section">
+<div class="sub-div">
+<div class="sub-div">
+<h4 class="con-title">Do Transition Lenses Protect Against Blue Light?</h4>
+<p class="para-content"><span style="font-weight: 400;">Yes, transition lenses </span><strong>may be able to protect against a certain amount of blue light</strong><span style="font-weight: 400;"> as they are designed to change to a darker tint for UV protection. According to Zeiss, photochromic lenses are able to provide protection against blue light from the sun and and artificial light source. However, you can purchase specific glasses for </span><a href="https://www.oscarwylee.com.au/glasses/blue-light"><span style="font-weight: 400;">blue light</span></a><span style="font-weight: 400;">. It is important to note that while more research is required for blue light and its effects, blue light glasses are not harmful to your eyes making them a safe eyewear option.</span></p>
+</div>
+</div>
+</section>
+<section id="Factors" class="square-section">
+<h2 class="subtitle">What Factors Affect the Performance of Photochromic Lenses?</h2>
+<p class="para-content"><span style="font-weight: 400;">The factors that affect the performance of photochromic lenses can include </span><strong>temperature, UV intensity and age of lenses. </strong><span style="font-weight: 400;">The factors that may affect the performance of photochromic lenses are listed below.</span></p>
+<!-- oi ul --><!-- ol ul -->
+<ul class="ordered-list">
+<li><strong>Temperature: </strong><span style="font-weight: 400;">Temperature can affect the performance of photochromic lenses with high temperatures causing the lenses to darken more quickly and cold temperatures causing them to fade more slowly.</span></li>
+<li><strong>UV Intensity: </strong><span style="font-weight: 400;">UV intensity can affect the performance of photochromic lenses as higher UV levels can cause the lenses to increase in darkness. Lower UV temperatures will cause them to remain clear or slightly tinted.</span></li>
+<li><strong>Age of Lenses: </strong><span style="font-weight: 400;">The age of lenses in photochromic glasses can affect their performance as they may work less effectively over time.</span></li>
+</ul>
+<p>&nbsp;</p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">1. Temperature</h2>
+<p class="para-content"><span style="font-weight: 400;">The temperature of the climate </span><strong>may be a factor that can affect the performance of photochromic lenses as it can impact how fast or slow the lenses change.</strong><span style="font-weight: 400;"> Higher temperatures can cause the lenses to darken more slowly or remain lighter. Photochromic lenses can typically be less reactive in warmer temperatures because the heat may reduce the chemical reaction that darkens the lenses. In colder temperatures, photochromic lenses may respond more slowly to changes in UV light. They may not darken as quickly when exposed to sunlight or may remain lighter in colour. This may be due to the chemical reaction in the lenses slowing down in cooler temperatures according to the National Institutes of Health.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">2. UV Intensity</h2>
+<p class="para-content"><span style="font-weight: 400;">UV intensity can be another factor that <strong>affects the performance of photochromic lenses as&nbsp; most photochromic lenses are reactive to UV light.</strong> Photochromic lenses may shift to a darker tint under higher UV level conditions while lower UV levels may cause the lenses to remain clear or slightly tinted according to Science Direct. Higher UV levels mean the molecules in the photochromic lenses are more reactive leading to a darker tint. Lower UV levels may occur during overcast conditions or when under shade or indoors.</span></p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">3. Age of Lenses</h2>
+<p class="para-content"><span style="font-weight: 400;">The age of lenses may affect the performance of photochromic lenses a</span><strong>s over time glasses in general can become less effective.</strong><span style="font-weight: 400;"> Therefore it is important to not only see your optometrist at least once every 2 years to check your vision but so they can also check whether you need to adjust your frames or prescription. The frequency of optometrist visits will vary between individuals or if you are 65 years or older.</span></p>
+<div class="sub-div">
+<h3 class="con-title">How Long Do Transition Lenses Last?</h3>
+<p class="para-content"><span style="font-weight: 400;">Transition lenses </span><strong>may last up to 2 years or more when properly cared for and maintained.</strong><span style="font-weight: 400;"> It is important to get your eyes tested at least once every 2 years unless advised otherwise by your optometrist. When you come in for your routine eye check-up, the optometrist will be able to check if you need to replace or adjust your prescription and monitor the condition of your frames.</span></p>
+<div class="sub-div">
+<h4 class="con-title">Are Transition Glasses Available in Different Colours?</h4>
+<p class="para-content"><span style="font-weight: 400;">Yes, transition glasses </span><strong>are available in different colours. You can choose any style of frame that you think fits your personality and lifestyle the most.</strong><span style="font-weight: 400;"> At Oscar Wylee, our team can also assist with recommending what may be most suitable for your face shape and will provide expert advice to cater to your visual needs. You can browse our wide range of frame styles, shapes and colours in-store or online.</span></p>
+</div>
+<h3 class="con-title">Who Should Use Photochromic Lenses?</h3>
+<p class="para-content"><span style="font-weight: 400;">The people who use photochromic lenses are typically </span><strong>those who need prescription glasses and do not wish to switch between these glasses and a pair of sunglasses. </strong><span style="font-weight: 400;">Prescription glasses refer to glasses that have a power or prescription over the lens. Prescription lenses assist in the correction of refractive errors such as myopia, hyperopia, presbyopia and astigmatism, which can affect vision. If a person has prescription glasses, they may also need sunglasses or prescription sunglasses so they can see clearly when outside in the sun. Photochromic lenses allow these people to have their prescription glasses and sunglasses combined into one.</span></p>
+<div class="sub-div">
+<h4 class="con-title">Do Transition Lenses Work in Cold Weather?</h4>
+<p class="para-content"><span style="font-weight: 400;">Yes transition lenses </span><strong>do still work in cold weather, however, they may change tint shades more slowly.</strong><span style="font-weight: 400;"> Transition lenses may take longer to adapt in colder weather according to the American Academy of Ophthamology. </span></p>
+<h4 class="con-title">Can Transition Lenses be Used With Prescription Glasses?</h4>
+<p class="para-content"><span style="font-weight: 400;">Yes, transition lenses </span><strong>can be used with prescription glasses. Transition lenses are defined as </strong><a href="https://www.oscarwylee.com.au/glasses.html"><strong>prescription glasses</strong></a><strong> that are coated with certain chemicals </strong><span style="font-weight: 400;">that change in structure when exposed to sunlight. The photochromic lens is what you can ask to add on to your prescription glasses if you want to remove the need to carry two different frames.</span></p>
+<h4 class="con-title">Are Transition Lenses Good for Kids?</h4>
+<p class="para-content"><span style="font-weight: 400;">Transition lenses can be good for kids as </span><strong>it allows for convenient UV protection. As they switch between the classroom and the playground, school kids find themselves in indoor and outdoor conditions frequently.</strong><span style="font-weight: 400;"> Transition lenses can easily adapt to these environmental changes as the lenses darken automatically when exposed to UV light. This can prove particularly beneficial in the summertime and to kids who have a particular sensitivity to excessive sunlight.</span></p>
+</div>
+</div>
+</section>
+<section class="square-section">
+<h2 class="subtitle">What are the Disadvantages of Transition Lenses?</h2>
+<p class="para-content"><span style="font-weight: 400;">Some of the disadvantages of transition lenses include their </span><strong>ineffectiveness in cars, slower transition in colder weather, and potentially poor transition.</strong><span style="font-weight: 400;"> The disadvantages of transition lenses are listed below. </span></p>
+<!-- oi ul --><!-- ol ul -->
+<ul class="ordered-list">
+<li><strong>Ineffectiveness in cars: </strong><span style="font-weight: 400;">The infectiveness of transition lenses in cars can be a disadvantage to wearers. Transition lenses react to UV rays, but many windshields are designed to block most UV rays anyway. Some transition lenses will receive little to no UV rays, preventing them from transitioning to a suitable darker shade.</span></li>
+<li><strong>Slower transition in colder weather: </strong><span style="font-weight: 400;">Some transition lenses may have a slow transition to adjust and darken in colder weather. When the weather is cold, the molecules in the lenses move slower than when it’s warm, causing them to transition more slowly which can be ineffective while wearing.</span></li>
+<li><strong>Potentially poor transition: </strong><span style="font-weight: 400;">There can be poor transition adjustment times for certain transition glasses. This can be very inconvenient, especially for those moving in between various weather conditions frequently.</span></li>
+</ul>
+<div class="sub-div">
+<h3 class="con-title">How Do You Care For Transition Lenses?</h3>
+<p class="para-content"><span style="font-weight: 400;">To care for your transition lenses ensure you </span><strong>wash your hands thoroughly before cleaning, gently rinse using lukewarm water, apply a small amount of mild dish soap and dry them with a microfibre cloth</strong><span style="font-weight: 400;">. The steps on how to care for transition lenses are listed below.</span></p>
+<!-- ol ul -->
+<ol class="ordered-list">
+<li><strong>Wash your hands:</strong><span style="font-weight: 400;"> W</span><span style="font-weight: 400;">ash your hands thoroughly</span><span style="font-weight: 400;"> before cleaning to avoid transferring dirt or oil to your lenses.</span></li>
+<li><strong>Gently rinse using lukewarm water:</strong><span style="font-weight: 400;"> Gently rinse your lenses under lukewarm water to remove any surface debris. Avoid using hot water, as it may damage the lens coating.</span></li>
+<li><strong>Apply a small amount of </strong><strong>mild dish soap</strong><span style="font-weight: 400;">: Apply a small amount of mild dish soap to your fingertips and carefully clean the lenses in a circular motion. Then rinse the lenses again to get rid of soapy residue.</span></li>
+<li><span style="font-weight: 400;"><strong>Dry them with a microfibre cloth:</strong> Gently dry your lenses off with a microfibre cloth. This is the best material for this purpose, as it is gentle on surfaces.</span></li>
+</ol>
+<h3 class="con-title">Where Can You Buy Transition or Photochromic Lenses?</h3>
+<p class="para-content"><span style="font-weight: 400;">You can buy transition lenses </span><strong>at most retail eyewear stores such as Oscar Wylee. </strong><span style="font-weight: 400;">It is best to ultimately try the lenses for yourself and get them fitted and tested with retail assistance to ensure they are compatible with your eyes. At </span><a href="https://www.oscarwylee.com.au/?gclid=Cj0KCQjwpPKiBhDvARIsACn-gzBJlqNF5rOWKExB_cLmK1GWQcj5KLPXA61qNOuIFcXtu2ksx_HgT3oaAqH3EALw_wcB"><span style="font-weight: 400;">Oscar Wylee,</span></a><span style="font-weight: 400;"> you can expect an abundant range of frames with different styles to cater to different style aesthetics, whether you need bold, minimal, modern, vintage-inspired or colourful frames.</span></p>
+</div>
+<div class="bottom-lag-sw">
+<p class="para-content">Read Transition Lenses (Photochromic Glasses): How It Works, Cost and Benefits in other Oscar Wylee regions and their languages.</p>
+<div class="lang-sw bottom">
+<div class="language-switch">
+<div id="language-switch-current" class="language-switch-current" onclick="toggleVisibilityBtnTwo()"><!-- flag --> <img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/AU_Flag.jpg" alt=" Transition Lenses (Photochromic Glasses): How It Works, Cost and Benefits in Australian English"> Australia <!-- dropdown icon --> <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z" fill="black"></path> </svg></div>
+<div id="language-switch-dropdown-itmes-wrapper" class="language-switch-dropdown-itmes-wrapper" style="display: none;">
+<div class="language-switch-dropdown-itmes"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/AU_Flag.jpg" alt=" Transition Lenses (Photochromic Glasses): How It Works, Cost and Benefits in Australian English"> <a href="https://www.oscarwylee.com.au/glasses/eye/photochromic-lenses">Australia</a></div>
+<div class="language-switch-dropdown-itmes"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/CA_Flag.jpg" alt=" Transition Lenses (Photochromic Glasses): How It Works, Cost and Benefits in Canadian English"> <a href="https://oscarwylee.ca/glasses/eye/photochromic-lenses">Canada</a></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- add bottom CTA section here -->
+<aside class="context"><!-- Location and booking  -->
+<div class="location" style="border-top: none;">
+<div class="locationText">
+<p class="heading">When was your last eye test?</p>
+<p class="contents">At Oscar Wylee we offer bulk billed eye tests for eligible Medicare card holders.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/booking"> <button class="btnOw">Book an eye test</button> </a></div>
+</div>
+<img class="locationImage" src="{{media url='wysiwyg/image-folder/glasses/cta/Eye-Test-Oscar-Wylee-5.jpg'}}" alt="Book an eye test at oscar wylee"></div>
+<div class="location item1"><img class="locationImage" src="{{media url='wysiwyg/image-folder/glasses/cta/Health-Fund-CTA.jpg}}" alt="Health Fund at oscar wylee">
+<div class="locationText">
+<p class="heading">Major Health Funds Accepted In-store</p>
+<p class="contents">For the purchase of frames and lenses, use your private health fund insurance to cover some of the cost.</p>
+<div class="allButton"><a href="https://www.oscarwylee.com.au/health-funds.html"> <button class="btnOw">Explore health funds</button> </a></div>
+</div>
+</div>
+</aside>
+</div>
+<p>
+<script>
+    const productContainers = [
+      ...document.querySelectorAll(".product-container"),
+    ];
+    const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
+    const preBtn = [...document.querySelectorAll(".pre-btn")];
+
+    productContainers.forEach((item, i) => {
+      let containerDimensions = item.getBoundingClientRect();
+      let containerWidth = containerDimensions.width;
+
+      nxtBtn[i].addEventListener("click", () => {
+        item.scrollLeft += containerWidth;
+      });
+
+      preBtn[i].addEventListener("click", () => {
+        item.scrollLeft -= containerWidth;
+      });
+    });
+
+    // top lang-sw
+    document.addEventListener("click", function (event) {
+      var secondBox = document.querySelector(
+        ".language-switch-dropdown-itmes-wrapper"
+      );
+      var firstBox = document.querySelector(".language-switch-current");
+
+      // Check if the clicked element is outside the second box and the first box
+      if (
+        !secondBox.contains(event.target) &&
+        !firstBox.contains(event.target)
+      ) {
+        secondBox.style.display = "none";
+      }
+    });
+
+    function toggleVisibility() {
+      var secondBox = document.querySelector(
+        ".language-switch-dropdown-itmes-wrapper"
+      );
+      secondBox.style.display =
+        secondBox.style.display === "none" ? "flex" : "none";
+    }
+
+    // bottom lang-sw
+    document.addEventListener("click", function (event) {
+      var secondBox = document.querySelector(
+        "#language-switch-dropdown-itmes-wrapper"
+      );
+      var firstBox = document.querySelector("#language-switch-current");
+
+      // Check if the clicked element is outside the second box and the first box
+      if (
+        !secondBox.contains(event.target) &&
+        !firstBox.contains(event.target)
+      ) {
+        secondBox.style.display = "none";
+      }
+    });
+
+    function toggleVisibilityBtnTwo() {
+      var secondBox = document.querySelector(
+        "#language-switch-dropdown-itmes-wrapper"
+      );
+      secondBox.style.display =
+        secondBox.style.display === "none" ? "flex" : "none";
+    }
+  </script>
+</p>

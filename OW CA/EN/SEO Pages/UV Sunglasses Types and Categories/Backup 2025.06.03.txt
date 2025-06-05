@@ -1,0 +1,1426 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+
+  h3,
+  h4 {
+    color: white;
+  }
+
+  * {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #333333; */
+    line-height: 1.3em;
+    scroll-behavior: smooth;
+  }
+
+  #maincontent {
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  .banner {
+    width: auto;
+    max-height: 450px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+  }
+
+  .mobile-banner {
+    display: none;
+  }
+
+  .title {
+    /* border-bottom: 1px solid silver; */
+    padding: 2.5rem 3rem;
+    margin: 2.5rem 3rem;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 10px solid #003cac;
+    padding: 1rem;
+    font-weight: 700;
+  }
+
+  .italic-title {
+    font-style: italic;
+  }
+
+  .italic-wrapper {
+    margin-bottom: 2em;
+  }
+
+  .intro-section {
+    margin: 3rem;
+    /* border-bottom: 1px solid silver; */
+  }
+
+  .main-section section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .section-border-bottom {
+    border-bottom: 1px solid silver;
+    margin: 3rem;
+  }
+
+  .book-section {
+    display: flex;
+    padding-left: 1em;
+    /* padding-bottom: 2.5em; */
+    padding-top: 0em;
+  }
+
+  .book-section p {
+    margin-bottom: 1.5em;
+  }
+
+  .book-section-left {
+    width: 50%;
+    margin-left: 0;
+    padding-left: 1.5em;
+  }
+
+  .book-section-left .heading {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+  }
+
+  .book-section-right {
+    display: flex;
+    margin: auto auto;
+    width: 30%;
+  }
+
+  .book-section-right a {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+  }
+
+  .btnOw:hover {
+    background-color: black;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    border: none !important;
+  }
+
+  .btnOw {
+    background-color: #003cac;
+    width: 100%;
+    /* padding: 0px 50%; */
+    border: none;
+    color: #fff;
+    height: 2em;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .para-content {
+    /* margin-top: 1em; */
+    margin-bottom: 2em;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .list-title {
+    font-weight: 700;
+  }
+
+  .ordered-list,
+  .unordered-list {
+    padding-left: 4rem;
+    margin-top: 2em;
+  }
+
+  .unordered-list {
+    margin-bottom: 2em;
+  }
+
+  .ordered-list li,
+  .unordered-list li {
+    margin-bottom: 0.8em;
+    font-size: 16px;
+  }
+
+  .pro-con {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .pro-con li {
+    margin-bottom: 0.8em;
+  }
+
+  .pro-title,
+  .con-title,
+  .sub-list-title,
+  .sub-div-title {
+    border-left: 10px solid #b1b4b2;
+    padding: 0rem 1rem;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  .sub-list-title {
+    font-size: medium;
+    margin-left: 3em;
+  }
+
+  .pro-list,
+  .con-list {
+    margin-left: 2em;
+  }
+
+  .pro-section,
+  .con-section {
+    flex: 1 1 0;
+  }
+
+  .sub-div {
+    margin-left: 2em;
+  }
+
+  .sub-div .para-content {
+    margin-left: 0;
+  }
+
+  .grid-image {
+    width: 100%;
+    margin-bottom: 0.3em;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    column-gap: 3em;
+    width: 70%;
+    margin: 2em auto;
+  }
+
+  .grid-item {
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  .grid-item span {
+    font-style: italic;
+    font-weight: 700;
+    font-size: x-small;
+  }
+
+  .grid-text {
+    text-align: center;
+    font-size: x-small;
+    margin-bottom: 2em;
+  }
+
+  .grid-title {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    margin-bottom: 2em;
+  }
+
+  .flex-image {
+    width: 80%;
+    display: flex;
+    margin: 2em auto;
+    max-width: 700px;
+  }
+
+  .hightlight-list {
+    font-weight: 600;
+  }
+
+  .example-images {
+    row-gap: 2em;
+  }
+
+  .product-image {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .products-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .individual-product {
+    border-right: 1px solid silver;
+    margin-bottom: 2em;
+    display: flex;
+    /* margin-left: 1em; */
+  }
+
+  .individual-product:last-child {
+    border: none;
+  }
+
+  .product-name,
+  .product-price {
+    text-align: center;
+  }
+
+  .product-button {
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin-top: 1em;
+  }
+
+  .two-pairs-price,
+  .three-pairs-price {
+    text-align: center;
+    /* margin-top: 2em; */
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 1em;
+  }
+
+  .two-pairs-price {
+    margin-bottom: 1em;
+  }
+
+  .two-pairs-price span,
+  .three-pairs-price span {
+    display: block;
+  }
+
+  .two-pairs-price {
+    background-color: #003cac;
+  }
+
+  .three-pairs-price {
+    background-color: black;
+  }
+
+  .from {
+    font-weight: 300;
+    color: white;
+    line-height: 10px;
+  }
+
+  .product-right {
+  }
+
+  .context {
+    padding: 0 3rem;
+  }
+
+  .location {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: max-content;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+    padding-top: 0;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid silver;
+  }
+
+  .location .heading {
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+
+  .item1 {
+    border: none;
+  }
+
+  .locationText .heading {
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+
+  .locationText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.5em;
+  }
+
+  .locationText p {
+    font-size: 16px;
+    margin-top: 2em;
+  }
+
+  .locationImage {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  .allButton {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .allButton a {
+    text-decoration: none;
+  }
+
+  .allButton .btnOw {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .item1 {
+    padding-top: 2em;
+  }
+
+  .products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .nine-products-section img {
+    width: 30%;
+    border-right: 1px solid silver;
+  }
+
+  .nine-products-section img:last-child {
+    border: none;
+  }
+
+  .nine-products-section-gender {
+    margin-left: 0;
+  }
+
+  .grid-container-mobile {
+    display: none;
+  }
+
+  .contents {
+    margin-bottom: 2em;
+  }
+
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+    padding: 0;
+  }
+
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  .nxt-btn {
+    right: 0;
+  }
+
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+    width: 1em;
+  }
+
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+
+  .pre-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nxt-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nine-products-section {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .product-container {
+    /* padding: 0 10vw; */
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .product-container a {
+    display: contents;
+  }
+
+  .intro-border-top {
+    border-top: 1px solid silver;
+    padding-top: 2.5em;
+  }
+
+  .para-content-border-bottom {
+    border-bottom: 1px solid silver;
+    padding-bottom: 2.5em;
+  }
+
+  .h4-change {
+    font-size: large;
+    font-weight: 600;
+  }
+
+  .product-image-single {
+    width: 50%;
+  }
+
+  .seo-images {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 3em;
+  }
+
+  .flexContainer,
+  .flexContainerFrame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* margin-bottom: 2rem; */
+  }
+
+  .flexContainerFrame {
+    gap: 2.5rem;
+  }
+
+  .flexText {
+    width: 44%;
+    min-width: 350px;
+    /* background-color: #fff; */
+    /* border-radius: 10px; */
+    /* -webkit-border-radius: 10px;
+                  -moz-border-radius: 10px;
+                  -ms-border-radius: 10px;
+                  -o-border-radius: 10px; */
+    padding: 1rem 0.5rem;
+    /* border: 2px dashed #cbc5a3; */
+    margin: 0 1rem;
+    align-self: stretch;
+  }
+
+  .flexText p {
+    text-align: left;
+  }
+
+  .flexText img {
+    width: 80%;
+    padding-left: 12%;
+  }
+
+  .imageTwo {
+    width: 50%;
+    padding-top: 1rem;
+    margin: auto;
+  }
+
+  .sub-div-title,
+  .pro-title,
+  .con-title {
+    color: black;
+  }
+
+  @media screen and (max-width: 440px) {
+    * {
+      line-height: 1.5em;
+    }
+
+    .title {
+      margin: 1em 0.5em;
+      padding: 0em;
+      /* padding-bottom: 0.5em; */
+      white-space: normal;
+      border: none;
+    }
+
+   
+    .contents {
+      margin-bottom: 2em;
+    }
+
+    .intro-section,
+    .main-section section {
+      margin: 0 1em;
+    }
+
+    .ordered-list,
+    .unordered-list {
+      padding-left: 2.5em;
+    }
+
+    .pro-con {
+      flex-direction: column;
+    }
+
+    .flex-wrapper {
+      flex-direction: column;
+    }
+
+    .example-images {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 2em;
+    }
+
+    .grid-item {
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .product-image {
+      width: 100%;
+    }
+
+    .sub-div {
+      margin-left: 1.2em;
+    }
+
+    .book-section {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .book-section-left {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .book-section-left p {
+      margin-right: 1em;
+      text-align: justify;
+      margin-left: 1em;
+    }
+
+    .book-section-left .heading {
+      text-align: center;
+      margin-top: 1.6em;
+      font-size: 1.5em;
+    }
+
+    .book-section-right {
+      width: 90%;
+      margin-bottom: 3em;
+    }
+
+    .desktop-banner {
+      display: none;
+    }
+
+    .mobile-banner {
+      display: block;
+      max-width: 100%;
+      padding: 0;
+    }
+
+    .products-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .individual-product {
+      border-right: none;
+      border-bottom: 1px solid silver;
+      padding-bottom: 0.5em;
+      margin-bottom: 0;
+      width: 90%;
+    }
+
+    .grid-image {
+      width: 90%;
+      display: flex;
+      margin: 0px auto;
+    }
+
+    .location {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5em;
+    }
+
+    .locationText .heading {
+      font-size: 1.5em;
+      margin-top: 1.9em;
+      margin-bottom: -0.5em;
+    }
+
+    .allButton .btnOw {
+      width: 100%;
+    }
+
+    .item1 {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+      border: none;
+      padding-bottom: 0;
+      padding-top: 3.5em;
+    }
+
+    .locationText .heading {
+      text-align: center;
+    }
+
+    .item1 .locationImage,
+    .item1 .locationText {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+    }
+
+    .products-section {
+      display: none;
+    }
+
+    .nine-products-section {
+      display: none;
+    }
+
+    .individual-product {
+      display: flex;
+      margin: auto auto;
+    }
+
+    .products-section-mobile {
+      display: block;
+    }
+
+    .nine-products-section-mobile {
+      display: flex;
+      overflow-x: scroll;
+    }
+
+    .nine-products-section-mobile::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nine-products-section-mobile img {
+      width: 80%;
+    }
+
+    .grid-container-mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid-item span {
+      display: flex;
+      margin: 0 2em;
+    }
+
+    .grid-container-desktop {
+      display: none;
+    }
+
+    .product-container-mobile {
+      display: flex;
+      overflow-x: auto;
+    }
+
+    .nine-products-section-mobile {
+      position: relative;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+      width: 3vw;
+      height: 0;
+      top: 50%;
+    }
+
+    .seo-images {
+      width: 100%;
+    }
+
+    .flexText img {
+      width: 100%;
+    }
+
+     /* product margin fix */
+     .column.main .product-items {
+      margin-left: 0px;
+    }
+
+    /* product price fix */
+    .page-layout-1column
+      .page-wrapper
+      .block-products-list
+      .products-grid.non-swiper
+      .widget-product-grid
+      .product-item
+      .label-wrapper
+      .label-container
+      .label-discount {
+      padding: 5px 5px;
+    }
+
+    .block-products-list
+      .widget-product-grid
+      .product-item
+      .label-wrapper
+      .label-container
+      .label-discount {
+      line-height: 0;
+    }
+  }
+</style>
+<!-- new template styles start -->
+<style>
+  /* publish date start */
+  .intro-section.publish-date {
+    margin: 0rem 3rem;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+  }
+
+  .publish-date-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .publish-date-wrapper p {
+    margin-bottom: 0px;
+    color: #003cac;
+    font-weight: 500;
+  }
+
+  .publish-date-wrapper p:first-child {
+    border-right: 1.5px solid silver;
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .intro-section.publish-date {
+      margin: 0em 1em 2em 1em;
+      padding-bottom: 10px;
+    }
+
+    .publish-date-wrapper {
+      display: inline;
+    }
+
+    .publish-date-wrapper p {
+      margin-bottom: 8px;
+      color: #003cac;
+      font-weight: 500;
+    }
+
+    .publish-date-wrapper p:first-child {
+      border-right: 0px;
+      margin-right: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  /* publish date end */
+
+  /* top lang-sw start */
+  .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .lang-sw img {
+    max-width: 33px;
+  }
+
+  .language-switch {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .language-switch {
+      margin-right: 65px;
+    }
+  }
+
+  @media only screen and (max-width: 820px) {
+    .language-switch {
+      margin-right: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .lang-sw {
+      align-items: flex-start;
+    }
+
+    .language-switch {
+      margin-right: 0em;
+      margin-left: 0em;
+    }
+
+    .language-switch-dropdown-itmes-wrapper {
+      top: 40px;
+    }
+  }
+
+  /* top lang-sw end */
+
+  /* a links start */
+  .a-links {
+    margin: 3rem;
+  }
+
+  .a-links a {
+    color: #003cac;
+    font-weight: 700;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1.5px solid silver;
+  }
+
+  .a-links a:last-child {
+    border-right: 0px;
+  }
+
+  @media only screen and (max-width: 820px) {
+    .a-links {
+      margin: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .a-links {
+      margin: 3rem 1em;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  /* a link end */
+
+  /* bottom lang-sw start */
+  .bottom .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .bottom .language-switch {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  .lang-sw.bottom {
+    align-items: flex-start;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .bottom-lag-sw p {
+    margin-bottom: 0px;
+  }
+
+  .bottom-lag-sw {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .language-switch-dropdown-itmes-wrapper {
+      top: 40px;
+    }
+
+    .bottom-lag-sw {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 2em;
+      gap: 15px;
+    }
+
+    .lang-sw.bottom {
+      margin-left: 0px;
+    }
+  }
+
+  /* bottom lang sw end */
+</style>
+<!-- new template styles end -->
+<p><img src="{{media url='wysiwyg/image-folder/glasses/best-uv-sunglasses-for-eye-protection/UV-Sunglasses-Web-Banner-1640x940_1_.jpg'}}" alt="Best UV Sunglasses for Eye Protection" class="banner desktop-banner"> <img src="{{media url='wysiwyg/image-folder/glasses/best-uv-sunglasses-for-eye-protection/UV-Sunglasses-Mobile-Banner-770x990_1_.jpg'}}" alt="Best UV Sunglasses for Eye Protection" class="mobile-banner"></p>
+<h1 class="title">8 Best Types of UV Sunglasses for Eye Protection: Buyer's Guide</h1>
+<!-- publish date start -->
+<div class="intro-section publish-date">
+<div class="publish-date-wrapper">
+<p><b>Published on October 22nd, 2024</b></p>
+<!-- <p><b>Updated on October 22nd, 2024</b></p> --> <!-- lang switch start -->
+<div class="lang-sw">
+<div class="language-switch">
+<div class="language-switch-current" onclick="toggleVisibility()"><!-- flag --> <img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="8 Best Types of UV Sunglasses for Eye Protection: Buyer's Guide in Canadian English"> Canada <!-- dropdown icon --> <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z" fill="black"></path> </svg></div>
+<div class="language-switch-dropdown-itmes-wrapper" id="secondBox" style="display: none;">
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/AU_Flag.jpg'}}" alt="8 Best Types of UV Sunglasses for Eye Protection: Buyer's Guide in Australian English"> <a href="https://www.oscarwylee.com.au/glasses/best-uv-sunglasses-for-eye-protection">Australia</a></div>
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="8 Best Types of UV Sunglasses for Eye Protection: Buyer's Guide in Canadian English"> <a href="https://oscarwylee.ca/glasses/best-uv-sunglasses-for-eye-protection">Canada</a></div>
+</div>
+</div>
+</div>
+<!-- lang switch end --></div>
+</div>
+<!-- publish date end -->
+<div class="intro-section">
+<p class="para-content">The 8 best types of UV sunglasses for eye protection can be found in this buyer's guide. UV sunglasses are eyewear that protects your eyes from the sun by shielding them from the harmful ultraviolet radiation emitted from the sun. UV radiation comes from the sun and not only causes sunburns which may lead to skin damage and cancer, but it also affects the eyes. UV radiation may cause serious eye conditions such as ocular melanoma and cataracts.</p>
+<!--  -->
+<p class="para-content para-content-border-bottom">The criteria for the best types of UV sunglasses are lenses, frame, price, style and UV protection ability. The lenses of UV sunglasses can have many different coatings and add-ons applied to the lens to enhance the overall experience and quality of the pair. The type of frame can be chosen for personal preference and its ability to more effectively block the sun from the eyes. The price of UV sunglasses varies greatly depending on the quality and style. UV protection is the most important criterion for sunglasses as the higher the protection, the better for eye health. UV sunglasses are compared using these criteria.</p>
+</div>
+<aside class="intro-section book-section book-section-border">
+<div class="book-section-left">
+<p class="heading">Book an eye exam with independent optometrists at Oscar Wylee who are dedicated and experienced.</p>
+<p class="para-content">Oscar Wylee eye exams may be available for direct billing depending on your private health insurance provider.</p>
+</div>
+<div class="book-section-right"><a href="/booking"><button class="btnOw">Book an eye exam</button></a></div>
+</aside>
+<!-- a liks start -->
+<div class="a-links intro-border-top"><nav><a href="#Definition">Definition</a> <a href="#Best-UV-Sunglasses-For-Women">Best UV Sunglasses For Women</a> <a href="#Best-UV-Sunglasses-For-Men">Best UV Sunglasses For Men</a> <a href="#Choosing-UV-Sunglasses">Choosing UV Sunglasses</a> <a href="#Benefits">Benefits</a></nav></div>
+<!-- a liks end -->
+<div class="main-section">
+<div class="main-section">
+<section class="rectangle-section">
+<p class="intro para-content">UV glasses, also known as sun protection glasses, are an essential part of sun safety. There are many different types of sunglasses that protect your eyes from the sun including <strong>impact resistant, polarized, wraparound style, mirror coated, photochromic, lens darkness, gradient lenses and non-glare.</strong> Different features and styles can be added to standard sunglasses to increase their ability to ensure the health of the eye. The best types of UV sunglasses for eye protection are listed below.</p>
+<ol class="ordered-list">
+<li><span class="list-title">Impact resistant:</span> One of the best overall types of UV sunglasses is impact resistant sunglasses. Sunglasses with impact-resistant lenses are more durable due to the lens material.</li>
+<li><span class="list-title">Polarized:</span> Polarized sunglasses are another good type of sunglasses as they reduce glare on the horizontal wavelength and provide UV protection.</li>
+<li><span class="list-title">Wraparound style: </span> Wraparound sunglasses are one of the best types of sunglasses as they offer high protection against the sun due to their frame shape which more effectively covers the eyes.</li>
+<li><span class="list-title">Mirror coated:</span> Mirror coated sunglasses are a good style of sunglasses. These sunglasses have lenses with a thin metallic layer that reflects glare.</li>
+<li><span class="list-title">Photochromic:</span> Photochromic is an effective and popular type of lens that adapts to light conditions that transition gradually from clear, when you’re indoors, to dark and every shade in between, as you move into the sunlight.</li>
+<li><span class="list-title">Lens darkness:</span> The darkness of the lens depends on the category of the lens, the darker the lens, the more UV protection.</li>
+<li><span class="list-title">Gradient lenses:</span> These sunglasses have a darker tint at the top of the lens that gradually becomes lighter towards the bottom.</li>
+<li><span class="list-title">Non-glare:</span> Non-glare are one of the best types of sunglasses. Also known as anti-reflective or anti-glare, these sunglasses have a lens coating that evens out the refraction of light, reducing reflection.</li>
+</ol>
+</section>
+<section class="rectangle-section">
+<h2 class="subtitle">1. Impact Resistant</h2>
+<div class="flexContainer">
+<div class="flexText minusPadding">
+<p class="para-content">Impact resistant sunglasses have <strong>lenses that are durable and are less likely to break like other sunglasses, due to the strong material.</strong> These lenses are safer and more secure than regular lens material. Impact resistant sunglasses are worn during high-activity situations such as running and sports, where they could fall off and be damaged.</p>
+<p class="para-content">Sunglasses with impact-resistant lenses come in a variety of sizes and colours and are best for people who partake in more adventurous activities such as outdoor sports. Impact-resistant lenses are consistently in demand due to their shatter-resistant material which makes them a popular choice for adventurers.</p>
+<p class="para-content">At Oscar Wylee, we offer a range of kids' sunglasses with impact-resistant lenses. We have impact resistant lenses made from polycarbonate, HIVEX and TAC materials. HIVEX is a shock-resistant resin lens with low dispersion.</p>
+</div>
+<div class="flexText imageTwo"><img src="{{media url='wysiwyg/image-folder/glasses/best-uv-sunglasses-for-eye-protection/Impact_Resistant_900x600.png'}}" alt="impact resistant image" class="seo-images"></div>
+</div>
+</section>
+<section class="square-section">
+<h2 class="subtitle">2. Polarized</h2>
+<div class="flexContainer">
+<div class="flexText minusPadding">
+<p class="para-content">Polarized sunglasses have a coating applied to the lenses that offer protection from UV rays and filter out reflected light and surface glare. They work by <strong>filtering out the specific wavelength that contains glare, reflections and intense brightness, allowing you to see more clearly. </strong></p>
+<p class="para-content">Polarized sunglasses are often chosen for fishing as they allow the wearer to look at a body of water and see right through the glare on the surface. They are best for reducing glare from roads, water and snow, increasing visual clarity and comfort, making them an in demand type of sunglasses. Polarized sunglasses come in a wide range of sizes and colours and can be combined with UV protection for the safety of your eyes.</p>
+<p class="para-content">Oscar Wylee offers sunglasses with polarized lenses available in grey, brown, and green.</p>
+</div>
+<div class="flexText imageTwo"><img src="{{media url='wysiwyg/image-folder/glasses/best-uv-sunglasses-for-eye-protection/Polarised_900x600.png'}}" alt="polarized image" class="seo-images"></div>
+</div>
+</section>
+<section class="geometric-section">
+<h2 class="subtitle">3. Wraparound Style</h2>
+<p class="para-content">Wraparound style sunglasses are a <strong>closefitting frame that offers high protection from UV rays due to their shape.</strong> Wraparound sunglasses sit close to the face, hugging their contours so as to prevent the sun from hitting the eyes.</p>
+<p class="para-content">Wraparound sunglasses are often chosen for their ability to block more sun rays than regular glasses, making them a great choice for outdoor athletes and for people who generally go out in the sun. This style of sunglasses is recommended by Sunsmart as a way to protect the eyes from UV radiation alongside a broad-brimmed hat.</p>
+<p class="para-content">At Oscar Wylee, the frame Stevo is a great choice for a wraparound pair of sunglasses. This wide-fit frame has a strong curve with a comfortably secure fit that doesn’t sacrifice style for performance.</p>
+{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="10" template="Magento_CatalogWidget::product/widget/content/grid.phtml" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`sku`,`operator`:`()`,`value`:`stevo_sunglass`^]^]"}}</section>
+<section class="cat-eye-section">
+<h2 class="subtitle">4. Mirror Coated</h2>
+<p class="para-content">Mirror coated sunglasses have a <strong>mirrored coating on the surface of the lenses to reflect light, preventing it from entering the eye.</strong> Mirrored sunglasses also offer UV protection and reduce glare. The key feature of these sunglasses is the mirrored lens.</p>
+<p class="para-content">Mirror coated sunglasses are best for people who enjoy golfing, skiing, fishing and biking and can also be chosen for driving and sunbathing. Mirrored sunglasses come in different frame sizes to fit small, medium and wide faces and also are made in a wide variety of colours. They are an in-demand sunglasses type as they are fashionable and reduce glare.</p>
+<p class="para-content">At Oscar Wylee, we offer mirror coating for our sunglasses in pink, blue, silver and orange coloured lenses.</p>
+</section>
+<section class="fullrimmed-section">
+<h2 class="subtitle">5. Photochromic</h2>
+<p class="para-content">Photochromic sunglasses, also known as transition lenses or adaptive lenses, are a <strong>type of glasses that darken in response to ultraviolet rays from the sun.</strong> Photochromic lenses have a chemical coating in the lens, which causes the lens to darken in response to direct sunlight, the more rays there are, the darker the adaptive lenses will become.</p>
+<p class="para-content">Photochromic lenses are a popular choice for people who need vision correction and don’t want to constantly switch between sunglasses and glasses, instead with photochromic glasses as they allow you to see clearly and protect your eyes from the sun all in one pair. They are uniquely designed to protect your eyes from the bright outdoor sunlight and harsh artificial light indoors.</p>
+<p class="para-content"><span style="font-weight: 400;">At Oscar Wylee, we offer photochromic lenses for all lens indexes and Transitions® GEN 8 lenses at an additional price. Transitions® Gen8 ™ lenses are durable and long-lasting, available in true-grey and brown lens colour options</span>.</p>
+<img src="{{media url='wysiwyg/image-folder/glasses/best-uv-sunglasses-for-eye-protection/Photochromic_900x600.jpg'}}" alt="photochromic image" class="seo-images"></section>
+<aside class="context">
+<div class="location" style="border-top: none;">
+<div class="locationText">
+<p class="heading">Locate your nearest Oscar Wylee store</p>
+<p class="contents">Find your local Oscar Wylee team who will help you shop our range of stylish and affordable frames.</p>
+<div class="allButton"><a href="/locations/"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img src="{{media url='wysiwyg/image-folder/glasses/cta/find_a_store.jpg.png'}}" alt="product image" class="locationImage"></div>
+</aside>
+<section class="square-section">
+<h2 class="subtitle">6. Lens Darkness</h2>
+<p class="para-content">There are many different types of lens tints that affect the lens darkness. Grey and green lenses are popular because they are the darkest tint available. Brown lenses are lighter in colour compared to grey sunglasses lenses but they are popular as they create more colour contrast, perfect for overcast days.</p>
+<p class="para-content">The lens darkness of sunglasses can be chosen for different frame sizes and colours and the lens category is chosen for what is best for that person's lifestyle.</p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">7. Gradient Lenses</h2>
+<p class="para-content">Gradient lenses are a type of <strong>sunglasses lens that has a tint that is darker at the top and gets lighter towards the bottom of the lens, letting more light through the bottom half. </strong></p>
+<p class="para-content">Sunglasses with gradient lenses are ideal for driving as they won’t dim your view of the dashboard but provide protection when looking at the road. Gradient sunglasses come in a variety of colours and sizes and their key feature is the gradual tint which gets darker towards the top of the lens.</p>
+<p class="para-content">At Oscar Wylee, we offer gradient lenses in the colour brown, green and grey lenses.</p>
+</section>
+<section class="square-section">
+<h2 class="subtitle">8. Non-glare</h2>
+<p class="para-content">Non-glare sunglasses, also known as anti-reflective or anti-glare sunglasses, have a <strong>coating applied to the lens which is composed of thin layers of materials with alternating refraction indexes that even out the refraction of light to reduce reflection.</strong></p>
+<p class="para-content">Anti/non-glare (anti-reflective) glasses are a popular choice as they reduce the glare you receive from light, reducing eye strain, increasing vision and preventing distracting reflections. These sunglasses come in a wide array of colours and sizes as the anti-reflective or anti-glare properties are only in the lenses, meaning there are a range of sunglasses available to suit your personal style.</p>
+<p class="para-content">At Oscar Wylee, an anti-reflective coating is complimentary with polarized and tinted prescription sunglasses. A great choice of sunglasses frames that can be made anti-reflective is Billy. This frame comes in two different colours; Auburn Tortoise and Obsidian Black. This round, wide-fit, acetate frame features a keyhole nose bridge and double bolt detailing on the temples, brilliant for square faces.</p>
+{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="10" template="Magento_CatalogWidget::product/widget/content/grid.phtml" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`sku`,`operator`:`()`,`value`:`billy_sunglass`^]^]"}}</section>
+<section class="section-border-bottom">
+<h2 class="subtitle" id="Definition">What are UV Sunglasses?</h2>
+<p class="para-content">UV sunglasses are <strong>glasses designed to protect the eyes from the ultraviolet radiation produced by the sun.</strong> They are protective eyewear made to shield the eyes from harm by reflecting the UV rays, acting as a barrier.</p>
+<p class="para-content">The purpose of UV sunglasses is to protect the eyes from the sun. According to the American Academy of Ophthalmology, extended exposure to UV light from the sun, may lead to skin damage and cancer, and cause serious eye conditions such as ocular melanoma, cataracts and macular degeneration.</p>
+<div class="sub-div">
+<h3 class="sub-div-title">What is the Highest UV Blocking Sunglasses?</h3>
+<p class="para-content">The highest UV blocking sunglasses are <strong>Lens Category 4.</strong> According to Cancer Council Australia, there are 5 different lens categories that determine how well they block UV. The first is lens category 0 (Light tint sunglasses or fashion spectacles) which provides some UV protection and very limited reduction of sun glare. The next is lens category 1 (Light tint sunglasses or fashion spectacles), which provides limited protection against sun glare and some UV protection. Lens category 2 (General purpose sunglasses) provides good UV and sun glare protection. Next is lens category 3 (General purpose sunglasses), they provide high protection against sun glare and UV. Finally, the highest category is lens category 4 (Very dark special sunglasses – very high sun glare reduction) which are special purpose sunglasses that provide good UV protection and high protection against extreme sun glare.</p>
+</div>
+<div class="sub-div">
+<h3 class="sub-div-title" id="Best-UV-Sunglasses-For-Women">What are the Best UV Sunglasses for Women?</h3>
+<p class="para-content">The best UV sunglasses for women are sunglasses that <strong>provide good UV protection from the sun and are also fashionable, complementing face shape and personal style.</strong> At Oscar Wylee we have a wide range of women’s sunglasses in lens category 3 which provides high protection against sun glare and good UV protection. The three best UV sunglasses for women based on their styles are listed below.</p>
+<ol class="ordered-list">
+<li><span class="list-title">Marilyn:</span> The best overall sunglasses for women at Oscar Wylee is Marilyn. This frame is a medium fit that channels the golden age of Hollywood glamour with its cat eye shape and tortoiseshell pattern.</li>
+<li><span class="list-title">Easten:</span> The next best Oscar Wylee sunglasses for women is Easten. The wide-fit frame is the definition of Old Hollywood glamour with its bold and oversized shape.</li>
+<li><span class="list-title">Peggy:</span> The final best sunglasses at Oscar Wylee for women is Peggy. Peggy is a slightly wide, square and very cute frame that compliments wider face shapes such as square and round.</li>
+</ol>
+</div>
+{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="10" template="Magento_CatalogWidget::product/widget/content/grid.phtml" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`sku`,`operator`:`()`,`value`:`marilyn_sunglass,easten_sunglass,peggy_sunglass`^]^]"}}
+<div class="sub-div">
+<h3 class="sub-div-title" id="Best-UV-Sunglasses-For-Men">What are the Best UV Sunglasses for Men?</h3>
+<p class="para-content">The best UV sunglasses for men are sunglasses that <strong>provide good UV protection from the sun and also complement their face shape and personal style.</strong> At Oscar Wylee we have a large selection of men’s sunglasses in lens category 3 which provides good UV protection and high protection against sun glare. The three best UV sunglasses for men based on their styles are listed below.</p>
+<ol class="ordered-list">
+<li><span class="list-title">Mick:</span> The best overall sunglasses at Oscar Wylee for men is Mick. This frame is a versatile design made for all-day comfort. It is a wide-fit frame made from acetate.</li>
+<li><span class="list-title">Crew:</span> The next best Oscar Wylee sunglasses for men is Crew. This sporty style will protect you from the sun and keep you looking stylish. Fitted with rubber grip arms, a lightweight build and polarized lenses to reduce glare.</li>
+<li><span class="list-title">Mesa:</span> The final best sunglasses at Oscar Wylee for men is Mesa. Mesa is a modern-day upgrade to the classic square frames. This pair is slightly oversized yet lightweight making them very comfortable.</li>
+</ol>
+</div>
+{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="10" template="Magento_CatalogWidget::product/widget/content/grid.phtml" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`sku`,`operator`:`()`,`value`:`mick_sunglass,crew_sunglass,mesa_sunglass`^]^]"}}
+<div class="sub-div">
+<h3 class="sub-div-title">What are the Best Affordable UV Sunglasses?</h3>
+<p class="para-content">The best affordable UV sunglasses are a <strong>combination of good UV protection and fair pricing.</strong> At Oscar Wylee, we have a wide range of sunglasses at affordable prices in on-trend and vintage styles for every personality. The three best affordable sunglasses are listed below.</p>
+<ol class="ordered-list">
+<li><span class="list-title">Chamberlain: </span> The best affordable UV sunglasses at Oscar Wylee is Chamberlain. This is an ideal frame with its minimal round-shape design making it a go-to style for everyday use.</li>
+<li><span class="list-title">Zora:</span> The next best affordable UV sunglasses at Oscar Wylee is Zora. This frame is an oversized take on a rectangular cat-eye with upturned lenses that beautifully complement a levelled-out bottom rim.</li>
+<li><span class="list-title">Squire:</span> The final best affordable UV sunglasses at Oscar Wylee is Squire. An iconic frame with generous width, Squire is universally flattering and made from acetate in a rectangular shape.</li>
+</ol>
+</div>
+{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="10" template="Magento_CatalogWidget::product/widget/content/grid.phtml" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`sku`,`operator`:`()`,`value`:`chamberlain_sunglass,zora_sunglass,squire_sunglass`^]^]"}}
+<div class="sub-div">
+<h3 class="sub-div-title">What are the Best UV Sunglasses for Oval Faces?</h3>
+<p class="para-content">The best UV sunglasses for oval faces are sunglasses that <strong>provide good UV protection and complement the rounded features of an oval face.</strong> At Oscar Wylee, we have a wide range of sunglasses that suit oval faces while also providing good UV protection and high protection against sun glare. The three best sunglasses for oval faces are listed below.</p>
+<ol class="ordered-list">
+<li><span class="list-title">Arlia:</span> The best Oscar Wylee UV sunglasses for oval faces is Arlia. Arlia is a contemporary rectangular frame with a slight cat-eye shape to balance the rounded curves of an oval face.</li>
+<li><span class="list-title">Bale:</span> The next best UV sunglasses at Oscar Wylee for oval faces is Bale. This is a large square frame in a wide fit with a metal temple accent. It’s perfect for contrasting the oval shape of a face.</li>
+<li><span class="list-title"><b>Amelia</b>:</span><span>The final best UV sunglasses for oval faces at Oscar Wylee is Amelia. Amelia is a retro, oversized cat-eye shape with Category 3 sun protection and a comfortable acetate frame.</span></li>
+</ol>
+</div>
+{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="10" template="Magento_CatalogWidget::product/widget/content/grid.phtml" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`sku`,`operator`:`()`,`value`:`arlia_sunglass,bale_sunglass,amelia_sunglass`^]^]"}}
+<div class="sub-div">
+<h4 class="sub-div-title h4-change">What are the Best UV Sunglasses for Small Faces?</h4>
+<p class="para-content">The best UV sunglasses for small faces are sunglasses that <strong>provide good UV protection and complement the features and proportions of a small face.</strong> At Oscar Wylee, we have a range of narrow, small and extra-small sunglasses to not overwhelm small appearances. The three best sunglasses for small faces are listed below.</p>
+<ol class="ordered-list">
+<li><span class="list-title">Christina:</span> The best Oscar Wylee UV sunglasses for small faces is Christina. This frame is a small fit made from acetate with a thick rectangular shape perfect for smaller faces.</li>
+<li><span class="list-title">Malou:</span> The next best UV sunglasses for small faces at Oscar Wylee is Malou. Malou boasts a bold square silhouette and is a narrow fit that complements a person with small features.</li>
+<li><span class="list-title">Eddie:</span> The final best Oscar Wylee sunglasses for a small face is Eddie. A bold, square-shape frame and ideal for narrower faces. Soak up the sun in style with Eddie.</li>
+</ol>
+</div>
+{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="10" template="Magento_CatalogWidget::product/widget/content/grid.phtml" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`sku`,`operator`:`()`,`value`:`christina_sunglass,malou_sunglass,eddie_sunglass`^]^]"}}</section>
+<section class="section-border-bottom">
+<h2 class="subtitle" id="Choosing-UV-Sunglasses">How to Choose the Best UV Sunglasses?</h2>
+<p class="para-content">The way to choose the best UV sunglasses is to <strong>follow criteria that ensure the health of your eyes and also take in your lifestyle and personal preferences.</strong> The steps for choosing the best UV sunglasses are listed below.</p>
+<ol class="ordered-list">
+<li><span class="list-title">Eye protection:</span> The first and most important step in choosing the best UV sunglasses is to make sure they are effective at protecting your eyes. The sunglasses need to have UV protection, a form of reduction in glare and for extra protection, choose a wraparound style.</li>
+<li><span class="list-title">Lifestyle:</span> Depending on the activities people do frequently or the job they have, some sunglasses may be better than others. For example, people who frequently go fishing benefit from polarized sunglasses and those who weld at their job need very high UV protective eyewear.</li>
+<li><span class="list-title">Personal preference:</span> Sunglasses should be chosen so that the wearer will want to put them on before they go out in the sun. That could mean picking a pair that works with their personal style.</li>
+</ol>
+<div class="sub-div">
+<h3 class="sub-div-title">Where can I Find the Best UV Sunglasses?</h3>
+<p class="para-content">You can find the best UV sunglasses from a variety of different places, brands and manufacturers. Sunglasses are purchased at fashion and surfing stores, supermarkets and news agencies as well as online fashion retailers and optometry and eyewear brands.</p>
+</div>
+<div class="sub-div">
+<h3 class="sub-div-title" id="Benefits">What are the Benefits of UV Sunglasses?</h3>
+<p class="para-content">There are many benefits of UV sunglasses, the most important being eye protection, but there are also added benefits that make sunglasses useful in many different situations. The main benefits of UV sunglasses and their definitions are listed below.</p>
+<ul class="unordered-list">
+<li><span class="list-title">Eye protection:</span> Sunglasses provide your eyes with protection. According to Sunsmart, UV radiation to the eyes may cause short term symptoms such as irritation, inflammation and photophobia and long-term problems such as cataracts, skin cancer around the eyes and pterygium.</li>
+<li><span class="list-title">Reduce glare:</span> Sunglasses help to reduce glare. With polarisation and anti-reflective or anti-glare lenses, sunglasses can reduce glare for more comfortable vision.</li>
+<li><span class="list-title">Stop squinting:</span> Sunglasses are the perfect device to stop you from squinting at the harsh light of the sun. Not only do they make you feel more comfortable, but less squinting will also prevent wrinkles from forming around your eyes.</li>
+<li><span class="list-title">Style expression:</span> Sunglasses are a great way to express personal style and jazz up any outfit. Whether out at the beach or on a picnic, sunglasses are not only practical but fashionable.</li>
+</ul>
+</div>
+<div class="sub-div">
+<h4 class="sub-div-title h4-change">Are UV Sunglasses Essential for Protecting the Eyes?</h4>
+<p class="para-content">Yes, <strong>UV sunglasses are very important for protecting your eyes and are essential in certain situations.</strong> According to the Cancer Council, they recommend people should be protecting their eyes at all times when the UV level is 3 or above. In Australia, the UV index is often a level 3 or above because we are near the equator. According to Sunsmart, in summer, Australia has an average UV Index of 10–14, meaning sunglasses are essential tools to protect your eyes. Optometry Australia also recommends people wear eye protection all year round meaning they are an essential part of anyone's wardrobe.</p>
+</div>
+<!-- lang switch start -->
+<div class="bottom-lag-sw">
+<p class="para-content">Read 8 Best Types of UV Sunglasses for Eye Protection: Buyer's Guide in other Oscar Wylee regions and their languages.</p>
+<div class="lang-sw bottom">
+<div class="language-switch">
+<div class="language-switch-current" id="language-switch-current" onclick="toggleVisibilityBtnTwo()"><!-- flag --> <img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="8 Best Types of UV Sunglasses for Eye Protection: Buyer's Guide in Canadian English"> Canada <!-- dropdown icon --> <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z" fill="black"></path> </svg></div>
+<div class="language-switch-dropdown-itmes-wrapper" id="language-switch-dropdown-itmes-wrapper" style="display: none;">
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/AU_Flag.jpg'}}" alt="8 Best Types of UV Sunglasses for Eye Protection: Buyer's Guide in Australian English"> <a href="https://www.oscarwylee.com.au/glasses/best-uv-sunglasses-for-eye-protection">Australia</a></div>
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="8 Best Types of UV Sunglasses for Eye Protection: Buyer's Guide in Canadian English"> <a href="https://oscarwylee.ca/glasses/best-uv-sunglasses-for-eye-protection">Canada</a></div>
+</div>
+</div>
+</div>
+</div>
+<!-- lang switch end --></section>
+<aside class="context"><!-- Location and booking  -->
+<div class="location" style="border-top: none;">
+<div class="locationText">
+<p class="heading">Come and see the team at your local Oscar Wylee store.</p>
+<p class="contents">Find your nearest store and our Oscar Wylee staff can help you with your eye care needs.</p>
+<div class="allButton"><a href="/locations/"> <button class="btnOw">Find a store</button> </a></div>
+</div>
+<img src="{{media url='wysiwyg/image-folder/glasses/cta/find_a_store.jpg.png'}}" alt="Find a store" class="locationImage"></div>
+<div class="location item1"><img src="{{media url='wysiwyg/image-folder/glasses/cta/Eye-Test-Oscar-Wylee-5.jpg'}}" alt="Book Eye Exam Image" class="locationImage">
+<div class="locationText">
+<p class="heading">Prioritize your eye health and book an eye exam at Oscar Wylee.</p>
+<p class="contents">We have independent optometrists who are passionate and highly experienced to perform high quality eye exams.</p>
+<div class="allButton"><a href="/booking"> <button class="btnOw">Book an eye exam</button> </a></div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<p>
+<script>
+    const productContainers = [
+      ...document.querySelectorAll(".product-container"),
+    ];
+    const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
+    const preBtn = [...document.querySelectorAll(".pre-btn")];
+
+    productContainers.forEach((item, i) => {
+      let containerDimensions = item.getBoundingClientRect();
+      let containerWidth = containerDimensions.width;
+
+      nxtBtn[i].addEventListener("click", () => {
+        item.scrollLeft += containerWidth;
+      });
+
+      preBtn[i].addEventListener("click", () => {
+        item.scrollLeft -= containerWidth;
+      });
+    });
+
+    // top lang-sw
+    document.addEventListener("click", function (event) {
+      var secondBox = document.querySelector(
+        ".language-switch-dropdown-itmes-wrapper"
+      );
+      var firstBox = document.querySelector(".language-switch-current");
+
+      // Check if the clicked element is outside the second box and the first box
+      if (
+        !secondBox.contains(event.target) &&
+        !firstBox.contains(event.target)
+      ) {
+        secondBox.style.display = "none";
+      }
+    });
+
+    function toggleVisibility() {
+      var secondBox = document.querySelector(
+        ".language-switch-dropdown-itmes-wrapper"
+      );
+      secondBox.style.display =
+        secondBox.style.display === "none" ? "flex" : "none";
+    }
+
+    // bottom lang-sw
+    document.addEventListener("click", function (event) {
+      var secondBox = document.querySelector(
+        "#language-switch-dropdown-itmes-wrapper"
+      );
+      var firstBox = document.querySelector("#language-switch-current");
+
+      // Check if the clicked element is outside the second box and the first box
+      if (
+        !secondBox.contains(event.target) &&
+        !firstBox.contains(event.target)
+      ) {
+        secondBox.style.display = "none";
+      }
+    });
+
+    function toggleVisibilityBtnTwo() {
+      var secondBox = document.querySelector(
+        "#language-switch-dropdown-itmes-wrapper"
+      );
+      secondBox.style.display =
+        secondBox.style.display === "none" ? "flex" : "none";
+    }
+  </script>
+</p>

@@ -1,0 +1,399 @@
+<style>
+  /* Style the accordion container */
+  .accordion {
+    max-width: 100%;
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    cursor: text;
+  }
+
+  .accordion::after {
+    content: none;
+  }
+
+  /* Style the accordion items */
+  .accordion-item {
+    border-bottom: 1px solid silver;
+  }
+
+  /* Style the accordion item headers */
+  .accordion-header {
+    background-color: #ffffff;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #444;
+    cursor: pointer !important;
+  }
+
+  .accordion-header.active {
+    border-bottom: 1px solid silver !important;
+  }
+
+  /* Style the accordion item content */
+  .accordion-content {
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .accordion-content-wrapper {
+    padding: 18px;
+  }
+
+  .accordion-content-wrapper p {
+    margin: 10px 0px;
+    font-size: 14px;
+    text-align: justify;
+    hyphens: auto;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  .new-accordian .accordion-content-wrapper ol,
+  ul {
+    font-size: 14px !important;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  /* Style the active accordion item */
+  .active .accordion-content {
+    max-height: 1000px;
+  }
+
+  /* Style the icon */
+  .accordion-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  /* Plus and Minus Icons */
+  .accordion-header::after {
+    content: "\002B";
+    color: #777;
+    font-weight: 400;
+    float: right;
+    margin-left: 5px;
+    font-size: 25px;
+    /* Plus sign */
+  }
+
+  .accordion-header.active::after {
+    content: "\2212";
+    /* Minus sign */
+  }
+
+  /* OW Styles */
+  .accordion .accordion-item .accordion-header h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+  }
+
+  .accordion-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .accordion-btn-wrapper button {
+    background-color: #ffffff;
+    border: 1px solid #333;
+    box-shadow: none;
+    border-radius: 8px;
+  }
+
+  .accordion-btn-wrapper button:hover {
+    border: 1px solid #333 !important;
+  }
+
+  /* acco image */
+  .acco-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .acco-img {
+    max-width: 150px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .acco-img {
+      max-width: 220px;
+    }
+  }
+
+  /* smart css fixes */
+  body.oscar_booking-index-index .new-accordian .accordion:after {
+    content: unset;
+  }
+</style>
+<div class="acco-img-wrapper"><img class="acco-img" src="{{media url='wysiwyg/Locations_Graphic_1280x1280px.png'}}" alt=""></div>
+<footer class="footer-accordion">
+<section class="new-accordian">
+<div class="accordion-btn-wrapper"><button id="toggleAllButton">Afficher tout</button></div>
+<div class="accordion">
+<article>
+<div class="accordion-item">
+<div class="accordion-header active" style="border-top: 1px solid silver;">
+<h2>Examen de la vue : Définition, types et comment réserver un examen de la vue</h2>
+</div>
+<div class="accordion-content" style="max-height: 1000px;">
+<div class="accordion-content-wrapper">
+<p>Un examen de la vue est un procédé permettant de contrôler la vision et la santé oculaire globale d’un patient. Il inclut des tests spécifiques tels qu’un <b>test de l’acuité visuelle, un test de tonométrie, un examen au biomicroscope et un test de réfraction.</b> Les examens de la vue réguliers sont essentiels : en permettant de détecter des maladies oculaires, ils contribuent à la prévention de la cécité. Vous pouvez réservez un examen de la vue chez Oscar Wylee en ligne sur notre site web ou visiter un de nos nombreux magasins à travers le Canada. Si vous cherchez un examen de la vue près de chez vous, entrez votre code postal sur notre page web de prise de rendez-vous pour découvrir l’emplacement du magasin Oscar Wylee le plus proche de chez vous. Actuellement, nous avons 13 magasins à travers le Canada en Alberta, en Colombie Britannique, en Nouvelle-Écosse, en Ontario et au Québec. Continuez à lire pour en savoir davantage sur les examens de la vue, y compris les différents types et comment réserver un examen de la vue.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>Comment réserver un examen de la vue ?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>Les étapes de la réservation d’un examen de la vue sont les suivantes : <b>sélectionner votre emplacement préféré pour l’examen de la vue, sélectionner une date et d’une heure qui vous conviennent et vous présenter à l’examen de la vue.</b> Ces étapes sont décrites ci-dessous.</p>
+<ol>
+<li><b>Sélectionner un emplacement pour votre examen de la vue : </b> Choisissez l’emplacement de la succursale Oscar Wylee qui vous convient le mieux.</li>
+<li><b>Sélectionner la date et l’heure de l’examen de la vue qui vous conviennent :</b> Choisissez parmi les plages horaires disponibles le créneau horaire qui vous convient le mieux.</li>
+<li><b>Vous présenter à l’examen de la vue :</b> Une fois que vous avez réservé votre rendez-vous, la prochaine étape est simplement de vous présenter.</li>
+</ol>
+<h3>1. Sélectionner un emplacement pour votre examen de la vue.</h3>
+<p>La réservation en ligne d’un examen de la vue chez Oscar Wylee est très simple. La première étape est de <b>trouver l’emplacement de la succursale qui vous convient le mieux.</b> Nous avons plus de 13 succursales au Canada : en Alberta, en Colombie Britannique, en Nouvelle-Écosse, en Ontario et au Québec.</p>
+<h3>2. Sélectionner la date et l’heure de l’examen de la vue.</h3>
+<p>La seconde étape est la <b>sélection de la date et de l’heure de l’examen.</b> Les examens de la vue chez Oscar Wylee durent environ 20 minutes. Ainsi, vous pouvez les faire pendant votre pause dîner ou votre magasinage. Nos succursales ont des heures d’ouverture variées, disponibles sur la page individuelle de la succursale.</p>
+<h3>3.Vous présenter au rendez-vous</h3>
+<p>Une fois que vous avez <b>réservé la date et l’heure de votre rendez-vous pour un examen de la vue, la prochaine étape est de vous présenter.</b> Plusieurs de nos succursales sont situées dans des centres commerciaux avec des aires de stationnement disponibles sur place ainsi que des instructions pour vous y rendre. Les transports en commun tels que le bus, le train ou le tram peuvent aussi être disponibles. Vous trouverez plus d’informations pour arriver à votre rendez-vous d’examen de la vue sur la page individuelle de la succursale.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>Quels sont les différents types d’examens de la vue ?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>Les différents types d’examens qu’une personne pourrait avoir dans un examen de la vue complet comprennent <b>un test de cécité des couleurs, un test de tonométrie, un test d’acuité visuelle, une pachymétrie, un test de réfraction, un test des mouvements oculaires, un examen de la rétine, un test de la fonction pupillaire et un examen à la lampe à fente.</b> Ces examens sont énumérés ci-dessous avec leurs définitions respectives.</p>
+<ul>
+<li><b>Le test de cécité des couleurs :</b> Le test de cécité des couleurs, appelé aussi test du daltonisme, est utilisé pour détecter les couleurs spécifiques qu’une personne peut voir.</li>
+<li><b>Le test de tonométrie :</b> Le test de tonométrie est réalisé par un optométriste ou un opticien au début du rendez-vous d’examen de la vue, afin de mesurer la pression intraoculaire.</li>
+<li><b>Le test de l’acuité visuelle : </b> Le test de l’acuité visuelle est réalisé afin d’évaluer la netteté et la clarté de la vision d’une personne.</li>
+<li><b>Le test du champ visuel : </b> Le test du champ visuel quantifie comment la personne peut voir avec chaque œil, d’une façon individuelle et binoculaire.</li>
+<li><b>La pachymétrie :</b> Le test de pachymétrie est un examen rapide qui mesure l’épaisseur de la cornée d’une personne.</li>
+<li><b>Le test de réfraction :</b> Le test de réfraction est utilisé pour détecter des erreurs de réfraction telles que la myopie (défaut de la vision de loin), l’hypermétropie (défaut de la vision de près), l’astigmatisme et la presbytie.</li>
+<li><b>Le test des mouvements oculaires :</b> Le test des mouvements oculaires, appelé aussi test de motilité musculaire extra-oculaire, est réalisé par un optométriste pour évaluer le mouvement des muscles oculaires.</li>
+<li><b>L’examen de la rétine : </b> L’examen de la rétine est un test diagnostic réalisé par un optométriste afin d’examiner de près le nerf optique et la rétine, situés au fond de l’œil.</li>
+<li><b>Test de la fonction pupillaire : </b> Le test de la fonction pupillaire est réalisé pour évaluer l’état de la pupille du patient afin de contrôler la santé de la rétine, du nerf optique et du cerveau.</li>
+<li><b>L’examen à la lampe à fente : </b> L’examen à la lampe à fente permet à l’optométriste d’observer les différentes structures de l’œil à l’aide d’un biomicroscope.</li>
+</ul>
+<h3>1. Le test de cécité des couleurs</h3>
+<p>Le test de cécité des couleurs, appelé aussi test du daltonisme, est <b>utilisé pour détecter les couleurs spécifiques qu’une personne peut voir.</b> Typiquement, un test de daltonisme est réalisé par un optométriste qui utilise un test de planches colorées. Ces planches forment des images constituées par des points de couleurs différentes avec un nombre au milieu, que le patient doit identifier. Il y a plusieurs planches de couleurs différentes, avec des points de couleurs différentes, qui servent à identifier plusieurs types de daltonisme. Le daltonisme est une maladie qui affecte la capacité d’une personne à voir les couleurs. Le déficit de vision des couleurs chez une personne la rend incapable de voir certaines couleurs spécifiques ou bien capable de les voir d’une façon différente des autres personnes.</p>
+<h3>2. Le test de tonométrie</h3>
+<p>Le test de tonométrie est réalisé par un optométriste ou un opticien au début du rendez-vous d’examen de la vue, appelé pré-test, afin de <b>mesurer la pression intraoculaire.</b> Un des tests de tonométrie, appelé tonométrie sans contact, comporte une machine qui souffle un jet d’air dans l’œil en utilisant une impulsion d’air rapide qui aplatit la cornée du patient pour mesurer la pression. Le test de tonométrie est souvent utilisé pour diagnostiquer la maladie du glaucome, dont l’un des premiers signes est une pression intraoculaire élevée.</p>
+<h3>3. Le test de l’acuité visuelle</h3>
+<p>Le test de l’acuité visuelle est réalisé afin <b>d’évaluer la netteté et la clarté de la vision d’une personne.</b> En général, l’acuité visuelle est examinée séparément pour chaque œil à l’aide d’un tableau de Snellen ou d’un tableau optométrique LogMAR. Ce test requiert que le patient lise les lettres d’un tableau optométrique. Ainsi, l’optométriste pourrait avoir une mesure de leur acuité visuelle sous forme de fraction, 20/20 par exemple. Le test de l’acuité visuelle est utilisé pour détecter les erreurs de réfraction telles que la myopie, l’hypermétropie et l’astigmatisme.</p>
+<div class="accordion-img-wrapper"><img src="https://d2o51ft7emegr.cloudfront.net/pub/media/wysiwyg/booking-accordion-images/_01_Le-test-de-l_acuite_-visuelle-900x600.jpg" alt="Le test de l’acuité visuelle"></div>
+<h3>4. Le test du champ visuel</h3>
+<p>Le test du champ visuel <b>quantifie comment la personne peut voir avec chaque œil, d’une façon individuelle et binoculaire.</b> Ce test est réalisé par un optométriste pour établir une ligne de référence de la vision d’un patient, afin de pouvoir diagnostiquer des maladies ou des lésions oculaires. Pratiquement, le test est réalisé sur une machine permettant de cartographier l’étendue de la vision du patient, y compris leur vision périphérique. Cela permet à l’optométriste d’identifier l’existence de toute perte de vision. La durée d’un test de champ visuel peut varier selon le type de test réalisé et le modèle de la machine, allant de 10 à 40 minutes.</p>
+<h3>5. Le test de pachymétrie</h3>
+<p>Le test de pachymétrie est un examen rapide qui <b>mesure l’épaisseur de la cornée d’une personne.</b> Le test de pachymétrie est généralement réalisé pour identifier les signes du glaucome mais aussi pour diagnostiquer les maladies cornéennes. Ce test peut être réalisé à l’aide d’une sonde ou bien sans contact, à l’aide d’une machine de pré-test. Le test de pachymétrie est réalisé par un professionnel de santé et dure environ 5 min.</p>
+<h3>6. Le test de réfraction</h3>
+<p>Le test de réfraction est utilisé pour <b>détecter des erreurs de réfraction telles que la myopie (défaut de la vision de loin), l’hypermétropie (défaut de la vision de près), l’astigmatisme et la presbytie.</b> Les types de tests de réfraction comprennent la rétinoscopie, le test de réfraction avec un réfracteur et le test avec un autoréfractomètre. Le test de réfraction par la rétinoscopie utilise un rétinoscope, un dispositif portable qui projette un rayon lumineux dans l’œil du patient afin de déterminer comment cette lumière est reflétée par la rétine. Le test de réfraction avec un réfracteur requiert du patient de regarder dans un réfracteur à travers plusieurs lentilles. L’optométriste déterminera la combinaison de lentilles la plus convenable pour l’ordonnance de lunettes ou de verres de contact. Enfin, le test avec un autoréfractomètre permet de mesurer la réfraction à l’aide de l’autoréfractomètre, une machine contrôlée par ordinateur.</p>
+<h3>7. Le test des mouvements oculaires</h3>
+<p>Le test des mouvements oculaires appelé aussi test de motilité musculaire extra-oculaire, est <b>réalisé par un optométriste pour évaluer le mouvement des muscles oculaires.</b> Ce test requiert du patient de déplacer son regard dans différentes directions, permettant à l’optométriste de voir si des mouvements anormaux pourraient contribuer à des mouvements oculaires incontrôlés.</p>
+<h3>8. L’examen de la rétine</h3>
+<p>L’examen de la rétine, appelé aussi ophtalmoscopie est <b>un test diagnostic réalisé par un optométriste afin d’examiner de près le nerf optique et la rétine,</b> situés au fond de l’œil. En général, un examen de la rétine requiert l’utilisation d’outils spécialisés tels que l’ophtalmoscope afin de contrôler les signes de maladies oculaires ou de toute autre irrégularité. Certaines des maladies oculaires pouvant être diagnostiquées par un examen de la rétine comprennent le cancer de l’œil, le glaucome et la dégénérescence maculaire. Cette procédure peut aussi fournir des informations importantes sur des diagnostics médicaux comme le diabète et l’hypertension artérielle.</p>
+<h3>9. Le test de la fonction pupillaire</h3>
+<p>Le test de la fonction pupillaire est réalisé pour <b>évaluer l’état de la pupille du patient afin de contrôler la santé de la rétine, du nerf optique et du cerveau.</b> Le test de la fonction pupillaire pourrait inclure la projection d’un rayon lumineux sur chaque pupille afin de vérifier si elles se contractent en réponse à la lumière. Ce test enregistrera aussi la taille et la forme de la pupille à cet instant.</p>
+<div class="accordion-img-wrapper"><img src="https://d2o51ft7emegr.cloudfront.net/pub/media/wysiwyg/booking-accordion-images/_02_Le-test-de-la-fonction-pupillaire-900x600.jpg" alt="Le test de la fonction pupillaire"></div>
+<h3>10. L’examen à la lampe à fente</h3>
+<p>L’examen à la lampe à fente <b>permet à l’optométriste d’observer les différentes structures de l’œil à l’aide d’un biomicroscope</b> avec une forte lumière qui engendre une visualisation de l’œil sous forme de mesures en trois dimensions. L’examen à la lampe à fente contrôlera le cristallin, la cornée, le nerf optique et la rétine du patient afin d’identifier d’éventuels signes de maladies ou d’anomalies oculaires telles que le glaucome, la dégénérescence maculaire et les cataractes. Cet examen oculaire requiert la dilatation de la pupille du patient pour permettre à l’optométriste d’avoir une meilleure visualisation de l’œil.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>Quels sont les signes qui indiquent la nécessité d’un examen de la vue immédiat?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>Il y a des signes à rechercher qui indiquent que la personne doit immédiatement réserver un rendez-vous pour un examen de la vue. Ces signes comprennent <b>des changements de votre vision tels qu’une vision floue, des points dans le champ de vision, une vision double, une douleur dans ou autour des yeux, un corps étranger dans votre œil ou en cas de sensibilité à la lumière.</b> Il est aussi important d’avoir des examens de la vue réguliers au moins une fois tous les deux ans pour permettre à l’optométriste de contrôler votre vision et votre santé oculaire et de détecter précocement les maladies oculaires.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h3>À quelle fréquence doit-on avoir un examen de la vue complet?</h3>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p><b>Chez Oscar Wylee, nous recommandons à chaque personne d’avoir un examen de la vue complet au moins une fois tous les deux ans.</b> D’autres facteurs peuvent affecter cette fréquence, y compris l’âge du patient, l’existence de maladies oculaires et l’existence d’autres problèmes de santé. Au-delà de 65 ans, un examen de la vue est recommandé tous les ans car les yeux changent avec l’âge. Une personne ayant un glaucome ou un décollement de la rétine devrait avoir des examens plus fréquents pour permettre à l’optométriste de surveiller ces maladies. Enfin, si une personne a un diabète ou une hypertension artérielle, elle doit aussi avoir des examens de la vue plus fréquents car ces maladies peuvent affecter la vision.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h3>Quel est le coût d’un examen de la vue?</h3>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>Le prix d’un examen de la vue <b>dépend de votre âge et de la province ou vous résidez, car il vous serait possible de recevoir une certaine couverture du gouvernement provincial.</b> Si vous n’êtes pas admissible, les examens de la vue chez Oscar Wylee sont disponibles moyennant un coût qui dépend de votre province de résidence.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h2>Quelle est l’importance d’avoir un examen de la vue?</h2>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>L’examen de la vue a plusieurs <b>avantages importants comprenant l’entretien d’une bonne santé oculaire, la détection précoce de maladies oculaires et la surveillance de la vision.</b> Les examens de la vue réguliers permettent aux optométristes de surveiller les yeux du patient et de les comparer afin de vérifier s’il y a des changements qui nécessitent une intervention. Pour de nombreuses maladies, la détection précoce est cruciale pour préserver la vision. Il serait préférable de réserver un examen de la vue lorsque vous en êtes avisés que d’attendre d’avoir des problèmes de vision. Un autre avantage important est que l’examen de la vue contrôle la vision d’une personne et détermine si elle a besoin de lunettes pour la corriger. La vision change aussi avec le temps et l’âge : vous auriez besoin de nouvelles ordonnances toutes les quelques années.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h3>Y a-t-il un risque à avoir un examen de la vue?</h3>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>Non, <b>il n’y a aucun risque à avoir un avoir un examen de la vue. Au contraire, les examens de la vue sont extrêmement importants pour préserver votre santé oculaire</b> ainsi que votre bien-être global. Pour de nombreuses maladies oculaires, la détection précoce est cruciale pour prévenir la perte de vision. C’est la raison pour laquelle les examens de la vue réguliers sont aussi importants.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h3>De quelle manière les examens de la vue pour adultes sont-ils différents de ceux pour enfants?</h3>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>Un examen de la vue est <b>largement identique chez un adulte et chez un enfant. Ils peuvent être légèrement différents pour s’adapter à la capacité de l’enfant à lire et comprendre ainsi qu’à son stade de développement.</b> Le gouvernement du Québec couvre complètement ou partiellement l’examen de la vue pour les enfants de moins de 18 ans, cela une fois par année.</p>
+<div class="accordion-img-wrapper"><img src="https://d2o51ft7emegr.cloudfront.net/pub/media/wysiwyg/booking-accordion-images/_03_Examen-de-la-vue-pour-enfants-900x600.jpg" alt="Examen de la vue pour enfants"></div>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h3>Quel type de médecin réalise les examens de la vue?</h3>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>Un <b>optométriste, appelé aussi docteur en optométrie, réalise les examens de la vue.</b> Au Canada, un médecin oculaire est un professionnel de santé diplômé et agréé qui fournit des services de soins oculaires de première ligne.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h3>Combien de temps dure un examen de la vue?</h3>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>Chez Oscar Wylee, un examen de la vue dure <b>environ 20 minutes, bien que cela peut largement varier selon le patient.</b> Les facteurs qui peuvent affecter la durée d’un examen de la vue incluent l’âge du patient, les tests réalisés ainsi que les maladies oculaires ou les problèmes de santé que le patient pourrait avoir. Si vous avez besoin de lunettes, vous passerez plus de temps après votre rendez-vous avec un opticien, qui répondra à vos questions et vous guidera sur les types de verres qui vous conviennent le mieux selon votre ordonnance.</p>
+</div>
+</div>
+</div>
+</article>
+<article>
+<div class="accordion-item">
+<div class="accordion-header">
+<h4>Les examens de la vue peuvent-ils détecter d’autres problèmes, tels que le diabète?</h4>
+</div>
+<div class="accordion-content">
+<div class="accordion-content-wrapper">
+<p>Oui, <b>les examens de la vue peuvent détecter d’autres problèmes de santé comme le diabète et l’hypertension artérielle.</b> Selon l’université de Stanford, un examen de la rétine peut fournir des informations importantes sur un diagnostic médical y compris l’hypertension artérielle et le diabète. Un examen de la rétine est un type de test nécessitant des outils spécialisés tels qu’un ophtalmoscope qui permet de regarder la rétine et le nerf optique d’un patient.</p>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+</footer>
+<p>
+<script>
+    var accordionHeaders = document.querySelectorAll(".accordion-header");
+    var accordionContents = document.querySelectorAll(".accordion-content");
+    var toggleAllButton = document.getElementById("toggleAllButton");
+    accordionHeaders.forEach(function (header) {
+      header.addEventListener("click", function () {
+        var content = this.nextElementSibling;
+        if (!content.style.maxHeight) {
+          document
+            .querySelectorAll(".accordion-content")
+            .forEach(function (item) {
+              item.style.maxHeight = null;
+              item.previousElementSibling.classList.remove("active");
+            });
+        }
+        this.classList.toggle("active");
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+        updateToggleButton();
+      });
+    });
+    toggleAllButton.addEventListener("click", function () {
+      var anyClosed = false;
+      accordionContents.forEach(function (content) {
+        if (!content.style.maxHeight) {
+          anyClosed = true;
+        }
+      });
+      accordionContents.forEach(function (content) {
+        content.style.maxHeight = anyClosed
+          ? content.scrollHeight + "px"
+          : null;
+        content.previousElementSibling.classList.toggle("active", anyClosed);
+      });
+      toggleAllButton.textContent = anyClosed
+        ? "Masquer tout"
+        : "Afficher tout";
+    });
+    function updateToggleButton() {
+      var anyClosed = false;
+      accordionContents.forEach(function (content) {
+        if (!content.style.maxHeight) {
+          anyClosed = true;
+        }
+      });
+      toggleAllButton.textContent = anyClosed
+        ? "Afficher tout"
+        : "Masquer tout";
+    }
+  </script>
+</p>

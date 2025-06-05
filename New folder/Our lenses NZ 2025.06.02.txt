@@ -1,0 +1,500 @@
+<style xml="space">
+    /* This technique doesn't naturally cause horizontal overflow, but once there is natural vertical overflow, it causes horizontal overflow, so stopping here. */
+
+
+
+    html {
+
+        scroll-behavior: smooth;
+
+    }
+
+
+
+    body {
+
+        overflow-x: hidden;
+
+    }
+
+    img {
+
+        max-width: 100%;
+
+    }
+
+    main {
+
+        max-width: 600px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .full-width {
+
+        width: 100vw;
+
+        position: relative;
+
+        left: 50%;
+
+        right: 50%;
+
+        margin-left: -50vw;
+
+        margin-right: -50vw;
+
+    }
+
+    p,
+    figure {
+
+        margin: 15px 0;
+
+    }
+
+    figcaption {
+
+        text-align: center;
+
+        color: #999;
+
+    }
+
+    .collumn {
+
+        float: left;
+
+        width: 50%;
+
+        padding: 20px;
+
+    }
+
+    /* Clearfix (clear floats) */
+
+
+
+    .row::after {
+
+        content: "";
+
+        clear: both;
+
+        display: table;
+
+    }
+
+    /* COLLUMN STRUCTURE */
+
+
+
+    .wrapper {
+
+        max-width: 960px;
+
+    }
+
+    header {
+
+        padding: 0 0px;
+
+    }
+
+
+
+    .columns {
+
+        display: flex;
+
+        flex-flow: row wrap;
+
+        justify-content: center;
+
+        margin: 5px 0;
+
+    }
+
+
+
+    .column {
+
+        flex: 1;
+
+        border: none;
+
+        margin: 2px;
+
+        padding: 10px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+    }
+
+
+
+    footer {
+
+        padding: 0;
+
+    }
+
+
+
+
+
+    @media screen and (max-width: 980px) {
+
+        .columns .column {
+
+            margin-bottom: 5px;
+
+            flex-basis: 40%;
+
+            &:nth-last-child(2) {
+
+                margin-right: 0;
+
+            }
+
+            &:last-child {
+
+                flex-basis: 100%;
+
+                margin: 0;
+
+            }
+
+        }
+
+    }
+
+
+
+    @media screen and (max-width: 680px) {
+
+        .columns .column {
+            https: //zhuanlan.zhihu.com/p/270622973
+
+                flex-basis: 100%;
+
+            margin: 0 0 5px 0;
+
+        }
+
+    }
+
+
+
+    .btn {
+
+        border: 2px solid black;
+
+        border-radius: 8px;
+
+        background-color: white;
+
+        color: black;
+
+        padding: 14px 28px;
+
+        font-size: 16px;
+
+        cursor: pointer;
+
+    }
+
+    /* Black */
+
+
+
+    .shop {
+
+        border-color: #000000;
+
+        color: black;
+
+    }
+
+    .shop:hover {
+
+        background-color: #000000;
+
+        color: white;
+
+    }
+
+    .button {
+
+        background-color: white border: 1px solid;
+
+        color: black;
+
+        text-align: center;
+
+        text-decoration: none;
+
+        display: inline-block;
+
+        font-size: 10px;
+
+        -webkit-transition-duration: 0.4s;
+
+        /* Safari */
+
+        transition-duration: 0.4s;
+
+        cursor: pointer;
+
+    }
+
+    .button1 {
+
+        background-color: #003CAC;
+
+        color: white;
+
+        border: 1px solid #000000;
+
+    }
+
+    .button1:hover {
+
+        background-color: #1258DB;
+
+        color: white;
+
+        border: 1px solid #000000
+    }
+
+    .button2 {
+
+        background-color: white;
+
+        color: black;
+
+        border: 1px solid black;
+
+    }
+
+    .button2:hover {
+
+        background-color: Black;
+
+        color: white;
+
+        border: 1px solid black;
+
+    }
+</style>
+<p></p>
+<style>
+        .banner {
+            width: auto;
+            max-height: 450px;
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+        }
+
+        .mobile-banner {
+            display: none;
+        }
+
+        .article-banner {
+            margin-top: -50px;
+        }
+
+
+        @media screen and (max-width: 440px) {
+
+
+            .desktop-banner {
+                display: none;
+            }
+
+            .mobile-banner {
+                display: block;
+                max-width: 100%;
+                padding: 0;
+            }
+
+
+            .article-banner {
+                margin-top: -30px;
+                margin-left: -30px;
+                margin-right: -30px;
+            }
+
+
+        }
+    </style>
+<div class="widget block block-static-block">
+<div class="article-banner"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/our-lenses/Our_Lenses_Banner_Web_Banner.jpg" alt="OW Our Lenses" class="banner desktop-banner"> <img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/our-lenses/Our_Lenses_Banner_Mobile_Banner.jpg" class="mobile-banner" alt="OW Our Lenses"></div>
+</div>
+<p></p>
+<div class="locations-content" style="text-align: center; margin: 5px 0px 10px 0px;"><span style="font-size: 24px; font-weight: 600; color: #000000;">Our Lenses</span></div>
+<p></p>
+<p style="max-width: 550px; margin: 0 auto; padding: 1em; text-align: center; margin-bottom: 30px;">Choosing the right lenses can make a big difference if you require glasses in your day-to-day activities. Oscar Wylee offers a wide range of glasses lens options to suit and enhance your vision needs, from multifocal lenses to polarised, and more. <br><br>Our lenses are made from premium engineered polymers and formed under strict quality controlled conditions in our medically certified lab.</p>
+<div style="width: 50%; margin-left: auto; margin-right: auto; display: block;"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/lens02.jpg" alt="Lens created in lab"></div>
+<p></p>
+<div style="width: 14%; margin-left: auto; margin-right: auto; display: block;"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/lens03.jpg" alt="OW eyewear frames graphic"></div>
+<p></p>
+<hr>
+<p></p>
+<div class="widget block block-static-block">
+<div class="block-main main-width">
+<div class="block-main-item">
+<div class="block-main-top" style="margin-top: 40px;"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/lens04.jpg" alt="Single Vision"></div>
+</div>
+<div class="block-main-item">
+<h1 style="padding-top: 2em; text-align: left; font-size: 25px; font-weight: 600;">Single Vision</h1>
+<div class="block-main-content" style="font-size: 13px; line-height: 1.7em; text-align: left; padding-bottom: 70px; margin-right: 20px;">These are lenses that have a single power over the whole lens. This means that they would be used by someone who needs glasses for driving or for reading. In most cases, a person’s eyes may need lenses to focus at both far and near distances and their prescription is the same for both. In this case, they can use the same single vision lenses for all activities.<br><br>Our <a href="/guides/lenses/single-vision.html">single vision distance lenses</a> are designed to help those who have trouble seeing things far away. If your prescription begins with a minus or if you’re nearsighted, this lens is for you. Single vision near lenses helps you to see things at a close distance of 30 to 40 cm, usually for activities such as reading or looking at a phone.</div>
+</div>
+</div>
+</div>
+<p></p>
+<p></p>
+<div class="widget block block-static-block">
+<div style="text-align: center; margin-bottom: 3em; background-color: #f7f5f2; border-style: none; border-radius: 10px; margin-top: -3em;">
+<h1 style="padding-top: 2em; text-align: center; font-size: 25px; font-weight: 600;">Multifocal Lenses</h1>
+<p style="max-width: 700px; margin: 0 auto; text-align: center; padding-left: 20px; padding-right: 20px; font-size: 13px; line-height: 1.7em;">Progressive multifocal lenses incorporate distance, intermediate, and near vision seamlessly with digitally personalized lenses. These premium lenses provide an enhanced and ideal viewing experience. <br><br>Progressive lenses are the perfect choice for people that are both short-sighted and far-sighted. With progressive glasses, you won’t have to constantly switch between reading glasses and distance glasses.</p>
+<br><br></div>
+</div>
+<p></p>
+<p></p>
+<h1 style="text-align: center; font-size: 25px; font-weight: 600;">At Oscar Wylee we offer three multifocal options:</h1>
+<p></p>
+<section class="columns">
+<div class="column" style="line-height: 1.7em; padding-bottom: 30px;"><img style="width: 70%; margin-left: auto; margin-right: auto; display: block;" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/multifocal_standard.png" alt="Standard multifocal lens range">
+<div class="font1" style="font-size: 1.1em; margin: 1em 10px 10px 1em;"></div>
+<div class="font1" style="margin: 0 50px; font-size: 0.9em; text-align: center;"><span style="font-weight: 600; font-size: 15px;">Standard Lens</span><br>Regular Corridor 17mm,<br>Short Corridor 14mm</div>
+</div>
+<div class="column" style="line-height: 1.7em; padding-bottom: 30px;"><img style="width: 70%; margin-left: auto; margin-right: auto; display: block;" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/multifocal_premium.png" alt="Premium multifocal lens range">
+<div class="font1" style="font-size: 1.1em; margin: 1em 10px 10px 1em;"></div>
+<div class="font1" style="margin: 0 50px; font-size: 0.9em; text-align: center;"><span style="font-weight: 600; font-size: 15px;">Premium Lens</span><br>HD, MD, SD, Office, Mild Add</div>
+</div>
+<div class="column" style="line-height: 1.7em; padding-bottom: 30px;"><img style="width: 70%; margin-left: auto; margin-right: auto; display: block;" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/multifocal_elite.png" alt="Elite multifocal lens range">
+<div class="font1" style="font-size: 1.1em; margin: 1em 10px 10px 1em;"></div>
+<div class="font1" style="margin: 0 50px; font-size: 0.9em; text-align: center;"><span style="font-weight: 600; font-size: 15px;">Elite Lens</span><br>HD2, MD2, SD2, ED2</div>
+</div>
+</section>
+<p></p>
+<p></p>
+<div class="widget block block-static-block">
+<div style="text-align: center; margin-bottom: 3em; background-color: #f7f5f2; border-style: none; border-radius: 10px;">
+<p style="max-width: 550px; margin: 0 auto; text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 30px;">Want to know more?<br>Click the button below to learn more on what we can offer for multifocals.</p>
+<br>
+<div class="locations-link"><a href="/multifocal-lenses.html"><button style="font-size: 15px; border-width: 1.5px; border-color: #000000; border-radius: 30px; color: #000000; background-color: #ffffff; padding: 11px 50px;">Learn more</button></a></div>
+<br><br></div>
+</div>
+<p></p>
+<p></p>
+<div class="widget block block-static-block">
+<div class="block-main main-width">
+<div class="block-main-item">
+<div class="block-main-top" style="margin-top: 30px;"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/transitions_ow.jpg" alt="Adaptive Lenses"></div>
+</div>
+<div class="block-main-item">
+<h1 style="padding-top: 1em; text-align: left; font-size: 25px; font-weight: 600;">Adaptive Lenses</h1>
+<div class="block-main-content" style="font-size: 13px; line-height: 1.7em; text-align: left; padding-bottom: 50px; margin-right: 20px;">These everyday lenses adapt to light conditions and automatically adjust from clear to dark and every shade in between.<br><br>Oscar Wylee Adaptive Lenses offer crystal clear vision indoors, darken rapidly outdoors, and fade back quickly. With the adaptive features of Oscar Wylee Adaptive Lenses, you can find glasses that complement your everyday, formal, and workplace ensembles.</div>
+</div>
+</div>
+</div>
+<p></p>
+<p></p>
+<div class="widget block block-static-block">
+<p></p>
+<div class="box-store-locations main-width" style="background-color: #f7f5f2; border-style: none; border-radius: 10px;">
+<div class="locations-left">
+<div class="locations-title" style="font-size: 20px; font-weight: 600; text-align: left;">Digital (Blue Light Filter)</div>
+<div class="locations-content" style="font-size: 13px; line-height: 1.7em; max-width: 520px; text-align: left;">If your career or lifestyle relies heavily on using digital devices, we recommend using Blue Light Glasses. Oscar Wylee Blue Light lenses may help to filter blue light from digital devices and may ease the eye discomfort experienced from prolonged screen time, known as digital eye strain.<br><br>• Reduce blue light<br>• Helps ease digital eye strain<br>• Includes complimentary Basic Anti-Reflective coating</div>
+<div class="locations-link"><a href="/blue-light-glasses.html"><button style="font-size: 15px; border-width: 1.5px; border-color: #000000; border-radius: 30px; color: #000000; background-color: #ffffff; padding: 11px 50px;">Learn more</button></a></div>
+</div>
+<div class="block-main-item">
+<div class="block-main-top" style="padding-top: 30px;"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/bluelight_ow.jpg" alt="Digital Blue Light Filter"></div>
+</div>
+</div>
+</div>
+<p></p>
+<p></p>
+<div class="widget block block-static-block">
+<div class="block-main main-width">
+<div class="block-main-item">
+<div class="block-main-top" style="margin-top: 30px;"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/high_index_ow.jpg" alt="High Index Lenses"></div>
+</div>
+<div class="block-main-item">
+<h1 style="padding-top: 1em; text-align: left; font-size: 25px; font-weight: 600;">High Index Lenses</h1>
+<div class="block-main-content" style="font-size: 13px; line-height: 1.7em; text-align: left; padding-bottom: 50px; margin-right: 30px;">If you wear glasses on a daily basis, or have a strong prescription, it would be a wise move to invest in a pair of lenses that are more comfortable and provide clearer vision than a normal optical lens. High index lenses are thinner and lighter than your standard optical lens, making them more comfortable for daily use.<br><br>Stronger prescription lenses usually require thicker lenses. With high index lenses, you can have this strong prescription with a lens that is more lightweight. You may also find that the quality of the vision in the lens is better, as high-index lenses are designed to bend light better compared to regular lenses.<br><br>At Oscar Wylee we provide several indexes for your lenses, starting with our standard 1.5 index lens, up to 1.74 which is our thinnest lens. High index lenses are available for most lens types, including single vision lenses, bifocal and multifocal lenses. To learn more, see our high index lenses guide.</div>
+</div>
+</div>
+<p></p>
+<div class="home-banner">
+<div class="home-banner__img"></div>
+</div>
+</div>
+<p></p>
+<p></p>
+<div class="widget block block-static-block">
+<p></p>
+<div class="box-store-locations main-width" style="background-color: #f7f5f2; border-style: none; border-radius: 10px;">
+<div class="locations-left">
+<div class="locations-title" style="font-size: 20px; font-weight: 600; text-align: left;">Sunglasses</div>
+<div class="locations-content" style="font-size: 13px; line-height: 1.7em; max-width: 520px; text-align: left;">Sunglasses are indispensable for ensuring that you enjoy the outdoors with clear vision and protection against UV rays. All of this is available in Oscar Wylee’s sunglass lenses. Whether you have prescription lenses or not, our comprehensive range features individualised sunglass lenses for everyone. Oscar Wylee offers a range of sun protection lenses, from an array of colour tints, gradient tints, and jelly tints.</div>
+<div class="locations-title" style="font-size: 20px; font-weight: 600; text-align: left;">Polarised Lenses</div>
+<div class="locations-content" style="font-size: 13px; line-height: 1.7em; max-width: 520px; text-align: left;">Oscar Wylee polarised sunglasses offer good protection across the range. This reduces the annoying, and sometimes dangerous, reflections that water and roads can create on your lenses, making it especially handy for activities like driving, running, and biking. We offer grey, brown, and green polarised lenses.<br><br>• Good UV protection<br>• Includes complimentary Basic Anti-Reflective coating</div>
+<div class="locations-link"><a href="/sunglasses.html"><button style="font-size: 15px; border: none; border-radius: 30px; color: #ffffff; background-color: #003cac; padding: 13px 10px;">Shop Sunglasses</button></a></div>
+</div>
+<div class="block-main-item">
+<div class="block-main-top" style="padding-top: 30px;"><img src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/sunglasses_ow.jpg" alt="Polarised Lenses"></div>
+</div>
+</div>
+</div>
+<p></p>
+<p></p>
+<h1 style="text-align: center; font-size: 25px; font-weight: 600;">Tinted Lenses</h1>
+<p style="max-width: 550px; margin: 0 auto; text-align: center; margin-bottom: 30px;">Did you know that most Oscar Wylee glasses are customizable in all our stores? Ask our friendly team instore about our range of lenses. We offer a number of different tinted lenses to choose from.</p>
+<section class="columns">
+<div class="column" style="line-height: 1.7em; padding-bottom: 30px;"><img style="width: 70%; margin-left: auto; margin-right: auto; display: block;" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/niko_016_front_1.jpeg" alt="Glasses frame with mirror tint">
+<div class="font1" style="font-size: 1.1em; margin: 1em 10px 10px 1em;"></div>
+<div class="font1" style="margin: 0 50px; font-size: 0.9em; text-align: center;"><span style="font-weight: 600; font-size: 15px;">Mirror Tints</span><br>Pink, Blue, Silver, Orange</div>
+</div>
+<div class="column" style="line-height: 1.7em; padding-bottom: 30px;"><img style="width: 70%; margin-left: auto; margin-right: auto; display: block;" src="{{media url="wysiwyg/Lenses/lolly_tint_2024_alya_.jpg"}}" alt="Glasses frame with coloured lolly tint">
+<div class="font1" style="font-size: 1.1em; margin: 1em 10px 10px 1em;"></div>
+<div class="font1" style="margin: 0 50px; font-size: 0.9em; text-align: center;"><span style="font-weight: 600; font-size: 15px;">Lolly Tints</span><br>Yellow, Pink, Red, Blue</div>
+</div>
+<div class="column" style="line-height: 1.7em; padding-bottom: 30px;"><img style="width: 70%; margin-left: auto; margin-right: auto; display: block;" src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/denverow_290916_096_3.jpeg" alt="Glasses frame with sunglass tint">
+<div class="font1" style="font-size: 1.1em; margin: 1em 10px 10px 1em;"></div>
+<div class="font1" style="margin: 0 50px; font-size: 0.9em; text-align: center;"><span style="font-weight: 600; font-size: 15px;">Sunglass Tint</span><br>Grey, Brown, Green</div>
+</div>
+</section>
+<p></p>
+<hr>
+<p></p>
+<h1 style="text-align: center; font-size: 25px; font-weight: 600;">Lens features</h1>
+<section class="columns">
+<div class="column" style="line-height: 1.7em; padding-bottom: 30px;">
+<div class="font1" style="font-size: 1.1em; margin: 1em 10px 10px 1em;"></div>
+<div class="font1" style="margin: 0 50px; font-size: 0.9em; text-align: left;"><span style="font-weight: 600; font-size: 15px;">Premium Anti-reflective</span><br><br>Our premium anti-reflective lenses are made with an anti-reflective coating. An anti-reflective coating is an extremely thin layer placed on the lens itself that removes any reflections you might normally see from the surface of your glasses. It also reduces glare and ‘halos’ around light sources that you may experience at night. Sometimes you will see a green hue on the lens, this is the coating blocking part of the green wavelength and it can be visible at certain angles. They also come with a hydrophobic lens surface treatment. This means that dirt, smudges, or oil are less likely to stick to your lens, making them easy to clean.<br><br>• Reduces reflection for clearer vision<br>• Scratch resistant<br>• Smudge resistant<br>• Anti-static</div>
+</div>
+<div class="column" style="line-height: 1.7em; padding-bottom: 30px;">
+<div class="font1" style="font-size: 1.1em; margin: 1em 10px 10px 1em;"></div>
+<div class="font1" style="margin: 0 50px; font-size: 0.9em; text-align: left;"><span style="font-weight: 600; font-size: 15px;">Hard Coating and Scratch Resistant</span><br><br>All Oscar Wylee Glasses come with a Hard Coat as standard with UV protection. Scratch-resistant lenses are made by coating regular plastic with a hard protective layer. This coating is applied to the front and back of the lenses.<br><br>
+<div class="locations-link"><a href="/glasses.html"><button style="font-size: 15px; border: none; border-radius: 30px; color: #ffffff; background-color: #003cac; padding: 13px 40px;">Shop Now</button></a></div>
+</div>
+</div>
+</section>
+<p></p>
+<hr>
+<p></p>
+<div class="widget block block-static-block"></div>
+<p></p>
