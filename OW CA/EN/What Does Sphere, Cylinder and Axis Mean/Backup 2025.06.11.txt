@@ -1,0 +1,1415 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+
+  * {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #333333; */
+    line-height: 1.3em;
+    scroll-behavior: smooth;
+  }
+
+  #maincontent {
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  }
+
+  .article-banner {
+    height: 450px;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  .banner {
+    width: auto;
+    max-height: 450px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+  }
+
+  .mobile-banner {
+    display: none;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 28px;
+    }
+  }
+
+  h2 {
+    font-size: 2.6rem;
+    line-height: 1.1;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    width: 100%;
+  }
+
+  h4 {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  h5 {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .title {
+    /* border-bottom: 1px solid silver; */
+    /* padding: 2.5rem 3rem; */
+    padding: 11px 3rem;
+    /* margin: 2.5rem 3rem; */
+    margin: 0px;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 10px solid #003cac;
+    padding: 1rem;
+    font-weight: 700;
+  }
+
+  .linkTo {
+    color: #003cac;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .intro-section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .main-section section {
+    margin: 3rem;
+    border-bottom: 1px solid silver;
+  }
+
+  .section-border-bottom {
+    border-bottom: 1px solid silver;
+    margin: 3rem;
+  }
+
+  .book-section {
+    display: flex;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0em;
+  }
+
+  .book-section p {
+    margin-bottom: 1.5em;
+  }
+
+  .book-section-left {
+    width: 50%;
+    margin-left: 0;
+    padding-left: 1.5em;
+  }
+
+  .book-section-left .heading {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+    padding-bottom: 1em;
+  }
+
+  .book-section-right {
+    display: flex;
+    margin: auto auto;
+    width: 30%;
+  }
+
+  .book-section-right a {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+  }
+
+  .btnOw:hover {
+    background-color: black;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    border: none !important;
+  }
+
+  .btnOw {
+    background-color: #003cac;
+    width: 100%;
+    /* padding: 0px 50%; */
+    border: none;
+    color: #fff;
+    height: 2em;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .para-content {
+    /* margin-top: 1em; */
+    margin-bottom: 2em;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .list-title {
+    font-weight: 700;
+  }
+
+  .ordered-list,
+  .unordered-list {
+    padding-left: 4rem;
+    margin-top: 2em;
+  }
+
+  .unordered-list {
+    margin-bottom: 2em;
+  }
+
+  .ordered-list li,
+  .unordered-list li {
+    margin-bottom: 0.8em;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .pro-con {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .pro-con li {
+    margin-bottom: 1em;
+  }
+
+  .pro-title,
+  .con-title,
+  .sub-list-title,
+  .sub-div-title {
+    border-left: 10px solid #b1b4b2;
+    padding: 0rem 1rem;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  .sub-list-title {
+    font-size: medium;
+    margin-left: 3em;
+  }
+
+  .pro-list,
+  .con-list {
+    margin-left: 2em;
+  }
+
+  .pro-section,
+  .con-section {
+    flex: 1 1 0;
+  }
+
+  .sub-div {
+    margin-left: 2em;
+  }
+
+  .sub-div .para-content {
+    margin-left: 0;
+  }
+
+  .grid-image {
+    width: 100%;
+    margin-bottom: 0.3em;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    column-gap: 3em;
+    width: 70%;
+    margin: 2em auto;
+  }
+
+  .grid-item {
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  .grid-item span {
+    font-style: italic;
+    font-weight: 700;
+    font-size: x-small;
+  }
+
+  .grid-text {
+    text-align: center;
+    font-size: x-small;
+    margin-bottom: 2em;
+  }
+
+  .grid-title {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    margin-bottom: 2em;
+  }
+
+  .flex-image {
+    width: 80%;
+    display: flex;
+    margin: 2em auto;
+  }
+
+  .hightlight-list {
+    font-weight: 600;
+  }
+
+  .example-images {
+    row-gap: 2em;
+  }
+
+  .product-image {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .products-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .individual-product {
+    border-right: 1px solid silver;
+    margin-bottom: 2em;
+    display: flex;
+    /* margin-left: 1em; */
+  }
+
+  .individual-product:last-child {
+    border: none;
+  }
+
+  .product-name,
+  .product-price {
+    text-align: center;
+  }
+
+  .product-button {
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin-top: 1em;
+  }
+
+  .two-pairs-price,
+  .three-pairs-price {
+    text-align: center;
+    /* margin-top: 2em; */
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 1em;
+  }
+
+  .two-pairs-price {
+    margin-bottom: 1em;
+  }
+
+  .two-pairs-price span,
+  .three-pairs-price span {
+    display: block;
+  }
+
+  .two-pairs-price {
+    background-color: #003cac;
+  }
+
+  .three-pairs-price {
+    background-color: black;
+  }
+
+  .from {
+    font-weight: 300;
+    color: white;
+    line-height: 10px;
+  }
+
+  .context {
+    padding: 0 3rem;
+  }
+
+  .location {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: max-content;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+    padding-top: 0;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid silver;
+  }
+
+  .location .heading {
+    font-weight: 700;
+    font-size: 1.8em;
+  }
+
+  .item1 {
+    border: none;
+  }
+
+  .locationText .heading {
+    font-weight: 500;
+    font-size: 1.25em;
+  }
+
+  .locationText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.5em;
+  }
+
+  .locationText p {
+    font-size: 16px;
+    margin-top: 2em;
+  }
+
+  .locationImage {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  .allButton {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .allButton a {
+    text-decoration: none;
+  }
+
+  .allButton .btnOw {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .item1 {
+    padding-top: 2em;
+  }
+
+  .products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section-mobile {
+    display: none;
+  }
+
+  .nine-products-section {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .nine-products-section img {
+    width: 30%;
+    border-right: 1px solid silver;
+  }
+
+  .nine-products-section img:last-child {
+    border: none;
+  }
+
+  .nine-products-section-gender {
+    margin-left: 0;
+  }
+
+  .grid-container-mobile {
+    display: none;
+  }
+
+  .contents {
+    margin-bottom: 2em;
+  }
+
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+    padding: 0;
+  }
+
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  .nxt-btn {
+    right: 0;
+  }
+
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+    width: 1em;
+  }
+
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+
+  .pre-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nxt-btn:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .nine-products-section {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .product-container {
+    /* padding: 0 10vw; */
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .product-container a {
+    display: contents;
+  }
+
+  @media screen and (max-width: 440px) {
+    * {
+      line-height: 1.5em;
+    }
+
+    .start-with-para {
+      margin-top: 2em !important;
+    }
+
+    .title {
+      margin: 1em 0.5em;
+      padding: 0em;
+      /* padding-bottom: 0.5em; */
+      white-space: normal;
+      border: none;
+    }
+
+    .contents {
+      margin-bottom: 2em;
+    }
+
+    .intro-section,
+    .main-section section {
+      margin: 0 1em;
+    }
+
+    .ordered-list,
+    .unordered-list {
+      padding-left: 1.2em;
+    }
+
+    .pro-con {
+      flex-direction: column;
+    }
+
+    .flex-wrapper {
+      flex-direction: column;
+    }
+
+    .example-images {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 2em;
+    }
+
+    .grid-item {
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .product-image {
+      width: 100%;
+    }
+
+    .sub-div {
+      margin-left: 0em;
+    }
+
+    .book-section {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .book-section-left {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .book-section-left p {
+      margin-right: 1em;
+      text-align: justify;
+      margin-left: 1em;
+    }
+
+    .book-section-left .heading {
+      text-align: center;
+      margin-top: 1.6em;
+      font-size: 1.25em;
+      margin-left: auto;
+      margin-right: auto;
+      width: 278px;
+    }
+
+    .book-section-right {
+      width: 90%;
+      margin-bottom: 1em;
+    }
+
+    .desktop-banner {
+      display: none;
+    }
+
+    .mobile-banner {
+      display: block;
+      max-width: 100%;
+      padding: 0;
+    }
+
+    .products-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .individual-product {
+      border-right: none;
+      border-bottom: 1px solid silver;
+      padding-bottom: 0.5em;
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    .grid-image {
+      width: 90%;
+      display: flex;
+      margin: 0px auto;
+    }
+
+    .location {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5em;
+    }
+
+    .locationText .heading {
+      /* correction text-size to font-size */
+      font-size: 1.25em;
+      margin-top: 1.9em;
+      margin-bottom: -0.5em;
+    }
+
+    .allButton .btnOw {
+      width: 100%;
+    }
+
+    .item1 {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+      border: none;
+      padding-bottom: 0;
+      padding-top: 3.5em;
+    }
+
+    .locationText .heading {
+      text-align: center;
+    }
+
+    .item1 .locationImage,
+    .item1 .locationText {
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+    }
+
+    .products-section {
+      display: none;
+    }
+
+    .nine-products-section {
+      display: none;
+    }
+
+    .individual-product {
+      display: flex;
+      margin: auto auto;
+    }
+
+    .products-section-mobile {
+      display: block;
+    }
+
+    .nine-products-section-mobile {
+      display: flex;
+      overflow-x: scroll;
+    }
+
+    .nine-products-section-mobile::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nine-products-section-mobile img {
+      width: 80%;
+    }
+
+    .grid-container-mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid-item span {
+      display: flex;
+      margin: 0 2em;
+    }
+
+    .grid-container-desktop {
+      display: none;
+    }
+
+    .product-container-mobile {
+      display: flex;
+      overflow-x: auto;
+    }
+
+    .nine-products-section-mobile {
+      position: relative;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+      width: 3vw;
+      height: 0;
+      top: 50%;
+    }
+
+    #main-cont-wrapper {
+      margin: 0em 1em;
+    }
+
+    .para-content {
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      word-spacing: -0.05em;
+    }
+
+    .mobile-word-space {
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      word-spacing: -0.1em !important;
+      text-align: justify;
+      font-size: 16px;
+    }
+
+    h5 {
+      font-size: 15px;
+    }
+
+    .btn-helth-funds {
+      height: 60px;
+      line-height: 20px;
+    }
+  }
+
+  /* big image */
+  .big_img_wapper {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .big_img {
+    border-radius: 8px;
+    width: 80%;
+  }
+
+  /* image with content section */
+  .image_with_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .para_wapper {
+    width: 50%;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    .image_with_content {
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    .para_wapper {
+      width: 100%;
+    }
+
+    .big_img_wapper {
+      width: 100%;
+    }
+
+    .big_img {
+      width: 100%;
+    }
+
+    .article-banner {
+      height: 500px;
+    }
+  }
+
+  /* new template styles start */
+  /* publish date start */
+  .intro-section.publsih-date {
+    margin: 0rem 3rem;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+
+  .publsih-date-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .publsih-date-wrapper p {
+    margin-bottom: 0px;
+    color: #003cac;
+    font-weight: 700;
+  }
+
+  .publsih-date-wrapper p:first-child {
+    border-right: 1.5px solid silver;
+    margin-right: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .intro-section.publsih-date {
+      margin: 0em 1em 2em 1em;
+      padding-bottom: 10px;
+    }
+
+    .publsih-date-wrapper {
+      display: inline;
+    }
+
+    .publsih-date-wrapper p {
+      margin-bottom: 8px;
+      color: #003cac;
+      font-weight: 700;
+    }
+
+    .publsih-date-wrapper p:first-child {
+      border-right: 0px;
+      margin-right: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  /* publish date end */
+
+  /* top lang-sw start */
+  .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .lang-sw img {
+    max-width: 33px;
+  }
+
+  .language-switch {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .language-switch {
+      margin-right: 65px;
+    }
+  }
+
+  @media only screen and (max-width: 820px) {
+    .language-switch {
+      margin-right: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .lang-sw {
+      align-items: flex-start;
+    }
+
+    .language-switch {
+      margin-right: 0em;
+      margin-left: 0em;
+    }
+
+    .language-switch-dropdown-itmes-wrapper {
+      top: 40px;
+    }
+  }
+
+  /* top lang-sw end */
+
+  /* a links start */
+  .a-links {
+    margin: 3rem;
+  }
+
+  .a-links a {
+    color: #003cac;
+    font-weight: 700;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1.5px solid silver;
+  }
+
+  .a-links a:last-child {
+    border-right: 0px;
+  }
+
+  @media only screen and (max-width: 820px) {
+    .a-links {
+      margin: 0rem;
+    }
+
+    .a-links nav {
+      margin: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .a-links {
+      margin: 3rem 0em;
+    }
+
+    .a-links nav {
+      margin: 3rem 1em;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+
+  /* a link end */
+
+  /* bottom lang-sw start */
+  .bottom .lang-sw {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0px;
+  }
+
+  .bottom .language-switch {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px 0px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .language-switch-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px 0px;
+    cursor: pointer;
+  }
+
+  .language-switch-dropdown-itmes-wrapper {
+    border: 1px solid;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 33px;
+    background-color: #fff;
+  }
+
+  .language-switch-dropdown-itmes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+
+  .lang-sw.bottom {
+    align-items: flex-start;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .bottom-lag-sw p {
+    margin-bottom: 0px;
+  }
+
+  .bottom-lag-sw {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .language-switch-dropdown-itmes-wrapper {
+      top: 40px;
+    }
+
+    .bottom-lag-sw {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 2em;
+      gap: 15px;
+    }
+
+    .lang-sw.bottom {
+      margin-left: 0px;
+    }
+  }
+</style>
+<div class="article-banner"><img src="{{media url='wysiwyg/image-folder/glasses/eye/sphere-cylinder-axis/What_Does_Sphere_Cylinder_and_Axis_Mean_Web_Banner_1640x940.jpg'}}" alt="Sphere, Cylinder and Axis Mean Definition" class="banner desktop-banner"> <img src="{{media url='wysiwyg/image-folder/glasses/eye/sphere-cylinder-axis/What_Does_Sphere_Cylinder_and_Axis_Mean_Mobile_Banner_770x900.jpg'}}" alt="Sphere, Cylinder and Axis Mean Definition" class="mobile-banner"></div>
+<h1 class="title">What Does Sphere, Cylinder and Axis Mean?</h1>
+<!-- publish date start -->
+<div class="intro-section publsih-date">
+<div class="publsih-date-wrapper">
+<p>Published on August 15th, 2024</p>
+<p><b>Updated on May 8th, 2025</b></p>
+<!-- lang switch start -->
+<div class="lang-sw">
+<div class="language-switch">
+<div class="language-switch-current" onclick="toggleVisibility()"><img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="What Does Sphere, Cylinder and Axis Mean? in Canadian English"> Canada <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z" fill="black"></path> </svg></div>
+<div class="language-switch-dropdown-itmes-wrapper" id="secondBox" style="display: none;">
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/AU_Flag.jpg'}}" alt="What Does Sphere, Cylinder and Axis Mean? in Australian English"> <a href="https://www.oscarwylee.com.au//glasses/eye/sphere-cylinder-axis">Australia</a></div>
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="What Does Sphere, Cylinder and Axis Mean? in Canadian English"> <a href="https://oscarwylee.ca//glasses/eye/sphere-cylinder-axis">Canada</a></div>
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="What Does Sphere, Cylinder and Axis Mean? in Canadian French"> <a href="https://oscarwylee.ca/fr//glasses/eye/sphere-cylinder-axis">Canadian French</a></div>
+</div>
+</div>
+</div>
+</div>
+<!-- lang switch end --></div>
+<!-- publish date end -->
+<div class="intro-section">
+<p class="para-content"><b>Sphere, cylinder and axis are terms you will find on your glasses prescription and are used to measure different aspects of your vision</b>. The term sphere, which may be commonly written as SPH, refers to the lens power required to correct nearsightedness or farsightedness. Sphere is measured using the unit diopters and will indicate nearsightedness if there is a minus symbol in the sphere section or a plus symbol for farsightedness. Cylinder, also seen as CYL, on your prescription indicates the amount of lens power that is required for astigmatism. Axis on your prescription informs the optometrist which direction cylindrical power is positioned in the lens and is required for individuals with astigmatism. Continue reading to find out more about what CYL is in eye prescription, what axis is in glasses prescription and what axis means.</p>
+</div>
+<!-- First CTA aside start -->
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="heading">Have You Had an Eye Exam Recently?</p>
+<p style="font-size: 16px;">You can make an appointment online or in-store to see our team for your regular check-up.</p>
+</div>
+<div class="book-section-right"><a href="https://oscarwylee.ca/booking"><button class="btnOw">Book an eye exam</button></a></div>
+</aside>
+<!-- First CTA aside end -->
+<p></p>
+<!-- a liks start -->
+<div class="a-links"><nav><a href="#sphere">Sphere</a> <a href="#cylinder">Cylinder</a> <a href="#axis">Axis</a> <a href="#astigmatism">Astigmatism</a></nav></div>
+<!-- a liks end -->
+<div class="main-section" id="main-cont-wrapper">
+<div class="main-section">
+<section class="square-section">
+<h2 class="subtitle" id="axis-in-eye-prescription">What is the Axis in Eye Prescription?</h2>
+<p class="para-content">The axis in an eye prescription <strong>refers to the position of astigmatism in the glasses</strong>. This measurement indicates the direction of the cylindrical power to correct the astigmatism in the eyes. The axis is measured between 1 and 180 degrees.</p>
+</section>
+<!-- Section 2  -->
+<section class="square-section">
+<h2 class="subtitle" id="cylinder-in-eye-prescription">What is Cylinder in Eye Prescription?</h2>
+<p class="para-content">The cylinder, abbreviated as CYL, in eye prescriptions indicates the <strong>amount of lens power that is required for astigmatism correction.</strong> People without astigmatism will not have CYL values in their prescription.</p>
+<div class="sub-div">
+<h3 class="con-title">What Is Sphere in Eye Prescription?</h3>
+<p class="para-content">Sphere in an eye prescription <strong>indicates the person's required lens power to be able to see clearly.</strong> Sphere on your prescription may be written as SPH and is measured using the unit diopters to correct either farsightedness or nearsightedness.</p>
+</div>
+</section>
+<!-- Section 3 -->
+<section class="square-section">
+<h2 class="subtitle" id="significance-of-eyeglasses-prescriptions">What is the Significance of Eyeglasses Prescriptions?</h2>
+<p class="para-content">The significance of eyeglasses prescriptions is <strong>their function of correcting refractive errors such as nearsightedness or farsightedness. An eyeglasses prescription is written by an eye health professional such as an optometrist or ophthalmologist</strong> and provides the necessary parameters required to make glasses that can correct the patient's vision issues. Therefore, it is important to have your eyes checked regularly to ensure your prescriptions are always up to date and align accordingly with your visual requirements. The widely recommended frequency of eye exams is once every one to two years or once every year if you are over the age of 65. Glasses prescriptions are also important as they allow the optician to produce properly fitting frames.</p>
+<div class="sub-div">
+<h3 class="con-title" id="sphere">What Does "Sphere" Indicate in an Eye Prescription?</h3>
+<p class="para-content">Sphere in an eye prescription <strong>indicates the person's required lens power to be able to see clearly.</strong> Sphere on your prescription may be written as SPH and is measured using the unit diopters to correct either farsightedness or nearsightedness.</p>
+</div>
+<div class="sub-div">
+<h3 class="con-title">How are Nearsightedness and Farsightedness Represented in Diopters?</h3>
+<p class="para-content">Nearsightedness and farsightedness are <strong>represented in diopters through the numbers that are displayed on your prescription.</strong> In front of these numbers, there will either be a minus (-) sign if you are nearsighted or a plus (+) sign if you are farsighted.</p>
+</div>
+<!-- SEO Image 1 -->
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img src="{{media url='wysiwyg/image-folder/glasses/eye/sphere-cylinder-axis/_01_Measure_of_Nearsightedness_or_Farsightedness_900x600.jpg'}}" alt="Numerical range of diopters to indicate nearsightedness or farsightedness." class="product-image"></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img src="{{media url='wysiwyg/image-folder/glasses/eye/sphere-cylinder-axis/_01_Measure_of_Nearsightedness_or_Farsightedness_900x600.jpg'}}" alt="Numerical range of diopters to indicate nearsightedness or farsightedness." class="product-image"></div>
+</div>
+<div class="sub-div">
+<h4 class="con-title" id="night-blindness-myopia">Is Night Blindness Caused by Myopia?</h4>
+<p class="para-content">Yes, <strong>night blindness may be caused by myopia.</strong> Night blindness or reduced night vision can occur as a common symptom of myopia and other eye problems due to certain cells in the retina of the eye, known as the rod cells, not functioning. The retina is made up of rod cells, which help us see light, and cone cells, which help us see colour. Night blindness does not necessarily mean you do not have vision during the night, but rather that you have difficulty seeing clearly at night. If you are experiencing difficulty seeing during low-light conditions or at night, it is important to see an optometrist.</p>
+</div>
+</section>
+<!-- Section 4 -->
+<section class="square-section">
+<h2 class="subtitle" id="astigmatism">What is Astigmatism?</h2>
+<p class="para-content">Astigmatism is a <strong>refractive error that causes blurry or distorted vision due to the unusual shape of either the cornea or lens</strong>. The symptoms of astigmatism include the need to squint to see clearly, eye strain, headaches and trouble seeing at night. The exact cause of astigmatism is not known; however, it can occur from genetics or after an eye injury or eye surgery, according to the National Eye Institute. The cornea is the clear layer at the front of the eye, and the lens is located in the eye behind the pupil.</p>
+<!-- SEO Image 2 -->
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img src="{{media url='wysiwyg/image-folder/glasses/eye/sphere-cylinder-axis/_02_Astigmatism_900x600.jpg'}}" alt="A diagram shows how astigmatism causes light to focus on multiple points in the eye rather than a single point." class="product-image"></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img src="{{media url='wysiwyg/image-folder/glasses/eye/sphere-cylinder-axis/_02_Astigmatism_900x600.jpg'}}" alt="A diagram shows how astigmatism causes light to focus on multiple points in the eye rather than a single point." class="product-image"></div>
+</div>
+<div class="sub-div">
+<h3 class="con-title">How is Astigmatism Measured?</h3>
+<p class="para-content">Astigmatism is measured <strong>in diopters on your prescription. The range that most people with astigmatism have is between 0.5 and 0.75 diopters,</strong> according to the American Academy of Ophthalmology. If your astigmatism strength is 1.0 or more, you may likely require glasses and patients who do not have any astigmatism have 0 diopters.</p>
+</div>
+<div class="sub-div">
+<h4 class="con-title" id="astigmatism-lens-types">Does Astigmatism Have Different Types of Lenses for Vision Correction?</h4>
+<p class="para-content">Yes, astigmatism <strong>does have different types of lenses for vision correction. People with astigmatism require cylindrical or spherocylindrical lenses,</strong> which differ from single vision glasses lenses that correct shortsightedness and farsightedness. The different types of lenses which include cylindrical or spherical lenses, help patients with astigmatism as they assist with refracting light correctly onto the retina of the eye.</p>
+</div>
+</section>
+<!-- Section 5 -->
+<section class="square-section">
+<h2 class="subtitle" id="cylinder">How Does the "Cylinder" Value Affect Vision Correction?</h2>
+<p class="para-content">The cylinder value affects vision correction as <strong>it measures how flat or irregularly shaped your cornea is, which indicates the extent of your astigmatism.</strong> The cylinder value is important in vision correction as cylindrical lenses help to compensate for your cornea or lens uneven curves. Therefore, the cylinder column will assist with determining how much cylinder power is required.</p>
+</section>
+<!-- Section 6 -->
+<section class="square-section">
+<h2 class="subtitle" id="axis">Why is the "Axis" Important in Treating Astigmatism?</h2>
+<p class="para-content">The axis is important in treating astigmatism as <strong>it signifies where on the cornea the astigmatism is located according to the American Academy of Opthamology. The axis is measured in degrees and ranges from 0 to 180. Similarly to a map, the 180-degree line runs across the eye from east to west, and the 90-degree line goes up and down,</strong> according to the American Academy of Ophthalmology. For normal eyesight, your prescription would not have an axis number, as having an axis number is only an indication of astigmatism present in the eye.</p>
+<div class="sub-div">
+<h3 class="con-title">What do "OD" and "OS" Mean on an Eyeglasses Prescription?</h3>
+<p class="para-content"><strong>OD and OS on an eyeglass prescription refer to the right and left eye,</strong> respectively. OD is short for the Latin term <em>oculus dexter,</em> which means 'right eye'. OS is short for the Latin <em>oculus sinister,</em> which means 'left eye'. This differentiation between left and right eye is crucial in determining the prescription of various lens types such as <a href="https://oscarwylee.ca/glasses/eye/progressive-lenses">progressive lenses</a> as vision strength can and often does vary in both eyes.</p>
+</div>
+<div class="sub-div">
+<h4 class="con-title" id="prescription-values-differ">Can Prescription Values Differ Between the Two Eyes?</h4>
+<p class="para-content">Yes, <strong>prescription values can differ between the two eyes.</strong> This variation can be due to refractive differences such as nearsightedness and astigmatism. Ensure your prescription is regularly updated so the lenses you are wearing are accurate to both of your eyes.</p>
+</div>
+<div class="sub-div">
+<h3 class="con-title">How Do Optometrists Determine the Axis Value for Astigmatism?</h3>
+<p class="para-content">Optometrists determine the axis value for astigmatism <strong>by using special tools during a complete eye exam</strong>. <strong>Optometrists can identify astigmatism through a refraction test,</strong> which helps to identify how the eyes bend light. The optometrist may likely point a bright light towards your eyes and get you to look through different lenses.</p>
+</div>
+<div class="sub-div">
+<h4 class="con-title" id="cylinder-without-axis">Can You Have a Cylinder Value Without an Axis in a Prescription?</h4>
+<p class="para-content">No, you cannot have a cylinder value without an axis in a prescription as <strong>they work in conjunction to correct astigmatism.</strong> If your prescription includes cylinder power, a corresponding axis value is also included and follows the cylinder power.</p>
+</div>
+<div class="sub-div">
+<h3 class="con-title">What Happens if Astigmatism is Not Corrected with Eyewear?</h3>
+<p class="para-content">Astigmatism that is not corrected with eyewear <strong>may lead to the development of amblyopia mainly in children. Refractive amblyopia is a type of amblyopia that can develop when there is an imbalance in the focusing ability in the eyes</strong> as a result of astigmatism and other conditions. Uncorrected astigmatism may also lead to other complications such as eye strain and headaches. However, it is also important to note that not all eyewear prescriptions require astigmatism correction.</p>
+</div>
+</section>
+<!-- Middle CTA aside -->
+<aside class="intro-section book-section">
+<div class="book-section-left">
+<p class="heading">Looking For Your Next Pair of Glasses?</p>
+<p style="font-size: 16px;">Find your nearest Oscar Wylee store and our friendly staff can assist you in finding the right pair.</p>
+</div>
+<div class="book-section-right"><a href="https://oscarwylee.ca/booking"><button class="btnOw">Find a store</button></a></div>
+</aside>
+<!-- Middle CTA aside end-->
+<section class="square-section">
+<h2 class="subtitle" id="sphere-cylinder-axis-clear-vision">How Do Sphere, Cylinder, and Axis Work Together for Clear Vision?</h2>
+<p class="para-content">Sphere, cylinder and axis work together for clear vision <strong>as the cylinder in your prescription refers to the amount of astigmatism a person has</strong>. <strong>Axis is the number that ranges between 0 and 180 degrees which state the angle required to correct astigmatism</strong>, therefore, cylinder and axis cannot occur without each other as they work together to correct astigmatism. Sphere refers to the amount of nearsightedness and farsightedness and <strong>determines the strength needed to correct the patient's vision.</strong></p>
+<div class="sub-div">
+<h3 class="con-title">How do Optometrists Test for Refractive Errors During an Eye Exam?</h3>
+<p class="para-content">Optometrists test for refractive errors during an eye exam <strong>using tools such as autorefractors and phoropters.</strong> Autorefractors measure the refractive error of a patient's eye, by presenting the patient with a distant image to focus on and using computerized equipment to calculate the power. This allows for an assessment of the eye's focusing abilities, as well as an initial prescription estimate. The phoropter allows for further prescription accuracy. You will be asked by the <a href="https://oscarwylee.ca/optometrist">optometrist</a> to look at an eye chart, as various lenses are cycled in front of each eye. You will be asked which lens offers better vision.</p>
+</div>
+<div class="sub-div">
+<h3 class="con-title">How does Pupillary Distance (PD) Affect Lens Accuracy?</h3>
+<p class="para-content">Pupillary distance affects lens accuracy as <strong>if it is measured incorrectly, the optical centre will be incorrectly placed within the prescription frames.</strong> The optical centre refers to the part of the lens where the wearer experiences the clearest vision according to the Community Eye Health Journal.</p>
+</div>
+<div class="sub-div">
+<h3 class="con-title">What is an Example of a Glasses Prescription?</h3>
+<p class="para-content">An example of a glasses prescription <strong>is if you have -1.00 under the term SPH (sphere), this indicates that you require 1 diopter of strength to correct nearsightedness. If there is a +2.50 on your prescription, this indicates that 2.5 diopters are needed to assist with farsightedness. The higher the number in this section, the more correction needed.</strong> Next to SPH, there is a column for cylinder which is where a number with a minus or plus may appear to indicate the extent of astigmatism in each eye. This column is then followed by more columns for Axis, Int ADD, ADD, H Prism and V Prism. An axis will have a number between 0 and 180 degrees to specify the right angle to correct astigmatism. ADD, which stands for addition, will signify how much magnification is required for near vision which is accompanied by a plus symbol. This indicates if you require reading glasses, or multifocal or bifocal lenses. Int ADD stands for intermediate addition and indicates the magnification needed for intermediate vision such as for computer use. Prism may be added to your prescription if you are experiencing double vision or have difficulty focusing. A possible example of a glasses prescription for astigmatism will include a number in the cylinder column of your prescription. According to the Vision Centre, astigmatism that measures from 1.00-2.00 diopters is considered mild, severe astigmatism is 2.00-3.00 and extreme astigmatism is 3.00 diopters and above.</p>
+<!-- SEO Image 3 -->
+<div class="products-section" style="width: 60%; margin: 40px auto;">
+<div class="individual-product" style="margin-bottom: 0px;"><img src="{{media url='wysiwyg/image-folder/glasses/eye/sphere-cylinder-axis/_02_Glasses_Prescription_900x600.jpg'}}" alt="Example of a glasses prescription that indicates astigmatism." class="product-image"></div>
+</div>
+<div class="products-section-mobile" style="margin-bottom: 40px;">
+<div class="individual-product"><img src="{{media url='wysiwyg/image-folder/glasses/eye/sphere-cylinder-axis/_02_Glasses_Prescription_900x600.jpg'}}" alt="Example of a glasses prescription that indicates astigmatism." class="product-image"></div>
+</div>
+</div>
+<div class="sub-div">
+<h4 class="con-title" id="read-eyeglasses-prescription">Is it Necessary to Learn How to Read an Eyeglasses Prescription?</h4>
+<p class="para-content">Yes and no, while it is not necessary to learn how to read an eyeglasses prescription, <strong>it can be helpful to familiarize yourself with your specific vision requirements</strong>. It may also be useful to be able to understand what your prescription actually means, especially if you regularly use prescription glasses.</p>
+</div>
+<div class="sub-div">
+<h4 class="con-title" id="axis-sphere-cylinder-change">Does the Axis, Sphere and Cylinder Change?</h4>
+<p class="para-content">Yes, the axis, sphere and cylinder <strong>do change as the shape of your eye changes.</strong> Even a small change in shape can result in significant changes to the axis, however, this is considered normal. An individual who uses prescription glasses <strong>may experience many changes to their eyesight as seen on their prescription throughout their life.</strong></p>
+</div>
+<div class="sub-div">
+<h3 class="con-title">How Often Should Eyeglasses Prescriptions Be Updated?</h3>
+<p class="para-content">Eyeglass prescriptions are generally recommended to be <strong>updated every 2 years</strong>. For seniors, it is recommended this be done annually as eye sight tends to weaken in old age. Ultimately, it is important to be aware of signs of eye weakness such as squinting, headaches and blurry vision. An eye exam should be done as soon as you experience symptoms such as these as you may be in need of a new prescription.</p>
+</div>
+<div class="sub-div">
+<h3 class="con-title">What are the Risks of Wearing Glasses with the Wrong Prescription?</h3>
+<p class="para-content">The risks of wearing glasses with the wrong prescription include <strong>eye strain and fatigue, blurred vision and dizziness</strong>. Read more about these high risks of wearing glasses with the wrong prescription in detail below.</p>
+<ul class="ordered-list">
+<li><span class="list-title">Eye strain and fatigue: </span>Eye strain and fatigue can occur as your eyes will be forced to focus harder on what is in front of them, leading to strained vision. This can cause achy and tired eyes when wearing incorrect prescription glasses.</li>
+<li><span class="list-title">Blurred vision: </span>Blurred vision will likely occur when wearing the wrong prescription, as well as altered depth perception. This can make a variety of tasks, such as reading and driving more difficult and unsafe respectively.</li>
+<li><span class="list-title">Dizziness: </span>Dizziness can occur as a result of wearing the wrong prescription. The lack of alignment between your prescription and your eyes true vision needs can cause vertigo particularly when doing sudden eye movements.</li>
+</ul>
+</div>
+<div class="sub-div">
+<h3 class="con-title">How does Age Affect Changes in Eyeglass Prescription?</h3>
+<p class="para-content"><strong>Age can affect change in eyeglass prescriptions particularly in the early to mid-40s</strong> according to the American Optometric Association. During this time, adults and even <a href="https://oscarwylee.ca/glasses-for-seniors/">seniors</a> may start to have problems seeing clearly at close distances, which is referred to as presbyopia. If you find yourself holding books farther away to see clearer or removing your glasses to see better up close, you may have presbyopia. It is important to consult an optometrist when eye problems such as this arise, alongside other vision changes that occur as you age.</p>
+</div>
+<!-- lang switch start -->
+<div class="bottom-lag-sw">
+<p class="para-content">Read What Does Sphere, Cylinder and Axis Mean? in other Oscar Wylee regions and their languages.</p>
+<div class="lang-sw bottom">
+<div class="language-switch">
+<div class="language-switch-current" id="language-switch-current" onclick="toggleVisibilityBtnTwo()"><img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="What Does Sphere, Cylinder and Axis Mean? in Canadian English"> Canada <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z" fill="black"></path> </svg></div>
+<div class="language-switch-dropdown-itmes-wrapper" id="language-switch-dropdown-itmes-wrapper" style="display: none;">
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/AU_Flag.jpg'}}" alt="What Does Sphere, Cylinder and Axis Mean? in Australian English"> <a href="https://www.oscarwylee.com.au//glasses/eye/sphere-cylinder-axis">Australia</a></div>
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="What Does Sphere, Cylinder and Axis Mean? in Canadian English"> <a href="https://oscarwylee.ca//glasses/eye/sphere-cylinder-axis">Canada</a></div>
+<div class="language-switch-dropdown-itmes"><img src="{{media url='wysiwyg/CA_Flag.jpg'}}" alt="What Does Sphere, Cylinder and Axis Mean? in Canadian French"> <a href="https://oscarwylee.ca/fr//glasses/eye/sphere-cylinder-axis">Canadian French</a></div>
+</div>
+</div>
+</div>
+</div>
+<!-- lang switch end --></section>
+</div>
+<!-- add bottom CTA section here -->
+<aside class="context"><!-- Location and booking  -->
+<div class="location" style="border-top: none;">
+<div class="locationText">
+<p class="heading">Get a Full Quote in Store</p>
+<p class="contents">Get fitted for your glasses at Oscar Wylee by visiting us in-store and you can talk to our friendly staff for a complete quote. All major health insurances accepted.</p>
+<div class="allButton"><a href="https://oscarwylee.ca/health-insurance.html"> <button class="btnOw">Explore health insurance</button> </a></div>
+</div>
+<img src="{{media url='wysiwyg/image-folder/glasses/cta/find-a-store.jpg'}}" alt="find a location image" class="locationImage"></div>
+<div class="location item1"><img src="{{media url='wysiwyg/image-folder/glasses/cta/find_a_store_1_1__1.png'}}" alt="book eye test image" class="locationImage">
+<div class="locationText">
+<p class="heading">Need Your Eyes Checked?</p>
+<p class="contents">At Oscar Wylee, we offer directly billed eye exams for all eligible private health insurance cardholders.</p>
+<div class="allButton"><a href="https://oscarwylee.ca/booking"> <button class="btnOw">Book an eye exam</button> </a></div>
+</div>
+</div>
+</aside>
+</div>
+<!--Body Content end  -->
+<p>
+<script>
+    const productContainers = [
+      ...document.querySelectorAll(".product-container"),
+    ];
+    const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
+    const preBtn = [...document.querySelectorAll(".pre-btn")];
+
+    productContainers.forEach((item, i) => {
+      let containerDimensions = item.getBoundingClientRect();
+      let containerWidth = containerDimensions.width;
+
+      nxtBtn[i].addEventListener("click", () => {
+        item.scrollLeft += containerWidth;
+      });
+
+      preBtn[i].addEventListener("click", () => {
+        item.scrollLeft -= containerWidth;
+      });
+    });
+
+    // top lang-sw
+    document.addEventListener("click", function (event) {
+      var secondBox = document.querySelector(
+        ".language-switch-dropdown-itmes-wrapper"
+      );
+      var firstBox = document.querySelector(".language-switch-current");
+
+      // Check if the clicked element is outside the second box and the first box
+      if (
+        !secondBox.contains(event.target) &&
+        !firstBox.contains(event.target)
+      ) {
+        secondBox.style.display = "none";
+      }
+    });
+
+    function toggleVisibility() {
+      var secondBox = document.querySelector(
+        ".language-switch-dropdown-itmes-wrapper"
+      );
+      secondBox.style.display =
+        secondBox.style.display === "none" ? "flex" : "none";
+    }
+
+    // bottom lang-sw
+    document.addEventListener("click", function (event) {
+      var secondBox = document.querySelector(
+        "#language-switch-dropdown-itmes-wrapper"
+      );
+      var firstBox = document.querySelector("#language-switch-current");
+
+      // Check if the clicked element is outside the second box and the first box
+      if (
+        !secondBox.contains(event.target) &&
+        !firstBox.contains(event.target)
+      ) {
+        secondBox.style.display = "none";
+      }
+    });
+
+    function toggleVisibilityBtnTwo() {
+      var secondBox = document.querySelector(
+        "#language-switch-dropdown-itmes-wrapper"
+      );
+      secondBox.style.display =
+        secondBox.style.display === "none" ? "flex" : "none";
+    }
+  </script>
+</p>

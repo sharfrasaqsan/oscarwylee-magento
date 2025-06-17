@@ -159,7 +159,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
   }
 
   .new-product-details .product-wrapper-left {
@@ -571,7 +571,36 @@
     }
   }
 
-  /* new table for frame fit start */
+  .product-wrapper-filter {
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid silver;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .product-wrapper-filter {
+      margin: 0px 30px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .product-wrapper-filter {
+      margin-top: 0;
+    }
+  }
+
+  .filter-category {
+    text-align: center;
+    width: 100%;
+    border: solid #ccc 1px;
+    padding: 20px;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 </style>
 
 <section class="new-product-details">
@@ -580,7 +609,7 @@
       <h2>About Easten Frames</h2>
     </div>
 
-    <div class="product-wrapper">
+    <div class="product-wrapper" style="border-bottom: none">
       <div class="product-wrapper-left">
         <p>
           Easten is the definition of Old Hollywood glamour is. It is bold and
@@ -610,34 +639,6 @@
           If you already have a pair that you like, you can compare it to these
           measurements.
         </p>
-        <div
-          style="
-            text-align: center;
-            border: solid #ccc 1px;
-            padding: 20px;
-            font-size: 12px;
-            margin-top: 20px;
-          "
-        >
-          Filter category 2 (Obsidian Black and Whiskey Tortoise only) - General
-          purpose sunglasses. Good protection against sunglare. Good UV
-          Protection.Not suitable for driving in twilight, at night or under
-          dull conditions<br /><br /><b
-            ><em
-              >This frame (Opal Tortoise and Whiskey Tortoise only) comes with
-              gradient lenses. An additional $30 will be added to your order
-              total for prescription orders.</em
-            ></b
-          ><br /><br />Filter category 3 (Opal Tortoise only) - General purpose
-          sunglasses. High protection against sunglare. Good UV Protection. Not
-          suitable for driving in twilight, at night or under dull conditions
-          <br /><br /><b
-            ><em
-              >This frame (Opal Tortoise and Whiskey Tortoise only) comes with
-              polarised lenses. An additional $100 will be added to your order
-              total for prescription orders.<br /></em
-          ></b>
-        </div>
       </div>
 
       <div class="product-wrapper-right">
@@ -650,6 +651,30 @@
           <b>dimensions, shape, materials, lenses, nose fit and hinges</b>
           are listed below.
         </p>
+      </div>
+    </div>
+
+    <div class="product-wrapper-filter">
+      <div class="filter-category">
+        Filter category 2 (Obsidian Black and Whiskey Tortoise only) - General
+        purpose sunglasses. Good protection against sunglare. Good UV
+        Protection. Not suitable for driving in twilight, at night or under dull
+        conditions<br /><br /><b
+          ><em
+            >This frame (Opal Tortoise and Whiskey Tortoise only) comes with
+            gradient lenses. An additional $30 will be added to your order total
+            for prescription orders.</em
+          ></b
+        ><br /><br />
+        Filter category 3 (Opal Tortoise only) - General purpose sunglasses.
+        High protection against sunglare. Good UV Protection. Not suitable for
+        driving in twilight, at night or under dull conditions
+        <br /><br /><b
+          ><em
+            >This frame (Opal Tortoise and Whiskey Tortoise only) comes with
+            polarised lenses. An additional $100 will be added to your order
+            total for prescription orders.<br /></em
+        ></b>
       </div>
     </div>
 
@@ -792,10 +817,7 @@
               many face shapes but particularly compatible with round and oval
               face shapes. The Easten frame’s simple design means that they are
               fashionable all year round. Easten glasses feature the standard
-              <a
-                href="https://www.oscarwylee.com.au/glasses/eye/part-of-glasses"
-                >parts of glasses</a
-              >
+              <a href="/glasses/eye/part-of-glasses">parts of glasses</a>
               such as a rim, temples, lenses, hinges and a low nose bridge fit.
             </p>
           </div>
@@ -933,18 +955,13 @@
               shape, meaning that it complements the structure of round and oval
               faces particularly well. The Easten frames help to balance the
               features of an
-              <a href="https://www.oscarwylee.com.au/glasses/face-shapes/oval"
-                >oval face shape</a
-              >
+              <a href="/glasses/face-shapes/oval">oval face shape</a>
               and heart face shape, bringing the eyes and brows forward in a
               flattering way. The Easten frame is also suitable for a
-              <a href="https://www.oscarwylee.com.au/glasses/face-shapes/round"
-                >round face shape</a
-              >, bringing the eyes and brows forward in a flattering way.
-              Although there are many
-              <a href="https://www.oscarwylee.com.au/glasses/face-shapes"
-                >glasses for face shapes</a
-              >
+              <a href="/glasses/face-shapes/round">round face shape</a>,
+              bringing the eyes and brows forward in a flattering way. Although
+              there are many
+              <a href="/glasses/face-shapes">glasses for face shapes</a>
               that may be considered more aesthetically suitable, it is
               important that people also choose the frames that make them feel
               most comfortable, and represent their personal style.
