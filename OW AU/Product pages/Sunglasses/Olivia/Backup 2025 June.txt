@@ -1,0 +1,17 @@
+<div class="product-description">
+<h2><span class="frame">About the Frames</span></h2>
+<div class="wrap-content">
+<div class="left-content">
+<p>Oversized and understated. Olivia is Bold, but pairs perfectly with every outfit.</p>
+</div>
+<div class="right-content">
+<h3>Made from Acetate and Stainless Steel</h3>
+<div class="frame-options">
+<p><span class="label">Frame fit</span><span class="value">Wide </span></p>
+<p><span class="label">Measurements</span><span class="value">57 - 20 - 145</span></p>
+</div>
+<p class="small-text">These measurements mean lens width, bridge, and temple length in millimetres (mm). They can be found on the inside of the temple arm. If you already have a pair that you like, you can compare it to these measurements.</p>
+<div style="text-align: center; border: solid #ccc 1px; padding: 20px; font-size: 12px; margin-top: 20px;">Filter category 2 (Butterscotch Tortoise only) - General purpose sunglasses. Good protection against sunglare. Good UV Protection.Not suitable for driving in twilight, at night or under dull conditions<br /><br /><b><em>This frame (Butterscotch Tortoise only) comes with polarised lenses. An additional $100 will be added to your order total for prescription orders.</em></b><br /><br />Filter category 3 (Opal Tortoise only) - General purpose sunglasses. High protection against sunglare. Good UV Protection. Not suitable for driving in twilight, at night or under dull conditions <br /><br /><b><em>This frame (Opal Tortoise only) comes with tinted lenses. An additional $30 will be added to your order total for prescription orders.</em></b></div>
+</div>
+</div>
+</div>
