@@ -1,0 +1,17 @@
+<div class="product-description">
+<h2><span class="frame">About the Frames</span></h2>
+<div class="wrap-content">
+<div class="left-content">
+<p>Meet Fenn. A versatile frame that knows how to make a statement, but can just as easily fly under the radar. With flexible qualities - Fenn is easy to adjust and has ultra comfortable nose pads.</p>
+</div>
+<div class="right-content">
+<h3>Made from TR90 and Metal</h3>
+<div class="frame-options">
+<p><span class="label">Frame fit</span><span class="value">Medium</span></p>
+<p><span class="label">Measurements</span><span class="value">50 - 25 - 140</span></p>
+</div>
+<p class="small-text">These measurements mean lens width, bridge, and temple length in millimetres (mm). They can be found on the inside of the temple arm. If you already have a pair that you like, you can compare it to these measurements.</p>
+<div style="text-align: center; border: solid #ccc 1px; padding: 20px; font-size: 12px; margin-top: 20px;">Filter category 2 - General purpose sunglasses. Good protection against sunglare. Good UV Protection. Not suitable for driving in twilight, at night or under dull conditions<br /><br /><b><em>This frame comes with gradient lenses. An additional $30 will be added to your order total for prescription orders. </em></b></div>
+</div>
+</div>
+</div>
