@@ -150,32 +150,35 @@
     text-decoration: none;
   }
 
-  .btnOw {
-    background-color: #003cac;
-    color: #fff;
-    width: 100%;
-    height: 2.5em;
-    font-size: 18px;
-    font-weight: 600;
-    border: 2px solid transparent;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    letter-spacing: 0.5px;
-    padding: 0 20px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
-    margin-bottom: 1.5em;
-    transition: all 1s ease;
+  .btnOw:hover {
+    background-color: black;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    border: none !important;
   }
 
-  .btnOw:hover {
-    background-color: #001f5c;
-    color: #ffffff;
-    border-color: #001f5c;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15) !important;
+  .btnOw {
+    background-color: #003cac;
+    width: 100%;
+    /* padding: 0px 50%; */
+    border: none;
+    color: #fff;
+    height: 2em;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
   }
 
   .para-content {
@@ -184,8 +187,6 @@
     font-size: 16px;
     text-align: justify;
   }
-
-
 
   .list-title {
     font-weight: 700;
@@ -679,11 +680,10 @@
     .location {
       display: flex;
       flex-direction: column;
-      padding-bottom: 3em;
+      padding-bottom: 5em;
     }
 
     .locationText .heading {
-      /* text-size: 1.25em; */
       margin-top: 1.9em;
       margin-bottom: -0.5em;
     }
@@ -864,11 +864,11 @@
   .publsih-date-wrapper p {
     margin-bottom: 0px;
     color: #003cac;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   .publsih-date-wrapper p:first-child {
-    /* border-right: 1.5px solid silver; */
+    border-right: 1.5px solid silver;
     margin-right: 20px;
     padding-right: 20px;
   }
@@ -886,7 +886,7 @@
     .publsih-date-wrapper p {
       margin-bottom: 8px;
       color: #003cac;
-      font-weight: 700;
+      font-weight: 500;
     }
 
     .publsih-date-wrapper p:first-child {
@@ -1123,37 +1123,6 @@
     }
   }
 
-  /* Product Widget */
-  @media (min-width: 801px), print {
-    .page-layout-1column
-      .page-wrapper
-      .block-products-list
-      .products-grid
-      .widget-product-grid
-      .product-item
-      .label-wrapper
-      .label-container
-      .label-discount {
-      padding: 5px 5px;
-      font-size: 14px;
-    }
-  }
-
-  @media only screen and (max-width: 639px) {
-    .page-layout-1column
-      .page-wrapper
-      .block-products-list
-      .products-grid
-      .widget-product-grid
-      .product-item
-      .label-wrapper
-      .label-container
-      .label-discount {
-      font-size: 8.8px;
-      padding: 0px 5px;
-    }
-  }
-
   .cta-top-border {
     border-top: 1px solid silver;
     padding-top: 3rem;
@@ -1162,146 +1131,236 @@
   @media (max-width: 480px) {
     .cta-top-border {
       padding-top: 0rem;
-      margin-bottom: 3rem;
-    }
-
-    .cta-responsive-padding {
-      padding-right: 35px;
-      padding-left: 35px;
-    }
-
-    .cta-responsive-margin {
-      padding-right: 35px;
-      padding-left: 35px;
-    }
-  }
-
-  /* New component styles */
-  .eye-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .eye {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #d1e7f3;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .eye-label {
-    position: absolute;
-    bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px 10px;
-    border-radius: 12px;
-    font-size: 12px;
-  }
-
-  .description-box {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #e6f2fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    color: #333;
-    min-height: 50px;
-    display: none;
-    /* max-width: 600px;*/
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    text-align: center;
-  }
-
-  .description {
-    font-weight: 600;
-  }
-
-  /* Responsive styling */
-  @media (max-width: 480px) {
-    .eye-container {
-      justify-content: center;
-      max-width: 300px; /* Narrower for small screens */
-    }
-
-    .eye {
-      width: 140px; /* Adjusted to fit two per row */
-      height: 140px;
-    }
-
-    .eye-label {
-      font-size: 14px; /* Slightly larger text for readability */
-    }
-
-    .cta-padding-responsive {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-
-    .cta-margin-responsive {
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-  }
-
-  /*Product widget*/
-  .column.main .product-items {
-    margin-left: 0;
-  }
-
-  @media only screen and (max-width: 639px) {
-    .page-layout-1column
-      .page-wrapper
-      .block-products-list
-      .products-grid.non-swiper
-      .widget-product-grid
-      .product-item
-      .label-wrapper
-      .label-container
-      .label-discount {
-      padding: 0 5px;
     }
   }
 </style>
 
 <div class="article-banner">
-  <img src="/" alt="" class="banner desktop-banner" />
-  <img src="/" alt="" class="mobile-banner" />
+  <img
+    src="/"
+    alt="Want to see the world a little clearer?"
+    class="banner desktop-banner"
+  />
+  <img
+    src="/"
+    alt="Want to see the world a little clearer?"
+    class="mobile-banner"
+  />
 </div>
 
-<h1 class="title">Wire Frame Glasses: The Timeless Frame Style</h1>
+<h1 class="title">The Advantages Of Anti-glare (Anti-reflective) Glasses</h1>
 
 <!-- publish date start -->
 <div class="intro-section publsih-date">
   <div class="publsih-date-wrapper">
-    <p>Published on June 27th, 2025</p>
-    <!-- <p><b>Updated on August 23rd, 2024</b></p> -->
+    <p>Published on October 26th, 2022</p>
+    <p><b>Updated on July 2nd, 2025</b></p>
 
-    <!-- <div class="lang-sw">
+    <!-- lang switch start -->
+    <div class="lang-sw">
+      <div class="language-switch">
+        <div class="language-switch-current" onclick="toggleVisibility()">
+          <!-- flag -->
+          <img
+            src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+            alt="The Advantages Of Anti-glare (Anti-reflective) Glasses in Australian English"
+          />
+          Australia
+
+          <!-- dropdown icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="5"
+            viewBox="0 0 8 5"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+
+        <div
+          class="language-switch-dropdown-itmes-wrapper"
+          id="secondBox"
+          style="display: none"
+        >
+          <div class="language-switch-dropdown-itmes">
+            <img
+              src="{{media url='wysiwyg/AU_Flag.jpg'}}"
+              alt="The Advantages Of Anti-glare (Anti-reflective) Glasses in Australian English"
+            />
+            <a href="https://www.oscarwylee.com.au/guides/lenses/anti-glare"
+              >Australia</a
+            >
+          </div>
+
+          <div class="language-switch-dropdown-itmes">
+            <img
+              src="{{media url='wysiwyg/NZ_Flag.jpg'}}"
+              alt="The Advantages Of Anti-glare (Anti-reflective) Glasses in New Zealand English"
+            />
+            <a href="https://www.oscarwylee.co.nz/guides/lenses/anti-glare"
+              >New Zealand</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- publish date end -->
+
+<div class="intro-section">
+  <p class="para-content">Content</p>
+</div>
+
+<!--  CTA aside-->
+<aside class="intro-section book-section">
+  <div class="book-section-left">
+    <p class="heading">Do you need blue light glasses?</p>
+    <p style="font-size: 16px">
+      Book an eye test today to learn more about your visions health
+    </p>
+  </div>
+
+  <div class="book-section-right">
+    <a href="/booking"><button class="btnOw">Book your eye test</button></a>
+  </div>
+</aside>
+<!--  CTA aside-->
+
+<!-- a liks start -->
+<div class="a-links">
+  <nav>
+    <a href="#Definition">Definition</a>
+    <a href="#Types">Types</a>
+    <a href="#Symptoms">Symptoms</a>
+    <a href="#Causes">Causes</a>
+  </nav>
+</div>
+<!-- a liks end -->
+
+<div class="main-section" id="main-cont-wrapper">
+  <div class="main-section">
+    <section class="square-section">
+      <h2 class="subtitle" id="Function">
+        How do anti-glare (anti-reflective) glasses work?
+      </h2>
+      <p class="para-content">Content</p>
+
+      <div class="sub-div">
+        <h3 class="con-title">Why is reflection a problem?</h3>
+        <p class="para-content">Content</p>
+      </div>
+    </section>
+
+    <section class="square-section">
+      <h2 class="subtitle">At Oscar Wylee:</h2>
+      <p class="para-content">Content</p>
+    </section>
+
+    <section class="square-section">
+      <h2 class="subtitle" id="Advantages">
+        What are the advantages of anti-glare (anti-reflective) glasses?
+      </h2>
+      <p class="para-content">Content</p>
+
+      <div class="products-section" style="width: 60%; margin: 40px auto">
+        <div class="individual-product" style="margin-bottom: 0px">
+          <img
+            src="/"
+            alt="The Advantages Of Anti-glare Glasses"
+            class="product-image"
+          />
+        </div>
+      </div>
+
+      <div class="products-section-mobile" style="margin-bottom: 40px">
+        <div class="individual-product">
+          <img
+            src="/"
+            alt="The Advantages Of Anti-glare Glasses"
+            class="product-image"
+          />
+        </div>
+      </div>
+
+      <div class="sub-div">
+        <h3 class="con-title" id="Preventing">
+          How do I stop glare when I’m driving?
+        </h3>
+        <p class="para-content">Content</p>
+      </div>
+    </section>
+
+    <!--  CTA aside-->
+    <aside class="intro-section book-section">
+      <div class="book-section-left">
+        <p class="heading">Find out more in-store</p>
+        <p style="font-size: 16px">
+          Consult with our friendly staff to answer all your questions about
+          anti-reflective lenses.
+        </p>
+      </div>
+      <div class="book-section-right">
+        <a href="/locations/"><button class="btnOw">Find a store</button></a>
+      </div>
+    </aside>
+    <!--  CTA aside-->
+
+    <section class="square-section">
+      <h2 class="subtitle">
+        Anti-glare (anti-reflective) glasses for computers:
+      </h2>
+      <p class="para-content">Content</p>
+
+      <div class="sub-div">
+        <h3 class="con-title">
+          Are anti-glare (anti-reflective) and blue light glasses the same?
+        </h3>
+        <p class="para-content">Content</p>
+      </div>
+    </section>
+
+    <section class="square-section">
+      <h2 class="subtitle" id="Disadvantages">
+        Disadvantages of anti-glare (anti-reflective) glasses:
+      </h2>
+      <p class="para-content">Content</p>
+
+      <div class="sub-div">
+        <h3 class="con-title">
+          Cleaning and keeping anti-glare (anti-reflective) glasses
+        </h3>
+        <p class="para-content">Content</p>
+      </div>
+
+      <!-- lang switch start -->
+      <div class="bottom-lag-sw">
+        <p class="para-content">
+          Read The Advantages Of Anti-glare (Anti-reflective) Glasses in other
+          Oscar Wylee regions and their languages.
+        </p>
+
+        <div class="lang-sw bottom">
           <div class="language-switch">
-            <div class="language-switch-current" onclick="toggleVisibility()">
-              <img   
+            <div
+              class="language-switch-current"
+              id="language-switch-current"
+              onclick="toggleVisibilityBtnTwo()"
+            >
+              <img
                 src="{{media url='wysiwyg/AU_Flag.jpg'}}"
-                alt="White Frame Sunglasses: Colour and Lens Type Best for White Frame? in Australian English"
+                alt="The Advantages Of Anti-glare (Anti-reflective) Glasses in Australian English"
               />
               Australia
 
+              <!-- dropdown icon -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="8"
@@ -1320,464 +1379,34 @@
 
             <div
               class="language-switch-dropdown-itmes-wrapper"
-              id="secondBox"
+              id="language-switch-dropdown-itmes-wrapper"
               style="display: none"
             >
               <div class="language-switch-dropdown-itmes">
                 <img
                   src="{{media url='wysiwyg/AU_Flag.jpg'}}"
-                  alt="White Frame Sunglasses: Colour and Lens Type Best for White Frame? in Australian English"
+                  alt="The Advantages Of Anti-glare (Anti-reflective) Glasses in Australian English"
                 />
-                <a href="#"> Australia</a>
+                <a
+                  href="https://www.oscarwylee.com.au/guides/lenses/anti-glare"
+                >
+                  Australia</a
+                >
               </div>
 
               <div class="language-switch-dropdown-itmes">
                 <img
                   src="{{media url='wysiwyg/NZ_Flag.jpg'}}"
-                  alt="White Frame Sunglasses: Colour and Lens Type Best for White Frame? in New Zealand English"
+                  alt="The Advantages Of Anti-glare (Anti-reflective) Glasses in New Zealand English"
                 />
-                <a href="#"> New Zealand</a>
-              </div>
-
-              <div class="language-switch-dropdown-itmes">
-                <img
-                  src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-                  alt="White Frame Sunglasses: Colour and Lens Type Best for White Frame? in Canadian English"
-                />
-                <a href="#"> Canada</a>
-              </div>
-
-              <div class="language-switch-dropdown-itmes">
-                <img
-                  src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-                  alt="White Frame Sunglasses: Colour and Lens Type Best for White Frame? in Canadian French"
-                />
-                <a href="#"> Canadian French</a>
+                <a href="https://www.oscarwylee.co.nz/guides/lenses/anti-glare"
+                  >New Zealand</a
+                >
               </div>
             </div>
           </div>
-        </div> -->
-  </div>
-</div>
-<!-- publish date end -->
-
-<div class="intro-section">
-  <p class="para-content">Content</p>
-</div>
-
-<!--  CTA aside-->
-<aside class="intro-section book-section">
-  <div class="book-section-left">
-    <p class="heading">
-      Experience High-Quality Eye Care Services at Oscar Wylee
-    </p>
-    <p style="font-size: 16px">
-      We have dedicated teams and optometrists at all our stores.
-    </p>
-  </div>
-  <div class="book-section-right">
-    <a href="/booking"><button class="btnOw">Book an eye test</button></a>
-  </div>
-</aside>
-<!--  CTA aside-->
-
-<!-- a liks start -->
-<div class="a-links">
-  <nav>
-    <a href="#EyeProblems">Common Eye Problems</a>
-    <a href="#Seniors">Improve Eye Sight for Seniors</a>
-    <a href="#Preventing">Preventing Ageing Eyes</a>
-    <a href="#Resources">Resources for Senior Vision Loss</a>
-  </nav>
-</div>
-<!-- a liks end -->
-
-<div class="main-section" id="main-cont-wrapper">
-  <div class="main-section">
-    <section class="square-section">
-      <h2 class="subtitle" id="EyeProblems">
-        What are the Most Common Eye Problems with Age?
-      </h2>
-      <p class="para-content">Content</p>
-
-      <ul class="ordered-list">
-        <li>
-          <span class="list-title">Presbyopia:</span>
-          Presbyopia is an age-related condition wherein the eyes become less
-          able to focus over time.
-        </li>
-      </ul>
-
-      <div class="sub-div">
-        <h3 class="con-title">1. Presbyopia</h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">2. Cataracts</h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">3. Age-Related Macular Degeneration</h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">4. Glaucoma</h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">5. Diabetic Retinopathy</h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">6. Dry Eye Syndrome</h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">7. Floaters And Flashes</h3>
-        <p class="para-content">Content</p>
-
-        <div class="products-section" style="width: 60%; margin: 40px auto">
-          <div class="individual-product" style="margin-bottom: 0px">
-            <img
-              src="/"
-              alt="A photo of a blue sky with floaters in view."
-              class="product-image"
-            />
-          </div>
-        </div>
-
-        <div class="products-section-mobile" style="margin-bottom: 40px">
-          <div class="individual-product">
-            <img
-              src="/"
-              alt="A photo of a blue sky with floaters in view."
-              class="product-image"
-            />
-          </div>
         </div>
       </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">8. Reduced Contrast Sensitivity</h3>
-        <p class="para-content">Content</p>
-      </div>
-    </section>
-
-    <!--  CTA aside-->
-    <aside class="intro-section book-section">
-      <div class="book-section-left">
-        <p class="heading">Update Your Prescription Today.</p>
-        <p style="font-size: 16px">
-          See our team in-store to update your prescription. We offer bulk
-          billed eye tests and quality eye care assistance.
-        </p>
-      </div>
-      <div class="book-section-right">
-        <a href="/locations/full-store-list.html"
-          ><button class="btnOw">Find a store</button></a
-        >
-      </div>
-    </aside>
-    <!--  CTA aside-->
-
-    <section class="square-section">
-      <h2 class="subtitle">How Does Ageing Affect Vision Changes?</h2>
-      <p class="para-content">Content</p>
-
-      <div class="products-section" style="width: 60%; margin: 40px auto">
-        <div class="individual-product" style="margin-bottom: 0px">
-          <img
-            src="/"
-            alt="Photo of a close up of an elderly person’s eye on the right with a Snellan Chart to the left."
-            class="product-image"
-          />
-        </div>
-      </div>
-
-      <div class="products-section-mobile" style="margin-bottom: 40px">
-        <div class="individual-product">
-          <img
-            src="/"
-            alt="Photo of a close up of an elderly person’s eye on the right with a Snellan Chart to the left."
-            class="product-image"
-          />
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          When Does Eyesight Typically Start To Deteriorate?
-        </h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">What are the Early Signs of Ageing Eyes?</h3>
-        <p class="para-content">Content</p>
-
-        <ul class="ordered-list">
-          <li>
-            <span class="list-title">Difficulty seeing things up close:</span>
-            Difficulty seeing things up close is a sign of ageing eyes, and
-            prescription glasses to accommodate this change might be needed.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle" id="Seniors">
-        How to Improve Eye Health for Seniors?
-      </h2>
-      <p class="para-content">Content</p>
-
-      <ul class="ordered-list">
-        <li>
-          <span class="list-title">Eat a Balanced Diet:</span>
-          Eating a balanced diet rich in omega-3 fatty acids, lutein, zinc, and
-          vitamins C is important. These include fish, nuts, seeds, leafy
-          greens, yellow and orange fruits.
-        </li>
-      </ul>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          What Vitamins and Nutrients Support Good Eyesight?
-        </h3>
-        <p class="para-content">Content</p>
-
-        <ul class="ordered-list">
-          <li>
-            <span class="list-title">Vitamin A:</span>
-            Vitamin A is crucial for good vision as it helps protect the cornea
-            and is essential for maintaining low-light vision.
-          </li>
-        </ul>
-
-        <div class="sub-div">
-          <h4 class="con-title">
-            Can Diet Help Reverse Ageing Eyesight Changes?
-          </h4>
-          <p class="para-content">Content</p>
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          Which Eye Exercises are Beneficial For Seniors to Maintain Eye Health?
-        </h3>
-        <p class="para-content">Content</p>
-
-        <ul class="ordered-list">
-          <li>
-            <span class="list-title">Tracing:</span>
-            Tracing is when you choose an item in your direct field of vision,
-            such as a piece of artwork, and slowly trace the outline of that
-            object with your eyes. Once done, trace the object in the opposite
-            direction to strengthen your eyes’ focus and muscles.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle">
-        What are The Best Practices for Daily Eye Care for Seniors?
-      </h2>
-      <p class="para-content">Content</p>
-
-      <ul class="ordered-list">
-        <li>
-          <span class="list-title">Eat a Balanced Diet:</span>
-          Eating a balanced diet including fish, nuts, seeds, leafy greens, and
-          orange fruits.
-        </li>
-      </ul>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle">
-        How Important are Regular Eye Tests for the Elderly?
-      </h2>
-      <p class="para-content">Content</p>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          How Can Seniors Protect Their Eyes from UV Damage?
-        </h3>
-        <p class="para-content">Content</p>
-      </div>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle">
-        Are There Technologies that Help with Changing Senior Vision?
-      </h2>
-      <p class="para-content">Content</p>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          What Role do Glasses and Contacts Play in Senior Vision?
-        </h3>
-        <p class="para-content">Content</p>
-      </div>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle">
-        Is Surgery an Option for Age-Related Eye Conditions?
-      </h2>
-      <p class="para-content">Content</p>
-
-      <div class="sub-div">
-        <h3 class="con-title">What are the Risks of Cataract Surgery?</h3>
-        <p class="para-content">Content</p>
-
-        <ul class="ordered-list">
-          <li>
-            <span class="list-title">Infection:</span>
-            An infection can occur if bacteria enter your eye during surgery.
-            Symptoms of this include eye pain, light sensitivity and blurry
-            vision. An antibiotic medication will usually be prescribed to
-            prevent this risk.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle" id="Preventing">
-        Can Ageing Eye Problems be Prevented?
-      </h2>
-      <p class="para-content">Content</p>
-
-      <div class="products-section" style="width: 60%; margin: 40px auto">
-        <div class="individual-product" style="margin-bottom: 0px">
-          <img
-            src="/"
-            alt="A close-up of an elderly person’s eye and a young person’s eye."
-            class="product-image"
-          />
-        </div>
-      </div>
-
-      <div class="products-section-mobile" style="margin-bottom: 40px">
-        <div class="individual-product">
-          <img
-            src="/"
-            alt="A close-up of an elderly person’s eye and a young person’s eye."
-            class="product-image"
-          />
-        </div>
-      </div>
-
-      <div class="sub-div">
-        <h3 class="con-title">What Lifestyle Habits Harm Senior Eye Health?</h3>
-        <p class="para-content">Content</p>
-      </div>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle">
-        How Can Caregivers Support Seniors with Changing Vision?
-      </h2>
-      <p class="para-content">Content</p>
-    </section>
-
-    <section class="square-section">
-      <h2 class="subtitle" id="Resources">
-        What Resources Are Available for Seniors with Changing Vision?
-      </h2>
-      <p class="para-content">Content</p>
-
-      <div class="sub-div">
-        <h3 class="con-title">
-          Should Seniors Use Supplements for Eye Health?
-        </h3>
-        <p class="para-content">Content</p>
-      </div>
-
-      <!-- lang switch start -->
-      <!-- <div class="bottom-lag-sw">
-            <p class="para-content">
-              ReadWire Frame Glasses: The Timeless Frame Style in other Oscar Wylee regions and their languages.
-            </p>
-
-            <div class="lang-sw bottom">
-              <div class="language-switch">
-                <div
-                  class="language-switch-current"
-                  id="language-switch-current"
-                  onclick="toggleVisibilityBtnTwo()"
-                >
-                  <img
-                    src="{{media url='wysiwyg/AU_Flag.jpg'}}"
-                    alt="White Frame Sunglasses: Colour and Lens Type Best for White Frame? in Australian English"
-                  />
-                  Australia
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="8"
-                    height="5"
-                    viewBox="0 0 8 5"
-                    fill="none"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.890381 1.28592L1.43772 0.815063L4.26024 3.24321L7.08277 0.815063L7.63011 1.28592L4.26024 4.18493L0.890381 1.28592Z"
-                      fill="black"
-                    />
-                  </svg>
-                </div>
-
-                <div
-                  class="language-switch-dropdown-itmes-wrapper"
-                  id="language-switch-dropdown-itmes-wrapper"
-                  style="display: none"
-                >
-                  <div class="language-switch-dropdown-itmes">
-                    <img
-                      src="{{media url='wysiwyg/AU_Flag.jpg'}}"
-                      alt="White Frame Sunglasses: Colour and Lens Type Best for White Frame? in Australian English"
-                    />
-                    <a href="#"> Australia</a>
-                  </div>
-
-                  <div class="language-switch-dropdown-itmes">
-                    <img
-                      src="{{media url='wysiwyg/NZ_Flag.jpg'}}"
-                      alt="White Frame Sunglasses: Colour and Lens Type Best for White Frame? in New Zealand English"
-                    />
-                    <a href="#"> New Zealand</a>
-                  </div>
-
-                  <div class="language-switch-dropdown-itmes">
-                    <img
-                      src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-                      alt="White Frame Sunglasses: Colour and Lens Type Best for White Frame? in Canadian English"
-                    />
-                    <a href="#"> Canada</a>
-                  </div>
-
-                  <div class="language-switch-dropdown-itmes">
-                    <img
-                      src="{{media url='wysiwyg/CA_Flag.jpg'}}"
-                      alt="White Frame Sunglasses: Colour and Lens Type Best for White Frame? in Canadian French"
-                    />
-                    <a href="#"> Canadian French</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
       <!-- lang switch end -->
     </section>
   </div>
@@ -1787,42 +1416,36 @@
     <!-- Location and booking  -->
     <div class="location" style="border-top: none">
       <div class="locationText">
-        <p class="heading">Book an Eye Test Today</p>
+        <p class="heading">Need to have your eyes tested?</p>
         <p class="contents">
-          At Oscar Wylee bulk billed eye tests are offered for eligible medicare
-          card holders.
+          Book an appointment with our Oscar Wylee optometrists.
         </p>
         <div class="allButton">
           <a href="/booking">
-            <button class="btnOw">Book an eye test</button>
+            <button class="btnOw">Book your eye test</button>
           </a>
         </div>
       </div>
       <img
-        src="{{media url='wysiwyg/image-folder/glasses/cta/Eye-Test-Oscar-Wylee-3.jpg'}}"
-        alt="Oscar Wylee Book eye test"
+        src="{{media url='wysiwyg/image-folder/glasses/cta/Eye-Test-Oscar-Wylee-2.jpg'}}"
+        alt="Oscar Wylee Book an eye test"
         class="locationImage"
       />
     </div>
-
     <div class="location item1">
       <img
-        src="{{media url='wysiwyg/image-folder/glasses/cta/Health-Fund-CTA.jpg'}}"
-        alt="Oscar Wylee Health fund"
+        src="{{media url='wysiwyg/image-folder/glasses/cta/find-a-store.jpg'}}"
+        alt="Oscar Wylee Find a store"
         class="locationImage"
       />
       <div class="locationText">
-        <p class="heading cta-margin-responsive">
-          Major Health Funds Accepted at Oscar Wylee
-        </p>
+        <p class="heading">Find a store near you</p>
         <p class="contents">
-          For the purchase of frames and lenses at Oscar Wylee, use your private
-          health fund insurance to minimize how much you pay from your own
-          pocket.
+          Contact or visit your nearest store for a full quote.
         </p>
         <div class="allButton">
-          <a href="/health-funds.html">
-            <button class="btnOw">Explore Health Funds</button>
+          <a href="/locations/">
+            <button class="btnOw">Find a store</button>
           </a>
         </div>
       </div>
